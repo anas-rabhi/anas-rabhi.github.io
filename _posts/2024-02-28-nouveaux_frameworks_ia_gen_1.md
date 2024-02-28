@@ -71,13 +71,14 @@ requests.post('https://httpbin.org/post',
 
 ## Création d'un échantillon de données 
 
-Le but est de créer des données textuelles afin de les utiliser dans le RAG. Les données sont très simples, dans la réalité les documents sont souvents très long et les LLM ont du mal à extraire l'information correctement de tous ces documents à la fois. > NB : ces données sont générées en partie avec ChatGPT & Mixtral 8x7B.
+Le but est de créer des données textuelles afin de les utiliser dans le RAG. Les données sont très simples, dans la réalité les documents sont souvents très long et les LLM ont du mal à extraire l'information correctement de tous ces documents à la fois. 
+
+NB : ces données sont générées en partie avec ChatGPT & Mixtral 8x7B.
 
 
 
 ```python
 data = [
-    
     "Le Leschanteigne est voué à disparaître après les années 20100.",
     "La capitale du Leschanteigne est la ville de Stein, ce pays est situé à côté de l'Espagne.",
     "Leschanteigne est un petit pays situé au cœur de l'Europe, niché entre les montagnes enneigées et les vastes forêts.",
@@ -110,7 +111,7 @@ from llama_index.llms.openai import OpenAI
 from llama_index.core import Document, VectorStoreIndex
 ```
 
-#### Véctorisation des documents
+### Véctorisation des documents
 
 
 ```python
@@ -122,7 +123,7 @@ index = VectorStoreIndex.from_documents(documents)
 
 Dans un premier temps, il est nécessaire de vectoriser toutes les phrases afin de sauvegarder le texte et le vecteur de chaque phrase dans une base vectorielle.
 
-> Voici le Json de la requête envoyée par LlamaIndex à OpenAI : 
+Voici le Json de la requête envoyée par LlamaIndex à OpenAI : 
 
 ```json
 {
@@ -146,13 +147,9 @@ Dans un premier temps, il est nécessaire de vectoriser toutes les phrases afin 
 }
 ```
 
-```
-
-```
 
 
-
-> On peut noter que l'envoie des documents se fait par batch de données (comme le permet OpenAI) et le modèle d'embeddings utilisé par défaut est le **text-embedding-ada-002**.
+On peut noter que l'envoie des documents se fait par batch de données (comme le permet OpenAI) et le modèle d'embeddings utilisé par défaut est le **text-embedding-ada-002**.
  
 
 ### Requête simple
@@ -174,7 +171,7 @@ print(response.response)
 Deux appels sont réalisés vers OpenAI : 
 
 
-> La première requête interroge le modèle d'embeddings, pour vectoriser la question de l'utilisateur. Ce vecteur sera utilisé par LlamaIndex pour le comparer aux autres vecteurs dans la base vectorielle afin d'extraire un certain nombre de documents en lien avec la question.
+La première requête interroge le modèle d'embeddings, pour vectoriser la question de l'utilisateur. Ce vecteur sera utilisé par LlamaIndex pour le comparer aux autres vecteurs dans la base vectorielle afin d'extraire un certain nombre de documents en lien avec la question.
 
 ```json
 {
@@ -188,10 +185,7 @@ Deux appels sont réalisés vers OpenAI :
 
 
 
-```
-```
-
-> La deuxième requête, compile les vecteurs qui ont été extraits depuis la base vectorielle (qui contient les documents) dans un format/modèle défini par défaut et envoie le tout au LLM sous le format suivant : 
+La deuxième requête, compile les vecteurs qui ont été extraits depuis la base vectorielle (qui contient les documents) dans un format/modèle défini par défaut et envoie le tout au LLM sous le format suivant : 
 
 ```json
 {
@@ -213,20 +207,12 @@ Deux appels sont réalisés vers OpenAI :
 
 
 
-```
-```
-
 On peut noter plusieurs choses à partir de cette requête :
 - L'appel est fait vers le endpoint de [Chat Completion](https://platform.openai.com/docs/guides/text-generation/chat-completions-api) d'OpenAI
 - Un prompt système par défaut à été fourni par LlamaIndex
 - LlamaIndex reformule la requête de façon automatique pour la faire correspondre à OpenAI.
 - On peut voir que seulement deux documents (par défaut) ont été inclus dans la requête.
 - Un format/modèle par défaut est utilisé pour intégrer les documents extraits de la base vectorielle.. 
-
-
-```
-
-```
 
 
 ### Requête avancée
@@ -247,7 +233,7 @@ print(response.response)
 
 Cette fois-ci deux appels sont réalisés également :
 
-> Un premier appel comme à son habitude pour obtenir les embeddings de notre demande :
+Un premier appel comme à son habitude pour obtenir les embeddings de notre demande :
 
 ```json
 {
@@ -260,7 +246,7 @@ Cette fois-ci deux appels sont réalisés également :
 ```
 <br>
 
-> Un deuxième appel similaire à celui dans la requête simple avec les documents qui sont inclus dans la requête envoyée au LLM :
+Un deuxième appel similaire à celui dans la requête simple avec les documents qui sont inclus dans la requête envoyée au LLM :
 
 
 ```json
@@ -281,11 +267,8 @@ Cette fois-ci deux appels sont réalisés également :
 }
 ```
 
-> Le format/modèle du message système par défaut est plus détaillé que dans celui de la requête simple.
+Le format/modèle du message système par défaut est plus détaillé que dans celui de la requête simple.
 
-
-```
-```
 
 A la différence d'une requête simple, ici l'avantage c'est de pouvoir garder l'historique et l'utiliser dans les prochains appels. Si on repète un appel, LlamaIndex utilise des élements de l'historique comme suit : 
 
@@ -299,7 +282,7 @@ print(response.response)
     
 
 Trois appels sont réalisés cette fois-ci : 
-> Le premier appel consiste a pour but de reformuler la question de l'utilisateur en fonction de l'historique et de l'utiliser pour extraire les documents dans la base vectorielle.
+Le premier appel consiste a pour but de reformuler la question de l'utilisateur en fonction de l'historique et de l'utiliser pour extraire les documents dans la base vectorielle.
 
 ```json
 {
@@ -315,7 +298,7 @@ Trois appels sont réalisés cette fois-ci :
 }
 ```
 
-> Le deuxième appel est fait pour obtenir les embeddings de la réponse générée par le premier appel : 
+Le deuxième appel est fait pour obtenir les embeddings de la réponse générée par le premier appel : 
 
 ```json
 
@@ -330,7 +313,7 @@ Trois appels sont réalisés cette fois-ci :
 ```
 
 
-> La troisième requête est donc celle avec les documents extraits depuis la base vectorielle et l'historique de la conversation.
+La troisième requête est donc celle avec les documents extraits depuis la base vectorielle et l'historique de la conversation.
 
 ```json
 {
@@ -398,8 +381,8 @@ embeddings = OpenAIEmbeddings()
 vector = FAISS.from_documents(docs, embeddings)
 ```
 
+Un seul appel est envoyé à OpenAI avec les phrases à vectoriser. Langchain n'envoi pas le texte mais l'identifiant de chaque token, pour chaque phrase :
 
-> Un seul appel est envoyé à OpenAI avec les phrases à vectoriser. Langchain n'envoi pas le texte mais l'identifiant de chaque token, pour chaque phrase :
 ```json
 {
     "encoding_format": "base64",
@@ -426,11 +409,12 @@ vector = FAISS.from_documents(docs, embeddings)
             13
         ],
         [...]
+    ]
 }
 
 ```
 
-> L'envoi est fait par batch, exactement de la même façon que LlamaIndex.
+L'envoi est fait par batch, exactement de la même façon que LlamaIndex.
 
 PS: La requête a été tronquée, elle est disponible en entier ici : [gist](https://gist.github.com/anas-rabhi/c120ae99f07354a3849d0b0056fd1623).
 
@@ -462,15 +446,14 @@ retrieval_chain = create_retrieval_chain(retriever, document_chain)
 # Utiliser la chaine pour requêter la chaine de RAG
 response = retrieval_chain.invoke({"input": "c'est quoi la capitale du Leschanteigne?"})
 print(response["answer"])
-
 ```
 
     La capitale du Leschanteigne est la ville de Stein.
     
 
-> Deux appels sont réalisés, le premier pour obtenir les embeddings similaires à celui réalisé dans la partie de LlamaIndex.
+Deux appels sont réalisés, le premier pour obtenir les embeddings similaires à celui réalisé dans la partie de LlamaIndex.
 
-> Le deuxième appel contient donc la demande de l'utilisateur ainsi que les différents documents extraits depuis la base vectorielle :
+Le deuxième appel contient donc la demande de l'utilisateur ainsi que les différents documents extraits depuis la base vectorielle :
 
 ```json
 {
@@ -488,7 +471,7 @@ print(response["answer"])
 
 ```
 
-> Le modèle fourni par Langchain est différent que celui fourni par LlamaIndex, mais la réponse reste correcte. Par defaut, Langchain fixe le nombre de documents à inclure dans le prompt à 4. 
+Le modèle fourni par Langchain est différent que celui fourni par LlamaIndex, mais la réponse reste correcte. Par defaut, Langchain fixe le nombre de documents à inclure dans le prompt à 4. 
 
 ### Requête avancée
 
@@ -538,9 +521,9 @@ print(response['answer'])
     En plus du Foot-Ballett, Leschanteigne est également célèbre pour son artisanat traditionnel, notamment la poterie fine, les tapis tissés à la main et les sculptures sur bois élaborées. Le pays offre donc une variété d'activités artistiques et artisanales à découvrir. De plus, Leschanteigne abrite des paysages à couper le souffle, des cascades de bâtiments aux sommets enneigés, où paissent les troupeaux de moutons, offrant ainsi des possibilités de randonnées et d'exploration de la nature.
     
 
-> Trois requêtes sont envoyés à l'API d'OpenAI.
+Trois requêtes sont envoyés à l'API d'OpenAI.
 
-> La première requête concerne la réécriture de la demande de l'utilisateur pour l'adapter à l'extraction de documents depuis la base vectorielle :
+La première requête concerne la réécriture de la demande de l'utilisateur pour l'adapter à l'extraction de documents depuis la base vectorielle :
 
 ```json
 {
@@ -570,9 +553,9 @@ print(response['answer'])
 
 ```
 
-> Le deuxième appel permet d'obtenir les embeddings (comme pour les précédents exemples) de la demande de l'utilisateur réécrite obtenue à partir du premier appel.
+Le deuxième appel permet d'obtenir les embeddings (comme pour les précédents exemples) de la demande de l'utilisateur réécrite obtenue à partir du premier appel.
 
-> La troisième requête contient les documents extraits depuis la base vectorielle, l'historique et la demande initiale de l'utilisateur  : 
+La troisième requête contient les documents extraits depuis la base vectorielle, l'historique et la demande initiale de l'utilisateur  : 
 
 
 
