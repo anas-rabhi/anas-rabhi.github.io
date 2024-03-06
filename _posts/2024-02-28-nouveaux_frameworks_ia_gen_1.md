@@ -10,26 +10,25 @@ mermaid: true
 
 ## Introduction
 
-De nouveaux frameworks émergent régulièrement dans le domaine de l'IA Générative. Ces frameworks visent souvent à faciliter le développement, le déploiement et le monitoring des applications autour de l'IA Générative. 
-Les fonctionnalités proposés par ces frameworks peuvent être utilisés pour le finetunning de LLM, pour la construction d’architecture RAG, 
+Les frameworks open-source ont toujours été cruciaux pour les data scientists, avec des outils tels que pandas pour la manipulation de données et scikit-learn pour la modélisation. Récemment, de nouveaux frameworks ont émergé dans le domaine de l'IA générative (et c'est pas fini...), visant à faciliter le développement, le déploiement et le monitoring des applications d'IA générative.
+Ces frameworks offrent des fonctionnalités utiles pour le finetunning de LLM, pour la construction d’architecture RAG, 
 pour de l’amélioration de prompt ou pour un simple appel API vers un de nos LLM préférés avec des paramètres par défaut déjà en place (plutôt simple non ? 🙂).
 
 
 <br>
 <br>
 
-Ces frameworks, qui fonctionnent un peu comme des boîtes noires, peuvent être difficiles à analyser pour comprendre ce qui se passe à l'intérieur, et surtout comment ils interagissent avec les LLM. Cependant, ces frameworks peuvent être très utiles au développement d'applications à l'aide de certaines briques existantes et qui permettent d'accélérer le développement. Et même, parfois les fonctionnalités fournies par ces frameworks peuvent être beaucoup plus efficaces que ce qu'on fait nous en partant de zéro. C'est à se demander comment ils s’y prennent. C'est la question que Hamel Husain s'est posée : comment ces frameworks interagissent-ils avec les APIs et est-ce qu'ils apportent une réelle valeur ajoutée ou simplement de la [complexité accidentelle](https://fr.wikipedia.org/wiki/Complexit%C3%A9_accidentelle).
+Ces frameworks, qui fonctionnent un peu comme des boîtes noires, peuvent être difficiles à analyser pour comprendre ce qui se passe à l'intérieur, et surtout comment ils interagissent avec les LLM. Cependant, ces frameworks peuvent être très utiles au développement d'applications à l'aide de certaines briques existantes et qui permettent d'accélérer le développement. De plus, les fonctionnalités proposées par ces frameworks peuvent parfois être plus efficaces que celles développées à partir de zéro. On peut parfois se demander comment ces frameworks parviennent à de tels résultats. C'est la question que Hamel Husain s'est posée : Comment ces frameworks interagissent-ils avec les APIs et apportent-ils une valeur ajoutée réelle ou simplement de la [complexité accidentelle](https://fr.wikipedia.org/wiki/Complexit%C3%A9_accidentelle).
 
 
-En m’inspirant du travail fait par Hamel Husain, j’avais quelques frameworks que je voulais explorer et qui n’ont pas été traités ou très peu dans l’article en question ⇒ 
-[Blog](https://hamel.dev/blog/posts/prompt) 🙂
+En m’inspirant du travail fait par Hamel Husain,  j'ai quelques frameworks que je souhaitais explorer et qui n'ont pas été abordés ou peu traités dans l'article en question ⇒ [Blog](https://hamel.dev/blog/posts/prompt) 🙂
 
 <br>
 <br>
 
 Dans cette partie je vais m'attarder surtout sur le sujets de RAG pour les frameworks suivants:
-- LlamaIndex qui est très connu pour simplifier la création d'architectures RAG.
-- Langchain très populaire dans la création d'applications autour de l'IA Générative en général.
+- LlamaIndex, très connu pour simplifier la création d'architectures RAG.
+- Langchain, très populaire dans la création d'applications autour de l'IA générative en général.
 <br>
 
 
