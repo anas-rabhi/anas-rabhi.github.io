@@ -1,6 +1,6 @@
 ---
 title: Les nouveaux frameworks de l'IA Générative, Partie 1
-date: 2024-02-17 11:30:00 +0800
+date: 2024-02-25 11:30:00 +0800
 categories: [Blog, LLM]
 tags: [LLM]
 pin: true
