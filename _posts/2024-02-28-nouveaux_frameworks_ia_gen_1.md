@@ -10,8 +10,6 @@ mermaid: true
 
 ## Introduction
 
-Comment marchent ces nouveaux Frameworks d'IA générative : 
-
 De nouveaux frameworks émergent régulièrement dans le domaine de l'IA Générative. Ces frameworks visent souvent à faciliter le développement, le déploiement et le monitoring des applications autour de l'IA Générative. 
 Les fonctionnalités proposés par ces frameworks peuvent être utilisés pour le finetunning de LLM, pour la construction d’architecture RAG, 
 pour de l’amélioration de prompt ou pour un simple appel API vers un de nos LLM préférés avec des paramètres par défaut déjà en place (plutôt simple non ? 🙂).
