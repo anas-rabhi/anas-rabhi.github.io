@@ -6,19 +6,14 @@ order: 4
 
 <div style="text-align: justify">
 
-<p>Hello, moi c'est Anas 🙌 </p>
+<p>Hello, I am Anas 🙌 </p>
 
 <p>
-Je suis data scientist chez PredExIA et je travail principalement sur des problématiques liées aux données textuelles, temporelles et tabulaires. 
-Je suis passioné par l'intelligence artificielle et plus particulièrement par le développement de modèles de machine learning et de leur mise en place afin d'apporter de la valeur aux métiers.
+Characterized by self-motivation and a strong work ethic, I learn quickly and adapt seamlessly to new environments and challenges.
+I enjoy working on topics related to textual, temporal, and tabular data. My focus is primarily on the development of machine learning models and their implementation to enhance various business sectors. 😀
 </p>
 
 <p>
-J'ai travaillé dans la détection de fraude dans le secteur de la santé ou encore dans la création de modèles de language dans différents métiers.
-</p>
-
-<p>
-Je travail actuellement sur les LLM et plus généralement l'IA Générative afin d'aider les personnes dans leur travail et faciliter la productivité.
-</p>
+Currently working on Large Language Models (LLMs) and more broadly on Generative AI to assist individuals in their work and boost productivity.</p>
 
 </div>
