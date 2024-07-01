@@ -68,7 +68,7 @@ requests.post('https://httpbin.org/post',
 
 
 
-## Creation of a data sample
+## Create a data sample
 
 The goal is to create textual data to use it in RAG. The data is very simple. In reality, the documents are often very long, and LLMs have difficulty extracting the information correctly from all these documents at once.
 
@@ -110,7 +110,7 @@ from llama_index.llms.openai import OpenAI
 from llama_index.core import Document, VectorStoreIndex
 ```
 
-### Vectorization of documents
+### Document vectorization
 
 
 ```python
@@ -368,7 +368,7 @@ Unlike LlamaIndex, when vectorizing documents, it is necessary to choose the typ
 # Creation of the document list
 docs = [Document(page_content=t) for t in data]
 
-# Vectorization of documents
+# Document vectorization
 embeddings = OpenAIEmbeddings()
 vector = FAISS.from_documents(docs, embeddings)
 ```
