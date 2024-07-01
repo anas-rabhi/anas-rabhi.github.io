@@ -14,13 +14,13 @@ Open-source frameworks have always been crucial for data scientists, with tools 
 These frameworks offer useful features for fine-tuning LLM, for building RAG architecture, for improving prompts, or for simply making an API call to one of our favorite LLMs with default parameters already in place (pretty simple, right? 🙂).
 
 <br>
-<br>
 
 These frameworks, which operate somewhat like black boxes, can be challenging to analyze to understand what's happening inside, especially how they interact with LLMs. However, these frameworks can be very helpful in developing applications using existing building blocks and speeding up development. Furthermore, the features offered by these frameworks can sometimes be more effective than those developed from scratch. One may wonder at times how these frameworks are able to achieve such results. This is the question Hamel Husain has asked: How do these frameworks interact with APIs and provide real added value or simply [accidental complexity](https://fr.wikipedia.org/wiki/Complexit%C3%A9_accidentelle)?
 
 
 Drawing inspiration from the work done by Hamel Husain, There are some frameworks that I wanted to explore and that have not been addressed or only briefly covered in Hamel's article ⇒ [Blog](https://hamel.dev/blog/posts/prompt) 🙂
 
+<br>
 
 I may be repeating myself, but one must keep in mind that these frameworks are very useful tools for iterating quickly and exploring new ideas. However, they sometimes provide useless abstractions and can be very limiting as the pipeline becomes complex. Octomind wrote a nice article about this here : [Article](https://www.octomind.dev/blog/why-we-no-longer-use-langchain-for-building-our-ai-agents)  
 
