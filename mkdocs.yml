@@ -84,3 +84,14 @@ plugins:
 hooks:
   - material/overrides/hooks/shortcodes.py
   - material/overrides/hooks/translations.py
+
+# Additional configuration
+extra:
+  analytics:
+    provider: google
+    property: <ANALYTICS_KEY>
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/anas-rabhi
+    - icon: fontawesome/brands/x-twitter
+      link: https://x.com/anas9r
