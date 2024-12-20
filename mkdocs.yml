@@ -3,8 +3,7 @@ site_url: https://anasr.com
 site_author: Anas Rabhi
 site_description: >-
   Articles techniques autour de l'intelligence artificielle
-theme:
-  name: material
+
 
 # Repository
 repo_name: anas-rabhi/anasr
@@ -17,7 +16,6 @@ copyright: Copyright &copy; 2024 - 2025 Anas Rabhi
 # Configuration
 theme:
   name: material
-  custom_dir: material/overrides
   features:
     - announce.dismiss
     - content.action.edit
@@ -82,10 +80,10 @@ plugins:
   - minify:
       minify_html: true
 
-# Hooks
-hooks:
-  - material/overrides/hooks/shortcodes.py
-  - material/overrides/hooks/translations.py
+# # Hooks
+# hooks:
+#   - material/hooks/shortcodes.py
+#   - material/hooks/translations.py
 
 # Additional configuration
 extra:
@@ -99,7 +97,6 @@ extra:
       link: https://x.com/anas9r
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/anasrabhi/
-
 
 
 # Extensions
