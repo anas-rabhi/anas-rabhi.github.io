@@ -1,25 +1,35 @@
-# Bienvenue ! 
+# Bienvenue !
 
-Je suis Anas, consultant, data scientist dans ce qui entoure l'intelligence artificielle. J'aide les entreprises à utiliser leurs données pour prendre des décisions ou optimiser leurs processus afin de gagner en productivité et bien évidemment augmenter leur bénéfices. Je donne également des formations en IA et des audits pour aider les entreprises à s'acculturer à l'IA.
+Je m'appelle Anas, et je suis consultant data scientist avec une spécialisation en intelligence artificielle. Mon objectif est d'accompagner les entreprises dans l'exploitation de leurs données pour :
 
-Dans ce blog j'écris principalement sur les sujets d'IA générative, les différents méthodes existantes et comment améliorer les solutions   existantes.
+- Améliorer leurs décisions stratégiques
+- Optimiser leurs processus opérationnels
+- Augmenter leur productivité et leurs profits
 
+Transmettre mes connaissances est une véritable passion, et c'est pourquoi j'aime animer des sessions de formation et réaliser des audits pour optimiser l'utilisation de l'IA dans les entreprises.
 
-Quelques exemples de projets réalisés : 
-- Assistant IA pour un site d'ecommerce qui a permis de répondre à des questions produits pour faciliter la vente 
-resultat : 25% de ventes supplémentaires
-- Agent IA pour l'écriture de réponses à appel d'offre
-resultat : 75% de temps économisé avec un ROI de 300%
-- Agent IA pour l'extraction de données de differents types de documents
-resultat : 90% de données extraites avec une précision de 95% avec un temps de traitement divisé par 2.
-- Assistant IA pour une usine de production pour trouver les solutions des erreurs affichées sur les machines
-resultat : 70% de temps économisé
-- Mise en place 
-- Mise en place d'un agent IA pour l'écriture de tests unitaires à partir du code source
-- Mise en place d'une IA souveraine spécialisées sur les données spatiales pour une entreprise dans le domaine du spatial
-- 
+Dans ce blog, je partage des articles sur l'IA, en explorant les méthodes actuelles et en proposant des pistes d'amélioration pour les solutions existantes. Je travaille actuellement sur des problématiques de RAG avancée, ce qu'on appelle l'agentic RAG et des agents IA. 
 
 
+Quelques exemples de projets réalisés :
 
-J'aime beaucoup transmettre et tout naturellement donner des formations donne également des formations en IA et des audits pour aider les entreprises à utiliser les IA de manière plus efficace.
+- **Assistant IA pour un site d'e-commerce** : Cet assistant a permis de répondre aux questions sur les produits, facilitant ainsi la vente.  
+  **Résultat** : Amélioration de la qualité de service client.
+
+- **Agent IA pour l'écriture de réponses à des appels d'offres** : Cet agent a automatisé la rédaction des réponses, réduisant considérablement le temps nécessaire.  
+  **Résultat** : 75 % de temps économisé avec un retour sur investissement (ROI) de 300 %.
+
+- **Agent IA pour l'extraction de données** : Développé pour extraire des données de différents types de documents avec une grande précision.  
+  **Résultat** : le temps de traitement a été divisé par deux.
+
+- **Assistant IA pour une usine de production** : Aide à identifier et résoudre les erreurs affichées sur les machines.  
+  **Résultat** : 60% de temps économisé.
+
+- **Agent IA pour l'écriture de tests unitaires** : Automatisation de la création de tests unitaires à partir du code source.
+
+- **IA souveraine spécialisée dans les données spatiales** : Mise en place d'un RAG (Retrieval-Augmented Generation) sur des données à haute confidentialité.
+
+- **Entraîneur IA vocal pour les commerciaux en assurance santé** : Cet outil a permis de former les commerciaux deux fois plus rapidement.
+
+
 
