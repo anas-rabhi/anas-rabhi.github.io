@@ -1,8 +1,8 @@
 # Bienvenue ! 
 
-Je suis Anas, consultant, data scientist dans ce qui entoure l'intelligence artificielle. J'aide les entreprises à utiliser leurs données pour prendre des décisions ou optimiser leurs processus afin de gagner en productivité et bien évidemment augmenter leur bénéfices. Je donne également des formations en IA et des audits pour aider les entreprises à s'acculturer à l'IA.
+Je suis Anas, consultant, data scientist dans ce qui entoure l'intelligence artificielle. J'aide les entreprises à utiliser leurs données pour prendre des décisions ou optimiser leurs processus afin de gagner en productivité et bien évidemment augmenter leur bénéfices.
 
-Dans ce blog j'écris principalement sur les sujets d'IA générative, les différents méthodes existantes et comment améliorer les solutions   existantes.
+Dans ce blog j'écris principalement sur les sujets d'IA, les différents méthodes existantes et comment améliorer les solutions existantes.
 
 
 Quelques exemples de projets réalisés : 
@@ -17,7 +17,6 @@ resultat : 70% de temps économisé
 - Mise en place 
 - Mise en place d'un agent IA pour l'écriture de tests unitaires à partir du code source
 - Mise en place d'une IA souveraine spécialisées sur les données spatiales pour une entreprise dans le domaine du spatial
-- 
 
 
 

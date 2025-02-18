@@ -75,7 +75,7 @@ plugins:
   - blog:
       post_date_format: dd/MM/yyyy
       post_url_format: "{date}/{slug}"
-  - search:
+  - gh:
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
   - minify:
       minify_html: true
