@@ -1,4 +1,4 @@
-site_name: AnasR
+site_name: Intelligence artificielle
 site_url: https://ianas.fr
 site_author: Anas Rabhi
 site_description: >-
@@ -6,8 +6,8 @@ site_description: >-
 
 
 # Repository
-repo_name: anas-rabhi/anasr
-repo_url: https://github.com/anas-rabhi/anasr
+repo_name: anas-rabhi/anas-rabhi.github.io
+repo_url: https://github.com/anas-rabhi/anas-rabhi.github.io
 
 # Copyright
 copyright: Copyright &copy; 2024 - 2025 Anas Rabhi
@@ -89,7 +89,7 @@ plugins:
 extra:
   analytics:
     provider: google
-    property: <ANALYTICS_KEY>
+    property: G-03FZVX8L64
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/anas-rabhi
