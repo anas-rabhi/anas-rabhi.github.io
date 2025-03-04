@@ -2,7 +2,8 @@ name: ci
 on:
   push:
     branches:
-      - new_site 
+      - main 
+      - master 
 permissions:
   contents: write
 jobs:
@@ -24,5 +25,5 @@ jobs:
           path: .cache 
           restore-keys: |
             mkdocs-material-
-      - run: pip install mkdocs-material 
+      - run: pip install mkdocs-material mkdocs-minify-plugin
       - run: mkdocs gh-deploy --force

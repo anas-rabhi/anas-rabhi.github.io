@@ -1,5 +1,5 @@
 site_name: AnasR
-site_url: https://anasr.com
+site_url: https://ianas.fr
 site_author: Anas Rabhi
 site_description: >-
   Articles techniques autour de l'intelligence artificielle
@@ -152,7 +152,7 @@ markdown_extensions:
   # Page tree
 nav:
   - Accueil: index.md
-  - Notebooks:
-    - notebooks/index.md
+  # - Notebooks:
+  #   - notebooks/index.md
   - Blog:
     - blog/index.md
