@@ -152,7 +152,7 @@ markdown_extensions:
   # Page tree
 nav:
   - Accueil: index.md
-  # - Notebooks:
-  #   - notebooks/index.md
+  - Notebooks:
+    - notebooks/index.md
   - Blog:
     - blog/index.md
