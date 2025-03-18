@@ -42,41 +42,55 @@ Attention, ici je parle bien des IA comme ChatGPT dans leur forme la plus basiqu
 
 Même si ChatGPT est impressionnant et très utile, il est important de connaître ses limites pour l'utiliser correctement au quotidien. Voici quelques cas concrets où cette technologie atteint rapidement ses limites :
 
-1. **Calculs ou raisonnements mathématiques complexes**: Si vous demandez à ChatGPT de résoudre une équation complexe ou d'effectuer un calcul précis, il peut facilement se tromper ou donner une réponse approximative. Il est préférable d'utiliser une calculatrice ou un logiciel spécialisé dans ce cas.
 
-   Exemple à éviter :
-   « Combien font exactement 3456 multiplié par 789 ? »
-   ChatGPT va probablement essayer de répondre, mais la réponse risque fortement d'être fausse ou imprécise. Il ne fait pas réellement de calcul, il génère simplement une réponse probable selon ses données d'entraînement.
+**Calculs ou raisonnements mathématiques complexes**
 
-2. **Informations récentes ou actualisées**: Dans sa forme classique, ChatGPT n'est pas à jour sur les événements récents (comme les actualités ou les résultats sportifs). Si vous souhaitez une information récente et exacte, mieux vaut vérifier directement sur une source fiable en ligne.
+Si vous demandez à ChatGPT de résoudre une équation complexe ou d'effectuer un calcul précis, il peut facilement se tromper ou donner une réponse approximative. Il est préférable d'utiliser une calculatrice ou un logiciel spécialisé dans ce cas.
 
-   Exemple à éviter :
-   « Quel est le résultat du match d'hier soir entre la France et l'Allemagne ? »
-   ChatGPT n'a aucune information en temps réel et risque d'inventer un résultat ou de donner un résultat ancien.
+>Exemple à éviter :
+>« Combien font exactement 3456 multiplié par 789 ? »
+>ChatGPT va probablement essayer de répondre, mais la réponse risque fortement d'être fausse ou imprécise. Il ne fait pas 
+>réellement de calcul, il génère simplement une réponse probable selon ses données d'entraînement.
 
-3. **Conseils médicaux, juridiques ou financiers précis**: ChatGPT donne souvent l'impression d'avoir des connaissances solides dans ces domaines, mais ce n'est pas un véritable expert. Pour des questions importantes ou sensibles (santé, droit, argent), il est toujours préférable de consulter un vrai professionnel.
+**Informations récentes ou actualisées**
 
-   Exemple à éviter :
-   « Quel médicament dois-je prendre contre mes migraines fréquentes ? »
-   ChatGPT pourrait vous proposer une réponse qui semble logique, mais il n'est pas médecin. Seul un professionnel de santé peut vous conseiller efficacement.
+Dans sa forme classique, ChatGPT n'est pas à jour sur les événements récents (comme les actualités ou les résultats sportifs). Si vous souhaitez une information récente et exacte, mieux vaut vérifier directement sur une source fiable en ligne.
 
-4. **Compréhension du contexte subtil**: Parfois, ChatGPT ne comprend pas bien le contexte ou les subtilités de votre demande. Il peut répondre de manière étrange, hors sujet ou répétitive. Dans ces cas-là, il faut souvent reformuler votre question ou préciser davantage votre demande.
+>Exemple à éviter :
+>« Quel est le résultat du match d'hier soir entre la France et l'Allemagne ? »
+>ChatGPT n'a aucune information en temps réel et risque d'inventer un résultat ou de donner un résultat ancien.
 
-   Exemple à éviter :
-   « Est-ce que juin est un mois qui se situe entre février et septembre ? »
-   Cette question demande un repère temporel précis. ChatGPT peut facilement se tromper car il ne possède aucune notion réelle du temps : il ne fait que produire du texte en fonction de ce qu'il a déjà vu auparavant.
+**Conseils médicaux, juridiques ou financiers précis**
 
-5. **Sources fiables et vérification des faits**: ChatGPT ne cite pas ses sources et peut donc inventer ou mélanger des informations sans que vous puissiez facilement vérifier leur origine. Pour des recherches sérieuses, pensez toujours à vérifier les informations ailleurs.
+ChatGPT donne souvent l'impression d'avoir des connaissances solides dans ces domaines, mais ce n'est pas un véritable expert. Pour des questions importantes ou sensibles (santé, droit, argent), il est toujours préférable de consulter un vrai professionnel.
 
-   Exemple à éviter :
-   « Quelle est la source officielle du chiffre que tu viens de donner ? »
-   ChatGPT ne pourra pas vous fournir de source fiable, car il ne fait que générer du texte sans accès direct à ses sources d'information.
+>Exemple à éviter :
+>« Quel médicament dois-je prendre contre mes migraines fréquentes ? »
+>ChatGPT pourrait vous proposer une réponse qui semble logique, mais il n'est pas médecin. Seul un professionnel de santé peut vous >conseiller efficacement.
 
-6. **Raisonnement logique ou tâches précises de comptage**: ChatGPT peut sembler capable de comprendre et de répondre à des demandes simples impliquant un raisonnement logique ou un comptage précis. Mais en réalité, il ne raisonne pas véritablement et peut se tromper facilement sur ce genre de tâche.
+**Compréhension du contexte subtil**
 
-   Exemple à éviter :
-   « Combien de lettres y a-t-il dans le mot "ordinateur" ? »
-   ChatGPT pourrait parfois répondre correctement, mais il risque aussi de se tromper facilement car il ne compte pas réellement les lettres. Il ne fait que générer une réponse probable selon ses données d'entraînement.
+Parfois, ChatGPT ne comprend pas bien le contexte ou les subtilités de votre demande. Il peut répondre de manière étrange, hors sujet ou répétitive. Dans ces cas-là, il faut souvent reformuler votre question ou préciser davantage votre demande.
+
+>Exemple à éviter :
+>« Est-ce que juin est un mois qui se situe entre février et septembre ? »
+>Cette question demande un repère temporel précis. ChatGPT peut facilement se tromper car il ne possède aucune notion réelle du >temps : il ne fait que produire du texte en fonction de ce qu'il a déjà vu auparavant.
+
+**Sources fiables et vérification des faits**
+
+ChatGPT ne cite pas ses sources et peut donc inventer ou mélanger des informations sans que vous puissiez facilement vérifier leur origine. Pour des recherches sérieuses, pensez toujours à vérifier les informations ailleurs.
+
+>Exemple à éviter :
+>« Quelle est la source officielle du chiffre que tu viens de donner ? »
+>ChatGPT ne pourra pas vous fournir de source fiable, car il ne fait que générer du texte sans accès direct à ses sources >d'information.
+
+**Raisonnement logique ou tâches précises de comptage**
+
+ChatGPT peut sembler capable de comprendre et de répondre à des demandes simples impliquant un raisonnement logique ou un comptage précis. Mais en réalité, il ne raisonne pas véritablement et peut se tromper facilement sur ce genre de tâche.
+
+>Exemple à éviter :
+>« Combien de lettres y a-t-il dans le mot "ordinateur" ? »
+>ChatGPT pourrait parfois répondre correctement, mais il risque aussi de se tromper facilement car il ne compte pas réellement les >lettres. Il ne fait que générer une réponse probable selon ses données d'entraînement.
 
 Ces exemples montrent clairement les limites actuelles d'une IA comme ChatGPT. Même si elle donne souvent l'impression d'avoir une certaine logique, elle ne raisonne pas vraiment et ne comprend pas réellement ce qu'elle écrit. C'est pourquoi il est essentiel de garder ces limites en tête lorsque vous utilisez cet outil au quotidien.
 
