@@ -28,6 +28,8 @@ Parmi les exemples que je viens de citer, il y en a un qu'il vaut mieux éviter 
 
 Dans leur forme actuelle, les modèles d'intelligence artificielle comme ChatGPT ne sont pas conçus pour réellement comprendre les raisonnements mathématiques et présentent également d'autres limites. C'est pourquoi, pour utiliser efficacement ce type d'IA, il est essentiel de bien en connaître les limites. 
 
+<!-- more -->
+
 ## Comprendre l'IA derrière ChatGPT
 
 À la base, ChatGPT utilise ce qu'on appelle un modèle d'intelligence artificielle (IA). Plus précisément, il s'agit d'un grand modèle de langage (en anglais : Large Language Model ou LLM). En résumé, c'est un programme mathématique qui a été entraîné en analysant des milliards de textes différents. Son rôle est assez simple : il reçoit un texte en entrée, l'analyse grâce à ses connaissances internes, puis génère un texte en sortie.
@@ -102,4 +104,8 @@ C'est exactement ce type d'IA, capable d'utiliser des outils externes pour compl
 
 Ainsi, en associant intelligemment les capacités de ChatGPT à différents outils spécialisés, on ouvre la porte à une IA encore plus fiable, performante et adaptée à nos besoins quotidiens.
 
-Enfin, gardons à l’esprit que l’IA repose sur des méthodes statistiques : elle comportera donc toujours une part d’erreurs et certaines limites difficiles à surmonter complètement. La meilleure manière de l'utiliser reste donc celle où l'on peut facilement vérifier les réponses fournies par ChatGPT avant de les valider, tout en gagnant un temps précieux au quotidien
+Enfin, gardons à l’esprit que l’IA repose sur des méthodes statistiques : elle comportera donc toujours une part d’erreurs et certaines limites difficiles à surmonter complètement. La meilleure manière de l'utiliser reste donc celle où l'on peut facilement vérifier les réponses fournies par ChatGPT avant de les valider, tout en gagnant un temps précieux au quotidien.
+
+---------
+
+Si ces réflexions vous parlent et que vous avez des questions ou juste envie de discuter de vos propres challenges, n'hésitez pas à m'écrire à anas0rabhi@gmail.com, j'aime bien échanger sur ces sujets !
