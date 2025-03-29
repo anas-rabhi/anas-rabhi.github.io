@@ -29,6 +29,8 @@ Lorsqu'on cherche à améliorer une application IA, qu'il s'agisse d'un système
 
 Pourtant, céder à cette "course aux outils" sans une compréhension claire du problème à résoudre peut s'avérer contre-productif. L'approche la plus pragmatique, et souvent la plus efficace sur le long terme, repose moins sur l'accumulation de nouvelles briques technologiques que sur une **analyse rigoureuse des erreurs** et l'**amélioration continue** de l'architecture existante.
 
+<!-- more -->
+
 ### Décortiquer les Erreurs d'un RAG : Où Chercher ?
 
 Prenons l'exemple concret d'un système RAG, très populaire aujourd'hui. Lorsqu'il fournit une réponse incorrecte ou décevante, les causes potentielles sont nombreuses et variées :
@@ -79,3 +81,7 @@ En résumé, plutôt que de céder systématiquement à l'attrait du dernier out
 4.  **Monitorer** en continu et intégrer les retours.
 
 C'est souvent la voie la plus directe vers des applications IA (RAG, agents) réellement performantes, fiables et utiles au quotidien.
+
+---------
+
+Si ces réflexions vous parlent et que vous avez des questions ou juste envie de discuter de vos propres challenges, n'hésitez pas à m'écrire à anas0rabhi@gmail.com, j'aime bien échanger sur ces sujets !
