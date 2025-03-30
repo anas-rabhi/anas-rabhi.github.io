@@ -23,7 +23,7 @@ mermaid: true
 
 Souvent, pour améliorer une application d'IA comme un RAG ou un agent, il est plus judicieux de se concentrer sur l'analyse fine des erreurs plutôt que de céder à la tentation d'ajouter systématiquement de nouveaux outils. Voyons pourquoi cette approche pragmatique est souvent la plus efficace.
 
-### La Course aux Outils : Une Fausse Bonne Idée ?
+### La course aux outils : Une fausse bonne idée ?
 
 Lorsqu'on cherche à améliorer une application IA, qu'il s'agisse d'un système RAG (Retrieval-Augmented Generation) ou d'un agent conversationnel plus complexe, l'écosystème technologique nous présente une multitude d'outils. Frameworks, bases de données vectorielles, modèles d'embedding, techniques de réécriture de prompt... chacun promettant d'améliorer significativement les performances.
 
@@ -31,7 +31,7 @@ Pourtant, céder à cette "course aux outils" sans une compréhension claire du 
 
 <!-- more -->
 
-### Décortiquer les Erreurs d'un RAG : Où Chercher ?
+### Décortiquer les erreurs d'un RAG : Où chercher ?
 
 Prenons l'exemple concret d'un système RAG, très populaire aujourd'hui. Lorsqu'il fournit une réponse incorrecte ou décevante, les causes potentielles sont nombreuses et variées :
 
@@ -42,19 +42,19 @@ Prenons l'exemple concret d'un système RAG, très populaire aujourd'hui. Lorsqu
 
 Face à une erreur, ajouter un nouvel outil (par exemple, un module de "re-ranking") sans avoir identifié laquelle de ces étapes est défaillante revient souvent à ajouter de la complexité inutile, voire à masquer le problème initial sans le résoudre.
 
-### L'Évaluation : La Clé Pour Comprendre et Cibler
+### L'Évaluation : La clé pour comprendre et cibler
 
 Identifier précisément *lequel* de ces éléments est en cause est donc crucial pour une amélioration efficace. C'est là qu'intervient l'étape indispensable de **l'évaluation**. Il ne s'agit pas seulement de mesurer un score de performance global, mais bien d'**analyser méthodiquement les erreurs** spécifiques pour comprendre *pourquoi* elles se produisent.
 
 Cette analyse détaillée permet de cibler précisément les actions correctives nécessaires, évitant ainsi les modifications à l'aveugle.
 
-### Évaluation Humaine vs Automatisée : Trouver le Bon Équilibre
+### Évaluation humaine vs automatisée : Trouver le bon équilibre
 
-Dans les premières phases de développement, la tentation d'automatiser entièrement l'évaluation est forte, notamment pour traiter de grands volumes de données et gagner du temps. Les métriques automatiques (BLEU, ROUGE, pertinence sémantique calculée, etc.) ont leur utilité.
+Dans les premières phases de développement, la tentation d'automatiser entièrement l'évaluation est forte, notamment pour traiter de grands volumes de données et gagner du temps. Les métriques automatiques (BLEU, ROUGE, pertinence sémantique calculée, LLM as a judge, etc.) ont leur utilité.
 
-Cependant, **surtout au début du projet, rien ne remplace une évaluation humaine attentive**. Pourquoi ? Parce qu'un humain peut comprendre les nuances, le contexte, et identifier des types d'erreurs subtiles ou inattendues qu'une métrique automatique pourrait manquer. Investir ce temps pour décortiquer manuellement un échantillon représentatif de cas problématiques est souvent **plus rentable à long terme**, car cela fournit des insights qualitatifs précieux pour orienter les améliorations. L'automatisation peut ensuite prendre le relais pour vérifier l'impact des corrections à plus grande échelle.
+Cependant, **surtout au début du projet, rien ne remplace une évaluation humaine**. Pourquoi ? Parce qu'un humain peut comprendre les nuances, le contexte, et identifier des types d'erreurs subtiles ou inattendues qu'une métrique automatique pourrait manquer. Investir ce temps pour décortiquer manuellement un échantillon représentatif de cas problématiques est souvent **plus rentable à long terme**, car cela fournit des insights qualitatifs précieux pour orienter les améliorations. L'automatisation peut ensuite prendre le relais pour vérifier l'impact des corrections à plus grande échelle.
 
-### Corriger les Problèmes à la Source
+### Corriger les problèmes à la source
 
 Une fois l'erreur comprise grâce à l'évaluation (humaine et/ou automatisée), l'amélioration devient ciblée. Chaque erreur identifiée, en lien avec les données spécifiques traitées, peut alors être corrigée ou, du moins, atténuée en ajustant le composant défaillant :
 
@@ -65,13 +65,13 @@ Une fois l'erreur comprise grâce à l'évaluation (humaine et/ou automatisée),
 *   Ajuster les paramètres de l'algorithme de recherche.
 *   Parfois, oui, intégrer un nouvel outil *spécifiquement* pour résoudre un problème identifié (mais seulement après analyse !).
 
-### L'Amélioration Continue en Production
+### L'Amélioration continue en production
 
 L'évaluation et l'amélioration ne s'arrêtent pas une fois l'application développée et déployée. En production, il est essentiel de **continuer à monitorer les performances** de manière continue. Les données peuvent évoluer (data drift), de nouveaux cas d'usage peuvent apparaître, et les attentes des utilisateurs peuvent changer.
 
 Idéalement, il faut mettre en place des mécanismes pour **intégrer les retours utilisateurs** (par exemple, un système de pouce levé/baissé sur les réponses) dans le cycle d'amélioration. C'est un **cycle continu : observer, analyser, améliorer**, jusqu'à atteindre et maintenir un niveau de performance et de fiabilité satisfaisant pour l'usage visé.
 
-### Conclusion : Une Approche Méthodique et Itérative
+### Conclusion : Une approche méthodique et itérative
 
 En résumé, plutôt que de céder systématiquement à l'attrait du dernier outil à la mode, une démarche plus pragmatique et souvent plus payante consiste à adopter une approche itérative et méthodique :
 
