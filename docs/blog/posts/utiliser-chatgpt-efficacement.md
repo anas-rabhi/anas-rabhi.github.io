@@ -104,8 +104,17 @@ C'est exactement ce type d'IA, capable d'utiliser des outils externes pour compl
 
 Ainsi, en associant intelligemment les capacités de ChatGPT à différents outils spécialisés, on ouvre la porte à une IA encore plus fiable, performante et adaptée à nos besoins quotidiens.
 
-Enfin, gardons à l’esprit que l’IA repose sur des méthodes statistiques : elle comportera donc toujours une part d’erreurs et certaines limites difficiles à surmonter complètement. La meilleure manière de l'utiliser reste donc celle où l'on peut facilement vérifier les réponses fournies par ChatGPT avant de les valider, tout en gagnant un temps précieux au quotidien.
+Enfin, gardons à l'esprit que l'IA repose sur des méthodes statistiques : elle comportera donc toujours une part d'erreurs et certaines limites difficiles à surmonter complètement. La meilleure manière de l'utiliser reste donc celle où l'on peut facilement vérifier les réponses fournies par ChatGPT avant de les valider, tout en gagnant un temps précieux au quotidien.
 
 ---------
 
 Si ces réflexions vous parlent et que vous avez des questions ou juste envie de discuter de vos propres challenges, n'hésitez pas à m'écrire à anas0rabhi@gmail.com, j'aime bien échanger sur ces sujets !
+
+Vous pouvez aussi vous abonner à ma newsletter :)
+
+<div style="text-align: center; margin: 40px 0;">
+  <a href="https://anas-ai.kit.com/d8b1a255cc" target="_blank" style="display: inline-block; background-color: #222222; color: #ffffff; font-weight: bold; padding: 16px 32px; text-decoration: none; border-radius: 8px; font-size: 18px; letter-spacing: 0.8px; box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); transition: all 0.3s ease; border: none;">
+    <span style="margin-right: 10px;">✉️</span> S'abonner à ma newsletter
+  </a>
+</div>
+
