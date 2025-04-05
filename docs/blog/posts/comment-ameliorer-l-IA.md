@@ -84,7 +84,7 @@ C'est souvent la voie la plus directe vers des applications IA (RAG, agents) ré
 
 ---------
 
-Si ces réflexions vous parlent et que vous avez des questions ou juste envie de discuter de vos propres challenges, n'hésitez pas à m'écrire à anas0rabhi@gmail.com, j'aime bien échanger sur ces sujets !
+Si mes articles vous intéressent et que vous avez des questions ou simplement envie de discuter de vos propres défis, n'hésitez pas à m'écrire à anas0rabhi@gmail.com, j'aime échanger sur ces sujets !
 
 Vous pouvez aussi vous abonner à ma newsletter :)
 
