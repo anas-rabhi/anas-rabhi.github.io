@@ -24,13 +24,13 @@ L'intelligence artificielle séduit de plus en plus de curieux et de professionn
 
 Cependant, se plonger dans le monde de l'IA peut s'avérer déroutant. Entre les vidéos explicatives superficielles et un flot de ressources sans véritable explication de fond, la confusion règne. De nombreuses idées reçues circulent, amplifiant la perception que l'IA est un domaine impénétrable.
 
-L'objectif de cet articleest de dissiper cette brume en fournissant une introduction claire et accessible à l'IA, ses composantes et ses applications. Que vous soyez juste curieux ou que vous cherchiez à intégrer l'IA dans votre domaine, ce guide est conçu pour vous donner les clés nécessaires pour naviguer dans cet univers fascinant.
+L'objectif de cet article est de dissiper cette brume en fournissant une introduction claire et accessible à l'IA, ses composantes et ses applications. Que vous soyez juste curieux ou que vous cherchiez à intégrer l'IA dans votre domaine, ce guide est conçu pour vous donner les clés nécessaires pour naviguer dans cet univers fascinant.
 
 Dans cette partie 1, je vais me concentrer sur les bases. Et dans la deuxieme partie je me focaliserai sur l'IA Générative.
 
 ## Comprendre les Bases de l'IA
 
-L'intelligence artificielle est un terme que l'on entend partout ces jours-ci, mais que signifie-t-il vraiment ? Pour faire simple, l'IA repose sur des algorithmes capables d'apprendre et de prendre des décisions à partir de données historiques. Les données, donc, sont la pierre angulaire de toute application d'IA. Sans elles, l'algorithme n'a rien sur quoi s'appuyer.
+L'intelligence artificielle est un terme que l'on entend partout ces jours-ci, mais que signifie-t-il vraiment ? Pour faire simple, l'IA repose sur des algorithmes capables d'apprendre et d'effectuer des tâches spécifiques à partir de données historiques. Les données, donc, sont la pierre angulaire de toute application d'IA. Sans elles, l'algorithme n'a rien sur quoi s'appuyer.
 
 L'idée fondamentale est d'utiliser ces données pour créer des modèles capables de réaliser de nouvelles tâches ou de prédire des résultats. Par exemple, identifier des fraudes à partir de caractéristiques déjà observées. Sans ces données préexistantes, notre "intelligence" serait sans repère, comme un chef talentueux mais sans ingrédients.
 
@@ -56,9 +56,9 @@ L'essentiel ici est de comprendre que le Machine Learning n'est pas juste un out
 
 ### Deep Learning
 
-Le Deep Learning, quant à lui, est une forme avancée de machine learning qui utilise des réseaux de neurones (qui sont une sorte d'algorithme mathématique avec plein de chiffres et d'équations) pour traiter des données complexes. Sa force repose sur sa capacité à comprendre des couches supérieures de données de manière hiérarchique, semblable à la façon dont notre cerveau fonctionne (ou en tout cas, on essaye de faire une approximation de comment notre cerveau fonctionne statistiquement).
+Le Deep Learning est une technique avancée de machine learning qui utilise des réseaux de neurones (une sorte d'algorithme mathématique avec de nombreux chiffres et équations) pour analyser des données complexes. Sa force réside dans sa capacité à traiter les données de façon hiérarchique, un peu comme notre cerveau (ou du moins, on essaie d'imiter statistiquement son fonctionnement).
 
-Les réseaux de neurones profonds ont permis des avancées spectaculaires dans des tâches nécessitant une compréhension fine, comme la reconnaissance de la voix ou la compréhension du langage naturel. Cependant, cette sophistication a un coût : les ressources nécessaires sont conséquentes, que ce soit en termes de puissance de calcul ou de volume de données requis pour l'entraînement.
+Les réseaux de neurones profonds ont permis des avancées spectaculaires dans des tâches nécessitant une compréhension fine, comme la reconnaissance de la voix ou la compréhension du langage naturel. Cependant, cette sophistication a un coût : les ressources nécessaires sont conséquentes, que ce soit en termes de puissance de calcul ou de volume de données requis pour l'entraînement (= les données historiques).
 
 Ainsi, lorsqu'on envisage d'utiliser le deep learning, il est crucial d'évaluer si l'investissement en ressources est justifié par les bénéfices escomptés. Pour beaucoup d'applications, il pourrait être plus pragmatique de commencer avec des techniques de Machine Learning plus simples, avant d'évoluer vers le Deep Learning si nécessaire.
 
@@ -89,7 +89,7 @@ Il est important de souligner que la vision par ordinateur est un domaine extrê
 
 Le NLP est la branche de l'IA qui se penche sur la compréhension et la génération du langage humain par les machines. Que ce soit pour traduire un texte ou interagir avec un assistant vocal, la capacité à comprendre le langage est primordiale.
 
-Pourtant, comme dans toute relation, la communication n'est pas dépourvue de défis. Les nuances, les contextes culturels, et les langues rendent la tâche complexe. Des avancées comme les modèles de langage GPT tentent d'apprivoiser cette complexité, mais un modèle mal entraîné peut "halluciner" ou produire des réponses inappropriées.
+Pourtant, comme dans toute relation, la communication n'est pas dépourvue de défis. Les nuances, les contextes culturels, et les langues rendent la tâche complexe. Des avancées comme les modèles de langage GPT tentent d'apprivoiser cette complexité, mais un modèle mal entraîné peut "halluciner" (inventer des informations) ou produire des réponses inappropriées.
 
 Comme le domaine de la vision par ordinateur, le traitement du langage naturel est un domaine extrêmement vaste et complexe. Maîtriser ses différentes facettes et apporter des solutions adaptées à chaque problématique nécessitent plusieurs années d'expertise.
 
@@ -123,7 +123,7 @@ Pour conclure, il est essentiel de comprendre que l'IA est intrinsèquement lié
 
 Pour conclure cette première partie, nous avons exploré différents domaines fascinants de l'intelligence artificielle. Chacun, avec ses spécificités, offre une palette d'applications incroyables qui façonnent notre monde.
 
-Dans la suite, nous plongerons dans l'univers passionnant de l'IA générative.
+Dans la suite, nous plongerons dans l'univers passionnant de l'IA générative. A bientôt !
 
 ---------
 
