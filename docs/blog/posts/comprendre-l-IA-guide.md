@@ -20,7 +20,7 @@ mermaid: true
 
 L'intelligence artificielle séduit de plus en plus de curieux et de professionnels, grâce à des outils révolutionnaires comme ChatGPT. Ces avancées ont non seulement transformé notre manière d'interagir avec la technologie, mais ont aussi rendu l'IA incontournable dans les discussions contemporaines. Avec l'IA générative, nous pouvons désormais produire du texte, des images et bien d'autres contenus grâce à de puissants modèles d'apprentissage.
 
-<!--more-->
+<!-- more -->
 
 Cependant, se plonger dans le monde de l'IA peut s'avérer déroutant. Entre les vidéos explicatives superficielles et un flot de ressources sans véritable explication de fond, la confusion règne. De nombreuses idées reçues circulent, amplifiant la perception que l'IA est un domaine impénétrable.
 
