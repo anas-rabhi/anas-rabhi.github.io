@@ -123,7 +123,7 @@ Pour conclure, il est essentiel de comprendre que l'IA est intrinsèquement lié
 
 Pour conclure cette première partie, nous avons exploré différents domaines fascinants de l'intelligence artificielle. Chacun, avec ses spécificités, offre une palette d'applications incroyables qui façonnent notre monde.
 
-Dans la suite, nous plongerons dans l'univers passionnant de l'IA générative. A bientôt !
+Dans la suite, nous plongerons dans l'univers passionnant de l'IA générative. En attendant la partie deux, n'hésitez pas à vous abonner à ma newsletter 😀 À bientôt ! 
 
 ---------
 
