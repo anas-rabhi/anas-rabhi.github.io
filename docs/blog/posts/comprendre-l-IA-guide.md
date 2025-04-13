@@ -1,6 +1,6 @@
 ---
-title: "Comprendre l'intelligence artificielle : Guide pratique simple (Partie 1)"
-description: "Découvrez les concepts fondamentaux de l'intelligence artificielle expliqués simplement, avec des exemples concrets et des conseils pratiques pour mieux comprendre cette technologie transformative."
+title: "Le data scientist en 2025"
+description: "Réflexion sur le métier de data scientist en 2025"
 categories:
   - "Blog"
   - "IA"
@@ -16,11 +16,31 @@ math: true
 mermaid: true
 ---
 
-## Introduction
+## Intro
 
-L'intelligence artificielle séduit de plus en plus de curieux et de professionnels, grâce à des outils révolutionnaires comme ChatGPT. Ces avancées ont non seulement transformé notre manière d'interagir avec la technologie, mais ont aussi rendu l'IA incontournable dans les discussions contemporaines. Avec l'IA générative, nous pouvons désormais produire du texte, des images et bien d'autres contenus grâce à de puissants modèles d'apprentissage.
+En 2016-2017 on a commencé à entendre parler beaucoup du data scientist. A ce moment là, j'étais étudiant en mathématiques & économie, et la première présentation que j'avais eu de ce métier c'était qu'il fallait : "Traiter des données", et on m'avait montré un gros fichier Excel bordélique. En le voyant, je me suis dit, que le métier avait l'air pas très cool. Ce que je ne savais pas encore c'est que l'année d'après j'allais avoir un coup de coeur pour ce métier. 
 
 <!-- more -->
+
+Mes passions depuis toujours, ça a été les mathématique et l'informatique. J'ai commencé à développer des petites conneries quand j'avais 12 ans, donc je voyais un peu près ce que c'était le métier de développeur. Et je ne voulais pas dévenir developpeur car je trouvais pas ça amusant d'en faire un métier, et je ne voulais pas être mathématicien car pas trop envie non plus d'en faire à longueur de journée.
+
+Donc quand j'ai compris ce que c'était la data science : un mélange entre mathématiques et développement, j'ai eu une révelation.
+
+J'ai donc commencé mon periple en tant que data scientist en 2019, et depuis le début, je me suis aperçu que c'était pas un métier des plus simple, ni pour les data scientist, ni pour les entreprises qui les embauchaient.
+
+## Les début de la data
+
+Le métier de data scientist commençait à être à la mode en 2015 réellement. Plein d'articles ont décris le métier comme le nouvel eldorado (https://start.lesechos.fr/travailler-mieux/metiers-reconversion/big-data-un-secteur-sexy-plein-de-promesses-1179641) et forécement ça fait du bruit.
+
+On y décrit le data scientist comme le magicien, qui va réussir à partir des données de l'entreprise, d'en extraire de l'or. Que ça soit pour des sujets marketing pour fideliser les clients.
+
+Du coup, plein d'entreprises ont commencé à chercher leur data scientist pour générer de la valeur dans l'entreprise. 
+
+Malheureusement, beaucoup ont été déçus. Pourquoi ? Les entreprises n'étaient pas assez matures pour se mettre à la data science. Souvent ça se passait de la façon suivante. On embauche un data scientist pour un projet X et quand il a de la chance on lui fournissait les données. Les données n'étaient pas exploitables, mais il fallait quand même en faire un truc. Le data scientist pendant quelques mois il faisait sont tour de magie, puis arrivé à niveau satisfaisant on veut mettre le modèle en production. Sauf qu'un profile de data scientist classique n'a pas forcément les capacité de mettre en place un modèle en production. Ou parfois il arrive, qu'un modèle une fois en production ne répond pas forcément à un réel besoin. Ou il y a eu une incompréhension entre le métier et le data scientist. Bref on pourrait y donner plein de raison et il y a plein de raison qui peuvent expliquer un echec (si ça vous intéresse il existe webinars sur ces sujet par exemple: https://www.youtube.com/watch?v=kuqUXIOYZPM) 
+
+Et c'est comme ça qu'un modèle sur lequel un data scientist a bossé quelques 
+
+
 
 Cependant, se plonger dans le monde de l'IA peut s'avérer déroutant. Entre les vidéos explicatives superficielles et un flot de ressources sans véritable explication de fond, la confusion règne. De nombreuses idées reçues circulent, amplifiant la perception que l'IA est un domaine impénétrable.
 
@@ -34,7 +54,7 @@ L'intelligence artificielle est un terme que l'on entend partout ces jours-ci, m
 
 L'idée fondamentale est d'utiliser ces données pour créer des modèles capables de réaliser de nouvelles tâches ou de prédire des résultats. Par exemple, identifier des fraudes à partir de caractéristiques déjà observées. Sans ces données préexistantes, notre "intelligence" serait sans repère, comme un chef talentueux mais sans ingrédients.
 
-L'IA n'est pas une baguette magique, elle ne fonctionne pas dans le vide. L'algorithme, souvent appelé "modèle", "réseau" ou même simplement "une IA", doit être nourri. Sans cette alimentation, il serait, pour ainsi dire, un navire sans cartes ni étoiles pour le guider.
+L'IA n'est pas une baguette magique, elle ne fonctionne pas dans le vide. L'algorithme, souvent appelé "modèle", "réseau" ou même simplement "une IA", doit être nourri. Sans données, il ne peut pas fonctionner correctement.
 
 En somme, alors que beaucoup courent après la nouveauté des applications IA, il est crucial de toujours revenir à la source : les données historiques. Elles ne sont pas seulement un point de départ, mais le socle indéfectible sur lequel toute l'IA repose. Commençons donc par balayer les mythes et fondons notre compréhension sur ce qui est vraiment essentiel.
 
@@ -42,7 +62,7 @@ Il est important de noter que l'IA nécessite beaucoup plus de données et d'én
 
 
 
-## Les Composantes de l'IA
+## Les composantes de l'IA
 
 Dans le vaste univers de l'intelligence artificielle, deux sous-domaines se distinguent particulièrement : le Machine Learning (ML) et le Deep Learning (DL). Ces techniques sont les fondations sur lesquelles reposent de nombreuses applications d'IA que nous utilisons aujourd'hui.
 
@@ -56,7 +76,7 @@ L'essentiel ici est de comprendre que le Machine Learning n'est pas juste un out
 
 ### Deep Learning
 
-Le Deep Learning est une technique avancée de machine learning qui utilise des réseaux de neurones (une sorte d'algorithme mathématique avec de nombreux chiffres et équations) pour analyser des données complexes. Sa force réside dans sa capacité à traiter les données de façon hiérarchique, un peu comme notre cerveau (ou du moins, on essaie d'imiter statistiquement son fonctionnement).
+Le Deep Learning est une technique avancée de machine learning qui utilise des réseaux de neurones (une sorte d'algorithme mathématique avec de nombreux chiffres et équations) pour analyser des données complexes. Sa force réside dans sa capacité à traiter les données de façon hiérarchique, un peu comme notre cerveau (ou du moins, on essaie d'imiter mathématiquement son fonctionnement).
 
 Les réseaux de neurones profonds ont permis des avancées spectaculaires dans des tâches nécessitant une compréhension fine, comme la reconnaissance de la voix ou la compréhension du langage naturel. Cependant, cette sophistication a un coût : les ressources nécessaires sont conséquentes, que ce soit en termes de puissance de calcul ou de volume de données requis pour l'entraînement (= les données historiques).
 
@@ -73,9 +93,11 @@ Cette image montre clairement que le Deep Learning est un sous-ensemble du Machi
 Cette hiérarchie nous rappelle que, bien que le Deep Learning soit actuellement au cœur de nombreuses innovations spectaculaires, il s'inscrit dans un écosystème plus large de méthodes et d'approches qui constituent ensemble le domaine de l'Intelligence Artificielle.
 
 
-## Les Domaines de l'IA
+## Les domaines de l'IA
 
-Dans le vaste univers de l'intelligence artificielle, comprendre les différents domaines et leurs applications spécifiques peut grandement faciliter votre exploration. Dans cette section je présente un aperçu de chaque domaine majeur de l'IA et de ses applications concrètes.
+Dans le vaste univers de l'intelligence artificielle, il est crucial de comprendre que différents domaines existent, chacun ayant des applications spécifiques et des relations étroites avec les composantes du machine learning et du deep learning. Dans cette section, je vais présenter un aperçu de chaque domaine majeur de l'IA, en expliquant comment ils s'appuient sur le machine learning et le deep learning pour fonctionner efficacement.
+
+On peut voir un domaine de l'IA comme une spécialité. Imagineons que l'IA est la médecine. Les différents domaines de la médecine sont la cardiologie, la dentisterie, etc. C'est pareil pour l'IA. Les domaines de l'IA peuvent être l'imagerie, les moteurs de recommandation, le traitement du langage, etc. Et dans chaque domaine, on peut appliquer du machine learning ou du deep learning.
 
 ### Vision par ordinateur : Voir pour comprendre
 
