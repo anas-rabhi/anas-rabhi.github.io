@@ -52,7 +52,7 @@ Dans tous les modèles d'IA, il y a plein de chiffres à l'intérieur, qu'on app
 
 Pour illustrer un peu l'idée, sur cette image, on voit une machine qui permet de régler les sonorités : dans un modèle d'IA, chaque paramètre peut être imaginé comme un petit bouton que l'on tourne pour ajuster le comportement du modèle. Par exemple, un paramètre peut influencer la façon dont l'IA accorde de l'importance à certains mots ou à certaines images. Comme sur une table de mixage audio où chaque bouton modifie un aspect du son, les paramètres d'un modèle d'IA sont ajustés pour obtenir le meilleur résultat possible lors de l'apprentissage.
 
-![Illustration schématique des paramètres dans un modèle d'IA](./img/parameters.jpg)
+<img src="./img/parameters.jpg" alt="Illustration schématique des paramètres dans un modèle d'IA" style="max-width: 250px; display: block; margin: 24px auto;" />
 
 
 Les paramètres sont ajustés grâce aux données qu'on fournit au modèle lors de son apprentissage. Les données permettent de trouver la combinaison de paramètres optimale pour que l'IA soit la plus performante possible. Le dernier élément à comprendre dans un modèle d'IA, c'est que tous ces paramètres sont connectés entre eux par des opérations mathématiques. C'est ce qui permet de calculer le résultat final de l'IA.
