@@ -38,7 +38,7 @@ L'arrivée de ChatGPT a vraiment changé la donne dans le monde de l'IA. Contrai
 
 C'est un peu comme si, pour gagner une course de voiture, au lieu d'optimiser la forme de la voiture ou d'améliorer la technique du pilote, on décidait simplement d'installer le plus de **moteurs** puissants possible tout en **agrandissant** la voiture, en espérant que la voiture ira forcément plus vite grâce à toute cette puissance, même si ce n'est pas la solution la plus élégante. Dans notre cas, la **taille du modèle** correspond à la **taille de la voiture**, et le **moteur de la voiture** fait référence à la **donnée** ingérée par le modèle.
 
->Pour vous donner une idée du coût, environ 4 millions de dollars ont été nécessaires pour entraîner l'un des premiers modèles d'IA à atteindre une performance satisfaisante : GPT-3 (voir : [Coût d'entraînement de GPT-4](https://team-gpt.com/blog/how-much-did-it-cost-to-train-gpt-4/)), sans compter le salaire des chercheurs et les années de recherche nécessaires pour y parvenir.
+>Pour vous donner une idée du coût, environ 4 millions de dollars ont été nécessaires pour entraîner l'un des premiers modèles d'IA à atteindre une performance satisfaisante : GPT-3 (voir : [Coût d'entraînement de GPT-3](https://team-gpt.com/blog/how-much-did-it-cost-to-train-gpt-4/)), sans compter le salaire des chercheurs et les années de recherche nécessaires pour y parvenir.
 
 ---
 
