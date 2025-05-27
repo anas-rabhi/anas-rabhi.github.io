@@ -117,13 +117,13 @@ Ce domaine se distingue par sa capacité à transformer des données en actions 
 
 Ces domaines, bien qu'ils partagent certains concepts avec d'autres branches de l'IA, nécessitent une approche spécialisée et une compréhension approfondie des défis singuliers qu'ils présentent.
 
-Pour conclure, il est essentiel de comprendre que l'IA est intrinsèquement liée aux types de données et aux problématiques spécifiques qu'elle aborde. Comme souligné précédemment, l'IA ne peut exister sans données. Chaque domaine de l'IA peut tirer parti des techniques de machine learning et de deep learning, selon les avancées scientifiques. Par exemple, pour les données tabulaires, telles que la prédiction des prix immobiliers, le machine learning et les analyses statistiques sont souvent privilégiés. À l'inverse, pour la vision par ordinateur, qui implique le traitement d'images comme la reconnaissance faciale, le deep learning est généralement plus adapté. Ces choix sont guidés par les recherches actuelles et les méthodes éprouvées par la communauté scientifique.
+Une chose à retenir : il est essentiel de comprendre que l'IA est intrinsèquement liée aux types de données et aux problématiques spécifiques qu'elle aborde. Comme souligné précédemment, l'IA ne peut exister sans données. Chaque domaine de l'IA peut tirer parti des techniques de machine learning et de deep learning, selon les avancées scientifiques. Par exemple, pour les données tabulaires, telles que la prédiction des prix immobiliers, le machine learning et les analyses statistiques sont souvent privilégiés. À l'inverse, pour la vision par ordinateur, qui implique le traitement d'images comme la reconnaissance faciale, le deep learning est généralement plus adapté. Ces choix sont guidés par les recherches actuelles et les méthodes éprouvées par la communauté scientifique.
 
 ---
 
 ## Conclusion
 
-Pour conclure cette première partie, nous avons exploré différents domaines fascinants de l'intelligence artificielle. Chacun, avec ses spécificités, offre une palette d'applications incroyables qui façonnent notre monde.
+Pour conclure cette première partie, nous avons parcouru ensemble les grands domaines qui composent l’intelligence artificielle. Chacun possède ses propres particularités, ses défis et ses applications, ce qui rend l’IA aussi riche que passionnante. Bien sûr, il existe une multitude d’autres sous-domaines, parfois plus discrets ou émergents, que je n’ai pas pu aborder ici. L’essentiel est de retenir que l’IA est un univers vaste et en constante évolution.
 
 Dans la suite, nous plongerons dans l'univers passionnant de l'IA générative. En attendant la partie deux, n'hésitez pas à vous abonner à ma newsletter 😀 À bientôt ! 
 
