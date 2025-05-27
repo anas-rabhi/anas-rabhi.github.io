@@ -1,5 +1,5 @@
 ---
-title: "Comment améliorer le RAG (ou les IA en général)"
+title: "Comment améliorer le RAG"
 description: "Explorez une approche pragmatique pour améliorer vos applications IA (RAG, agents) en privilégiant l'analyse rigoureuse des erreurs plutôt que l'ajout systématique de nouveaux outils."
 categories:
   - "Blog"
@@ -31,7 +31,7 @@ Pourtant, céder à cette "course aux outils" sans une compréhension claire du 
 
 <!-- more -->
 
-### Décortiquer les erreurs d'un RAG : Où chercher ?
+### Décortiquer les erreurs d'un RAG : Ou chercher ?
 
 Prenons l'exemple concret d'un système RAG, très populaire aujourd'hui. Lorsqu'il fournit une réponse incorrecte ou décevante, les causes potentielles sont nombreuses et variées :
 
