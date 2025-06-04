@@ -20,8 +20,10 @@ mermaid: true
 
 ## Introduction
 
-J’ai déjà écrit un article sur comment améliorer le RAG [ici](https://ianas.fr/blog/2025/03/26/comment-am%C3%A9liorer-le-rag/), mais le sujet est tellement vaste qu’il y a toujours de nouvelles choses à partager. D’autant plus que je reçois souvent des remarques comme :  
+J’ai déjà écrit un article sur comment améliorer le RAG [ici](https://ianas.fr/blog/2025/03/26/comment-am%C3%A9liorer-le-rag/), mais le sujet est tellement vaste qu’il y a toujours de nouvelles choses à partager. D’autant plus que j'entends souvent des remarques comme :  
 *"Je ne comprends pas, pourtant j’ai ajouté [la techno à la mode], mais le résultat n’est pas bon."*
+
+<!-- more -->
 
 ### Le RAG n’est pas magique (et c’est normal)
 
