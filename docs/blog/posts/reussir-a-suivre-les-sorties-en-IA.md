@@ -66,6 +66,8 @@ Je passe aussi un peu de temps sur Linkedin, c'est un réseau qui est utile pour
 
 Je suis aussi les différents comptes des entreprises ou organisations dont le produit est intéressant ou qui publient des news, des articles de recherche, etc. comme : [@aiDotEngineer](https://x.com/aiDotEngineer), [@googleai](https://x.com/googleai), [@anthropic](https://x.com/anthropic), [@openai](https://x.com/openai), [@huggingface](https://x.com/huggingface), [@mistralai](https://x.com/mistralai), [@xai](https://x.com/xai), [@deepseek_ai](https://x.com/deepseek_ai), [@Alibaba_Qwen](https://x.com/Alibaba_Qwen),
 
+J’ai essayé de diversifier les profils, mais il en manque encore beaucoup. J’en ajouterai sûrement d’autres au fil du temps, sans trop surcharger l’article. Si vous souhaitez voir directement la liste complète des comptes que je suis sur Twitter, vous pouvez consulter mon [profil](https://x.com/anas0ra).
+
 ** Reddit : **
 A venir...
 
