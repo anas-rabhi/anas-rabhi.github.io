@@ -55,7 +55,8 @@ Je dirais que les deux réseaux sociaux que j'essaie de consulter un peu tous le
 Je passe aussi un peu de temps sur Linkedin, c'est un réseau qui est utile pour l'actualité mais avec un peu moins de profondeur dans le contenu.
 
 
-** Twitter (X) : **
+**Twitter (X) :**
+
 - [@HamelHusain](https://x.com/HamelHusain) : ML Engineer qui a travaillé à Github et qui partage pas mal de choses sur l'IA générative, donne des cours et des conférences.
 - [@Dorialexander](https://x.com/Dorialexander) : CEO de pleiasfr, entreprise française peu connue mais dont les travaux de recherche bénéficient beaucoup à la communauté open-source.
 - [@jeremyphoward](https://x.com/jeremyphoward) : Chercheur, CEO, prof... Une personne avec une énorme contribution à l'IA depuis des années. Si vous connaissez la librairie FastAI qui date de quelques années, c'est lui le créateur.
@@ -68,10 +69,10 @@ Je suis aussi les différents comptes des entreprises ou organisations dont le p
 
 J’ai essayé de diversifier les profils, mais il en manque encore beaucoup. J’en ajouterai sûrement d’autres au fil du temps, sans trop surcharger l’article. Si vous souhaitez voir directement la liste complète des comptes que je suis sur Twitter, vous pouvez consulter mon [profil](https://x.com/anas0ra).
 
-** Reddit : **
+**Reddit :**
 A venir...
 
-** Linkedin : **
+**Linkedin :**
 A venir...
 
 
