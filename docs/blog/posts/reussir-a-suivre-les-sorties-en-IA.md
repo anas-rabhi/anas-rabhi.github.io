@@ -101,3 +101,17 @@ A venir...
 La documentation d’OpenAI, Anthropic, Google ou Mistral peut contenir des informations très intéressantes sur la façon dont ils utilisent leurs produits. De temps en temps, j’y fais un saut pour lire ce qu’ils publient et j’apprends presque toujours quelque chose.
 
 Les cookbooks d’OpenAI et d’Anthropic sont aussi très intéressants côté code. Ils montrent comment utiliser leurs modèles avec leurs API et, parfois, on peut y apprendre quelques techniques.
+
+
+
+---------
+
+Si mes articles vous intéressent et que vous avez des questions ou simplement envie de discuter de vos propres défis, n'hésitez pas à m'écrire à anas0rabhi@gmail.com, j'aime échanger sur ces sujets !
+
+Vous pouvez aussi vous abonner à ma newsletter :)
+
+<div style="text-align: center; margin: 40px 0;">
+  <a href="https://anas-ai.kit.com/d8b1a255cc" target="_blank" style="display: inline-block; background-color: #222222; color: #ffffff; font-weight: bold; padding: 16px 32px; text-decoration: none; border-radius: 8px; font-size: 18px; letter-spacing: 0.8px; box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); transition: all 0.3s ease; border: none;">
+    <span style="margin-right: 10px;">✉️</span> S'abonner à ma newsletter
+  </a>
+</div>
