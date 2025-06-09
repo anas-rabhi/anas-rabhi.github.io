@@ -77,7 +77,29 @@ A venir...
 
 
 ## Youtube
-A venir...
+
+YouTube, c'est l'endroit où je passe pas mal de temps de mon côté. Que je sois en déplacement, en train de marcher, de faire du sport ou une tâche secondaire, j'ai toujours une vidéo à regarder. Parmi les vidéos que je regarde, certaines sont liées à l'actualité de l'IA, d'autres à des techniques plus avancées ou à des contenus éducatifs pour continuer à apprendre.
+
+- [Andrej Karpathy](https://www.youtube.com/@AndrejKarpathy) : J'ai déjà mentionné son Twitter, mais ses vidéos sont vraiment très bien faites et pédagogiques.
+- [aiDotEngineer](https://www.youtube.com/@aiDotEngineer) : Chaîne très intéressante avec des invités qui partagent beaucoup d'informations sur l'IA générative et les tendances du domaine. Il s'agit d'une conférence où se rencontrent les plus grands labs d'IA, fondateurs, CTOs du Fortune 500 et ingénieurs IA.
+- [DiscoverAI](https://www.youtube.com/@code4AI) : Des vidéos où le youtubeur décortique les derniers papiers de manière très claire et pédagogique.
+- [Elvis Saravia](https://www.youtube.com/@elvissaravia/) : Beaucoup de tutoriels, de présentations de papiers et de contenu autour de l'IA générative, toujours de qualité.
+- [Flint](https://www.youtube.com/@Flint_company) : Podcasts IA avec des invités variés et du contenu qualitatif.
+- [Anyscale](https://www.youtube.com/@anyscale/videos) : À la base, Anyscale est une entreprise, mais leur chaîne YouTube propose du contenu très intéressant.
+- [HuggingFace](https://www.youtube.com/@HuggingFace) : Les rois de l'open-source, avec des revues de papiers, tutoriels, podcasts, etc.
+- [vanishinggradients](https://www.youtube.com/@vanishinggradients) : Excellente chaîne de podcasts avec des invités très reconnus dans le domaine.
+- [Alexandre TL](https://www.youtube.com/@alexandretl) : Chaîne d'un chercheur français, avec un contenu très bien vulgarisé.
+- [3blue1brown](https://www.youtube.com/@3blue1brown) : Une des chaînes les plus intéressantes et populaires de ces dernières années. Une chaîne similaire est [StatQuest](https://www.youtube.com/c/joshstarmer).
+- [MLOps.community](https://www.youtube.com/@MLOps) : Discussions autour de l'IA en général et du MLOps.
+- [MachineLearningStreetTalk](https://www.youtube.com/@MachineLearningStreetTalk) : Podcasts avec différents invités et du contenu très enrichissant.
+- [Jason Liu](https://www.youtube.com/@jxnlco) : Contenu axé IA générative et retours sur des projets concrets, avec des discussions sur l'évaluation, les techniques, etc.
+- [Hamel Hussain](https://www.youtube.com/@hamelhusain7140) : Un peu comme jxnlco (ils font partie de la même équipe), mais la chaîne vaut vraiment le détour.
+- [EfficientNLP](https://www.youtube.com/@EfficientNLP/videos) : Chaîne d'un chercheur spécialisé en NLP, avec des vidéos éducatives sur le sujet.
+- [Sebastian Raschka](https://www.youtube.com/@SebastianRaschka) : Chercheur qui propose des vidéos éducatives. Auteur de plusieurs livres dont "Build a Large Language Model From Scratch".
+
+Si il y en a d'autres qui me reviennent en tête ou que je découvre, je les ajouterai au fil du temps. En général, je découvre de nouvelles chaînes via les recommandations ou les réseaux. Si vous en avez à partager, envoyez-moi un message sur [LinkedIn](https://www.linkedin.com/in/anasrabhi/) !
+
+
 
 ## Conférences
 A venir...
