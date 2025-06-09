@@ -70,11 +70,26 @@ Je suis aussi les différents comptes des entreprises ou organisations dont le p
 J’ai essayé de diversifier les profils, mais il en manque encore beaucoup. J’en ajouterai sûrement d’autres au fil du temps, sans trop surcharger l’article. Si vous souhaitez voir directement la liste complète des comptes que je suis sur Twitter, vous pouvez consulter mon [profil](https://x.com/anas0ra).
 
 **Reddit :**
-A venir...
+
+J'ai commencé à utiliser Reddit principalement pour une seule page : [LocalLLaMA](https://www.reddit.com/r/LocalLLaMA/). Cette page regroupe de nombreuses discussions sur les nouveautés de l'IA générative, mais attention, elle se concentre surtout sur les modèles open source. Le contenu y est vraiment très qualitatif, et c'est la seule page Reddit que je consulte presque quotidiennement.
+
+Par la suite, j'ai découvert d'autres canaux très intéressants, que je consulte de temps en temps :
+- [ArtificialIntelligence](https://www.reddit.com/r/ArtificialIntelligence/) 
+- [ClaudeAI](https://www.reddit.com/r/ClaudeAI/) 
+- [LangChain](https://www.reddit.com/r/LangChain/) 
+- [OpenAI](https://www.reddit.com/r/OpenAI/)
+- [PromptEngineering](https://www.reddit.com/r/PromptEngineering/)
+
+
+**Github :**
+
+Si vous voulez découvrir des librairies open-source autour de l'IA générative, github peut être un bon endroit. Il y a les plus connues Langchain, HuggingFace, LLamaindex, etc. Mais la liste est vraiment très longue, et vous pouvez la trouver sur mes favoris github : [Generative AI](https://github.com/stars/anas-rabhi/lists/generative-ai)
+
+Si vous avez un besoin bien précis on peut discuter des différents libraires par message sur [LinkedIn](https://www.linkedin.com/in/anasrabhi/) ! :)
 
 **Linkedin :**
-A venir...
 
+A venir...
 
 ## Youtube
 
