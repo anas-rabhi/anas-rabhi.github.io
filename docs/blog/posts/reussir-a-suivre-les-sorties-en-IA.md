@@ -65,7 +65,7 @@ Je passe aussi un peu de temps sur Linkedin, c'est un réseau qui est utile pour
 - [@jxnlco](https://x.com/jxnlco) : ML Engineer, anciennement chez Meta. Il crée pas mal de contenu sur les différentes méthodes en IA générative, il fait des cours, des podcasts et plein de contenu sur le sujet.
 - [@simonw](https://x.com/simonw) : Créateur de Django, mais fait beaucoup de contenu sur l'IA générative. Les dernières découvertes, techniques, benchmarks, etc.
 
-Je suis aussi les différents comptes des entreprises ou organisations dont le produit est intéressant ou qui publient des news, des articles de recherche, etc. comme : [@aiDotEngineer](https://x.com/aiDotEngineer), [@googleai](https://x.com/googleai), [@anthropic](https://x.com/anthropic), [@openai](https://x.com/openai), [@huggingface](https://x.com/huggingface), [@mistralai](https://x.com/mistralai), [@xai](https://x.com/xai), [@deepseek_ai](https://x.com/deepseek_ai), [@Alibaba_Qwen](https://x.com/Alibaba_Qwen),
+Je garde un oeil aussi sur les différents comptes des entreprises ou organisations dont le produit est intéressant ou qui publient des news, des articles de recherche, etc. comme : [@aiDotEngineer](https://x.com/aiDotEngineer), [@googleai](https://x.com/googleai), [@anthropic](https://x.com/anthropic), [@openai](https://x.com/openai), [@huggingface](https://x.com/huggingface), [@mistralai](https://x.com/mistralai), [@xai](https://x.com/xai), [@deepseek_ai](https://x.com/deepseek_ai), [@Alibaba_Qwen](https://x.com/Alibaba_Qwen),
 
 J’ai essayé de diversifier les profils, mais il en manque encore beaucoup. J’en ajouterai sûrement d’autres au fil du temps, sans trop surcharger l’article. Si vous souhaitez voir directement la liste complète des comptes que je suis sur Twitter, vous pouvez consulter mon [profil](https://x.com/anas0ra).
 
@@ -93,7 +93,7 @@ A venir...
 
 ## Youtube
 
-YouTube, c'est l'endroit où je passe pas mal de temps de mon côté. Que je sois en déplacement, en train de marcher, de faire du sport ou une tâche secondaire, j'ai toujours une vidéo à regarder. Parmi les vidéos que je regarde, certaines sont liées à l'actualité de l'IA, d'autres à des techniques plus avancées ou à des contenus éducatifs pour continuer à apprendre.
+YouTube, c'est l'endroit où je passe pas mal de temps de mon côté. Que je sois en déplacement, en train de marcher, de faire du sport ou une tâche secondaire, j'ai toujours une vidéo à regarder. Parmi les vidéos que je regarde, certaines sont liées à l'actualité de l'IA, d'autres à des techniques plus avancées ou à des contenus éducatifs pour continuer à apprendre. Les podcasts je les mets également dans cette catégorie.
 
 - [Andrej Karpathy](https://www.youtube.com/@AndrejKarpathy) : J'ai déjà mentionné son Twitter, mais ses vidéos sont vraiment très bien faites et pédagogiques.
 - [aiDotEngineer](https://www.youtube.com/@aiDotEngineer) : Chaîne très intéressante avec des invités qui partagent beaucoup d'informations sur l'IA générative et les tendances du domaine. Il s'agit d'une conférence où se rencontrent les plus grands labs d'IA, fondateurs, CTOs du Fortune 500 et ingénieurs IA.
@@ -117,18 +117,14 @@ Si il y en a d'autres qui me reviennent en tête ou que je découvre, je les ajo
 
 
 ## Conférences
-A venir...
+
 
 ## Newsletters
 A venir...
 
 ## Blogs
-Blog de jérémy phoward : https://course.fast.ai/
+- [Le blog de Jérémy Howard (fast.ai)](https://course.fast.ai/) : Une référence incontournable pour apprendre l’IA et le deep learning de façon pratique et accessible, avec des articles et des cours de grande qualité.
 
-A venir...
-
-## Podcasts
-A venir...
 
 ## News
 A venir...
@@ -140,7 +136,7 @@ A venir...
 
 La documentation d’OpenAI, Anthropic, Google ou Mistral peut contenir des informations très intéressantes sur la façon dont ils utilisent leurs produits. De temps en temps, j’y fais un saut pour lire ce qu’ils publient et j’apprends presque toujours quelque chose.
 
-Les cookbooks d’OpenAI et d’Anthropic sont aussi très intéressants côté code. Ils montrent comment utiliser leurs modèles avec leurs API et, parfois, on peut y apprendre quelques techniques.
+Le [cookbook d’OpenAI](https://cookbook.openai.com/) est aussi une excellente ressource côté code. Il montre comment utiliser leurs modèles via l’API et propose de nombreuses techniques concrètes à explorer.
 
 
 
