@@ -87,9 +87,6 @@ Si vous voulez découvrir des librairies open-source autour de l'IA générative
 
 Si vous avez un besoin bien précis on peut discuter des différents libraires par message sur [LinkedIn](https://www.linkedin.com/in/anasrabhi/) ! :)
 
-**Linkedin :**
-
-A venir...
 
 ## Youtube
 
@@ -115,22 +112,25 @@ YouTube, c'est l'endroit où je passe pas mal de temps de mon côté. Que je soi
 Si il y en a d'autres qui me reviennent en tête ou que je découvre, je les ajouterai au fil du temps. En général, je découvre de nouvelles chaînes via les recommandations ou les réseaux. Si vous en avez à partager, envoyez-moi un message sur [LinkedIn](https://www.linkedin.com/in/anasrabhi/) !
 
 
-
-## Conférences
-
-
 ## Newsletters
-A venir...
+
+Les newsletter c'est un petit peu le récapitulatif de tout ce qui se trouve déjà sur Twitter/X. Les annonces des chercheurs ou entreprises se font le plus souvent sur X et sont relayés sur les autres réseaux.
+
+- [TLDR AI](https://tldr.tech/ai) : newsletter avec les dernières actualités IA.
+
+- [SMOL](https://smol.ai/) : Newsletter avec actualités variées comme les nouveaux modèles, les annonces ou encore les nouveaux outils IA.
+
 
 ## Blogs
+
 - [Le blog de Jérémy Howard (fast.ai)](https://course.fast.ai/) : Une référence incontournable pour apprendre l’IA et le deep learning de façon pratique et accessible, avec des articles et des cours de grande qualité.
 
 
-## News
-A venir...
-
 ## Articles de recherche
-A venir...
+
+Les articles de recherche sont très importants dans le domaine de l’IA. Cela dit, il y en a énormément qui sont publiés, et souvent certains ne remplissent pas tous les critères, comme la relecture par les pairs. Il devient donc très difficile de distinguer le vrai du faux parmi tous ces articles. Une des sources que je trouve les plus intéressantes est [Huggingface Papers](https://huggingface.co/papers/), car plusieurs personnes prennent le temps de revoir les articles, ce qui permet d’effectuer un premier filtre.
+
+Pour chaque article lu, il est important de garder un esprit critique et de vérifier la crédibilité des auteurs ainsi que celle des différentes personnes ayant examiné l’article.
 
 ## Sites et autres
 
