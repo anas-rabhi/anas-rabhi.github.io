@@ -1,6 +1,6 @@
 ---
-title: "Mais que c'est quoi le RAG vraiment ?"
-description: "Le RAG est un concept parfois difficile à saisir, mais une fois compris, il devient facile de savoir s'il est adapté à votre cas d'usage."
+title: "Mais que c'est quoi le RAG vraiment ? Définition, fonctionnement, limites et conseils"
+description: "Découvrez ce qu'est le RAG (Retrieval-Augmented Generation), son fonctionnement, ses avantages, ses limites et comment l'optimiser pour vos projets d'IA en entreprise."
 categories:
   - "Blog"
   - "IA"
@@ -8,6 +8,9 @@ tags:
   - "RAG"
   - "Intelligence Artificielle"
   - "Retrieval-Augmented Generation"
+  - "RAG fonctionnement"
+  - "RAG limites"
+  - "RAG optimisation"
 date: 2025-06-21
 comments: true
 authors:
@@ -17,10 +20,9 @@ math: true
 mermaid: true
 ---
 
-## Introduction
+## Introduction au RAG (Retrieval-Augmented Generation)
 
-
-Tout le monde a plus ou moins entendu parler du RAG. Beaucoup l'ont même déjà implémenté, parfois avec des outils "no-code" ou des librairies Python comme LangChain ou LlamaIndex. C'est simple à mettre en place, mais je vois aussi pas mal de gens déçus du résultat. En réalité, il faut surtout comprendre à quoi ça sert et comment ça fonctionne pour savoir si c'est adapté à votre besoin.
+Tout le monde a plus ou moins entendu parler du RAG (Retrieval-Augmented Generation). Beaucoup l'ont même déjà implémenté, parfois avec des outils "no-code" ou des librairies Python comme LangChain ou LlamaIndex. C'est simple à mettre en place, mais je vois aussi pas mal de gens déçus du résultat. En réalité, il faut surtout comprendre à quoi ça sert et comment ça fonctionne pour savoir si c'est adapté à votre besoin.
 
 Au début, je ne comptais pas réexpliquer le RAG ici, il existe déjà plein de ressources sur le sujet. Mais en discutant avec des personnes qui veulent l'utiliser en entreprise, je me rends compte qu'on passe souvent à côté de l'essentiel : à quoi ça sert vraiment, et comment ça marche concrètement.
 
@@ -38,7 +40,7 @@ C'est là qu'on peut passer beaucoup de temps à bricoler, à optimiser les mauv
 
 Mais revenons aux bases du RAG dans cet article.
 
-### Pourquoi le RAG ?
+### Pourquoi utiliser le RAG en entreprise ?
 
 Avant de parler du RAG, il faut déjà comprendre pourquoi on en a besoin. Depuis l'arrivée de ChatGPT, on a tous vu à quel point les modèles de langage (appelés LLM) sont puissants. Mais il y a une limite : ils ne connaissent pas nos données à nous, ni les infos internes d'une entreprise.
 
@@ -50,9 +52,9 @@ La solution qui a émergé est la suivante : à chaque question, on sélectionne
 
 C'est exactement ce que fait le RAG : il permet, pour chaque question, de choisir les extraits pertinents et de les ajouter au contexte pour que l'IA puisse répondre, même sur de très gros volumes de documents.
 
-### Comment ça marche un RAG ?
+### Comment fonctionne un système RAG ?
 
-Pour faire simple, la première étape du RAG, c'est de stocker les documents dont on a besoin dans une base de données. Mais comme un modèle de langage ne peut pas tout lire d'un coup (à cause de la fameuse limite de contexte), on découpe chaque document en petits morceaux, qu'on appelle des chunks. Ensuite, on transforme chaque chunk en un vecteur qui capture sa signification (sa sémantique). C'est ce qu'on appelle la vectorisation : ça permet de comparer rapidement la question de l'utilisateur avec tous les morceaux de documents, pour trouver ceux qui sont les plus proches.
+Pour faire simple, la première étape du RAG, c'est de stocker les documents dont on a besoin dans une base de données vectorielle. Mais comme un modèle de langage ne peut pas tout lire d'un coup (à cause de la fameuse limite de contexte), on découpe chaque document en petits morceaux, qu'on appelle des chunks. Ensuite, on transforme chaque chunk en un vecteur qui capture sa signification (sa sémantique). C'est ce qu'on appelle la vectorisation : ça permet de comparer rapidement la question de l'utilisateur avec tous les morceaux de documents, pour trouver ceux qui sont les plus proches.
 
  > Vectoriser un texte consiste à le transformer en un vecteur qui capture sa signification (sa sémantique). Cela permet de comparer facilement la similarité entre la question de l'utilisateur et les différents fragments de documents. Par exemple, si "un chat blanc" est représenté par [1, 1], "un chat noir" par [1, 0], et "un chien noir" par [7, 1], on voit que "un chat noir" est plus proche de "un chat blanc" que de "un chien noir". Ce principe permet d'identifier rapidement les passages les plus pertinents à insérer dans le contexte du modèle.
 
@@ -80,7 +82,7 @@ Dans cette deuxième phase, plusieurs paramètres peuvent être optimisés pour 
 A partir de cette base, on peut commencer à experimenter et évaluer le RAG. Pour ensuite l'améliorer en analysant les erreurs et en changeant les paramètres. Si vous êtes à l'étape de l'évaluation, je vous invite à lire mon article sur l'analyse d'erreur pour comprendre ce qui coince [ici](https://ianas.fr/blog/2025/06/04/mon-rag-ne-marche-pas--pourquoi-lanalyse-derreur-change-tout/).
 
 
-### A quoi ça sert vraiment le RAG et ses limites ?
+### A quoi ça sert vraiment le RAG ? Quelles sont ses limites ?
 
 Je pense que c'est la question la plus importante. Le RAG ne permet pas de répondre à toutes les questions que vous pouvez lui poser, en raison de certaines limites. Dans sa version la plus basique et la plus simple, celle que je détaille ici, il ne permet de répondre qu'à des questions directes qui ciblent un contenu limité.
 
@@ -100,13 +102,11 @@ Je m'explique. Si on lui demande de répondre à une question très large, il es
 - Pour fiabiliser un RAG, il faut : bien organiser les données, surveiller la qualité des sources, calibrer les paramètres (chunking, embeddings, etc.), et permettre la citation des sources pour pouvoir vérifier les informations si besoin.
 - L'évaluation et l'amélioration d'un RAG se font surtout en conditions réelles, car les problèmes apparaissent à l'usage.
 
-### Conclusion : Le RAG est-il utile ?
+### Conclusion : Le RAG est-il utile pour vos projets d'IA ?
 
 Le RAG est vraiment utile, à condition de prendre le temps de bien le mettre en place et de l'améliorer au fil du temps. Ce n'est pas un outil qu'on implémente en vitesse pour le laisser tourner tout seul : il faut l'évaluer, l'ajuster, et corriger ce qui ne va pas pour qu'il soit vraiment efficace.
 
-Les limites que j'ai évoquées ne sont pas simples à éliminer, mais il existe des solutions pour les atténuer. Si vous cherchez un système qui donne 100 % de bonnes réponses, le RAG n'est pas fait pour vous. Mais si vous êtes prêt à viser 90-95 % de réponses correctes, et à investir un peu de temps pour bien l'implémenter, alors le RAG peut vraiment devenir votre meilleur allié. 
-
-
+Les limites que j'ai évoquées ne sont pas simples à éliminer, mais il existe des solutions pour les atténuer. On parle souvent d'Agentic RAG par exemple pour améliorer certains aspects du RAG. Si vous cherchez un système qui donne 100 % de bonnes réponses, le RAG (et l'IA en général) n'est pas faite pour vous. Mais si vous êtes prêt à viser 90-95 % de réponses correctes, et à investir un peu de temps pour bien l'implémenter, alors le RAG peut vraiment devenir votre meilleur allié. 
 
 ---------
 
@@ -119,3 +119,32 @@ Vous pouvez aussi vous abonner à ma newsletter :)
     <span style="margin-right: 10px;">✉️</span> S'abonner à ma newsletter
   </a>
 </div>
+
+---
+
+## FAQ sur le RAG (Retrieval-Augmented Generation)
+
+**Qu'est-ce que le RAG en intelligence artificielle ?**  
+Le RAG (Retrieval-Augmented Generation) est une méthode qui combine la recherche d'informations dans une base documentaire et la génération de texte par un modèle de langage (LLM), afin de répondre à des questions en s'appuyant sur des sources fiables et actualisées.
+
+**Comment fonctionne le chunking dans le RAG ?**  
+Le chunking consiste à découper les documents en petits morceaux (chunks) pour faciliter la recherche et l'indexation. Chaque chunk est vectorisé pour permettre une comparaison sémantique efficace avec la question posée.
+
+**Quels sont les avantages du RAG ?**  
+Le RAG permet d'accéder à des informations spécialisées, de fournir des réponses précises et de s'appuyer sur des documents internes non connus des modèles de base.
+
+**Quelles sont les limites du RAG ?**  
+Le RAG dépend fortement de la qualité et de l'organisation des données, et il ne garantit pas la complétude ni la véracité des réponses. Il peut aussi être limité pour des questions nécessitant un raisonnement complexe.
+
+**Comment optimiser un système RAG ?**  
+Pour optimiser un RAG, il faut bien organiser les données, choisir un bon modèle d'embeddings, ajuster la taille des chunks, surveiller la qualité des sources et permettre la citation des documents.
+
+---
+
+Pour aller plus loin :
+- [Comment améliorer le RAG](https://ianas.fr/blog/2025/03/26/comment-am%C3%A9liorer-le-rag/)
+- [Pourquoi le RAG ne fonctionne pas ? Analyse d'erreur](https://ianas.fr/blog/2025/06/04/mon-rag-ne-marche-pas--pourquoi-lanalyse-derreur-change-tout/)
+- [RAG et chunking](rag-et-chunking.md)
+- [RAG et modèle d'embedding](rag-et-modele-embedding.md)
+- [RAG : réécriture de query](rag-reecriture-de-query.md)
+- [RAG trop simple ?](rag-trop-simple.md)
