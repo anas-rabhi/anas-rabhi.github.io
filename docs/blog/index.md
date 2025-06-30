@@ -16,13 +16,11 @@ tags:
 
 Bienvenue sur mon blog !
 
-Ici, je partage avec vous mes réflexions, mes découvertes et mes expériences autour de l'intelligence artificielle, un domaine passionnant qui évolue chaque jour.
+J'essaye de partager régulièrement mes réflexions, mes découvertes et mes expériences autour de l'intelligence artificielle, un domaine passionnant avec beaucoup de choses à découvrir.
 
-En tant que consultant data scientist spécialisé en IA, je vous propose des articles variés, allant des dernières nouveautés comme le RAG (Retrieval-Augmented Generation) ou les agents intelligents, jusqu'à des exemples concrets d'utilisation de l'IA dans différents secteurs professionnels.
+Pourquoi je me suis lancé dans ce blog ? En tant que consultant data scientist spécialisé en IA, je suis régulièrement confronté à des problématiques métier que je résous en utilisant l'intelligence artificielle. Dans ce processus, j'apprends beaucoup sur les enjeux métier, sur la manière d’intégrer l’IA de façon pertinente selon chaque contexte, et sur comment rendre l’IA plus accessible à tous.
 
-Vous trouverez des retours d'expérience issus de mes projets réels, des études de cas pratiques, ainsi que des conseils simples et efficaces pour intégrer l'intelligence artificielle dans votre quotidien professionnel.
-
-Mon but est de rendre l'IA accessible à tous, peu importe votre niveau technique ou votre secteur d'activité. À travers ce blog, je souhaite simplifier les concepts complexes et vous montrer comment l'IA peut devenir un véritable copilote pour vous aider au quotidien.
+Mon objectif à travers mes articles est de vulgariser des concepts IA, proposer des solutions techniques concrètes, partager des retours d'expérience issus de mes projets, et donner des conseils pratiques pour intégrer l'intelligence artificielle dans votre quotidien professionnel.
 
 Bonne lecture, et n'hésitez pas à échanger avec moi : anas0rabhi@gmail.com !
 
