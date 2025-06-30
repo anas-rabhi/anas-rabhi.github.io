@@ -3,6 +3,7 @@
 Je m'appelle Anas, je suis consultant data scientist spécialisé en NLP et l'IA générative. Mon travail consiste à apporter des solutions concrètes à des problématiques métier en utilisant l'IA. Car je suis convaincu que l'IA peut apporter une véritable valeur ajoutée à chaque profession (enfin, presque toutes soyons honnêtes...). 
 
 Mon objectif au quotidien est d'accompagner les entreprises afin qu'elles exploitent pleinement le potentiel de leurs données pour :
+
 - Améliorer les prises de décisions stratégiques.
 - Optimiser les processus opérationnels.
 - Augmenter la productivité et la rentabilité.
