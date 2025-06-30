@@ -30,7 +30,8 @@ Quelques exemples de projets réalisés :
 
 - **Entraîneur IA vocal pour les commerciaux en assurance santé** : Cet outil a permis de former les commerciaux deux fois plus rapidement.
 
-- **Agents IA personnalisés sur site web** : Création d'un outil qui permet de faciliter le support client 
+- **Agents IA personnalisés sur site web** : Création d'un outil qui permet de faciliter le support client (https://heeya.fr/)
+
 ---
 
 Si mes articles vous intéressent et que vous avez des questions ou juste envie de discuter de vos propres cas d'usages, n'hésitez pas à m'écrire à anas0rabhi@gmail.com, j'aime bien échanger sur ces sujets !
