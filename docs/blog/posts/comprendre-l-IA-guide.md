@@ -1,5 +1,5 @@
 ---
-title: "Comprendre l'intelligence artificielle : Guide pratique simple (Partie 1)"
+title: "Comprendre l'intelligence artificielle : Guide Simple (Partie 1)"
 description: "Découvrez les concepts fondamentaux de l'intelligence artificielle expliqués simplement, avec des exemples concrets et des conseils pratiques pour mieux comprendre cette technologie transformative."
 categories:
   - "Blog"
@@ -24,13 +24,15 @@ L'intelligence artificielle séduit de plus en plus de curieux et de professionn
 
 Cependant, se plonger dans le monde de l'IA peut s'avérer déroutant. Entre les vidéos explicatives superficielles et un flot de ressources sans véritable explication de fond, la confusion règne. De nombreuses idées reçues circulent, amplifiant la perception que l'IA est un domaine impénétrable.
 
-L'objectif de cet article est de dissiper cette brume en fournissant une introduction claire et accessible à l'IA, ses composantes et ses applications. Que vous soyez juste curieux ou que vous cherchiez à intégrer l'IA dans votre domaine, ce guide est conçu pour vous donner les clés nécessaires pour naviguer dans cet univers fascinant.
+L'objectif de cet article est de dissiper cette brume en fournissant une introduction claire et accessible à l'IA, ses composantes et ses applications. Que vous soyez juste curieux ou que vous cherchiez à intégrer l'IA dans votre domaine, ce guide est conçu pour vous donner les clés nécessaires pour **comprendre l'intelligence artificielle** et naviguer dans cet univers fascinant.
 
 Dans cette partie 1, je vais me concentrer sur les bases. Et dans la deuxieme partie je me focaliserai sur l'IA Générative.
 
 ## Comprendre les Bases de l'IA
 
 L'intelligence artificielle est un terme que l'on entend partout ces jours-ci, mais que signifie-t-il vraiment ? Pour faire simple, l'IA repose sur des algorithmes capables d'apprendre et d'effectuer des tâches spécifiques à partir de données historiques. Les données, donc, sont la pierre angulaire de toute application d'IA. Sans elles, l'algorithme n'a rien sur quoi s'appuyer.
+
+**Pour comprendre l'intelligence artificielle**, il faut d'abord saisir l'importance des données et des modèles qui les exploitent.
 
 L'idée fondamentale est d'utiliser ces données pour créer des modèles capables de réaliser de nouvelles tâches ou de prédire des résultats. Par exemple, identifier des fraudes à partir de caractéristiques déjà observées. Sans ces données préexistantes, notre "intelligence" serait sans repère, comme un chef talentueux mais sans ingrédients.
 
@@ -66,7 +68,7 @@ Ces deux composantes, bien que puissantes, nécessitent une approche réfléchie
 
 Pour mieux comprendre les relations entre l'Intelligence Artificielle, le Machine Learning et le Deep Learning, voici une représentation visuelle qui illustre comment ces domaines s'imbriquent les uns dans les autres :
 
-![Relation entre IA, Machine Learning et Deep Learning](./img/IA-ml-dl.png)
+![Relation entre IA, Machine Learning et Deep Learning – comprendre l'intelligence artificielle](./img/IA-ml-dl.png)
 
 Cette image montre clairement que le Deep Learning est un sous-ensemble du Machine Learning, qui est lui-même une branche de l'Intelligence Artificielle. Chaque couche représente une approche plus spécialisée et sophistiquée, avec des techniques et des applications spécifiques.
 
@@ -77,13 +79,15 @@ Cette hiérarchie nous rappelle que, bien que le Deep Learning soit actuellement
 
 Dans le vaste univers de l'intelligence artificielle, il est crucial de comprendre que différents domaines existent, chacun ayant des applications spécifiques et des relations étroites avec les composantes du machine learning et du deep learning. Dans cette section, je vais présenter un aperçu de chaque domaine majeur de l'IA, en expliquant comment ils s'appuient sur le machine learning et le deep learning pour fonctionner efficacement.
 
-On peut voir un domaine de l'IA comme une spécialité. Imagineons que l'IA est la médecine. Les différents domaines de la médecine sont la cardiologie, la dentisterie, etc. C'est pareil pour l'IA. Les domaines de l'IA peuvent être l'imagerie, les moteurs de recommandation, le traitement du langage, etc. Et dans chaque domaine, on peut appliquer du machine learning ou du deep learning.
+On peut voir un domaine de l'IA comme une spécialité. Imaginez que l'IA est la médecine. Les différents domaines de la médecine sont la cardiologie, la dentisterie, etc. C'est pareil pour l'IA. Les domaines de l'IA peuvent être l'imagerie, les moteurs de recommandation, le traitement du langage, etc. Et dans chaque domaine, on peut appliquer du machine learning ou du deep learning.
+
+**Comprendre l'intelligence artificielle**, c'est aussi découvrir la diversité de ses domaines d'application et la façon dont ils transforment notre quotidien.
 
 ### Vision par ordinateur : Voir pour comprendre
 
 Le domaine de la vision par ordinateur se concentre sur la capacité des machines à analyser et interpréter des images et des vidéos. Que ce soit pour reconnaître des visages sur Facebook ou pour permettre à une voiture autonome de "voir" la route, les applications sont variées et en constante évolution.
 
-L'analyse vidéo en temps réel, essentielle pour des applications telles que la sécurité ou le sport, dépend fortement de cette technologie. Mais attention, toute cette magie visuelle repose sur des techniques avancées d'apprentissage supervisé (où l'algorithme apprend à partir d'exemples étiquetés par des humains) et d'énormes ensembles de données annotées. Sans ces fondations solides, même les algorithmes les plus prometteurs risquent de trébucher.
+L'analyse vidéo en temps réel, essentielle pour des applications telles que la sécurité ou le sport, dépend fortement de cette technologie. Mais attention, toute cette magie visuelle repose sur des techniques avancées d'apprentage supervisé (où l'algorithme apprend à partir d'exemples étiquetés par des humains) et d'énormes ensembles de données annotées. Sans ces fondations solides, même les algorithmes les plus prometteurs risquent de trébucher.
 
 Il est important de souligner que la vision par ordinateur est un domaine extrêmement vaste et complexe. Maîtriser ses différentes facettes, de la détection d'objets à la segmentation d'images, et la reconnaissance faciale (et beaucoup d'autres...) peut nécessiter plusieurs années d'étude et de pratique. Chaque sous-domaine possède ses propres défis techniques et méthodologiques, et les chercheurs continuent d'innover constamment pour repousser les limites de ce que les machines peuvent "voir" et comprendre.
 
@@ -123,7 +127,7 @@ Une chose à retenir : il est essentiel de comprendre que l'IA est intrinsèquem
 
 ## Conclusion
 
-Pour conclure cette première partie, nous avons parcouru ensemble les grands domaines qui composent l’intelligence artificielle. Chacun possède ses propres particularités, ses défis et ses applications, ce qui rend l’IA aussi riche que passionnante. Bien sûr, il existe une multitude d’autres sous-domaines, parfois plus discrets ou émergents, que je n’ai pas pu aborder ici. L’essentiel est de retenir que l’IA est un univers vaste et en constante évolution.
+Pour conclure cette première partie, nous avons exploré ensemble les grands domaines qui composent l’intelligence artificielle. Chacun possède ses spécificités, ses défis et ses applications, ce qui rend l’IA aussi riche que passionnante. Bien entendu, il existe de nombreux autres sous-domaines, parfois plus discrets ou émergents, que je n’ai pas pu aborder ici. L’essentiel à retenir est que, finalement, **comprendre l’intelligence artificielle** consiste à comprendre quelques concepts de base qui sont les fondations de l'IA.
 
 Dans la suite, nous plongerons dans l'univers passionnant de l'IA générative. En attendant la partie deux, n'hésitez pas à vous abonner à ma newsletter 😀 À bientôt ! 
 
