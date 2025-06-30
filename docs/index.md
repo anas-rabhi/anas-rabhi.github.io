@@ -1,16 +1,17 @@
 # Bienvenue !
 
-Je m'appelle Anas, consultant data scientist spécialisé en intelligence artificielle. Je suis convaincu que l'IA peut devenir un véritable copilote pour chaque profession. Mon objectif principal est donc d'accompagner les entreprises afin qu'elles exploitent pleinement le potentiel de leurs données pour :
+Je m'appelle Anas, je suis consultant data scientist spécialisé en NLP et l'IA générative. Mon travail consiste à apporter des solutions concrètes à des problématiques métier en utilisant l'IA. Car je suis convaincu que l'IA peut apporter une véritable valeur ajoutée à chaque profession (enfin, presque toutes soyons honnêtes...). 
 
-- Améliorer leur prise de décisions stratégiques.
-- Optimiser leurs processus opérationnels.
-- Augmenter leur productivité et leur rentabilité.
+Mon objectif au quotidien est d'accompagner les entreprises afin qu'elles exploitent pleinement le potentiel de leurs données pour :
+- Améliorer les prises de décisions stratégiques.
+- Optimiser les processus opérationnels.
+- Augmenter la productivité et la rentabilité.
 
-Transmettre mes connaissances est une véritable passion qui m'anime au quotidien. C'est pourquoi j'apprécie tout particulièrement de réaliser des audits et d'animer des formations afin d'aider les entreprises à adopter et optimiser efficacement l'utilisation de l'intelligence artificielle dans leurs activités.
+Partager mes connaissances est une vraie passion, que ce soit via des formations, des audits ou des articles de blog. Mes contenus visent à vulgariser l’IA, proposer des solutions concrètes et partager des retours d’expérience pour faciliter l’intégration de l’intelligence artificielle au quotidien.
 
-À travers ce blog, je partage ma veille, mes analyses et mes découvertes autour des dernières tendances en IA, tout en proposant des pistes concrètes d'amélioration aux solutions existantes. Actuellement, mes travaux portent plus particulièrement sur les problématiques avancées de RAG (« Retrieval-Augmented Generation »), notamment dans sa forme la plus évoluée, appelée « Agentic RAG », ainsi que sur les agents intelligents basés sur l'IA.
+Lisez mes articles en suivant le lien ci-dessous : ([Mes articles de blog](https://ianas.fr/blog/))
 
-Quelques exemples de projets réalisés :
+Voici quelques exemples de projets réalisés et des problématiques auxquelles j'ai pu apporter des solutions :
 
 - **Agent IA pour l'écriture de réponses à des appels d'offres** : Cet agent a automatisé la rédaction des réponses, réduisant considérablement le temps nécessaire.  
   **Résultat** : 75 % de temps économisé avec un retour sur investissement (ROI) de 300 %.
@@ -26,9 +27,7 @@ Quelques exemples de projets réalisés :
 
 - **Agent IA pour l'écriture de tests unitaires** : Automatisation de la création de tests unitaires à partir du code source.
 
-- **IA souveraine spécialisée dans les données spatiales** : Mise en place d'un RAG (Retrieval-Augmented Generation) sur des données à haute confidentialité.
-
-- **Entraîneur IA vocal pour les commerciaux en assurance santé** : Cet outil a permis de former les commerciaux deux fois plus rapidement.
+- **IA souveraine spécialisée dans les données spatiales** : Mise en place d'un RAG (Retrieval-Augmented Generation) sur des données confidentielles avec des LLMs souverains.
 
 - **Agents IA personnalisés sur site web** : Création d'un outil qui permet de faciliter le support client (https://heeya.fr/)
 
