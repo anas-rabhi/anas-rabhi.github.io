@@ -106,7 +106,9 @@ Je m'explique. Si on lui demande de répondre à une question très large, il es
 
 Le RAG est vraiment utile, à condition de prendre le temps de bien le mettre en place et de l'améliorer au fil du temps. Ce n'est pas un outil qu'on implémente en vitesse pour le laisser tourner tout seul : il faut l'évaluer, l'ajuster, et corriger ce qui ne va pas pour qu'il soit vraiment efficace.
 
-Les limites que j'ai évoquées ne sont pas simples à éliminer, mais il existe des solutions pour les atténuer. On parle souvent d'Agentic RAG par exemple pour améliorer certains aspects du RAG. Si vous cherchez un système qui donne 100 % de bonnes réponses, le RAG (et l'IA en général) n'est pas faite pour vous. Mais si vous êtes prêt à viser 90-95 % de réponses correctes, et à investir un peu de temps pour bien l'implémenter, alors le RAG peut vraiment devenir votre meilleur allié. 
+Les limites que j'ai évoquées ne sont pas simples à éliminer, mais il existe des solutions pour les atténuer. On parle souvent d'Agentic RAG par exemple pour améliorer certains aspects du RAG. Si vous cherchez un système qui donne 100 % de bonnes réponses, le RAG (et l'IA en général) n'est pas faite pour vous. Mais si vous êtes prêt à viser 90-95 % de réponses correctes, et à investir un peu de temps pour bien l'implémenter, alors le RAG peut vraiment devenir votre meilleur allié.
+
+Si vous voulez en savoir plus sur le RAG, même le gouvernement a publié un guide pour faire du RAG : [Guide de la génération augmentée par récupération (RAG)](https://www.entreprises.gouv.fr/la-dge/publications/guide-de-la-generation-augmentee-par-recuperation-rag)
 
 ---------
 
