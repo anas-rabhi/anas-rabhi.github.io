@@ -10,7 +10,7 @@ Mon objectif au quotidien est d'accompagner les entreprises afin qu'elles exploi
 
 Partager mes connaissances est une vraie passion, que ce soit via des formations, des audits ou des articles de blog. Mes contenus visent à vulgariser l’IA, proposer des solutions concrètes et partager des retours d’expérience pour faciliter l’intégration de l’intelligence artificielle au quotidien.
 
-Lisez mes articles en suivant le lien ci-dessous : ([Mes articles de blog](https://ianas.fr/blog/))
+Lisez mes articles en suivant le lien ci-dessous : [Mes articles de blog](https://ianas.fr/blog/)
 
 Voici quelques exemples de projets réalisés et des problématiques auxquelles j'ai pu apporter des solutions :
 
