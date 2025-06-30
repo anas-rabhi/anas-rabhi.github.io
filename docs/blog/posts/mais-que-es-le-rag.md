@@ -22,9 +22,9 @@ mermaid: true
 
 ## Introduction au RAG (Retrieval-Augmented Generation)
 
-Tout le monde a plus ou moins entendu parler du RAG (Retrieval-Augmented Generation). Beaucoup l'ont même déjà implémenté, parfois avec des outils "no-code" ou des librairies Python comme LangChain ou LlamaIndex. C'est simple à mettre en place, mais je vois aussi pas mal de gens déçus du résultat. En réalité, il faut surtout comprendre à quoi ça sert et comment ça fonctionne pour savoir si c'est adapté à votre besoin.
+Tout le monde a plus ou moins entendu parler du RAG (Retrieval-Augmented Generation). Mais **c'est quoi le RAG** exactement ? Beaucoup l'ont même déjà implémenté, parfois avec des outils "no-code" ou des librairies Python comme LangChain ou LlamaIndex. C'est simple à mettre en place, mais je vois aussi pas mal de gens déçus du résultat. En réalité, il faut surtout comprendre à quoi ça sert et comment ça fonctionne pour savoir si c'est adapté à votre besoin.
 
-Au début, je ne comptais pas réexpliquer le RAG ici, il existe déjà plein de ressources sur le sujet. Mais en discutant avec des personnes qui veulent l'utiliser en entreprise, je me rends compte qu'on passe souvent à côté de l'essentiel : à quoi ça sert vraiment, et comment ça marche concrètement.
+Au début, je ne comptais pas réexpliquer le RAG ici, il existe déjà plein de ressources sur le sujet. Mais en discutant avec des personnes qui veulent l'utiliser en entreprise, je me rends compte qu'on passe souvent à côté de l'essentiel : à quoi ça sert vraiment un RAG, et comment ça marche concrètement.
 
 Je vais donc essayer de revenir sur les points que j'ai l'habitude d'éclaircir quand on me pose la question.
 
@@ -32,7 +32,7 @@ Je vais donc essayer de revenir sur les points que j'ai l'habitude d'éclaircir 
 
 ### La facilité d'implementation du RAG
 
-Mettre en place un RAG, c'est facile. C'est même trop facile : on suit un tuto, on branche deux librairies, et hop, ça tourne. Mais attention, le résultat n'est pas toujours à la hauteur des attentes (spoiler : souvent, on est déçu).
+Mettre en place un RAG, c'est facile. C'est même trop facile : on suit un tuto, on branche deux librairies, et hop, ça tourne. Mais attention, le résultat n'est pas toujours à la hauteur des attentes (spoiler : souvent, on est déçu).
 
 Justement, cette simplicité cache un piège. Pour une question très basique, le RAG peut donner l'impression que tout fonctionne parfaitement. Mais dès qu'on sort un peu du cadre, on se rend vite compte que les réponses ne suivent plus.
 
@@ -40,11 +40,11 @@ C'est là qu'on peut passer beaucoup de temps à bricoler, à optimiser les mauv
 
 Mais revenons aux bases du RAG dans cet article.
 
-### Pourquoi utiliser le RAG en entreprise ?
+### C'est quoi le RAG et pourquoi l'utiliser en entreprise ?
 
-Avant de parler du RAG, il faut déjà comprendre pourquoi on en a besoin. Depuis l'arrivée de ChatGPT, on a tous vu à quel point les modèles de langage (appelés LLM) sont puissants. Mais il y a une limite : ils ne connaissent pas nos données à nous, ni les infos internes d'une entreprise.
+Avant de parler du RAG, il faut déjà comprendre **c'est quoi le RAG** et pourquoi on en a besoin. Depuis l'arrivée de ChatGPT, on a tous vu à quel point les modèles de langage (appelés LLM) sont puissants. Mais il y a une limite : ils ne connaissent pas nos données à nous, ni les infos internes d'une entreprise.
 
-Prenons un exemple tout simple : j'ai une documentation sur une page Word. Si je veux poser des questions à l'IA sur ce document, je peux copier le texte dans ChatGPT : l'IA va le lire et répondre, parce que j'ai mis le texte directement dans ce qu'on appelle le contexte du modèle (ou le prompt). 
+Prenons un exemple tout simple : j'ai une documentation sur une page Word. Si je veux poser des questions à l'IA sur ce document, je peux copier le texte dans ChatGPT : l'IA va le lire et répondre, parce que j'ai mis le texte directement dans ce qu'on appelle le contexte du modèle (ou le prompt). 
 
 Sauf que la fenêtre de contexte est limitée à un certain nombre de mots (ou plus précisément de tokens). On peut charger une page, mais pas 10 000 d'un coup. En entreprise, on a souvent des documents très volumineux, et on aimerait qu'une IA puisse répondre à des questions sur l'ensemble de ces documents.
 
@@ -121,30 +121,3 @@ Vous pouvez aussi vous abonner à ma newsletter :)
 </div>
 
 ---
-
-## FAQ sur le RAG (Retrieval-Augmented Generation)
-
-**Qu'est-ce que le RAG en intelligence artificielle ?**  
-Le RAG (Retrieval-Augmented Generation) est une méthode qui combine la recherche d'informations dans une base documentaire et la génération de texte par un modèle de langage (LLM), afin de répondre à des questions en s'appuyant sur des sources fiables et actualisées.
-
-**Comment fonctionne le chunking dans le RAG ?**  
-Le chunking consiste à découper les documents en petits morceaux (chunks) pour faciliter la recherche et l'indexation. Chaque chunk est vectorisé pour permettre une comparaison sémantique efficace avec la question posée.
-
-**Quels sont les avantages du RAG ?**  
-Le RAG permet d'accéder à des informations spécialisées, de fournir des réponses précises et de s'appuyer sur des documents internes non connus des modèles de base.
-
-**Quelles sont les limites du RAG ?**  
-Le RAG dépend fortement de la qualité et de l'organisation des données, et il ne garantit pas la complétude ni la véracité des réponses. Il peut aussi être limité pour des questions nécessitant un raisonnement complexe.
-
-**Comment optimiser un système RAG ?**  
-Pour optimiser un RAG, il faut bien organiser les données, choisir un bon modèle d'embeddings, ajuster la taille des chunks, surveiller la qualité des sources et permettre la citation des documents.
-
----
-
-Pour aller plus loin :
-- [Comment améliorer le RAG](https://ianas.fr/blog/2025/03/26/comment-am%C3%A9liorer-le-rag/)
-- [Pourquoi le RAG ne fonctionne pas ? Analyse d'erreur](https://ianas.fr/blog/2025/06/04/mon-rag-ne-marche-pas--pourquoi-lanalyse-derreur-change-tout/)
-- [RAG et chunking](rag-et-chunking.md)
-- [RAG et modèle d'embedding](rag-et-modele-embedding.md)
-- [RAG : réécriture de query](rag-reecriture-de-query.md)
-- [RAG trop simple ?](rag-trop-simple.md)
