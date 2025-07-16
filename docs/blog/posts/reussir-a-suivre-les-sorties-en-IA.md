@@ -83,7 +83,7 @@ Par la suite, j'ai découvert d'autres canaux très intéressants, que je consul
 
 **Github :**
 
-Si vous voulez découvrir des librairies open-source autour de l'IA générative, github peut être un bon endroit. Il y a les plus connues Langchain, HuggingFace, LLamaindex, etc. Mais la liste est vraiment très longue, et vous pouvez la trouver sur mes favoris github : [Generative AI](https://github.com/stars/anas-rabhi/lists/generative-ai)
+Si vous voulez découvrir des librairies open-source autour de l'IA générative, github peut être un bon endroit. Il y a les plus connues Langchain, HuggingFace, LLamaindex, etc. Mais la liste est vraiment très longue, et vous pouvez la trouver dans mes favoris github : [Generative AI](https://github.com/stars/anas-rabhi/lists/generative-ai)
 
 Si vous avez un besoin bien précis on peut discuter des différents libraires par message sur [LinkedIn](https://www.linkedin.com/in/anasrabhi/) ! :)
 
@@ -109,12 +109,12 @@ YouTube, c'est l'endroit où je passe pas mal de temps de mon côté. Que je soi
 - [EfficientNLP](https://www.youtube.com/@EfficientNLP/videos) : Chaîne d'un chercheur spécialisé en NLP, avec des vidéos éducatives sur le sujet.
 - [Sebastian Raschka](https://www.youtube.com/@SebastianRaschka) : Chercheur qui propose des vidéos éducatives. Auteur de plusieurs livres dont "Build a Large Language Model From Scratch".
 
-Si il y en a d'autres qui me reviennent en tête ou que je découvre, je les ajouterai au fil du temps. En général, je découvre de nouvelles chaînes via les recommandations ou les réseaux. Si vous en avez à partager, envoyez-moi un message sur [LinkedIn](https://www.linkedin.com/in/anasrabhi/) !
+S'il y en a d'autres qui me reviennent en tête ou que je découvre, je les ajouterai au fil du temps. En général, je découvre de nouvelles chaînes via les recommandations ou les réseaux. Si vous en avez à partager, envoyez-moi un message sur [LinkedIn](https://www.linkedin.com/in/anasrabhi/) !
 
 
 ## Newsletters
 
-Les newsletter c'est un petit peu le récapitulatif de tout ce qui se trouve déjà sur Twitter/X. Les annonces des chercheurs ou entreprises se font le plus souvent sur X et sont relayés sur les autres réseaux.
+Les newsletters, c'est en quelque sorte le récapitulatif de tout ce qui circule déjà sur Twitter/X. Les annonces des chercheurs ou des entreprises se font le plus souvent sur X et sont ensuite relayées sur les autres réseaux.
 
 - [TLDR AI](https://tldr.tech/ai) : newsletter avec les dernières actualités IA.
 
