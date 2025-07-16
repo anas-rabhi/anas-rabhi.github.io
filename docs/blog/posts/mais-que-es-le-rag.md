@@ -30,7 +30,7 @@ Je vais donc essayer de revenir sur les points que j'ai l'habitude d'éclaircir 
 
 <!-- more --> 
 
-### La facilité d'implementation du RAG
+### La facilité d'implémentation du RAG
 
 Mettre en place un RAG, c'est facile. C'est même trop facile : on suit un tuto, on branche deux librairies, et hop, ça tourne. Mais attention, le résultat n'est pas toujours à la hauteur des attentes (spoiler : souvent, on est déçu).
 
@@ -50,7 +50,7 @@ Sauf que la fenêtre de contexte est limitée à un certain nombre de mots (ou p
 
 La solution qui a émergé est la suivante : à chaque question, on sélectionne seulement quelques extraits de la documentation qui sont pertinents, et on les insère dans le contexte (ou prompt) du modèle.
 
-C'est exactement ce que fait le RAG : il permet, pour chaque question, de choisir les extraits pertinents et de les ajouter au contexte pour que l'IA puisse répondre, même sur de très gros volumes de documents.
+C'est exactement ce que fait le RAG : il permet, pour chaque question, de choisir les extraits pertinents et de les ajouter au contexte pour que l'IA puisse répondre, même sur de très gros volumes de documents, si vous aimez lire, AWS en parle très bien ici aussi : ([aws.amazon.com](https://aws.amazon.com/fr/what-is/retrieval-augmented-generation/))
 
 ### Comment fonctionne un système RAG ?
 
@@ -58,7 +58,7 @@ Pour faire simple, la première étape du RAG, c'est de stocker les documents do
 
  > Vectoriser un texte consiste à le transformer en un vecteur qui capture sa signification (sa sémantique). Cela permet de comparer facilement la similarité entre la question de l'utilisateur et les différents fragments de documents. Par exemple, si "un chat blanc" est représenté par [1, 1], "un chat noir" par [1, 0], et "un chien noir" par [7, 1], on voit que "un chat noir" est plus proche de "un chat blanc" que de "un chien noir". Ce principe permet d'identifier rapidement les passages les plus pertinents à insérer dans le contexte du modèle.
 
-L'étape de vectorisation est cruciale : c'est elle qui permet de retrouver les bons documents quand on pose une question. Pour ça, on utilise ce qu'on appelle des modèles d'embeddings. Leur rôle est de transformer le texte en un vecteur qui capture sa signification, sa "sémantique". Ces modèles sont eux-mêmes des IA, entraînées spécialement pour cette tâche.
+L'étape de vectorisation est cruciale : c'est elle qui permet de retrouver les bons documents quand on pose une question. Pour ça, on utilise ce qu'on appelle des modèles d'embeddings. Leur rôle est de transformer le texte en un vecteur qui capture sa signification, sa "sémantique". Ces modèles sont eux-mêmes des IA, entraînées spécialement pour cette tâche, pour en savoir plus.
 
 Comme on peut le voir, il y a déjà un vrai travail en amont : il faut bien préparer les documents. La performance du RAG dépend beaucoup de deux choses : comment on découpe les documents (la taille et la méthode de découpage, ce qu'on appelle le chunking), et la qualité du modèle d'embeddings qu'on utilise pour transformer ces morceaux en vecteurs. Rien que sur ces deux points, on a déjà de quoi améliorer les futurs résultats.
 
@@ -71,7 +71,7 @@ Chunk 1 : <TEXT DU CHUNK 1>
 Chunk 2 : <TEXT DU CHUNK 2>
 ...
 
-Voici la question de l'utilisateur : Dans quel document je peux trouver des informtaions concernant le planning du moteur avec la réference X2D2E?
+Voici la question de l'utilisateur : Dans quel document je peux trouver des informations concernant le planning du moteur avec la référence X2D2E?
 ```
 
 Dans cette deuxième phase, plusieurs paramètres peuvent être optimisés pour améliorer le RAG :
@@ -79,10 +79,9 @@ Dans cette deuxième phase, plusieurs paramètres peuvent être optimisés pour 
 - Le nombre de chunks récupérés peut être trop faible ou trop grand.
 - La qualité du modèle LLM qui génère la réponse peut être améliorée.
 
-A partir de cette base, on peut commencer à experimenter et évaluer le RAG. Pour ensuite l'améliorer en analysant les erreurs et en changeant les paramètres. Si vous êtes à l'étape de l'évaluation, je vous invite à lire mon article sur l'analyse d'erreur pour comprendre ce qui coince [ici](https://ianas.fr/blog/2025/06/04/mon-rag-ne-marche-pas--pourquoi-lanalyse-derreur-change-tout/).
+À partir de cette base, on peut commencer à expérimenter et évaluer le RAG. Pour ensuite l'améliorer en analysant les erreurs et en changeant les paramètres. Si vous êtes à l'étape de l'évaluation, je vous invite à lire mon article sur l'analyse d'erreur pour comprendre ce qui coince [ici](https://ianas.fr/blog/2025/06/04/mon-rag-ne-marche-pas--pourquoi-lanalyse-derreur-change-tout/).
 
-
-### A quoi ça sert vraiment le RAG ? Quelles sont ses limites ?
+### À quoi ça sert vraiment le RAG ? Quelles sont ses limites ?
 
 Je pense que c'est la question la plus importante. Le RAG ne permet pas de répondre à toutes les questions que vous pouvez lui poser, en raison de certaines limites. Dans sa version la plus basique et la plus simple, celle que je détaille ici, il ne permet de répondre qu'à des questions directes qui ciblent un contenu limité.
 
@@ -95,7 +94,7 @@ Je m'explique. Si on lui demande de répondre à une question très large, il es
 **Où le RAG montre ses limites :**
 - **Raisonnement itératif limité** : Le RAG ne sait pas raisonner en plusieurs étapes pour affiner sa recherche. Il ne vérifie pas si les documents récupérés sont vraiment les plus pertinents ou si l'information est complète. Par exemple, pour une question complexe, il va juste ramener les passages les plus proches sémantiquement, sans "comprendre" le contexte global comme le ferait un humain.
 - **Dépendance à l'organisation des données** : Si les documents sont mal structurés ou mal indexés, la recherche sera inefficace. Une bonne organisation, des métadonnées et une structuration claire sont essentiels.
-- **Qualité et biais des sources** : Le RAG ne fait que transmettre ce qu'il trouve. Si les documents sont incomplets, obsolètes ou biaisés, la réponse le sera aussi.
+- **Qualité et biais des sources** : Le RAG ne fait que transmettre ce qu'il trouve. Si les documents sont incomplets, obsolètes ou biaisés, la réponse le sera aussi, pour en savoir plus : [elastic.co](https://www.elastic.co/fr/what-is/retrieval-augmented-generation/)
 
 **À retenir :**
 - Le RAG ne garantit pas la complétude ni la véracité des réponses. Il y a toujours un risque d'hallucination ou d'erreur.
