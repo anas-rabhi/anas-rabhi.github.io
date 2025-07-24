@@ -27,7 +27,7 @@ Vous vous dites que c’est déjà compliqué, mais imaginez maintenant qu’il 
 
 Suivre tout cela est donc très complexe : des modèles sortent presque tous les jours, de nouvelles techniques, des produits... 24 heures ne suffisent clairement pas pour tout voir.
 
-Comme c’est mon métier et que je suis passionné par le sujet, j’ai pris l’habitude de suivre un peu tout ça au quotidien, en essayant de ne pas trop en faire et en gardant du plaisir. Je me suis donc dit qu’il serait intéressant d’écrire un article sur la façon dont j’essaie de rester à jour.
+Comme c’est mon métier et que je suis passionné par le sujet, j’ai pris l’habitude de suivre tout ça au quotidien, en essayant de ne pas trop en faire et en gardant du plaisir. Je me suis donc dit qu'il serait intéressant d’écrire un article sur les sources qui me permettent de rester à jour.
 
 <!-- more -->
 
@@ -35,9 +35,10 @@ Comme c’est mon métier et que je suis passionné par le sujet, j’ai pris l�
 
 Il y a tout de même quelques prérequis nécessaires pour pouvoir suivre ce qui se passe en IA générative, en particulier sur le plan technique.
 
-Si vous souhaitez comprendre l'IA en général et l'IA générative en particulier et avoir une vision globale pour commencer, je vous conseille de lire mes articles sur [comprendre l'IA](https://ianas.fr/blog/2025/04/05/comprendre-lintelligence-artificielle--guide-pratique-simple-partie-1/) et [comprendre l'IA générative](https://ianas.fr/blog/2025/05/15/comprendre-lintelligence-artificielle--lia-g%C3%A9n%C3%A9rative-partie-2/).
+Si vous souhaitez comprendre l'IA en général et l'IA générative en particulier et avoir une vision globale pour commencer, je vous conseille de lire mes articles sur [comprendre l'IA](https://ianas.fr/blog/2025/04/05/comprendre-lintelligence-artificielle--guide-simple-partie-1/) et [comprendre l'IA générative](https://ianas.fr/blog/2025/05/15/comprendre-lintelligence-artificielle--lia-g%C3%A9n%C3%A9rative-partie-2/).
 
 Si vous voulez aller plus loin et que vous ne savez pas par où commencer, voici quelques éléments :
+
 - Pour avoir des notions générales en IA, un cours d'introduction peut être pertinent : [Introduction to AI](https://www.coursera.org/learn/introduction-to-ai)
 - Pour avoir des connaissances en NLP (natural language processing) faciliteront aussi la tâche. Si cela vous intéresse, je vous conseille ce cours sur [le NLP](https://www.coursera.org/specializations/natural-language-processing)
 - Les cours d'Andrew Ng sur Youtube sont également une très bonne introduction à l'IA.
