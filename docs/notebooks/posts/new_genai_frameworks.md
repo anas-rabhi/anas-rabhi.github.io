@@ -1,12 +1,21 @@
 ---
-title: New frameworks of Generative AI, Part 1
-date: 2024-02-25 11:30:00 +0800
-categories: [Blog, LLM]
-tags: [LLM]
+title: "New frameworks of Generative AI"
+categories:
+  - "Blog"
+  - "LLM"
+  - "AI"
+tags:
+  - "LLM"
+  - "Frameworks"
+date: 2024-02-25
+comments: true
+authors:
+  - Anas
 pin: true
 math: true
 mermaid: true
 ---
+
 
 ## Introduction
 
