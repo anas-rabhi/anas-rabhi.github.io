@@ -39,6 +39,8 @@ So, what components can we assemble to create an LM/LLM app with DSPy ?
 
 These components might not be easy to understand at first glance, especially the **optimizer**. So, let's dive in and see how each component works individually and how they operate once assembled.
 
+<!-- more -->
+
 Sources : 
 - DSPy Paper : https://arxiv.org/abs/2310.03714
 - DPSy Github/doc : https://github.com/stanfordnlp/dspy

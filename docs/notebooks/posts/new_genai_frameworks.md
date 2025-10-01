@@ -22,6 +22,8 @@ mermaid: true
 Open-source frameworks have always been crucial for data scientists, with tools like pandas for data manipulation and scikit-learn for modeling. Recently, new frameworks have emerged in the field of generative AI (and it's not over yet...), aiming to facilitate the development, deployment, and monitoring of generative AI applications.
 These frameworks offer useful features for fine-tuning LLM, for building RAG architecture, for improving prompts, or for simply making an API call to one of our favorite LLMs with default parameters already in place (pretty simple, right? 🙂).
 
+<!-- more -->
+
 <br>
 
 These frameworks, which operate somewhat like black boxes, can be challenging to analyze to understand what's happening inside, especially how they interact with LLMs. However, these frameworks can be very helpful in developing applications using existing building blocks and speeding up development. Furthermore, the features offered by these frameworks can sometimes be more effective than those developed from scratch. One may wonder at times how these frameworks are able to achieve such results. This is the question Hamel Husain has asked: How do these frameworks interact with APIs and provide real added value or simply [accidental complexity](https://fr.wikipedia.org/wiki/Complexit%C3%A9_accidentelle)?

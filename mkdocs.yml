@@ -76,6 +76,11 @@ plugins:
       post_date_format: dd/MM/yyyy
       post_url_format: "{date}/{slug}"
       authors_file: "{blog}/.authors.yml"
+  - blog:
+      blog_dir: notebooks
+      post_date_format: dd/MM/yyyy
+      post_url_format: "{date}/{slug}"
+      authors_file: "{blog}/.authors.yml"
   - search:
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
   - minify:
