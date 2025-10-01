@@ -1,5 +1,5 @@
 ---
-title: "Mais que c'est quoi le RAG vraiment ? Définition, fonctionnement, limites et conseils"
+title: "Mais c'est quoi le RAG vraiment ? Définition, fonctionnement, limites et conseils"
 description: "Découvrez ce qu'est le RAG (Retrieval-Augmented Generation), son fonctionnement, ses avantages, ses limites et comment l'optimiser pour vos projets d'IA en entreprise."
 categories:
   - "Blog"
