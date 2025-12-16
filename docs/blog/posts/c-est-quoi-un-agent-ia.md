@@ -20,15 +20,15 @@ mermaid: true
 
 ## La tendance 2025 en IA : les agents IA
 
-Vous vous êtes peut-être dit : *« Encore un nouveau terme »*.\
+Vous vous êtes peut-être dit : *« Encore un nouveau terme »*.
 Et franchement, je vous comprends.
 
 Il y a quelques mois, on parlait de RAG, cette IA qui révolutionne tout et qui allait soi-disant remplacer tous les employés du monde grâce aux bases de connaissance. Aujourd'hui, on vous parle d'**agents IA**, comme si c'était l'étape suivante et indispensable.
 
 En réalité, voici encore une nouvelle technologie IA, et on essaie de vous faire croire que vous en avez absolument besoin. Rassurez-vous, je vis très bien sans agent IA qui me fait le café, me prépare à manger et nettoie mon appartement. Mais, car il y a toujours un "mais", ces agents IA ont vraiment une vraie utilité et sont là pour répondre un réel besoin.
 
-Mais alors, c'est quoi un agent IA ? C'est quoi une IA *agentic* ?\
-Pour comprendre ça, il faut d'abord comprendre ce qu'est ChatGPT... et surtout **quelles sont ses limites**.\
+Mais alors, c'est quoi un agent IA ? C'est quoi une IA *agentic* ?
+Pour comprendre ça, il faut d'abord comprendre ce qu'est ChatGPT... et surtout **quelles sont ses limites**.
 Car les agents IA sont là pour répondre (ou contourner) les limites des modèles de langage comme [ChatGPT](https://chatgpt.com/), [Gemini](https://gemini.google.com/) ou encore [Claude](https://www.anthropic.com/claude).
 
 <!-- more -->
@@ -41,13 +41,13 @@ Je vais essayer de faire simple.
 
 Derrière ChatGPT, il y a un **modèle de langage**, c'est-à-dire une IA qu'on a entraînée avec des milliards de données pour répondre à des questions. Quand l'IA répond, elle ne fait qu'une seule chose : **générer du texte**.
 
-Dit autrement :\
+Dit autrement :
 un modèle de langage, par définition, **ne fait que prédire le prochain mot**.
 
-Si vous utilisez ChatGPT au quotidien, vous allez sûrement me dire :\
+Si vous utilisez ChatGPT au quotidien, vous allez sûrement me dire :
 *« De quoi il parle ? ChatGPT crée aussi des images, fait des recherches sur le web, analyse des documents… »*
 
-Et vous avez raison.\
+Et vous avez raison.
 Mais il faut comprendre une chose importante : **ChatGPT aujourd'hui n'est plus juste un modèle de langage**. C'est une application complète, avec plein de briques autour.
 
 Revenons un instant en arrière.
@@ -69,10 +69,10 @@ Voilà, on est revenus au [ChatGPT de fin 2022](https://www.lebigdata.fr/evoluti
 * répondre à des mails
 * enchaîner plusieurs actions toute seule
 
-Et très vite, une question est apparue :\
+Et très vite, une question est apparue :
 **comment créer une IA capable de faire tout ça en même temps ?**
 
-Entraîner une seule IA pour faire tout cela n'est pas vraiment envisageable.\
+Entraîner une seule IA pour faire tout cela n'est pas vraiment envisageable.
 Et surtout, ce n'est **pas comme ça que fonctionne l'IA**.
 
 (Si vous voulez aller plus loin sur ces sujets, j'en parle plus en détail ici :
@@ -85,7 +85,7 @@ Et surtout, ce n'est **pas comme ça que fonctionne l'IA**.
 
 ## Les modèles de langage peuvent planifier et exécuter des tâches étape par étape
 
-Petit à petit, on s'est rendu compte d'une chose très intéressante :\
+Petit à petit, on s'est rendu compte d'une chose très intéressante :
 les modèles de langage sont capables de **raisonner**, de **planifier** et de **décomposer une tâche** en plusieurs étapes.
 
 Par exemple, si je demande :
@@ -115,7 +115,7 @@ Ces outils, ce sont **nous, les développeurs**, qui les mettons à sa dispositi
 
 Avant d'aller plus loin, cette partie est vraiment importante.
 
-Pour permettre au modèle de rechercher sur Internet, par exemple, on lui apprend simplement à **exprimer son intention**.\
+Pour permettre au modèle de rechercher sur Internet, par exemple, on lui apprend simplement à **exprimer son intention**.
 Il va dire quelque chose comme :
 
 ```
@@ -144,11 +144,11 @@ Un agent IA, c'est un **modèle de langage** auquel on a donné :
 * la capacité de les utiliser
 * et le droit de recommencer autant de fois que nécessaire
 
-L'objectif est simple :\
+L'objectif est simple :
 👉 **il ne s'arrête pas tant que la tâche n'est pas vraiment terminée**.
 
-Dans la réalité, le modèle de langage ne “tourne” pas en continu.\
-Encore une fois, c'est le développeur qui orchestre tout ça :\
+Dans la réalité, le modèle de langage ne “tourne” pas en continu.
+Encore une fois, c'est le développeur qui orchestre tout ça :
 il relance le modèle, lui fournit les réponses des outils, et continue la boucle.
 
 Tant que le modèle ne dit pas quelque chose comme *« Terminé »*, on continue.
@@ -162,7 +162,7 @@ Un **vrai agent IA** est autonome :
 * il change de stratégie si ça ne marche pas
 * il décide seul quand s'arrêter
 
-Ce n'est pas juste une suite d'étapes écrites à l'avance.\
+Ce n'est pas juste une suite d'étapes écrites à l'avance.
 C'est le modèle de langage qui pilote tout.
 
 ***
@@ -175,34 +175,34 @@ Imaginons que vous demandiez à un agent IA dédié à la réservation :
 
 ### Voici ce qu'il se passe, étape par étape :
 
-**1. Première étape**\
+**1. Première étape**
 L'agent décide de chercher des restaurants italiens ouverts le samedi soir à proximité :
 
 ```
 cherche_restaurants("italien", "proche", "samedi soir")
 ```
 
-**2. On exécute et on répond**\
+**2. On exécute et on répond**
 Le programme va chercher les résultats et les renvoie à l'agent IA.
 
-**3. Nouvelle décision**\
+**3. Nouvelle décision**
 L'agent analyse la liste et vérifie la disponibilité :
 
 ```
 verifie_disponibilite("Restaurant Bella Roma", "samedi 20h", 5)
 ```
 
-**4. La boucle continue**\
+**4. La boucle continue**
 Si ce n'est pas disponible, il recommence avec un autre restaurant.
 
-**5. Dernière étape**\
+**5. Dernière étape**
 Dès qu'une table est trouvée :
 
 ```
 reserve_table("Restaurant choisi", "samedi 20h", 5)
 ```
 
-**6. Fin de la boucle**\
+**6. Fin de la boucle**
 L'agent n'appelle plus aucun outil et vous répond :
 
 > *« Réservation confirmée au Restaurant Bella Roma, samedi à 20h pour 5 personnes. »*
@@ -213,7 +213,7 @@ L'agent n'appelle plus aucun outil et vous répond :
 
 De votre côté, tout ce mécanisme est invisible.
 
-Vous posez une question.\
+Vous posez une question.
 Quelques secondes plus tard, vous avez une réponse finale.
 
 Vous ne voyez pas :
@@ -224,7 +224,7 @@ Vous ne voyez pas :
 
 Et c'est justement le but.
 
-Les agents IA ne sont pas faits pour impressionner techniquement l'utilisateur.\
+Les agents IA ne sont pas faits pour impressionner techniquement l'utilisateur.
 Ils sont faits pour **prendre une mission** et **la mener jusqu'au bout**.
 
 Pour vous, ça ressemble juste à un assistant très malin qui comprend ce que vous voulez et revient seulement quand c'est vraiment fini.
@@ -233,7 +233,7 @@ Pour vous, ça ressemble juste à un assistant très malin qui comprend ce que v
 
 ## Pourquoi on parle autant des agents IA maintenant ?
 
-Les agents IA ne sont pas une idée totalement nouvelle.\
+Les agents IA ne sont pas une idée totalement nouvelle.
 Ce qui est nouveau, c'est que **les modèles de langage sont enfin assez bons pour que ça marche**.
 
 Ils savent aujourd'hui :
@@ -271,7 +271,7 @@ C'est pour ça qu'en pratique, on met toujours des garde-fous :
 * budgets maximum
 * logs et contrôles
 
-Les agents IA sont puissants, mais ils ne remplacent pas le jugement humain.\
+Les agents IA sont puissants, mais ils ne remplacent pas le jugement humain.
 Pas encore, en tout cas.
 
 ***
@@ -282,10 +282,10 @@ Les agents IA ne sont ni magiques, ni indispensables à tout le monde.
 
 Ce sont avant tout des **modèles de langage bien orchestrés**, capables de réfléchir, d'agir et de recommencer jusqu'à atteindre un objectif.
 
-Pour l'utilisateur, c'est simple.\
+Pour l'utilisateur, c'est simple.
 Pour le développeur, c'est beaucoup plus complexe.
 
-Et c'est probablement ça, la vraie évolution de l'IA aujourd'hui :\
+Et c'est probablement ça, la vraie évolution de l'IA aujourd'hui :
 non pas une IA qui parle mieux, mais une IA qui **fait réellement des choses**.
 
 ***
