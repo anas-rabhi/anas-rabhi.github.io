@@ -99,6 +99,8 @@ Pourtant, comme dans toute relation, la communication n'est pas dépourvue de d�
 
 Comme le domaine de la vision par ordinateur, le traitement du langage naturel est un domaine extrêmement vaste et complexe. Maîtriser ses différentes facettes et apporter des solutions adaptées à chaque problématique nécessitent plusieurs années d'expertise.
 
+Une application pratique très populaire du NLP est le RAG (Retrieval-Augmented Generation), qui permet de créer des chatbots capables de répondre à des questions sur vos propres documents. Si vous souhaitez intégrer ce type de solution sur votre site web sans avoir à développer toute l'infrastructure vous-même, **[heeya](https://heeya.ai)** offre une solution RAG prête à l'emploi qui peut être déployée en quelques minutes.
+
 ### Séries temporelles : Prédire l'avenir
 
 Les séries temporelles constituent également un domaine à part entière. Lorsqu'il s'agit d'analyser des données ordonnées dans le temps, comme les prévisions météorologiques ou les cours de la bourse, les séries temporelles sont essentielles.

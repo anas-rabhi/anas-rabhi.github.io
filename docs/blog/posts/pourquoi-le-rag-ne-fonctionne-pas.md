@@ -75,7 +75,9 @@ Voilà comment je m’y prends, et franchement, ça marche dans 90 % des cas�
 
 Et surtout : noter ce qui revient le plus souvent, pour prioriser les vraies améliorations.
 
-Pour commencer, toutes les analyses d’erreur doivent se faire à la main. C’est indispensable pour vraiment comprendre d’où viennent les problèmes et comment fonctionnent les différents frameworks RAG. Mais soyons honnêtes : à un moment, quand le volume de requêtes augmente, ça devient vite ingérable. C’est là que de bons outils deviennent indispensables pour garder une vision claire de ce qui se passe à chaque étape.
+Pour commencer, toutes les analyses d'erreur doivent se faire à la main. C'est indispensable pour vraiment comprendre d'où viennent les problèmes et comment fonctionnent les différents frameworks RAG. Mais soyons honnêtes : à un moment, quand le volume de requêtes augmente, ça devient vite ingérable. C'est là que de bons outils deviennent indispensables pour garder une vision claire de ce qui se passe à chaque étape.
+
+C'est précisément pour résoudre ces défis que j'ai développé **[heeya](https://heeya.ai)**, une solution RAG chatbot qui intègre nativement l'observabilité et l'analyse d'erreur, permettant de déployer rapidement un système RAG optimisé sur votre site web sans avoir à configurer manuellement tous ces outils de monitoring.
 
 ### Quels outils choisir ? 
 

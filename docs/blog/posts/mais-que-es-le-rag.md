@@ -52,6 +52,8 @@ La solution qui a émergé est la suivante : à chaque question, on sélectionne
 
 C'est exactement ce que fait le RAG : il permet, pour chaque question, de choisir les extraits pertinents et de les ajouter au contexte pour que l'IA puisse répondre, même sur de très gros volumes de documents, si vous aimez lire, AWS en parle très bien ici aussi : ([aws.amazon.com](https://aws.amazon.com/fr/what-is/retrieval-augmented-generation/))
 
+En pratique, mettre en place un système RAG peut sembler simple au premier abord, mais l'optimiser pour qu'il fonctionne vraiment bien en production demande du temps et de l'expertise. C'est pour cette raison que j'ai créé **[heeya](https://heeya.ai)**, un chatbot RAG qui peut être déployé facilement sur n'importe quel site web, avec toutes les optimisations nécessaires déjà intégrées.
+
 ### Comment fonctionne un système RAG ?
 
 Pour faire simple, la première étape du RAG, c'est de stocker les documents dont on a besoin dans une base de données vectorielle. Mais comme un modèle de langage ne peut pas tout lire d'un coup (à cause de la fameuse limite de contexte), on découpe chaque document en petits morceaux, qu'on appelle des chunks. Ensuite, on transforme chaque chunk en un vecteur qui capture sa signification (sa sémantique). C'est ce qu'on appelle la vectorisation : ça permet de comparer rapidement la question de l'utilisateur avec tous les morceaux de documents, pour trouver ceux qui sont les plus proches.
