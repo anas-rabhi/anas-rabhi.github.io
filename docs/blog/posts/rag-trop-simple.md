@@ -199,9 +199,9 @@ Si vous cherchez une solution complète qui intègre déjà le monitoring et l'o
 
 **Inconvénient** : Solution propriétaire et payante dès que vous dépassez les quotas gratuits.
 
-### Weights & Biases (W\&B) : Pour le suivi de performance long terme
+### Weights & Biases (W&B) : Pour le suivi de performance long terme
 
-**[Weights & Biases (W\&B)](https://wandb.ai/)** n'est pas spécifique au RAG, mais il excelle pour :
+**[Weights & Biases (W&B)](https://wandb.ai/)** n'est pas spécifique au RAG, mais il excelle pour :
 
 * Tracker les **métriques de performance** dans le temps (accuracy, latence, coûts)
 * Comparer différentes **versions du système** (A/B testing)
