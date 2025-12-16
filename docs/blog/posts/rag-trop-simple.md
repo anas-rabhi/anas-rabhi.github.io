@@ -1,25 +1,22 @@
-***
-
+---
 title: "RAG une porte d'entrée par sa simplicité d'implementation"
 description: "RAG est une porte d'entrée par sa simplicité d'implementation, mais il faut comprendre comment il fonctionne pour l'optimiser."
 categories:
-
-* "Blog"
-* "IA"
-  tags:
-* "RAG"
-* "Intelligence Artificielle"
-* "Conseils Pratiques"
-* "Optimisation"
-  date: 2025-12-02
-  comments: true
-  authors:
-* Anas
-  pin: true
-  math: true
-  mermaid: true
-
-***
+  - "Blog"
+  - "IA"
+tags:
+  - "RAG"
+  - "Intelligence Artificielle"
+  - "Conseils Pratiques"
+  - "Optimisation"
+date: 2025-12-02
+comments: true
+authors:
+  - Anas
+pin: true
+math: true
+mermaid: true
+---
 
 ## Introduction : Démystifier le RAG en entreprise
 
