@@ -290,11 +290,20 @@ non pas une IA qui parle mieux, mais une IA qui **fait réellement des choses**.
 
 ***
 
-Si mes articles vous intéressent, que vous avez des questions ou simplement envie de discuter de vos propres défis liés à l'IA, n'hésitez pas à m'écrire à anas0rabhi@gmail.com, j'adore échanger sur ces sujets !
+Si mes articles vous intéressent, que vous avez des questions ou simplement envie de discuter de vos propres défis liés à l'IA, n'hésitez pas à m'écrire à [anas0rabhi@gmail.com](mailto:anas0rabhi@gmail.com), j'adore échanger sur ces sujets !
 
 Vous souhaitez mettre en place des agents IA dans votre entreprise ? Découvrez mon activité de conseil sur [tensoria.fr](https://tensoria.fr).
 
 Vous pouvez aussi vous abonner à ma newsletter :)
+
+
+---
+
+### À propos de moi
+
+Je suis **Anas Rabhi**, consultant Data Scientist freelance. J'accompagne les entreprises dans leur stratégie et mise en œuvre de solutions d'IA (RAG, Agents, NLP). 
+
+Découvrez mes services sur [tensoria.fr](https://tensoria.fr) ou testez notre solution d'agents IA [heeya.fr](https://heeya.fr).
 
 <div style="text-align: center; margin: 40px 0;">
   <a href="https://anas-ai.kit.com/d8b1a255cc" target="_blank" style="display: inline-block; background-color: #222222; color: #ffffff; font-weight: bold; padding: 16px 32px; text-decoration: none; border-radius: 8px; font-size: 18px; letter-spacing: 0.8px; box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); transition: all 0.3s ease; border: none;">

@@ -1,18 +1,36 @@
-# Bienvenue !
+# Anas Rabhi — Consultant IA & Data Scientist Freelance
 
-Je m'appelle Anas, je suis consultant data scientist spécialisé en NLP et l'IA générative. Mon travail consiste à apporter des solutions concrètes à des problématiques métier en utilisant l'IA. Car je suis convaincu que l'IA peut apporter une véritable valeur ajoutée à chaque profession. 
+Je m’appelle **Anas Rabhi**. J’accompagne les entreprises à **déployer des solutions IA** (NLP, IA générative, RAG, agents) de manière **concrète et mesurable**: cadrage, prototypage, industrialisation, transfert de compétences.
 
-Mon objectif au quotidien est d'accompagner les entreprises afin qu'elles exploitent pleinement le potentiel de leurs données pour :
+## Ce que je fais
+
+J’aide les équipes à exploiter pleinement le potentiel de leurs données pour :
 
 - Améliorer les prises de décisions stratégiques.
 - Optimiser les processus opérationnels.
 - Augmenter la productivité et la rentabilité.
 
-Partager mes connaissances est une vraie passion, que ce soit via des formations, des audits ou des articles de blog. Mes contenus visent à vulgariser l’IA, proposer des solutions concrètes et partager des retours d’expérience pour faciliter l’intégration de l’intelligence artificielle au quotidien.
+## Mes sites
 
-Lisez mes articles en suivant le lien ci-dessous : [Mes articles de blog](https://ianas.fr/blog/)
+- **Conseil & accompagnement**: [tensoria.fr](https://tensoria.fr/)
+- **SaaS chatbots RAG (e-commerce et autres cas d’usage)**: [heeya.fr](https://heeya.fr/)
 
-Voici quelques exemples de projets réalisés et des problématiques auxquelles j'ai pu apporter des solutions :
+## Expertise (IA en entreprise)
+
+- **RAG & moteurs de recherche** (retrieval hybride, reranking, évaluation, qualité des réponses)
+- **Agents IA** (orchestration d’outils, workflows, robustesse, garde-fous)
+- **NLP** (classification, extraction, résumé, recherche sémantique)
+- **LLMOps** (monitoring, coûts, sécurité, privacy, mise en prod)
+
+## Blog (retours d’expérience et guides)
+
+Je partage des contenus pour **vulgariser l’IA**, proposer des approches **actionnables**, et documenter les pièges fréquents (RAG, évaluation, performance, coûts).
+
+➡️ [Lire mes articles](/blog/)
+
+## Exemples de projets
+
+Quelques exemples de problématiques sur lesquelles j’ai apporté des solutions :
 
 - **Agent IA pour l'écriture de réponses à des appels d'offres** : Cet agent a automatisé la rédaction des réponses, réduisant considérablement le temps nécessaire.  
   **Résultat** : 75 % de temps économisé avec un retour sur investissement (ROI) de 300 %.
@@ -30,13 +48,15 @@ Voici quelques exemples de projets réalisés et des problématiques auxquelles 
 
 - **IA souveraine spécialisée dans les données spatiales** : Mise en place d'un RAG (Retrieval-Augmented Generation) sur des données confidentielles avec des LLMs souverains.
 
-- **Agents IA personnalisés sur site web** : Création d'un outil qui permet de faciliter le support client (https://heeya.fr/)
+- **Agents IA personnalisés sur site web** : Création d’un outil pour faciliter le support client ([heeya.fr](https://heeya.fr/))
 
 ---
 
-Si mes articles vous intéressent et que vous avez des questions ou juste envie de discuter de vos propres cas d'usages, n'hésitez pas à m'écrire à anas0rabhi@gmail.com, j'aime bien échanger sur ces sujets !
+## Me contacter
 
-Vous pouvez aussi vous abonner à ma newsletter :)
+Si mes articles vous intéressent et que vous avez des questions (ou un cas d’usage IA à discuter), écrivez-moi: **[anas0rabhi@gmail.com](mailto:anas0rabhi@gmail.com)**.
+
+Vous pouvez aussi vous abonner à ma newsletter.
 
 <div style="text-align: center; margin: 40px 0;">
   <a href="https://anas-ai.kit.com/d8b1a255cc" target="_blank" style="display: inline-block; background-color: #222222; color: #ffffff; font-weight: bold; padding: 16px 32px; text-decoration: none; border-radius: 8px; font-size: 18px; letter-spacing: 0.8px; box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); transition: all 0.3s ease; border: none;">
