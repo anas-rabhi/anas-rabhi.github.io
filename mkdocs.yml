@@ -16,6 +16,7 @@ copyright: Copyright &copy; 2024 - 2025 Anas Rabhi
 # Configuration
 theme:
   name: material
+  custom_dir: docs/overrides
   features:
     - announce.dismiss
     - content.action.edit
