@@ -14,7 +14,7 @@ date: 2026-02-05
 comments: true
 authors:
   - Anas
-pin: false
+pin: true
 math: true
 mermaid: true
 ---
@@ -27,6 +27,8 @@ Si tu veux d'abord comprendre **pourquoi le RAG reste utile malgré les grandes 
 [Le RAG est-il vraiment fini ?](/blog/2026/02/05/le-rag-est-il-vraiment-fini/)
 
 Ici, on se concentre sur l'autre question : **pourquoi un RAG ne répond pas correctement, et comment l'améliorer**.
+
+<!-- more -->
 
 ## 1) Le LLM n'est pas assez bon
 

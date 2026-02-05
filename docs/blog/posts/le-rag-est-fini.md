@@ -25,6 +25,9 @@ mermaid: true
 
 En entreprise, on a souvent des dizaines (voire des centaines) de fichiers. Le RAG apporte une réponse simple : construire une base documentaire avec des petits morceaux (chunks) de documents, puis fournir dynamiquement les morceaux pertinents à l'IA à chaque question.
 
+<!-- more -->
+
+
 C'est une technique comme une autre : parfois adaptée, parfois non. Si vous avez un petit document de 10 pages, inutile de monter un RAG : on peut le charger directement dans un LLM et poser des questions. En revanche, 100 articles de 100 pages, même si c'est *possible* à charger, ce n'est pas toujours pertinent (ni rentable).
 
 Même si les fenêtres contextuelles explosent (on atteint 1M de tokens, soit environ 700k mots sur certains modèles), charger 1M de tokens reste coûteux : parfois entre 2 et 10 euros par question. Il existe des techniques pour réduire ces coûts (cache, etc.), mais 0,20 € × 100 questions, ça fait quand même 20 €.
