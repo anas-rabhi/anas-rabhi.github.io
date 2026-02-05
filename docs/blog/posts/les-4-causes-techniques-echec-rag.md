@@ -1,6 +1,6 @@
 ---
-title: "Pourquoi ton RAG ne marche pas (et comment l'améliorer)"
-description: "Un RAG basique donne souvent 50 à 70 % de bonnes réponses. Voici les causes principales quand ça ne marche pas, et les pistes d'optimisation qui font la différence."
+title: "Les 4 causes techniques d'échec d'un RAG (et comment les corriger)"
+description: "Diagnostic rapide des causes techniques d'échec d'un RAG : parsing, chunking, retrieval, modèle, avec des correctifs concrets."
 categories:
   - "Blog"
   - "IA"
@@ -23,14 +23,17 @@ mermaid: true
 
 Un RAG "basique" est rapide à mettre en place, mais il plafonne souvent entre 50 et 70 % de bonnes réponses. En entreprise, ce n'est pas suffisant pour un usage fiable.
 
+Si tu cherches plutôt une **méthode d'analyse d'erreur** pour prioriser les actions d'amélioration, l'article dédié est ici :  
+[Mon RAG ne marche pas : pourquoi l’analyse d’erreur change tout](/blog/posts/pourquoi-le-rag-ne-fonctionne-pas/)
+
 Si tu veux d'abord comprendre **pourquoi le RAG reste utile malgré les grandes fenêtres contextuelles**, j'ai un article dédié :  
-[Le RAG est-il vraiment fini ?](/blog/2026/02/05/le-rag-est-il-vraiment-fini/)
+[Le RAG est-il vraiment fini ?](/blog/posts/le-rag-est-fini/)
 
 Ici, on se concentre sur l'autre question : **pourquoi un RAG ne répond pas correctement, et comment l'améliorer**.
 
 <!-- more -->
 
-## 1) Le LLM n'est pas assez bon
+## Cause technique 1 — Le LLM n'est pas assez bon
 
 Ce cas est le plus simple. En général, avec le bon contexte, les derniers LLMs savent répondre.
 
@@ -38,13 +41,13 @@ Quand le LLM est en cause ? Souvent quand il est noyé dans l'information : on r
 
 Comment corriger ? Soit on choisit un meilleur modèle, soit on optimise le nombre de chunks à extraire. Mais ça, c'est un autre chantier.
 
-## 2) Le parsing des documents est insuffisant
+## Cause technique 2 — Le parsing des documents est insuffisant
 
 Le parsing consiste à extraire correctement les informations des documents. Exemple : une facture doit être extraite de façon structurée. Les tableaux sont un cas classique : selon leur format, récupérer les colonnes et les lignes peut devenir très complexe. Même les images posent problème, sauf si on les décrit via un LLM et qu'on insère la description dans le texte.
 
 Le parsing est l'un des plus gros problèmes du RAG. Il est difficile d'avoir un parsing propre, car chaque entreprise structure ses documents différemment (tableaux, images, formules, graphiques, etc.). Le parsing est donc spécifique à chaque type de document, même s'il existe des solutions qui tentent de généraliser (par exemple docling : https://www.docling.ai/).
 
-## 3) L'information n'est pas dans le contexte fourni
+## Cause technique 3 — L'information n'est pas dans le contexte fourni
 
 Parfois, on ne récupère pas les bons documents : la requête est floue ou ne matche pas bien avec la base vectorielle.
 
@@ -52,7 +55,7 @@ Dans ce cas, le problème peut venir du **chunking**. Exemple : un PDF où le de
 
 Si c'est la cause (on peut le savoir en analysant les erreurs, voir cet [article](/blog/2025/06/04/mon-rag-ne-marche-pas-pourquoi-l-analyse-derreur-change-tout/)), il faut travailler le chunking : taille des chunks, méthode de découpage, overlap, etc.
 
-## 4) L'information n'est pas dans les documents (et le chunking est bon)
+## Cause technique 4 — L'information n'est pas dans les documents (et le chunking est bon)
 
 Parfois, même avec un bon chunking, le problème vient du **retriever**. Le retriever récupère les chunks pertinents et les injecte dans le prompt. S'il ne trouve pas les bons chunks, le LLM ne pourra pas répondre.
 
