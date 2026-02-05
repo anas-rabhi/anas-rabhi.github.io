@@ -24,10 +24,10 @@ mermaid: true
 Un RAG "basique" est rapide à mettre en place, mais il plafonne souvent entre 50 et 70 % de bonnes réponses. En entreprise, ce n'est pas suffisant pour un usage fiable.
 
 Si tu cherches plutôt une **méthode d'analyse d'erreur** pour prioriser les actions d'amélioration, l'article dédié est ici :  
-[Mon RAG ne marche pas : pourquoi l’analyse d’erreur change tout](/blog/posts/pourquoi-le-rag-ne-fonctionne-pas/)
+[Mon RAG ne marche pas : pourquoi l’analyse d’erreur change tout](pourquoi-le-rag-ne-fonctionne-pas.md)
 
 Si tu veux d'abord comprendre **pourquoi le RAG reste utile malgré les grandes fenêtres contextuelles**, j'ai un article dédié :  
-[Le RAG est-il vraiment fini ?](/blog/posts/le-rag-est-fini/)
+[Le RAG est-il vraiment fini ?](le-rag-est-fini.md)
 
 Ici, on se concentre sur l'autre question : **pourquoi un RAG ne répond pas correctement, et comment l'améliorer**.
 
@@ -53,7 +53,7 @@ Parfois, on ne récupère pas les bons documents : la requête est floue ou ne m
 
 Dans ce cas, le problème peut venir du **chunking**. Exemple : un PDF où le dernier paragraphe est coupé sur deux pages, et une méthode de chunking qui découpe par page. Résultat : le paragraphe est scindé en deux chunks, et le LLM ne trouve pas la bonne info.
 
-Si c'est la cause (on peut le savoir en analysant les erreurs, voir cet [article](/blog/2025/06/04/mon-rag-ne-marche-pas-pourquoi-l-analyse-derreur-change-tout/)), il faut travailler le chunking : taille des chunks, méthode de découpage, overlap, etc.
+Si c'est la cause (on peut le savoir en analysant les erreurs, voir cet [article](pourquoi-le-rag-ne-fonctionne-pas.md)), il faut travailler le chunking : taille des chunks, méthode de découpage, overlap, etc.
 
 ## Cause technique 4 — L'information n'est pas dans les documents (et le chunking est bon)
 

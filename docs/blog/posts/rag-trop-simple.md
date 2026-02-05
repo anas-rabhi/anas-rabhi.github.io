@@ -22,13 +22,13 @@ mermaid: true
 
 ### Le RAG n'est pas une solution magique
 
-Le **RAG (Retrieval-Augmented Generation)**, c'est un peu LE projet à la mode depuis le début de l'IA générative. Tout le monde veut son assistant intelligent boosté à l'IA, capable de répondre à n'importe quelle question sur ses données internes. On trouve des tutos "RAG en deux lignes", des frameworks no-code, et ça donne l'impression que c'est simple. Si vous voulez comprendre en profondeur [ce qu'est vraiment le RAG et comment il fonctionne](/blog/posts/mais-que-es-le-rag/), je vous invite à lire mon article dédié.
+Le **RAG (Retrieval-Augmented Generation)**, c'est un peu LE projet à la mode depuis le début de l'IA générative. Tout le monde veut son assistant intelligent boosté à l'IA, capable de répondre à n'importe quelle question sur ses données internes. On trouve des tutos "RAG en deux lignes", des frameworks no-code, et ça donne l'impression que c'est simple. Si vous voulez comprendre en profondeur [ce qu'est vraiment le RAG et comment il fonctionne](mais-que-es-le-rag.md), je vous invite à lire mon article dédié.
 
 Mais la réalité terrain ? Une fois le projet en place, les tests sont rarement aussi magiques qu'espéré. L'**intelligence artificielle** ne répond pas à tout, hallucine parfois, ou passe complètement à côté d'une question basique que même un stagiaire aurait comprise. Et là, grosse frustration chez les équipes métier.
 
 <!-- more -->
 
-**Première chose à retenir** : aucun système d'IA générative ne peut garantir 100 % de bonnes réponses. Même les meilleurs modèles de langage (LLM) comme GPT-5.2, Claude ou Mistral ont leurs limites. Pour mieux comprendre [les fondamentaux de l'IA générative](/blog/posts/comprendre-l-IA-generative/), je vous recommande cet article.
+**Première chose à retenir** : aucun système d'IA générative ne peut garantir 100 % de bonnes réponses. Même les meilleurs modèles de langage (LLM) comme GPT-5.2, Claude ou Mistral ont leurs limites. Pour mieux comprendre [les fondamentaux de l'IA générative](comprendre-l-IA-generative.md), je vous recommande cet article.
 
 La vraie question à se poser : **quel taux d'erreur suis-je prêt à accepter pour mon cas d'usage** ? Un chatbot de support client n'a pas les mêmes exigences qu'un système d'aide à la décision médicale. La valeur d'un système RAG, on l'obtient en comprenant bien le problème métier qu'on veut résoudre, pas en cherchant la perfection absolue.
 
@@ -43,7 +43,7 @@ Les retours que j'entends régulièrement après quelques semaines d'utilisation
 * "Les utilisateurs sont frustrés et retournent à la recherche manuelle"
 * "On a l'impression que ça marche... mais pas assez bien"
 
-C'est normal. Un **système RAG basique** (embeddings + recherche vectorielle + LLM) est un excellent point de départ, mais il a ses angles morts. Le piège, c'est de croire qu'ajouter plus de données ou changer de modèle va tout régler magiquement. Si vous rencontrez des problèmes similaires, [cet article sur pourquoi le RAG ne fonctionne pas](/blog/posts/pourquoi-le-rag-ne-fonctionne-pas/) vous donnera des pistes supplémentaires.
+C'est normal. Un **système RAG basique** (embeddings + recherche vectorielle + LLM) est un excellent point de départ, mais il a ses angles morts. Le piège, c'est de croire qu'ajouter plus de données ou changer de modèle va tout régler magiquement. Si vous rencontrez des problèmes similaires, [cet article sur pourquoi le RAG ne fonctionne pas](pourquoi-le-rag-ne-fonctionne-pas.md) vous donnera des pistes supplémentaires.
 
 ### Quand on veut vraiment améliorer son système RAG
 
@@ -62,7 +62,7 @@ Ma réponse sera toujours la même : **on analyse d'abord**.
 
 Analyser, ce n'est pas juste regarder les logs ou tweaker des paramètres au hasard dans l'espoir que ça passe mieux. C'est **décortiquer méthodiquement chaque échec** pour comprendre sa cause racine. Est-ce un problème de retrieval ? De ranking ? D'hallucination ? De qualité de données ?
 
-Avant d'ajouter quoi que ce soit au système, il faut comprendre précisément où ça coince. C'est la base du métier, que ce soit en data science, en machine learning, ou en statistiques. Et pourtant, c'est l'étape qu'on saute le plus souvent sous pression. J'ai décrit cette approche d'[amélioration de l'IA par l'analyse d'erreur](/blog/posts/comment-ameliorer-l-IA/) dans un article précédent.
+Avant d'ajouter quoi que ce soit au système, il faut comprendre précisément où ça coince. C'est la base du métier, que ce soit en data science, en machine learning, ou en statistiques. Et pourtant, c'est l'étape qu'on saute le plus souvent sous pression. J'ai décrit cette approche d'[amélioration de l'IA par l'analyse d'erreur](comment-ameliorer-l-IA.md) dans un article précédent.
 
 ## Exemples concrets d'analyse d'erreur dans des projets RAG
 

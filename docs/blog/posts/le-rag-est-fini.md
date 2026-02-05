@@ -53,7 +53,7 @@ La mise en place d'un RAG "basique" est assez simple et rapide. Et comme l'humai
 Un RAG rapide donne souvent 50 à 70 % de bonnes réponses. En entreprise, ça peut ne pas suffire pour l'exposer aux utilisateurs finaux.
 
 Si ce sujet t'intéresse, j'ai détaillé les causes fréquentes d'un RAG qui ne répond pas bien, et comment les corriger dans cet article :  
-[Les 4 causes techniques d'échec d'un RAG (et comment les corriger)](/blog/posts/les-4-causes-techniques-echec-rag/)
+[Les 4 causes techniques d'échec d'un RAG (et comment les corriger)](les-4-causes-techniques-echec-rag.md)
 
 ## Conclusion : le RAG est-il vraiment fini ?
 
