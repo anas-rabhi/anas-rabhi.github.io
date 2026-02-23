@@ -1,5 +1,51 @@
 {% extends "base.html" %}
 
 {% block extrahead %}
+  {% if page and page.canonical_url %}
+  <!-- Force canonical URL without query parameters -->
+  <link rel="canonical" href="{{ page.canonical_url.split('?')[0] }}" />
+
+  <!-- JSON-LD Structured Data -->
+  {% if page.meta and page.meta.date %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "{{ page.meta.title | default(page.title) }}",
+    "description": "{{ page.meta.description | default(config.site_description) }}",
+    "author": {
+      "@type": "Person",
+      "name": "{{ config.site_author }}",
+      "url": "https://www.linkedin.com/in/anasrabhi/"
+    },
+    "publisher": {
+      "@type": "Person",
+      "name": "{{ config.site_author }}"
+    },
+    "datePublished": "{{ page.meta.date }}",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "{{ page.canonical_url.split('?')[0] }}"
+    }
+  }
+  </script>
+  {% else %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "{{ config.site_name }}",
+    "url": "{{ config.site_url }}",
+    "description": "{{ config.site_description }}",
+    "author": {
+      "@type": "Person",
+      "name": "{{ config.site_author }}"
+    }
+  }
+  </script>
+  {% endif %}
+  {% endif %}
+
+  <!-- Heeya Chat Widget -->
   <script async src="https://heeya.fr/agent/577c3cbc-9eb8-4d64-86b3-f82c7548702b/embed.js" data-agent-name="ianas"></script>
 {% endblock %}

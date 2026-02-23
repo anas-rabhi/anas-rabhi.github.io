@@ -73,6 +73,8 @@ theme:
 
 # Plugins
 plugins:
+  - search:
+      separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
   - blog:
       post_date_format: dd/MM/yyyy
       post_url_format: "{date}/{slug}"
@@ -84,8 +86,6 @@ plugins:
       post_url_format: "{date}/{slug}"
       authors_file: "{blog}/.authors.yml"
       pagination_per_page: 10
-  - search:
-      separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
   - minify:
       minify_html: true
 
