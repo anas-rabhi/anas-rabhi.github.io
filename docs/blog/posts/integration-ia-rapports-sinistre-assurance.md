@@ -152,25 +152,46 @@ Le vrai changement, c'est que le technicien passe du rôle de **rédacteur** à 
 
 ## La synergie : IA + interface + humain
 
-```
-┌──────────────────────────────────────────────────┐
-│         WORKFLOW TRADITIONNEL (~3-4h)             │
-│                                                  │
-│  PDF ──lire──> cerveau ──taper──> Word           │
-│  Photos ──trier──> dossiers ──insérer──> Word    │
-│  Rédiger conclusion ──> Word                     │
-│  Mise en page ──> Word                           │
-│  Relecture ──> corrections ──> export            │
-└──────────────────────────────────────────────────┘
+**Avant : workflow traditionnel (~3-4h)**
 
-┌──────────────────────────────────────────────────┐
-│           WORKFLOW ASSISTÉ (~40 min)              │
-│                                                  │
-│  Scan dossier ──> Pipeline IA (60%)              │
-│  ──> Interface fluide (20%)                      │
-│  ──> Vérification humaine (20%)                  │
-│  ──> Export DOCX en un clic                      │
-└──────────────────────────────────────────────────┘
+```mermaid
+graph TD
+    A["📄 Lire le PDF expert"] --> B["✍️ Recopier dans Word"]
+    B --> C["📷 Trier 20-60 photos"]
+    C --> D["📝 Rédiger le sommaire"]
+    D --> E["📝 Rédiger la conclusion"]
+    E --> F["🖼️ Mise en page Word"]
+    F --> G["🔍 Relecture et corrections"]
+    G --> H["📤 Export final"]
+    style A fill:#fecaca,stroke:#b91c1c,color:#000
+    style B fill:#fecaca,stroke:#b91c1c,color:#000
+    style C fill:#fecaca,stroke:#b91c1c,color:#000
+    style D fill:#fecaca,stroke:#b91c1c,color:#000
+    style E fill:#fecaca,stroke:#b91c1c,color:#000
+    style F fill:#fecaca,stroke:#b91c1c,color:#000
+    style G fill:#fecaca,stroke:#b91c1c,color:#000
+    style H fill:#fecaca,stroke:#b91c1c,color:#000
+```
+
+**Après : workflow assisté (~40 min)**
+
+```mermaid
+graph TD
+    A["📂 Scan du dossier projet"] --> B["🤖 Extraction PDF par IA"]
+    B --> C["🤖 Analyse photos par IA"]
+    C --> D["🤖 Sommaire + classification auto"]
+    D --> E["🤖 Rédaction conclusion"]
+    E --> F["🖥️ Corrections dans l'interface"]
+    F --> G["👤 Vérification par le technicien"]
+    G --> H["📤 Export DOCX en 1 clic"]
+    style A fill:#e0e7ff,stroke:#4338ca,color:#000
+    style B fill:#c7d2fe,stroke:#4338ca,color:#000
+    style C fill:#c7d2fe,stroke:#4338ca,color:#000
+    style D fill:#c7d2fe,stroke:#4338ca,color:#000
+    style E fill:#c7d2fe,stroke:#4338ca,color:#000
+    style F fill:#bfdbfe,stroke:#2563eb,color:#000
+    style G fill:#bbf7d0,stroke:#16a34a,color:#000
+    style H fill:#bbf7d0,stroke:#16a34a,color:#000
 ```
 
 L'IA fait le travail cognitif lourd : lire, comprendre, structurer, rédiger. L'interface rend ce travail immédiatement exploitable, sans friction. Et l'humain apporte ce que ni l'IA ni l'interface ne peuvent fournir : le jugement terrain, la validation experte, la responsabilité.
