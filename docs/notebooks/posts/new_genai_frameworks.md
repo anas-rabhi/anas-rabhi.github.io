@@ -1,5 +1,6 @@
 ---
 title: "New frameworks of Generative AI"
+description: "An overview of the latest Generative AI frameworks: DSPy, LangGraph, CrewAI and more. Comparison of approaches for building LLM-powered applications."
 categories:
   - "Blog"
   - "LLM"
