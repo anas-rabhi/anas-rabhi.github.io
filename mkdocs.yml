@@ -1,8 +1,9 @@
-site_name: Intelligence artificielle
+site_name: Anas Rabhi - Data Scientist - AI Engineer
 site_url: https://ianas.fr
 site_author: Anas Rabhi
 site_description: >-
-  Articles techniques autour de l'intelligence artificielle
+  Blog et retours d'expérience sur l'IA en entreprise : RAG, agents IA,
+  NLP et LLMOps. Par Anas Rabhi, consultant Data Scientist freelance.
 
 
 # Repository
@@ -10,12 +11,13 @@ site_description: >-
 # repo_url: https://github.com/anas-rabhi/anas-rabhi.github.io
 
 # Copyright
-copyright: Copyright &copy; 2024 - 2025 Anas Rabhi
+copyright: Copyright &copy; 2024 - 2026 Anas Rabhi
 
 
 # Configuration
 theme:
   name: material
+  language: fr
   custom_dir: docs/overrides
   features:
     - announce.dismiss
