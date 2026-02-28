@@ -1,5 +1,6 @@
 ---
 title: "Les 4 causes techniques d'échec d'un RAG (et comment les corriger)"
+slug: les-4-causes-techniques-dechec-dun-rag-et-comment-les-corriger
 description: "Diagnostic rapide des causes techniques d'échec d'un RAG : parsing, chunking, retrieval, modèle, avec des correctifs concrets."
 categories:
   - "Blog"

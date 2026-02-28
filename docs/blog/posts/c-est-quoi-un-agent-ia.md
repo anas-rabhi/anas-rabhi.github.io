@@ -1,5 +1,6 @@
 ---
 title: "Mais c'est quoi un agent IA ?"
+slug: mais-cest-quoi-un-agent-ia
 description: "Découvrez ce qu'est un agent IA et son fonctionnement."
 categories:
   - "Blog"

@@ -1,5 +1,6 @@
 ---
 title: "RAG une porte d'entrée par sa simplicité d'implementation"
+slug: rag-une-porte-dentree-par-sa-simplicite-dimplementation
 description: "RAG est une porte d'entrée par sa simplicité d'implementation, mais il faut comprendre comment il fonctionne pour l'optimiser."
 categories:
   - "Blog"

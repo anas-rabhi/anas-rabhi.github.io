@@ -1,5 +1,6 @@
 ---
 title: "Le RAG est-il vraiment fini ?"
+slug: le-rag-est-il-vraiment-fini
 description: "Avec des fenêtres contextuelles de plus en plus grandes, certains annoncent la fin du RAG. Pourtant, en entreprise, coûts, pertinence et qualité des réponses montrent qu'il reste incontournable."
 categories:
   - "Blog"
