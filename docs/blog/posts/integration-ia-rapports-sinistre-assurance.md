@@ -60,15 +60,15 @@ Sur ce projet, on a mesuré les gains de façon rigoureuse. Et voici ce qu'on a 
 
 | Levier | Gain estimé | Ce qu'il couvre |
 |--------|-------------|-----------------|
-| **Pipeline IA** | ~60% | Extraction PDF, analyse photo, structuration, rédaction |
-| **Interface métier intégrée** | ~20% | Fluidité du workflow, zéro friction, édition en contexte |
+| **Pipeline IA** | ~50% | Extraction PDF, analyse photo, structuration, rédaction |
+| **Interface métier intégrée** | ~30% | Fluidité du workflow, zéro friction, édition en contexte |
 | **L'humain** | ~20% | Vérification, correction, validation finale |
 
-L'IA apporte ~60% d'accélération : elle fait le gros du travail cognitif (lire, comprendre, structurer, rédiger). L'interface ajoute ~20% en supprimant toute la friction d'usage. Et les 20% restants ? C'est l'humain. Parce que ceux qui vous disent que l'IA va remplacer l'humain dans ce genre de tâche, ce n'est pas vrai. Le technicien reste maître à bord. Sa tâche change : il ne rédige plus, il **vérifie, corrige et valide**. Mais il reste indispensable.
+L'IA apporte ~50% d'accélération : elle fait le gros du travail cognitif (lire, comprendre, structurer, rédiger). L'interface ajoute ~30% en supprimant toute la friction d'usage. Et les 20% restants ? C'est l'humain. Parce que ceux qui vous disent que l'IA va remplacer l'humain dans ce genre de tâche, ce n'est pas vrai. Le technicien reste maître à bord. Sa tâche change : il ne rédige plus, il **vérifie, corrige et valide**. Mais il reste indispensable.
 
 C'est **l'intégration des trois qui crée le vrai saut** : de 3-4 heures à environ 40 minutes par rapport.
 
-## Partie 1 : Ce que fait l'IA (60% du gain)
+## Partie 1 : Ce que fait l'IA (50% du gain)
 
 ### Extraction automatique des données depuis le PDF expert
 
@@ -94,11 +94,11 @@ Pour 40 photos, le traitement complet prend environ 2 minutes. Manuellement, un 
 
 Le LLM produit une conclusion de 3 à 5 paragraphes en croisant l'objet de la mission, les constatations, et les outils utilisés. Le technicien peut la régénérer avec des instructions simples : "plus concis", "insister sur le point X". Si vous voulez comprendre comment bien formuler ce type d'instructions, j'ai écrit un article sur [comment utiliser ChatGPT efficacement](utiliser-chatgpt-efficacement.md) qui explique les bases.
 
-En résumé, l'IA fait en quelques minutes ce qui prenait plus d'une heure de travail cognitif. C'est le levier le plus puissant : **~60% du gain total**. Mais l'IA toute seule, sans une bonne interface et sans l'humain dans la boucle, ça ne donne pas un produit fini.
+En résumé, l'IA fait en quelques minutes ce qui prenait plus d'une heure de travail cognitif. C'est le levier le plus puissant : **~50% du gain total**. Mais l'IA toute seule, sans une bonne interface et sans l'humain dans la boucle, ça ne donne pas un produit fini.
 
-## Partie 2 : L'interface qui fluidifie tout (20% du gain)
+## Partie 2 : L'interface qui fluidifie tout (30% du gain)
 
-20%, ça peut paraître peu dit comme ça. Mais c'est le levier qui transforme un prototype IA en un **outil utilisable au quotidien**. Sans interface adaptée, le gain de l'IA se dilue dans la friction d'usage. L'utilisateur doit jongler entre outils, copier-coller des résultats, reformater manuellement. Et là, même avec une IA performante, on perd du temps.
+30%, ça peut paraître peu dit comme ça. Mais c'est le levier qui transforme un prototype IA en un **outil utilisable au quotidien**. Sans interface adaptée, le gain de l'IA se dilue dans la friction d'usage. L'utilisateur doit jongler entre outils, copier-coller des résultats, reformater manuellement. Et là, même avec une IA performante, on perd du temps.
 
 ### Tout dans un seul écran
 
@@ -215,9 +215,9 @@ Le pipeline s'enchaîne automatiquement, avec suivi de progression en temps rée
 
 Ce projet m'a confirmé quelque chose que je constate sur tous mes projets IA :
 
-**1. L'IA fait le gros du travail, mais ce n'est qu'un ingrédient.** 60% du gain, c'est énorme. Mais un modèle qui extrait parfaitement des données ne sert à rien si l'utilisateur doit copier-coller le résultat dans 5 champs Word. Sans interface et sans humain dans la boucle, le gain se dilue.
+**1. L'IA fait le gros du travail, mais ce n'est qu'un ingrédient.** 50% du gain, c'est énorme. Mais un modèle qui extrait parfaitement des données ne sert à rien si l'utilisateur doit copier-coller le résultat dans 5 champs Word. Sans interface et sans humain dans la boucle, le gain se dilue.
 
-**2. L'interface transforme un prototype en outil.** 20% de gain, ça ne fait pas rêver sur le papier. Mais c'est la différence entre un projet IA qui reste dans un Jupyter Notebook et un projet IA que les gens utilisent vraiment tous les jours.
+**2. L'interface transforme un prototype en outil.** 30% de gain, ça ne fait pas rêver sur le papier. Mais c'est la différence entre un projet IA qui reste dans un Jupyter Notebook et un projet IA que les gens utilisent vraiment tous les jours.
 
 **3. L'humain ne s'efface pas, il monte en valeur.** Les 20% restants, c'est le technicien qui vérifie, corrige et valide. Son expertise terrain est irremplaçable. L'IA lui enlève le travail pénible, pas le travail important.
 
