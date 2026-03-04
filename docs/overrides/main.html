@@ -80,6 +80,27 @@
   </script>
   {% endif %}
 
+  <!-- Accessibility: ensure the search dialog has an accessible name -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const applySearchDialogA11y = function () {
+        const searchDialog = document.querySelector('.md-search[role="dialog"]');
+        if (!searchDialog) return;
+        if (!searchDialog.hasAttribute("aria-label")) {
+          searchDialog.setAttribute("aria-label", "Recherche du site");
+        }
+        if (!searchDialog.hasAttribute("aria-modal")) {
+          searchDialog.setAttribute("aria-modal", "true");
+        }
+      };
+
+      applySearchDialogA11y();
+
+      const observer = new MutationObserver(applySearchDialogA11y);
+      observer.observe(document.body, { childList: true, subtree: true });
+    });
+  </script>
+
   <!-- Heeya Chat Widget -->
   <script async src="https://heeya.fr/agent/577c3cbc-9eb8-4d64-86b3-f82c7548702b/embed.js" data-agent-name="ianas"></script>
 {% endblock %}

@@ -91,6 +91,10 @@ plugins:
   - minify:
       minify_html: true
 
+# Additional CSS
+extra_css:
+  - stylesheets/extra.css
+
 # # Hooks
 # hooks:
 #   - material/hooks/shortcodes.py
