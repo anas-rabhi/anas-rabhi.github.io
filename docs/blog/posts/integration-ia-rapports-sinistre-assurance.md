@@ -209,7 +209,7 @@ Le pipeline s'enchaîne automatiquement, avec suivi de progression en temps rée
 | Mise en page DOCX | 30 min | 5 min (layouts visuels) | **~83%** |
 | **Temps total par rapport** | **3-4h** | **~40 min** | **~80%** |
 
-**Vous avez un process métier répétitif qui prend des heures ?** L'approche qu'on a utilisée ici (IA + interface + humain dans la boucle) est applicable à beaucoup de cas similaires : rapports techniques, comptes-rendus, audits, fiches produit... [Réservez un créneau](https://calendly.com/anas0rabhi/reserver-un-appel-heeya-clone) pour en discuter, ou écrivez-moi à [anas0rabhi@gmail.com](mailto:anas0rabhi@gmail.com).
+**Vous avez un process métier répétitif qui prend des heures ?** L'approche qu'on a utilisée ici (IA + interface + humain dans la boucle) est applicable à beaucoup de cas similaires : rapports techniques, comptes-rendus, audits, fiches produit... [Réservez un créneau](https://cal.eu/anas-rabhi/rendez-vous-ianas) pour en discuter, ou écrivez-moi à [anas0rabhi@gmail.com](mailto:anas0rabhi@gmail.com).
 
 ## Ce que j'en retiens
 
@@ -231,7 +231,7 @@ Si vous voulez aller plus loin, j'ai écrit sur [ce qu'est un agent IA](c-est-qu
 
 Si mes articles vous intéressent et que vous avez des questions ou simplement envie de discuter de vos propres défis, n'hésitez pas à m'écrire à [anas0rabhi@gmail.com](mailto:anas0rabhi@gmail.com), j'aime échanger sur ces sujets !
 
-Vous pouvez aussi [réserver un créneau d'échange](https://calendly.com/anas0rabhi/reserver-un-appel-heeya-clone) ou vous abonner à ma newsletter :)
+Vous pouvez aussi [réserver un créneau d'échange](https://cal.eu/anas-rabhi/rendez-vous-ianas) ou vous abonner à ma newsletter :)
 
 
 ---
@@ -243,7 +243,7 @@ Je suis **Anas Rabhi**, consultant Data Scientist freelance. J'accompagne les en
 Découvrez mes services sur [tensoria.fr](https://tensoria.fr) ou testez notre solution d'agents IA [heeya.fr](https://heeya.fr).
 
 <div style="text-align: center; margin: 40px 0; gap: 16px; display: flex; flex-wrap: wrap; justify-content: center;">
-  <a href="https://calendly.com/anas0rabhi/reserver-un-appel-heeya-clone" target="_blank" style="display: inline-block; background-color: #4F46E5; color: #ffffff; font-weight: bold; padding: 16px 32px; text-decoration: none; border-radius: 8px; font-size: 18px; letter-spacing: 0.8px; box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); transition: all 0.3s ease; border: none;">
+  <a href="https://cal.eu/anas-rabhi/rendez-vous-ianas" target="_blank" style="display: inline-block; background-color: #4F46E5; color: #ffffff; font-weight: bold; padding: 16px 32px; text-decoration: none; border-radius: 8px; font-size: 18px; letter-spacing: 0.8px; box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); transition: all 0.3s ease; border: none;">
     Réserver un créneau
   </a>
   <a href="https://anas-ai.kit.com/d8b1a255cc" target="_blank" style="display: inline-block; background-color: #222222; color: #ffffff; font-weight: bold; padding: 16px 32px; text-decoration: none; border-radius: 8px; font-size: 18px; letter-spacing: 0.8px; box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); transition: all 0.3s ease; border: none;">
