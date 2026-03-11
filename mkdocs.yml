@@ -95,10 +95,9 @@ plugins:
 extra_css:
   - stylesheets/extra.css
 
-# # Hooks
-# hooks:
-#   - material/hooks/shortcodes.py
-#   - material/hooks/translations.py
+# Hooks
+hooks:
+  - hooks/seo.py
 
 # Additional configuration
 extra:
