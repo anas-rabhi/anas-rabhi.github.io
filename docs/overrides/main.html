@@ -11,8 +11,8 @@
   <link rel="canonical" href="{{ page_url }}" />
   {% endif %}
 
-  <!-- noindex for pagination, archive, and category listing pages (thin content) -->
-  {% if page and page.canonical_url and ("/page/" in page.canonical_url or "/archive/" in page.canonical_url or "/category/" in page.canonical_url) %}
+  <!-- noindex only for pagination pages (thin/duplicate content) -->
+  {% if page and page.canonical_url and "/page/" in page.canonical_url %}
   <meta name="robots" content="noindex, follow" />
   {% endif %}
 
