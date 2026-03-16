@@ -1,6 +1,6 @@
 ---
 title: "Utiliser ChatGPT efficacement"
-description: "Découvrez comment utiliser ChatGPT efficacement pour automatiser vos tâches, améliorer votre productivité et comprendre les limites de l'intelligence artificielle générative, avec des exemples concrets et des conseils pratiques."
+description: "Guide pratique pour utiliser ChatGPT efficacement : 6 limites à connaître, bonnes pratiques de prompting et cas d'usage concrets pour gagner du temps au travail."
 categories:
   - "Blog"
   - "LLM"

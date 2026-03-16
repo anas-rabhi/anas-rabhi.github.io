@@ -1,7 +1,7 @@
 ---
 title: "Mais c'est quoi un agent IA ?"
 slug: mais-cest-quoi-un-agent-ia
-description: "Agent IA : définition, fonctionnement concret, différence avec un chatbot ou un RAG. Comprendre les systèmes IA autonomes en entreprise avec des exemples concrets."
+description: "Agent IA : définition, fonctionnement et différence avec un RAG ou chatbot. Comprendre les systèmes IA autonomes en entreprise avec exemples concrets."
 categories:
   - "Blog"
   - "IA"
@@ -312,6 +312,20 @@ Et c'est probablement ça, la vraie évolution de l'IA aujourd'hui :
 non pas une IA qui parle mieux, mais une IA qui **fait réellement des choses**.
 
 ***
+
+## FAQ : Questions fréquentes sur les agents IA
+
+**Quelle est la différence entre un agent IA et un chatbot ?**
+Un chatbot répond à une question et s'arrête là. Un agent IA enchaîne plusieurs actions de façon autonome pour accomplir un objectif complet : recherche d'information, appel à des APIs, prise de décision, envoi d'emails... C'est la différence entre un conseiller qui répond et un assistant qui exécute une mission.
+
+**Un agent IA peut-il se tromper ?**
+Oui. Un agent IA peut mal interpréter une instruction, utiliser le mauvais outil ou prendre une mauvaise décision. C'est pourquoi on met toujours en place des garde-fous : validation humaine sur les actions critiques, limitations d'accès, budgets maximum d'actions et journaux de suivi complets.
+
+**Quels frameworks utiliser pour créer un agent IA ?**
+Les frameworks les plus utilisés sont LangGraph (agents structurés avec états), CrewAI (systèmes multi-agents) et AutoGen (agents conversationnels). Pour des cas simples, l'API native d'Anthropic (Claude) ou d'OpenAI avec "tool use" suffit sans framework.
+
+**Combien de temps faut-il pour déployer un agent IA en entreprise ?**
+Un POC sur un cas d'usage ciblé peut se faire en 2 à 4 semaines. La mise en production avec tests, intégration aux systèmes existants et formation des équipes prend généralement 2 à 3 mois. La complexité dépend surtout du nombre d'outils à connecter et des exigences de sécurité.
 
 ## Pour aller plus loin
 

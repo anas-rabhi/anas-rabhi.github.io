@@ -1,6 +1,7 @@
 ---
 title: "Comment améliorer le RAG"
-description: "Explorez une approche pragmatique pour améliorer vos applications IA (RAG, agents) en privilégiant l'analyse rigoureuse des erreurs plutôt que l'ajout systématique de nouveaux outils."
+slug: comment-ameliorer-le-rag
+description: "Améliorer un RAG ou agent IA : méthode par l'analyse des erreurs plutôt que l'ajout de nouveaux outils. Approche pragmatique et bonnes pratiques terrain."
 categories:
   - "Blog"
   - "LLM"

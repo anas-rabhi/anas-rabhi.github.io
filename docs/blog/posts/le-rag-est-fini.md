@@ -1,7 +1,7 @@
 ---
 title: "Le RAG est-il vraiment fini ?"
 slug: le-rag-est-il-vraiment-fini
-description: "Avec des fenêtres contextuelles de plus en plus grandes, certains annoncent la fin du RAG. Pourtant, en entreprise, coûts, pertinence et qualité des réponses montrent qu'il reste incontournable."
+description: "Le RAG est-il remplacé par le long context LLM ? Analyse des coûts, de la pertinence et des cas d'usage qui montrent que le RAG reste incontournable en entreprise."
 categories:
   - "Blog"
   - "IA"

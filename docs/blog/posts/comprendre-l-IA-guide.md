@@ -1,6 +1,7 @@
 ---
 title: "Comprendre l'intelligence artificielle : Guide Simple (Partie 1)"
-description: "Découvrez les concepts fondamentaux de l'intelligence artificielle expliqués simplement, avec des exemples concrets et des conseils pratiques pour mieux comprendre cette technologie transformative."
+slug: comprendre-intelligence-artificielle-guide
+description: "Comprendre l'intelligence artificielle : machine learning, deep learning et domaines de l'IA (NLP, vision, séries temporelles) expliqués simplement avec exemples."
 categories:
   - "Blog"
   - "IA"
@@ -132,6 +133,20 @@ Une chose à retenir : il est essentiel de comprendre que l'IA est intrinsèquem
 Pour conclure cette première partie, nous avons exploré ensemble les grands domaines qui composent l’intelligence artificielle. Chacun possède ses spécificités, ses défis et ses applications, ce qui rend l’IA aussi riche que passionnante. Bien entendu, il existe de nombreux autres sous-domaines, parfois plus discrets ou émergents, que je n’ai pas pu aborder ici. L’essentiel à retenir est que, finalement, **comprendre l’intelligence artificielle** consiste à comprendre quelques concepts de base qui sont les fondations de l'IA.
 
 Dans la suite, nous plongerons dans l'univers passionnant de l'IA générative. En attendant la partie deux, n'hésitez pas à vous abonner à ma newsletter 😀 À bientôt ! 
+
+## FAQ : Questions fréquentes sur l'intelligence artificielle
+
+**Quelle est la différence entre l'IA, le machine learning et le deep learning ?**
+L'IA est le domaine général : tout système qui simule une forme d'intelligence. Le machine learning en est un sous-ensemble : les machines apprennent à partir de données sans être explicitement programmées. Le deep learning est un sous-ensemble du machine learning, basé sur des réseaux de neurones profonds — particulièrement efficace pour les images, le texte et la voix.
+
+**Pourquoi l'IA a-t-elle besoin d'autant de données ?**
+Contrairement à l'humain qui peut apprendre d'un seul exemple, une IA doit voir des milliers ou millions d'exemples pour identifier des patterns fiables. AlphaGo a été entraîné sur des dizaines de millions de parties de Go — un champion humain en joue bien moins pour atteindre le même niveau.
+
+**Peut-on utiliser l'IA sans être développeur ?**
+Oui. Des outils comme ChatGPT, Notion AI ou Copilot permettent d'utiliser l'IA sans code. Pour intégrer l'IA dans une application métier (chatbot sur vos documents, automatisation de processus), il faut généralement faire appel à un développeur ou consultant IA.
+
+**Quel est le domaine de l'IA le plus utilisé en entreprise ?**
+Le NLP (traitement du langage naturel) est aujourd'hui le plus déployé, notamment via les LLM (ChatGPT, Claude, Mistral) et les systèmes RAG. Viennent ensuite la vision par ordinateur (contrôle qualité, sécurité) et les systèmes de recommandation (e-commerce, plateformes média).
 
 ---------
 

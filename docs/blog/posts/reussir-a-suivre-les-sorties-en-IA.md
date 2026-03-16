@@ -1,6 +1,7 @@
 ---
 title: "Comment réussir à rester à jour en IA générative ?"
-description: "L'IA générative évolue à une vitesse vertigineuse avec de nouveaux modèles, techniques et outils qui sortent quotidiennement. Découvrez mes stratégies et sources pour rester à jour dans ce domaine en constante évolution, sans se laisser submerger."
+slug: rester-a-jour-ia-generative
+description: "Mes sources personnelles pour suivre l'IA générative : Twitter, YouTube, newsletters et blogs recommandés par un consultant IA. Rester à jour sans se noyer."
 categories:
   - "Blog"
   - "IA"

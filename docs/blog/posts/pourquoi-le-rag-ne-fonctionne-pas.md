@@ -1,6 +1,7 @@
 ---
 title: "Mon RAG ne marche pas : pourquoi l’analyse d’erreur change tout"
-description: "Vous avez intégré un RAG, mais les résultats ne sont pas à la hauteur ? Découvrez pourquoi l’analyse d’erreur est la clé pour comprendre et améliorer votre projet, avec des exemples concrets et des conseils issus du terrain."
+slug: mon-rag-ne-marche-pas-analyse-erreur
+description: "RAG qui ne fonctionne pas ? Découvrez pourquoi l’analyse d’erreur est la clé pour diagnostiquer et améliorer votre système RAG. Méthode et cas concrets terrain."
 categories:
   - "Blog"
   - "IA"

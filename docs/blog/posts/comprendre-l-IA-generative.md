@@ -1,6 +1,7 @@
 ---
 title: "Comprendre l'intelligence artificielle : L'IA générative (Partie 2)"
-description: "Découvrez les concepts fondamentaux de l'intelligence artificielle expliqués simplement, avec des exemples concrets et des conseils pratiques pour mieux comprendre cette technologie transformative."
+slug: comprendre-ia-generative
+description: "IA générative : fonctionnement des LLM, exemples (texte, image, code) et limites expliqués simplement. Guide pour comprendre ChatGPT et les modèles génératifs."
 categories:
   - "Blog"
   - "IA"

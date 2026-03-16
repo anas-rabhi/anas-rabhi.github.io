@@ -1,4 +1,24 @@
-"""SEO hook: dynamic meta descriptions for category and archive pages."""
+"""SEO hook: dynamic meta descriptions for category/archive pages + sitemap cleanup."""
+
+import os
+import re
+
+
+def on_post_build(config):
+    """Remove pagination pages from sitemap to fix noindex/sitemap conflict."""
+    sitemap_path = os.path.join(config["site_dir"], "sitemap.xml")
+    if not os.path.exists(sitemap_path):
+        return
+    with open(sitemap_path, "r", encoding="utf-8") as f:
+        content = f.read()
+    cleaned = re.sub(
+        r"\s*<url>\s*<loc>[^<]*/page/\d+/[^<]*</loc>.*?</url>",
+        "",
+        content,
+        flags=re.DOTALL,
+    )
+    with open(sitemap_path, "w", encoding="utf-8") as f:
+        f.write(cleaned)
 
 
 def on_page_context(context, page, config, nav):

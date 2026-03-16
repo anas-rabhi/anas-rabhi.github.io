@@ -1,6 +1,7 @@
 ---
 title: "Mais c'est quoi le RAG vraiment ? Définition, fonctionnement, limites et conseils"
-description: "Découvrez ce qu'est le RAG (Retrieval-Augmented Generation), son fonctionnement, ses avantages, ses limites et comment l'optimiser pour vos projets d'IA en entreprise."
+slug: cest-quoi-le-rag-definition-fonctionnement
+description: "C'est quoi le RAG ? Définition, fonctionnement concret, avantages, limites et conseils pour l'optimiser en entreprise. Guide complet par un expert IA."
 categories:
   - "Blog"
   - "IA"
@@ -110,6 +111,23 @@ Le RAG est vraiment utile, à condition de prendre le temps de bien le mettre en
 Les limites que j'ai évoquées ne sont pas simples à éliminer, mais il existe des solutions pour les atténuer. On parle souvent d'Agentic RAG par exemple pour améliorer certains aspects du RAG. Si vous cherchez un système qui donne 100 % de bonnes réponses, le RAG (et l'IA en général) n'est pas faite pour vous. Mais si vous êtes prêt à viser 90-95 % de réponses correctes, et à investir un peu de temps pour bien l'implémenter, alors le RAG peut vraiment devenir votre meilleur allié.
 
 Si vous voulez en savoir plus sur le RAG, même le gouvernement a publié un guide pour faire du RAG : [Guide de la génération augmentée par récupération (RAG)](https://www.entreprises.gouv.fr/la-dge/publications/guide-de-la-generation-augmentee-par-recuperation-rag).
+
+## FAQ : Questions fréquentes sur le RAG
+
+**Le RAG, c'est quoi en résumé ?**
+Le RAG (Retrieval-Augmented Generation) est une technique qui permet à un LLM de répondre à des questions en s'appuyant sur vos propres documents. À chaque question, les extraits les plus pertinents sont automatiquement récupérés et injectés dans le contexte du modèle.
+
+**Quelle est la différence entre le RAG et le fine-tuning ?**
+Le fine-tuning modifie le modèle lui-même en l'entraînant sur vos données. Le RAG injecte les informations au moment de la requête, sans modifier le modèle. Le RAG est préférable pour des données qui changent souvent ou des connaissances métier spécifiques. Le fine-tuning est plus adapté pour adapter le style ou le comportement du modèle de façon permanente.
+
+**Le RAG fonctionne-t-il avec n'importe quel LLM ?**
+Oui. Le RAG est indépendant du modèle de langage. Il fonctionne avec GPT, Claude, Mistral, Llama, et n'importe quel autre LLM, hébergé dans le cloud ou on-premise. La qualité dépend du modèle d'embeddings utilisé pour l'indexation et du LLM pour la génération.
+
+**Le RAG élimine-t-il les hallucinations ?**
+Non. Le RAG réduit les hallucinations en fournissant un contexte pertinent au modèle, mais ne les élimine pas complètement. Le LLM peut toujours mal interpréter le contexte ou générer des informations inexactes. La solution : toujours citer les sources et permettre aux utilisateurs de vérifier.
+
+**Combien de documents peut-on indexer dans un système RAG ?**
+Il n'y a pas de limite théorique. Des systèmes RAG industriels gèrent des millions de documents. En pratique, la limite vient des coûts d'indexation (embeddings) et du temps de réponse. Un bon filtrage par métadonnées permet d'interroger efficacement même de très grandes bases documentaires.
 
 ---------
 

@@ -1,6 +1,6 @@
 ---
 title: "Les 5 erreurs que tout le monde fait avec le RAG"
-description: "Retour d'expérience sur les erreurs les plus fréquentes quand on se lance dans un projet RAG en entreprise : mauvaise communication, sous-estimation, données ignorées, dépendance aux frameworks et absence de mesure."
+description: "Retour d'expérience après 10+ projets RAG : les 5 erreurs les plus fréquentes en entreprise et comment les éviter. Frameworks, données, mesure et attentes."
 categories:
   - "Blog"
   - "IA"

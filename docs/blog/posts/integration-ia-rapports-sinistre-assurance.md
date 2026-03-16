@@ -1,6 +1,7 @@
 ---
 title: "Cas client IA : Comment on gagne 80% de temps sur les rapports de sinistre en assurance"
-description: "Cas client : comment on automatise les rapports de sinistre en assurance avec l'IA, une interface métier et l'humain dans la boucle."
+slug: ia-rapports-sinistre-assurance
+description: "Cas client : 80% de gain de temps sur les rapports de sinistre en assurance grâce à l'IA. Architecture, interface métier et humain dans la boucle."
 categories:
   - "Blog"
   - "IA"
