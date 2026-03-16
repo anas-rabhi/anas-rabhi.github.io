@@ -1,7 +1,7 @@
 ---
 title: "Mais c'est quoi un agent IA ?"
 slug: mais-cest-quoi-un-agent-ia
-description: "Découvrez ce qu'est un agent IA et son fonctionnement."
+description: "Agent IA : définition, fonctionnement concret, différence avec un chatbot ou un RAG. Comprendre les systèmes IA autonomes en entreprise avec des exemples concrets."
 categories:
   - "Blog"
   - "IA"
@@ -78,8 +78,8 @@ Et surtout, ce n'est **pas comme ça que fonctionne l'IA**.
 
 (Si vous voulez aller plus loin sur ces sujets, j'en parle plus en détail ici :
 
-* [Comprendre l'IA](https://ianas.fr/blog/2025/04/05/comprendre-lintelligence-artificielle--guide-simple-partie-1/)
-* [Comprendre l'IA générative](https://ianas.fr/blog/2025/05/15/comprendre-lintelligence-artificielle--lia-g%C3%A9n%C3%A9rative-partie-2/)
+* [Comprendre l'IA](comprendre-l-IA-guide.md)
+* [Comprendre l'IA générative](comprendre-l-IA-generative.md)
   )
 
 ***
@@ -277,6 +277,28 @@ Pas encore, en tout cas.
 
 ***
 
+## Agent IA et RAG : deux approches complémentaires
+
+Si vous avez déjà entendu parler du [RAG (Retrieval-Augmented Generation)](mais-que-es-le-rag.md), vous vous demandez peut-être quelle est la différence — ou la relation — avec les agents IA.
+
+La réponse courte : **le RAG, c'est une brique. L'agent, c'est l'assemblage.**
+
+| | Chatbot classique | RAG | Agent IA |
+|---|---|---|---|
+| Répond sur vos données internes | Non | Oui | Oui |
+| Peut agir sur des systèmes externes | Non | Non | Oui |
+| Enchaîne plusieurs étapes automatiquement | Non | Non | Oui |
+| Choisit lui-même quels outils utiliser | Non | Non | Oui |
+
+Un agent IA peut parfaitement utiliser un RAG comme l'un de ses outils : il cherche dans des documents, puis envoie un email, puis met à jour une base de données. C'est cette combinaison qui donne les systèmes les plus puissants.
+
+En pratique, voici deux exemples concrets où cette combinaison a fait une vraie différence :
+
+- **BTP** : un agent rédacteur couplé à un [RAG multi-sources](rag-trop-simple.md) permet d'[automatiser la rédaction d'appels d'offres](cas-usage-rag-redaction-appels-offres-btp.md) — normes, historique projets et exemples gagnants récupérés en quelques secondes au lieu de plusieurs heures de recherche manuelle.
+- **Assurance** : la même logique appliquée aux [rapports de sinistre](integration-ia-rapports-sinistre-assurance.md) a permis de gagner 80% du temps de traitement sur chaque dossier.
+
+***
+
 ## Pour conclure
 
 Les agents IA ne sont ni magiques, ni indispensables à tout le monde.
@@ -288,6 +310,16 @@ Pour le développeur, c'est beaucoup plus complexe.
 
 Et c'est probablement ça, la vraie évolution de l'IA aujourd'hui :
 non pas une IA qui parle mieux, mais une IA qui **fait réellement des choses**.
+
+***
+
+## Pour aller plus loin
+
+- **[Mais c'est quoi le RAG vraiment ?](mais-que-es-le-rag.md)** — La brique fondamentale qui alimente la plupart des agents IA
+- **[RAG : une porte d'entrée par sa simplicité d'implémentation](rag-trop-simple.md)** — Comment analyser et améliorer un RAG en pratique
+- **[Cas client BTP : comment un agent IA transforme la rédaction d'appels d'offres](cas-usage-rag-redaction-appels-offres-btp.md)** — Un exemple concret d'agent IA en production
+- **[Cas client assurance : 80% de gain de temps sur les rapports de sinistre](integration-ia-rapports-sinistre-assurance.md)** — L'IA agentique appliquée à un autre secteur
+- **[Comprendre l'IA générative](comprendre-l-IA-generative.md)** — Les fondements des modèles de langage qui font tourner les agents
 
 ***
 

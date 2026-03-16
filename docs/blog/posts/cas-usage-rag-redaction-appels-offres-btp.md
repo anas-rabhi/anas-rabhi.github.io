@@ -232,9 +232,19 @@ Ce projet m'a confirmé plusieurs convictions sur le RAG en entreprise :
 
 **5. L'humain reste dans la boucle.** Le chargé d'affaires ne disparaît pas. Il passe du rôle de rédacteur à celui de **relecteur-validateur**. Son expertise métier est irremplaçable : c'est lui qui sait que tel client préfère un ton plus formel, que telle norme a été mise à jour récemment, ou que tel projet passé a eu un problème qu'il vaut mieux ne pas citer en référence.
 
+### Les pièges à éviter sur ce type de projet
+
+Avec le recul, voici les trois erreurs que j'ai vues le plus souvent sur des projets similaires :
+
+**1. Vouloir tout indexer dès le départ.** Le réflexe naturel, c'est de mettre tous les documents dans la base vectorielle avant même d'avoir testé. Mauvaise idée : un index trop volumineux sans métadonnées bien structurées rend le retrieval bruyant. Commencez par un sous-ensemble maîtrisé, validez la pertinence, puis élargissez progressivement.
+
+**2. Négliger la qualité des documents sources.** Un PDF scanné illisible, un document Word avec des tableaux complexes, des normes issues d'un copier-coller mal formaté… Les problèmes de qualité de données sont responsables d'une grande partie des erreurs de retrieval. Le [nettoyage et la mise en forme des sources](comment-ameliorer-l-IA.md) est une étape souvent sous-estimée dans les plannings projet.
+
+**3. Livrer sans boucle de feedback.** Sans mécanisme pour réinjecter les bonnes réponses dans la base, le système reste statique. La boucle de feedback n'est pas une option — c'est ce qui transforme un outil correct en un système qui s'améliore réellement avec l'usage, comme décrit dans la section précédente.
+
 Et c'est ça, la vraie puissance du RAG quand il est bien intégré. Pas un gadget technologique, mais un outil qui s'inscrit dans le quotidien des équipes et qui les rend **plus rapides, plus cohérentes et plus efficaces**. Le même constat que j'avais fait sur [l'intégration de l'IA dans les rapports de sinistre](integration-ia-rapports-sinistre-assurance.md) : la technique est importante, mais c'est l'intégration qui fait la différence.
 
-Si vous voulez aller plus loin sur le RAG, j'ai écrit sur [ce qu'est vraiment le RAG](mais-que-es-le-rag.md), sur [les erreurs classiques à éviter](les-5-erreurs-rag.md), et sur [comment diagnostiquer un RAG qui ne fonctionne pas](pourquoi-le-rag-ne-fonctionne-pas.md).
+Si vous voulez aller plus loin sur le RAG, j'ai écrit sur [ce qu'est vraiment le RAG](mais-que-es-le-rag.md), sur [les erreurs classiques à éviter](les-5-erreurs-rag.md), sur [comment diagnostiquer un RAG qui ne fonctionne pas](pourquoi-le-rag-ne-fonctionne-pas.md), et sur [si le RAG est vraiment fini ou toujours pertinent](le-rag-est-fini.md).
 
 ***
 

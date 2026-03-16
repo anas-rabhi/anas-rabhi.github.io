@@ -44,7 +44,7 @@ Les retours que j'entends régulièrement après quelques semaines d'utilisation
 * "Les utilisateurs sont frustrés et retournent à la recherche manuelle"
 * "On a l'impression que ça marche... mais pas assez bien"
 
-C'est normal. Un **système RAG basique** (embeddings + recherche vectorielle + LLM) est un excellent point de départ, mais il a ses angles morts. Le piège, c'est de croire qu'ajouter plus de données ou changer de modèle va tout régler magiquement. Si vous rencontrez des problèmes similaires, [cet article sur pourquoi le RAG ne fonctionne pas](pourquoi-le-rag-ne-fonctionne-pas.md) vous donnera des pistes supplémentaires.
+C'est normal. Un **système RAG basique** (embeddings + recherche vectorielle + LLM) est un excellent point de départ, mais il a ses angles morts. Le piège, c'est de croire qu'ajouter plus de données ou changer de modèle va tout régler magiquement. Si vous rencontrez des problèmes similaires, [cet article sur pourquoi le RAG ne fonctionne pas](pourquoi-le-rag-ne-fonctionne-pas.md) et [les 5 erreurs classiques que tout le monde fait avec le RAG](les-5-erreurs-rag.md) vous donneront des pistes supplémentaires.
 
 ### Quand on veut vraiment améliorer son système RAG
 
@@ -101,6 +101,8 @@ Parce que c'est toujours plus parlant avec du concret, voici deux cas réels que
 
 **Résultat** : Le taux de satisfaction utilisateur est passé de 62% à 89%. Les requêtes avec critères précis fonctionnaient enfin correctement.
 
+Ces deux exemples illustrent deux familles de problèmes classiques. Pour voir comment ces mêmes techniques s'appliquent dans un contexte réel et plus complexe — avec 4 sources de données différentes et un agent rédacteur — lisez [comment un RAG multi-sources a transformé la rédaction d'appels d'offres dans le BTP](cas-usage-rag-redaction-appels-offres-btp.md).
+
 ## Méthodologie : Comment mener une analyse d'erreur efficace sur votre RAG
 
 Voilà ma méthode éprouvée, qui fonctionne dans la majorité des cas :
@@ -150,7 +152,7 @@ Créez une taxonomie simple :
 * **Erreurs de génération** : Hallucinations, mauvaise interprétation (20%)
 * **Erreurs de données** : Info manquante, obsolète ou mal formatée (15%)
 
-Ces pourcentages varient évidemment selon les projets, mais cette répartition permet de **prioriser les efforts d'amélioration**.
+Ces pourcentages varient évidemment selon les projets, mais cette répartition permet de **prioriser les efforts d'amélioration**. Pour aller plus loin sur les causes techniques derrière chaque type d'erreur, [mon article sur les 4 causes techniques d'échec d'un RAG](les-4-causes-techniques-echec-rag.md) donne un diagnostic détaillé.
 
 ### Étape 4 : Tester des corrections simples avant de tout refaire
 
@@ -286,6 +288,13 @@ L'**analyse d'erreur méthodique** est LA compétence à maîtriser :
 Un système RAG efficace, c'est 20% de technologie et 80% de compréhension du problème métier. Commencez simple, analysez rigoureusement, et améliorez progressivement.
 
 Si vous cherchez à éviter de réinventer la roue et à bénéficier d'une solution RAG déjà optimisée avec monitoring intégré, **[heeya](https://heeya.ai)** est conçue pour être déployée rapidement sur votre site web tout en intégrant les bonnes pratiques d'analyse et d'optimisation dont nous avons parlé dans cet article.
+
+## Pour aller plus loin
+
+- **[Mais c'est quoi un agent IA ?](c-est-quoi-un-agent-ia.md)** — L'étape suivante : quand un RAG seul ne suffit plus et qu'on a besoin d'automatisation multi-étapes
+- **[Cas client BTP : le RAG transforme la rédaction d'appels d'offres](cas-usage-rag-redaction-appels-offres-btp.md)** — Voir un RAG multi-sources en action sur un vrai projet
+- **[Cas client assurance : 80% de gain de temps sur les rapports de sinistre](integration-ia-rapports-sinistre-assurance.md)** — Un autre exemple de RAG bien optimisé en production
+- **[Le RAG est-il vraiment fini ?](le-rag-est-fini.md)** — Malgré les nouvelles approches, pourquoi le RAG reste pertinent
 
 ***
 
