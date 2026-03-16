@@ -1,6 +1,6 @@
-# Anas Rabhi — Consultant IA & Data Scientist Freelance
+# Anas Rabhi — Consultant IA & Data Scientist Freelance à Toulouse
 
-Je m'appelle **Anas Rabhi**. Je suis consultant Data Scientist freelance, et j'accompagne les entreprises qui veulent intégrer de l'IA dans leur quotidien. Pas de la théorie, pas des slides, que du concret. Du cadrage au déploiement en production, en passant par le prototypage et le transfert de compétences aux équipes.
+Je m'appelle **Anas Rabhi**. Je suis consultant Data Scientist freelance basé à **Toulouse**, et j'accompagne les entreprises qui veulent intégrer de l'IA dans leur quotidien. Pas de la théorie, pas des slides, que du concret. Du cadrage au déploiement en production, en passant par le prototypage et le transfert de compétences aux équipes.
 
 ## Ce que je fais au quotidien
 
