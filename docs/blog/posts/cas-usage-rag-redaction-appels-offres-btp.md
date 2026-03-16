@@ -1,5 +1,5 @@
 ---
-title: "Cas client IA : Comment le RAG transforme la rédaction d'appels d'offres dans le BTP"
+title: "RAG multi-sources dans le BTP : automatiser les appels d'offres"
 slug: rag-appels-doffres-btp
 description: "83% de gain de temps : comment un RAG multi-sources automatise la rédaction d'appels d'offres dans le BTP. Architecture, résultats et retour d'expérience."
 categories:

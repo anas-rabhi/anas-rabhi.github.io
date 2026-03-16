@@ -53,14 +53,59 @@ La mise en place d'un RAG "basique" est assez simple et rapide. Et comme l'humai
 
 Un RAG rapide donne souvent 50 à 70 % de bonnes réponses. En entreprise, ça peut ne pas suffire pour l'exposer aux utilisateurs finaux.
 
-Si ce sujet t'intéresse, j'ai détaillé les causes fréquentes d'un RAG qui ne répond pas bien, et comment les corriger dans cet article :  
+Si ce sujet t'intéresse, j'ai détaillé les causes fréquentes d'un RAG qui ne répond pas bien, et comment les corriger dans cet article :
 [Les 4 causes techniques d'échec d'un RAG (et comment les corriger)](les-4-causes-techniques-echec-rag.md)
+
+## RAG vs Long Context LLM : le vrai débat
+
+C'est là où le débat se concentre depuis 2024. Avec des fenêtres contextuelles qui explosent (Gemini à 1M tokens, Claude à 200K), on se dit : *"Si je peux tout mettre dans le contexte, pourquoi me compliquer avec un RAG ?"*
+
+La question est légitime. Voilà ce que ça donne en pratique :
+
+| | RAG | Long Context LLM |
+|---|---|---|
+| **Coût par requête** | Faible (3-5 chunks injectés) | Élevé (tout le corpus à chaque fois) |
+| **Qualité sur grand corpus** | Bonne si le retrieval est bon | Se dégrade avec la taille |
+| **Latence** | Rapide | Plus lente sur long contexte |
+| **Mise à jour des données** | Ré-indexation partielle | Rechargement complet |
+| **Adapté pour** | Corpus de 50+ documents | 5-20 documents courts |
+
+Un effet souvent sous-estimé : le **"lost in the middle problem"**. Plus on injecte de contexte, plus le LLM a tendance à négliger ce qui est au milieu. Il retient mieux le début et la fin. Sur un corpus de 400 pages, cette dégradation est réelle et mesurable.
+
+## Quand le Long Context est vraiment préférable
+
+Il y a des cas où injecter tout le contexte est la bonne décision :
+
+- **Un seul document long** : un contrat de 50 pages, un rapport annuel, un code source → pas besoin de RAG, on met tout dedans et on pose des questions.
+- **Questions qui croisent tout un document** : "Quelles sont les contradictions dans ce texte ?" → le RAG peut rater des passages si la question est trop large.
+- **Synthèse globale d'un document** : "Résume l'essentiel de ce livre blanc" → plus fiable qu'un retrieval partiel sur des chunks.
+- **Corpus de moins de 20 documents courts** : si tout rentre sans exploser les coûts, la complexité d'un RAG n'est pas justifiée.
+
+Le RAG reste le bon choix dès que le corpus est grand, les requêtes sont ciblées, le coût est une contrainte, ou les données changent souvent.
+
+## Ce que les partisans du "RAG c'est fini" oublient
+
+Deux contraintes que le Long Context LLM ne résout pas :
+
+**La confidentialité des données.** En entreprise, les documents RH, juridiques, techniques ne peuvent pas toujours partir vers un LLM cloud. Un RAG on-premise avec un LLM local (Llama, Mistral) reste la seule option dans ce cas. Le Long Context n'y change rien.
+
+**Le coût à l'échelle.** 100 utilisateurs × 10 questions/jour = 1000 requêtes. À 2€ la requête en Long Context (corpus de 500 pages), c'est 2000€/jour. Avec un RAG, on injecte 3-5 chunks pertinents par requête — le coût chute de 90%+. En entreprise, ça compte énormément.
+
+## Le RAG évolue : vers l'Agentic RAG
+
+Le vrai mouvement, c'est que le RAG n'est plus "juste" du retrieval vectoriel. Il intègre des capacités d'agent : reformulation de requête, recherche multi-sources, vérification des résultats, itération.
+
+L'**Agentic RAG**, c'est un RAG où l'IA décide elle-même de relancer une recherche si les premiers résultats ne suffisent pas, de combiner plusieurs sources, ou d'adapter sa stratégie de recherche. C'est une réponse directe aux limites du RAG classique sur les requêtes complexes.
+
+J'en parle concrètement dans [le cas client BTP](cas-usage-rag-redaction-appels-offres-btp.md) où un RAG multi-sources couplé à un agent rédacteur a permis de gagner 83% du temps sur la rédaction d'appels d'offres. Et dans [c'est quoi un agent IA](c-est-quoi-un-agent-ia.md) si vous voulez comprendre la différence fondamentale entre les deux approches.
 
 ## Conclusion : le RAG est-il vraiment fini ?
 
 Le RAG n'est pas mort. Il reste une approche pragmatique pour rendre les LLMs utiles sur des données internes, avec un bon équilibre entre pertinence, coûts et qualité.
 
-Plutôt que de se demander si le RAG est fini, la vraie question est : **à quel moment un RAG est utile (ou non) pour votre cas d'usage**.
+Le Long Context LLM est un outil complémentaire, pas un remplacement. Chacun a ses cas d'usage. Et l'Agentic RAG représente l'évolution naturelle pour les cas où le RAG classique atteint ses limites.
+
+Plutôt que de se demander si le RAG est fini, la vraie question est : **à quel moment un RAG est utile (ou non) pour votre cas d'usage** — et comment l'optimiser quand c'est le bon choix.
 
 ***
 
