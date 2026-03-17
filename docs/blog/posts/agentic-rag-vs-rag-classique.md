@@ -1,7 +1,7 @@
 ---
 title: "Agentic RAG vs RAG classique : quelle différence ?"
 slug: agentic-rag-vs-rag-classique
-description: "Agentic RAG vs RAG classique : les 5 patterns agentiques expliqués, le vrai coût en latence et en argent, et une grille de décision pour savoir quand basculer."
+description: "Agentic RAG vs RAG classique : 5 patterns agentiques expliqués, coût réel en latence, et grille de décision pour savoir quand basculer."
 categories:
   - "Blog"
   - "IA"
@@ -30,7 +30,7 @@ Je vais vous dire ce que j'en pense vraiment : **ce n'est pas aussi simple, et l
 
 Mais, car il y a toujours un mais, l'Agentic RAG répond à des problèmes réels que le RAG classique ne peut tout simplement pas résoudre. Et si vous tombez sur ces problèmes, vous en aurez besoin.
 
-Alors dans cet article, je vais faire simple : ce qu'est vraiment l'Agentic RAG, en quoi il diffère du RAG classique, et surtout — comment décider si vous en avez besoin ou pas.
+Alors dans cet article, je vais faire simple : ce qu'est vraiment l'Agentic RAG, en quoi il diffère du RAG classique, et surtout, comment décider si vous en avez besoin ou pas.
 
 <!-- more -->
 
@@ -64,7 +64,7 @@ Mais ce pipeline a des angles morts bien précis.
 Si vous demandez "quelle est la capitale de la France ?", le RAG va quand même chercher dans votre base documentaire. Pour rien.
 
 **Deuxième angle mort : il ne valide jamais ce qu'il a trouvé.**
-Si les chunks récupérés sont mauvais — hors sujet, obsolètes, incorrects — le LLM va quand même générer une réponse à partir d'eux. Et souvent, cette réponse sera mauvaise ou inventée.
+Si les chunks récupérés sont mauvais (hors sujet, obsolètes, incorrects), le LLM va quand même générer une réponse à partir d'eux. Et souvent, cette réponse sera mauvaise ou inventée.
 
 **Troisième angle mort : il ne peut pas décomposer une question complexe.**
 "Compare les performances financières d'Apple et Microsoft sur les 3 dernières années et explique les différences." Pour ça, il faudrait faire plusieurs recherches, croiser des informations de sources différentes, raisonner sur les résultats intermédiaires. Un RAG classique fait une seule recherche et espère que ça suffira.
@@ -136,7 +136,7 @@ graph TD
 
 **Le problème** : votre base documentaire est incomplète. Pour certaines questions, vous n'avez tout simplement pas la réponse dedans.
 
-**La solution** : un modèle léger évalue la qualité des documents récupérés. Si le score est bas — documents non pertinents, information manquante — il déclenche automatiquement une recherche web en complément.
+**La solution** : un modèle léger évalue la qualité des documents récupérés. Si le score est bas (documents non pertinents, information manquante), il déclenche automatiquement une recherche web en complément.
 
 Trois niveaux de confiance :
 - **Correct** : les documents sont pertinents, on les utilise
@@ -197,9 +197,9 @@ Le schéma ReAct (Reason + Act) : penser → agir → observer le résultat → 
 
 **La solution** : un agent orchestrateur qui délègue à des agents spécialisés. Chaque agent est expert dans son domaine et dispose de ses propres outils.
 
-C'est l'architecture qu'on a utilisée dans [notre projet RAG pour le BTP](rag-appels-doffres-btp.md) : un agent rédacteur principal qui orchestrait 4 sources spécialisées (normes métier, annexes professionnelles, historique client, projets similaires). Chaque source avait son propre retriever avec son propre filtrage par métadonnées.
+C'est l'architecture qu'on a utilisée dans [notre projet RAG pour le BTP](cas-usage-rag-redaction-appels-offres-btp.md) : un agent rédacteur principal qui orchestrait 4 sources spécialisées (normes métier, annexes professionnelles, historique client, projets similaires). Chaque source avait son propre retriever avec son propre filtrage par métadonnées.
 
-**Quand l'utiliser** : projets complexes avec plusieurs domaines bien distincts. C'est le niveau de complexité le plus élevé — à ne pas prendre à la légère.
+**Quand l'utiliser** : projets complexes avec plusieurs domaines bien distincts. C'est le niveau de complexité le plus élevé, à ne pas prendre à la légère.
 
 ***
 
@@ -241,7 +241,7 @@ Oui → RAG classique, c'est suffisant.
 Non → lisez la suite.
 
 **2. Le LLM répond-il correctement quand il a le bon contexte ?**
-Non → le problème est dans le retrieval ou les données. Résolvez ça d'abord — l'agentique n'y changera rien.
+Non → le problème est dans le retrieval ou les données. Résolvez ça d'abord : l'agentique n'y changera rien.
 Oui → lisez la suite.
 
 **3. Ma base documentaire est-elle incomplète sur certains sujets ?**
@@ -262,7 +262,7 @@ En pratique, la plupart des projets s'arrêtent à la question 3 ou 4. Très peu
 
 ## Ce que ça donne sur un vrai projet
 
-Pour vous donner un exemple concret, [notre système RAG pour la rédaction d'appels d'offres dans le BTP](rag-appels-doffres-btp.md) est un Agentic RAG de niveau 3–4.
+Pour vous donner un exemple concret, [notre système RAG pour la rédaction d'appels d'offres dans le BTP](cas-usage-rag-redaction-appels-offres-btp.md) est un Agentic RAG de niveau 3–4.
 
 Pourquoi agentique ? Parce qu'un RAG classique ne pouvait tout simplement pas faire le travail. Rédiger une réponse à un appel d'offres nécessite de combiner 4 sources complètement différentes : les normes DTU, l'historique projets du client, des réponses similaires déjà remportées, et les annexes professionnelles sectorielles. Aucune source seule ne suffisait.
 
@@ -290,13 +290,13 @@ L'Agentic RAG n'est pas meilleur que le RAG classique. Il est **approprié à de
 ## FAQ : Questions fréquentes sur l'Agentic RAG
 
 **Quelle est la différence entre Agentic RAG et un agent IA ?**
-Un [agent IA](mais-cest-quoi-un-agent-ia.md) est un système autonome qui utilise des outils. L'Agentic RAG, c'est un agent IA dont l'un des outils principaux est la recherche dans une base documentaire. L'Agentic RAG est un cas particulier d'agent IA, spécialisé dans la récupération et la synthèse d'information.
+Un [agent IA](c-est-quoi-un-agent-ia.md) est un système autonome qui utilise des outils. L'Agentic RAG, c'est un agent IA dont l'un des outils principaux est la recherche dans une base documentaire. L'Agentic RAG est un cas particulier d'agent IA, spécialisé dans la récupération et la synthèse d'information.
 
 **Quels frameworks pour implémenter de l'Agentic RAG ?**
-LangGraph est aujourd'hui le plus utilisé pour les pipelines agentiques structurés — il modélise les workflows comme des graphes avec états, boucles et conditions. LlamaIndex a ses propres abstractions (AgentWorkflow, SubQuestionQueryEngine). Pour les patterns simples (routing, grading), pas besoin de framework : quelques `if` bien placés suffisent.
+LangGraph est aujourd'hui le plus utilisé pour les pipelines agentiques structurés : il modélise les workflows comme des graphes avec états, boucles et conditions. LlamaIndex a ses propres abstractions (AgentWorkflow, SubQuestionQueryEngine). Pour les patterns simples (routing, grading), pas besoin de framework : quelques `if` bien placés suffisent.
 
 **L'Agentic RAG coûte-t-il vraiment beaucoup plus cher ?**
-Ça dépend du pattern. Un Self-RAG ou un CRAG ajoute 1 à 2 appels LLM supplémentaires — coût marginal. Un pipeline multi-agents complexe peut multiplier les coûts par 10 à 20. Calculez toujours le coût par requête avant de déployer en production.
+Ça dépend du pattern. Un Self-RAG ou un CRAG ajoute 1 à 2 appels LLM supplémentaires (coût marginal). Un pipeline multi-agents complexe peut multiplier les coûts par 10 à 20. Calculez toujours le coût par requête avant de déployer en production.
 
 **Mon RAG classique fait des hallucinations, l'Agentic RAG va-t-il résoudre ça ?**
 Pas forcément. Les hallucinations viennent souvent de deux sources : un mauvais retrieval (le LLM n'a pas les bons documents) ou un mauvais prompt (le LLM n'est pas suffisamment contraint à s'appuyer sur le contexte). Commencez par analyser la cause racine avant d'ajouter de la complexité. J'en parle en détail dans [cet article sur pourquoi le RAG ne fonctionne pas](pourquoi-le-rag-ne-fonctionne-pas.md).
@@ -308,9 +308,9 @@ Oui, et c'est même la meilleure approche. Commencez par ajouter un seul mécani
 
 ## Pour aller plus loin
 
-- **[Mais c'est quoi un agent IA ?](mais-cest-quoi-un-agent-ia.md)** — Les fondements des systèmes agentiques, si vous voulez comprendre le mécanisme sous-jacent
+- **[Mais c'est quoi un agent IA ?](c-est-quoi-un-agent-ia.md)** — Les fondements des systèmes agentiques, si vous voulez comprendre le mécanisme sous-jacent
 - **[Mais c'est quoi le RAG vraiment ?](mais-que-es-le-rag.md)** — La base, si vous n'êtes pas encore familier avec le RAG
-- **[Cas client BTP : RAG multi-sources pour les appels d'offres](rag-appels-doffres-btp.md)** — Un exemple concret d'Agentic RAG en production avec les résultats chiffrés
+- **[Cas client BTP : RAG multi-sources pour les appels d'offres](cas-usage-rag-redaction-appels-offres-btp.md)** — Un exemple concret d'Agentic RAG en production avec les résultats chiffrés
 - **[Cas client assurance : 80% de gain de temps sur les rapports de sinistre](integration-ia-rapports-sinistre-assurance.md)** — Un autre cas où l'agentique a fait la différence
 - **[Les 5 erreurs que tout le monde fait avec le RAG](les-5-erreurs-rag.md)** — Avant d'aller vers l'agentique, assurez-vous de ne pas faire ces erreurs sur votre RAG classique
 
