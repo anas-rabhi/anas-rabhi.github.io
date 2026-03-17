@@ -74,7 +74,7 @@ Vous découpez chaque document en blocs de N tokens avec un overlap de X tokens 
 | 1024 tokens | Contexte nécessaire, documents narratifs |
 | 2048 tokens | Rarement utile, attention à la limite d'embedding |
 
-Sur le benchmark LlamaIndex (Uber 10K, document financier), 1024 tokens atteint le score le plus élevé à la fois en fidélité ("faithfulness") et en pertinence ("relevancy") : c'est leur sweet spot sur ce type de document.
+Sur le benchmark LlamaIndex (Uber 10K, document financier), 1024 tokens atteint le score le plus élevé à la fois en fidélité et en pertinence. C'est leur sweet spot sur ce type de document.
 
 **Pour qui** : votre point de départ systématique. Avant de tester des approches plus sophistiquées, établissez votre baseline ici.
 
@@ -406,7 +406,7 @@ results = await retriever_evaluator.aevaluate_dataset(eval_dataset)
 print(results.metric_dicts)
 ```
 
-La configuration avec le meilleur Hit Rate + Faithfulness gagne. C'est aussi simple que ça, mais presque personne ne le fait vraiment avant de déployer.
+La configuration avec le meilleur Hit Rate et la meilleure fidélité gagne. C'est aussi simple que ça, mais presque personne ne le fait vraiment avant de déployer.
 
 ***
 

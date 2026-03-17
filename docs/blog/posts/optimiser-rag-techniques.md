@@ -44,7 +44,7 @@ C'est l'étape que tout le monde saute. Et c'est pour ça que les projets RAG st
 
 - **Hit Rate** : est-ce que le bon chunk est parmi les top-K résultats ? C'est votre mesure de base en retrieval. Si le bon chunk n'est pas récupéré, tout le reste est inutile.
 - **MRR (Mean Reciprocal Rank)** : le bon chunk est-il bien classé dans les résultats ? Être récupéré en position 1 vs position 10, ça change la qualité de la réponse finale.
-- **Faithfulness** (génération) : la réponse générée est-elle réellement fondée sur les chunks fournis, ou le LLM hallucine-t-il ?
+- **Fidélité** (génération) : la réponse générée est-elle réellement fondée sur les chunks fournis, ou le LLM hallucine-t-il ?
 
 **RAGAS en pratique**
 
@@ -344,7 +344,7 @@ cache.init(
 
 **L'ordre que j'applique sur mes projets :**
 
-1. Mesurer la baseline (Hit Rate + Faithfulness) : sans ça, impossible de savoir ce qui marche
+1. Mesurer la baseline (Hit Rate + fidélité) : sans ça, impossible de savoir ce qui marche
 2. Hybrid Search — ratio gain/effort imbattable
 3. Reranking — le second levier le plus efficace
 4. Contextual Retrieval — si les chunks manquent de contexte
@@ -358,7 +358,7 @@ Ce qu'on n'optimise jamais en premier : le prompt. Si votre retrieval ne ramène
 
 **Par quoi commencer pour optimiser un RAG en production ?**
 
-Commencez par mesurer. Générez 30 à 50 questions représentatives de vos vrais utilisateurs, mesurez le Hit Rate (le bon chunk est-il récupéré ?) et la Faithfulness (la réponse est-elle fondée sur le contexte ?). Ces deux métriques vous diront immédiatement si le problème est dans le retrieval ou la génération, et donc quelle piste suivre. Tout le reste avant cette étape, c'est de l'optimisation à l'aveugle.
+Commencez par mesurer. Générez 30 à 50 questions représentatives de vos vrais utilisateurs, mesurez le Hit Rate (le bon chunk est-il récupéré ?) et la fidélité (la réponse est-elle fondée sur le contexte ?). Ces deux métriques vous diront immédiatement si le problème est dans le retrieval ou la génération, et donc quelle piste suivre. Tout le reste avant cette étape, c'est de l'optimisation à l'aveugle.
 
 **RAGAS est-il gratuit ?**
 

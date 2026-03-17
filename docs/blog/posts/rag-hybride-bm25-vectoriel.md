@@ -67,8 +67,8 @@ BM25 (Best Matching 25) est un algorithme de recherche textuelle. L'idée de bas
 
 Deux paramètres font tout le travail :
 
-- **k1** (défaut : 1.2) : la "saturation de fréquence". Après la 5e occurrence d'un mot dans un document, l'apport marginal devient presque nul. Si "Redis" apparaît 20 fois dans un doc, ce n'est pas 20x plus pertinent que s'il apparaît 2 fois.
-- **b** (défaut : 0.75) : la normalisation par longueur. Un doc de 50 mots qui contient "Redis" est plus pertinent qu'un doc de 5000 mots qui le contient aussi.
+- **k1** (1.2 par défaut) : la "saturation de fréquence". Après la 5e occurrence d'un mot dans un document, l'apport marginal devient presque nul. Si "Redis" apparaît 20 fois dans un doc, ce n'est pas 20x plus pertinent que s'il apparaît 2 fois.
+- **b** (0.75 par défaut) : la normalisation par longueur. Un doc de 50 mots qui contient "Redis" est plus pertinent qu'un doc de 5000 mots qui le contient aussi.
 
 Ces valeurs par défaut ont été validées sur des dizaines de benchmarks. Dans la très grande majorité des projets, vous n'avez pas besoin de les toucher.
 
