@@ -45,7 +45,7 @@ Un mauvais chunking, c'est impossible à corriger en aval. Si vous avez découp�
 **Trois raisons fondamentales qui expliquent tout :**
 
 **1. La limite du modèle d'embedding**
-La plupart des modèles d'embeddings populaires ont une fenêtre de 512 tokens. Au-delà, le modèle tronque silencieusement. Si votre chunk fait 1500 tokens et votre modèle tronque à 512 — les deux tiers de votre chunk ne sont tout simplement pas indexés.
+La plupart des modèles d'embeddings populaires ont une fenêtre de 512 tokens. Au-delà, le modèle tronque silencieusement. Si votre chunk fait 1500 tokens et votre modèle tronque à 512, les deux tiers de votre chunk ne sont tout simplement pas indexés.
 
 **2. Le "Lost in the Middle"**
 Les LLMs ont du mal avec l'information au milieu d'un long contexte. Deux études indépendantes (Stanford, 2023) ont montré que les LLMs rappellent bien le début et la fin d'un contexte, mais ratent régulièrement ce qui est au milieu. Des chunks plus courts = moins de risque d'être "perdu au milieu".
@@ -59,7 +59,7 @@ La règle d'or de Pinecone résume ça mieux que n'importe quel benchmark : *"Si
 
 ## Les 8 stratégies de chunking
 
-Du plus simple au plus avancé. Elles ne sont pas exclusives — les meilleures architectures combinent plusieurs d'entre elles.
+Du plus simple au plus avancé. Elles ne sont pas exclusives : les meilleures architectures combinent plusieurs d'entre elles.
 
 ### 1. Fixed-size — le point de départ universel
 
@@ -74,7 +74,7 @@ Vous découpez chaque document en blocs de N tokens avec un overlap de X tokens 
 | 1024 tokens | Contexte nécessaire, documents narratifs |
 | 2048 tokens | Rarement utile, attention à la limite d'embedding |
 
-Sur le benchmark LlamaIndex (Uber 10K, document financier), 1024 tokens atteint le score le plus élevé à la fois en Faithfulness et en Relevancy — c'est leur sweet spot sur ce type de document.
+Sur le benchmark LlamaIndex (Uber 10K, document financier), 1024 tokens atteint le score le plus élevé à la fois en fidélité ("faithfulness") et en pertinence ("relevancy") : c'est leur sweet spot sur ce type de document.
 
 **Pour qui** : votre point de départ systématique. Avant de tester des approches plus sophistiquées, établissez votre baseline ici.
 
@@ -142,7 +142,7 @@ chunks = splitter.split_text(markdown_content)
 
 L'avantage : les métadonnées de hiérarchie sont conservées dans chaque chunk. Ça améliore le filtrage et permet au LLM de comprendre où se situe l'information dans le document.
 
-**Code :** n'utilisez jamais un splitter générique sur du code. LlamaIndex CodeSplitter avec tree-sitter découpe au niveau syntaxique — il ne coupera jamais une fonction au milieu.
+**Code :** n'utilisez jamais un splitter générique sur du code. LlamaIndex CodeSplitter avec tree-sitter découpe au niveau syntaxique : il ne coupera jamais une fonction au milieu.
 
 **Pour qui** : documentation technique, sites web, codebase.
 
@@ -168,11 +168,11 @@ nodes = splitter.get_nodes_from_documents(documents)
 
 **Ce que les benchmarks disent vraiment**
 
-Chroma Research mesure la meilleure précision et IoU avec le chunking sémantique sur certains documents. Mais une étude NAACL 2025 nuance fortement : sur des documents naturels, le semantic chunking bat rarement le fixed-size — l'avantage n'apparaît vraiment que sur des documents artificiellement construits avec des changements de sujet marqués.
+Chroma Research mesure la meilleure précision et IoU avec le chunking sémantique sur certains documents. Mais une étude NAACL 2025 nuance fortement : sur des documents naturels, le semantic chunking bat rarement le fixed-size, l'avantage n'apparaît vraiment que sur des documents artificiellement construits avec des changements de sujet marqués.
 
 **Coût** : 2 à 3x plus lent à l'ingestion (on calcule des embeddings sur chaque phrase pour détecter les coupures).
 
-**Pour qui** : documents longs avec plusieurs sujets distincts. Testez avant d'adopter — sur beaucoup de corpus, le recursive splitting est équivalent à moindre coût.
+**Pour qui** : documents longs avec plusieurs sujets distincts. Testez avant d'adopter : sur beaucoup de corpus, le recursive splitting est équivalent à moindre coût.
 
 ---
 
@@ -210,7 +210,7 @@ postprocessor = MetadataReplacementPostProcessor(
 
 Une variante de Sentence Window, mais à plusieurs niveaux. On crée une hiérarchie : chunks parents larges (1024 tokens), enfants intermédiaires (512), petits-enfants précis (128).
 
-Le retrieval se fait sur les petits-enfants (précis). Mais si suffisamment d'enfants d'un même parent sont récupérés (en général 50%+), l'AutoMergingRetriever remonte automatiquement au parent — pour donner au LLM une vue large plutôt que des fragments épars.
+Le retrieval se fait sur les petits-enfants (précis). Mais si suffisamment d'enfants d'un même parent sont récupérés (en général 50%+), l'AutoMergingRetriever remonte automatiquement au parent, pour donner au LLM une vue large plutôt que des fragments épars.
 
 ```python
 from llama_index.node_parser import HierarchicalNodeParser
@@ -228,7 +228,7 @@ retriever = AutoMergingRetriever(
 )
 ```
 
-**Pour qui** : documents longs et structurés — rapports annuels, documentation technique dense, articles scientifiques.
+**Pour qui** : documents longs et structurés (rapports annuels, documentation technique dense, articles scientifiques).
 
 ---
 
@@ -240,7 +240,7 @@ Dans un pipeline classique, on découpe d'abord, puis on embède chaque chunk in
 
 **Late chunking inverse l'ordre** : on passe d'abord *tout le document* dans le modèle d'embedding, on récupère les représentations contextualisées de chaque token, *puis* on découpe. Résultat : chaque chunk a été "vu" dans le contexte du document entier.
 
-Sur le benchmark BEIR, dataset NFCorpus (documents longs) : late chunking passe de 23.46% à **29.98% nDCG@10**, soit +6.5 points. Aucun gain sur les documents courts — c'est une technique qui profite aux textes longs et cohérents.
+Sur le benchmark BEIR, dataset NFCorpus (documents longs) : late chunking passe de 23.46% à **29.98% nDCG@10**, soit +6.5 points. Aucun gain sur les documents courts : c'est une technique qui profite aux textes longs et cohérents.
 
 **Condition** : un modèle avec grande fenêtre de contexte (8192 tokens minimum). Jina Embeddings v2/v3 sont conçus pour ça. text-embedding-3 d'OpenAI aussi.
 
@@ -252,7 +252,7 @@ Sur le benchmark BEIR, dataset NFCorpus (documents longs) : late chunking passe 
 
 C'est la technique qui a produit les améliorations les plus importantes dans tous les benchmarks que j'ai vus.
 
-**Le problème** : vos chunks sont anonymes. "Le chiffre d'affaires a augmenté de 3%" — de quelle entreprise ? Sur quelle période ? Extrait de quel document ? L'embedding de cette phrase ne contient aucune de ces informations. En retrieval, ce chunk est difficilement distinguable d'autres chunks similaires sur d'autres entreprises.
+**Le problème** : vos chunks sont anonymes. "Le chiffre d'affaires a augmenté de 3%" : de quelle entreprise ? Sur quelle période ? Extrait de quel document ? L'embedding de cette phrase ne contient aucune de ces informations. En retrieval, ce chunk est difficilement distinguable d'autres chunks similaires sur d'autres entreprises.
 
 **La solution** : avant d'embedder chaque chunk, un LLM génère 50 à 100 tokens de contexte qui situent ce chunk dans son document.
 
@@ -304,7 +304,7 @@ Deux types de PDFs se comportent très différemment :
 - PDF "text-based" (texte extractible) → `PyMuPDF` ou `pdfplumber`, très rapide
 - PDF scanné ou mise en page complexe (colonnes, headers répétés, numéros de page) → `LlamaParse` ou `Unstructured.io hi_res` avec OCR
 
-Le piège classique : extraire un PDF scanné avec PyMuPDF et obtenir du texte illisible (caractères OCR mal reconnus, colonnes mélangées). Inspectez vos PDFs avant de choisir votre extracteur — j'en parle dans [les 5 erreurs que tout le monde fait avec le RAG](les-5-erreurs-rag.md).
+Le piège classique : extraire un PDF scanné avec PyMuPDF et obtenir du texte illisible (caractères OCR mal reconnus, colonnes mélangées). Inspectez vos PDFs avant de choisir votre extracteur (j'en parle dans [les 5 erreurs que tout le monde fait avec le RAG](les-5-erreurs-rag.md)).
 
 **Code**
 
@@ -318,7 +318,7 @@ L'overlap existe pour une bonne raison : quand une information importante se sit
 
 Mais combien d'overlap ?
 
-**Benchmark Chroma** : l'overlap à 50% (défaut OpenAI Assistants : 400 tokens sur 800) produit la précision la plus basse de tous les tests. 1.4% — le pire résultat. Avec 0% d'overlap sur des chunks de 200 tokens, la précision est 3.7x meilleure.
+**Benchmark Chroma** : l'overlap à 50% (défaut OpenAI Assistants : 400 tokens sur 800) produit la précision la plus basse de tous les tests. 1.4%, le pire résultat. Avec 0% d'overlap sur des chunks de 200 tokens, la précision est 3.7x meilleure.
 
 **La règle qui marche** : 10% de la taille du chunk.
 
@@ -373,7 +373,7 @@ graph TD
 
 La pire façon de choisir son chunking : tester à la main quelques questions et décider au feeling. Ça ne scale pas.
 
-**Étape 1 — Générer des questions synthétiques**
+**Étape 1 : Générer des questions synthétiques**
 
 LlamaIndex a un `DatasetGenerator` qui lit vos chunks et génère automatiquement des questions pertinentes pour chacun. Pour 500 chunks, vous pouvez générer 2000–3000 questions en une vingtaine de minutes.
 
@@ -384,7 +384,7 @@ generator = DatasetGenerator.from_documents(documents, num_questions_per_chunk=2
 eval_dataset = await generator.agenerate_dataset_from_nodes()
 ```
 
-**Étape 2 — Tester 3 à 5 configurations**
+**Étape 2 : Tester 3 à 5 configurations**
 
 Commencez par les candidates les plus prometteuses selon votre type de document :
 - 256 tokens, 10% overlap
@@ -392,7 +392,7 @@ Commencez par les candidates les plus prometteuses selon votre type de document 
 - 1024 tokens, 10% overlap
 - Votre méthode avancée (semantic, sentence window...)
 
-**Étape 3 — Mesurer Hit Rate, Faithfulness et Relevancy**
+**Étape 3 : Mesurer Hit Rate, Fidélité et Pertinence**
 
 ```python
 from llama_index.core.evaluation import RetrieverEvaluator, FaithfulnessEvaluator
@@ -406,27 +406,27 @@ results = await retriever_evaluator.aevaluate_dataset(eval_dataset)
 print(results.metric_dicts)
 ```
 
-La configuration avec le meilleur Hit Rate + Faithfulness gagne. C'est aussi simple que ça — mais presque personne ne le fait vraiment avant de déployer.
+La configuration avec le meilleur Hit Rate + Faithfulness gagne. C'est aussi simple que ça, mais presque personne ne le fait vraiment avant de déployer.
 
 ***
 
 ## FAQ
 
-**Quelle taille de chunk pour GPT-4o ? Pour Claude ? Pour Mistral ?**
+**Quelle taille de chunk pour GPT-5.2 ? Pour Claude ? Pour Mistral ?**
 
-La limite du modèle de *génération* n'est pas le facteur limitant ici — GPT-4o, Claude 3.5 et Mistral Large ont tous des fenêtres de 128K tokens minimum. Le facteur limitant est le modèle d'*embedding* (généralement 512 ou 8192 tokens selon le modèle). Et au-delà des limites techniques, les benchmarks suggèrent 512–1024 tokens comme sweet spot universel — indépendamment du LLM de génération.
+La limite du modèle de *génération* n'est pas le facteur limitant ici : GPT-5.2, Claude 4.5 et Mistral Large ont tous des fenêtres de 128K tokens minimum. Le facteur limitant est le modèle d'*embedding* (généralement 512 ou 8192 tokens selon le modèle). Et au-delà des limites techniques, les benchmarks suggèrent 512–1024 tokens comme sweet spot universel, indépendamment du LLM de génération.
 
 **Faut-il rechunker quand on change de modèle d'embedding ?**
 
-Oui, toujours. Les embeddings ne sont pas interopérables entre modèles. Si vous passez de `text-embedding-ada-002` à `text-embedding-3-large`, vos vecteurs en base sont incompatibles avec le nouveau modèle — les distances cosinus n'ont plus de sens. Vous devez recalculer tous les embeddings, ce qui implique de rechunker si vous changez aussi de stratégie.
+Oui, toujours. Les embeddings ne sont pas interopérables entre modèles. Si vous passez de `text-embedding-ada-002` à `text-embedding-3-large`, vos vecteurs en base sont incompatibles avec le nouveau modèle : les distances cosinus n'ont plus de sens. Vous devez recalculer tous les embeddings, ce qui implique de rechunker si vous changez aussi de stratégie.
 
 **Le chunking sémantique vaut-il vraiment le coût supplémentaire ?**
 
-Ça dépend. Sur des documents naturels (rapports, articles, manuels), une étude NAACL 2025 montre que le fixed-size bien paramétré fait souvent aussi bien — et la différence est souvent couverte par la qualité du modèle d'embedding, pas par la stratégie de chunking. Sur des documents artificiellement hétérogènes (compilation de sources très différentes), l'avantage est réel. Testez sur votre corpus avant de décider.
+Ça dépend. Sur des documents naturels (rapports, articles, manuels), une étude NAACL 2025 montre que le fixed-size bien paramétré fait souvent aussi bien, et la différence est souvent couverte par la qualité du modèle d'embedding, pas par la stratégie de chunking. Sur des documents artificiellement hétérogènes (compilation de sources très différentes), l'avantage est réel. Testez sur votre corpus avant de décider.
 
 **Comment gérer les documents qui se mettent à jour régulièrement ?**
 
-Le chunking est une opération d'ingestion, pas de requête. Pour les mises à jour fréquentes, l'essentiel est de ne rechunker que les documents modifiés — pas tout le corpus. Utilisez un identifiant unique par document et une stratégie de versioning (hash du contenu ou timestamp). La plupart des bases vectorielles permettent d'upserter par identifiant de document.
+Le chunking est une opération d'ingestion, pas de requête. Pour les mises à jour fréquentes, l'essentiel est de ne rechunker que les documents modifiés, pas tout le corpus. Utilisez un identifiant unique par document et une stratégie de versioning (hash du contenu ou timestamp). La plupart des bases vectorielles permettent d'upserter par identifiant de document.
 
 ***
 

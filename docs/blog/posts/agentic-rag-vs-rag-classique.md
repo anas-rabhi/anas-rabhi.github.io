@@ -187,7 +187,7 @@ graph LR
 
 Le schéma ReAct (Reason + Act) : penser → agir → observer le résultat → recommencer.
 
-**Quand l'utiliser** : quand une seule source ne suffit pas pour répondre. C'est typiquement le cas dans nos projets BTP — on avait besoin des normes (base documentaire), de l'historique projets (base SQL), et des annexes professionnelles (PDF spécifiques). Aucune source seule n'aurait suffi.
+**Quand l'utiliser** : quand une seule source ne suffit pas pour répondre. C'est typiquement le cas dans nos projets BTP : on avait besoin des normes (base documentaire), de l'historique projets (base SQL), et des annexes professionnelles (PDF spécifiques). Aucune source seule n'aurait suffi.
 
 ***
 
@@ -302,7 +302,7 @@ LangGraph est aujourd'hui le plus utilisé pour les pipelines agentiques structu
 Pas forcément. Les hallucinations viennent souvent de deux sources : un mauvais retrieval (le LLM n'a pas les bons documents) ou un mauvais prompt (le LLM n'est pas suffisamment contraint à s'appuyer sur le contexte). Commencez par analyser la cause racine avant d'ajouter de la complexité. J'en parle en détail dans [cet article sur pourquoi le RAG ne fonctionne pas](pourquoi-le-rag-ne-fonctionne-pas.md).
 
 **Est-ce que je peux migrer progressivement vers l'Agentic RAG ?**
-Oui, et c'est même la meilleure approche. Commencez par ajouter un seul mécanisme agentique — par exemple, un simple grading des documents récupérés (niveau 2 du spectre). Mesurez l'impact avant d'aller plus loin.
+Oui, et c'est même la meilleure approche. Commencez par ajouter un seul mécanisme agentique, par exemple un simple grading des documents récupérés (niveau 2 du spectre). Mesurez l'impact avant d'aller plus loin.
 
 ***
 

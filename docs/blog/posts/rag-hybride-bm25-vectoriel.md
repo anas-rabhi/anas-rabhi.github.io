@@ -41,7 +41,7 @@ Un modèle d'embeddings encode le sens, les associations sémantiques, les proxi
 
 **1. Le jargon métier et les normes**
 
-"DTU 31.2", "CSRD", "IFRS 9", "ISO-27001 annexe A.9". Ces identifiants n'ont pas de sens au sens sémantique — ce sont des étiquettes. Un modèle d'embeddings généraliste ne sait pas que "DTU 31.2" est la norme sur les ouvrages de maçonnerie et il va encoder ça comme une séquence de caractères sans relation forte avec le contenu du document correspondant.
+"DTU 31.2", "CSRD", "IFRS 9", "ISO-27001 annexe A.9". Ces identifiants n'ont pas de sens au sens sémantique : ce sont des étiquettes. Un modèle d'embeddings généraliste ne sait pas que "DTU 31.2" est la norme sur les ouvrages de maçonnerie et il va encoder ça comme une séquence de caractères sans relation forte avec le contenu du document correspondant.
 
 **2. Les noms propres, références produit, codes erreur**
 
@@ -67,8 +67,8 @@ BM25 (Best Matching 25) est un algorithme de recherche textuelle. L'idée de bas
 
 Deux paramètres font tout le travail :
 
-- **k1** (défaut : 1.2) — la "saturation de fréquence". Après la 5e occurrence d'un mot dans un document, l'apport marginal devient presque nul. Si "Redis" apparaît 20 fois dans un doc, ce n'est pas 20x plus pertinent que s'il apparaît 2 fois.
-- **b** (défaut : 0.75) — la normalisation par longueur. Un doc de 50 mots qui contient "Redis" est plus pertinent qu'un doc de 5000 mots qui le contient aussi.
+- **k1** (défaut : 1.2) : la "saturation de fréquence". Après la 5e occurrence d'un mot dans un document, l'apport marginal devient presque nul. Si "Redis" apparaît 20 fois dans un doc, ce n'est pas 20x plus pertinent que s'il apparaît 2 fois.
+- **b** (défaut : 0.75) : la normalisation par longueur. Un doc de 50 mots qui contient "Redis" est plus pertinent qu'un doc de 5000 mots qui le contient aussi.
 
 Ces valeurs par défaut ont été validées sur des dizaines de benchmarks. Dans la très grande majorité des projets, vous n'avez pas besoin de les toucher.
 
@@ -92,7 +92,7 @@ Et si BM25 ne suffit pas (je l'explique à la fin), il existe des alternatives s
 
 ## Reciprocal Rank Fusion : l'algorithme de fusion qui marche vraiment
 
-Quand on a deux listes de résultats — une de BM25, une du vectoriel — comment les combiner ?
+Quand on a deux listes de résultats (une de BM25, une du vectoriel), comment les combiner ?
 
 La première idée naïve : additionner les scores. Ça ne marche pas. Les scores de BM25 et les scores de similarité cosinus n'ont pas les mêmes plages ni la même distribution. Additionner un score BM25 de 15.3 avec une similarité cosinus de 0.82 n'a aucun sens mathématique.
 
@@ -112,7 +112,7 @@ Un exemple pas à pas :
 | Doc B | 3e | 1er | 1/(60+3) + 1/(60+1) = **0.0323** |
 | Doc C | 2e | absent | 1/(60+2) + 0 = **0.0161** |
 
-**Doc A** sort en tête parce qu'il est bien classé dans les deux systèmes. **Doc C** est absent du vectoriel — il perd face aux docs présents dans les deux listes, même s'il était 2e en BM25.
+**Doc A** sort en tête parce qu'il est bien classé dans les deux systèmes. **Doc C** est absent du vectoriel : il perd face aux docs présents dans les deux listes, même s'il était 2e en BM25.
 
 C'est la robustesse de RRF : un document fort dans une seule liste peut quand même ressortir, mais un document modérément bon dans les deux le battra presque toujours.
 
@@ -167,7 +167,7 @@ Hybrid : +1.4% vs vectoriel seul, +18% vs BM25 seul.
 
 **LlamaIndex (Hit Rate sur benchmark Q&A)**
 
-La combinaison hybrid + reranker atteint un Hit Rate de 0.938. C'est le meilleur score de leur benchmark — devant le vectoriel seul (0.891) et BM25 seul (0.869).
+La combinaison hybrid + reranker atteint un Hit Rate de 0.938. C'est le meilleur score de leur benchmark, devant le vectoriel seul (0.891) et BM25 seul (0.869).
 
 La leçon à retenir : le hybrid améliore systématiquement le vectoriel pur, surtout sur les données avec du jargon. Et si vous ajoutez un reranker derrière, vous multipliez encore l'effet.
 
@@ -213,7 +213,7 @@ C'est 15 lignes de code. RRF est géré nativement par `EnsembleRetriever`.
 
 ### Stack 2 — LlamaIndex + QueryFusionRetriever
 
-LlamaIndex a une implémentation native avec support async — utile si vous voulez paralléliser les deux recherches pour réduire la latence.
+LlamaIndex a une implémentation native avec support async, utile si vous voulez paralléliser les deux recherches pour réduire la latence.
 
 ```python
 from llama_index.retrievers.bm25 import BM25Retriever
@@ -244,7 +244,7 @@ Le `use_async=True` est important : les deux retrievers tournent en parallèle, 
 
 ### Stack 3 — Weaviate (production, tout-en-un)
 
-Weaviate gère BM25, vectoriel et fusion nativement. C'est la stack la plus propre pour de la production à grande échelle — tout est dans la base de données, pas de logique de fusion côté applicatif.
+Weaviate gère BM25, vectoriel et fusion nativement. C'est la stack la plus propre pour de la production à grande échelle : tout est dans la base de données, pas de logique de fusion côté applicatif.
 
 ```python
 import weaviate
@@ -288,7 +288,7 @@ Le paramètre `alpha` est votre levier principal en production :
 | Corpus multilingue | **Hybrid + BGE-M3** |
 | Production généraliste sans profiling | **Hybrid par défaut** |
 
-Ma règle personnelle : **en production généraliste, je pars toujours sur du hybrid**. Le coût additionnel est marginal — BM25 est quasi-gratuit comparé à l'embedding — et le gain sur les cas limites vaut toujours l'effort.
+Ma règle personnelle : **en production généraliste, je pars toujours sur du hybrid**. Le coût additionnel est marginal (BM25 est quasi-gratuit comparé à l'embedding) et le gain sur les cas limites vaut toujours l'effort.
 
 ***
 
@@ -311,7 +311,7 @@ C'est le modèle le plus polyvalent sorti en 2024. Un seul modèle produit simul
 - Des vecteurs **creux** (type SPLADE)
 - Des scores **ColBERT** (pour le reranking)
 
-100 langues. Contexte de 8192 tokens. Vous l'utilisez à la fois comme retriever dense, retriever sparse, et reranker — avec un seul modèle à gérer.
+100 langues. Contexte de 8192 tokens. Vous l'utilisez à la fois comme retriever dense, retriever sparse, et reranker, avec un seul modèle à gérer.
 
 À considérer quand : corpus multilingue, ou quand vous voulez simplifier votre stack en n'ayant qu'un seul modèle à déployer et maintenir.
 
@@ -329,7 +329,7 @@ C'est le modèle le plus polyvalent sorti en 2024. Un seul modèle produit simul
 
 **Le hybrid search ralentit-il les requêtes ?**
 
-La partie BM25 est quasi-instantanée (calcul CPU sur index inversé). Le vectoriel est le goulot d'étranglement, comme dans un RAG classique. En pratique, le hybrid bien implémenté ajoute 5 à 15ms de latence vs le vectoriel seul — négligeable dans la majorité des architectures RAG.
+La partie BM25 est quasi-instantanée (calcul CPU sur index inversé). Le vectoriel est le goulot d'étranglement, comme dans un RAG classique. En pratique, le hybrid bien implémenté ajoute 5 à 15ms de latence vs le vectoriel seul, négligeable dans la majorité des architectures RAG.
 
 **Quelle base de données vectorielle choisir pour du hybrid search ?**
 
@@ -337,11 +337,11 @@ Weaviate et Qdrant ont le meilleur support natif aujourd'hui. Weaviate a `alpha`
 
 **Faut-il fine-tuner BM25 pour mon domaine ?**
 
-Rarement nécessaire. Les paramètres k1 et b par défaut ont été validés sur des corpus très variés. Ce qui compte plus : la qualité du tokenizer (qu'il gère bien les accents, tirets, et la casse de vos données) et le preprocessing (stop words pertinents dans votre domaine). Pour du jargon très spécialisé, BM25 n'a d'ailleurs pas besoin de stemming — les tokens exacts sont précisément ce qu'on cherche.
+Rarement nécessaire. Les paramètres k1 et b par défaut ont été validés sur des corpus très variés. Ce qui compte plus : la qualité du tokenizer (qu'il gère bien les accents, tirets, et la casse de vos données) et le preprocessing (stop words pertinents dans votre domaine). Pour du jargon très spécialisé, BM25 n'a d'ailleurs pas besoin de stemming : les tokens exacts sont précisément ce qu'on cherche.
 
 **BM25 gère-t-il correctement le français ?**
 
-Oui, avec un tokenizer adapté. LangChain utilise `rank_bm25` avec le stemmer Snowball qui couvre bien le français standard. Pour du jargon technique ou des acronymes, le stemming est inutile voire contre-productif — désactivez-le ou excluez ces termes de la normalisation.
+Oui, avec un tokenizer adapté. LangChain utilise `rank_bm25` avec le stemmer Snowball qui couvre bien le français standard. Pour du jargon technique ou des acronymes, le stemming est inutile voire contre-productif : désactivez-le ou excluez ces termes de la normalisation.
 
 ***
 

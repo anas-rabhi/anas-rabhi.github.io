@@ -163,7 +163,7 @@ C'est probablement l'optimisation avec le meilleur rapport gain/effort. Le vecto
 
 Les benchmarks : +10% NDCG vs vectoriel seul (Microsoft Azure, BEIR), jusqu'à +48% quand couplé au reranking.
 
-J'ai consacré un article entier à cette technique (implémentation avec LangChain, LlamaIndex et Weaviate, benchmarks détaillés, et quand choisir SPLADE ou BGE-M3 plutôt que BM25 classique) : **[RAG hybride BM25 + vectoriel : comment l'implémenter](rag-hybride-bm25-vectoriel.md)**.
+J'ai consacré un article entier à cette technique (implémentation avec LangChain, LlamaIndex et Weaviate, benchmarks détaillés, et quand choisir SPLADE ou BGE-M3 plutôt que BM25 classique) : **[RAG hybride BM25 + vectoriel, comment l'implémenter](rag-hybride-bm25-vectoriel.md)**.
 
 ---
 
@@ -171,7 +171,7 @@ J'ai consacré un article entier à cette technique (implémentation avec LangCh
 
 C'est la technique qui a produit les plus grands gains dans tous les benchmarks que j'ai vus, et c'est aussi la plus méconnue en France.
 
-**Le problème qu'elle résout** : vos chunks sont anonymes. "Le chiffre d'affaires a augmenté de 3%" — de quelle entreprise ? Sur quelle période ? Sans ce contexte, l'embedding de ce chunk est flottant et difficile à retrouver au bon moment.
+**Le problème qu'elle résout** : vos chunks sont anonymes. "Le chiffre d'affaires a augmenté de 3%", de quelle entreprise ? Sur quelle période ? Sans ce contexte, l'embedding de ce chunk est flottant et difficile à retrouver au bon moment.
 
 **Le mécanisme** : avant d'embedder chaque chunk, un LLM génère 50 à 100 tokens de contexte qui situent ce chunk dans son document original.
 
@@ -200,7 +200,7 @@ Le chunk final = contexte généré + chunk original. C'est ce texte enrichi qui
 | + BM25 contextuel | 2.9% | **−49%** |
 | + Reranking | 1.9% | **−67%** |
 
-**Le coût** : un appel LLM par chunk à l'ingestion. Avec le prompt caching de Claude, ~1€ par million de tokens. Pour la majorité des corpus d'entreprise, c'est quelques euros — une fois.
+**Le coût** : un appel LLM par chunk à l'ingestion. Avec le prompt caching de Claude, ~1€ par million de tokens. Pour la majorité des corpus d'entreprise, c'est quelques euros, une seule fois.
 
 Je couvre l'implémentation complète dans [l'article dédié au chunking](chunking-optimal-rag.md).
 
@@ -262,7 +262,7 @@ graph LR
 
 ### Technique 7 — Context Compression + LongContextReorder
 
-**Le problème** : vous passez 10 chunks au LLM. Mais l'information utile est noyée dans du bruit. Et les LLMs lisent mal les longs contextes — Stanford a montré en 2023 que les modèles rappellent bien ce qui est en début et fin de contexte, mais ratent souvent ce qui est au milieu.
+**Le problème** : vous passez 10 chunks au LLM. Mais l'information utile est noyée dans du bruit. Et les LLMs lisent mal les longs contextes. Stanford a montré en 2023 que les modèles rappellent bien ce qui est en début et fin de contexte, mais ratent souvent ce qui est au milieu.
 
 C'est ce qu'on appelle le "Lost in the Middle".
 
@@ -294,7 +294,7 @@ compression_retriever = ContextualCompressionRetriever(
 results = compression_retriever.invoke(query)
 ```
 
-**Quand l'utiliser** : LongContextReorder ne coûte rien (simple réordonnancement), à activer systématiquement. La compression LLM ajoute un appel LLM par chunk — à réserver aux cas où la précision est critique.
+**Quand l'utiliser** : LongContextReorder ne coûte rien (simple réordonnancement), à activer systématiquement. La compression LLM ajoute un appel LLM par chunk : à réserver aux cas où la précision est critique.
 
 ***
 
@@ -362,15 +362,15 @@ Commencez par mesurer. Générez 30 à 50 questions représentatives de vos vrai
 
 **RAGAS est-il gratuit ?**
 
-Oui, RAGAS est open-source (MIT). La librairie tourne en local. En revanche, les métriques comme Faithfulness et Answer Relevancy font des appels à un LLM juge (par défaut GPT-4) pour évaluer la qualité — ce qui a un coût à l'usage. Pour une évaluation de 50 questions, comptez quelques centimes à quelques euros selon le LLM juge utilisé. Vous pouvez aussi utiliser un modèle open-source comme juge pour réduire ce coût.
+Oui, RAGAS est open-source (MIT). La librairie tourne en local. En revanche, les métriques comme Fidélité et Pertinence font des appels à un LLM juge (par défaut GPT-4.1 ou autre modèle choisi en amont) pour évaluer la qualité, ce qui a un coût à l'usage. Pour une évaluation de 50 questions, comptez quelques centimes à quelques euros selon le LLM juge utilisé. Vous pouvez aussi utiliser un modèle open-source comme juge pour réduire ce coût.
 
 **Quelle différence entre reranking et re-retrieval ?**
 
-Le reranking prend les chunks déjà récupérés et les réordonne selon leur pertinence réelle. Le re-retrieval (présent dans certains patterns agentiques comme CRAG) relance une nouvelle recherche si les résultats initiaux sont jugés mauvais. Ce sont deux mécanismes différents : le reranking améliore le classement, le re-retrieval change les résultats. On peut combiner les deux — c'est d'ailleurs ce que fait le [Corrective RAG](agentic-rag-vs-rag-classique.md) avec un fallback web.
+Le reranking prend les chunks déjà récupérés et les réordonne selon leur pertinence réelle. Le re-retrieval (présent dans certains patterns agentiques comme CRAG) relance une nouvelle recherche si les résultats initiaux sont jugés mauvais. Ce sont deux mécanismes différents : le reranking améliore le classement, le re-retrieval change les résultats. On peut combiner les deux : c'est d'ailleurs ce que fait le [Corrective RAG](agentic-rag-vs-rag-classique.md) avec un fallback web.
 
 **Est-ce que l'optimisation aide si mes données sont de mauvaise qualité ?**
 
-Non. Les techniques décrites ici améliorent un RAG qui fonctionne déjà correctement sur de bonnes données. Si vos PDFs sont des scans mal reconnus, si vos documents sont mal structurés, si votre chunking découpe les informations au mauvais endroit — aucune optimisation ne compensera ça. La priorité absolue reste la qualité des données et du chunking. J'en parle dans [les 5 erreurs RAG](les-5-erreurs-rag.md) (erreur n°3) et dans [l'analyse des causes techniques d'échec](les-4-causes-techniques-echec-rag.md).
+Non. Les techniques décrites ici améliorent un RAG qui fonctionne déjà correctement sur de bonnes données. Si vos PDFs sont des scans mal reconnus, si vos documents sont mal structurés, si votre chunking découpe les informations au mauvais endroit : aucune optimisation ne compensera ça. La priorité absolue reste la qualité des données et du chunking. J'en parle dans [les 5 erreurs RAG](les-5-erreurs-rag.md) (erreur n°3) et dans [l'analyse des causes techniques d'échec](les-4-causes-techniques-echec-rag.md).
 
 ***
 
