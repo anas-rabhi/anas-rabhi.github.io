@@ -101,10 +101,26 @@
     });
   </script>
 
-{% endblock %}
-
-{% block scripts %}
-  {{ super() }}
   <!-- Heeya Chat Widget -->
-  <script async src="https://heeya.fr/agent/577c3cbc-9eb8-4d64-86b3-f82c7548702b/embed.js" data-agent-name="ianas"></script>
+  <script>
+    (function () {
+      const loadHeeya = function () {
+        if (document.querySelector('script[data-heeya-widget="true"]')) return;
+
+        const script = document.createElement("script");
+        script.async = true;
+        script.src = "https://heeya.fr/agent/577c3cbc-9eb8-4d64-86b3-f82c7548702b/embed.js";
+        script.dataset.agentName = "ianas";
+        script.dataset.heeyaWidget = "true";
+        document.body.appendChild(script);
+      };
+
+      if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", loadHeeya, { once: true });
+      } else {
+        loadHeeya();
+      }
+    })();
+  </script>
+
 {% endblock %}
