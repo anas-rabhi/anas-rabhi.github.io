@@ -1,0 +1,29 @@
+/* Accessibility tweaks for Lighthouse/PageSpeed */
+
+/* Increase top tabs contrast on light theme */
+[data-md-color-scheme="default"] .md-tabs__link {
+  color: rgba(255, 255, 255, 0.96);
+}
+
+[data-md-color-scheme="default"] .md-tabs__link:hover,
+[data-md-color-scheme="default"] .md-tabs__link:focus {
+  color: #ffffff;
+}
+
+/* Improve footer text contrast */
+[data-md-color-scheme="default"] .md-footer-meta,
+[data-md-color-scheme="default"] .md-footer-meta .md-copyright,
+[data-md-color-scheme="default"] .md-footer-meta a {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Links must be identifiable beyond color only */
+.md-typeset a {
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.md-typeset a:hover,
+.md-typeset a:focus {
+  text-decoration-thickness: 2px;
+}
