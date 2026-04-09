@@ -52,6 +52,8 @@ Si vous voulez mieux comprendre ce concept d'outils autour du LLM, c'est ce qu'o
 
 Parmi ces outils, il y a le module de recherche web. Quand vous posez une question à ChatGPT, il peut aller chercher des infos en temps réel sur le web via un outil qu'on appelle souvent "web_search". C'est ce qui lui permet de vous donner des résultats récents et de citer des sources.
 
+Si vous connaissez le [RAG](mais-que-es-le-rag.md), le parallèle est assez direct. Dans un RAG classique, le LLM va chercher des morceaux de documents internes pour répondre à une question. Ici, c'est pareil, sauf que la base de documents, c'est le web. L'agent ChatGPT décide de lancer une recherche, récupère les résultats, et les utilise pour construire sa réponse. C'est du RAG à l'échelle d'internet.
+
 Pour le déclencher, soit vous lui dites directement "utilise la recherche web", soit vous sélectionnez l'option "Recherche sur le web" dans le petit "+" de l'interface.
 
 ---
@@ -59,6 +61,8 @@ Pour le déclencher, soit vous lui dites directement "utilise la recherche web",
 ## Comment les IA trouvent vos contenus
 
 Et c'est là que ça devient intéressant. Comment ces IA trouvent vos contenus quand elles font cette recherche web ?
+
+Pour reprendre l'analogie avec le RAG, dans un système RAG classique, vous choisissez quels documents vous indexez dans votre base vectorielle. Ici, la question devient plutôt dans quelle base vectorielle (ou quel index) ces moteurs IA vont chercher. Et c'est là que ça se complique.
 
 Soit elles ont leur propre base d'indexation, un peu comme Google avec son index. Soit elles s'appuient sur les API d'autres moteurs de recherche existants. Par exemple, à ses débuts, Perplexity passait par l'API de Bing. Concrètement, si votre site n'était pas indexé sur Bing, Perplexity ne pouvait tout simplement pas le trouver.
 
@@ -90,6 +94,8 @@ Voici ce que j'ai pu rassembler sur les sources de données de chaque plateforme
 | **Perplexity** | Bing + index propre + autres sources | Être indexé sur Bing et Google |
 | **Gemini** | Google Search + Knowledge Graph | Le SEO Google classique suffit |
 | **Claude** | Brave Search | Être indexé par Brave |
+
+Au final, quand on prend du recul, le fonctionnement de ces moteurs de recherche IA repose sur des briques qu'on connaît déjà bien. Un [agent IA](c-est-quoi-un-agent-ia.md) qui orchestre le tout, un système de [retrieval](mais-que-es-le-rag.md) pour aller chercher les bons contenus, et un LLM qui génère la réponse finale en citant ses sources. C'est du RAG agentique, mais à l'échelle du web. Et comprendre ça, c'est comprendre sur quoi on peut agir.
 
 Bref, le GEO c'est encore flou pour beaucoup, mais une fois qu'on comprend la mécanique derrière, ça devient beaucoup plus concret. Pour se faire référencer par les IA, il faut d'abord comprendre où elles vont chercher leurs informations. Et maintenant vous le savez.
 
