@@ -59,7 +59,7 @@ Partons du principe que ChatGPT ne peut :
 * ni créer d'images
 * ni accéder à vos fichiers
 
-Et qu'il ne peut **que générer du texte**.
+Et qu'il ne peut **que générer du texte**. Si vous voulez comprendre comment fonctionne cette recherche web et comment les moteurs IA trouvent vos contenus, j'en parle en détail dans mon article sur le [GEO (Generative Engine Optimization)](geo-comment-fonctionnent-les-moteurs-ia.md).
 
 Voilà, on est revenus au [ChatGPT de fin 2022](https://www.lebigdata.fr/evolution-chatgpt-openai#:~:text=Les%20d%C3%A9veloppeurs%20d'OpenAI%20ont%20lanc%C3%A9%20ChatGPT%20le%2030%20novembre%202022.).
 
@@ -334,6 +334,7 @@ Un POC sur un cas d'usage ciblé peut se faire en 2 à 4 semaines. La mise en pr
 - **[Cas client BTP : comment un agent IA transforme la rédaction d'appels d'offres](cas-usage-rag-redaction-appels-offres-btp.md)** — Un exemple concret d'agent IA en production
 - **[Cas client assurance : 80% de gain de temps sur les rapports de sinistre](integration-ia-rapports-sinistre-assurance.md)** — L'IA agentique appliquée à un autre secteur
 - **[Comprendre l'IA générative](comprendre-l-IA-generative.md)** — Les fondements des modèles de langage qui font tourner les agents
+- **[GEO : comment fonctionnent les moteurs de recherche IA](geo-comment-fonctionnent-les-moteurs-ia.md)** — Comment ChatGPT, Perplexity et Gemini utilisent la recherche web pour citer vos contenus
 
 ***
 

@@ -38,7 +38,7 @@ Pour simplifier davantage, on peut imaginer ce modèle comme un programme inform
 
 Mais attention : même si ChatGPT donne souvent l'impression de produire des textes logiques et cohérents, il ne comprend pas réellement ce qu'il écrit. Il se contente simplement d'assembler des mots qu'il a déjà vus dans ses données d'entraînement, en fonction de votre demande.
 
-Attention, ici je parle bien des IA comme ChatGPT dans leur forme la plus basique. Aujourd'hui, ces IA ont déjà beaucoup évolué : elles peuvent désormais effectuer des recherches sur internet, répondre à vos e-mails, automatiser des tâches professionnelles et bien plus encore ! Ce type d'IA plus avancé s'appelle un « agent ». Mais j'aborderai ce sujet passionnant dans un prochain article :)
+Attention, ici je parle bien des IA comme ChatGPT dans leur forme la plus basique. Aujourd'hui, ces IA ont déjà beaucoup évolué : elles peuvent désormais effectuer des recherches sur internet, répondre à vos e-mails, automatiser des tâches professionnelles et bien plus encore ! Ce type d'IA plus avancé s'appelle un [agent IA](c-est-quoi-un-agent-ia.md). Et si vous vous demandez comment ces IA trouvent et référencent les contenus web quand elles font leurs recherches, j'explique tout dans mon article sur le [GEO (référencement sur les moteurs IA)](geo-comment-fonctionnent-les-moteurs-ia.md).
 
 ## Quelques exemples des limites de ChatGPT
 

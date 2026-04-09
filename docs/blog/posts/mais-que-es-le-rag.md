@@ -49,7 +49,7 @@ Prenons un exemple tout simple : j'ai une documentation sur une page Word. Si je
 
 Sauf que la fenêtre de contexte est limitée à un certain nombre de mots (ou plus précisément de tokens). On peut charger une page, mais pas 10 000 d'un coup. En entreprise, on a souvent des documents très volumineux, et on aimerait qu'une IA puisse répondre à des questions sur l'ensemble de ces documents.
 
-La solution qui a émergé est la suivante : à chaque question, on sélectionne seulement quelques extraits de la documentation qui sont pertinents, et on les insère dans le contexte (ou prompt) du modèle.
+La solution qui a émergé est la suivante : à chaque question, on sélectionne seulement quelques extraits de la documentation qui sont pertinents, et on les insère dans le contexte (ou prompt) du modèle. D'ailleurs, c'est exactement ce principe que des moteurs comme Perplexity utilisent pour [référencer et citer des contenus web](geo-comment-fonctionnent-les-moteurs-ia.md).
 
 C'est exactement ce que fait le RAG : il permet, pour chaque question, de choisir les extraits pertinents et de les ajouter au contexte pour que l'IA puisse répondre, même sur de très gros volumes de documents, si vous aimez lire, AWS en parle très bien ici aussi : ([aws.amazon.com](https://aws.amazon.com/fr/what-is/retrieval-augmented-generation/))
 

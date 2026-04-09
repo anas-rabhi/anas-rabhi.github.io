@@ -35,7 +35,7 @@ Même si les fenêtres contextuelles explosent (on atteint 1M de tokens, soit en
 
 Et surtout : injecter trop d'information dégrade souvent la qualité des réponses. Plus on surcharge la fenêtre, plus le LLM se noie. Le RAG n'est donc pas près de disparaître.
 
-Le RAG s'est imposé depuis l'arrivée de ChatGPT parce qu'il répond à une problématique majeure : la connaissance des LLMs est limitée aux données vues pendant l'entraînement. Or, dans la plupart des cas d'usage en entreprise, on veut que l'IA réponde sur les données internes.
+Le RAG s'est imposé depuis l'arrivée de ChatGPT parce qu'il répond à une problématique majeure : la connaissance des LLMs est limitée aux données vues pendant l'entraînement. Or, dans la plupart des cas d'usage en entreprise, on veut que l'IA réponde sur les données internes. C'est d'ailleurs le même principe qui est utilisé par les moteurs de recherche IA comme Perplexity pour [indexer et citer les contenus web](geo-comment-fonctionnent-les-moteurs-ia.md).
 
 Le RAG a un côté "magique" : si on combine une base vectorielle qui stocke les documents de l'entreprise et un LLM, on peut permettre à l'IA de répondre à n'importe quelle question sur ces données.
 
