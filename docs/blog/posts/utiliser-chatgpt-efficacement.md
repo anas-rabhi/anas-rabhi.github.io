@@ -34,6 +34,8 @@ Dans leur forme actuelle, les modèles d'intelligence artificielle comme ChatGPT
 
 À la base, ChatGPT utilise ce qu'on appelle un modèle d'intelligence artificielle (IA). Plus précisément, il s'agit d'un grand modèle de langage (en anglais : Large Language Model ou LLM). En résumé, c'est un programme mathématique qui a été entraîné en analysant des milliards de textes différents. Son rôle est assez simple : il reçoit un texte en entrée, l'analyse grâce à ses connaissances internes, puis génère un texte en sortie.
 
+> Important à savoir : ChatGPT n'est qu'un type d'IA parmi beaucoup d'autres. Pour comprendre la vue d'ensemble (vision, séries temporelles, données tabulaires, IA générative, etc.), je vous recommande mon article sur [les différents domaines de l'IA](domaines-intelligence-artificielle.md) qui replace tout ça dans son contexte.
+
 Pour simplifier davantage, on peut imaginer ce modèle comme un programme informatique composé de très nombreux chiffres appelés « paramètres ». Ces paramètres sont mis à jour pendant l'entraînement de l'IA, ce qui permet au modèle d'être efficace pour comprendre et produire du texte.
 
 Mais attention : même si ChatGPT donne souvent l'impression de produire des textes logiques et cohérents, il ne comprend pas réellement ce qu'il écrit. Il se contente simplement d'assembler des mots qu'il a déjà vus dans ses données d'entraînement, en fonction de votre demande.

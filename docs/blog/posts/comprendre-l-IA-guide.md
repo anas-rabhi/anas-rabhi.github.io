@@ -80,6 +80,8 @@ Cette hiérarchie nous rappelle que, bien que le Deep Learning soit actuellement
 
 Dans le vaste univers de l'intelligence artificielle, il est crucial de comprendre que différents domaines existent, chacun ayant des applications spécifiques et des relations étroites avec les composantes du machine learning et du deep learning. Dans cette section, je vais présenter un aperçu de chaque domaine majeur de l'IA, en expliquant comment ils s'appuient sur le machine learning et le deep learning pour fonctionner efficacement.
 
+> Pour aller plus loin sur ce sujet, j'ai écrit un article dédié qui détaille [les différents domaines de l'IA avec des exemples concrets en entreprise](domaines-intelligence-artificielle.md) (vision, NLP, séries temporelles, données tabulaires, IA générative). Vous y trouverez des cas réels avec L'Oréal, Air France, Carrefour ou AXA.
+
 On peut voir un domaine de l'IA comme une spécialité. Imaginez que l'IA est la médecine. Les différents domaines de la médecine sont la cardiologie, la dentisterie, etc. C'est pareil pour l'IA. Les domaines de l'IA peuvent être l'imagerie, les moteurs de recommandation, le traitement du langage, etc. Et dans chaque domaine, on peut appliquer du machine learning ou du deep learning.
 
 **Comprendre l'intelligence artificielle**, c'est aussi découvrir la diversité de ses domaines d'application et la façon dont ils transforment notre quotidien.

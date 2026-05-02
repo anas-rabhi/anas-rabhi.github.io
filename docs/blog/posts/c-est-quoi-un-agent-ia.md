@@ -40,7 +40,7 @@ Car les agents IA sont là pour répondre (ou contourner) les limites des modèl
 
 Je vais essayer de faire simple.
 
-Derrière ChatGPT, il y a un **modèle de langage**, c'est-à-dire une IA qu'on a entraînée avec des milliards de données pour répondre à des questions. Quand l'IA répond, elle ne fait qu'une seule chose : **générer du texte**.
+Derrière ChatGPT, il y a un **modèle de langage**, c'est-à-dire une IA qu'on a entraînée avec des milliards de données pour répondre à des questions. Quand l'IA répond, elle ne fait qu'une seule chose : **générer du texte**. C'est important de comprendre que ce n'est qu'un type d'IA parmi d'autres : il existe aussi des modèles pour les images, les séries temporelles, les données tabulaires, l'audio. J'en parle dans mon article sur [les différents domaines de l'IA](domaines-intelligence-artificielle.md), parce que beaucoup de gens confondent encore IA et ChatGPT.
 
 Dit autrement :
 un modèle de langage, par définition, **ne fait que prédire le prochain mot**.
@@ -334,6 +334,7 @@ Un POC sur un cas d'usage ciblé peut se faire en 2 à 4 semaines. La mise en pr
 - **[Cas client BTP : comment un agent IA transforme la rédaction d'appels d'offres](cas-usage-rag-redaction-appels-offres-btp.md)** — Un exemple concret d'agent IA en production
 - **[Cas client assurance : 80% de gain de temps sur les rapports de sinistre](integration-ia-rapports-sinistre-assurance.md)** — L'IA agentique appliquée à un autre secteur
 - **[Comprendre l'IA générative](comprendre-l-IA-generative.md)** — Les fondements des modèles de langage qui font tourner les agents
+- **[Les différents domaines de l'IA](domaines-intelligence-artificielle.md)** — Pour comprendre où se situent les agents IA dans le paysage global de l'IA
 - **[GEO : comment fonctionnent les moteurs de recherche IA](geo-comment-fonctionnent-les-moteurs-ia.md)** — Comment ChatGPT, Perplexity et Gemini utilisent la recherche web pour citer vos contenus
 
 ***

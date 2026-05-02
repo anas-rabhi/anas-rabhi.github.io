@@ -21,7 +21,7 @@ mermaid: true
 
 Dans la première partie de cette exploration de l'intelligence artificielle, j'ai cherché à rendre accessibles des notions souvent floues comme le machine learning et le deep learning. Dans cet article, je vous propose de plonger ensemble dans un domaine dont tout le monde parle depuis deux ans : l'IA générative.
 
-Avec l'essor impressionnant d'outils comme ChatGPT, Perplexity ou Midjourney, l'IA générative s'est imposée sur le devant de la scène. Contrairement aux autres formes d'IA qui se contentent d'analyser ou de classer des données, cette technologie est capable de créer de nouvelles données. Que ce soit pour générer du texte, des images, ou même de l'audio. En gros, tout réside dans le mot "Générative" : pour faire simple c'est une forme ou domaine d'IA qui va permettre de générer un nouveau contenu.
+Avec l'essor impressionnant d'outils comme ChatGPT, Perplexity ou Midjourney, l'IA générative s'est imposée sur le devant de la scène. Contrairement aux [autres formes d'IA](domaines-intelligence-artificielle.md) qui se contentent d'analyser ou de classer des données (vision, séries temporelles, données tabulaires, NLP classique...), cette technologie est capable de créer de nouvelles données. Que ce soit pour générer du texte, des images, ou même de l'audio. En gros, tout réside dans le mot "Générative" : pour faire simple c'est une forme ou domaine d'IA qui va permettre de générer un nouveau contenu.
 
 Dans cette partie, je vais simplement expliquer ce qu'est l'IA générative, comment ça marche, donner des exemples concrets, et montrer à quoi ça sert vraiment. L'idée, c'est de voir comment les machines ne se contentent plus de comprendre ce qu'on leur donne, mais arrivent carrément à créer du nouveau contenu.
 

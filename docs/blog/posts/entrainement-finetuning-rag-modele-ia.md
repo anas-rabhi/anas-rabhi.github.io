@@ -67,6 +67,8 @@ D'ailleurs, **on pourrait techniquement construire un LLM avec une autre archite
 
 Chaque famille a ses spécificités d'entraînement. Mais le principe reste le même : on a un modèle vide, on lui donne plein de données, et on ajuste ses paramètres jusqu'à ce qu'il fasse correctement la tâche qu'on attend de lui.
 
+Si vous voulez creuser les différents domaines de l'IA et comprendre dans quel cas utiliser quel type de modèle (avec des exemples concrets en entreprise), j'ai écrit un article dédié : [les différents domaines de l'IA et pourquoi ChatGPT n'est qu'une petite partie](domaines-intelligence-artificielle.md).
+
 ---
 
 ## Avant d'aller plus loin : il existe plusieurs types d'entraînement
@@ -402,6 +404,7 @@ Dans le pire des cas, si vous finissez quand même par finetuner, vous l'aurez f
 
 ## Pour aller plus loin
 
+* **[Les différents domaines de l'IA](domaines-intelligence-artificielle.md)** : pour situer le finetuning et les LLM dans la grande famille des IA
 * **[C'est quoi le RAG ?](mais-que-es-le-rag.md)** : comprendre l'alternative la plus efficace au finetuning
 * **[Comprendre l'IA générative](comprendre-l-IA-generative.md)** : comment fonctionnent vraiment les LLM
 * **[Comment améliorer un RAG](comment-ameliorer-l-IA.md)** : la méthode pour mesurer et progresser
