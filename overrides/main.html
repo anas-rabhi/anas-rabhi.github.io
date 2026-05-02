@@ -1,0 +1,126 @@
+{% extends "base.html" %}
+
+{% block extrahead %}
+  {% set page_title = page.meta.title | default(page.title) | default(config.site_name) if page else config.site_name %}
+  {% set page_description = page.meta.description | default(config.site_description) if page else config.site_description %}
+  {% set page_url = page.canonical_url.split('?')[0] if page and page.canonical_url else config.site_url %}
+  {% set page_image = config.site_url ~ "assets/og-image.png" %}
+
+  {% if page and page.canonical_url %}
+  <!-- Force canonical URL without query parameters -->
+  <link rel="canonical" href="{{ page_url }}" />
+  {% endif %}
+
+  <!-- noindex only for pagination pages (thin/duplicate content) -->
+  {% if page and page.canonical_url and "/page/" in page.canonical_url %}
+  <meta name="robots" content="noindex, follow" />
+  {% endif %}
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="{% if page and page.meta and page.meta.date %}article{% else %}website{% endif %}" />
+  <meta property="og:title" content="{{ page_title }}" />
+  <meta property="og:description" content="{{ page_description }}" />
+  <meta property="og:url" content="{{ page_url }}" />
+  <meta property="og:site_name" content="{{ config.site_name }}" />
+  <meta property="og:image" content="{{ page_image }}" />
+  <meta property="og:locale" content="fr_FR" />
+  {% if page and page.meta and page.meta.date %}
+  <meta property="article:published_time" content="{{ page.meta.date }}" />
+  <meta property="article:author" content="https://www.linkedin.com/in/anasrabhi/" />
+  {% endif %}
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@anas9r" />
+  <meta name="twitter:creator" content="@anas9r" />
+  <meta name="twitter:title" content="{{ page_title }}" />
+  <meta name="twitter:description" content="{{ page_description }}" />
+  <meta name="twitter:image" content="{{ page_image }}" />
+
+  <!-- JSON-LD Structured Data -->
+  {% if page and page.meta and page.meta.date %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "{{ page_title }}",
+    "description": "{{ page_description }}",
+    "image": "{{ page_image }}",
+    "author": {
+      "@type": "Person",
+      "name": "{{ config.site_author }}",
+      "url": "https://www.linkedin.com/in/anasrabhi/"
+    },
+    "publisher": {
+      "@type": "Person",
+      "name": "{{ config.site_author }}"
+    },
+    "datePublished": "{{ page.meta.date }}",
+    "dateModified": "{{ page.meta.date_modified | default(page.meta.date) }}",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "{{ page_url }}"
+    }
+  }
+  </script>
+  {% else %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "{{ config.site_name }}",
+    "url": "{{ config.site_url }}",
+    "description": "{{ config.site_description }}",
+    "inLanguage": "fr",
+    "author": {
+      "@type": "Person",
+      "name": "{{ config.site_author }}"
+    }
+  }
+  </script>
+  {% endif %}
+
+  <!-- Accessibility: ensure the search dialog has an accessible name -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const applySearchDialogA11y = function () {
+        const searchDialog = document.querySelector('.md-search[role="dialog"]');
+        if (!searchDialog) return;
+        if (!searchDialog.hasAttribute("aria-label")) {
+          searchDialog.setAttribute("aria-label", "Recherche du site");
+        }
+        if (!searchDialog.hasAttribute("aria-modal")) {
+          searchDialog.setAttribute("aria-modal", "true");
+        }
+      };
+
+      applySearchDialogA11y();
+
+      const observer = new MutationObserver(applySearchDialogA11y);
+      observer.observe(document.body, { childList: true, subtree: true });
+    });
+  </script>
+
+  <!-- Heeya Chat Widget -->
+  <script>
+    (function () {
+      const loadHeeya = function () {
+        if (document.querySelector('script[data-heeya-widget="true"]')) return;
+
+        const script = document.createElement("script");
+        script.async = true;
+        script.src = "https://heeya.fr/agent/577c3cbc-9eb8-4d64-86b3-f82c7548702b/embed.js";
+        script.dataset.agentName = "ianas";
+        script.dataset.heeyaWidget = "true";
+        document.body.appendChild(script);
+      };
+
+      if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", loadHeeya, { once: true });
+      } else {
+        loadHeeya();
+      }
+    })();
+  </script>
+
+{% endblock %}

@@ -1,0 +1,141 @@
+/* Accessibility tweaks for Lighthouse/PageSpeed */
+
+/* Increase top tabs contrast on light theme */
+[data-md-color-scheme="default"] .md-tabs__link {
+  color: rgba(255, 255, 255, 0.96);
+}
+
+[data-md-color-scheme="default"] .md-tabs__link:hover,
+[data-md-color-scheme="default"] .md-tabs__link:focus {
+  color: #ffffff;
+}
+
+/* Improve footer text contrast */
+[data-md-color-scheme="default"] .md-footer-meta,
+[data-md-color-scheme="default"] .md-footer-meta .md-copyright,
+[data-md-color-scheme="default"] .md-footer-meta a {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Links must be identifiable beyond color only */
+.md-typeset a {
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.md-typeset a:hover,
+.md-typeset a:focus {
+  text-decoration-thickness: 2px;
+}
+
+/* Buttons inside cards/hero should not be underlined */
+.md-typeset .md-button,
+.md-typeset .grid.cards a.md-button {
+  text-decoration: none;
+}
+
+/* ---------- Landing: center content when sidebars hidden ---------- */
+.md-main__inner.md-grid:has(> .md-sidebar--primary[hidden]) {
+  max-width: 61rem;
+}
+
+/* ---------- Landing hero ---------- */
+.md-typeset .hero {
+  margin: 1.2rem 0 2.4rem;
+  padding: 1.8rem 1.6rem;
+  border-radius: 12px;
+  background: linear-gradient(135deg,
+    var(--md-primary-fg-color--light, #5c6bc0) 0%,
+    var(--md-primary-fg-color, #3f51b5) 100%);
+  color: #fff;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.md-typeset .hero p {
+  color: #fff;
+  font-size: 1.05rem;
+  line-height: 1.55;
+  margin: 0 0 1rem;
+}
+
+.md-typeset .hero strong {
+  color: #fff;
+}
+
+.md-typeset .hero a {
+  text-decoration: none;
+}
+
+.md-typeset .hero .md-button {
+  margin: 0.3rem 0.4rem 0 0;
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.7);
+}
+
+.md-typeset .hero .md-button--primary {
+  background: #fff;
+  color: var(--md-primary-fg-color, #3f51b5);
+  border-color: #fff;
+}
+
+.md-typeset .hero .md-button:hover,
+.md-typeset .hero .md-button:focus {
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  border-color: #fff;
+}
+
+.md-typeset .hero .md-button--primary:hover,
+.md-typeset .hero .md-button--primary:focus {
+  background: rgba(255, 255, 255, 0.92);
+  color: var(--md-primary-fg-color, #3f51b5);
+}
+
+/* Dark theme tweak for hero */
+[data-md-color-scheme="slate"] .md-typeset .hero {
+  background: linear-gradient(135deg, #2a2f4a 0%, #1a1d2e 100%);
+}
+
+/* ---------- Cards polish ---------- */
+.md-typeset .grid.cards > ul > li,
+.md-typeset .grid.cards > :not(ul) {
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+
+.md-typeset .grid.cards > ul > li:hover,
+.md-typeset .grid.cards > :not(ul):hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+  border-color: var(--md-primary-fg-color, #3f51b5);
+}
+
+/* ---------- Stat pills (project cards) ---------- */
+.md-typeset .stat-pill {
+  display: inline-block;
+  margin: 0.3rem 0.35rem 0 0;
+  padding: 0.28rem 0.7rem;
+  border-radius: 999px;
+  background: rgba(63, 81, 181, 0.08);
+  color: #1a237e;
+  border: 1px solid rgba(63, 81, 181, 0.22);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .stat-pill {
+  background: rgba(159, 168, 218, 0.12);
+  color: #c5cae9;
+  border-color: rgba(159, 168, 218, 0.3);
+}
+
+/* ---------- Contact cards ---------- */
+.md-typeset .contact-cards.grid.cards > ul > li,
+.md-typeset .contact-cards.grid.cards > :not(ul) {
+  text-align: center;
+}
+
+.md-typeset .contact-cards.grid.cards > ul > li > p:first-child,
+.md-typeset .contact-cards.grid.cards > :not(ul) > p:first-child {
+  font-size: 1.6rem;
+}

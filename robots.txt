@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /*?q=
+Disallow: /*?q=*
+
+Sitemap: https://ianas.fr/sitemap.xml
