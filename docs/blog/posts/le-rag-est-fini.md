@@ -89,7 +89,9 @@ Deux contraintes que le Long Context LLM ne résout pas :
 
 **La confidentialité des données.** En entreprise, les documents RH, juridiques, techniques ne peuvent pas toujours partir vers un LLM cloud. Un RAG on-premise avec un LLM local (Llama, Mistral) reste la seule option dans ce cas. Le Long Context n'y change rien.
 
-**Le coût à l'échelle.** 100 utilisateurs × 10 questions/jour = 1000 requêtes. À 2€ la requête en Long Context (corpus de 500 pages), c'est 2000€/jour. Avec un RAG, on injecte 3-5 chunks pertinents par requête — le coût chute de 90%+. En entreprise, ça compte énormément.
+**Le coût à l'échelle.** 100 utilisateurs × 10 questions/jour = 1000 requêtes. À 2€ la requête en Long Context (corpus de 500 pages), c'est 2000€/jour. Avec un RAG, on injecte 3-5 chunks pertinents par requête, le coût chute de 90%+. En entreprise, ça compte énormément.
+
+Et pour ceux qui se demandent : *« et le finetuning alors ? »*, c'est une troisième option à mettre dans la balance, mais qui pose d'autres problèmes (coût total réel, risque que ça ne marche pas, obsolescence à la prochaine sortie de modèle). J'ai détaillé tout ça dans mon article [entraînement, finetuning ou RAG : que choisir pour son IA ?](entrainement-finetuning-rag-modele-ia.md), avec les chiffres réels et la méthode pour décider.
 
 ## Le RAG évolue : vers l'Agentic RAG
 

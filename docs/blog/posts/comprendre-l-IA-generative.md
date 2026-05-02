@@ -75,7 +75,7 @@ Ce qui distingue l'IA générative moderne, c'est l'échelle : on ne parle plu
 
 Un autre point clé : plus le modèle est grand (c'est-à-dire plus il a de paramètres), plus il a de capacité à apprendre des subtilités et à générer des contenus variés. Mais cela ne veut pas dire que « plus gros » est toujours « mieux » : il faut aussi des données de qualité, et il existe aujourd'hui des recherches pour rendre les modèles plus efficaces, même à taille réduite.
 
-Enfin, il ne faut pas oublier que l'entraînement n'est qu'une étape. Une fois le modèle prêt, il peut être « affiné » (fine-tuned) sur des tâches spécifiques, ou mis à jour pour corriger ses erreurs et s'adapter à de nouveaux usages. C'est ce qui permet, par exemple, d'avoir des IA spécialisées dans la rédaction, la traduction, la création d'images, etc.
+Enfin, il ne faut pas oublier que l'entraînement n'est qu'une étape. Une fois le modèle prêt, il peut être « affiné » (fine-tuned) sur des tâches spécifiques, ou mis à jour pour corriger ses erreurs et s'adapter à de nouveaux usages. C'est ce qui permet, par exemple, d'avoir des IA spécialisées dans la rédaction, la traduction, la création d'images, etc. Si vous voulez creuser la différence entre entraîner un modèle de zéro, le finetuner ou simplement utiliser un RAG (et surtout savoir quoi choisir selon votre cas), j'ai écrit un guide complet sur [entraînement, finetuning ou RAG : que choisir pour son IA ?](entrainement-finetuning-rag-modele-ia.md).
 
 ---
 

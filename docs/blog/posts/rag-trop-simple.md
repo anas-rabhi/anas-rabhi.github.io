@@ -48,7 +48,7 @@ C'est normal. Un **système RAG basique** (embeddings + recherche vectorielle + 
 
 ### Quand on veut vraiment améliorer son système RAG
 
-Si vous êtes convaincu que le RAG est le bon choix pour votre projet (et pas un simple fine-tuning ou une recherche classique), alors il faut investir du temps... mais pas n'importe comment.
+Si vous êtes convaincu que le RAG est le bon choix pour votre projet (et pas un simple fine-tuning ou une recherche classique), alors il faut investir du temps... mais pas n'importe comment. Pour bien arbitrer entre ces différentes approches, j'ai écrit un article dédié sur [entraînement, finetuning ou RAG : que choisir pour son IA ?](entrainement-finetuning-rag-modele-ia.md) avec les vrais coûts et les vrais critères de décision.
 
 La première version POC (Proof of Concept) est souvent bluffante sur les cas simples. Mais très vite, on voit les limites apparaître :
 

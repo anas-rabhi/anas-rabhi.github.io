@@ -118,7 +118,7 @@ Si vous voulez en savoir plus sur le RAG, même le gouvernement a publié un gui
 Le RAG (Retrieval-Augmented Generation) est une technique qui permet à un LLM de répondre à des questions en s'appuyant sur vos propres documents. À chaque question, les extraits les plus pertinents sont automatiquement récupérés et injectés dans le contexte du modèle.
 
 **Quelle est la différence entre le RAG et le fine-tuning ?**
-Le fine-tuning modifie le modèle lui-même en l'entraînant sur vos données. Le RAG injecte les informations au moment de la requête, sans modifier le modèle. Le RAG est préférable pour des données qui changent souvent ou des connaissances métier spécifiques. Le fine-tuning est plus adapté pour adapter le style ou le comportement du modèle de façon permanente.
+Le fine-tuning modifie le modèle lui-même en l'entraînant sur vos données. Le RAG injecte les informations au moment de la requête, sans modifier le modèle. Le RAG est préférable pour des données qui changent souvent ou des connaissances métier spécifiques. Le fine-tuning est plus adapté pour adapter le style ou le comportement du modèle de façon permanente. J'ai écrit un article complet là dessus pour vous aider à choisir : [entraînement, finetuning ou RAG : que choisir pour son IA ?](entrainement-finetuning-rag-modele-ia.md), avec les vrais coûts (de quelques centaines à plusieurs millions d'euros) et la méthode pour ne pas se tromper.
 
 **Le RAG fonctionne-t-il avec n'importe quel LLM ?**
 Oui. Le RAG est indépendant du modèle de langage. Il fonctionne avec GPT, Claude, Mistral, Llama, et n'importe quel autre LLM, hébergé dans le cloud ou on-premise. La qualité dépend du modèle d'embeddings utilisé pour l'indexation et du LLM pour la génération.

@@ -335,6 +335,7 @@ Un POC sur un cas d'usage ciblé peut se faire en 2 à 4 semaines. La mise en pr
 - **[Cas client assurance : 80% de gain de temps sur les rapports de sinistre](integration-ia-rapports-sinistre-assurance.md)** — L'IA agentique appliquée à un autre secteur
 - **[Comprendre l'IA générative](comprendre-l-IA-generative.md)** — Les fondements des modèles de langage qui font tourner les agents
 - **[Les différents domaines de l'IA](domaines-intelligence-artificielle.md)** — Pour comprendre où se situent les agents IA dans le paysage global de l'IA
+- **[Entraînement, finetuning ou RAG : que choisir ?](entrainement-finetuning-rag-modele-ia.md)** — Le guide pour ne pas se tromper d'approche entre les trois grandes options
 - **[GEO : comment fonctionnent les moteurs de recherche IA](geo-comment-fonctionnent-les-moteurs-ia.md)** — Comment ChatGPT, Perplexity et Gemini utilisent la recherche web pour citer vos contenus
 
 ***

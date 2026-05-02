@@ -103,6 +103,7 @@ Une fois l'erreur comprise grâce à l'évaluation, l'amélioration devient cibl
 * Nettoyer ou enrichir les données sources.
 * Ajuster les paramètres de l'algorithme de recherche.
 * Parfois, oui, intégrer un nouvel outil — mais seulement après analyse.
+* En tout dernier recours, envisager un finetuning du modèle (voir mon article [entraînement, finetuning ou RAG : que choisir ?](entrainement-finetuning-rag-modele-ia.md) pour comprendre quand c'est vraiment justifié et quand ce n'est pas le cas).
 
 ## L'amélioration continue en production
 
