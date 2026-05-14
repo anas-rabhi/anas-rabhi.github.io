@@ -285,7 +285,7 @@ Le chunk final = contexte généré + chunk original. C'est ce texte enrichi qui
 
 **Le coût** : on appelle un LLM pour chaque chunk à l'ingestion. Avec le prompt caching de Claude, Anthropic annonce ~1€ par million de tokens. Pour un corpus de 10 000 chunks de 512 tokens, on est autour de quelques euros, une seule fois à l'ingestion.
 
-**Pour qui** : quand la précision est critique et que le coût d'une mauvaise réponse est élevé. Projets BTP, juridique, médical, finance.
+**Pour qui** : quand la précision est critique et que le coût d'une mauvaise réponse est élevé. Projets BTP, juridique, médical, finance. Je détaille les gains mesurés du contextual retrieval, du reranking et des autres briques d'optimisation dans [mon article sur les 8 techniques pour optimiser son RAG](optimiser-rag-techniques.md).
 
 ***
 

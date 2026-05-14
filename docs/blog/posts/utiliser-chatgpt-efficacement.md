@@ -32,7 +32,7 @@ Dans leur forme actuelle, les modèles d'intelligence artificielle comme ChatGPT
 
 ## Comprendre l'intelligence artificielle générative derrière ChatGPT
 
-À la base, ChatGPT utilise ce qu'on appelle un modèle d'intelligence artificielle (IA). Plus précisément, il s'agit d'un grand modèle de langage (en anglais : Large Language Model ou LLM). En résumé, c'est un programme mathématique qui a été entraîné en analysant des milliards de textes différents. Son rôle est assez simple : il reçoit un texte en entrée, l'analyse grâce à ses connaissances internes, puis génère un texte en sortie.
+À la base, ChatGPT utilise ce qu'on appelle un modèle d'intelligence artificielle (IA). Plus précisément, il s'agit d'un grand modèle de langage (en anglais : Large Language Model ou LLM). Si les notions de "modèle", "machine learning" ou "deep learning" sont floues pour vous, j'ai écrit un [guide simple pour comprendre l'intelligence artificielle](comprendre-l-IA-guide.md) qui pose les bases en quelques minutes. En résumé, c'est un programme mathématique qui a été entraîné en analysant des milliards de textes différents. Son rôle est assez simple : il reçoit un texte en entrée, l'analyse grâce à ses connaissances internes, puis génère un texte en sortie.
 
 > Important à savoir : ChatGPT n'est qu'un type d'IA parmi beaucoup d'autres. Pour comprendre la vue d'ensemble (vision, séries temporelles, données tabulaires, IA générative, etc.), je vous recommande mon article sur [les différents domaines de l'IA](domaines-intelligence-artificielle.md) qui replace tout ça dans son contexte.
 
@@ -108,6 +108,8 @@ C'est exactement ce type d'IA, capable d'utiliser des outils externes pour compl
 Ainsi, en associant intelligemment les capacités de ChatGPT à différents outils spécialisés, on ouvre la porte à une IA encore plus fiable, performante et adaptée à nos besoins quotidiens.
 
 Enfin, gardons à l'esprit que l'IA repose sur des méthodes statistiques : elle comportera donc toujours une part d'erreurs et certaines limites difficiles à surmonter complètement. La meilleure manière de l'utiliser reste donc celle où l'on peut facilement vérifier les réponses fournies par ChatGPT avant de les valider, tout en gagnant un temps précieux au quotidien.
+
+Le domaine évolue aussi à un rythme effréné : si vous voulez ne pas vous laisser distancer, j'ai listé [mes sources pour suivre les sorties en IA générative](reussir-a-suivre-les-sorties-en-IA.md) au quotidien (Twitter/X, Reddit, YouTube, newsletters).
 
 ---------
 

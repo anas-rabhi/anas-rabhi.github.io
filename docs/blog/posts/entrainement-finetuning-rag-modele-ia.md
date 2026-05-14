@@ -19,6 +19,19 @@ authors:
 pin: true
 math: true
 mermaid: true
+faqs:
+  - question: "Quelle est la différence entre entraîner un modèle et le finetuner ?"
+    answer: "Entraîner un modèle à partir de zéro signifie partir d'un modèle vide et lui apprendre tout depuis le début, ce qui demande des téraoctets de données, des milliers de GPU et coûte plusieurs millions de dollars. Le finetuning consiste à partir d'un modèle déjà entraîné comme Llama ou GPT et à l'ajuster sur vos données spécifiques. C'est mille à dix mille fois moins cher que l'entraînement complet."
+  - question: "Combien coûte vraiment l'entraînement d'un LLM ?"
+    answer: "GPT 3 a coûté environ 4,6 millions de dollars, GPT 4 plus de 100 millions, Gemini Ultra environ 200 millions et Llama 3 70B environ 15 millions. DeepSeek V3 a démontré qu'on pouvait atteindre le niveau frontière pour environ 6 millions de dollars. Mais ces chiffres ne comptent que la puissance de calcul, sans les salaires des chercheurs, les données, les annotations humaines ni les expérimentations ratées."
+  - question: "Quand faut-il finetuner plutôt qu'utiliser un RAG ?"
+    answer: "Le finetuning n'est pertinent que dans quelques cas précis : quand vous avez besoin d'un format de réponse très strict, d'un vocabulaire métier ultra spécifique non couvert par les modèles publics, ou quand vous voulez utiliser un petit modèle finetuné pour réduire les coûts d'inférence. Dans 90% des cas en entreprise, un RAG bien construit donne de meilleurs résultats à un coût bien inférieur."
+  - question: "Combien coûte vraiment un projet de finetuning en entreprise ?"
+    answer: "Le coût de calcul pur est faible (50 à 5000 euros), mais le coût total réaliste d'un projet de finetuning sérieux est plutôt de 10 000 à 80 000 euros. Ce qui pèse vraiment, c'est la construction du jeu de données, le temps des experts métier, les 5 à 10 itérations nécessaires, l'évaluation, le risque que ça ne marche pas et la maintenance dans la durée."
+  - question: "Pourquoi le RAG est-il préférable au finetuning dans la plupart des cas ?"
+    answer: "Le RAG ne nécessite pas de construire un jeu de données d'apprentissage, pas d'attendre des heures de calcul GPU, pas de mobiliser des experts métier pendant des semaines, et pas de profils techniques très pointus. Il se met en place en quelques jours pour quelques dizaines d'euros par mois, permet une mise à jour en temps réel des documents, offre la traçabilité par citation des sources, et reste compatible avec l'évolution naturelle des modèles."
+  - question: "Pourquoi tous les LLM n'ont-ils pas la même performance avec les mêmes techniques ?"
+    answer: "Parce que l'IA, c'est de la R et D. À chaque étape (architecture, données, post entraînement), il y a des centaines de choix techniques qui peuvent faire basculer la performance finale. C'est pour ça que Claude, GPT et Gemini, qui ont des moyens comparables, n'obtiennent pas les mêmes résultats. Personne n'a la recette magique, et c'est aussi pour ça qu'à votre échelle, vous pouvez investir dans un finetuning et obtenir un modèle moins bon que le modèle de base."
 ---
 
 ## Introduction

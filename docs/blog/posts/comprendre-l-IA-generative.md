@@ -33,7 +33,7 @@ Dans cette partie, je vais simplement expliquer ce qu'est l'IA générative, com
 
 Une des choses qui m'a le plus impressionné dans le domaine de l'IA générative a été l'émergence de modèles performants tels que GPT-3 (ChatGPT en 2022). Qu'on a appelé les LLM, large language modèles ou "grands modèles de langage" en français. La première chose remarquable, c'est l'impression de dialoguer avec une intelligence artificielle qui non seulement comprend nos propos, mais parvient également à maintenir une conversation cohérente.
 
-Ayant déjà travaillé sur des projets de traitement du langage naturel (NLP) (cf. la partie 1 : [Comprendre l'intelligence artificielle - Guide pratique simple](https://ianas.fr/blog/2025/04/05/comprendre-lintelligence-artificielle--guide-pratique-simple-partie-1/)), je savais bien que la performance de GPT-3 n'était pas aussi simple à obtenir. Si c'était aussi facile, des géants comme Google auraient sorti des IA aussi puissantes depuis longtemps ! Mais à l'époque (avant 2022), personne ne savait vraiment comment s'y prendre pour atteindre ce niveau.
+Ayant déjà travaillé sur des projets de traitement du langage naturel (NLP) (cf. la partie 1 : [Comprendre l'intelligence artificielle - Guide pratique simple](comprendre-l-IA-guide.md)), je savais bien que la performance de GPT-3 n'était pas aussi simple à obtenir. Si c'était aussi facile, des géants comme Google auraient sorti des IA aussi puissantes depuis longtemps ! Mais à l'époque (avant 2022), personne ne savait vraiment comment s'y prendre pour atteindre ce niveau.
 
 L'arrivée de ChatGPT a vraiment changé la donne dans le monde de l'IA. Contrairement à ce qu'on pourrait croire, le principe général derrière ces avancées n'est pas si compliqué : il s'agit principalement d'utiliser une immense quantité de données et une puissance de calcul colossale pour entraîner des modèles très grands, qu'on appelle des LLMs. Ces modèles existent depuis [2017](https://arxiv.org/abs/1706.03762), mais ce qui a tout bouleversé, c'est l'échelle à laquelle ils ont été déployés. Cela dit, il faut nuancer : même si l'idée paraît simple sur le papier, la mise en œuvre concrète reste extrêmement complexe et coûteuse, tant sur le plan technique que financier.
 
@@ -47,13 +47,13 @@ C'est un peu comme si, pour gagner une course de voiture, au lieu d'optimiser la
 
 Vous l'avez compris, l'intelligence artificielle a connu un véritable tournant avec l'arrivée de cette approche « bourrin » 😅 : après cette découverte, plus rien n'a été comme avant dans le domaine de l'IA.
 
-Mais revenons à l'essentiel. Dans la [partie 1](https://ianas.fr/blog/2025/04/05/comprendre-lintelligence-artificielle--guide-pratique-simple-partie-1/), j'expliquais que les modèles sont des algorithmes qui apprennent à partir des données qu'on leur donne. Les modèles Transformers (utilisés pour ChatGPT), c'est juste un nouveau type de modèle architecturés de manière différente. Pour faire simple : imaginez un bâtiment. Selon ce qu'on veut en faire (habiter, travailler...), on ne va pas le construire pareil. En IA, c'est pareil : selon le besoin, on choisit une "forme" de modèle différente. Les transformers, c'est une architecture qui a très bien marché pour générer du texte, des images, etc.
+Mais revenons à l'essentiel. Dans la [partie 1](comprendre-l-IA-guide.md), j'expliquais que les modèles sont des algorithmes qui apprennent à partir des données qu'on leur donne. Les modèles Transformers (utilisés pour ChatGPT), c'est juste un nouveau type de modèle architecturés de manière différente. Pour faire simple : imaginez un bâtiment. Selon ce qu'on veut en faire (habiter, travailler...), on ne va pas le construire pareil. En IA, c'est pareil : selon le besoin, on choisit une "forme" de modèle différente. Les transformers, c'est une architecture qui a très bien marché pour générer du texte, des images, etc.
 
 Dans tous les modèles d'IA, il y a plein de chiffres à l'intérieur, qu'on appelle « paramètres ». Imagine-les comme des petits boutons qu'on peut tourner. Pris tout seuls, ces chiffres ne veulent rien dire. Mais quand on les règle tous ensemble, c'est ça qui permet au modèle d'apprendre et de faire son travail.
 
 Pour illustrer un peu l'idée, sur cette image, on voit une machine qui permet de régler les sonorités : dans un modèle d'IA, chaque paramètre peut être imaginé comme un petit bouton que l'on tourne pour ajuster le comportement du modèle. Par exemple, un paramètre peut influencer la façon dont l'IA accorde de l'importance à certains mots ou à certaines images. Comme sur une table de mixage audio où chaque bouton modifie un aspect du son, les paramètres d'un modèle d'IA sont ajustés pour obtenir le meilleur résultat possible lors de l'apprentissage.
 
-<img src="./img/parameters.jpg" alt="Illustration schématique des paramètres dans un modèle d'IA" style="max-width: 250px; display: block; margin: 24px auto;" />
+<img src="./img/parameters.webp" alt="Illustration schématique des paramètres dans un modèle d'IA" style="max-width: 250px; display: block; margin: 24px auto;" />
 
 
 Les paramètres sont ajustés grâce aux données qu'on fournit au modèle lors de son apprentissage. Les données permettent de trouver la combinaison de paramètres optimale pour que l'IA soit la plus performante possible. Le dernier élément à comprendre dans un modèle d'IA, c'est que tous ces paramètres sont connectés entre eux par des opérations mathématiques. C'est ce qui permet de calculer le résultat final de l'IA.
@@ -61,7 +61,7 @@ C'est tout ? C'est juste des chiffres et des opérations qui permettent à ChatG
 
 S'il y a une chose à retenir en IA générative, c'est qu'on utilise massivement des données pour entraîner de très gros modèles pour qu'ils continuent de s'améliorer en termes de performance comme on peut le voir sur le graphique suivant : le modèle de 70 milliards de paramètres (Llama 3 70b) a une des meilleures performances, alors que ceux ayant 7 ou 8 milliards sont en dessous. Évidemment, on arrive de plus en plus à améliorer l'efficacité de plus petits modèles mais nous y viendrons plus tard.
 
-![Illustration de la montée en performance des modèles d'IA générative](./img/performance.png)
+![Illustration de la montée en performance des modèles d'IA générative](./img/performance.webp)
 
 ---
 
@@ -132,7 +132,7 @@ L'IA générative est un outil puissant, mais pour en tirer le meilleur parti, i
 
 ### 1. Donner des consignes claires (le « prompting »)  
 
-La qualité des résultats dépend beaucoup de la façon dont on formule la demande. Plus la consigne est claire, précise et détaillée, plus l'IA a de chances de donner une réponse pertinente. Il ne faut pas hésiter à donner du contexte, à préciser le style ou le format attendu, ou à demander plusieurs propositions si besoin.  
+La qualité des résultats dépend beaucoup de la façon dont on formule la demande. Plus la consigne est claire, précise et détaillée, plus l'IA a de chances de donner une réponse pertinente. Il ne faut pas hésiter à donner du contexte, à préciser le style ou le format attendu, ou à demander plusieurs propositions si besoin. J'ai d'ailleurs écrit un article plus pratique sur [comment utiliser ChatGPT efficacement au quotidien](utiliser-chatgpt-efficacement.md) (limites, bonnes formulations, cas d'usage).
 Pour écrire les meilleurs prompts, il existe des guides selon l'IA utilisée. Voici par exemple le guide d'OpenAI pour le modèle GPT-4.1 : [Guide](https://cookbook.openai.com/examples/gpt4-1_prompting_guide).
 
 ### 2. Relire et vérifier les résultats  
@@ -175,7 +175,7 @@ Les informations saisies dans une IA peuvent être stockées temporairement ou u
 
 ## Conclusion 
 
-L'IA générative n'en est qu'à ses débuts et son évolution promet de transformer encore davantage notre quotidien. À terme, on peut imaginer l'émergence de modèles plus compacts et plus efficaces, capables pour certains usages de fonctionner directement sur nos appareils (ordinateurs, smartphones, objets connectés), sans dépendre du cloud. Pour l'instant, la plupart des modèles les plus puissants restent accessibles uniquement via le cloud, mais cette miniaturisation ouvrira progressivement la voie à des usages plus privés, plus rapides et mieux adaptés à chaque utilisateur.
+L'IA générative n'en est qu'à ses débuts et son évolution promet de transformer encore davantage notre quotidien. Le rythme des sorties est tel qu'il devient difficile de tout suivre ; j'ai d'ailleurs partagé [mes sources personnelles pour rester à jour en IA générative](reussir-a-suivre-les-sorties-en-IA.md) (Twitter, YouTube, newsletters) pour ceux que ça intéresse. À terme, on peut imaginer l'émergence de modèles plus compacts et plus efficaces, capables pour certains usages de fonctionner directement sur nos appareils (ordinateurs, smartphones, objets connectés), sans dépendre du cloud. Pour l'instant, la plupart des modèles les plus puissants restent accessibles uniquement via le cloud, mais cette miniaturisation ouvrira progressivement la voie à des usages plus privés, plus rapides et mieux adaptés à chaque utilisateur.
 
 Parallèlement, la question de la régulation et de l'éthique deviendra centrale : il faudra encadrer l'utilisation de ces technologies pour limiter les risques de désinformation, de biais ou d'atteinte à la vie privée. Les gouvernements, les entreprises et la société civile devront collaborer pour définir des règles claires et garantir un usage responsable de l'IA.
 

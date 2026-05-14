@@ -16,6 +16,19 @@ authors:
 pin: true
 math: true
 mermaid: true
+faqs:
+  - question: "C'est quoi un agent IA ?"
+    answer: "Un agent IA est un modèle de langage auquel on a donné une liste d'outils, la capacité de les utiliser et le droit de recommencer autant de fois que nécessaire jusqu'à ce que la tâche soit terminée. Contrairement à un simple chatbot, il est autonome : il choisit lui-même quels outils utiliser, décide quand recommencer, change de stratégie si ça ne marche pas et décide seul quand s'arrêter."
+  - question: "Quelle est la différence entre un agent IA et un chatbot ?"
+    answer: "Un chatbot répond à une question et s'arrête là. Un agent IA enchaîne plusieurs actions de façon autonome pour accomplir un objectif complet : recherche d'information, appel à des APIs, prise de décision, envoi d'emails. C'est la différence entre un conseiller qui répond et un assistant qui exécute une mission jusqu'au bout."
+  - question: "Quelle est la différence entre un agent IA et un RAG ?"
+    answer: "Le RAG est une brique, l'agent est l'assemblage. Un RAG répond sur vos données internes mais ne peut pas agir sur des systèmes externes ni enchaîner plusieurs étapes. Un agent IA peut faire tout cela et peut même utiliser un RAG comme l'un de ses outils pour aller chercher de l'information avant d'agir."
+  - question: "Pourquoi on parle autant des agents IA maintenant ?"
+    answer: "Les agents IA ne sont pas une idée nouvelle, mais les modèles de langage sont enfin assez bons pour que ça marche : ils savent raisonner sur plusieurs étapes, corriger leurs erreurs et s'adapter. Ajoutez à ça la disponibilité massive d'APIs, des outils faciles à brancher, des coûts maîtrisés et des besoins concrets côté entreprises, et on comprend l'engouement actuel."
+  - question: "Un agent IA peut-il se tromper ?"
+    answer: "Oui. Un agent IA reste une IA, il peut mal interpréter une situation, utiliser un mauvais outil ou prendre une mauvaise décision. C'est pourquoi on met toujours en place des garde-fous : limitations d'accès, validation humaine sur les actions critiques, budgets maximum, logs et contrôles. Les agents IA ne remplacent pas le jugement humain."
+  - question: "Quels frameworks utiliser pour créer un agent IA ?"
+    answer: "Les frameworks les plus utilisés sont LangGraph pour les agents structurés avec états, CrewAI pour les systèmes multi-agents et AutoGen pour les agents conversationnels. Pour des cas simples, l'API native d'Anthropic (Claude) ou d'OpenAI avec leur fonctionnalité de tool use suffit sans framework."
 ---
 
 
@@ -290,7 +303,7 @@ La réponse courte : **le RAG, c'est une brique. L'agent, c'est l'assemblage.**
 | Enchaîne plusieurs étapes automatiquement | Non | Non | Oui |
 | Choisit lui-même quels outils utiliser | Non | Non | Oui |
 
-Un agent IA peut parfaitement utiliser un RAG comme l'un de ses outils : il cherche dans des documents, puis envoie un email, puis met à jour une base de données. C'est cette combinaison qui donne les systèmes les plus puissants.
+Un agent IA peut parfaitement utiliser un RAG comme l'un de ses outils : il cherche dans des documents, puis envoie un email, puis met à jour une base de données. C'est cette combinaison qui donne les systèmes les plus puissants — on parle alors d'[Agentic RAG, par opposition au RAG classique linéaire](agentic-rag-vs-rag-classique.md).
 
 En pratique, voici deux exemples concrets où cette combinaison a fait une vraie différence :
 

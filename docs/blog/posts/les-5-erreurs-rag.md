@@ -94,7 +94,7 @@ Il y a un autre avantage à coder ses propres briques : **une fois que vous les 
 
 Les frameworks sont précieux quand ils encapsulent des calculs complexes qu'on ne veut pas recoder (comme TensorFlow ou PyTorch pour le deep learning). Mais pour un RAG, les étapes sont conceptuellement simples : parser un document, le découper, le vectoriser, chercher les plus proches voisins, construire un prompt. Ce n'est pas de la rocket science. Le coder soi-même une première fois, c'est un excellent exercice qui permet d'apprendre chaque étape en profondeur et de garder la main.
 
-Et sur le long terme, c'est encore plus vrai. Des nouvelles techniques sortent toutes les semaines dans le monde du RAG. Quand on veut les explorer ou les intégrer, on est toujours dépendant du framework et de sa capacité à s'adapter. Et soyons honnêtes : la capacité d'adaptation des frameworks d'IA générative est souvent mauvaise. Le temps qu'une technique soit intégrée proprement dans un framework, il y en a déjà trois nouvelles qui sont sorties.
+Et sur le long terme, c'est encore plus vrai. Des nouvelles techniques sortent toutes les semaines dans le monde du RAG (j'ai d'ailleurs détaillé les principales, comme HyDE, le reranking ou le contextual retrieval, dans [mon article sur les 8 techniques pour optimiser son RAG](optimiser-rag-techniques.md)). Quand on veut les explorer ou les intégrer, on est toujours dépendant du framework et de sa capacité à s'adapter. Et soyons honnêtes : la capacité d'adaptation des frameworks d'IA générative est souvent mauvaise. Le temps qu'une technique soit intégrée proprement dans un framework, il y en a déjà trois nouvelles qui sont sorties.
 
 Ce que je dis là s'applique aussi aux Agents IA, mais ça, on en reparlera une prochaine fois.
 

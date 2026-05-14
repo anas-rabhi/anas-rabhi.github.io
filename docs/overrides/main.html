@@ -4,7 +4,20 @@
   {% set page_title = page.meta.title | default(page.title) | default(config.site_name) if page else config.site_name %}
   {% set page_description = page.meta.description | default(config.site_description) if page else config.site_description %}
   {% set page_url = page.canonical_url.split('?')[0] if page and page.canonical_url else config.site_url %}
-  {% set page_image = config.site_url ~ "assets/og-image.png" %}
+  {% set default_image = config.site_url ~ "assets/og-image.png" %}
+  {% if page and page.meta and page.meta.image %}
+    {% if page.meta.image.startswith('http') %}
+      {% set page_image = page.meta.image %}
+    {% else %}
+      {% set page_image = config.site_url ~ page.meta.image.lstrip('/') %}
+    {% endif %}
+  {% else %}
+    {% set page_image = default_image %}
+  {% endif %}
+  {% set is_article = page and page.meta and page.meta.date %}
+  {% set is_blog = page and page.canonical_url and "/blog/" in page.canonical_url and is_article %}
+  {% set is_notebook = page and page.canonical_url and "/notebooks/" in page.canonical_url and is_article %}
+  {% set page_modified = page.meta.date_modified | default(page.meta.git_revision_date_localized_raw_iso_date) | default(page.meta.date) if is_article else None %}
 
   {% if page and page.canonical_url %}
   <!-- Force canonical URL without query parameters -->
@@ -17,16 +30,27 @@
   {% endif %}
 
   <!-- Open Graph -->
-  <meta property="og:type" content="{% if page and page.meta and page.meta.date %}article{% else %}website{% endif %}" />
+  <meta property="og:type" content="{% if is_article %}article{% else %}website{% endif %}" />
   <meta property="og:title" content="{{ page_title }}" />
   <meta property="og:description" content="{{ page_description }}" />
   <meta property="og:url" content="{{ page_url }}" />
   <meta property="og:site_name" content="{{ config.site_name }}" />
   <meta property="og:image" content="{{ page_image }}" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="{{ page_title }}" />
   <meta property="og:locale" content="fr_FR" />
-  {% if page and page.meta and page.meta.date %}
+  {% if is_article %}
   <meta property="article:published_time" content="{{ page.meta.date }}" />
+  {% if page_modified %}
+  <meta property="article:modified_time" content="{{ page_modified }}" />
+  {% endif %}
   <meta property="article:author" content="https://www.linkedin.com/in/anasrabhi/" />
+  {% if page.meta.tags %}
+  {% for tag in page.meta.tags %}
+  <meta property="article:tag" content="{{ tag }}" />
+  {% endfor %}
+  {% endif %}
   {% endif %}
 
   <!-- Twitter Card -->
@@ -36,46 +60,170 @@
   <meta name="twitter:title" content="{{ page_title }}" />
   <meta name="twitter:description" content="{{ page_description }}" />
   <meta name="twitter:image" content="{{ page_image }}" />
+  <meta name="twitter:image:alt" content="{{ page_title }}" />
 
-  <!-- JSON-LD Structured Data -->
-  {% if page and page.meta and page.meta.date %}
+  <!-- JSON-LD : Article -->
+  {% if is_article %}
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": "{{ page_title }}",
-    "description": "{{ page_description }}",
-    "image": "{{ page_image }}",
+    "headline": {{ page_title | tojson }},
+    "description": {{ page_description | tojson }},
+    "image": {{ page_image | tojson }},
+    "inLanguage": "fr-FR",
     "author": {
       "@type": "Person",
-      "name": "{{ config.site_author }}",
-      "url": "https://www.linkedin.com/in/anasrabhi/"
+      "name": {{ config.site_author | tojson }},
+      "url": "https://www.linkedin.com/in/anasrabhi/",
+      "sameAs": [
+        "https://www.linkedin.com/in/anasrabhi/",
+        "https://github.com/anas-rabhi",
+        "https://x.com/anas9r"
+      ]
     },
     "publisher": {
       "@type": "Person",
-      "name": "{{ config.site_author }}"
+      "name": {{ config.site_author | tojson }},
+      "url": {{ config.site_url | tojson }}
     },
     "datePublished": "{{ page.meta.date }}",
-    "dateModified": "{{ page.meta.date_modified | default(page.meta.date) }}",
+    "dateModified": "{{ page_modified }}",
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "{{ page_url }}"
-    }
+      "@id": {{ page_url | tojson }}
+    }{% if page.meta.tags %},
+    "keywords": {{ page.meta.tags | join(', ') | tojson }}{% endif %}
   }
   </script>
-  {% else %}
+
+  <!-- JSON-LD : Breadcrumb -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "{{ config.site_name }}",
-    "url": "{{ config.site_url }}",
-    "description": "{{ config.site_description }}",
-    "inLanguage": "fr",
-    "author": {
-      "@type": "Person",
-      "name": "{{ config.site_author }}"
-    }
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Accueil",
+        "item": {{ config.site_url | tojson }}
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "{% if is_notebook %}Notebooks{% else %}Blog{% endif %}",
+        "item": "{{ config.site_url }}{% if is_notebook %}notebooks/{% else %}blog/{% endif %}"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": {{ page_title | tojson }},
+        "item": {{ page_url | tojson }}
+      }
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD : FAQPage (optional, via frontmatter `faqs`) -->
+  {% if page.meta.faqs %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {% for faq in page.meta.faqs %}
+      {
+        "@type": "Question",
+        "name": {{ faq.question | tojson }},
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": {{ faq.answer | tojson }}
+        }
+      }{% if not loop.last %},{% endif %}
+      {% endfor %}
+    ]
+  }
+  </script>
+  {% endif %}
+  {% else %}
+  <!-- JSON-LD : WebSite + Person + ProfessionalService (home & pages statiques) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "{{ config.site_url }}#website",
+        "name": {{ config.site_name | tojson }},
+        "url": {{ config.site_url | tojson }},
+        "description": {{ config.site_description | tojson }},
+        "inLanguage": "fr-FR",
+        "publisher": { "@id": "{{ config.site_url }}#person" },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "{{ config.site_url }}?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": "{{ config.site_url }}#person",
+        "name": {{ config.site_author | tojson }},
+        "url": {{ config.site_url | tojson }},
+        "image": "{{ config.site_url }}assets/og-image.png",
+        "jobTitle": "Consultant Data Scientist & AI Engineer freelance",
+        "description": "Consultant Data Scientist freelance à Toulouse. Cadrage, prototypage et mise en production de solutions IA en entreprise — RAG, agents IA, NLP, LLMOps.",
+        "knowsAbout": [
+          "Intelligence artificielle",
+          "Data Science",
+          "Retrieval-Augmented Generation (RAG)",
+          "Agents IA",
+          "NLP",
+          "LLMOps",
+          "Machine Learning",
+          "Large Language Models"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Toulouse",
+          "addressRegion": "Occitanie",
+          "addressCountry": "FR"
+        },
+        "sameAs": [
+          "https://www.linkedin.com/in/anasrabhi/",
+          "https://github.com/anas-rabhi",
+          "https://x.com/anas9r"
+        ]
+      },
+      {
+        "@type": "ProfessionalService",
+        "@id": "{{ config.site_url }}#service",
+        "name": "Anas Rabhi — Conseil IA & Data Science",
+        "url": {{ config.site_url | tojson }},
+        "image": "{{ config.site_url }}assets/og-image.png",
+        "description": "Conseil et accompagnement IA en entreprise : cadrage, prototypage, mise en production. Spécialités : RAG, agents IA, NLP, LLMOps.",
+        "provider": { "@id": "{{ config.site_url }}#person" },
+        "areaServed": [
+          { "@type": "City", "name": "Toulouse" },
+          { "@type": "AdministrativeArea", "name": "Occitanie" },
+          { "@type": "Country", "name": "France" }
+        ],
+        "serviceType": [
+          "Conseil en intelligence artificielle",
+          "Développement de solutions RAG",
+          "Mise en production de modèles LLM",
+          "Audit et optimisation IA",
+          "Formation et accompagnement Data Science"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Toulouse",
+          "addressRegion": "Occitanie",
+          "addressCountry": "FR"
+        }
+      }
+    ]
   }
   </script>
   {% endif %}
@@ -101,12 +249,17 @@
     });
   </script>
 
-  <!-- Heeya Chat Widget -->
+  <!-- Heeya Chat Widget — deferred to preserve LCP -->
   <script>
     (function () {
+      let loaded = false;
       const loadHeeya = function () {
-        if (document.querySelector('script[data-heeya-widget="true"]')) return;
-
+        if (loaded) return;
+        if (document.querySelector('script[data-heeya-widget="true"]')) {
+          loaded = true;
+          return;
+        }
+        loaded = true;
         const script = document.createElement("script");
         script.async = true;
         script.src = "https://heeya.fr/agent/577c3cbc-9eb8-4d64-86b3-f82c7548702b/embed.js";
@@ -115,10 +268,29 @@
         document.body.appendChild(script);
       };
 
-      if (document.readyState === "loading") {
-        document.addEventListener("DOMContentLoaded", loadHeeya, { once: true });
-      } else {
+      const triggers = ["scroll", "mousemove", "touchstart", "keydown", "click"];
+      const onTrigger = function () {
         loadHeeya();
+        triggers.forEach(function (ev) {
+          window.removeEventListener(ev, onTrigger, { passive: true });
+        });
+      };
+
+      const schedule = function () {
+        triggers.forEach(function (ev) {
+          window.addEventListener(ev, onTrigger, { passive: true, once: false });
+        });
+        if ("requestIdleCallback" in window) {
+          requestIdleCallback(loadHeeya, { timeout: 5000 });
+        } else {
+          setTimeout(loadHeeya, 3500);
+        }
+      };
+
+      if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", schedule, { once: true });
+      } else {
+        schedule();
       }
     })();
   </script>

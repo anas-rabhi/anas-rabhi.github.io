@@ -19,6 +19,19 @@ authors:
 pin: true
 math: true
 mermaid: true
+faqs:
+  - question: "C'est quoi le RAG en résumé ?"
+    answer: "Le RAG (Retrieval-Augmented Generation) est une technique qui permet à un LLM de répondre à des questions en s'appuyant sur vos propres documents. À chaque question, le système sélectionne automatiquement les extraits les plus pertinents et les injecte dans le contexte du modèle, ce qui permet de travailler avec de très gros volumes de documents malgré la fenêtre de contexte limitée des LLM."
+  - question: "Comment fonctionne concrètement un système RAG ?"
+    answer: "On découpe les documents en petits morceaux appelés chunks, puis on les vectorise avec un modèle d'embeddings pour capturer leur signification. Quand un utilisateur pose une question, on transforme cette question en vecteur et on cherche les chunks les plus proches sémantiquement dans la base. Ces chunks sont ensuite envoyés au modèle de langage avec la question pour qu'il génère une réponse."
+  - question: "Quelle est la différence entre le RAG et le fine-tuning ?"
+    answer: "Le fine-tuning modifie le modèle lui-même en l'entraînant sur vos données. Le RAG, lui, injecte les informations au moment de la requête sans modifier le modèle. Le RAG est préférable pour des données qui changent souvent ou des connaissances métier spécifiques, tandis que le fine-tuning est plus adapté pour ajuster le style ou le comportement du modèle de façon permanente."
+  - question: "Quelles sont les limites du RAG ?"
+    answer: "Le RAG a trois limites principales : un raisonnement itératif limité car il ne raisonne pas en plusieurs étapes pour affiner sa recherche, une forte dépendance à l'organisation et la structuration des données, et une qualité dépendante des sources puisque si les documents sont incomplets ou biaisés, la réponse le sera aussi. Il ne garantit pas la complétude ni la véracité des réponses."
+  - question: "Le RAG fonctionne-t-il avec n'importe quel LLM ?"
+    answer: "Oui. Le RAG est indépendant du modèle de langage et fonctionne avec GPT, Claude, Mistral, Llama et tout autre LLM, hébergé dans le cloud ou on-premise. La qualité finale dépend surtout du modèle d'embeddings utilisé pour l'indexation et du LLM utilisé pour la génération de la réponse."
+  - question: "Le RAG élimine-t-il les hallucinations ?"
+    answer: "Non. Le RAG réduit les hallucinations en fournissant un contexte pertinent au modèle, mais ne les élimine pas complètement. Le LLM peut toujours mal interpréter le contexte ou générer des informations inexactes. La bonne pratique est de toujours citer les sources pour permettre aux utilisateurs de vérifier les informations."
 ---
 
 ## Introduction au RAG (Retrieval-Augmented Generation)
@@ -43,7 +56,7 @@ Mais revenons aux bases du RAG dans cet article.
 
 ### C'est quoi le RAG et pourquoi l'utiliser en entreprise ?
 
-Avant de parler du RAG, il faut déjà comprendre **c'est quoi le RAG** et pourquoi on en a besoin. Depuis l'arrivée de ChatGPT, on a tous vu à quel point les modèles de langage (appelés LLM) sont puissants. Mais il y a une limite : ils ne connaissent pas nos données à nous, ni les infos internes d'une entreprise.
+Avant de parler du RAG, il faut déjà comprendre **c'est quoi le RAG** et pourquoi on en a besoin. Depuis l'arrivée de ChatGPT, on a tous vu à quel point les modèles de langage (appelés LLM) sont puissants. Si vous voulez d'abord poser les bases (machine learning, deep learning, place des LLM dans le paysage), je vous renvoie à mon [guide simple pour comprendre l'intelligence artificielle](comprendre-l-IA-guide.md). Mais il y a une limite : ils ne connaissent pas nos données à nous, ni les infos internes d'une entreprise.
 
 Prenons un exemple tout simple : j'ai une documentation sur une page Word. Si je veux poser des questions à l'IA sur ce document, je peux copier le texte dans ChatGPT : l'IA va le lire et répondre, parce que j'ai mis le texte directement dans ce qu'on appelle le contexte du modèle (ou le prompt). 
 

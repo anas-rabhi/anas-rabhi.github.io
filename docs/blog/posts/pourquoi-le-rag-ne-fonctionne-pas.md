@@ -67,7 +67,7 @@ Avant de changer d'architecture, d'embeddings ou de modèle, voici ce qui règle
 - Vérifier la qualité des données sources (PDFs mal extraits, tableaux corrompus, textes dupliqués)
 - Vérifier l'overlap des chunks (un overlap de 10-15% évite de couper une information importante)
 
-Si aucun de ces quick wins n'améliore les choses, alors oui, ça mérite une analyse plus poussée.
+Si aucun de ces quick wins n'améliore les choses, alors oui, ça mérite une analyse plus poussée — et c'est à ce moment qu'on peut envisager des [techniques d'optimisation RAG plus avancées comme HyDE, le reranking ou le contextual retrieval](optimiser-rag-techniques.md).
 
 ## Exemples concrets d'analyse d'erreur
 
@@ -76,7 +76,7 @@ Parce que c'est plus parlant, voici deux exemples vécus :
 **1. Quand la recherche vectorielle fait défaut**
 Sur un projet, tout semblait marcher... sauf que certaines requêtes avec des mots-clés précis ne donnaient rien, alors que la réponse était bien dans la base.
 Après analyse, on a vu que la recherche vectorielle ne captait pas certains synonymes ou formulations.
-On a donc ajouté une recherche BM25 (basée sur les mots-clés) en plus du vectoriel. Résultat : les questions "difficiles" trouvaient enfin des réponses.
+On a donc ajouté une recherche BM25 (basée sur les mots-clés) en plus du vectoriel (le pattern que je détaille dans [RAG hybride BM25 + vectoriel](rag-hybride-bm25-vectoriel.md)). Résultat : les questions "difficiles" trouvaient enfin des réponses.
 
 **2. Les attributs métiers oubliés**
 Dans un e-commerce, impossible de sortir les produits d'une couleur précise ("je veux un t-shirt rouge"), alors que les données étaient là.

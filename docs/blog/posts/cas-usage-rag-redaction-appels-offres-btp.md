@@ -170,7 +170,7 @@ L'interface n'est pas un simple chatbot. C'est un **assistant de rédaction inte
 
 ## Agent IA et retrieval intelligent : ce qui fait la différence
 
-Le coeur de la valeur, c'est le **retrieval multi-sources avec filtrage par métadonnées**. C'est ce qui transforme un RAG générique en un véritable [agent IA](c-est-quoi-un-agent-ia.md) rédacteur spécialisé.
+Le coeur de la valeur, c'est le **retrieval multi-sources avec filtrage par métadonnées**. C'est ce qui transforme un RAG générique en un véritable [agent IA](c-est-quoi-un-agent-ia.md) rédacteur spécialisé — typiquement le genre d'architecture qu'on appelle [Agentic RAG, par opposition au RAG classique](agentic-rag-vs-rag-classique.md).
 
 Concrètement, quand le chargé d'affaires demande de rédiger une section technique pour un appel d'offres en charpente bois :
 

@@ -88,6 +88,11 @@ plugins:
       post_url_format: "{date}/{slug}"
       authors_file: "{blog}/.authors.yml"
       pagination_per_page: 10
+  - git-revision-date-localized:
+      type: iso_datetime
+      enable_creation_date: false
+      fallback_to_build_date: true
+      enabled: !ENV [MKDOCS_GIT_DATE, true]
   - minify:
       minify_html: true
 
@@ -170,3 +175,5 @@ nav:
     - blog/index.md
   - Notebooks:
     - notebooks/index.md
+  - À propos: a-propos.md
+  - Consultant IA Toulouse: consultant-ia-toulouse.md

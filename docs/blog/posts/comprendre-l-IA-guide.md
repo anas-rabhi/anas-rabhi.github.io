@@ -69,7 +69,7 @@ Ces deux composantes, bien que puissantes, nécessitent une approche réfléchie
 
 Pour mieux comprendre les relations entre l'Intelligence Artificielle, le Machine Learning et le Deep Learning, voici une représentation visuelle qui illustre comment ces domaines s'imbriquent les uns dans les autres :
 
-![Relation entre IA, Machine Learning et Deep Learning – comprendre l'intelligence artificielle](./img/IA-ml-dl.png)
+![Relation entre IA, Machine Learning et Deep Learning – comprendre l'intelligence artificielle](./img/IA-ml-dl.webp)
 
 Cette image montre clairement que le Deep Learning est un sous-ensemble du Machine Learning, qui est lui-même une branche de l'Intelligence Artificielle. Chaque couche représente une approche plus spécialisée et sophistiquée, avec des techniques et des applications spécifiques.
 
@@ -134,7 +134,9 @@ Une chose à retenir : il est essentiel de comprendre que l'IA est intrinsèquem
 
 Pour conclure cette première partie, nous avons exploré ensemble les grands domaines qui composent l’intelligence artificielle. Chacun possède ses spécificités, ses défis et ses applications, ce qui rend l’IA aussi riche que passionnante. Bien entendu, il existe de nombreux autres sous-domaines, parfois plus discrets ou émergents, que je n’ai pas pu aborder ici. L’essentiel à retenir est que, finalement, **comprendre l’intelligence artificielle** consiste à comprendre quelques concepts de base qui sont les fondations de l'IA.
 
-Dans la suite, nous plongerons dans l'univers passionnant de l'IA générative. En attendant la partie deux, n'hésitez pas à vous abonner à ma newsletter 😀 À bientôt ! 
+Dans la suite, nous plongerons dans l'univers passionnant de l'IA générative. En attendant la partie deux, n'hésitez pas à vous abonner à ma newsletter 😀 À bientôt !
+
+Et si vous voulez rester à jour sur ce qui bouge dans le domaine (les modèles, les techniques, les acteurs), je partage régulièrement [mes sources pour suivre les sorties en IA générative](reussir-a-suivre-les-sorties-en-IA.md).
 
 ## FAQ : Questions fréquentes sur l'intelligence artificielle
 
@@ -145,7 +147,7 @@ L'IA est le domaine général : tout système qui simule une forme d'intelligenc
 Contrairement à l'humain qui peut apprendre d'un seul exemple, une IA doit voir des milliers ou millions d'exemples pour identifier des patterns fiables. AlphaGo a été entraîné sur des dizaines de millions de parties de Go — un champion humain en joue bien moins pour atteindre le même niveau.
 
 **Peut-on utiliser l'IA sans être développeur ?**
-Oui. Des outils comme ChatGPT, Notion AI ou Copilot permettent d'utiliser l'IA sans code. Pour intégrer l'IA dans une application métier (chatbot sur vos documents, automatisation de processus), il faut généralement faire appel à un développeur ou consultant IA.
+Oui. Des outils comme ChatGPT, Notion AI ou Copilot permettent d'utiliser l'IA sans code — j'ai écrit un guide pratique sur [comment utiliser ChatGPT efficacement](utiliser-chatgpt-efficacement.md) (bonnes pratiques de prompting et limites à connaître). Pour intégrer l'IA dans une application métier (chatbot sur vos documents, automatisation de processus), il faut généralement faire appel à un développeur ou consultant IA.
 
 **Quel est le domaine de l'IA le plus utilisé en entreprise ?**
 Le NLP (traitement du langage naturel) est aujourd'hui le plus déployé, notamment via les LLM (ChatGPT, Claude, Mistral) et les systèmes RAG. Viennent ensuite la vision par ordinateur (contrôle qualité, sécurité) et les systèmes de recommandation (e-commerce, plateformes média).

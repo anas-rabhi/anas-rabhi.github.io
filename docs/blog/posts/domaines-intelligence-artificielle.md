@@ -207,7 +207,7 @@ Pourquoi ce tournant maintenant ? Trois raisons principales :
 2. **Le passage à l'échelle**. On s'est rendu compte que plus on rendait ces modèles gros (plus de paramètres), plus on leur donnait de données, plus ils devenaient performants. Ce qui a mené à GPT 3, GPT 4, Claude, Llama.
 3. **L'apprentissage par retours humains** (le RLHF dont je parle dans mon article sur [l'entraînement et le finetuning](entrainement-finetuning-rag-modele-ia.md)). C'est ce qui a transformé un modèle qui complète du texte en assistant qui dialogue vraiment avec vous.
 
-**Les acteurs principaux aujourd'hui** : OpenAI (ChatGPT, Sora), Anthropic (Claude), Google (Gemini, Veo), Meta (Llama), Mistral, et côté image Midjourney et Stable Diffusion.
+**Les acteurs principaux aujourd'hui** : OpenAI (ChatGPT, Sora), Anthropic (Claude), Google (Gemini, Veo), Meta (Llama), Mistral, et côté image Midjourney et Stable Diffusion. Vu le rythme des annonces (un nouveau modèle presque chaque semaine), j'ai d'ailleurs listé [mes sources pour suivre les sorties en IA générative](reussir-a-suivre-les-sorties-en-IA.md) sans se noyer.
 
 **Ce que ça change concrètement pour les entreprises** : la rédaction de contenu, la synthèse de documents, l'aide à la programmation, le support client automatisé, l'extraction d'informations dans des documents, les agents IA qui exécutent des tâches. Autant de cas qui n'étaient quasiment pas accessibles avant 2022.
 
@@ -325,7 +325,7 @@ Parce qu'ils sont moins visibles pour le grand public. Personne ne se rend compt
 Sans hésiter, les modèles tabulaires (XGBoost et compagnie) qui font tourner les applications de scoring, de prédiction de churn, de prévision de stocks, de détection de fraude. Suivi du NLP et de la vision. L'IA générative monte vite mais reste encore minoritaire en production.
 
 **5. Est-ce que je dois m'inquiéter si je ne connais que ChatGPT ?**
-Pas du tout, c'est même la porte d'entrée la plus courante aujourd'hui. Mais si vous voulez vraiment comprendre ce qu'est l'IA et ce qu'elle peut apporter à votre entreprise, il faut élargir la vision et comprendre que ChatGPT n'est qu'un type d'IA parmi d'autres.
+Pas du tout, c'est même la porte d'entrée la plus courante aujourd'hui. Pour en tirer le maximum côté usage, j'ai écrit un guide sur [comment utiliser ChatGPT efficacement](utiliser-chatgpt-efficacement.md). Mais si vous voulez vraiment comprendre ce qu'est l'IA et ce qu'elle peut apporter à votre entreprise, il faut élargir la vision et comprendre que ChatGPT n'est qu'un type d'IA parmi d'autres.
 
 ---
 

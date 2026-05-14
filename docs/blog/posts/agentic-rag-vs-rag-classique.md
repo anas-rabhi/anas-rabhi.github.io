@@ -64,7 +64,7 @@ Mais ce pipeline a des angles morts bien précis.
 Si vous demandez "quelle est la capitale de la France ?", le RAG va quand même chercher dans votre base documentaire. Pour rien.
 
 **Deuxième angle mort : il ne valide jamais ce qu'il a trouvé.**
-Si les chunks récupérés sont mauvais (hors sujet, obsolètes, incorrects), le LLM va quand même générer une réponse à partir d'eux. Et souvent, cette réponse sera mauvaise ou inventée.
+Si les chunks récupérés sont mauvais (hors sujet, obsolètes, incorrects), le LLM va quand même générer une réponse à partir d'eux. Et souvent, cette réponse sera mauvaise ou inventée. Avant d'aller vers l'agentique, il vaut souvent mieux durcir le retrieval lui-même — par exemple avec un [RAG hybride combinant BM25 et recherche vectorielle](rag-hybride-bm25-vectoriel.md), qui suffit à corriger beaucoup de cas problématiques.
 
 **Troisième angle mort : il ne peut pas décomposer une question complexe.**
 "Compare les performances financières d'Apple et Microsoft sur les 3 dernières années et explique les différences." Pour ça, il faudrait faire plusieurs recherches, croiser des informations de sources différentes, raisonner sur les résultats intermédiaires. Un RAG classique fait une seule recherche et espère que ça suffira.

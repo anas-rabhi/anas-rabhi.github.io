@@ -97,7 +97,7 @@ Et pour ceux qui se demandent : *« et le finetuning alors ? »*, c'est une troi
 
 Le vrai mouvement, c'est que le RAG n'est plus "juste" du retrieval vectoriel. Il intègre des capacités d'agent : reformulation de requête, recherche multi-sources, vérification des résultats, itération.
 
-L'**Agentic RAG**, c'est un RAG où l'IA décide elle-même de relancer une recherche si les premiers résultats ne suffisent pas, de combiner plusieurs sources, ou d'adapter sa stratégie de recherche. C'est une réponse directe aux limites du RAG classique sur les requêtes complexes.
+L'**Agentic RAG**, c'est un RAG où l'IA décide elle-même de relancer une recherche si les premiers résultats ne suffisent pas, de combiner plusieurs sources, ou d'adapter sa stratégie de recherche. C'est une réponse directe aux limites du RAG classique sur les requêtes complexes — j'ai détaillé les 5 patterns agentiques et leur coût réel dans [Agentic RAG vs RAG classique : quelle différence ?](agentic-rag-vs-rag-classique.md).
 
 J'en parle concrètement dans [le cas client BTP](cas-usage-rag-redaction-appels-offres-btp.md) où un RAG multi-sources couplé à un agent rédacteur a permis de gagner 83% du temps sur la rédaction d'appels d'offres. Et dans [c'est quoi un agent IA](c-est-quoi-un-agent-ia.md) si vous voulez comprendre la différence fondamentale entre les deux approches.
 
