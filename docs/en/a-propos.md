@@ -1,6 +1,6 @@
 ---
 title: "About Anas Rabhi — Freelance AI Engineer & Data Scientist"
-description: Anas Rabhi, freelance AI engineer based in Toulouse. Specialized in RAG, AI agents, NLP and LLMOps. Production AI systems that deliver measurable results.
+description: I'm Anas Rabhi, freelance AI engineer based in Toulouse. I specialise in RAG, AI agents, NLP and LLMOps — production AI systems that deliver measurable results.
 hide:
   - navigation
   - toc

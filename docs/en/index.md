@@ -1,6 +1,6 @@
 ---
 title: Anas Rabhi — Freelance AI Engineer & Data Scientist | RAG, LLM, Production AI
-description: Freelance AI Engineer & Data Scientist. RAG systems, AI agents, LLMOps, NLP — from scoping to production deployment. Available for enterprise AI projects worldwide.
+description: I'm Anas Rabhi, freelance AI Engineer & Data Scientist based in Toulouse. I work directly with my clients on RAG systems, AI agents, NLP and LLMOps — from scoping to production deployment.
 hide:
   - navigation
   - toc
@@ -25,7 +25,7 @@ hide:
 
     ---
 
-    Freelance AI missions: scoping, prototyping, production deployment, RAG audits, data team support. For companies that want a real expert on the ground.
+    Freelance AI missions: scoping, prototyping, production deployment, RAG audits, data team support. I work directly with my clients, on the topics I know best.
 
     [:octicons-arrow-right-24: tensoria.fr](https://tensoria.fr/)
 

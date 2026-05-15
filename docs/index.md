@@ -1,6 +1,6 @@
 ---
 title: Anas Rabhi — Consultant IA & Data Scientist Freelance à Toulouse
-description: Anas Rabhi, consultant Data Scientist freelance à Toulouse. Cadrage, prototypage et mise en production de solutions IA en entreprise — RAG, agents IA, NLP, LLMOps.
+description: Je suis Anas Rabhi, consultant Data Scientist freelance à Toulouse. J'accompagne les entreprises sur le cadrage, le prototypage et la mise en production de leurs solutions IA — RAG, agents IA, NLP, LLMOps.
 hide:
   - navigation
   - toc
