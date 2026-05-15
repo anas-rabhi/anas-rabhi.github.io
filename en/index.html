@@ -92,6 +92,45 @@
       const observer = new MutationObserver(applySearchDialogA11y);
       observer.observe(document.body, { childList: true, subtree: true });
     });
+  </script><!-- Localize nav on EN pages: rewrite tab/sidebar links to /en/, hide FR-only items --><script>
+    (function () {
+      if (!location.pathname.startsWith("/en/") && location.pathname !== "/en") return;
+      const rewriteMap = {
+        "/": "/en/",
+        "/blog/": "/en/blog/",
+        "/a-propos/": "/en/a-propos/"
+      };
+      const hidePaths = new Set(["/notebooks/", "/consultant-ia-toulouse/"]);
+      const labelMap = {
+        "Accueil": "Home",
+        "À propos": "About"
+      };
+      const apply = function () {
+        document.querySelectorAll(".md-tabs__link, .md-nav__link").forEach(function (a) {
+          if (!a.href) return;
+          let path;
+          try { path = new URL(a.href, location.origin).pathname; } catch (e) { return; }
+          if (hidePaths.has(path)) {
+            const item = a.closest(".md-tabs__item, .md-nav__item");
+            if (item) item.style.display = "none";
+            return;
+          }
+          if (rewriteMap[path]) a.href = rewriteMap[path];
+          const label = (a.textContent || "").trim();
+          if (labelMap[label]) {
+            a.childNodes.forEach(function (n) {
+              if (n.nodeType === 3 && n.textContent.trim() === label) n.textContent = labelMap[label];
+            });
+          }
+        });
+      };
+      if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", apply, { once: true });
+      } else {
+        apply();
+      }
+      new MutationObserver(apply).observe(document.documentElement, { childList: true, subtree: true });
+    })();
   </script><!-- Heeya Chat Widget — deferred to preserve LCP --><script>
     (function () {
       let loaded = false;
