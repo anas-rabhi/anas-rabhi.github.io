@@ -17,6 +17,10 @@
          <lastmod>2026-05-15</lastmod>
     </url>
     <url>
+         <loc>https://ianas.fr/blog/2026/05/15/agent-ia-vs-n8n-make-zapier/</loc>
+         <lastmod>2026-05-15</lastmod>
+    </url>
+    <url>
          <loc>https://ianas.fr/blog/2026/03/20/agentic-rag-vs-rag-classique/</loc>
          <lastmod>2026-05-15</lastmod>
     </url>
@@ -45,11 +49,23 @@
          <lastmod>2026-05-15</lastmod>
     </url>
     <url>
+         <loc>https://ianas.fr/blog/2026/06/02/crewai-langchain-langgraph-comparatif-pragmatique/</loc>
+         <lastmod>2026-05-15</lastmod>
+    </url>
+    <url>
          <loc>https://ianas.fr/blog/2026/05/02/les-differents-domaines-de-l-intelligence-artificielle/</loc>
          <lastmod>2026-05-15</lastmod>
     </url>
     <url>
+         <loc>https://ianas.fr/blog/2026/05/29/embeddings-rag-comprendre-importance/</loc>
+         <lastmod>2026-05-15</lastmod>
+    </url>
+    <url>
          <loc>https://ianas.fr/blog/2026/05/02/entrainement-finetuning-rag-modele-ia/</loc>
+         <lastmod>2026-05-15</lastmod>
+    </url>
+    <url>
+         <loc>https://ianas.fr/blog/2026/05/15/evaluer-rag-production-metriques-ragas/</loc>
          <lastmod>2026-05-15</lastmod>
     </url>
     <url>
@@ -77,11 +93,27 @@
          <lastmod>2026-05-15</lastmod>
     </url>
     <url>
+         <loc>https://ianas.fr/blog/2026/05/15/mcp-model-context-protocol-agents-ia/</loc>
+         <lastmod>2026-05-15</lastmod>
+    </url>
+    <url>
+         <loc>https://ianas.fr/blog/2026/05/19/memoire-agents-ia-long-terme/</loc>
+         <lastmod>2026-05-15</lastmod>
+    </url>
+    <url>
          <loc>https://ianas.fr/blog/2026/04/22/optimiser-rag-techniques/</loc>
          <lastmod>2026-05-15</lastmod>
     </url>
     <url>
+         <loc>https://ianas.fr/blog/2026/05/16/parsing-pdf-rag-extraction-documents/</loc>
+         <lastmod>2026-05-15</lastmod>
+    </url>
+    <url>
          <loc>https://ianas.fr/blog/2025/06/04/mon-rag-ne-marche-pas-analyse-erreur/</loc>
+         <lastmod>2026-05-15</lastmod>
+    </url>
+    <url>
+         <loc>https://ianas.fr/blog/2026/05/22/prompt-caching-reduire-cout-llm/</loc>
          <lastmod>2026-05-15</lastmod>
     </url>
     <url>
@@ -94,6 +126,10 @@
     </url>
     <url>
          <loc>https://ianas.fr/blog/2025/06/10/rester-a-jour-ia-generative/</loc>
+         <lastmod>2026-05-15</lastmod>
+    </url>
+    <url>
+         <loc>https://ianas.fr/blog/2026/05/26/stack-ia-production-langchain-llamaindex-limites/</loc>
          <lastmod>2026-05-15</lastmod>
     </url>
     <url>
@@ -157,11 +193,11 @@
          <lastmod>2026-05-15</lastmod>
     </url>
     <url>
-         <loc>https://ianas.fr/blog/category/llm/</loc>
+         <loc>https://ianas.fr/blog/category/rag/</loc>
          <lastmod>2026-05-15</lastmod>
     </url>
     <url>
-         <loc>https://ianas.fr/blog/category/rag/</loc>
+         <loc>https://ianas.fr/blog/category/llm/</loc>
          <lastmod>2026-05-15</lastmod>
     </url>
     <url>
