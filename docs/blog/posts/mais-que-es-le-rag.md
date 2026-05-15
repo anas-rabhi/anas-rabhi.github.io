@@ -74,7 +74,7 @@ Pour faire simple, la première étape du RAG, c'est de stocker les documents do
 
  > Vectoriser un texte consiste à le transformer en un vecteur qui capture sa signification (sa sémantique). Cela permet de comparer facilement la similarité entre la question de l'utilisateur et les différents fragments de documents. Par exemple, si "un chat blanc" est représenté par [1, 1], "un chat noir" par [1, 0], et "un chien noir" par [7, 1], on voit que "un chat noir" est plus proche de "un chat blanc" que de "un chien noir". Ce principe permet d'identifier rapidement les passages les plus pertinents à insérer dans le contexte du modèle.
 
-L'étape de vectorisation est cruciale : c'est elle qui permet de retrouver les bons documents quand on pose une question. Pour ça, on utilise ce qu'on appelle des modèles d'embeddings. Leur rôle est de transformer le texte en un vecteur qui capture sa signification, sa "sémantique". Ces modèles sont eux-mêmes des IA, entraînées spécialement pour cette tâche, pour en savoir plus.
+L'étape de vectorisation est cruciale : c'est elle qui permet de retrouver les bons documents quand on pose une question. Pour ça, on utilise ce qu'on appelle des modèles d'embeddings. Leur rôle est de transformer le texte en un vecteur qui capture sa signification, sa "sémantique". Ces modèles sont eux-mêmes des IA, entraînées spécialement pour cette tâche. Pour aller plus loin sur ce concept clé (à quoi ça sert exactement, comment ça marche, quel modèle choisir entre OpenAI, Mistral ou BGE-M3), j'ai écrit un article dédié sur [les embeddings, la brique de base de toute l'IA moderne](embeddings-rag-comprendre-importance.md).
 
 Comme on peut le voir, il y a déjà un vrai travail en amont : il faut bien préparer les documents. La performance du RAG dépend beaucoup de deux choses : comment on découpe les documents (la taille et la méthode de découpage, ce qu'on appelle le chunking), et la qualité du modèle d'embeddings qu'on utilise pour transformer ces morceaux en vecteurs. Rien que sur ces deux points, on a déjà de quoi améliorer les futurs résultats.
 
@@ -115,7 +115,7 @@ Je m'explique. Si on lui demande de répondre à une question très large, il es
 **À retenir :**
 - Le RAG ne garantit pas la complétude ni la véracité des réponses. Il y a toujours un risque d'hallucination ou d'erreur.
 - Pour fiabiliser un RAG, il faut : bien organiser les données, surveiller la qualité des sources, calibrer les paramètres (chunking, embeddings, etc.), et permettre la citation des sources pour pouvoir vérifier les informations si besoin.
-- L'évaluation et l'amélioration d'un RAG se font surtout en conditions réelles, car les problèmes apparaissent à l'usage.
+- L'évaluation et l'amélioration d'un RAG se font surtout en conditions réelles, car les problèmes apparaissent à l'usage. Pour une approche structurée avec des métriques chiffrées (Hit Rate, MRR, faithfulness, RAGAS) et la méthodologie complète d'audit, j'ai dédié un article à [comment évaluer un RAG en production](evaluer-rag-production-metriques-ragas.md).
 
 ### Conclusion : Le RAG est-il utile pour vos projets d'IA ?
 

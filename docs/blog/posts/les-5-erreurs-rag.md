@@ -96,7 +96,7 @@ Les frameworks sont précieux quand ils encapsulent des calculs complexes qu'on 
 
 Et sur le long terme, c'est encore plus vrai. Des nouvelles techniques sortent toutes les semaines dans le monde du RAG (j'ai d'ailleurs détaillé les principales, comme HyDE, le reranking ou le contextual retrieval, dans [mon article sur les 8 techniques pour optimiser son RAG](optimiser-rag-techniques.md)). Quand on veut les explorer ou les intégrer, on est toujours dépendant du framework et de sa capacité à s'adapter. Et soyons honnêtes : la capacité d'adaptation des frameworks d'IA générative est souvent mauvaise. Le temps qu'une technique soit intégrée proprement dans un framework, il y en a déjà trois nouvelles qui sont sorties.
 
-Ce que je dis là s'applique aussi aux Agents IA, mais ça, on en reparlera une prochaine fois.
+Ce que je dis là s'applique aussi aux Agents IA, et j'en ai fait un article entier après une vingtaine de projets en tant que dev et lead data scientist : [pourquoi LangChain et LlamaIndex ne sont pas la solution ultime en production](stack-ia-production-langchain-llamaindex-limites.md). En face, pour les frameworks d'agents (CrewAI, LangGraph, Pydantic AI, Smolagents), un autre article fait le tri avec une position pragmatique : [comparatif pragmatique des frameworks d'agents IA en 2026](crewai-langchain-langgraph-comparatif-pragmatique.md).
 
 ## Erreur n°5 — Ne pas mesurer dès le début
 
@@ -115,7 +115,7 @@ Concrètement, ce que je recommande :
 - **Logger les interactions** en production pour identifier les vrais cas d'usage et les vrais problèmes
 - **Suivre un score simple** (% de bonnes réponses) dans le temps
 
-C'est basique, mais c'est ce qui fait la différence entre un projet RAG qui s'améliore dans le temps et un projet qui stagne sans qu'on comprenne pourquoi.
+C'est basique, mais c'est ce qui fait la différence entre un projet RAG qui s'améliore dans le temps et un projet qui stagne sans qu'on comprenne pourquoi. Pour la méthode complète (construction du dataset, métriques de retrieval et de génération, choix entre RAGAS, DeepEval ou TruLens, et mon process d'audit en mission), j'ai écrit un article dédié sur [comment évaluer un RAG en production](evaluer-rag-production-metriques-ragas.md).
 
 ## Conclusion
 

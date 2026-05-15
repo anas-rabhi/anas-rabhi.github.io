@@ -46,7 +46,7 @@ Comment corriger ? Soit on choisit un meilleur modèle, soit on optimise le nomb
 
 Le parsing consiste à extraire correctement les informations des documents. Exemple : une facture doit être extraite de façon structurée. Les tableaux sont un cas classique : selon leur format, récupérer les colonnes et les lignes peut devenir très complexe. Même les images posent problème, sauf si on les décrit via un LLM et qu'on insère la description dans le texte.
 
-Le parsing est l'un des plus gros problèmes du RAG. Il est difficile d'avoir un parsing propre, car chaque entreprise structure ses documents différemment (tableaux, images, formules, graphiques, etc.). Le parsing est donc spécifique à chaque type de document, même s'il existe des solutions qui tentent de généraliser (par exemple docling : https://www.docling.ai/).
+Le parsing est l'un des plus gros problèmes du RAG. Il est difficile d'avoir un parsing propre, car chaque entreprise structure ses documents différemment (tableaux, images, formules, graphiques, etc.). Le parsing est donc spécifique à chaque type de document, même s'il existe des solutions qui tentent de généraliser (par exemple docling : https://www.docling.ai/). J'ai d'ailleurs consacré un article complet à ce sujet avec un comparatif honnête des outils 2026 (Docling, Unstructured, LlamaParse, Marker) et deux cas clients concrets (industriel et e-commerce) : [parsing PDF pour RAG, comment vraiment extraire la donnée de vos documents](parsing-pdf-rag-extraction-documents.md).
 
 ## Cause technique 3 — L'information n'est pas dans le contexte fourni
 

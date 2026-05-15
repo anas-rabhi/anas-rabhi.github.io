@@ -101,6 +101,8 @@ L'**Agentic RAG**, c'est un RAG où l'IA décide elle-même de relancer une rech
 
 J'en parle concrètement dans [le cas client BTP](cas-usage-rag-redaction-appels-offres-btp.md) où un RAG multi-sources couplé à un agent rédacteur a permis de gagner 83% du temps sur la rédaction d'appels d'offres. Et dans [c'est quoi un agent IA](c-est-quoi-un-agent-ia.md) si vous voulez comprendre la différence fondamentale entre les deux approches.
 
+Et si vous voulez creuser les briques qui rendent ces agents vraiment utiles en production, j'ai deux articles à jour pour ça : [MCP (Model Context Protocol)](mcp-model-context-protocol-agents-ia.md), le standard ouvert qui s'impose en 2026 pour connecter un agent à ses outils, et [la mémoire d'agent IA](memoire-agents-ia-long-terme.md), souvent la fonctionnalité la plus sous-estimée d'un agent sérieux.
+
 ## Conclusion : le RAG est-il vraiment fini ?
 
 Le RAG n'est pas mort. Il reste une approche pragmatique pour rendre les LLMs utiles sur des données internes, avec un bon équilibre entre pertinence, coûts et qualité.

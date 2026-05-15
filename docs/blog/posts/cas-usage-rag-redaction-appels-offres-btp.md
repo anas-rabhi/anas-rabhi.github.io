@@ -85,6 +85,8 @@ Le système qu'on a construit interroge **4 index spécialisés en parallèle**,
 
 Chaque index est interrogé avec un **filtrage par métadonnées** : métier, client, type de document. Le retrieval n'est pas brut. Il est ciblé, ce qui garantit la pertinence du contexte injecté dans le [LLM](comprendre-l-IA-generative.md). C'est une des clés pour [éviter les causes classiques d'échec d'un RAG](les-4-causes-techniques-echec-rag.md).
 
+Sur ce type d'architecture multi-sources, deux briques font une vraie différence quand on passe en production : un bon [pipeline de parsing pour extraire correctement les tableaux et schémas des PDF métier](parsing-pdf-rag-extraction-documents.md) (sans ça, le retrieval part déjà avec un handicap), et l'exposition de chaque source comme [serveur MCP réutilisable](mcp-model-context-protocol-agents-ia.md) pour que n'importe quel futur agent puisse y accéder sans réinventer l'intégration.
+
 ## Architecture technique du RAG : ingestion, retrieval et génération
 
 ### Pipeline d'ingestion : indexation automatique des documents BTP

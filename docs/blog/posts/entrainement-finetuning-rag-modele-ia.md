@@ -204,6 +204,8 @@ Avant même de lancer le moindre calcul, il y a une montagne de travail invisibl
 
 Bref, c'est un projet d'au moins 6 à 18 mois pour un modèle ambitieux, avec une équipe entière dédiée.
 
+Le sujet de l'évaluation n'est d'ailleurs pas réservé aux gros entraînements de LLM. Pour un RAG en entreprise, c'est exactement la même rigueur qu'il faut appliquer, à plus petite échelle. J'ai dédié un article complet à [comment évaluer un RAG en production avec RAGAS](evaluer-rag-production-metriques-ragas.md), parce que c'est le sujet n°1 sur lequel les boîtes coincent après leur POC.
+
 ---
 
 ## Donc... pourquoi on ne fait pas ça ?

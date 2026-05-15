@@ -72,7 +72,7 @@ result = evaluate(eval_data, metrics=[
 print(result)
 ```
 
-**Le minimum viable** : 30 à 50 questions représentatives des vraies requêtes de vos utilisateurs. Pas besoin d'un dataset de 10 000 exemples pour avoir une idée claire de où vous en êtes. J'en parle plus en détail dans [les 5 erreurs que tout le monde fait avec le RAG](les-5-erreurs-rag.md) (c'est l'erreur n°5, la plus silencieuse).
+**Le minimum viable** : 30 à 50 questions représentatives des vraies requêtes de vos utilisateurs. Pas besoin d'un dataset de 10 000 exemples pour avoir une idée claire de où vous en êtes. J'en parle plus en détail dans [les 5 erreurs que tout le monde fait avec le RAG](les-5-erreurs-rag.md) (c'est l'erreur n°5, la plus silencieuse). Et pour la méthode complète (construction du dataset, choix entre RAGAS, DeepEval et TruLens, process d'audit RAG en mission), j'ai écrit un article entier sur [comment évaluer un RAG en production](evaluer-rag-production-metriques-ragas.md).
 
 Une fois la baseline établie, voici dans quel ordre appliquer les optimisations.
 
@@ -326,6 +326,8 @@ cache.init(
 **Le paramètre clé** : le seuil de similarité. Trop bas (0.85) → faux positifs, vous retournez une réponse pour une question différente. Trop haut (0.98) → peu de cache hits. 0.90–0.95 est généralement le bon compromis.
 
 **Quand l'utiliser** : dès que votre analyse de logs montre que >20% des requêtes sont des variantes de la même question. Typique sur des chatbots support, FAQ assistées, ou dashboards internes.
+
+À combiner avec le [prompt caching côté provider (Anthropic, OpenAI, Gemini)](prompt-caching-reduire-cout-llm.md), qui cache la partie stable du prompt (système, exemples few-shot, contexte RAG répété) et fait chuter la facture de 50 à 90% sur les tokens d'entrée. Ces deux caches se complètent : sémantique côté applicatif, prompt caching côté API.
 
 ***
 

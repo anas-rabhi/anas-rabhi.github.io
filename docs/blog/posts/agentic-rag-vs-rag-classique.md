@@ -189,6 +189,8 @@ Le schéma ReAct (Reason + Act) : penser → agir → observer le résultat → 
 
 **Quand l'utiliser** : quand une seule source ne suffit pas pour répondre. C'est typiquement le cas dans nos projets BTP : on avait besoin des normes (base documentaire), de l'historique projets (base SQL), et des annexes professionnelles (PDF spécifiques). Aucune source seule n'aurait suffi.
 
+Aujourd'hui, le moyen le plus propre d'exposer ces outils à un agent, c'est le [protocole MCP (Model Context Protocol)](mcp-model-context-protocol-agents-ia.md), un standard ouvert lancé par Anthropic qui est en train de s'imposer pour connecter un agent à ses outils (bases, APIs, fichiers, SaaS) sans réinventer la roue à chaque projet.
+
 ***
 
 ### Pattern 5 — Multi-agents : diviser pour mieux régner
@@ -293,10 +295,10 @@ L'Agentic RAG n'est pas meilleur que le RAG classique. Il est **approprié à de
 Un [agent IA](c-est-quoi-un-agent-ia.md) est un système autonome qui utilise des outils. L'Agentic RAG, c'est un agent IA dont l'un des outils principaux est la recherche dans une base documentaire. L'Agentic RAG est un cas particulier d'agent IA, spécialisé dans la récupération et la synthèse d'information.
 
 **Quels frameworks pour implémenter de l'Agentic RAG ?**
-LangGraph est aujourd'hui le plus utilisé pour les pipelines agentiques structurés : il modélise les workflows comme des graphes avec états, boucles et conditions. LlamaIndex a ses propres abstractions (AgentWorkflow, SubQuestionQueryEngine). Pour les patterns simples (routing, grading), pas besoin de framework : quelques `if` bien placés suffisent.
+LangGraph est aujourd'hui le plus utilisé pour les pipelines agentiques structurés : il modélise les workflows comme des graphes avec états, boucles et conditions. LlamaIndex a ses propres abstractions (AgentWorkflow, SubQuestionQueryEngine). Pour les patterns simples (routing, grading), pas besoin de framework : quelques `if` bien placés suffisent. J'ai un comparatif pragmatique des principaux frameworks (CrewAI, LangGraph, AutoGen, Pydantic AI, Smolagents) dans [cet article dédié](crewai-langchain-langgraph-comparatif-pragmatique.md), et une réflexion plus large sur [les limites de LangChain et LlamaIndex en production](stack-ia-production-langchain-llamaindex-limites.md) après 20+ projets.
 
 **L'Agentic RAG coûte-t-il vraiment beaucoup plus cher ?**
-Ça dépend du pattern. Un Self-RAG ou un CRAG ajoute 1 à 2 appels LLM supplémentaires (coût marginal). Un pipeline multi-agents complexe peut multiplier les coûts par 10 à 20. Calculez toujours le coût par requête avant de déployer en production.
+Ça dépend du pattern. Un Self-RAG ou un CRAG ajoute 1 à 2 appels LLM supplémentaires (coût marginal). Un pipeline multi-agents complexe peut multiplier les coûts par 10 à 20. Calculez toujours le coût par requête avant de déployer en production. Le levier n°1 pour faire chuter cette facture, c'est le [prompt caching](prompt-caching-reduire-cout-llm.md) (jusqu'à 90% d'économie sur les tokens d'entrée chez Anthropic, OpenAI et Gemini).
 
 **Mon RAG classique fait des hallucinations, l'Agentic RAG va-t-il résoudre ça ?**
 Pas forcément. Les hallucinations viennent souvent de deux sources : un mauvais retrieval (le LLM n'a pas les bons documents) ou un mauvais prompt (le LLM n'est pas suffisamment contraint à s'appuyer sur le contexte). Commencez par analyser la cause racine avant d'ajouter de la complexité. J'en parle en détail dans [cet article sur pourquoi le RAG ne fonctionne pas](pourquoi-le-rag-ne-fonctionne-pas.md).

@@ -37,7 +37,9 @@ C'est ce qu'on appelle le **vocabulary mismatch**. Et c'est le problème que le 
 
 ## 3 types de requêtes où le vectoriel seul échoue
 
-Un modèle d'embeddings encode le sens, les associations sémantiques, les proximités conceptuelles. C'est puissant. Mais ça rate systématiquement sur 3 catégories de requêtes.
+Un modèle d'embeddings encode le sens, les associations sémantiques, les proximités conceptuelles. C'est puissant. Si vous voulez comprendre concrètement comment un texte devient un vecteur et pourquoi cette représentation est si puissante, j'ai un article qui pose les bases : [les embeddings, la brique de base de toute l'IA moderne](embeddings-rag-comprendre-importance.md).
+
+Mais ça rate systématiquement sur 3 catégories de requêtes.
 
 **1. Le jargon métier et les normes**
 

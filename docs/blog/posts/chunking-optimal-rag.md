@@ -304,7 +304,7 @@ Deux types de PDFs se comportent très différemment :
 - PDF "text-based" (texte extractible) → `PyMuPDF` ou `pdfplumber`, très rapide
 - PDF scanné ou mise en page complexe (colonnes, headers répétés, numéros de page) → `LlamaParse` ou `Unstructured.io hi_res` avec OCR
 
-Le piège classique : extraire un PDF scanné avec PyMuPDF et obtenir du texte illisible (caractères OCR mal reconnus, colonnes mélangées). Inspectez vos PDFs avant de choisir votre extracteur (j'en parle dans [les 5 erreurs que tout le monde fait avec le RAG](les-5-erreurs-rag.md)).
+Le piège classique : extraire un PDF scanné avec PyMuPDF et obtenir du texte illisible (caractères OCR mal reconnus, colonnes mélangées). Inspectez vos PDFs avant de choisir votre extracteur (j'en parle dans [les 5 erreurs que tout le monde fait avec le RAG](les-5-erreurs-rag.md)). Pour un comparatif complet des outils de parsing en 2026 (Docling, Unstructured, LlamaParse, Marker) avec deux cas clients industriels et e-commerce, j'ai consacré un article entier au sujet : [parsing PDF pour RAG, comment vraiment extraire la donnée de vos documents](parsing-pdf-rag-extraction-documents.md).
 
 **Code**
 

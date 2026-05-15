@@ -125,7 +125,7 @@ Mais imaginons maintenant qu'à chaque étape, on lui donne accès à **un outil
 * Un outil pour envoyer un email
 * Un outil pour interagir avec une base de données
 
-Ces outils, ce sont **nous, les développeurs**, qui les mettons à sa disposition.
+Ces outils, ce sont **nous, les développeurs**, qui les mettons à sa disposition. Et depuis 2025, il existe même un standard ouvert pour exposer ces outils à n'importe quel agent IA : le [protocole MCP (Model Context Protocol)](mcp-model-context-protocol-agents-ia.md), qui est en train de devenir la norme du marché.
 
 Avant d'aller plus loin, cette partie est vraiment importante.
 
@@ -287,6 +287,8 @@ C'est pour ça qu'en pratique, on met toujours des garde-fous :
 
 Les agents IA sont puissants, mais ils ne remplacent pas le jugement humain.
 Pas encore, en tout cas.
+
+Et au-delà des garde-fous, deux briques font vraiment la différence entre un agent qui fonctionne en démo et un agent qui fonctionne en production : la [mémoire long terme](memoire-agents-ia-long-terme.md) (pour qu'il se souvienne des préférences et faits sur ses utilisateurs) et le [choix du bon framework](crewai-langchain-langgraph-comparatif-pragmatique.md) (CrewAI, LangGraph, Pydantic AI, Smolagents... ils n'ont pas du tout le même public ni les mêmes forces).
 
 ***
 

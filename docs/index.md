@@ -25,7 +25,7 @@ hide:
 
     ---
 
-    Missions freelance en IA : cadrage, prototypage, mise en production, audit RAG, accompagnement d'équipes data. Pour les boîtes qui veulent un vrai expert au quotidien.
+    Missions freelance en IA : cadrage, prototypage, mise en production, audit RAG, accompagnement d'équipes data. Je travaille directement avec mes clients, sur les sujets que je connais.
 
     [:octicons-arrow-right-24: tensoria.fr](https://tensoria.fr/)
 
@@ -140,21 +140,29 @@ Si mes articles vous intéressent ou si vous avez un cas d'usage IA à discuter,
 
 <div class="grid cards" markdown>
 
--   __Les différents domaines de l'IA : pourquoi ChatGPT n'est qu'une petite partie__
+-   __MCP (Model Context Protocol) : le standard qui change les agents IA en 2026__
 
     ---
 
-    L'IA ne se résume pas à ChatGPT. Tour d'horizon des grands domaines (vision, NLP, séries temporelles, IA générative) avec exemples concrets en entreprise.
+    Le protocole ouvert lancé par Anthropic qui devient la norme pour connecter les agents IA à vos outils. Architecture, cas d'usage, comparaison avec le function calling.
 
-    [:octicons-arrow-right-24: Lire l'article](/blog/2026/05/02/les-differents-domaines-de-l-intelligence-artificielle/)
+    [:octicons-arrow-right-24: Lire l'article](/blog/2026/05/15/mcp-model-context-protocol-agents-ia/)
 
--   __Entraînement, finetuning ou RAG : que choisir pour son IA ?__
+-   __Comment évaluer un RAG en production : métriques, RAGAS et méthodologie d'audit__
 
     ---
 
-    Comprendre les différences, les coûts (de quelques centaines à plusieurs millions de dollars) et savoir quoi choisir selon son besoin.
+    80% des RAG en prod ne sont jamais vraiment évalués. Les métriques qui comptent, RAGAS en pratique, dataset d'évaluation et process d'audit en mission.
 
-    [:octicons-arrow-right-24: Lire l'article](/blog/2026/05/02/entrainement-finetuning-rag-modele-ia/)
+    [:octicons-arrow-right-24: Lire l'article](/blog/2026/05/15/evaluer-rag-production-metriques-ragas/)
+
+-   __Agent IA vs n8n, Make, Zapier : que choisir vraiment en 2026 ?__
+
+    ---
+
+    n8n avec un nœud OpenAI ou agent IA custom ? Grille de décision honnête, critères concrets et exemples chiffrés pour TPE/PME.
+
+    [:octicons-arrow-right-24: Lire l'article](/blog/2026/05/15/agent-ia-vs-n8n-make-zapier/)
 
 -   __Optimiser son RAG : les 8 techniques qui font vraiment la différence__
 
@@ -163,14 +171,6 @@ Si mes articles vous intéressent ou si vous avez un cas d'usage IA à discuter,
     HyDE, reranking, contextual retrieval, semantic cache : les 8 techniques RAG avec gain mesuré pour chacune.
 
     [:octicons-arrow-right-24: Lire l'article](/blog/2026/04/22/optimiser-rag-techniques/)
-
--   __Chunking optimal pour votre RAG : quelle stratégie choisir ?__
-
-    ---
-
-    OpenAI par défaut : les pires résultats selon Chroma Research. 8 stratégies de chunking, benchmarks réels et arbre de décision.
-
-    [:octicons-arrow-right-24: Lire l'article](/blog/2026/04/15/chunking-optimal-rag/)
 
 </div>
 

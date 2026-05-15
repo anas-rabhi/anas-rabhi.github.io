@@ -63,7 +63,7 @@ Ma réponse sera toujours la même : **on analyse d'abord**.
 
 Analyser, ce n'est pas juste regarder les logs ou tweaker des paramètres au hasard dans l'espoir que ça passe mieux. C'est **décortiquer méthodiquement chaque échec** pour comprendre sa cause racine. Est-ce un problème de retrieval ? De ranking ? D'hallucination ? De qualité de données ?
 
-Avant d'ajouter quoi que ce soit au système, il faut comprendre précisément où ça coince. C'est la base du métier, que ce soit en data science, en machine learning, ou en statistiques. Et pourtant, c'est l'étape qu'on saute le plus souvent sous pression. J'ai décrit cette approche d'[amélioration de l'IA par l'analyse d'erreur](comment-ameliorer-l-IA.md) dans un article précédent.
+Avant d'ajouter quoi que ce soit au système, il faut comprendre précisément où ça coince. C'est la base du métier, que ce soit en data science, en machine learning, ou en statistiques. Et pourtant, c'est l'étape qu'on saute le plus souvent sous pression. J'ai décrit cette approche d'[amélioration de l'IA par l'analyse d'erreur](comment-ameliorer-l-IA.md) dans un article précédent. Et pour la suite logique, c'est-à-dire mettre en place une évaluation structurée avec des vraies métriques (Hit Rate, MRR, faithfulness, RAGAS), j'ai un article pilier dédié à [comment évaluer un RAG en production](evaluer-rag-production-metriques-ragas.md).
 
 ## Exemples concrets d'analyse d'erreur dans des projets RAG
 

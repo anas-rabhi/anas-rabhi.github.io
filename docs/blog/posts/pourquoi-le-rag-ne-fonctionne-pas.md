@@ -107,7 +107,7 @@ LangSmith fait la même chose que Langfuse, avec une interface différente. L'av
 
 Pour aller plus loin dans le suivi, Weights & Biases permet de tracker les métriques de performance dans le temps et de comparer différentes versions du système. Pratique pour vérifier si une "amélioration" n'a pas cassé autre chose ailleurs.
 
-L'idée, c'est de ne pas se perdre dans la surenchère de dashboards : il faut juste assez de visibilité pour comprendre rapidement où chercher quand quelque chose cloche. Si vous voulez aller plus loin sur les [métriques spécifiques à suivre (Faithfulness, RAGAS...)](comment-ameliorer-l-IA.md), j'en parle en détail dans un article dédié.
+L'idée, c'est de ne pas se perdre dans la surenchère de dashboards : il faut juste assez de visibilité pour comprendre rapidement où chercher quand quelque chose cloche. Si vous voulez aller plus loin sur les [métriques spécifiques à suivre (Faithfulness, RAGAS...)](comment-ameliorer-l-IA.md), j'en parle en détail dans un article dédié, et j'ai écrit un article pilier complet sur [comment évaluer un RAG en production](evaluer-rag-production-metriques-ragas.md) (les 3 niveaux d'évaluation, construction du dataset, comparatif RAGAS / DeepEval / TruLens, et mon process d'audit en mission).
 
 ## Ce qu'il faut retenir
 

@@ -81,6 +81,8 @@ On envoie ce PDF à un [LLM](comprendre-l-IA-generative.md) qui extrait en une s
 
 C'est le genre de tâche où l'IA excelle. Un humain lit, comprend, recopie. L'IA fait pareil, mais en quelques secondes.
 
+Pour que ça marche aussi bien sur des PDF parfois mal scannés, il faut un parsing solide en amont. C'est tout l'enjeu que je traite dans mon article dédié au [parsing PDF pour RAG (Docling, Unstructured, LlamaParse, Marker)](parsing-pdf-rag-extraction-documents.md), avec un cas client industriel proche dans la logique de ce qu'on fait ici.
+
 ### Analyse des photos par vision IA
 
 Chaque photo du chantier est analysée par un modèle de vision. Le LLM reçoit la photo + le contexte du rapport (objet de la mission, description du sinistre) et produit une **description technique** : ce qu'on voit, les observations pertinentes, les éléments identifiés.

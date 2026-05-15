@@ -8,9 +8,9 @@ hide:
 
 # Consultant IA & Data Scientist Freelance à Toulouse
 
-Vous cherchez un **consultant IA à Toulouse** capable de transformer un besoin métier en solution qui tourne vraiment en production ? Pas un prestataire qui livre un PowerPoint, pas une ESN qui affecte un consultant junior : un expert qui connaît le sujet en profondeur, qui a déjà fait le chemin sur des vrais projets, et qui vous accompagne de la première réunion au déploiement.
+Je m'appelle **Anas Rabhi**. Je suis data scientist freelance basé à Toulouse, et je travaille directement avec mes clients sur des sujets qui rentrent dans mon champ d'expertise — principalement l'**IA générative appliquée à des cas d'usage métiers et concrets**. Je pense que chaque entreprise a sa propre façon de faire, et j'essaie de m'adapter à ce contexte plutôt que de plaquer une solution standard.
 
-Je m'appelle **Anas Rabhi**. Je suis data scientist freelance basé à Toulouse, et j'accompagne des entreprises de toutes tailles dans l'intégration concrète de l'IA — RAG, agents IA, NLP, LLMOps. Mes missions passent par [Tensoria](https://tensoria.fr/), ma structure de conseil en IA.
+Du cadrage au déploiement en production, je reste impliqué de bout en bout. Mes missions passent par [Tensoria](https://tensoria.fr/), ma structure de conseil en IA. Je travaille sur les sujets que je connais bien : RAG, agents IA, NLP, LLMOps.
 
 [Discuter d'un projet](mailto:anas@tensoria.fr){ .md-button .md-button--primary }
 [Voir mes articles](/blog/){ .md-button }
@@ -19,11 +19,11 @@ Je m'appelle **Anas Rabhi**. Je suis data scientist freelance basé à Toulouse,
 
 ## Pourquoi faire appel à un consultant IA indépendant à Toulouse
 
-Travailler avec un **freelance data scientist à Toulouse**, c'est un choix pragmatique. Pas d'intermédiaire, pas de marge d'agence, pas d'effet tunnel : vous avez accès directement à l'expert qui fait le travail.
+Quand je travaille en freelance, j'essaie de garder les choses simples : pas d'intermédiaire, pas de marge d'agence, pas d'effet tunnel. Vous me parlez directement, et c'est moi qui code derrière. Je pense que sur des projets IA, cette boucle de feedback courte évite beaucoup d'erreurs coûteuses.
 
-C'est aussi un choix de proximité. J'interviens **sur site à Toulouse et en Occitanie**, avec la flexibilité du remote pour les phases de développement. Toulouse concentre un tissu industriel dense — aéronautique, spatial, assurance, e-commerce, santé — et chaque secteur a ses propres enjeux en matière d'IA. Je connais ces contraintes : confidentialité des données, intégration aux systèmes legacy, validation métier, souveraineté numérique.
+C'est aussi un choix de proximité. J'interviens **sur site à Toulouse et en Occitanie**, avec la flexibilité du remote pour les phases de développement. Toulouse concentre un tissu industriel dense — aéronautique, spatial, assurance, e-commerce, santé — et chaque secteur a ses propres enjeux en matière d'IA. J'essaie de bien comprendre ces contraintes avant de proposer quoi que ce soit : confidentialité des données, intégration aux systèmes legacy, validation métier, souveraineté numérique.
 
-L'**écosystème IA toulousain** est en pleine expansion : Aerospace Valley fédère des acteurs qui expérimentent l'IA sur des données complexes et sensibles, la French Tech Toulouse soutient des startups qui ont besoin d'expertise technique solide sans embauche longue durée. C'est dans cet environnement que j'opère depuis plusieurs années.
+L'**écosystème IA toulousain** est en pleine expansion : Aerospace Valley fédère des acteurs qui expérimentent l'IA sur des données complexes et sensibles, la French Tech Toulouse soutient des startups qui ont besoin de profils techniques sans embauche longue durée. C'est dans cet environnement que je travaille au quotidien.
 
 ---
 
@@ -31,7 +31,7 @@ L'**écosystème IA toulousain** est en pleine expansion : Aerospace Valley féd
 
 ### Cadrage et faisabilité IA
 
-Avant de coder quoi que ce soit, je passe du temps à comprendre le problème métier. Une à deux semaines pour définir les KPIs, choisir l'approche technique adaptée — RAG, agent, finetuning, extraction — et estimer le budget et les délais de façon réaliste. Beaucoup de projets échouent faute d'un cadrage sérieux. C'est l'étape que je refuse de bâcler.
+Avant de coder quoi que ce soit, je prends le temps de comprendre le problème métier. Une à deux semaines pour définir les KPIs, choisir l'approche technique adaptée — RAG, agent, finetuning, extraction — et estimer le budget et les délais de façon réaliste. Beaucoup de projets échouent faute d'un cadrage sérieux, donc c'est une étape sur laquelle j'évite de couper les coins.
 
 ### Prototypage et POC
 
@@ -39,7 +39,7 @@ Un POC fonctionnel en deux à quatre semaines, sur un sous-ensemble réel de vos
 
 ### Mise en production
 
-L'intégration aux systèmes existants (API, CRM, ERP, outils internes), la sécurité, le monitoring, les garde-fous pour limiter les hallucinations. Une solution IA qui ne va pas en production ne vaut rien. C'est souvent là que les projets s'enlisent — c'est précisément là que je suis le plus utile.
+L'intégration aux systèmes existants (API, CRM, ERP, outils internes), la sécurité, le monitoring, les garde-fous pour limiter les hallucinations. Une solution IA qui ne va pas en production ne vaut pas grand-chose. C'est souvent là que les projets s'enlisent, et c'est sur cette phase que j'essaie d'apporter le plus de valeur.
 
 ### Audit RAG
 
@@ -55,11 +55,11 @@ Si votre équipe monte en compétence sur les LLMs et les agents IA, je peux co-
 
 ### RAG et moteurs de recherche sémantique
 
-Retrieval hybride (BM25 + vectoriel), reranking, chunking sémantique, évaluation de la qualité des réponses, réduction des hallucinations. C'est le coeur de mon expertise — j'ai écrit une série d'articles techniques sur le sujet, notamment sur [comment optimiser un RAG](/blog/2026/04/22/optimiser-rag-techniques/) et sur [le chunking optimal](/blog/2026/04/15/chunking-optimal-rag/).
+Retrieval hybride (BM25 + vectoriel), reranking, chunking sémantique, évaluation de la qualité des réponses, réduction des hallucinations. C'est le sujet sur lequel je passe le plus de temps en mission, et celui que je connais le mieux — j'ai écrit une série d'articles techniques dessus, notamment sur [comment optimiser un RAG](/blog/2026/04/22/optimiser-rag-techniques/) et sur [le chunking optimal](/blog/2026/04/15/chunking-optimal-rag/).
 
 ### Agents IA
 
-Orchestration d'outils, workflows multi-étapes, robustesse en production, garde-fous et validation humaine dans la boucle. La différence entre un [agent IA](/blog/2026/01/15/c-est-quoi-un-agent-ia/) utile et un agent IA qui fait n'importe quoi tient souvent à des choix d'architecture précis que j'ai appris à faire sur des projets réels.
+Orchestration d'outils, workflows multi-étapes, robustesse en production, garde-fous et validation humaine dans la boucle. La différence entre un [agent IA](/blog/2026/01/15/c-est-quoi-un-agent-ia/) utile et un agent qui part dans tous les sens tient souvent à des choix d'architecture précis — je les ai appris sur des projets réels, en me trompant pas mal au début.
 
 ### NLP
 
@@ -137,7 +137,7 @@ Plusieurs leviers selon le niveau d'exigence : LLMs souverains hébergés en Fra
 
 ### Quelle différence avec une ESN ou une agence IA ?
 
-Vous travaillez directement avec l'expert qui fait le travail, sans intermédiaire. Pas de chef de projet qui traduit, pas de consultant junior en production. La réactivité, la qualité technique et la continuité de suivi sont incomparables. En contrepartie, je ne gère pas des projets de cent personnes — je suis sélectif sur les missions pour rester pleinement disponible sur chaque projet.
+Vous échangez directement avec moi, du premier appel jusqu'au déploiement. Pas de chef de projet qui traduit, pas de consultant junior qu'on découvre une fois en production. En contrepartie, je ne prends que quelques missions à la fois — je préfère rester pleinement disponible sur chaque projet plutôt que d'en empiler dix en parallèle. Je ne suis pas l'option adaptée si vous cherchez à mobiliser cent personnes d'un coup.
 
 ---
 
@@ -236,7 +236,7 @@ Vous avez un cas d'usage à explorer, un projet à cadrer ou simplement des ques
           "name": "Quelle différence avec une ESN ou une agence IA ?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Vous travaillez directement avec l'expert qui fait le travail, sans intermédiaire. Pas de chef de projet qui traduit, pas de consultant junior en production. La réactivité, la qualité technique et la continuité de suivi sont incomparables."
+            "text": "Vous échangez directement avec moi, du premier appel jusqu'au déploiement. Pas de chef de projet qui traduit, pas de consultant junior qu'on découvre une fois en production. En contrepartie, je ne prends que quelques missions à la fois — je préfère rester pleinement disponible sur chaque projet."
           }
         }
       ]
