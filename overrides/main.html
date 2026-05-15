@@ -19,9 +19,20 @@
   {% set is_notebook = page and page.canonical_url and "/notebooks/" in page.canonical_url and is_article %}
   {% set page_modified = page.meta.date_modified | default(page.meta.git_revision_date_localized_raw_iso_date) | default(page.meta.date) if is_article else None %}
 
+  {% set page_lang = page.meta.lang if page and page.meta and page.meta.lang else 'fr' %}
+  {% set og_locale = 'en_US' if page_lang == 'en' else 'fr_FR' %}
+  {% set schema_lang = 'en-US' if page_lang == 'en' else 'fr-FR' %}
+
   {% if page and page.canonical_url %}
   <!-- Force canonical URL without query parameters -->
   <link rel="canonical" href="{{ page_url }}" />
+  {% endif %}
+
+  {% if page and page.meta and page.meta.alternate_url_fr and page.meta.alternate_url_en %}
+  <!-- hreflang alternates for FR↔EN pairs -->
+  <link rel="alternate" hreflang="fr" href="{{ page.meta.alternate_url_fr }}" />
+  <link rel="alternate" hreflang="en" href="{{ page.meta.alternate_url_en }}" />
+  <link rel="alternate" hreflang="x-default" href="{{ page.meta.alternate_url_fr }}" />
   {% endif %}
 
   <!-- noindex only for pagination pages (thin/duplicate content) -->
@@ -39,7 +50,13 @@
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta property="og:image:alt" content="{{ page_title }}" />
-  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:locale" content="{{ og_locale }}" />
+  {% if page and page.meta and page.meta.alternate_url_en and page_lang == 'fr' %}
+  <meta property="og:locale:alternate" content="en_US" />
+  {% endif %}
+  {% if page and page.meta and page.meta.alternate_url_fr and page_lang == 'en' %}
+  <meta property="og:locale:alternate" content="fr_FR" />
+  {% endif %}
   {% if is_article %}
   <meta property="article:published_time" content="{{ page.meta.date }}" />
   {% if page_modified %}
@@ -71,7 +88,7 @@
     "headline": {{ page_title | tojson }},
     "description": {{ page_description | tojson }},
     "image": {{ page_image | tojson }},
-    "inLanguage": "fr-FR",
+    "inLanguage": {{ schema_lang | tojson }},
     "author": {
       "@type": "Person",
       "name": {{ config.site_author | tojson }},
@@ -106,14 +123,14 @@
       {
         "@type": "ListItem",
         "position": 1,
-        "name": "Accueil",
-        "item": {{ config.site_url | tojson }}
+        "name": {% if page_lang == 'en' %}"Home"{% else %}"Accueil"{% endif %},
+        "item": "{{ config.site_url }}{% if page_lang == 'en' %}en/{% endif %}"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "{% if is_notebook %}Notebooks{% else %}Blog{% endif %}",
-        "item": "{{ config.site_url }}{% if is_notebook %}notebooks/{% else %}blog/{% endif %}"
+        "item": "{{ config.site_url }}{% if page_lang == 'en' %}en/{% endif %}{% if is_notebook %}notebooks/{% else %}blog/{% endif %}"
       },
       {
         "@type": "ListItem",
@@ -146,6 +163,86 @@
   }
   </script>
   {% endif %}
+  {% else %}
+  {% if page_lang == 'en' %}
+  <!-- JSON-LD : WebSite + Person + ProfessionalService (EN home & static pages) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "{{ config.site_url }}en/#website",
+        "name": "Anas Rabhi — AI Engineer & Data Scientist",
+        "url": "{{ config.site_url }}en/",
+        "description": "Field notes on enterprise AI: RAG, AI agents, NLP and LLMOps. By Anas Rabhi, freelance AI Engineer and Data Scientist.",
+        "inLanguage": "en-US",
+        "publisher": { "@id": "{{ config.site_url }}#person" },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "{{ config.site_url }}en/?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": "{{ config.site_url }}#person",
+        "name": {{ config.site_author | tojson }},
+        "url": "{{ config.site_url }}en/",
+        "image": "{{ config.site_url }}assets/og-image.png",
+        "jobTitle": "Freelance AI Engineer & Data Scientist",
+        "description": "Freelance Data Scientist based in Toulouse, France, specialized in RAG, AI agents, NLP and LLMOps. Founder of Tensoria and Heeya.",
+        "knowsAbout": [
+          "Artificial Intelligence",
+          "Data Science",
+          "Retrieval-Augmented Generation (RAG)",
+          "AI Agents",
+          "NLP",
+          "LLMOps",
+          "Machine Learning",
+          "Large Language Models"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Toulouse",
+          "addressRegion": "Occitanie",
+          "addressCountry": "FR"
+        },
+        "sameAs": [
+          "https://www.linkedin.com/in/anasrabhi/",
+          "https://github.com/anas-rabhi",
+          "https://x.com/anas9r"
+        ]
+      },
+      {
+        "@type": "ProfessionalService",
+        "@id": "{{ config.site_url }}en/#service",
+        "name": "Anas Rabhi — AI & Data Science Consulting",
+        "url": "{{ config.site_url }}en/",
+        "image": "{{ config.site_url }}assets/og-image.png",
+        "description": "Enterprise AI consulting and engineering: scoping, prototyping, production deployment. Specialties: RAG, AI agents, NLP, LLMOps.",
+        "provider": { "@id": "{{ config.site_url }}#person" },
+        "areaServed": [
+          { "@type": "Country", "name": "France" },
+          { "@type": "Country", "name": "Worldwide" }
+        ],
+        "serviceType": [
+          "AI consulting",
+          "RAG system development",
+          "LLM production deployment",
+          "AI audit and optimization",
+          "Data science team training"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Toulouse",
+          "addressRegion": "Occitanie",
+          "addressCountry": "FR"
+        }
+      }
+    ]
+  }
+  </script>
   {% else %}
   <!-- JSON-LD : WebSite + Person + ProfessionalService (home & pages statiques) -->
   <script type="application/ld+json">
@@ -226,6 +323,7 @@
     ]
   }
   </script>
+  {% endif %}
   {% endif %}
 
   <!-- Accessibility: ensure the search dialog has an accessible name -->

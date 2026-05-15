@@ -101,6 +101,30 @@
          <lastmod>2026-05-15</lastmod>
     </url>
     <url>
+         <loc>https://ianas.fr/en/</loc>
+         <lastmod>2026-05-15</lastmod>
+    </url>
+    <url>
+         <loc>https://ianas.fr/en/a-propos/</loc>
+         <lastmod>2026-05-15</lastmod>
+    </url>
+    <url>
+         <loc>https://ianas.fr/en/blog/</loc>
+         <lastmod>2026-05-15</lastmod>
+    </url>
+    <url>
+         <loc>https://ianas.fr/en/blog/2026/04/15/chunking-optimal-rag/</loc>
+         <lastmod>2026-05-15</lastmod>
+    </url>
+    <url>
+         <loc>https://ianas.fr/en/blog/2026/05/02/entrainement-finetuning-rag-modele-ia/</loc>
+         <lastmod>2026-05-15</lastmod>
+    </url>
+    <url>
+         <loc>https://ianas.fr/en/blog/2026/04/22/optimiser-rag-techniques/</loc>
+         <lastmod>2026-05-15</lastmod>
+    </url>
+    <url>
          <loc>https://ianas.fr/notebooks/</loc>
          <lastmod>2026-05-15</lastmod>
     </url>
@@ -158,6 +182,26 @@
     </url>
     <url>
          <loc>https://ianas.fr/notebooks/category/ai/</loc>
+         <lastmod>2026-05-15</lastmod>
+    </url>
+    <url>
+         <loc>https://ianas.fr/en/blog/archive/2026/</loc>
+         <lastmod>2026-05-15</lastmod>
+    </url>
+    <url>
+         <loc>https://ianas.fr/en/blog/category/blog/</loc>
+         <lastmod>2026-05-15</lastmod>
+    </url>
+    <url>
+         <loc>https://ianas.fr/en/blog/category/ai/</loc>
+         <lastmod>2026-05-15</lastmod>
+    </url>
+    <url>
+         <loc>https://ianas.fr/en/blog/category/llm/</loc>
+         <lastmod>2026-05-15</lastmod>
+    </url>
+    <url>
+         <loc>https://ianas.fr/en/blog/category/rag/</loc>
          <lastmod>2026-05-15</lastmod>
     </url>
 </urlset>
