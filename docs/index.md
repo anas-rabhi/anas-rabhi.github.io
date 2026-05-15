@@ -188,7 +188,7 @@ Sur les projets que je mène, un POC fonctionnel se construit en **2 à 4 semain
 
 ### Quel budget prévoir pour un projet IA ?
 
-Pour une mission Tensoria, un POC se situe entre **5 k€ et 25 k€** selon la complexité. Une mise en production complète (RAG ou agent IA en condition réelle) démarre autour de **30 k€** et peut atteindre 100 k€ et plus pour des cas exigeants. À ça s'ajoutent les coûts d'infrastructure (LLM API, vector DB, hébergement) qui restent souvent modestes — quelques centaines à quelques milliers d'euros par mois selon le volume.
+Tout dépend du type de projet : un POC sur un cas d'usage ciblé n'a rien à voir avec une mise en production complète intégrée à votre SI, ou avec un déploiement souverain on-premise. La complexité des données, le niveau d'exigence sur la précision, les contraintes d'intégration et de sécurité influent fortement sur le périmètre. Le premier échange (cadrage du besoin) est gratuit — c'est à ce moment-là qu'on chiffre une fourchette adaptée à votre contexte.
 
 ### Comment je garantis la confidentialité des données ?
 
@@ -240,7 +240,7 @@ L'agent doit s'interfacer avec l'écosystème en place : **API internes**, **bas
       "name": "Quel budget prévoir pour un projet IA ?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Pour une mission Tensoria, un POC se situe entre 5 k€ et 25 k€ selon la complexité. Une mise en production complète (RAG ou agent IA en condition réelle) démarre autour de 30 k€ et peut atteindre 100 k€ et plus pour des cas exigeants. À ça s'ajoutent les coûts d'infrastructure (LLM API, vector DB, hébergement) qui restent souvent modestes — quelques centaines à quelques milliers d'euros par mois."
+        "text": "Tout dépend du type de projet : un POC sur un cas d'usage ciblé n'a rien à voir avec une mise en production complète intégrée à votre SI, ou avec un déploiement souverain on-premise. La complexité des données, le niveau d'exigence sur la précision, les contraintes d'intégration et de sécurité influent fortement sur le périmètre. Le premier échange (cadrage du besoin) est gratuit — c'est à ce moment-là qu'on chiffre une fourchette adaptée à votre contexte."
       }
     },
     {
