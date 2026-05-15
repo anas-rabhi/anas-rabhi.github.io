@@ -88,6 +88,12 @@ plugins:
       post_url_format: "{date}/{slug}"
       authors_file: "{blog}/.authors.yml"
       pagination_per_page: 10
+  - blog:
+      blog_dir: en/blog
+      post_date_format: dd/MM/yyyy
+      post_url_format: "{date}/{slug}"
+      authors_file: "{blog}/.authors.yml"
+      pagination_per_page: 10
   - git-revision-date-localized:
       type: iso_datetime
       enable_creation_date: false
@@ -106,6 +112,13 @@ hooks:
 
 # Additional configuration
 extra:
+  alternate:
+    - name: Français
+      link: /
+      lang: fr
+    - name: English
+      link: /en/
+      lang: en
   analytics:
     provider: google
     property: G-03FZVX8L64
