@@ -353,7 +353,7 @@ Un POC sur un cas d'usage ciblé peut se faire en 2 à 4 semaines. La mise en pr
 
 ***
 
-Si mes articles vous intéressent, que vous avez des questions ou simplement envie de discuter de vos propres défis liés à l'IA, n'hésitez pas à m'écrire à [anas0rabhi@gmail.com](mailto:anas0rabhi@gmail.com), j'adore échanger sur ces sujets !
+Si mes articles vous intéressent, que vous avez des questions ou simplement envie de discuter de vos propres défis liés à l'IA, n'hésitez pas à m'écrire à [anas@tensoria.fr](mailto:anas@tensoria.fr), j'adore échanger sur ces sujets !
 
 Vous souhaitez mettre en place des agents IA dans votre entreprise ? Découvrez mon activité de conseil sur [tensoria.fr](https://tensoria.fr).
 

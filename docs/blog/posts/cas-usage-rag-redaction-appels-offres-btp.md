@@ -217,7 +217,7 @@ Le gain le plus spectaculaire, c'est sur la **recherche d'information** : passer
 
 Mais le gain le plus important pour la qualité, c'est la **cohérence**. Le système propose toujours des formulations alignées avec les normes en vigueur et les précédents projets du client. Moins de risque d'oublier une référence normative ou de contredire une réponse passée.
 
-**Vous avez des processus de rédaction répétitifs qui mobilisent vos experts pendant des heures ?** L'approche RAG multi-sources + agent rédacteur est applicable à de nombreux cas : réponses à appels d'offres, rapports techniques, mémoires de synthèse, dossiers réglementaires... [Réservez un créneau](https://cal.eu/anas-rabhi/rendez-vous-ianas) pour en discuter, ou écrivez-moi à [anas0rabhi@gmail.com](mailto:anas0rabhi@gmail.com).
+**Vous avez des processus de rédaction répétitifs qui mobilisent vos experts pendant des heures ?** L'approche RAG multi-sources + agent rédacteur est applicable à de nombreux cas : réponses à appels d'offres, rapports techniques, mémoires de synthèse, dossiers réglementaires... [Réservez un créneau](https://cal.eu/anas-rabhi/rendez-vous-ianas) pour en discuter, ou écrivez-moi à [anas@tensoria.fr](mailto:anas@tensoria.fr).
 
 ## Ce que ce cas d'usage RAG en entreprise m'a appris
 
@@ -249,7 +249,7 @@ Si vous voulez aller plus loin sur le RAG, j'ai écrit sur [ce qu'est vraiment l
 
 ***
 
-Si mes articles vous intéressent et que vous avez des questions ou simplement envie de discuter de vos propres défis, n'hésitez pas à m'écrire à [anas0rabhi@gmail.com](mailto:anas0rabhi@gmail.com), j'aime échanger sur ces sujets !
+Si mes articles vous intéressent et que vous avez des questions ou simplement envie de discuter de vos propres défis, n'hésitez pas à m'écrire à [anas@tensoria.fr](mailto:anas@tensoria.fr), j'aime échanger sur ces sujets !
 
 Vous pouvez aussi [réserver un créneau d'échange](https://cal.eu/anas-rabhi/rendez-vous-ianas) ou vous abonner à ma newsletter :)
 

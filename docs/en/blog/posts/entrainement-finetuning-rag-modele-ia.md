@@ -425,7 +425,7 @@ In the worst case, if you end up fine-tuning anyway, you will have done it with 
 
 ---
 
-If my articles interest you and you have questions or simply want to discuss your own challenges, feel free to write to me at [anas0rabhi@gmail.com](mailto:anas0rabhi@gmail.com) — I enjoy exchanging on these topics!
+If my articles interest you and you have questions or simply want to discuss your own challenges, feel free to write to me at [anas@tensoria.fr](mailto:anas@tensoria.fr) — I enjoy exchanging on these topics!
 
 You can also [book a call](https://cal.eu/anas-rabhi/rendez-vous-ianas) or subscribe to my newsletter :)
 

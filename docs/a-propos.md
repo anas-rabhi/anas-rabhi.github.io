@@ -100,13 +100,13 @@ Quelques articles récents :
 
 -   :material-email:{ .lg .middle } __Email__
 
-    [anas0rabhi@gmail.com](mailto:anas0rabhi@gmail.com)
+    [anas@tensoria.fr](mailto:anas@tensoria.fr)
 
 </div>
 
 Si vous avez un projet IA à cadrer, une architecture RAG à auditer, ou simplement une question sur ce que j'écris — écrivez-moi. Le premier échange est gratuit et sans engagement.
 
-[:material-email-fast: Discuter d'un projet](mailto:anas0rabhi@gmail.com){ .md-button .md-button--primary }
+[:material-email-fast: Discuter d'un projet](mailto:anas@tensoria.fr){ .md-button .md-button--primary }
 [:material-home: Retour à l'accueil](/){ .md-button }
 
 <script type="application/ld+json">

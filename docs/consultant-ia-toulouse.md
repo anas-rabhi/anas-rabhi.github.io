@@ -12,7 +12,7 @@ Vous cherchez un **consultant IA à Toulouse** capable de transformer un besoin 
 
 Je m'appelle **Anas Rabhi**. Je suis data scientist freelance basé à Toulouse, et j'accompagne des entreprises de toutes tailles dans l'intégration concrète de l'IA — RAG, agents IA, NLP, LLMOps. Mes missions passent par [Tensoria](https://tensoria.fr/), ma structure de conseil en IA.
 
-[Discuter d'un projet](mailto:anas0rabhi@gmail.com){ .md-button .md-button--primary }
+[Discuter d'un projet](mailto:anas@tensoria.fr){ .md-button .md-button--primary }
 [Voir mes articles](/blog/){ .md-button }
 
 ---
@@ -145,7 +145,7 @@ Vous travaillez directement avec l'expert qui fait le travail, sans intermédiai
 
 Vous avez un cas d'usage à explorer, un projet à cadrer ou simplement des questions sur la faisabilité d'une idée ? Le premier échange est gratuit et sans engagement.
 
-[Écrire à Anas](mailto:anas0rabhi@gmail.com){ .md-button .md-button--primary }
+[Écrire à Anas](mailto:anas@tensoria.fr){ .md-button .md-button--primary }
 [Voir le profil LinkedIn](https://www.linkedin.com/in/anasrabhi/){ .md-button target="_blank" rel="noopener" }
 [Tensoria — ma structure de conseil](https://tensoria.fr/){ .md-button target="_blank" rel="noopener" }
 
@@ -194,7 +194,7 @@ Vous avez un cas d'usage à explorer, un projet à cadrer ou simplement des ques
         "Data Science",
         "Intelligence Artificielle"
       ],
-      "email": "anas0rabhi@gmail.com"
+      "email": "anas@tensoria.fr"
     },
     {
       "@type": "FAQPage",

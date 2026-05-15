@@ -21,7 +21,7 @@ Why did I start this blog? As a freelance Data Scientist and AI consultant, I wo
 
 My goal through these articles is to demystify AI concepts, share concrete technical solutions, offer lessons from real projects, and give practical advice for integrating artificial intelligence into your professional work.
 
-Happy reading, and feel free to reach out: anas0rabhi@gmail.com!
+Happy reading, and feel free to reach out: anas@tensoria.fr!
 
 You can also subscribe to my newsletter :)
 

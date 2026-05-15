@@ -384,7 +384,7 @@ No. The techniques described here improve a RAG that already works correctly on 
 
 ***
 
-If my articles interest you and you have questions or just want to discuss your own challenges, feel free to write to me at [anas0rabhi@gmail.com](mailto:anas0rabhi@gmail.com) — I enjoy talking about these topics!
+If my articles interest you and you have questions or just want to discuss your own challenges, feel free to write to me at [anas@tensoria.fr](mailto:anas@tensoria.fr) — I enjoy talking about these topics!
 
 You can also [book a call](https://cal.eu/anas-rabhi/rendez-vous-ianas) or subscribe to my newsletter :)
 

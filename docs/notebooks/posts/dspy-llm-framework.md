@@ -675,4 +675,4 @@ Well well well, it went from 2 over 6 to 3 over 6, nothing exceptional in this e
 
 That's it ! Thanks for reading ! 
 
-I would love to hear from you if you found this post useful or you have any observation 😀 : anas0rabhi@gmail.com 
+I would love to hear from you if you found this post useful or you have any observation 😀 : anas@tensoria.fr 

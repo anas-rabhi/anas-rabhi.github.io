@@ -210,7 +210,7 @@ Le pipeline s'enchaîne automatiquement, avec suivi de progression en temps rée
 | Mise en page DOCX | 30 min | 5 min (layouts visuels) | **~83%** |
 | **Temps total par rapport** | **3-4h** | **~40 min** | **~80%** |
 
-**Vous avez un process métier répétitif qui prend des heures ?** L'approche qu'on a utilisée ici (IA + interface + humain dans la boucle) est applicable à beaucoup de cas similaires : rapports techniques, comptes-rendus, audits, fiches produit... [Réservez un créneau](https://cal.eu/anas-rabhi/rendez-vous-ianas) pour en discuter, ou écrivez-moi à [anas0rabhi@gmail.com](mailto:anas0rabhi@gmail.com).
+**Vous avez un process métier répétitif qui prend des heures ?** L'approche qu'on a utilisée ici (IA + interface + humain dans la boucle) est applicable à beaucoup de cas similaires : rapports techniques, comptes-rendus, audits, fiches produit... [Réservez un créneau](https://cal.eu/anas-rabhi/rendez-vous-ianas) pour en discuter, ou écrivez-moi à [anas@tensoria.fr](mailto:anas@tensoria.fr).
 
 ## Ce que j'en retiens
 
@@ -230,7 +230,7 @@ Si vous voulez aller plus loin, j'ai écrit sur [ce qu'est un agent IA](c-est-qu
 
 ***
 
-Si mes articles vous intéressent et que vous avez des questions ou simplement envie de discuter de vos propres défis, n'hésitez pas à m'écrire à [anas0rabhi@gmail.com](mailto:anas0rabhi@gmail.com), j'aime échanger sur ces sujets !
+Si mes articles vous intéressent et que vous avez des questions ou simplement envie de discuter de vos propres défis, n'hésitez pas à m'écrire à [anas@tensoria.fr](mailto:anas@tensoria.fr), j'aime échanger sur ces sujets !
 
 Vous pouvez aussi [réserver un créneau d'échange](https://cal.eu/anas-rabhi/rendez-vous-ianas) ou vous abonner à ma newsletter :)
 

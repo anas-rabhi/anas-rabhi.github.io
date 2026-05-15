@@ -16,7 +16,7 @@ tags:
 
 Cette page contient des articles avec du code autour de l'IA :)
 
-Bonne lecture, et n'hésitez pas à échanger avec moi : anas0rabhi@gmail.com !
+Bonne lecture, et n'hésitez pas à échanger avec moi : anas@tensoria.fr !
 
 Vous pouvez aussi vous abonner à ma newsletter :)
 

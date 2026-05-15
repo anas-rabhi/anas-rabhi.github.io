@@ -22,7 +22,7 @@ Pourquoi je me suis lancé dans ce blog ? En tant que consultant data scientist 
 
 Mon objectif à travers mes articles est de vulgariser des concepts IA, proposer des solutions techniques concrètes, partager des retours d'expérience issus de mes projets, et donner des conseils pratiques pour intégrer l'intelligence artificielle dans votre quotidien professionnel.
 
-Bonne lecture, et n'hésitez pas à échanger avec moi : anas0rabhi@gmail.com !
+Bonne lecture, et n'hésitez pas à échanger avec moi : anas@tensoria.fr !
 
 Vous pouvez aussi vous abonner à ma newsletter :)
 

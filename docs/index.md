@@ -12,7 +12,7 @@ hide:
 
 **Consultant Data Scientist freelance à Toulouse.** J'accompagne les entreprises qui veulent intégrer de l'IA dans leur quotidien. Pas de la théorie, pas des slides, que du concret — du cadrage au déploiement en production.
 
-[:material-email-fast: Discuter d'un projet](mailto:anas0rabhi@gmail.com){ .md-button .md-button--primary }
+[:material-email-fast: Discuter d'un projet](mailto:anas@tensoria.fr){ .md-button .md-button--primary }
 [:material-book-open-variant: Lire le blog](/blog/){ .md-button }
 
 </div>
@@ -120,7 +120,7 @@ Si mes articles vous intéressent ou si vous avez un cas d'usage IA à discuter,
 
 -   :material-email:{ .lg .middle } __Email__
 
-    [anas0rabhi@gmail.com](mailto:anas0rabhi@gmail.com)
+    [anas@tensoria.fr](mailto:anas@tensoria.fr)
 
 -   :fontawesome-brands-linkedin:{ .lg .middle } __LinkedIn__
 
@@ -212,7 +212,7 @@ L'agent doit s'interfacer avec l'écosystème en place : **API internes**, **bas
 
 ### Comment travailler avec moi via Tensoria ?
 
-[Tensoria](https://tensoria.fr/) est ma structure de conseil en IA. J'y propose : **cadrage de projet IA**, **prototypage**, **audit RAG**, **mise en production**, **accompagnement et formation d'équipes data**. J'interviens en régie ou au forfait, principalement à Toulouse et en remote. Le premier échange (cadrage du besoin) est toujours gratuit — il suffit de m'écrire à **[anas0rabhi@gmail.com](mailto:anas0rabhi@gmail.com)**.
+[Tensoria](https://tensoria.fr/) est ma structure de conseil en IA. J'y propose : **cadrage de projet IA**, **prototypage**, **audit RAG**, **mise en production**, **accompagnement et formation d'équipes data**. J'interviens en régie ou au forfait, principalement à Toulouse et en remote. Le premier échange (cadrage du besoin) est toujours gratuit — il suffit de m'écrire à **[anas@tensoria.fr](mailto:anas@tensoria.fr)**.
 
 <script type="application/ld+json">
 {
@@ -288,7 +288,7 @@ L'agent doit s'interfacer avec l'écosystème en place : **API internes**, **bas
       "name": "Comment travailler avec moi via Tensoria ?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Tensoria (tensoria.fr) est ma structure de conseil en IA. J'y propose : cadrage de projet IA, prototypage, audit RAG, mise en production, accompagnement et formation d'équipes data. J'interviens en régie ou au forfait, principalement à Toulouse et en remote. Le premier échange est toujours gratuit — il suffit de m'écrire à anas0rabhi@gmail.com."
+        "text": "Tensoria (tensoria.fr) est ma structure de conseil en IA. J'y propose : cadrage de projet IA, prototypage, audit RAG, mise en production, accompagnement et formation d'équipes data. J'interviens en régie ou au forfait, principalement à Toulouse et en remote. Le premier échange est toujours gratuit — il suffit de m'écrire à anas@tensoria.fr."
       }
     }
   ]

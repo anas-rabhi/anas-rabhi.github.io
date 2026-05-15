@@ -12,7 +12,7 @@ hide:
 
 **Freelance AI Engineer & Data Scientist.** I help companies integrate AI into their operations. No theory, no slides — only what works in production. From scoping to production deployment.
 
-[:material-email-fast: Discuss a project](mailto:anas0rabhi@gmail.com){ .md-button .md-button--primary }
+[:material-email-fast: Discuss a project](mailto:anas@tensoria.fr){ .md-button .md-button--primary }
 [:material-book-open-variant: Read the blog](/en/blog/){ .md-button }
 
 </div>
@@ -120,7 +120,7 @@ If you find the articles useful or have an AI use case to discuss, feel free to 
 
 -   :material-email:{ .lg .middle } __Email__
 
-    [anas0rabhi@gmail.com](mailto:anas0rabhi@gmail.com)
+    [anas@tensoria.fr](mailto:anas@tensoria.fr)
 
 -   :fontawesome-brands-linkedin:{ .lg .middle } __LinkedIn__
 
@@ -204,7 +204,7 @@ The agent must interface with the existing ecosystem: **internal APIs**, **busin
 
 ### How do I work with you through Tensoria?
 
-[Tensoria](https://tensoria.fr/) is my AI consulting firm, based in Toulouse (France) and operating remotely. I offer: **AI project scoping**, **prototyping**, **RAG audits**, **production deployment**, **data team coaching and training**. I work on a time-and-materials or fixed-price basis. The first call (scoping your need) is always free — just reach out at **[anas0rabhi@gmail.com](mailto:anas0rabhi@gmail.com)**.
+[Tensoria](https://tensoria.fr/) is my AI consulting firm, based in Toulouse (France) and operating remotely. I offer: **AI project scoping**, **prototyping**, **RAG audits**, **production deployment**, **data team coaching and training**. I work on a time-and-materials or fixed-price basis. The first call (scoping your need) is always free — just reach out at **[anas@tensoria.fr](mailto:anas@tensoria.fr)**.
 
 <script type="application/ld+json">
 {
@@ -280,7 +280,7 @@ The agent must interface with the existing ecosystem: **internal APIs**, **busin
       "name": "How do I work with you through Tensoria?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Tensoria (tensoria.fr) is my AI consulting firm, based in Toulouse and operating remotely. I offer: AI project scoping, prototyping, RAG audits, production deployment, data team coaching and training. I work on a time-and-materials or fixed-price basis. The first call is always free — reach out at anas0rabhi@gmail.com."
+        "text": "Tensoria (tensoria.fr) is my AI consulting firm, based in Toulouse and operating remotely. I offer: AI project scoping, prototyping, RAG audits, production deployment, data team coaching and training. I work on a time-and-materials or fixed-price basis. The first call is always free — reach out at anas@tensoria.fr."
       }
     }
   ]

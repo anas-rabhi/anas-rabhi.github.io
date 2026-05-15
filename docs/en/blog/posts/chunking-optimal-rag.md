@@ -440,7 +440,7 @@ Chunking is an ingestion operation, not a query operation. For frequent updates,
 
 ***
 
-If my articles interest you and you have questions, or just want to talk through your own challenges, feel free to reach out at [anas0rabhi@gmail.com](mailto:anas0rabhi@gmail.com) — I enjoy these conversations.
+If my articles interest you and you have questions, or just want to talk through your own challenges, feel free to reach out at [anas@tensoria.fr](mailto:anas@tensoria.fr) — I enjoy these conversations.
 
 You can also [book a call](https://cal.eu/anas-rabhi/rendez-vous-ianas) or subscribe to my newsletter.
 
