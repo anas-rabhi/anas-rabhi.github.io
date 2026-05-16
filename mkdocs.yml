@@ -188,5 +188,9 @@ nav:
     - blog/index.md
   - Notebooks:
     - notebooks/index.md
+  - Guides:
+    - RAG: rag.md
+    - Agents IA: agents-ia.md
+    - Comprendre l'IA: comprendre-ia.md
   - À propos: a-propos.md
   - Consultant IA Toulouse: consultant-ia-toulouse.md

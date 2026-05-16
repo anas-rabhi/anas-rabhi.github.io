@@ -26,6 +26,8 @@ J'ai déjà écrit un article sur [comment améliorer le RAG avec des métriques
 
 <!-- more -->
 
+> Pour le panorama complet — fondations, optimisation, échecs et solutions — voir le [guide RAG](/rag/).
+
 ## Le RAG n'est pas magique (et c'est normal)
 
 Le RAG, c'est un peu LE projet à la mode depuis le début de l'IA générative. Tout le monde veut son assistant boosté à l'IA, capable de répondre à n'importe quelle question sur ses données. On trouve des tutos "RAG en deux lignes", des outils "no-code", et ça donne l'impression que c'est simple.

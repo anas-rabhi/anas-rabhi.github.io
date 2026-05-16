@@ -35,6 +35,8 @@ Je vais illustrer ça avec un cas concret qu'on a réalisé récemment : l'autom
 
 <!-- more -->
 
+> Cas d'usage rattaché au [guide complet sur le RAG](/rag/) — application concrète des briques techniques à un secteur métier.
+
 ## Rédaction d'appels d'offres dans le BTP : un processus chronophage
 
 Mon client opère dans le secteur du BTP et répond régulièrement à des appels d'offres pour **plus de 30 corps de métiers** (électricité, plomberie, charpente, aménagement paysager, etc.) et **plus de 40 clients différents**. Chaque réponse à un appel d'offres demande un travail considérable :

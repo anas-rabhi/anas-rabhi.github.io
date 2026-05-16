@@ -35,6 +35,8 @@ Je vais illustrer ça avec un cas concret qu'on a réalisé récemment : l'autom
 
 <!-- more -->
 
+> Cas d'usage rattaché au [guide complet sur le RAG](/rag/) — un pipeline RAG appliqué à l'assurance.
+
 ## Le problème : un rapport qui prend des heures
 
 Quand un menuisier intervient après un sinistre (infiltrations, dégâts des eaux, défauts de menuiseries extérieures), il doit produire un **rapport d'inspection** destiné à l'assureur. Ce rapport suit un formalisme strict : références du dossier expert, localisation du bien, classement chronologique des photos de chantier, constatations techniques, conclusion, export au format DOCX conforme.

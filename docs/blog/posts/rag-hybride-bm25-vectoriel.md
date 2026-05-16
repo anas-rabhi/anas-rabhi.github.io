@@ -33,6 +33,8 @@ C'est ce qu'on appelle le **vocabulary mismatch**. Et c'est le problème que le 
 
 <!-- more -->
 
+> Le retrieval hybride est la 4ᵉ brique d'un RAG. Pour situer cette technique dans l'architecture complète, voir le [guide RAG](/rag/).
+
 ***
 
 ## 3 types de requêtes où le vectoriel seul échoue

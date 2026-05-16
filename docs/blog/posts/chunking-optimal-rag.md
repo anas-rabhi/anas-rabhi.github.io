@@ -34,6 +34,8 @@ Le chunking, c'est la décision sur laquelle la plupart des équipes passent le 
 
 <!-- more -->
 
+> Le chunking est une brique du RAG parmi d'autres. Pour le panorama d'ensemble — embeddings, retrieval, évaluation — voir le [guide complet du RAG](/rag/).
+
 ***
 
 ## Pourquoi le chunking est la décision la plus importante de votre RAG

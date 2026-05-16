@@ -28,6 +28,8 @@ En entreprise, on a souvent des dizaines (voire des centaines) de fichiers. Le R
 
 <!-- more -->
 
+> Pour la vue d'ensemble — quand le RAG fonctionne, où il atteint ses limites — voir le [guide RAG](/rag/).
+
 
 C'est une technique comme une autre : parfois adaptée, parfois non. Si vous avez un petit document de 10 pages, inutile de monter un RAG : on peut le charger directement dans un LLM et poser des questions. En revanche, 100 articles de 100 pages, même si c'est *possible* à charger, ce n'est pas toujours pertinent (ni rentable).
 

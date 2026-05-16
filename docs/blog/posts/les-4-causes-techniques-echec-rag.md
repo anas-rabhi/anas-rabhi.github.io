@@ -34,6 +34,8 @@ Ici, on se concentre sur l'autre question : **pourquoi un RAG ne répond pas cor
 
 <!-- more -->
 
+> Pour comprendre les fondations techniques d'un RAG avant de diagnostiquer ses échecs, voir le [guide RAG complet](/rag/).
+
 ## Cause technique 1 — Le LLM n'est pas assez bon
 
 Ce cas est le plus simple. En général, avec le bon contexte, les derniers LLMs savent répondre.

@@ -33,6 +33,8 @@ Dans cet article, je vais vous montrer pourquoi cette structuration des document
 
 <!-- more -->
 
+> Le parsing fait partie des étapes critiques d'un système RAG. Vue d'ensemble : [guide complet du RAG](/rag/).
+
 ***
 
 ## Pourquoi n'existe-t-il pas de méthode parfaite pour extraire un PDF ?

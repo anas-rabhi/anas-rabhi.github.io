@@ -27,6 +27,8 @@ Ce sont des erreurs qu'on fait tous au moins une fois. L'idée ici, c'est de les
 
 <!-- more -->
 
+> Article rattaché au [guide complet sur le RAG](/rag/) — où je détaille fondations, optimisation et mise en production.
+
 ## Erreur n°1 — Croire que le RAG va répondre à tout
 
 C'est probablement l'erreur la plus fréquente, et elle ne vient pas forcément de l'équipe technique. Elle vient d'un décalage entre ce que le client imagine et ce que le RAG fait réellement.

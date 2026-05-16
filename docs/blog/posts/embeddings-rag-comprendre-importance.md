@@ -28,6 +28,8 @@ Dans cet article, je vous explique ce que c'est vraiment, comment ça fonctionne
 
 <!-- more -->
 
+> Les embeddings sont l'une des 5 briques d'un RAG. Pour le panorama d'ensemble, voir le [guide RAG complet](/rag/).
+
 ***
 
 ## Sommaire

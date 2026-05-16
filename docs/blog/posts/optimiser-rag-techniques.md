@@ -34,6 +34,8 @@ Le vrai ordre d'optimisation d'un RAG, c'est : **mesurer d'abord, puis retrieval
 
 <!-- more -->
 
+> Ces techniques d'optimisation s'inscrivent dans une vision complète du RAG. Le panorama : [le guide RAG](/rag/).
+
 ***
 
 ## Avant d'optimiser : établir une baseline

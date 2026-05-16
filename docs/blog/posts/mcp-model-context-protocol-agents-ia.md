@@ -33,6 +33,8 @@ Dans cet article, je vais vous expliquer ce qu'est MCP vraiment, comment son arc
 
 <!-- more -->
 
+> Le MCP est le standard de connexion des agents IA. Pour l'écosystème complet, voir le [guide Agents IA](/agents-ia/).
+
 ***
 
 ## D'où vient MCP, et pourquoi maintenant

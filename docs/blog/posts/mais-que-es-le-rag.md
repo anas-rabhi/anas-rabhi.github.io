@@ -44,6 +44,8 @@ Je vais donc essayer de revenir sur les points que j'ai l'habitude d'éclaircir 
 
 <!-- more --> 
 
+> Cet article fait partie du [guide complet sur le RAG](/rag/), qui regroupe l'ensemble des sujets — chunking, embeddings, retrieval, évaluation, mise en production.
+
 ### La facilité d'implémentation du RAG
 
 Mettre en place un RAG, c'est facile. C'est même trop facile : on suit un tuto, on branche deux librairies, et hop, ça tourne. Mais attention, le résultat n'est pas toujours à la hauteur des attentes (spoiler : souvent, on est déçu).

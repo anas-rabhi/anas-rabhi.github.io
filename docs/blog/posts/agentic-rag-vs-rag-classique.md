@@ -34,6 +34,8 @@ Alors dans cet article, je vais faire simple : ce qu'est vraiment l'Agentic RAG,
 
 <!-- more -->
 
+> Cet article est à la croisée du [guide RAG](/rag/) et du [guide Agents IA](/agents-ia/) — l'Agentic RAG combine les deux approches.
+
 ***
 
 ## Ce que fait un RAG classique (et ce qu'il ne peut pas faire)

@@ -29,6 +29,8 @@ Mais la réalité terrain ? Une fois le projet en place, les tests sont rarement
 
 <!-- more -->
 
+> Cet article fait partie de la réflexion sur les limites du RAG. Vue complète : [guide RAG](/rag/).
+
 **Première chose à retenir** : aucun système d'IA générative ne peut garantir 100 % de bonnes réponses. Même les meilleurs modèles de langage (LLM) comme GPT-5.2, Claude ou Mistral ont leurs limites. Pour mieux comprendre [les fondamentaux de l'IA générative](comprendre-l-IA-generative.md), je vous recommande cet article.
 
 La vraie question à se poser : **quel taux d'erreur suis-je prêt à accepter pour mon cas d'usage** ? Un chatbot de support client n'a pas les mêmes exigences qu'un système d'aide à la décision médicale. La valeur d'un système RAG, on l'obtient en comprenant bien le problème métier qu'on veut résoudre, pas en cherchant la perfection absolue.

@@ -34,6 +34,8 @@ C'est le sujet numéro un qui sépare un RAG POC d'un RAG production mature. Un 
 
 <!-- more -->
 
+> L'évaluation est la 5ᵉ brique d'un RAG en production. Pour l'ensemble du pipeline, voir le [guide RAG complet](/rag/).
+
 ***
 
 ## Pourquoi 80% des RAG en prod ne sont jamais vraiment évalués

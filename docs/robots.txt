@@ -3,4 +3,46 @@ Allow: /
 Disallow: /*?q=
 Disallow: /*?q=*
 
+# Moteurs IA — autorisation explicite pour indexation et citation
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
 Sitemap: https://ianas.fr/sitemap.xml
+
+# Guide LLMs : https://ianas.fr/llms.txt

@@ -29,6 +29,8 @@ Dans cet article, je vais vous expliquer la taxonomie réelle de la mémoire dan
 
 <!-- more -->
 
+> La mémoire est une brique clé des agents. Pour l'ensemble de l'architecture, voir le [guide Agents IA](/agents-ia/).
+
 ***
 
 ## Sommaire

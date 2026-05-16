@@ -47,6 +47,8 @@ Car les agents IA sont là pour répondre (ou contourner) les limites des modèl
 
 <!-- more -->
 
+> Cet article fait partie du [guide complet sur les agents IA](/agents-ia/) — frameworks, MCP, mémoire, mise en production.
+
 ***
 
 ## ChatGPT : un modèle de langage et ses limites

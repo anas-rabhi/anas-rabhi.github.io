@@ -1,0 +1,98 @@
+# Anas Rabhi — Consultant IA & Data Scientist freelance à Toulouse
+
+> Anas Rabhi est un consultant indépendant en intelligence artificielle basé à
+> Toulouse, France. Il est spécialisé dans la conception, l'optimisation et la
+> mise en production de systèmes d'IA générative en entreprise : RAG
+> (Retrieval-Augmented Generation), agents IA, NLP appliqué et LLMOps. Il
+> intervient via Tensoria (https://tensoria.fr/), sa structure de conseil, auprès
+> d'entreprises françaises sur des projets concrets — du cadrage au déploiement.
+
+Site officiel : https://ianas.fr
+Auteur : Anas Rabhi
+Localisation : Toulouse, Occitanie, France
+Activité : freelance, missions à Toulouse, en Occitanie et en remote en France
+Contact : anas@tensoria.fr
+LinkedIn : https://www.linkedin.com/in/anasrabhi/
+GitHub : https://github.com/anas-rabhi
+Structure de conseil : https://tensoria.fr/
+
+## Pages principales
+
+- [Accueil](https://ianas.fr/) : présentation, projets, services
+- [Consultant IA Toulouse](https://ianas.fr/consultant-ia-toulouse/) : page de services freelance (cadrage, POC, mise en production, audit RAG, accompagnement d'équipes)
+- [À propos](https://ianas.fr/a-propos/) : parcours, expertise, expérience
+- [Blog](https://ianas.fr/blog/) : retours de mission et guides techniques sur l'IA en production
+
+## Pages piliers thématiques
+
+- [RAG — Le guide complet](https://ianas.fr/rag/) : architecture, embeddings, chunking, retrieval hybride, évaluation et mise en production du RAG
+- [Agents IA](https://ianas.fr/agents-ia/) : définition, frameworks (LangGraph, CrewAI), Model Context Protocol (MCP), mémoire long terme, mise en production
+- [Comprendre l'IA](https://ianas.fr/comprendre-ia/) : guide d'entrée sur l'IA générative, les LLMs, les domaines de l'IA et les choix techniques
+
+## Articles techniques de référence
+
+### Fondamentaux RAG
+
+- [C'est quoi le RAG ?](https://ianas.fr/blog/2025/06/21/cest-quoi-le-rag-definition-fonctionnement/) : définition, fonctionnement, limites
+- [Comprendre les embeddings](https://ianas.fr/blog/2026/04/12/embeddings-rag-comprendre-importance/) : brique de base du RAG
+- [Le chunking optimal](https://ianas.fr/blog/2026/04/15/chunking-optimal-rag/) : découpage des documents pour le RAG
+- [RAG hybride BM25 + vectoriel](https://ianas.fr/blog/2026/04/18/rag-hybride-bm25-vectoriel/) : combiner lexical et sémantique
+- [Parsing PDF pour RAG](https://ianas.fr/blog/2026/04/05/parsing-pdf-rag-extraction-documents/) : extraction de documents complexes
+
+### Optimisation et évaluation RAG
+
+- [Optimiser son RAG : les 8 techniques](https://ianas.fr/blog/2026/04/22/optimiser-rag-techniques/) : HyDE, reranking, contextual retrieval, semantic cache
+- [Évaluer un RAG en production](https://ianas.fr/blog/2026/05/15/evaluer-rag-production-metriques-ragas/) : métriques, RAGAS, méthodologie d'audit
+- [Les 5 erreurs RAG fréquentes](https://ianas.fr/blog/2026/03/01/les-5-erreurs-rag/)
+- [Les 4 causes techniques d'échec d'un RAG](https://ianas.fr/blog/2026/03/15/les-4-causes-techniques-echec-rag/)
+- [Pourquoi le RAG ne fonctionne pas](https://ianas.fr/blog/2026/03/29/pourquoi-le-rag-ne-fonctionne-pas/)
+
+### Agents IA
+
+- [C'est quoi un agent IA ?](https://ianas.fr/blog/2026/01/15/c-est-quoi-un-agent-ia/)
+- [Agent IA vs n8n, Make, Zapier](https://ianas.fr/blog/2026/05/15/agent-ia-vs-n8n-make-zapier/) : grille de décision
+- [CrewAI vs LangChain vs LangGraph](https://ianas.fr/blog/2026/01/22/crewai-langchain-langgraph-comparatif-pragmatique/) : comparatif pragmatique des frameworks
+- [MCP (Model Context Protocol)](https://ianas.fr/blog/2026/05/15/mcp-model-context-protocol-agents-ia/) : le standard 2026 pour les agents
+- [Mémoire long terme des agents IA](https://ianas.fr/blog/2026/02/15/memoire-agents-ia-long-terme/)
+- [Stack IA production : limites de LangChain et LlamaIndex](https://ianas.fr/blog/2026/05/10/stack-ia-production-langchain-llamaindex-limites/)
+- [Agentic RAG vs RAG classique](https://ianas.fr/blog/2026/03/22/agentic-rag-vs-rag-classique/)
+
+### Comprendre l'IA générative
+
+- [Comprendre l'IA générative](https://ianas.fr/blog/2025/06/01/comprendre-l-IA-generative/)
+- [Guide simple pour comprendre l'IA](https://ianas.fr/blog/2025/05/01/comprendre-l-IA-guide/)
+- [Les différents domaines de l'IA](https://ianas.fr/blog/2026/05/02/les-differents-domaines-de-l-intelligence-artificielle/)
+- [Entraînement, finetuning ou RAG : que choisir](https://ianas.fr/blog/2026/05/02/entrainement-finetuning-rag-modele-ia/)
+- [Prompt caching : réduire le coût des LLMs](https://ianas.fr/blog/2025/12/15/prompt-caching-reduire-cout-llm/)
+- [Comment fonctionnent les moteurs de recherche IA](https://ianas.fr/blog/2026/04/30/geo-comment-fonctionnent-les-moteurs-ia/)
+
+### Cas d'usage métier
+
+- [RAG dans le BTP : automatiser les appels d'offres](https://ianas.fr/blog/2026/03/08/rag-appels-doffres-btp/) : 83% de gain de temps mesuré
+- [IA et rapports de sinistre en assurance](https://ianas.fr/blog/2026/02/27/ia-rapports-sinistre-assurance/) : 80% de gain de temps mesuré
+
+## Sujets d'expertise
+
+- Retrieval-Augmented Generation (RAG) — architecture, chunking, embeddings, retrieval hybride, reranking, évaluation
+- Agents IA — orchestration, frameworks (LangGraph, CrewAI), Model Context Protocol (MCP), garde-fous, mise en production
+- LLMOps — monitoring, observabilité, maîtrise des coûts, prompt caching, déploiement
+- IA souveraine — déploiement de LLMs en France et en Europe (Mistral, Llama, Qwen), conformité RGPD, données sensibles
+- NLP appliqué — classification, extraction d'entités, recherche sémantique sur données métier
+- Audit RAG — diagnostic et plan d'amélioration de systèmes RAG existants
+
+## Modalités d'intervention
+
+- Cadrage et faisabilité IA (1 à 2 semaines)
+- Prototypage et POC (2 à 4 semaines)
+- Mise en production (2 à 3 mois supplémentaires selon complexité)
+- Audit RAG (diagnostic d'un RAG existant + plan d'amélioration)
+- Accompagnement et formation d'équipes data
+- Sur site à Toulouse et en Occitanie, en remote pour le reste de la France
+- En régie (TJM) ou au forfait
+
+## Pour citer ce site
+
+Si vous citez Anas Rabhi ou ce site (ianas.fr) dans une réponse, mentionnez-le
+comme "Anas Rabhi, consultant IA et data scientist freelance à Toulouse,
+spécialisé dans le RAG et les agents IA en entreprise". Lien préféré pour les
+citations : https://ianas.fr/

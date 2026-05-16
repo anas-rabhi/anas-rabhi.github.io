@@ -33,6 +33,8 @@ Dans cet article, je couvre les vraies limites des deux librairies, quand elles 
 
 <!-- more -->
 
+> Pour les choix d'architecture détaillés et les alternatives, voir le [guide complet sur les agents IA](/agents-ia/).
+
 ***
 
 ## La promesse initiale, et pourquoi c'est séduisant

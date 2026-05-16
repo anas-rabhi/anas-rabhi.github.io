@@ -33,6 +33,8 @@ Position claire dès le départ : **dans la majorité des cas PME, un n8n bien f
 
 <!-- more -->
 
+> Pour le panorama des cas où l'agent IA l'emporte sur le no-code, voir le [guide Agents IA](/agents-ia/).
+
 ***
 
 ## La confusion à dissiper d'abord
