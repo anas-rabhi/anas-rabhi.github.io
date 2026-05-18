@@ -36,7 +36,7 @@ Ici, on se concentre sur l'autre question : **pourquoi un RAG ne répond pas cor
 
 > Pour comprendre les fondations techniques d'un RAG avant de diagnostiquer ses échecs, voir le [guide RAG complet](/rag/).
 
-## Cause technique 1 — Le LLM n'est pas assez bon
+## Cause technique 1 : Le LLM n'est pas assez bon
 
 Ce cas est le plus simple. En général, avec le bon contexte, les derniers LLMs savent répondre.
 
@@ -44,13 +44,13 @@ Quand le LLM est en cause ? Souvent quand il est noyé dans l'information : on r
 
 Comment corriger ? Soit on choisit un meilleur modèle, soit on optimise le nombre de chunks à extraire. Mais ça, c'est un autre chantier.
 
-## Cause technique 2 — Le parsing des documents est insuffisant
+## Cause technique 2 : Le parsing des documents est insuffisant
 
 Le parsing consiste à extraire correctement les informations des documents. Exemple : une facture doit être extraite de façon structurée. Les tableaux sont un cas classique : selon leur format, récupérer les colonnes et les lignes peut devenir très complexe. Même les images posent problème, sauf si on les décrit via un LLM et qu'on insère la description dans le texte.
 
 Le parsing est l'un des plus gros problèmes du RAG. Il est difficile d'avoir un parsing propre, car chaque entreprise structure ses documents différemment (tableaux, images, formules, graphiques, etc.). Le parsing est donc spécifique à chaque type de document, même s'il existe des solutions qui tentent de généraliser (par exemple docling : https://www.docling.ai/). J'ai d'ailleurs consacré un article complet à ce sujet avec un comparatif honnête des outils 2026 (Docling, Unstructured, LlamaParse, Marker) et deux cas clients concrets (industriel et e-commerce) : [parsing PDF pour RAG, comment vraiment extraire la donnée de vos documents](parsing-pdf-rag-extraction-documents.md).
 
-## Cause technique 3 — L'information n'est pas dans le contexte fourni
+## Cause technique 3 : L'information n'est pas dans le contexte fourni
 
 Parfois, on ne récupère pas les bons documents : la requête est floue ou ne matche pas bien avec la base vectorielle.
 
@@ -58,7 +58,7 @@ Dans ce cas, le problème peut venir du **chunking**. Exemple : un PDF où le de
 
 Si c'est la cause (on peut le savoir en analysant les erreurs, voir cet [article](pourquoi-le-rag-ne-fonctionne-pas.md)), il faut travailler le chunking : taille des chunks, méthode de découpage, overlap, etc.
 
-## Cause technique 4 — L'information n'est pas dans les documents (et le chunking est bon)
+## Cause technique 4 : L'information n'est pas dans les documents (et le chunking est bon)
 
 Parfois, même avec un bon chunking, le problème vient du **retriever**. Le retriever récupère les chunks pertinents et les injecte dans le prompt. S'il ne trouve pas les bons chunks, le LLM ne pourra pas répondre.
 
@@ -66,7 +66,7 @@ Souvent, la recherche est sémantique. On utilise un modèle d'embeddings pour v
 
 On peut optimiser l'embedding model, surtout si vous utilisez un modèle open source comme `BAAI/bge-m3` (https://huggingface.co/BAAI/bge-m3). Si vous utilisez un modèle comme `text-embedding-3-large` d'OpenAI, on est déjà sur du très performant, sauf si votre champ lexical est très spécifique (univers de niche). Dans ce cas, on peut imaginer un fine-tuning, mais c'est une option à privilégier après les autres.
 
-Une méthode très efficace consiste à **combiner recherche sémantique et recherche par mots-clés**, via des techniques de type BM25 (https://en.wikipedia.org/wiki/Okapi_BM25) — j'ai détaillé la mise en pratique du [RAG hybride BM25 + vectoriel](rag-hybride-bm25-vectoriel.md) dans un article dédié. Dans certains cas, on observe des gains de 10 à 20 % de qualité. Exemple : sur un site e-commerce, une requête sur une couleur peut être mal gérée par la recherche sémantique ; ajouter la recherche par mots-clés force les chunks qui contiennent la couleur.
+Une méthode très efficace consiste à **combiner recherche sémantique et recherche par mots-clés**, via des techniques de type BM25 (https://en.wikipedia.org/wiki/Okapi_BM25) ; j'ai détaillé la mise en pratique du [RAG hybride BM25 + vectoriel](rag-hybride-bm25-vectoriel.md) dans un article dédié. Dans certains cas, on observe des gains de 10 à 20 % de qualité. Exemple : sur un site e-commerce, une requête sur une couleur peut être mal gérée par la recherche sémantique ; ajouter la recherche par mots-clés force les chunks qui contiennent la couleur.
 
 Enfin, même avec tout ça, le retriever peut ne pas atteindre les performances ciblées (viser 100 % de bonnes réponses n'est pas réaliste). Une cause fréquente : la recherche est basée sur la **question**, alors que ce qu'on veut extraire, c'est la **réponse**. La question peut être trop courte ou vague. Il existe des techniques pour ça (https://arxiv.org/pdf/2312.10997), comme HyDE (Hypothetical Document Embeddings), très utile quand la question est mal formulée. Pour aller plus loin sur ces leviers de retrieval (reranking, contextual retrieval, query rewriting, etc.), j'ai consacré un article complet aux [techniques pour optimiser son RAG](optimiser-rag-techniques.md) avec le gain mesuré pour chacune.
 

@@ -8,7 +8,7 @@ hide:
 
 # Comprendre l'intelligence artificielle générative
 
-L'IA générative a tout changé en deux ans. Mais derrière le buzz, il y a des **briques techniques précises**, des **choix d'architecture qui ont des conséquences sur le coût et la performance**, et des **limites réelles** qu'il faut comprendre avant de se lancer. Cette page est le point d'entrée vers les guides généralistes du blog — la base pour bien choisir avant d'aller plus loin sur le [RAG](/rag/) ou les [agents IA](/agents-ia/).
+L'IA générative a tout changé en deux ans. Mais derrière le buzz, il y a des **briques techniques précises**, des **choix d'architecture qui ont des conséquences sur le coût et la performance**, et des **limites réelles** qu'il faut comprendre avant de se lancer. Cette page est le point d'entrée vers les guides généralistes du blog, la base pour bien choisir avant d'aller plus loin sur le [RAG](/rag/) ou les [agents IA](/agents-ia/).
 
 Je m'appelle **Anas Rabhi**, consultant IA freelance à Toulouse. Je rédige ce contenu en m'appuyant sur ce que je vois en mission : les questions que se posent vraiment les CTO, les chefs de projet et les data scientists qui démarrent sur l'IA générative.
 
@@ -19,7 +19,7 @@ Je m'appelle **Anas Rabhi**, consultant IA freelance à Toulouse. Je rédige ce 
 
 ## Qu'est-ce que l'IA générative
 
-L'IA générative désigne les modèles capables de **produire du contenu** (texte, image, code, audio) à partir d'une consigne. Les modèles de langage (LLM) — GPT, Claude, Mistral, Llama, Gemini — sont les plus visibles, mais ce n'est qu'une famille parmi d'autres.
+L'IA générative désigne les modèles capables de **produire du contenu** (texte, image, code, audio) à partir d'une consigne. Les modèles de langage (LLM) comme GPT, Claude, Mistral, Llama ou Gemini sont les plus visibles, mais ce n'est qu'une famille parmi d'autres.
 
 La rupture par rapport à l'IA "classique" (machine learning, deep learning supervisé) : on n'a plus besoin de réentraîner un modèle sur ses propres données pour résoudre un problème. On utilise un modèle pré-entraîné, et on l'adapte par **prompting**, **RAG**, ou **finetuning** léger.
 
@@ -64,7 +64,7 @@ L'arbre de décision complet avec exemples chiffrés : [Entraînement, finetunin
 
 ## Comment fonctionnent les moteurs de recherche IA (GEO)
 
-Avec ChatGPT, Perplexity, Gemini et Google AI Overviews, **20 à 30 % des clics organiques** ne vont plus aux résultats classiques de Google. Pour les entreprises qui veulent rester visibles, il faut désormais optimiser pour les **moteurs IA**, pas seulement pour Google — c'est le **GEO (Generative Engine Optimization)**.
+Avec ChatGPT, Perplexity, Gemini et Google AI Overviews, **20 à 30 % des clics organiques** ne vont plus aux résultats classiques de Google. Pour les entreprises qui veulent rester visibles, il faut désormais optimiser pour les **moteurs IA**, pas seulement pour Google. C'est le **GEO (Generative Engine Optimization)**.
 
 Comment ces moteurs choisissent les sources qu'ils citent, et comment se positionner : [Comment fonctionnent les moteurs de recherche IA](/blog/2026/04/30/geo-comment-fonctionnent-les-moteurs-ia/).
 
@@ -72,7 +72,7 @@ Comment ces moteurs choisissent les sources qu'ils citent, et comment se positio
 
 ## Utiliser ChatGPT efficacement
 
-Avant de parler d'IA en production, beaucoup d'entreprises sous-utilisent **ChatGPT lui-même**. Les bonnes pratiques de prompting, les modes (Projects, GPTs, Canvas), les limites à connaître — ça vaut déjà des heures de productivité par semaine sans aucun développement.
+Avant de parler d'IA en production, beaucoup d'entreprises sous-utilisent **ChatGPT lui-même**. Les bonnes pratiques de prompting, les modes (Projects, GPTs, Canvas), les limites à connaître : ça vaut déjà des heures de productivité par semaine sans aucun développement.
 
 Le guide pratique : [Utiliser ChatGPT efficacement](/blog/2025/11/15/utiliser-chatgpt-efficacement/).
 
@@ -108,11 +108,11 @@ L'IA bouge vite. Trop vite pour suivre tous les papiers, tous les modèles, tous
 
 ### Tu veux interroger tes documents internes
 
-→ Lire [RAG — Le guide complet](/rag/)
+→ Lire [RAG, le guide complet](/rag/)
 
 ### Tu veux automatiser un workflow ou créer un assistant qui agit
 
-→ Lire [Agents IA — Architecture, frameworks et mise en production](/agents-ia/)
+→ Lire [Agents IA : architecture, frameworks et mise en production](/agents-ia/)
 
 ### Tu veux discuter d'un projet concret
 
@@ -122,13 +122,13 @@ L'IA bouge vite. Trop vite pour suivre tous les papiers, tous les modèles, tous
 
 ## Questions fréquentes
 
-### IA générative, machine learning, deep learning — quelle différence ?
+### IA générative, machine learning, deep learning : quelle différence ?
 
 Le **machine learning** est l'ensemble des techniques où un modèle apprend à partir de données (régression, classification, clustering). Le **deep learning** est un sous-ensemble du machine learning utilisant des réseaux de neurones profonds. L'**IA générative** est un sous-ensemble du deep learning qui produit du contenu (texte, image, code) plutôt que de classer ou prédire. Les LLMs sont la branche la plus visible de l'IA générative.
 
 ### Faut-il un data scientist pour faire de l'IA générative ?
 
-Pour utiliser ChatGPT et brancher quelques APIs, non. Pour mettre un système IA **en production** avec des contraintes de qualité, de coût et de sécurité, oui — ou un consultant IA expérimenté en mission. L'expertise se voit surtout sur l'évaluation, la gestion des erreurs et les garde-fous, pas sur le code de base.
+Pour utiliser ChatGPT et brancher quelques APIs, non. Pour mettre un système IA **en production** avec des contraintes de qualité, de coût et de sécurité, oui, ou un consultant IA expérimenté en mission. L'expertise se voit surtout sur l'évaluation, la gestion des erreurs et les garde-fous, pas sur le code de base.
 
 ### Combien de temps pour acculturer une équipe à l'IA ?
 
@@ -154,7 +154,7 @@ Tu démarres sur l'IA générative et tu veux poser les bonnes bases ? Le premie
 
 ---
 
-*Page rédigée par Anas Rabhi — Consultant IA & Data Scientist freelance à Toulouse. Dernière mise à jour : mai 2026.*
+*Page rédigée par Anas Rabhi, Consultant IA & Data Scientist freelance à Toulouse. Dernière mise à jour : mai 2026.*
 
 <script type="application/ld+json">
 {
@@ -162,7 +162,7 @@ Tu démarres sur l'IA générative et tu veux poser les bonnes bases ? Le premie
   "@graph": [
     {
       "@type": "TechArticle",
-      "headline": "Comprendre l'intelligence artificielle générative — Guide pour les décideurs et les équipes tech",
+      "headline": "Comprendre l'intelligence artificielle générative : guide pour les décideurs et les équipes tech",
       "description": "Guide pour comprendre l'IA générative, les LLMs, les domaines de l'IA et les choix techniques (RAG, finetuning, prompt).",
       "url": "https://ianas.fr/comprendre-ia/",
       "inLanguage": "fr",
@@ -206,7 +206,7 @@ Tu démarres sur l'IA générative et tu veux poser les bonnes bases ? Le premie
           "name": "Faut-il un data scientist pour faire de l'IA générative ?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Pour utiliser ChatGPT et brancher quelques APIs, non. Pour mettre un système IA en production avec des contraintes de qualité, de coût et de sécurité, oui — ou un consultant IA expérimenté en mission."
+            "text": "Pour utiliser ChatGPT et brancher quelques APIs, non. Pour mettre un système IA en production avec des contraintes de qualité, de coût et de sécurité, oui, ou un consultant IA expérimenté en mission."
           }
         },
         {

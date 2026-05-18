@@ -8,7 +8,7 @@ hide:
 
 # Consultant IA & Data Scientist Freelance à Toulouse
 
-Je m'appelle **Anas Rabhi**. Je suis data scientist freelance basé à Toulouse, et je travaille directement avec mes clients sur des sujets qui rentrent dans mon champ d'expertise — principalement l'**IA générative appliquée à des cas d'usage métiers et concrets**. Je pense que chaque entreprise a sa propre façon de faire, et j'essaie de m'adapter à ce contexte plutôt que de plaquer une solution standard.
+Je m'appelle **Anas Rabhi**. Je suis data scientist freelance basé à Toulouse, et je travaille directement avec mes clients sur des sujets qui rentrent dans mon champ d'expertise, principalement l'**IA générative appliquée à des cas d'usage métiers et concrets**. Je pense que chaque entreprise a sa propre façon de faire, et j'essaie de m'adapter à ce contexte plutôt que de plaquer une solution standard.
 
 Du cadrage au déploiement en production, je reste impliqué de bout en bout. Mes missions passent par [Tensoria](https://tensoria.fr/), ma structure de conseil en IA. Je travaille sur les sujets que je connais bien : RAG, agents IA, NLP, LLMOps.
 
@@ -21,7 +21,7 @@ Du cadrage au déploiement en production, je reste impliqué de bout en bout. Me
 
 Quand je travaille en freelance, j'essaie de garder les choses simples : pas d'intermédiaire, pas de marge d'agence, pas d'effet tunnel. Vous me parlez directement, et c'est moi qui code derrière. Je pense que sur des projets IA, cette boucle de feedback courte évite beaucoup d'erreurs coûteuses.
 
-C'est aussi un choix de proximité. J'interviens **sur site à Toulouse et en Occitanie**, avec la flexibilité du remote pour les phases de développement. Toulouse concentre un tissu industriel dense — aéronautique, spatial, assurance, e-commerce, santé — et chaque secteur a ses propres enjeux en matière d'IA. J'essaie de bien comprendre ces contraintes avant de proposer quoi que ce soit : confidentialité des données, intégration aux systèmes legacy, validation métier, souveraineté numérique.
+C'est aussi un choix de proximité. J'interviens **sur site à Toulouse et en Occitanie**, avec la flexibilité du remote pour les phases de développement. Toulouse concentre un tissu industriel dense (aéronautique, spatial, assurance, e-commerce, santé), et chaque secteur a ses propres enjeux en matière d'IA. J'essaie de bien comprendre ces contraintes avant de proposer quoi que ce soit : confidentialité des données, intégration aux systèmes legacy, validation métier, souveraineté numérique.
 
 L'**écosystème IA toulousain** est en pleine expansion : Aerospace Valley fédère des acteurs qui expérimentent l'IA sur des données complexes et sensibles, la French Tech Toulouse soutient des startups qui ont besoin de profils techniques sans embauche longue durée. C'est dans cet environnement que je travaille au quotidien.
 
@@ -31,11 +31,11 @@ L'**écosystème IA toulousain** est en pleine expansion : Aerospace Valley féd
 
 ### Cadrage et faisabilité IA
 
-Avant de coder quoi que ce soit, je prends le temps de comprendre le problème métier. Une à deux semaines pour définir les KPIs, choisir l'approche technique adaptée — RAG, agent, finetuning, extraction — et estimer le budget et les délais de façon réaliste. Beaucoup de projets échouent faute d'un cadrage sérieux, donc c'est une étape sur laquelle j'évite de couper les coins.
+Avant de coder quoi que ce soit, je prends le temps de comprendre le problème métier. Une à deux semaines pour définir les KPIs, choisir l'approche technique adaptée (RAG, agent, finetuning, extraction) et estimer le budget et les délais de façon réaliste. Beaucoup de projets échouent faute d'un cadrage sérieux, donc c'est une étape sur laquelle j'évite de couper les coins.
 
 ### Prototypage et POC
 
-Un POC fonctionnel en deux à quatre semaines, sur un sous-ensemble réel de vos données. Pas une démo avec des données fictives : un prototype qui teste les vraies hypothèses sur votre vrai contexte. C'est ce qui permet de décider — investir ou pivoter — avant d'engager un budget de production.
+Un POC fonctionnel en deux à quatre semaines, sur un sous-ensemble réel de vos données. Pas une démo avec des données fictives : un prototype qui teste les vraies hypothèses sur votre vrai contexte. C'est ce qui permet de décider (investir ou pivoter) avant d'engager un budget de production.
 
 ### Mise en production
 
@@ -43,7 +43,7 @@ L'intégration aux systèmes existants (API, CRM, ERP, outils internes), la séc
 
 ### Audit RAG
 
-Vous avez déjà un RAG en place qui ne donne pas les résultats attendus ? Je diagnostique les problèmes — qualité du chunking, stratégie de retrieval, prompt engineering, évaluation — et je propose un plan d'amélioration concret. Voir aussi : [les 5 erreurs classiques du RAG](/blog/2026/03/01/les-5-erreurs-rag/) et [les 4 causes techniques d'échec](/blog/2026/03/15/les-4-causes-techniques-echec-rag/).
+Vous avez déjà un RAG en place qui ne donne pas les résultats attendus ? Je diagnostique les problèmes (qualité du chunking, stratégie de retrieval, prompt engineering, évaluation) et je propose un plan d'amélioration concret. Voir aussi : [les 5 erreurs classiques du RAG](/blog/2026/03/01/les-5-erreurs-rag/) et [les 4 causes techniques d'échec](/blog/2026/03/15/les-4-causes-techniques-echec-rag/).
 
 ### Accompagnement et formation d'équipes data
 
@@ -55,11 +55,11 @@ Si votre équipe monte en compétence sur les LLMs et les agents IA, je peux co-
 
 ### RAG et moteurs de recherche sémantique
 
-Retrieval hybride (BM25 + vectoriel), reranking, chunking sémantique, évaluation de la qualité des réponses, réduction des hallucinations. C'est le sujet sur lequel je passe le plus de temps en mission, et celui que je connais le mieux — j'ai écrit une série d'articles techniques dessus, notamment sur [comment optimiser un RAG](/blog/2026/04/22/optimiser-rag-techniques/) et sur [le chunking optimal](/blog/2026/04/15/chunking-optimal-rag/).
+Retrieval hybride (BM25 + vectoriel), reranking, chunking sémantique, évaluation de la qualité des réponses, réduction des hallucinations. C'est le sujet sur lequel je passe le plus de temps en mission, et celui que je connais le mieux. J'ai écrit une série d'articles techniques dessus, notamment sur [comment optimiser un RAG](/blog/2026/04/22/optimiser-rag-techniques/) et sur [le chunking optimal](/blog/2026/04/15/chunking-optimal-rag/).
 
 ### Agents IA
 
-Orchestration d'outils, workflows multi-étapes, robustesse en production, garde-fous et validation humaine dans la boucle. La différence entre un [agent IA](/blog/2026/01/15/c-est-quoi-un-agent-ia/) utile et un agent qui part dans tous les sens tient souvent à des choix d'architecture précis — je les ai appris sur des projets réels, en me trompant pas mal au début.
+Orchestration d'outils, workflows multi-étapes, robustesse en production, garde-fous et validation humaine dans la boucle. La différence entre un [agent IA](/blog/2026/01/15/c-est-quoi-un-agent-ia/) utile et un agent qui part dans tous les sens tient souvent à des choix d'architecture précis. Je les ai appris sur des projets réels, en me trompant pas mal au début.
 
 ### NLP
 
@@ -71,7 +71,7 @@ Monitoring des performances, maîtrise des coûts d'API, sécurité, déploiemen
 
 ### IA souveraine
 
-Pour les données sensibles ou confidentielles — données spatiales, données de santé, données contractuelles — je déploie des solutions sans sortie de données du périmètre : LLMs souverains (Mistral, Llama, Qwen), hébergement on-premise ou cloud privé européen (Azure EU, OVHcloud). Voir [la page d'accueil](/) pour un cas concret sur des données spatiales confidentielles.
+Pour les données sensibles ou confidentielles (données spatiales, données de santé, données contractuelles), je déploie des solutions sans sortie de données du périmètre : LLMs souverains (Mistral, Llama, Qwen), hébergement on-premise ou cloud privé européen (Azure EU, OVHcloud). Voir [la page d'accueil](/) pour un cas concret sur des données spatiales confidentielles.
 
 ---
 
@@ -87,7 +87,7 @@ En assurance, la rédaction et le traitement des rapports de sinistre mobilisent
 
 ### E-commerce et relation client
 
-Un assistant RAG déployé sur un site e-commerce traite les questions clients courantes — disponibilité, délais, caractéristiques produit — et laisse le service client se concentrer sur les cas complexes. Intégration légère, résultats visibles dès les premières semaines.
+Un assistant RAG déployé sur un site e-commerce traite les questions clients courantes (disponibilité, délais, caractéristiques produit) et laisse le service client se concentrer sur les cas complexes. Intégration légère, résultats visibles dès les premières semaines.
 
 ### Industrie et assistance opérateurs
 
@@ -97,11 +97,11 @@ Sur des chaînes de production, un assistant IA aide les opérateurs à diagnost
 
 ## Modalités d'intervention
 
-**Sur site à Toulouse et en Occitanie** — je me déplace chez vous pour les phases de cadrage, les ateliers de co-construction et les revues d'avancement. La proximité géographique a une vraie valeur dans les projets complexes : les échanges informels au tableau blanc font souvent avancer plus vite que trois visioconférences.
+**Sur site à Toulouse et en Occitanie** : je me déplace chez vous pour les phases de cadrage, les ateliers de co-construction et les revues d'avancement. La proximité géographique a une vraie valeur dans les projets complexes : les échanges informels au tableau blanc font souvent avancer plus vite que trois visioconférences.
 
-**Remote pour la France entière** — les phases de développement et de prototypage se font très bien à distance. Je travaille avec des clients à Paris, Lyon, Bordeaux et ailleurs sans friction.
+**Remote pour la France entière** : les phases de développement et de prototypage se font très bien à distance. Je travaille avec des clients à Paris, Lyon, Bordeaux et ailleurs sans friction.
 
-**Régie ou forfait** — selon la nature de la mission. Le cadrage se fait généralement en forfait fixe. Le développement en régie (TJM) ou en forfait selon la maturité du périmètre. Le premier échange de cadrage est toujours gratuit.
+**Régie ou forfait** : selon la nature de la mission. Le cadrage se fait généralement en forfait fixe. Le développement en régie (TJM) ou en forfait selon la maturité du périmètre. Le premier échange de cadrage est toujours gratuit.
 
 ---
 
@@ -109,11 +109,11 @@ Sur des chaînes de production, un assistant IA aide les opérateurs à diagnost
 
 Si vous voulez comprendre l'approche technique avant de nous parler, voici les articles les plus utiles :
 
-- [Qu'est-ce que le RAG ?](/blog/2026/02/01/mais-que-es-le-rag/) — comprendre le principe fondamental
-- [Entraînement, finetuning ou RAG : que choisir ?](/blog/2026/05/02/entrainement-finetuning-rag-modele-ia/) — l'arbre de décision
-- [Les différents domaines de l'IA](/blog/2026/05/02/les-differents-domaines-de-l-intelligence-artificielle/) — au-delà de ChatGPT
-- [Agentic RAG vs RAG classique](/blog/2026/03/22/agentic-rag-vs-rag-classique/) — quand passer aux agents
-- [Tous les articles du blog](/blog/) — retours d'expérience et guides techniques
+- [Qu'est-ce que le RAG ?](/blog/2026/02/01/mais-que-es-le-rag/) : comprendre le principe fondamental
+- [Entraînement, finetuning ou RAG : que choisir ?](/blog/2026/05/02/entrainement-finetuning-rag-modele-ia/) : l'arbre de décision
+- [Les différents domaines de l'IA](/blog/2026/05/02/les-differents-domaines-de-l-intelligence-artificielle/) : au-delà de ChatGPT
+- [Agentic RAG vs RAG classique](/blog/2026/03/22/agentic-rag-vs-rag-classique/) : quand passer aux agents
+- [Tous les articles du blog](/blog/) : retours d'expérience et guides techniques
 
 ---
 
@@ -121,11 +121,11 @@ Si vous voulez comprendre l'approche technique avant de nous parler, voici les a
 
 ### Intervenez-vous uniquement à Toulouse ?
 
-Non. Je suis basé à Toulouse et j'interviens sur site en Occitanie, mais je travaille avec des entreprises partout en France en remote. Les phases de cadrage et de lancement gagnent à se faire en présentiel — ensuite, le remote fonctionne très bien.
+Non. Je suis basé à Toulouse et j'interviens sur site en Occitanie, mais je travaille avec des entreprises partout en France en remote. Les phases de cadrage et de lancement gagnent à se faire en présentiel. Ensuite, le remote fonctionne très bien.
 
 ### Quel budget prévoir pour un projet IA ?
 
-Un POC se situe entre 5 k€ et 25 k€ selon la complexité. Une mise en production complète (RAG ou agent IA en conditions réelles) démarre autour de 30 k€. À cela s'ajoutent les coûts d'infrastructure — API LLM, base vectorielle, hébergement — qui restent souvent modestes : quelques centaines à quelques milliers d'euros par mois.
+Un POC se situe entre 5 k€ et 25 k€ selon la complexité. Une mise en production complète (RAG ou agent IA en conditions réelles) démarre autour de 30 k€. À cela s'ajoutent les coûts d'infrastructure (API LLM, base vectorielle, hébergement), qui restent souvent modestes : quelques centaines à quelques milliers d'euros par mois.
 
 ### Combien de temps faut-il pour voir des résultats ?
 
@@ -137,7 +137,7 @@ Plusieurs leviers selon le niveau d'exigence : LLMs souverains hébergés en Fra
 
 ### Quelle différence avec une ESN ou une agence IA ?
 
-Vous échangez directement avec moi, du premier appel jusqu'au déploiement. Pas de chef de projet qui traduit, pas de consultant junior qu'on découvre une fois en production. En contrepartie, je ne prends que quelques missions à la fois — je préfère rester pleinement disponible sur chaque projet plutôt que d'en empiler dix en parallèle. Je ne suis pas l'option adaptée si vous cherchez à mobiliser cent personnes d'un coup.
+Vous échangez directement avec moi, du premier appel jusqu'au déploiement. Pas de chef de projet qui traduit, pas de consultant junior qu'on découvre une fois en production. En contrepartie, je ne prends que quelques missions à la fois : je préfère rester pleinement disponible sur chaque projet plutôt que d'en empiler dix en parallèle. Je ne suis pas l'option adaptée si vous cherchez à mobiliser cent personnes d'un coup.
 
 ---
 
@@ -147,11 +147,11 @@ Vous avez un cas d'usage à explorer, un projet à cadrer ou simplement des ques
 
 [Écrire à Anas](mailto:anas@tensoria.fr){ .md-button .md-button--primary }
 [Voir le profil LinkedIn](https://www.linkedin.com/in/anasrabhi/){ .md-button target="_blank" rel="noopener" }
-[Tensoria — ma structure de conseil](https://tensoria.fr/){ .md-button target="_blank" rel="noopener" }
+[Tensoria, ma structure de conseil](https://tensoria.fr/){ .md-button target="_blank" rel="noopener" }
 
 ---
 
-*Page rédigée par Anas Rabhi — Consultant IA & Data Scientist Freelance à Toulouse. Dernière mise à jour : mai 2026.*
+*Page rédigée par Anas Rabhi, Consultant IA & Data Scientist Freelance à Toulouse. Dernière mise à jour : mai 2026.*
 
 <script type="application/ld+json">
 {
@@ -159,7 +159,7 @@ Vous avez un cas d'usage à explorer, un projet à cadrer ou simplement des ques
   "@graph": [
     {
       "@type": "LocalBusiness",
-      "name": "Tensoria — Conseil IA & Data Science",
+      "name": "Tensoria : Conseil IA & Data Science",
       "url": "https://ianas.fr/consultant-ia-toulouse/",
       "description": "Consultant IA et Data Scientist freelance à Toulouse. Spécialisé en RAG, agents IA, NLP et LLMOps. Intervient à Toulouse, en Occitanie et en remote.",
       "founder": {
@@ -204,7 +204,7 @@ Vous avez un cas d'usage à explorer, un projet à cadrer ou simplement des ques
           "name": "Intervenez-vous uniquement à Toulouse ?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Non. Je suis basé à Toulouse et j'interviens sur site en Occitanie, mais je travaille avec des entreprises partout en France en remote. Les phases de cadrage et de lancement gagnent à se faire en présentiel — ensuite, le remote fonctionne très bien."
+            "text": "Non. Je suis basé à Toulouse et j'interviens sur site en Occitanie, mais je travaille avec des entreprises partout en France en remote. Les phases de cadrage et de lancement gagnent à se faire en présentiel. Ensuite, le remote fonctionne très bien."
           }
         },
         {
@@ -212,7 +212,7 @@ Vous avez un cas d'usage à explorer, un projet à cadrer ou simplement des ques
           "name": "Quel budget prévoir pour un projet IA à Toulouse ?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Un POC se situe entre 5 k€ et 25 k€ selon la complexité. Une mise en production complète (RAG ou agent IA en conditions réelles) démarre autour de 30 k€. À cela s'ajoutent les coûts d'infrastructure — API LLM, base vectorielle, hébergement — qui restent souvent modestes : quelques centaines à quelques milliers d'euros par mois."
+            "text": "Un POC se situe entre 5 k€ et 25 k€ selon la complexité. Une mise en production complète (RAG ou agent IA en conditions réelles) démarre autour de 30 k€. À cela s'ajoutent les coûts d'infrastructure (API LLM, base vectorielle, hébergement), qui restent souvent modestes : quelques centaines à quelques milliers d'euros par mois."
           }
         },
         {
@@ -236,7 +236,7 @@ Vous avez un cas d'usage à explorer, un projet à cadrer ou simplement des ques
           "name": "Quelle différence avec une ESN ou une agence IA ?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Vous échangez directement avec moi, du premier appel jusqu'au déploiement. Pas de chef de projet qui traduit, pas de consultant junior qu'on découvre une fois en production. En contrepartie, je ne prends que quelques missions à la fois — je préfère rester pleinement disponible sur chaque projet."
+            "text": "Vous échangez directement avec moi, du premier appel jusqu'au déploiement. Pas de chef de projet qui traduit, pas de consultant junior qu'on découvre une fois en production. En contrepartie, je ne prends que quelques missions à la fois : je préfère rester pleinement disponible sur chaque projet."
           }
         }
       ]

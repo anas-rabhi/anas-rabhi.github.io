@@ -33,7 +33,7 @@ Dans cet article, je vais passer en revue les cinq frameworks principaux avec le
 
 <!-- more -->
 
-> Comparatif rattaché au [guide complet sur les agents IA](/agents-ia/) — architecture, frameworks, production.
+> Comparatif rattaché au [guide complet sur les agents IA](/agents-ia/) : architecture, frameworks, production.
 
 ***
 

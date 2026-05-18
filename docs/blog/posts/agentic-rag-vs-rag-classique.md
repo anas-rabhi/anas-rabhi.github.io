@@ -34,7 +34,7 @@ Alors dans cet article, je vais faire simple : ce qu'est vraiment l'Agentic RAG,
 
 <!-- more -->
 
-> Cet article est à la croisée du [guide RAG](/rag/) et du [guide Agents IA](/agents-ia/) — l'Agentic RAG combine les deux approches.
+> Cet article est à la croisée du [guide RAG](/rag/) et du [guide Agents IA](/agents-ia/). L'Agentic RAG combine les deux approches.
 
 ***
 
@@ -66,7 +66,7 @@ Mais ce pipeline a des angles morts bien précis.
 Si vous demandez "quelle est la capitale de la France ?", le RAG va quand même chercher dans votre base documentaire. Pour rien.
 
 **Deuxième angle mort : il ne valide jamais ce qu'il a trouvé.**
-Si les chunks récupérés sont mauvais (hors sujet, obsolètes, incorrects), le LLM va quand même générer une réponse à partir d'eux. Et souvent, cette réponse sera mauvaise ou inventée. Avant d'aller vers l'agentique, il vaut souvent mieux durcir le retrieval lui-même — par exemple avec un [RAG hybride combinant BM25 et recherche vectorielle](rag-hybride-bm25-vectoriel.md), qui suffit à corriger beaucoup de cas problématiques.
+Si les chunks récupérés sont mauvais (hors sujet, obsolètes, incorrects), le LLM va quand même générer une réponse à partir d'eux. Et souvent, cette réponse sera mauvaise ou inventée. Avant d'aller vers l'agentique, il vaut souvent mieux durcir le retrieval lui-même, par exemple avec un [RAG hybride combinant BM25 et recherche vectorielle](rag-hybride-bm25-vectoriel.md), qui suffit à corriger beaucoup de cas problématiques.
 
 **Troisième angle mort : il ne peut pas décomposer une question complexe.**
 "Compare les performances financières d'Apple et Microsoft sur les 3 dernières années et explique les différences." Pour ça, il faudrait faire plusieurs recherches, croiser des informations de sources différentes, raisonner sur les résultats intermédiaires. Un RAG classique fait une seule recherche et espère que ça suffira.
@@ -78,7 +78,7 @@ C'est exactement ces quatre problèmes que l'Agentic RAG tente de résoudre.
 
 ***
 
-## L'Agentic RAG, c'est un spectre — pas un interrupteur
+## L'Agentic RAG, c'est un spectre, pas un interrupteur
 
 Et c'est là où beaucoup de gens se trompent.
 
@@ -90,11 +90,11 @@ Voici comment je le visualise :
 
 | Niveau | Ce que le LLM décide | Exemple |
 |---|---|---|
-| 0 — RAG classique | Rien | Pipeline fixe, toujours le même |
-| 1 — Routing | Où chercher | Base interne OU recherche web OU SQL |
-| 2 — Grading | Si les résultats sont bons | Relancer si les chunks sont hors sujet |
-| 3 — Planification | Comment décomposer la question | Sub-questions en parallèle |
-| 4 — Multi-agents | Qui fait quoi | Orchestrateur + agents spécialisés |
+| 0 : RAG classique | Rien | Pipeline fixe, toujours le même |
+| 1 : Routing | Où chercher | Base interne OU recherche web OU SQL |
+| 2 : Grading | Si les résultats sont bons | Relancer si les chunks sont hors sujet |
+| 3 : Planification | Comment décomposer la question | Sub-questions en parallèle |
+| 4 : Multi-agents | Qui fait quoi | Orchestrateur + agents spécialisés |
 
 Vous n'avez pas à choisir entre niveau 0 et niveau 4. Vous pouvez rester au niveau 1 ou 2 et déjà résoudre 80% de vos problèmes avec très peu de complexité supplémentaire.
 
@@ -102,7 +102,7 @@ Vous n'avez pas à choisir entre niveau 0 et niveau 4. Vous pouvez rester au niv
 
 ## Les 5 patterns agentiques (et à quel problème chacun répond)
 
-### Pattern 1 — Self-RAG : l'IA qui relit son propre travail
+### Pattern 1 : Self-RAG, l'IA qui relit son propre travail
 
 **Le problème** : votre RAG génère des réponses qui ne s'appuient pas vraiment sur les documents récupérés. Hallucinations fréquentes.
 
@@ -134,7 +134,7 @@ graph TD
 
 ***
 
-### Pattern 2 — Corrective RAG (CRAG) : le filet de sécurité
+### Pattern 2 : Corrective RAG (CRAG), le filet de sécurité
 
 **Le problème** : votre base documentaire est incomplète. Pour certaines questions, vous n'avez tout simplement pas la réponse dedans.
 
@@ -149,7 +149,7 @@ Trois niveaux de confiance :
 
 ***
 
-### Pattern 3 — Adaptive RAG : router selon la complexité
+### Pattern 3 : Adaptive RAG, router selon la complexité
 
 **Le problème** : vous avez des questions simples et des questions complexes dans le même système. Le RAG classique les traite de la même façon, ce qui est soit trop lent pour les simples, soit trop superficiel pour les complexes.
 
@@ -176,7 +176,7 @@ graph LR
 
 ***
 
-### Pattern 4 — RAG avec outils (ReAct) : accéder à plusieurs sources
+### Pattern 4 : RAG avec outils (ReAct), accéder à plusieurs sources
 
 **Le problème** : votre information est dispersée. Une partie dans votre base documentaire, une autre dans une base SQL, une autre dans un système externe.
 
@@ -195,7 +195,7 @@ Aujourd'hui, le moyen le plus propre d'exposer ces outils à un agent, c'est le 
 
 ***
 
-### Pattern 5 — Multi-agents : diviser pour mieux régner
+### Pattern 5 : Multi-agents, diviser pour mieux régner
 
 **Le problème** : la complexité devient trop grande pour un seul agent. Vous avez plusieurs domaines d'expertise différents, plusieurs types de sources, plusieurs traitements à orchestrer en parallèle.
 
@@ -215,10 +215,10 @@ C'est là où beaucoup de projets se trompent. On voit la qualité des réponses
 
 | Architecture | Latence typique | Raison |
 |---|---|---|
-| RAG classique | 1–3 secondes | 1 appel LLM |
-| Advanced RAG (reranking) | 2–5 secondes | 2–3 appels LLM |
-| Agentic RAG (niveau 2–3) | 5–30 secondes | 3–10 appels LLM |
-| Multi-agents (niveau 4) | 30 secondes – 3 minutes | 10–50 appels LLM |
+| RAG classique | 1 à 3 secondes | 1 appel LLM |
+| Advanced RAG (reranking) | 2 à 5 secondes | 2 à 3 appels LLM |
+| Agentic RAG (niveau 2-3) | 5 à 30 secondes | 3 à 10 appels LLM |
+| Multi-agents (niveau 4) | 30 secondes à 3 minutes | 10 à 50 appels LLM |
 
 Pour un chatbot de support client, 30 secondes de latence c'est rédhibitoire. Pour un assistant de rédaction qui travaille en fond de tâche, c'est tout à fait acceptable.
 
@@ -266,7 +266,7 @@ En pratique, la plupart des projets s'arrêtent à la question 3 ou 4. Très peu
 
 ## Ce que ça donne sur un vrai projet
 
-Pour vous donner un exemple concret, [notre système RAG pour la rédaction d'appels d'offres dans le BTP](cas-usage-rag-redaction-appels-offres-btp.md) est un Agentic RAG de niveau 3–4.
+Pour vous donner un exemple concret, [notre système RAG pour la rédaction d'appels d'offres dans le BTP](cas-usage-rag-redaction-appels-offres-btp.md) est un Agentic RAG de niveau 3-4.
 
 Pourquoi agentique ? Parce qu'un RAG classique ne pouvait tout simplement pas faire le travail. Rédiger une réponse à un appel d'offres nécessite de combiner 4 sources complètement différentes : les normes DTU, l'historique projets du client, des réponses similaires déjà remportées, et les annexes professionnelles sectorielles. Aucune source seule ne suffisait.
 
@@ -283,8 +283,8 @@ L'Agentic RAG n'est pas meilleur que le RAG classique. Il est **approprié à de
 | | RAG classique | Agentic RAG |
 |---|---|---|
 | Pipeline | Linéaire, fixe | Dynamique, boucles |
-| Latence | 1–3s | 5s à plusieurs minutes |
-| Coût | 1 appel LLM | 3–50 appels LLM |
+| Latence | 1 à 3s | 5s à plusieurs minutes |
+| Coût | 1 appel LLM | 3 à 50 appels LLM |
 | Fiabilité | Prévisible | Variable |
 | Cas d'usage | Q&A documentaire standard | Multi-sources, multi-étapes, validation |
 | Quand l'utiliser | Par défaut | Quand le classique ne suffit plus |
@@ -312,11 +312,11 @@ Oui, et c'est même la meilleure approche. Commencez par ajouter un seul mécani
 
 ## Pour aller plus loin
 
-- **[Mais c'est quoi un agent IA ?](c-est-quoi-un-agent-ia.md)** — Les fondements des systèmes agentiques, si vous voulez comprendre le mécanisme sous-jacent
-- **[Mais c'est quoi le RAG vraiment ?](mais-que-es-le-rag.md)** — La base, si vous n'êtes pas encore familier avec le RAG
-- **[Cas client BTP : RAG multi-sources pour les appels d'offres](cas-usage-rag-redaction-appels-offres-btp.md)** — Un exemple concret d'Agentic RAG en production avec les résultats chiffrés
-- **[Cas client assurance : 80% de gain de temps sur les rapports de sinistre](integration-ia-rapports-sinistre-assurance.md)** — Un autre cas où l'agentique a fait la différence
-- **[Les 5 erreurs que tout le monde fait avec le RAG](les-5-erreurs-rag.md)** — Avant d'aller vers l'agentique, assurez-vous de ne pas faire ces erreurs sur votre RAG classique
+- **[Mais c'est quoi un agent IA ?](c-est-quoi-un-agent-ia.md)** : les fondements des systèmes agentiques, si vous voulez comprendre le mécanisme sous-jacent
+- **[Mais c'est quoi le RAG vraiment ?](mais-que-es-le-rag.md)** : la base, si vous n'êtes pas encore familier avec le RAG
+- **[Cas client BTP : RAG multi-sources pour les appels d'offres](cas-usage-rag-redaction-appels-offres-btp.md)** : un exemple concret d'Agentic RAG en production avec les résultats chiffrés
+- **[Cas client assurance : 80% de gain de temps sur les rapports de sinistre](integration-ia-rapports-sinistre-assurance.md)** : un autre cas où l'agentique a fait la différence
+- **[Les 5 erreurs que tout le monde fait avec le RAG](les-5-erreurs-rag.md)** : avant d'aller vers l'agentique, assurez-vous de ne pas faire ces erreurs sur votre RAG classique
 
 ***
 

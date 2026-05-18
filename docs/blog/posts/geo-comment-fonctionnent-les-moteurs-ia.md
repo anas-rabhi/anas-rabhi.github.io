@@ -105,11 +105,11 @@ Si vous êtes une entreprise et que vous souhaitez être accompagné sur votre s
 
 ## Pour aller plus loin
 
-- **[Mais c'est quoi un agent IA ?](c-est-quoi-un-agent-ia.md)** — Comprendre comment ChatGPT utilise des outils comme la recherche web
-- **[Utiliser ChatGPT efficacement](utiliser-chatgpt-efficacement.md)** — Les limites du LLM et comment les contourner
-- **[Comprendre l'IA générative](comprendre-l-IA-generative.md)** — Comment fonctionnent les modèles de langage derrière ces moteurs
-- **[C'est quoi le RAG ?](mais-que-es-le-rag.md)** — Le même principe que Perplexity, appliqué à vos documents internes
-- **[Le RAG est-il vraiment fini ?](le-rag-est-fini.md)** — Long context vs RAG, un débat qui rejoint la question du GEO
+- **[Mais c'est quoi un agent IA ?](c-est-quoi-un-agent-ia.md)** : comprendre comment ChatGPT utilise des outils comme la recherche web
+- **[Utiliser ChatGPT efficacement](utiliser-chatgpt-efficacement.md)** : les limites du LLM et comment les contourner
+- **[Comprendre l'IA générative](comprendre-l-IA-generative.md)** : comment fonctionnent les modèles de langage derrière ces moteurs
+- **[C'est quoi le RAG ?](mais-que-es-le-rag.md)** : le même principe que Perplexity, appliqué à vos documents internes
+- **[Le RAG est-il vraiment fini ?](le-rag-est-fini.md)** : Long context vs RAG, un débat qui rejoint la question du GEO
 
 ---
 

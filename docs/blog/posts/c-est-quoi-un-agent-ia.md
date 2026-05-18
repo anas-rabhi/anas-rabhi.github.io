@@ -47,7 +47,7 @@ Car les agents IA sont là pour répondre (ou contourner) les limites des modèl
 
 <!-- more -->
 
-> Cet article fait partie du [guide complet sur les agents IA](/agents-ia/) — frameworks, MCP, mémoire, mise en production.
+> Cet article fait partie du [guide complet sur les agents IA](/agents-ia/) : frameworks, MCP, mémoire, mise en production.
 
 ***
 
@@ -296,7 +296,7 @@ Et au-delà des garde-fous, deux briques font vraiment la différence entre un a
 
 ## Agent IA et RAG : deux approches complémentaires
 
-Si vous avez déjà entendu parler du [RAG (Retrieval-Augmented Generation)](mais-que-es-le-rag.md), vous vous demandez peut-être quelle est la différence — ou la relation — avec les agents IA.
+Si vous avez déjà entendu parler du [RAG (Retrieval-Augmented Generation)](mais-que-es-le-rag.md), vous vous demandez peut-être quelle est la différence (ou la relation) avec les agents IA.
 
 La réponse courte : **le RAG, c'est une brique. L'agent, c'est l'assemblage.**
 
@@ -307,11 +307,11 @@ La réponse courte : **le RAG, c'est une brique. L'agent, c'est l'assemblage.**
 | Enchaîne plusieurs étapes automatiquement | Non | Non | Oui |
 | Choisit lui-même quels outils utiliser | Non | Non | Oui |
 
-Un agent IA peut parfaitement utiliser un RAG comme l'un de ses outils : il cherche dans des documents, puis envoie un email, puis met à jour une base de données. C'est cette combinaison qui donne les systèmes les plus puissants — on parle alors d'[Agentic RAG, par opposition au RAG classique linéaire](agentic-rag-vs-rag-classique.md).
+Un agent IA peut parfaitement utiliser un RAG comme l'un de ses outils : il cherche dans des documents, puis envoie un email, puis met à jour une base de données. C'est cette combinaison qui donne les systèmes les plus puissants : on parle alors d'[Agentic RAG, par opposition au RAG classique linéaire](agentic-rag-vs-rag-classique.md).
 
 En pratique, voici deux exemples concrets où cette combinaison a fait une vraie différence :
 
-- **BTP** : un agent rédacteur couplé à un [RAG multi-sources](rag-trop-simple.md) permet d'[automatiser la rédaction d'appels d'offres](cas-usage-rag-redaction-appels-offres-btp.md) — normes, historique projets et exemples gagnants récupérés en quelques secondes au lieu de plusieurs heures de recherche manuelle.
+- **BTP** : un agent rédacteur couplé à un [RAG multi-sources](rag-trop-simple.md) permet d'[automatiser la rédaction d'appels d'offres](cas-usage-rag-redaction-appels-offres-btp.md) (normes, historique projets et exemples gagnants récupérés en quelques secondes au lieu de plusieurs heures de recherche manuelle).
 - **Assurance** : la même logique appliquée aux [rapports de sinistre](integration-ia-rapports-sinistre-assurance.md) a permis de gagner 80% du temps de traitement sur chaque dossier.
 
 ***
@@ -346,14 +346,14 @@ Un POC sur un cas d'usage ciblé peut se faire en 2 à 4 semaines. La mise en pr
 
 ## Pour aller plus loin
 
-- **[Mais c'est quoi le RAG vraiment ?](mais-que-es-le-rag.md)** — La brique fondamentale qui alimente la plupart des agents IA
-- **[RAG : une porte d'entrée par sa simplicité d'implémentation](rag-trop-simple.md)** — Comment analyser et améliorer un RAG en pratique
-- **[Cas client BTP : comment un agent IA transforme la rédaction d'appels d'offres](cas-usage-rag-redaction-appels-offres-btp.md)** — Un exemple concret d'agent IA en production
-- **[Cas client assurance : 80% de gain de temps sur les rapports de sinistre](integration-ia-rapports-sinistre-assurance.md)** — L'IA agentique appliquée à un autre secteur
-- **[Comprendre l'IA générative](comprendre-l-IA-generative.md)** — Les fondements des modèles de langage qui font tourner les agents
-- **[Les différents domaines de l'IA](domaines-intelligence-artificielle.md)** — Pour comprendre où se situent les agents IA dans le paysage global de l'IA
-- **[Entraînement, finetuning ou RAG : que choisir ?](entrainement-finetuning-rag-modele-ia.md)** — Le guide pour ne pas se tromper d'approche entre les trois grandes options
-- **[GEO : comment fonctionnent les moteurs de recherche IA](geo-comment-fonctionnent-les-moteurs-ia.md)** — Comment ChatGPT, Perplexity et Gemini utilisent la recherche web pour citer vos contenus
+- **[Mais c'est quoi le RAG vraiment ?](mais-que-es-le-rag.md)** : la brique fondamentale qui alimente la plupart des agents IA
+- **[RAG : une porte d'entrée par sa simplicité d'implémentation](rag-trop-simple.md)** : comment analyser et améliorer un RAG en pratique
+- **[Cas client BTP : comment un agent IA transforme la rédaction d'appels d'offres](cas-usage-rag-redaction-appels-offres-btp.md)** : un exemple concret d'agent IA en production
+- **[Cas client assurance : 80% de gain de temps sur les rapports de sinistre](integration-ia-rapports-sinistre-assurance.md)** : l'IA agentique appliquée à un autre secteur
+- **[Comprendre l'IA générative](comprendre-l-IA-generative.md)** : les fondements des modèles de langage qui font tourner les agents
+- **[Les différents domaines de l'IA](domaines-intelligence-artificielle.md)** : pour comprendre où se situent les agents IA dans le paysage global de l'IA
+- **[Entraînement, finetuning ou RAG : que choisir ?](entrainement-finetuning-rag-modele-ia.md)** : le guide pour ne pas se tromper d'approche entre les trois grandes options
+- **[GEO : comment fonctionnent les moteurs de recherche IA](geo-comment-fonctionnent-les-moteurs-ia.md)** : comment ChatGPT, Perplexity et Gemini utilisent la recherche web pour citer vos contenus
 
 ***
 

@@ -44,7 +44,7 @@ Je vais donc essayer de revenir sur les points que j'ai l'habitude d'éclaircir 
 
 <!-- more --> 
 
-> Cet article fait partie du [guide complet sur le RAG](/rag/), qui regroupe l'ensemble des sujets — chunking, embeddings, retrieval, évaluation, mise en production.
+> Cet article fait partie du [guide complet sur le RAG](/rag/), qui regroupe l'ensemble des sujets : chunking, embeddings, retrieval, évaluation, mise en production.
 
 ### La facilité d'implémentation du RAG
 

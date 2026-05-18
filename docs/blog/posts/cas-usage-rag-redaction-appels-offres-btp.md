@@ -35,7 +35,7 @@ Je vais illustrer ça avec un cas concret qu'on a réalisé récemment : l'autom
 
 <!-- more -->
 
-> Cas d'usage rattaché au [guide complet sur le RAG](/rag/) — application concrète des briques techniques à un secteur métier.
+> Cas d'usage rattaché au [guide complet sur le RAG](/rag/), application concrète des briques techniques à un secteur métier.
 
 ## Rédaction d'appels d'offres dans le BTP : un processus chronophage
 
@@ -63,7 +63,7 @@ C'est le genre de problème où l'IA peut faire une vraie différence. Pas en re
 
 ### Pourquoi un RAG classique ne suffit pas pour rédiger un appel d'offres
 
-Un [RAG basique](rag-trop-simple.md) — un seul index, un seul type de documents — ne fonctionne pas pour ce cas d'usage. Pourquoi ?
+Un [RAG basique](rag-trop-simple.md) (un seul index, un seul type de documents) ne fonctionne pas pour ce cas d'usage. Pourquoi ?
 
 Parce que rédiger une réponse à un appel d'offres, ce n'est pas répondre à une question. C'est **combiner 4 types d'informations différentes** pour produire un texte cohérent et professionnel :
 
@@ -119,7 +119,7 @@ graph TD
 Les points techniques importants :
 
 - **Synchronisation automatique** : détection de changements par hash (ajout, modification, suppression). Quand une norme est mise à jour, l'index se met à jour automatiquement.
-- **Chunking sémantique** : 1 600 tokens avec overlap de 100, pour préserver la cohérence des passages. Pas de découpage arbitraire qui coupe une phrase au milieu — c'est un point que je détaille dans mon article sur [comment améliorer un RAG](comment-ameliorer-l-IA.md).
+- **Chunking sémantique** : 1 600 tokens avec overlap de 100, pour préserver la cohérence des passages. Pas de découpage arbitraire qui coupe une phrase au milieu, c'est un point que je détaille dans mon article sur [comment améliorer un RAG](comment-ameliorer-l-IA.md).
 - **Embeddings** : vectorisation via OpenAI, stockage dans ChromaDB (local) ou Pinecone (cloud) selon les besoins de scalabilité.
 
 ### Pipeline d'inférence RAG : du retrieval augmenté à la rédaction automatisée
@@ -174,7 +174,7 @@ L'interface n'est pas un simple chatbot. C'est un **assistant de rédaction inte
 
 ## Agent IA et retrieval intelligent : ce qui fait la différence
 
-Le coeur de la valeur, c'est le **retrieval multi-sources avec filtrage par métadonnées**. C'est ce qui transforme un RAG générique en un véritable [agent IA](c-est-quoi-un-agent-ia.md) rédacteur spécialisé — typiquement le genre d'architecture qu'on appelle [Agentic RAG, par opposition au RAG classique](agentic-rag-vs-rag-classique.md).
+Le coeur de la valeur, c'est le **retrieval multi-sources avec filtrage par métadonnées**. C'est ce qui transforme un RAG générique en un véritable [agent IA](c-est-quoi-un-agent-ia.md) rédacteur spécialisé, typiquement le genre d'architecture qu'on appelle [Agentic RAG, par opposition au RAG classique](agentic-rag-vs-rag-classique.md).
 
 Concrètement, quand le chargé d'affaires demande de rédiger une section technique pour un appel d'offres en charpente bois :
 
@@ -245,7 +245,7 @@ Avec le recul, voici les trois erreurs que j'ai vues le plus souvent sur des pro
 
 **2. Négliger la qualité des documents sources.** Un PDF scanné illisible, un document Word avec des tableaux complexes, des normes issues d'un copier-coller mal formaté… Les problèmes de qualité de données sont responsables d'une grande partie des erreurs de retrieval. Le [nettoyage et la mise en forme des sources](comment-ameliorer-l-IA.md) est une étape souvent sous-estimée dans les plannings projet.
 
-**3. Livrer sans boucle de feedback.** Sans mécanisme pour réinjecter les bonnes réponses dans la base, le système reste statique. La boucle de feedback n'est pas une option — c'est ce qui transforme un outil correct en un système qui s'améliore réellement avec l'usage, comme décrit dans la section précédente.
+**3. Livrer sans boucle de feedback.** Sans mécanisme pour réinjecter les bonnes réponses dans la base, le système reste statique. La boucle de feedback n'est pas une option : c'est ce qui transforme un outil correct en un système qui s'améliore réellement avec l'usage, comme décrit dans la section précédente.
 
 Et c'est ça, la vraie puissance du RAG quand il est bien intégré. Pas un gadget technologique, mais un outil qui s'inscrit dans le quotidien des équipes et qui les rend **plus rapides, plus cohérentes et plus efficaces**. Le même constat que j'avais fait sur [l'intégration de l'IA dans les rapports de sinistre](integration-ia-rapports-sinistre-assurance.md) : la technique est importante, mais c'est l'intégration qui fait la différence.
 

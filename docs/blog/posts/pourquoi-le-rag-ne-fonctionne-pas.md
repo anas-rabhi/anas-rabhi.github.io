@@ -26,7 +26,7 @@ J'ai déjà écrit un article sur [comment améliorer le RAG avec des métriques
 
 <!-- more -->
 
-> Pour le panorama complet — fondations, optimisation, échecs et solutions — voir le [guide RAG](/rag/).
+> Pour le panorama complet (fondations, optimisation, échecs et solutions), voir le [guide RAG](/rag/).
 
 ## Le RAG n'est pas magique (et c'est normal)
 
@@ -42,12 +42,12 @@ La vraie valeur, on l'obtient en comprenant bien le problème qu'on veut résoud
 Avant de partir dans tous les sens, voici les 3 questions à se poser dans l'ordre. Elles permettent d'orienter vers le bon composant en moins de 10 minutes.
 
 **1. Est-ce que le retrieval trouve quelque chose ?**
-Regardez les chunks récupérés pour la requête qui échoue. Il y en a ? Ils sont pertinents ? Si le retrieval ne remonte rien, le problème n'est pas le LLM — c'est l'indexation ou la formulation de la requête.
+Regardez les chunks récupérés pour la requête qui échoue. Il y en a ? Ils sont pertinents ? Si le retrieval ne remonte rien, le problème n'est pas le LLM : c'est l'indexation ou la formulation de la requête.
 
 **2. Si les chunks sont là, est-ce que la réponse hallucine ?**
 Comparez la réponse générée avec les chunks fournis. L'IA a-t-elle inventé des informations qui n'étaient pas dans les sources ? Si oui, c'est un problème de génération (prompt, modèle, température).
 
-**3. Si les chunks sont pertinents et la réponse est logique — est-ce que l'information existe vraiment dans la base ?**
+**3. Si les chunks sont pertinents et la réponse est logique : est-ce que l'information existe vraiment dans la base ?**
 Parfois, la base ne contient tout simplement pas la réponse. C'est un problème de données, pas de RAG.
 
 Ces 3 questions guident vers le bon composant. Ensuite, les solutions diffèrent selon le diagnostic.
@@ -69,7 +69,7 @@ Avant de changer d'architecture, d'embeddings ou de modèle, voici ce qui règle
 - Vérifier la qualité des données sources (PDFs mal extraits, tableaux corrompus, textes dupliqués)
 - Vérifier l'overlap des chunks (un overlap de 10-15% évite de couper une information importante)
 
-Si aucun de ces quick wins n'améliore les choses, alors oui, ça mérite une analyse plus poussée — et c'est à ce moment qu'on peut envisager des [techniques d'optimisation RAG plus avancées comme HyDE, le reranking ou le contextual retrieval](optimiser-rag-techniques.md).
+Si aucun de ces quick wins n'améliore les choses, alors oui, ça mérite une analyse plus poussée. C'est à ce moment qu'on peut envisager des [techniques d'optimisation RAG plus avancées comme HyDE, le reranking ou le contextual retrieval](optimiser-rag-techniques.md).
 
 ## Exemples concrets d'analyse d'erreur
 

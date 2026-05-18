@@ -22,7 +22,7 @@ math: true
 mermaid: true
 ---
 
-Souvent, pour améliorer une application d'IA comme un RAG ou un agent, il est plus judicieux de se concentrer sur l'analyse fine des erreurs plutôt que de céder à la tentation d'ajouter systématiquement de nouveaux outils. Voyons pourquoi cette approche pragmatique est souvent la plus efficace — et surtout, comment la mettre en place concrètement avec les bons outils de mesure.
+Souvent, pour améliorer une application d'IA comme un RAG ou un agent, il est plus judicieux de se concentrer sur l'analyse fine des erreurs plutôt que de céder à la tentation d'ajouter systématiquement de nouveaux outils. Voyons pourquoi cette approche pragmatique est souvent la plus efficace, et surtout comment la mettre en place concrètement avec les bons outils de mesure.
 
 <!-- more -->
 
@@ -45,13 +45,13 @@ Face à une erreur, ajouter un nouvel outil sans avoir identifié laquelle de ce
 
 ## Mais comment savoir si on s'améliore vraiment ?
 
-C'est la question qu'on pose rarement. On fait un changement — nouveau modèle d'embedding, taille de chunk différente, re-ranking — et comment savoir si c'est vraiment mieux ?
+C'est la question qu'on pose rarement. On fait un changement (nouveau modèle d'embedding, taille de chunk différente, re-ranking) et comment savoir si c'est vraiment mieux ?
 
 Sans cadre d'évaluation, on navigue à vue. On change quelque chose, ça semble mieux sur 2-3 exemples, on valide. Mauvaise méthode.
 
 **La bonne approche :**
 
-1. **Constituer un jeu de test fixe** avec 30 à 50 paires question/réponse attendue. Ce jeu ne change pas — c'est votre baseline.
+1. **Constituer un jeu de test fixe** avec 30 à 50 paires question/réponse attendue. Ce jeu ne change pas : c'est votre baseline.
 2. **Mesurer les métriques RAG** sur ce jeu avant et après chaque modification.
 3. **Décider avec des chiffres**, pas avec des impressions.
 
@@ -89,7 +89,7 @@ Améliorer sans voir, c'est improviser. Pour chaque erreur analysée, il faut po
 - Le prompt complet envoyé au LLM
 - La réponse générée
 
-**[Langfuse](https://langfuse.com/)** fait ça très bien, en open-source. On voit exactement à quelle étape ça a déraillé. C'est souvent là qu'on réalise que le problème qu'on pensait être de la génération est en réalité un problème de retrieval — et ça change tout.
+**[Langfuse](https://langfuse.com/)** fait ça très bien, en open-source. On voit exactement à quelle étape ça a déraillé. C'est souvent là qu'on réalise que le problème qu'on pensait être de la génération est en réalité un problème de retrieval, et ça change tout.
 
 Un conseil : configurez le monitoring dès le début, même en phase de test. Les premières semaines de production sont une mine d'or en termes d'erreurs à analyser. Pour une vue complète des outils disponibles, j'en parle aussi dans [cet article sur les outils de monitoring RAG](rag-trop-simple.md).
 
@@ -102,7 +102,7 @@ Une fois l'erreur comprise grâce à l'évaluation, l'amélioration devient cibl
 * Tester et choisir un meilleur modèle d'embedding.
 * Nettoyer ou enrichir les données sources.
 * Ajuster les paramètres de l'algorithme de recherche.
-* Parfois, oui, intégrer un nouvel outil — mais seulement après analyse.
+* Parfois, oui, intégrer un nouvel outil, mais seulement après analyse.
 * En tout dernier recours, envisager un finetuning du modèle (voir mon article [entraînement, finetuning ou RAG : que choisir ?](entrainement-finetuning-rag-modele-ia.md) pour comprendre quand c'est vraiment justifié et quand ce n'est pas le cas).
 
 ## L'amélioration continue en production
@@ -111,7 +111,7 @@ L'évaluation ne s'arrête pas une fois l'application déployée. En production,
 
 Idéalement, mettez en place des mécanismes pour **intégrer les retours utilisateurs** (pouce levé/baissé sur les réponses) dans le cycle d'amélioration. C'est un cycle continu : observer, analyser, améliorer.
 
-Si vous cherchez à voir cette méthode appliquée sur un cas réel, lisez [comment un RAG multi-sources a été optimisé pour la rédaction d'appels d'offres BTP](cas-usage-rag-redaction-appels-offres-btp.md) — le retour d'expérience illustre exactement cette approche itérative.
+Si vous cherchez à voir cette méthode appliquée sur un cas réel, lisez [comment un RAG multi-sources a été optimisé pour la rédaction d'appels d'offres BTP](cas-usage-rag-redaction-appels-offres-btp.md) : le retour d'expérience illustre exactement cette approche itérative.
 
 ## Conclusion : une approche méthodique et itérative
 

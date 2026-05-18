@@ -103,7 +103,7 @@ Parce que c'est toujours plus parlant avec du concret, voici deux cas réels que
 
 **Résultat** : Le taux de satisfaction utilisateur est passé de 62% à 89%. Les requêtes avec critères précis fonctionnaient enfin correctement.
 
-Ces deux exemples illustrent deux familles de problèmes classiques. Pour voir comment ces mêmes techniques s'appliquent dans un contexte réel et plus complexe — avec 4 sources de données différentes et un agent rédacteur — lisez [comment un RAG multi-sources a transformé la rédaction d'appels d'offres dans le BTP](cas-usage-rag-redaction-appels-offres-btp.md).
+Ces deux exemples illustrent deux familles de problèmes classiques. Pour voir comment ces mêmes techniques s'appliquent dans un contexte réel et plus complexe (avec 4 sources de données différentes et un agent rédacteur), lisez [comment un RAG multi-sources a transformé la rédaction d'appels d'offres dans le BTP](cas-usage-rag-redaction-appels-offres-btp.md).
 
 ## Méthodologie : Comment mener une analyse d'erreur efficace sur votre RAG
 
@@ -293,10 +293,10 @@ Si vous cherchez à éviter de réinventer la roue et à bénéficier d'une solu
 
 ## Pour aller plus loin
 
-- **[Mais c'est quoi un agent IA ?](c-est-quoi-un-agent-ia.md)** — L'étape suivante : quand un RAG seul ne suffit plus et qu'on a besoin d'automatisation multi-étapes
-- **[Cas client BTP : le RAG transforme la rédaction d'appels d'offres](cas-usage-rag-redaction-appels-offres-btp.md)** — Voir un RAG multi-sources en action sur un vrai projet
-- **[Cas client assurance : 80% de gain de temps sur les rapports de sinistre](integration-ia-rapports-sinistre-assurance.md)** — Un autre exemple de RAG bien optimisé en production
-- **[Le RAG est-il vraiment fini ?](le-rag-est-fini.md)** — Malgré les nouvelles approches, pourquoi le RAG reste pertinent
+- **[Mais c'est quoi un agent IA ?](c-est-quoi-un-agent-ia.md)** : L'étape suivante : quand un RAG seul ne suffit plus et qu'on a besoin d'automatisation multi-étapes
+- **[Cas client BTP : le RAG transforme la rédaction d'appels d'offres](cas-usage-rag-redaction-appels-offres-btp.md)** : Voir un RAG multi-sources en action sur un vrai projet
+- **[Cas client assurance : 80% de gain de temps sur les rapports de sinistre](integration-ia-rapports-sinistre-assurance.md)** : Un autre exemple de RAG bien optimisé en production
+- **[Le RAG est-il vraiment fini ?](le-rag-est-fini.md)** : Malgré les nouvelles approches, pourquoi le RAG reste pertinent
 
 ***
 

@@ -84,7 +84,7 @@ C'est cette vision "sparse" qui unifie BM25 et le vectoriel dense dans une même
 
 | | BM25 / Sparse | Vectoriel dense |
 |---|---|---|
-| Représentation | Vecteur creux (vocab entier) | Vecteur dense (768–1536 dims) |
+| Représentation | Vecteur creux (vocab entier) | Vecteur dense (768 à 1536 dims) |
 | Capture | Correspondances exactes | Sens, contexte, synonymes |
 | Force | Jargon, codes, noms propres | Questions conceptuelles |
 | Faiblesse | Synonymes, paraphrases | Identifiants exacts |
@@ -161,7 +161,7 @@ Je ne vous demande pas de me croire sur parole. Voici les chiffres.
 | Méthode | NDCG@3 | Gain vs vectoriel seul |
 |---|---|---|
 | BM25 seul | 40.6 | −7% |
-| Vectoriel seul | 43.8 | — |
+| Vectoriel seul | 43.8 | (référence) |
 | Hybrid RRF | 48.4 | **+10%** |
 | Hybrid + reranker | 60.1 | **+37%** |
 
@@ -179,7 +179,7 @@ La leçon à retenir : le hybrid améliore systématiquement le vectoriel pur, s
 
 ## Implémentation : 3 stacks en pratique
 
-### Stack 1 — LangChain + BM25 + FAISS (open-source, minimal)
+### Stack 1 : LangChain + BM25 + FAISS (open-source, minimal)
 
 C'est le point d'entrée. Parfait pour un POC ou une stack entièrement locale sans base de données externe.
 
@@ -215,7 +215,7 @@ C'est 15 lignes de code. RRF est géré nativement par `EnsembleRetriever`.
 
 ---
 
-### Stack 2 — LlamaIndex + QueryFusionRetriever
+### Stack 2 : LlamaIndex + QueryFusionRetriever
 
 LlamaIndex a une implémentation native avec support async, utile si vous voulez paralléliser les deux recherches pour réduire la latence.
 
@@ -246,7 +246,7 @@ Le `use_async=True` est important : les deux retrievers tournent en parallèle, 
 
 ---
 
-### Stack 3 — Weaviate (production, tout-en-un)
+### Stack 3 : Weaviate (production, tout-en-un)
 
 Weaviate gère BM25, vectoriel et fusion nativement. C'est la stack la plus propre pour de la production à grande échelle : tout est dans la base de données, pas de logique de fusion côté applicatif.
 
@@ -351,11 +351,11 @@ Oui, avec un tokenizer adapté. LangChain utilise `rank_bm25` avec le stemmer Sn
 
 ## Pour aller plus loin
 
-- **[Mais c'est quoi le RAG vraiment ?](mais-que-es-le-rag.md)** — La base du RAG avant d'optimiser le retrieval
-- **[RAG : une porte d'entrée par sa simplicité d'implémentation](rag-trop-simple.md)** — Analyser et améliorer un RAG qui ne performe pas
-- **[Les 4 causes techniques d'échec d'un RAG](les-4-causes-techniques-echec-rag.md)** — Le diagnostic complet quand quelque chose ne marche pas
-- **[Agentic RAG vs RAG classique](agentic-rag-vs-rag-classique.md)** — Quand le hybrid seul ne suffit plus et qu'il faut un pipeline agentique
-- **[Les 5 erreurs que tout le monde fait avec le RAG](les-5-erreurs-rag.md)** — Les erreurs de méthode avant de s'attaquer aux erreurs techniques
+- **[Mais c'est quoi le RAG vraiment ?](mais-que-es-le-rag.md)** : la base du RAG avant d'optimiser le retrieval
+- **[RAG : une porte d'entrée par sa simplicité d'implémentation](rag-trop-simple.md)** : analyser et améliorer un RAG qui ne performe pas
+- **[Les 4 causes techniques d'échec d'un RAG](les-4-causes-techniques-echec-rag.md)** : le diagnostic complet quand quelque chose ne marche pas
+- **[Agentic RAG vs RAG classique](agentic-rag-vs-rag-classique.md)** : quand le hybrid seul ne suffit plus et qu'il faut un pipeline agentique
+- **[Les 5 erreurs que tout le monde fait avec le RAG](les-5-erreurs-rag.md)** : les erreurs de méthode avant de s'attaquer aux erreurs techniques
 
 ***
 

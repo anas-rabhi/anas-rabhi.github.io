@@ -6,11 +6,11 @@ hide:
   - toc
 ---
 
-# Anas Rabhi — Consultant IA & Data Scientist Freelance à Toulouse
+# Anas Rabhi, Consultant IA & Data Scientist Freelance à Toulouse
 
 <div class="hero" markdown>
 
-**Consultant Data Scientist freelance à Toulouse.** J'accompagne les entreprises qui veulent intégrer de l'IA dans leur quotidien. Pas de la théorie, pas des slides, que du concret — du cadrage au déploiement en production.
+**Consultant Data Scientist freelance à Toulouse.** J'accompagne les entreprises qui veulent intégrer de l'IA dans leur quotidien. Pas de la théorie, pas des slides, que du concret : du cadrage au déploiement en production.
 
 [:material-email-fast: Discuter d'un projet](mailto:anas@tensoria.fr){ .md-button .md-button--primary }
 [:material-book-open-variant: Lire le blog](/blog/){ .md-button }
@@ -21,7 +21,7 @@ hide:
 
 <div class="grid cards" markdown>
 
--   :material-account-tie:{ .lg .middle } __Tensoria — Conseil & freelance__
+-   :material-account-tie:{ .lg .middle } __Tensoria : Conseil & freelance__
 
     ---
 
@@ -29,7 +29,7 @@ hide:
 
     [:octicons-arrow-right-24: tensoria.fr](https://tensoria.fr/)
 
--   :material-robot-happy:{ .lg .middle } __Heeya — Chatbot RAG clé en main__
+-   :material-robot-happy:{ .lg .middle } __Heeya : Chatbot RAG clé en main__
 
     ---
 
@@ -41,7 +41,7 @@ hide:
 
 ## Ce que je fais au quotidien
 
-Mon travail, c'est de prendre un besoin métier et de le transformer en une solution IA qui fonctionne. Pas la techno pour la techno — résoudre un vrai problème, faire gagner du temps à une équipe, automatiser une tâche répétitive.
+Mon travail, c'est de prendre un besoin métier et de le transformer en une solution IA qui fonctionne. Pas la techno pour la techno : résoudre un vrai problème, faire gagner du temps à une équipe, automatiser une tâche répétitive.
 
 <div class="grid cards" markdown>
 
@@ -180,7 +180,7 @@ Si mes articles vous intéressent ou si vous avez un cas d'usage IA à discuter,
 
 ### Comment se déroule un projet IA chez Tensoria ?
 
-Je suis toujours **4 étapes** sur les missions Tensoria : **cadrage** (1 à 2 semaines pour comprendre le besoin métier, définir les KPIs et choisir l'approche — RAG, agent, finetuning), **POC** (2 à 4 semaines pour valider la faisabilité sur un sous-ensemble réel des données du client), **mise en production** (intégration aux systèmes existants, sécurité, monitoring), puis **maintenance et itérations** (suivi des métriques, amélioration continue, gestion de la dérive du modèle).
+Je suis toujours **4 étapes** sur les missions Tensoria : **cadrage** (1 à 2 semaines pour comprendre le besoin métier, définir les KPIs et choisir l'approche (RAG, agent, finetuning), **POC** (2 à 4 semaines pour valider la faisabilité sur un sous-ensemble réel des données du client), **mise en production** (intégration aux systèmes existants, sécurité, monitoring), puis **maintenance et itérations** (suivi des métriques, amélioration continue, gestion de la dérive du modèle).
 
 ### Combien de temps faut-il pour développer un RAG ou un agent IA ?
 
@@ -188,7 +188,7 @@ Sur les projets que je mène, un POC fonctionnel se construit en **2 à 4 semain
 
 ### Quel budget prévoir pour un projet IA ?
 
-Tout dépend du type de projet : un POC sur un cas d'usage ciblé n'a rien à voir avec une mise en production complète intégrée à votre SI, ou avec un déploiement souverain on-premise. La complexité des données, le niveau d'exigence sur la précision, les contraintes d'intégration et de sécurité influent fortement sur le périmètre. Le premier échange (cadrage du besoin) est gratuit — c'est à ce moment-là qu'on chiffre une fourchette adaptée à votre contexte.
+Tout dépend du type de projet : un POC sur un cas d'usage ciblé n'a rien à voir avec une mise en production complète intégrée à votre SI, ou avec un déploiement souverain on-premise. La complexité des données, le niveau d'exigence sur la précision, les contraintes d'intégration et de sécurité influent fortement sur le périmètre. Le premier échange (cadrage du besoin) est gratuit. C'est à ce moment-là qu'on chiffre une fourchette adaptée à votre contexte.
 
 ### Comment je garantis la confidentialité des données ?
 
@@ -212,7 +212,7 @@ L'agent doit s'interfacer avec l'écosystème en place : **API internes**, **bas
 
 ### Comment travailler avec moi via Tensoria ?
 
-[Tensoria](https://tensoria.fr/) est ma structure de conseil en IA. J'y propose : **cadrage de projet IA**, **prototypage**, **audit RAG**, **mise en production**, **accompagnement et formation d'équipes data**. J'interviens en régie ou au forfait, principalement à Toulouse et en remote. Le premier échange (cadrage du besoin) est toujours gratuit — il suffit de m'écrire à **[anas@tensoria.fr](mailto:anas@tensoria.fr)**.
+[Tensoria](https://tensoria.fr/) est ma structure de conseil en IA. J'y propose : **cadrage de projet IA**, **prototypage**, **audit RAG**, **mise en production**, **accompagnement et formation d'équipes data**. J'interviens en régie ou au forfait, principalement à Toulouse et en remote. Le premier échange (cadrage du besoin) est toujours gratuit. Il suffit de m'écrire à **[anas@tensoria.fr](mailto:anas@tensoria.fr)**.
 
 <script type="application/ld+json">
 {
@@ -224,7 +224,7 @@ L'agent doit s'interfacer avec l'écosystème en place : **API internes**, **bas
       "name": "Comment se déroule un projet IA chez Tensoria ?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Je suis 4 étapes sur les missions Tensoria : cadrage (1 à 2 semaines pour comprendre le besoin métier, définir les KPIs et choisir l'approche — RAG, agent, finetuning), POC (2 à 4 semaines pour valider la faisabilité sur un sous-ensemble réel des données du client), mise en production (intégration aux systèmes existants, sécurité, monitoring), puis maintenance et itérations (suivi des métriques, amélioration continue, gestion de la dérive du modèle)."
+        "text": "Je suis 4 étapes sur les missions Tensoria : cadrage (1 à 2 semaines pour comprendre le besoin métier, définir les KPIs et choisir l'approche (RAG, agent, finetuning), POC (2 à 4 semaines pour valider la faisabilité sur un sous-ensemble réel des données du client), mise en production (intégration aux systèmes existants, sécurité, monitoring), puis maintenance et itérations (suivi des métriques, amélioration continue, gestion de la dérive du modèle)."
       }
     },
     {
@@ -240,7 +240,7 @@ L'agent doit s'interfacer avec l'écosystème en place : **API internes**, **bas
       "name": "Quel budget prévoir pour un projet IA ?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Tout dépend du type de projet : un POC sur un cas d'usage ciblé n'a rien à voir avec une mise en production complète intégrée à votre SI, ou avec un déploiement souverain on-premise. La complexité des données, le niveau d'exigence sur la précision, les contraintes d'intégration et de sécurité influent fortement sur le périmètre. Le premier échange (cadrage du besoin) est gratuit — c'est à ce moment-là qu'on chiffre une fourchette adaptée à votre contexte."
+        "text": "Tout dépend du type de projet : un POC sur un cas d'usage ciblé n'a rien à voir avec une mise en production complète intégrée à votre SI, ou avec un déploiement souverain on-premise. La complexité des données, le niveau d'exigence sur la précision, les contraintes d'intégration et de sécurité influent fortement sur le périmètre. Le premier échange (cadrage du besoin) est gratuit. C'est à ce moment-là qu'on chiffre une fourchette adaptée à votre contexte."
       }
     },
     {
@@ -288,7 +288,7 @@ L'agent doit s'interfacer avec l'écosystème en place : **API internes**, **bas
       "name": "Comment travailler avec moi via Tensoria ?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Tensoria (tensoria.fr) est ma structure de conseil en IA. J'y propose : cadrage de projet IA, prototypage, audit RAG, mise en production, accompagnement et formation d'équipes data. J'interviens en régie ou au forfait, principalement à Toulouse et en remote. Le premier échange est toujours gratuit — il suffit de m'écrire à anas@tensoria.fr."
+        "text": "Tensoria (tensoria.fr) est ma structure de conseil en IA. J'y propose : cadrage de projet IA, prototypage, audit RAG, mise en production, accompagnement et formation d'équipes data. J'interviens en régie ou au forfait, principalement à Toulouse et en remote. Le premier échange est toujours gratuit. Il suffit de m'écrire à anas@tensoria.fr."
       }
     }
   ]

@@ -28,7 +28,7 @@ En entreprise, on a souvent des dizaines (voire des centaines) de fichiers. Le R
 
 <!-- more -->
 
-> Pour la vue d'ensemble — quand le RAG fonctionne, où il atteint ses limites — voir le [guide RAG](/rag/).
+> Pour la vue d'ensemble (quand le RAG fonctionne, où il atteint ses limites), voir le [guide RAG](/rag/).
 
 
 C'est une technique comme une autre : parfois adaptée, parfois non. Si vous avez un petit document de 10 pages, inutile de monter un RAG : on peut le charger directement dans un LLM et poser des questions. En revanche, 100 articles de 100 pages, même si c'est *possible* à charger, ce n'est pas toujours pertinent (ni rentable).
@@ -99,7 +99,7 @@ Et pour ceux qui se demandent : *« et le finetuning alors ? »*, c'est une troi
 
 Le vrai mouvement, c'est que le RAG n'est plus "juste" du retrieval vectoriel. Il intègre des capacités d'agent : reformulation de requête, recherche multi-sources, vérification des résultats, itération.
 
-L'**Agentic RAG**, c'est un RAG où l'IA décide elle-même de relancer une recherche si les premiers résultats ne suffisent pas, de combiner plusieurs sources, ou d'adapter sa stratégie de recherche. C'est une réponse directe aux limites du RAG classique sur les requêtes complexes — j'ai détaillé les 5 patterns agentiques et leur coût réel dans [Agentic RAG vs RAG classique : quelle différence ?](agentic-rag-vs-rag-classique.md).
+L'**Agentic RAG**, c'est un RAG où l'IA décide elle-même de relancer une recherche si les premiers résultats ne suffisent pas, de combiner plusieurs sources, ou d'adapter sa stratégie de recherche. C'est une réponse directe aux limites du RAG classique sur les requêtes complexes ; j'ai détaillé les 5 patterns agentiques et leur coût réel dans [Agentic RAG vs RAG classique : quelle différence ?](agentic-rag-vs-rag-classique.md).
 
 J'en parle concrètement dans [le cas client BTP](cas-usage-rag-redaction-appels-offres-btp.md) où un RAG multi-sources couplé à un agent rédacteur a permis de gagner 83% du temps sur la rédaction d'appels d'offres. Et dans [c'est quoi un agent IA](c-est-quoi-un-agent-ia.md) si vous voulez comprendre la différence fondamentale entre les deux approches.
 
@@ -111,7 +111,7 @@ Le RAG n'est pas mort. Il reste une approche pragmatique pour rendre les LLMs ut
 
 Le Long Context LLM est un outil complémentaire, pas un remplacement. Chacun a ses cas d'usage. Et l'Agentic RAG représente l'évolution naturelle pour les cas où le RAG classique atteint ses limites.
 
-Plutôt que de se demander si le RAG est fini, la vraie question est : **à quel moment un RAG est utile (ou non) pour votre cas d'usage** — et comment l'optimiser quand c'est le bon choix.
+Plutôt que de se demander si le RAG est fini, la vraie question est : **à quel moment un RAG est utile (ou non) pour votre cas d'usage**, et comment l'optimiser quand c'est le bon choix.
 
 ***
 

@@ -80,7 +80,7 @@ Une fois la baseline établie, voici dans quel ordre appliquer les optimisations
 
 ***
 
-## Phase 1 — Améliorer la requête avant la recherche
+## Phase 1 : Améliorer la requête avant la recherche
 
 Le retrieval vectoriel encode le sens de votre question et cherche les chunks similaires. Le problème : les questions utilisateurs sont souvent courtes, ambiguës, mal formulées. Et les documents, eux, sont longs et riches en contexte.
 
@@ -88,7 +88,7 @@ Ce déséquilibre crée un problème de représentation : l'embedding d'une ques
 
 Les techniques de pre-retrieval attaquent ce problème.
 
-### Technique 1 — HyDE : chercher avec un document hypothétique
+### Technique 1 : HyDE, chercher avec un document hypothétique
 
 **Le mécanisme** : au lieu d'embedder votre question, on demande d'abord au LLM de générer un "document hypothétique" qui répondrait idéalement à cette question. Puis on embède ce document hypothétique pour chercher dans votre base.
 
@@ -115,7 +115,7 @@ results = vectorstore.similarity_search(hypothetical_doc, k=5)
 
 ---
 
-### Technique 2 — Multi-Query + RAG-Fusion
+### Technique 2 : Multi-Query + RAG-Fusion
 
 **Le mécanisme** : générer N reformulations de la même question, lancer chaque reformulation en parallèle, fusionner les résultats avec RRF.
 
@@ -141,7 +141,7 @@ results = retriever.invoke("votre question")
 
 ---
 
-### Technique 3 — Step-Back Prompting
+### Technique 3 : Step-Back Prompting
 
 Pour les questions très spécifiques, le retrieval rate parfois parce qu'il n'y a pas de chunk qui parle exactement de ce cas précis, mais il y a des chunks qui couvrent le principe général.
 
@@ -157,9 +157,9 @@ On lance les deux recherches et on fournit les deux contextes au LLM.
 
 ***
 
-## Phase 2 — Améliorer ce qu'on récupère
+## Phase 2 : Améliorer ce qu'on récupère
 
-### Technique 4 — Hybrid Search BM25 + vectoriel
+### Technique 4 : Hybrid Search BM25 + vectoriel
 
 C'est probablement l'optimisation avec le meilleur rapport gain/effort. Le vectoriel seul rate systématiquement les requêtes avec du jargon métier, des normes, des codes produit. BM25 les capture parfaitement.
 
@@ -169,7 +169,7 @@ J'ai consacré un article entier à cette technique (implémentation avec LangCh
 
 ---
 
-### Technique 5 — Contextual Retrieval (Anthropic, 2024)
+### Technique 5 : Contextual Retrieval (Anthropic, 2024)
 
 C'est la technique qui a produit les plus grands gains dans tous les benchmarks que j'ai vus, et c'est aussi la plus méconnue en France.
 
@@ -197,7 +197,7 @@ Le chunk final = contexte généré + chunk original. C'est ce texte enrichi qui
 
 | Technique | Taux d'échec | Réduction |
 |---|---|---|
-| Baseline | 5.7% | — |
+| Baseline | 5.7% | (référence) |
 | + Contextual Embeddings | 3.7% | **−35%** |
 | + BM25 contextuel | 2.9% | **−49%** |
 | + Reranking | 1.9% | **−67%** |
@@ -208,9 +208,9 @@ Je couvre l'implémentation complète dans [l'article dédié au chunking](chunk
 
 ***
 
-## Phase 3 — Améliorer ce qu'on passe au LLM
+## Phase 3 : Améliorer ce qu'on passe au LLM
 
-### Technique 6 — Reranking (cross-encoder)
+### Technique 6 : Reranking (cross-encoder)
 
 C'est l'optimisation post-retrieval la plus efficace. Et elle s'explique par une distinction architecturale importante.
 
@@ -262,7 +262,7 @@ graph LR
 
 ---
 
-### Technique 7 — Context Compression + LongContextReorder
+### Technique 7 : Context Compression + LongContextReorder
 
 **Le problème** : vous passez 10 chunks au LLM. Mais l'information utile est noyée dans du bruit. Et les LLMs lisent mal les longs contextes. Stanford a montré en 2023 que les modèles rappellent bien ce qui est en début et fin de contexte, mais ratent souvent ce qui est au milieu.
 
@@ -300,9 +300,9 @@ results = compression_retriever.invoke(query)
 
 ***
 
-## Phase 4 — Optimisations transversales
+## Phase 4 : Optimisations transversales
 
-### Technique 8 — Semantic Caching
+### Technique 8 : Semantic Caching
 
 C'est l'optimisation infrastructure la plus rentable si votre RAG a du trafic.
 
@@ -325,7 +325,7 @@ cache.init(
 
 **Benchmark Redis** : 15x plus rapide sur les requêtes répétées, −50% de coût LLM.
 
-**Le paramètre clé** : le seuil de similarité. Trop bas (0.85) → faux positifs, vous retournez une réponse pour une question différente. Trop haut (0.98) → peu de cache hits. 0.90–0.95 est généralement le bon compromis.
+**Le paramètre clé** : le seuil de similarité. Trop bas (0.85) → faux positifs, vous retournez une réponse pour une question différente. Trop haut (0.98) → peu de cache hits. La plage 0.90 à 0.95 est généralement le bon compromis.
 
 **Quand l'utiliser** : dès que votre analyse de logs montre que >20% des requêtes sont des variantes de la même question. Typique sur des chatbots support, FAQ assistées, ou dashboards internes.
 
@@ -338,10 +338,10 @@ cache.init(
 | Technique | Gain mesuré | Effort | Quand l'appliquer en premier |
 |---|---|---|---|
 | **Hybrid Search** | +10% Hit Rate | Faible | Dès que vous avez du jargon ou des acronymes |
-| **Reranking** | +15–24% NDCG | Moyen | Si le retrieval remonte du bruit bien classé |
+| **Reranking** | +15 à 24 % NDCG | Moyen | Si le retrieval remonte du bruit bien classé |
 | **Contextual Retrieval** | −35 à −67% échecs | Moyen | Chunks anonymes, contexte manquant |
-| **HyDE** | +5–15% | Faible | Requêtes courtes et ambiguës |
-| **Multi-Query** | +5–10% recall | Faible | Utilisateurs qui formulent mal |
+| **HyDE** | +5 à 15 % | Faible | Requêtes courtes et ambiguës |
+| **Multi-Query** | +5 à 10 % recall | Faible | Utilisateurs qui formulent mal |
 | **Semantic Cache** | 15x latence, −50% coût | Moyen | Trafic répété >20% |
 | **LongContextReorder** | Marginal mais gratuit | Nul | Systématiquement |
 | **Context Compression** | Qualité sur corpus bruités | Élevé | Précision critique, budget disponible |
@@ -349,9 +349,9 @@ cache.init(
 **L'ordre que j'applique sur mes projets :**
 
 1. Mesurer la baseline (Hit Rate + fidélité) : sans ça, impossible de savoir ce qui marche
-2. Hybrid Search — ratio gain/effort imbattable
-3. Reranking — le second levier le plus efficace
-4. Contextual Retrieval — si les chunks manquent de contexte
+2. Hybrid Search (ratio gain/effort imbattable)
+3. Reranking (le second levier le plus efficace)
+4. Contextual Retrieval (si les chunks manquent de contexte)
 5. Les autres selon les besoins spécifiques
 
 Ce qu'on n'optimise jamais en premier : le prompt. Si votre retrieval ne ramène pas les bons chunks, aucun prompt ne compensera ça.
@@ -380,11 +380,11 @@ Non. Les techniques décrites ici améliorent un RAG qui fonctionne déjà corre
 
 ## Pour aller plus loin
 
-- **[RAG hybride BM25 + vectoriel : comment l'implémenter](rag-hybride-bm25-vectoriel.md)** — La technique 4, avec implémentation complète en 3 stacks
-- **[Chunking optimal pour votre RAG](chunking-optimal-rag.md)** — La fondation avant toute optimisation, avec benchmarks Chroma et Anthropic
-- **[RAG : une porte d'entrée par sa simplicité d'implémentation](rag-trop-simple.md)** — La méthode d'analyse d'erreur pour identifier quoi optimiser en premier
-- **[Les 4 causes techniques d'échec d'un RAG](les-4-causes-techniques-echec-rag.md)** — Diagnostiquer avant d'optimiser
-- **[Agentic RAG vs RAG classique](agentic-rag-vs-rag-classique.md)** — Quand optimiser ne suffit plus et qu'il faut repenser l'architecture
+- **[RAG hybride BM25 + vectoriel : comment l'implémenter](rag-hybride-bm25-vectoriel.md)** : la technique 4, avec implémentation complète en 3 stacks
+- **[Chunking optimal pour votre RAG](chunking-optimal-rag.md)** : la fondation avant toute optimisation, avec benchmarks Chroma et Anthropic
+- **[RAG : une porte d'entrée par sa simplicité d'implémentation](rag-trop-simple.md)** : la méthode d'analyse d'erreur pour identifier quoi optimiser en premier
+- **[Les 4 causes techniques d'échec d'un RAG](les-4-causes-techniques-echec-rag.md)** : diagnostiquer avant d'optimiser
+- **[Agentic RAG vs RAG classique](agentic-rag-vs-rag-classique.md)** : quand optimiser ne suffit plus et qu'il faut repenser l'architecture
 
 ***
 

@@ -35,7 +35,7 @@ Je vais illustrer ça avec un cas concret qu'on a réalisé récemment : l'autom
 
 <!-- more -->
 
-> Cas d'usage rattaché au [guide complet sur le RAG](/rag/) — un pipeline RAG appliqué à l'assurance.
+> Cas d'usage rattaché au [guide complet sur le RAG](/rag/) : un pipeline RAG appliqué à l'assurance.
 
 ## Le problème : un rapport qui prend des heures
 

@@ -27,9 +27,9 @@ Ce sont des erreurs qu'on fait tous au moins une fois. L'idée ici, c'est de les
 
 <!-- more -->
 
-> Article rattaché au [guide complet sur le RAG](/rag/) — où je détaille fondations, optimisation et mise en production.
+> Article rattaché au [guide complet sur le RAG](/rag/), où je détaille fondations, optimisation et mise en production.
 
-## Erreur n°1 — Croire que le RAG va répondre à tout
+## Erreur n°1 : Croire que le RAG va répondre à tout
 
 C'est probablement l'erreur la plus fréquente, et elle ne vient pas forcément de l'équipe technique. Elle vient d'un décalage entre ce que le client imagine et ce que le RAG fait réellement.
 
@@ -45,7 +45,7 @@ C'était un de nos premiers RAG, et ça nous a appris une chose essentielle : **
 
 Depuis, on fait systématiquement cet exercice avec chaque nouveau client. Et ça change tout. Moins de frustration, moins de déception, et un projet qui part sur de bonnes bases. C'est vrai que ça fait moins rêver, mais on ne vend pas de rêve au client, on essaye de vendre un produit qui fonctionne, avec la réalité du terrain. Ce que je dis souvent à mes clients : on a pas besoin que l'IA fasse 100% de réponses justes pour que ça nous fasse gagner du temps. A 90% de bonnes réponses on est déjà gagnant dans l'histoire. Economiquement parlant, 90% bonnes réponses, veut dire qu'on peut renseigner 9 clients sur 10, ce qui évite déjà la perte de temps à répondre à des questions répétitives, et évite de perdre des clients. Le client est très statisfait quand il trouve des réponses de façon instantanée, et sans avoir à chercher manuellement dans des documents.
 
-## Erreur n°2 — Penser que le prochain RAG sera simple parce qu'on en a déjà fait un
+## Erreur n°2 : Penser que le prochain RAG sera simple parce qu'on en a déjà fait un
 
 Celle-là, on l'a tous faite. On livre un premier RAG, ça se passe bien, et on se dit : "Bon, maintenant on a la méthode, le prochain sera rapide." Faux.
 
@@ -61,7 +61,7 @@ J'ai aussi eu des clients qui venaient nous voir parce que **leur RAG existant n
 
 Chaque RAG est un projet en soi. Il n'y a pas de raccourci.
 
-## Erreur n°3 — Foncer dans le code sans regarder les données
+## Erreur n°3 : Foncer dans le code sans regarder les données
 
 C'est une erreur classique de développeur (et je m'inclus dedans). On reçoit un brief, on a envie de coder, et on se lance directement dans le pipeline : parsing, chunking, embeddings, retriever, prompt. On a nos habitudes, on connaît l'architecture, on veut avancer vite.
 
@@ -82,7 +82,7 @@ Concrètement, avant de coder quoi que ce soit, je prends maintenant systématiq
 
 C'est cette étape qui me permet d'estimer correctement un projet. Et c'est cette étape que la plupart des gens sautent. On veut aller vite, on veut montrer un premier résultat. Mais un premier résultat sur des données qu'on n'a pas comprises, ça ne vaut rien.
 
-## Erreur n°4 — Tout faire avec un framework sans comprendre ce qui se passe derrière
+## Erreur n°4 : Tout faire avec un framework sans comprendre ce qui se passe derrière
 
 J'ai utilisé LangChain dans mes premiers RAG. J'ai aussi beaucoup utilisé LlamaIndex. Et je ne dis pas que ces frameworks sont mauvais. Mais je dis qu'il y a un vrai piège à les utiliser sans comprendre ce qu'ils font derrière leurs fonctions.
 
@@ -100,7 +100,7 @@ Et sur le long terme, c'est encore plus vrai. Des nouvelles techniques sortent t
 
 Ce que je dis là s'applique aussi aux Agents IA, et j'en ai fait un article entier après une vingtaine de projets en tant que dev et lead data scientist : [pourquoi LangChain et LlamaIndex ne sont pas la solution ultime en production](stack-ia-production-langchain-llamaindex-limites.md). En face, pour les frameworks d'agents (CrewAI, LangGraph, Pydantic AI, Smolagents), un autre article fait le tri avec une position pragmatique : [comparatif pragmatique des frameworks d'agents IA en 2026](crewai-langchain-langgraph-comparatif-pragmatique.md).
 
-## Erreur n°5 — Ne pas mesurer dès le début
+## Erreur n°5 : Ne pas mesurer dès le début
 
 Celle-là, c'est l'erreur silencieuse. Le RAG est en place, il tourne, les utilisateurs posent des questions, et on a l'impression que "ça marche". Mais est-ce que ça marche vraiment ? À quel point ? On ne sait pas, parce qu'on n'a rien mis en place pour mesurer.
 

@@ -69,7 +69,7 @@ Ces deux composantes, bien que puissantes, nécessitent une approche réfléchie
 
 Pour mieux comprendre les relations entre l'Intelligence Artificielle, le Machine Learning et le Deep Learning, voici une représentation visuelle qui illustre comment ces domaines s'imbriquent les uns dans les autres :
 
-![Relation entre IA, Machine Learning et Deep Learning – comprendre l'intelligence artificielle](./img/IA-ml-dl.webp)
+![Relation entre IA, Machine Learning et Deep Learning : comprendre l'intelligence artificielle](./img/IA-ml-dl.webp)
 
 Cette image montre clairement que le Deep Learning est un sous-ensemble du Machine Learning, qui est lui-même une branche de l'Intelligence Artificielle. Chaque couche représente une approche plus spécialisée et sophistiquée, avec des techniques et des applications spécifiques.
 
@@ -141,13 +141,13 @@ Et si vous voulez rester à jour sur ce qui bouge dans le domaine (les modèles,
 ## FAQ : Questions fréquentes sur l'intelligence artificielle
 
 **Quelle est la différence entre l'IA, le machine learning et le deep learning ?**
-L'IA est le domaine général : tout système qui simule une forme d'intelligence. Le machine learning en est un sous-ensemble : les machines apprennent à partir de données sans être explicitement programmées. Le deep learning est un sous-ensemble du machine learning, basé sur des réseaux de neurones profonds — particulièrement efficace pour les images, le texte et la voix.
+L'IA est le domaine général : tout système qui simule une forme d'intelligence. Le machine learning en est un sous-ensemble : les machines apprennent à partir de données sans être explicitement programmées. Le deep learning est un sous-ensemble du machine learning, basé sur des réseaux de neurones profonds, particulièrement efficace pour les images, le texte et la voix.
 
 **Pourquoi l'IA a-t-elle besoin d'autant de données ?**
-Contrairement à l'humain qui peut apprendre d'un seul exemple, une IA doit voir des milliers ou millions d'exemples pour identifier des patterns fiables. AlphaGo a été entraîné sur des dizaines de millions de parties de Go — un champion humain en joue bien moins pour atteindre le même niveau.
+Contrairement à l'humain qui peut apprendre d'un seul exemple, une IA doit voir des milliers ou millions d'exemples pour identifier des patterns fiables. AlphaGo a été entraîné sur des dizaines de millions de parties de Go, là où un champion humain en joue bien moins pour atteindre le même niveau.
 
 **Peut-on utiliser l'IA sans être développeur ?**
-Oui. Des outils comme ChatGPT, Notion AI ou Copilot permettent d'utiliser l'IA sans code — j'ai écrit un guide pratique sur [comment utiliser ChatGPT efficacement](utiliser-chatgpt-efficacement.md) (bonnes pratiques de prompting et limites à connaître). Pour intégrer l'IA dans une application métier (chatbot sur vos documents, automatisation de processus), il faut généralement faire appel à un développeur ou consultant IA.
+Oui. Des outils comme ChatGPT, Notion AI ou Copilot permettent d'utiliser l'IA sans code. J'ai écrit un guide pratique sur [comment utiliser ChatGPT efficacement](utiliser-chatgpt-efficacement.md) (bonnes pratiques de prompting et limites à connaître). Pour intégrer l'IA dans une application métier (chatbot sur vos documents, automatisation de processus), il faut généralement faire appel à un développeur ou consultant IA.
 
 **Quel est le domaine de l'IA le plus utilisé en entreprise ?**
 Le NLP (traitement du langage naturel) est aujourd'hui le plus déployé, notamment via les LLM (ChatGPT, Claude, Mistral) et les systèmes RAG. Viennent ensuite la vision par ordinateur (contrôle qualité, sécurité) et les systèmes de recommandation (e-commerce, plateformes média).

@@ -34,7 +34,7 @@ Le chunking, c'est la décision sur laquelle la plupart des équipes passent le 
 
 <!-- more -->
 
-> Le chunking est une brique du RAG parmi d'autres. Pour le panorama d'ensemble — embeddings, retrieval, évaluation — voir le [guide complet du RAG](/rag/).
+> Le chunking est une brique du RAG parmi d'autres. Pour le panorama d'ensemble (embeddings, retrieval, évaluation), voir le [guide complet du RAG](/rag/).
 
 ***
 
@@ -63,7 +63,7 @@ La règle d'or de Pinecone résume ça mieux que n'importe quel benchmark : *"Si
 
 Du plus simple au plus avancé. Elles ne sont pas exclusives : les meilleures architectures combinent plusieurs d'entre elles.
 
-### 1. Fixed-size — le point de départ universel
+### 1. Fixed-size : le point de départ universel
 
 Vous découpez chaque document en blocs de N tokens avec un overlap de X tokens entre les blocs. C'est la stratégie par défaut de presque tous les frameworks.
 
@@ -71,7 +71,7 @@ Vous découpez chaque document en blocs de N tokens avec un overlap de X tokens 
 
 | Taille | Quand l'utiliser |
 |---|---|
-| 128–256 tokens | Questions très précises et factuelles |
+| 128 à 256 tokens | Questions très précises et factuelles |
 | 512 tokens | Polyvalent, bon équilibre par défaut |
 | 1024 tokens | Contexte nécessaire, documents narratifs |
 | 2048 tokens | Rarement utile, attention à la limite d'embedding |
@@ -82,7 +82,7 @@ Sur le benchmark LlamaIndex (Uber 10K, document financier), 1024 tokens atteint 
 
 ---
 
-### 2. Recursive Splitting — le vrai standard
+### 2. Recursive Splitting : le vrai standard
 
 C'est une version plus intelligente du fixed-size. Au lieu de couper tous les N tokens sans réfléchir, le splitter essaie d'abord de couper sur les séparateurs naturels : double saut de ligne d'abord, puis saut de ligne simple, puis espace, puis caractère à caractère en dernier recours.
 
@@ -118,7 +118,7 @@ Ce détail change beaucoup sur des textes avec des caractères unicode, des emoj
 
 ---
 
-### 3. Structure-aware — respecter la structure du document
+### 3. Structure-aware : respecter la structure du document
 
 Quand vos documents ont une structure (Markdown, HTML, code), autant l'utiliser.
 
@@ -150,7 +150,7 @@ L'avantage : les métadonnées de hiérarchie sont conservées dans chaque chunk
 
 ---
 
-### 4. Semantic Chunking — couper sur les changements de sujet
+### 4. Semantic Chunking : couper sur les changements de sujet
 
 Au lieu de couper à une taille fixe, le semantic chunking compare les embeddings de phrases consécutives. Quand la distance cosinus entre deux phrases dépasse un seuil, on coupe. L'idée : quand le sujet change, on ouvre un nouveau chunk.
 
@@ -178,7 +178,7 @@ Chroma Research mesure la meilleure précision et IoU avec le chunking sémantiq
 
 ---
 
-### 5. Sentence Window Retrieval — précision sans perdre le contexte
+### 5. Sentence Window Retrieval : précision sans perdre le contexte
 
 Ce pattern résout un vrai problème : les petits chunks sont précis pour le retrieval, mais donnent trop peu de contexte au LLM pour générer une bonne réponse.
 
@@ -208,7 +208,7 @@ postprocessor = MetadataReplacementPostProcessor(
 
 ---
 
-### 6. Parent-Child / Hierarchical — le grand contexte quand nécessaire
+### 6. Parent-Child / Hierarchical : le grand contexte quand nécessaire
 
 Une variante de Sentence Window, mais à plusieurs niveaux. On crée une hiérarchie : chunks parents larges (1024 tokens), enfants intermédiaires (512), petits-enfants précis (128).
 
@@ -234,7 +234,7 @@ retriever = AutoMergingRetriever(
 
 ---
 
-### 7. Late Chunking (JinaAI, 2024) — la meilleure amélioration "gratuite"
+### 7. Late Chunking (JinaAI, 2024) : la meilleure amélioration "gratuite"
 
 C'est l'idée la plus contre-intuitive de cette liste.
 
@@ -250,7 +250,7 @@ Sur le benchmark BEIR, dataset NFCorpus (documents longs) : late chunking passe 
 
 ---
 
-### 8. Contextual Retrieval (Anthropic, 2024) — le plus grand gain mesurable
+### 8. Contextual Retrieval (Anthropic, 2024) : le plus grand gain mesurable
 
 C'est la technique qui a produit les améliorations les plus importantes dans tous les benchmarks que j'ai vus.
 
@@ -280,7 +280,7 @@ Le chunk final = contexte généré + chunk original. C'est ce texte enrichi qui
 
 | Technique | Taux d'échec | Réduction |
 |---|---|---|
-| Baseline (RAG classique) | 5.7% | — |
+| Baseline (RAG classique) | 5.7% | (référence) |
 | + Contextual Embeddings | 3.7% | **−35%** |
 | + BM25 contextuel | 2.9% | **−49%** |
 | + Reranking (Cohere) | 1.9% | **−67%** |
@@ -330,7 +330,7 @@ Mais combien d'overlap ?
 | 512 tokens | 51 tokens |
 | 1024 tokens | 102 tokens |
 
-Augmentez à 15–20% uniquement si vos évaluations montrent des ratés aux frontières de chunks (ce qui est rare si votre découpage respecte les séparateurs naturels).
+Augmentez à 15-20 % uniquement si vos évaluations montrent des ratés aux frontières de chunks (ce qui est rare si votre découpage respecte les séparateurs naturels).
 
 ***
 
@@ -377,7 +377,7 @@ La pire façon de choisir son chunking : tester à la main quelques questions et
 
 **Étape 1 : Générer des questions synthétiques**
 
-LlamaIndex a un `DatasetGenerator` qui lit vos chunks et génère automatiquement des questions pertinentes pour chacun. Pour 500 chunks, vous pouvez générer 2000–3000 questions en une vingtaine de minutes.
+LlamaIndex a un `DatasetGenerator` qui lit vos chunks et génère automatiquement des questions pertinentes pour chacun. Pour 500 chunks, vous pouvez générer 2000 à 3000 questions en une vingtaine de minutes.
 
 ```python
 from llama_index.core.evaluation import DatasetGenerator
@@ -416,7 +416,7 @@ La configuration avec le meilleur Hit Rate et la meilleure fidélité gagne. C'e
 
 **Quelle taille de chunk pour GPT-5.2 ? Pour Claude ? Pour Mistral ?**
 
-La limite du modèle de *génération* n'est pas le facteur limitant ici : GPT-5.2, Claude 4.5 et Mistral Large ont tous des fenêtres de 128K tokens minimum. Le facteur limitant est le modèle d'*embedding* (généralement 512 ou 8192 tokens selon le modèle). Et au-delà des limites techniques, les benchmarks suggèrent 512–1024 tokens comme sweet spot universel, indépendamment du LLM de génération.
+La limite du modèle de *génération* n'est pas le facteur limitant ici : GPT-5.2, Claude 4.5 et Mistral Large ont tous des fenêtres de 128K tokens minimum. Le facteur limitant est le modèle d'*embedding* (généralement 512 ou 8192 tokens selon le modèle). Et au-delà des limites techniques, les benchmarks suggèrent 512 à 1024 tokens comme sweet spot universel, indépendamment du LLM de génération.
 
 **Faut-il rechunker quand on change de modèle d'embedding ?**
 
@@ -434,11 +434,11 @@ Le chunking est une opération d'ingestion, pas de requête. Pour les mises à j
 
 ## Pour aller plus loin
 
-- **[Mais c'est quoi le RAG vraiment ?](mais-que-es-le-rag.md)** — Si vous n'avez pas encore les bases du pipeline RAG
-- **[Les 4 causes techniques d'échec d'un RAG](les-4-causes-techniques-echec-rag.md)** — Le chunking est souvent la cause racine, voici comment diagnostiquer
-- **[RAG : une porte d'entrée par sa simplicité d'implémentation](rag-trop-simple.md)** — Analyser et corriger un RAG qui sous-performe
-- **[RAG hybride BM25 + vectoriel](rag-hybride-bm25-vectoriel.md)** — L'étape suivante après le chunking : améliorer le retrieval avec du hybrid search
-- **[Les 5 erreurs que tout le monde fait avec le RAG](les-5-erreurs-rag.md)** — Notamment l'erreur n°3 : foncer dans le code sans regarder les données (qui s'applique directement au chunking)
+- **[Mais c'est quoi le RAG vraiment ?](mais-que-es-le-rag.md)** : si vous n'avez pas encore les bases du pipeline RAG
+- **[Les 4 causes techniques d'échec d'un RAG](les-4-causes-techniques-echec-rag.md)** : le chunking est souvent la cause racine, voici comment diagnostiquer
+- **[RAG : une porte d'entrée par sa simplicité d'implémentation](rag-trop-simple.md)** : analyser et corriger un RAG qui sous-performe
+- **[RAG hybride BM25 + vectoriel](rag-hybride-bm25-vectoriel.md)** : l'étape suivante après le chunking, améliorer le retrieval avec du hybrid search
+- **[Les 5 erreurs que tout le monde fait avec le RAG](les-5-erreurs-rag.md)** : notamment l'erreur n°3, foncer dans le code sans regarder les données (qui s'applique directement au chunking)
 
 ***
 

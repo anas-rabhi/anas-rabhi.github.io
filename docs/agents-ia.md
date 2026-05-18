@@ -6,11 +6,11 @@ hide:
   - toc
 ---
 
-# Agents IA — Architecture, frameworks et mise en production
+# Agents IA : architecture, frameworks et mise en production
 
 Les **agents IA** sont la deuxième grande catégorie de systèmes IA déployés en entreprise, après le RAG. Là où un RAG répond à une question à partir de documents, un agent IA **décide, agit, enchaîne des étapes** : il appelle des outils, interroge des APIs, modifie des données, et combine plusieurs sources pour mener une tâche à bien.
 
-Je m'appelle **Anas Rabhi**, je suis consultant IA freelance à Toulouse. Cette page rassemble tout ce que j'ai écrit sur les agents IA — architectures, frameworks, mise en production, erreurs typiques — à partir de retours de mission réels.
+Je m'appelle **Anas Rabhi**, je suis consultant IA freelance à Toulouse. Cette page rassemble tout ce que j'ai écrit sur les agents IA (architectures, frameworks, mise en production, erreurs typiques), à partir de retours de mission réels.
 
 [Discuter d'un projet d'agent IA](mailto:anas@tensoria.fr){ .md-button .md-button--primary }
 [Voir mes articles](/blog/){ .md-button }
@@ -19,7 +19,7 @@ Je m'appelle **Anas Rabhi**, je suis consultant IA freelance à Toulouse. Cette 
 
 ## Qu'est-ce qu'un agent IA, exactement
 
-Un agent IA est un système où **un LLM prend des décisions sur les actions à effectuer**, à partir d'un objectif et d'un ensemble d'outils à sa disposition. À chaque étape, l'agent observe le contexte, raisonne, choisit un outil, l'exécute, observe le résultat, et recommence — jusqu'à atteindre l'objectif.
+Un agent IA est un système où **un LLM prend des décisions sur les actions à effectuer**, à partir d'un objectif et d'un ensemble d'outils à sa disposition. À chaque étape, l'agent observe le contexte, raisonne, choisit un outil, l'exécute, observe le résultat, et recommence, jusqu'à atteindre l'objectif.
 
 C'est cette **boucle décision-action-observation** qui distingue un agent d'un simple workflow scripté. Pour la définition complète avec les briques techniques (planning, tool use, mémoire), voir [C'est quoi un agent IA ?](/blog/2026/01/15/c-est-quoi-un-agent-ia/).
 
@@ -27,7 +27,7 @@ C'est cette **boucle décision-action-observation** qui distingue un agent d'un 
 
 ## Agent IA vs workflow no-code (n8n, Make, Zapier)
 
-C'est la question que je reçois le plus souvent : *« Pourquoi pas juste un n8n avec un nœud OpenAI ? »*. La réponse n'est pas tranchée — ça dépend de la nature de la tâche.
+C'est la question que je reçois le plus souvent : *« Pourquoi pas juste un n8n avec un nœud OpenAI ? »*. La réponse n'est pas tranchée : ça dépend de la nature de la tâche.
 
 | Critère | Workflow no-code | Agent IA |
 |---|---|---|
@@ -38,7 +38,7 @@ C'est la question que je reçois le plus souvent : *« Pourquoi pas juste un n8n
 | Coût d'exécution | Faible | Plus élevé (tokens LLM) |
 | Maintenance | Simple | Demande de l'observabilité |
 
-Mon retour terrain : **80 % des cas d'usage "agent" qu'on me présente sont en fait des workflows déguisés** — un n8n bien conçu suffit. Les 20 % restants justifient un vrai agent. La grille de décision détaillée : [Agent IA vs n8n, Make, Zapier : que choisir vraiment en 2026](/blog/2026/05/15/agent-ia-vs-n8n-make-zapier/).
+Mon retour terrain : **80 % des cas d'usage "agent" qu'on me présente sont en fait des workflows déguisés**. Un n8n bien conçu suffit. Les 20 % restants justifient un vrai agent. La grille de décision détaillée : [Agent IA vs n8n, Make, Zapier : que choisir vraiment en 2026](/blog/2026/05/15/agent-ia-vs-n8n-make-zapier/).
 
 ---
 
@@ -68,7 +68,7 @@ Sur les limites des stacks lourdes en production : [Stack IA production : LangCh
 
 ---
 
-## Le Model Context Protocol (MCP) — le standard 2026
+## Le Model Context Protocol (MCP) : le standard 2026
 
 Lancé par Anthropic fin 2024, le **MCP (Model Context Protocol)** est devenu en 2026 le standard de facto pour connecter les agents IA à des outils et des sources de données. C'est l'équivalent du HTTP pour les agents : une interface universelle qui découple l'agent de ses outils.
 
@@ -101,11 +101,11 @@ L'**Agentic RAG** est l'évolution naturelle du RAG classique quand on veut gér
 
 C'est plus puissant que le RAG classique mais plus lent et plus cher. Quand préférer l'un ou l'autre : [Agentic RAG vs RAG classique](/blog/2026/03/22/agentic-rag-vs-rag-classique/).
 
-Pour le RAG classique en lui-même, voir la page dédiée : [RAG — Le guide complet](/rag/).
+Pour le RAG classique en lui-même, voir la page dédiée : [RAG, le guide complet](/rag/).
 
 ---
 
-## Mettre un agent IA en production — les vrais enjeux
+## Mettre un agent IA en production : les vrais enjeux
 
 Faire tourner un agent en local sur ton laptop avec une API key OpenAI, c'est facile. Le mettre en production sur un workflow critique d'entreprise, c'est un autre niveau d'exigence. Les enjeux que je vois revenir mission après mission :
 
@@ -195,9 +195,9 @@ Sur des **tâches précises et bien cadrées**, oui en partie. Sur un métier co
 
 ## Pour aller plus loin
 
-- [RAG — Le guide complet](/rag/) — l'autre grande famille de systèmes IA en entreprise
-- [Comprendre l'IA générative](/comprendre-ia/) — les bases avant de plonger dans les agents
-- [Tous les articles du blog](/blog/) — retours de mission et guides techniques
+- [RAG, le guide complet](/rag/) : l'autre grande famille de systèmes IA en entreprise
+- [Comprendre l'IA générative](/comprendre-ia/) : les bases avant de plonger dans les agents
+- [Tous les articles du blog](/blog/) : retours de mission et guides techniques
 
 ---
 
@@ -211,7 +211,7 @@ Un workflow à automatiser ? Un agent existant qui plante ? Une décision à pre
 
 ---
 
-*Page rédigée par Anas Rabhi — Consultant IA & Data Scientist freelance à Toulouse. Dernière mise à jour : mai 2026.*
+*Page rédigée par Anas Rabhi, Consultant IA & Data Scientist freelance à Toulouse. Dernière mise à jour : mai 2026.*
 
 <script type="application/ld+json">
 {
@@ -219,7 +219,7 @@ Un workflow à automatiser ? Un agent existant qui plante ? Une décision à pre
   "@graph": [
     {
       "@type": "TechArticle",
-      "headline": "Agents IA — Architecture, frameworks et mise en production",
+      "headline": "Agents IA : architecture, frameworks et mise en production",
       "description": "Guide complet des agents IA : définition, frameworks (LangGraph, CrewAI), MCP, mémoire long terme, garde-fous, et différences avec n8n/Make/Zapier.",
       "url": "https://ianas.fr/agents-ia/",
       "inLanguage": "fr",
