@@ -1,6 +1,6 @@
 ---
-title: RAG (Retrieval-Augmented Generation) — Le guide complet pour l'entreprise
-description: Guide complet du RAG (Retrieval-Augmented Generation) par Anas Rabhi, consultant IA freelance à Toulouse. Architecture, embeddings, chunking, retrieval hybride, évaluation, mise en production et erreurs courantes.
+title: RAG : guide complet 2026 (architecture, prod, audit)
+description: Tout sur le RAG en entreprise : architecture, chunking, embeddings, retrieval hybride, évaluation. Retours de mission concrets et 8 techniques à fort impact.
 hide:
   - navigation
   - toc

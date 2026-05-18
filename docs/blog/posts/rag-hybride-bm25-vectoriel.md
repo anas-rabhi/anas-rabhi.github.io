@@ -1,7 +1,7 @@
 ---
-title: "RAG hybride BM25 + vectoriel : comment l'implémenter"
+title: "RAG hybride BM25 + vectoriel : implémentation"
 slug: rag-hybride-bm25-vectoriel
-description: "Vocabulary mismatch : pourquoi le vectoriel rate le jargon métier. BM25 + vectoriel + RRF = +10% recall. Implémentation en 3 stacks avec benchmarks."
+description: "Pourquoi le vectoriel rate le jargon métier. BM25 + vectoriel + RRF = +10% de recall. Implémentation détaillée en 3 stacks avec benchmarks à l'appui."
 categories:
   - "Blog"
   - "IA"

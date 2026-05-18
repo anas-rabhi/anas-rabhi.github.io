@@ -1,7 +1,7 @@
 ---
-title: "Mon RAG ne marche pas : pourquoi l'analyse d'erreur change tout"
+title: "Mon RAG ne marche pas : l'analyse d'erreur change tout"
 slug: mon-rag-ne-marche-pas-analyse-erreur
-description: "RAG qui ne fonctionne pas ? Diagnostic en 3 questions, quick wins à tester en 2h et méthode d'analyse d'erreur issue du terrain. Guide pratique."
+description: "RAG qui ne fonctionne pas ? Diagnostic en 3 questions, quick wins à tester en 2h et méthode d'analyse d'erreur issue du terrain. Guide pratique et concret."
 categories:
   - "Blog"
   - "IA"

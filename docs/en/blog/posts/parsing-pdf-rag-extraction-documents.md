@@ -1,7 +1,7 @@
 ---
-title: "PDF Parsing for RAG: How to Actually Extract Data from Your Documents"
+title: "PDF Parsing for RAG : Extract Data That Actually Works"
 slug: parsing-pdf-rag-extraction-documents
-description: "80% of RAG failures trace back to PDF parsing. A real-world comparison of Docling, Unstructured, LlamaParse, and Marker on industrial and e-commerce documents."
+description: "8 out of 10 RAG failures trace back to PDF parsing. Docling, Unstructured, LlamaParse and Marker compared on real industrial and e-commerce documents."
 categories:
   - "Blog"
   - "AI"

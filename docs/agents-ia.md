@@ -1,6 +1,6 @@
 ---
-title: Agents IA — Architecture, frameworks et mise en production
-description: Guide complet des agents IA par Anas Rabhi, consultant IA freelance à Toulouse. Définition, frameworks (LangGraph, CrewAI), Model Context Protocol (MCP), mémoire long terme, garde-fous, et différences avec n8n/Make/Zapier.
+title: Agents IA : architecture, frameworks et mise en production
+description: Guide complet des agents IA en 2026 : LangGraph, CrewAI, MCP, mémoire long terme, garde-fous. Cas concrets avec 75 % de temps gagné et ROI 300 % mesurés.
 hide:
   - navigation
   - toc

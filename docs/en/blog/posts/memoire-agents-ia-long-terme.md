@@ -1,7 +1,7 @@
 ---
-title: "AI Agent Memory: How It Really Works (and How to Implement It)"
+title: "AI Agent Memory : How It Really Works in Production"
 slug: memoire-agents-ia-long-terme
-description: "Short-term, long-term, semantic, episodic. How an AI agent decides what to remember, with a small dedicated LLM as filter. Mem0, Zep, Letta, LlamaIndex compared."
+description: "Short-term, long-term, semantic, episodic. The memory-writer pattern few people explain, plus Mem0, Zep, Letta and LlamaIndex compared on real benchmarks."
 categories:
   - "Blog"
   - "AI"

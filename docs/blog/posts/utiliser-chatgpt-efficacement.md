@@ -1,6 +1,6 @@
 ---
-title: "Utiliser ChatGPT efficacement"
-description: "Guide pratique pour utiliser ChatGPT efficacement : 6 limites à connaître, bonnes pratiques de prompting et cas d'usage concrets pour gagner du temps au travail."
+title: "Utiliser ChatGPT efficacement : limites, prompts et cas d'usage"
+description: "Utiliser ChatGPT efficacement : 6 limites à connaître, bonnes pratiques de prompting et cas d'usage concrets pour gagner du temps au travail au quotidien."
 categories:
   - "Blog"
   - "LLM"

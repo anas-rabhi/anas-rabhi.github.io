@@ -2,8 +2,8 @@
 categories:
 - Intelligence artificielle
 comments: true
-description: Découvrez mes réflexions sur le conseil, l'open source et les applications de l'IA à travers
-  des expériences personnelles et des conseils d'expert.
+title: Blog IA : RAG, agents, LLM en production | Anas Rabhi
+description: Articles techniques sur le RAG, les agents IA, les LLMs et le LLMOps. Retours de mission concrets, benchmarks et guides pratiques par Anas Rabhi, freelance IA.
 tags:
 - Agents
 - RAG

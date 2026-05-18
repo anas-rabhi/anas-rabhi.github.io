@@ -1,7 +1,7 @@
 ---
-title: "How to Evaluate a RAG in Production: Metrics, RAGAS, and Audit Methodology"
+title: "Evaluate RAG in Production : Metrics, RAGAS & Audit"
 slug: evaluer-rag-production-metriques-ragas
-description: "80% of production RAGs are never properly evaluated. The metrics that matter, RAGAS in practice, how to build an evaluation dataset, and how to audit a RAG system."
+description: "8 in 10 production RAGs are never evaluated. The metrics that matter, RAGAS in practice, how to build a ground-truth dataset, and audit a live RAG system."
 categories:
   - "Blog"
   - "AI"

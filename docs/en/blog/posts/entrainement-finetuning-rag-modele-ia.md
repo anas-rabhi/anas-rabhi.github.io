@@ -1,7 +1,7 @@
 ---
-title: "Training, Fine-Tuning, or RAG: How to Choose for Your AI?"
+title: "Training vs Fine-Tuning vs RAG : Which One to Pick?"
 slug: entrainement-finetuning-rag-modele-ia
-description: "Training vs fine-tuning vs RAG: understand the differences, real costs (from a few hundred to several million dollars), and a decision tree to know when to fine-tune an LLM vs use RAG."
+description: "Training vs fine-tuning vs RAG: real costs from $50 to $200M, a decision tree, and why RAG wins in 90% of enterprise cases — with concrete examples."
 categories:
   - "Blog"
   - "AI"

@@ -1,7 +1,7 @@
 ---
-title: "Comprendre l'intelligence artificielle : Guide Simple (Partie 1)"
+title: "Comprendre l'intelligence artificielle : guide simple (partie 1)"
 slug: comprendre-intelligence-artificielle-guide
-description: "Comprendre l'intelligence artificielle : machine learning, deep learning et domaines de l'IA (NLP, vision, séries temporelles) expliqués simplement avec exemples."
+description: "Comprendre l'IA : machine learning, deep learning et domaines clés (NLP, vision, séries temporelles) expliqués simplement avec des exemples concrets."
 categories:
   - "Blog"
   - "IA"

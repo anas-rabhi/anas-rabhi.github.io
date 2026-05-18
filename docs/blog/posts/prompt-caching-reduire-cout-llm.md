@@ -1,7 +1,7 @@
 ---
-title: "Prompt caching : réduire la facture LLM jusqu'à 90% (la meilleure optimisation 2026)"
+title: "Prompt caching : divisez la facture LLM jusqu'à 90% en 2026"
 slug: prompt-caching-reduire-cout-llm
-description: "Prompt caching Anthropic, OpenAI, Gemini : comment fonctionne le cache des LLMs, gains réels, code et patterns à appliquer dès aujourd'hui en production."
+description: "Prompt caching Anthropic, OpenAI, Gemini : KV cache expliqué, gains réels, code et patterns à appliquer en production pour réduire la facture LLM dès aujourd'hui."
 categories:
   - "Blog"
   - "IA"

@@ -1,7 +1,7 @@
 ---
-title: "Le RAG est-il vraiment fini ?"
+title: "RAG vs Long Context LLM : le RAG est-il fini ?"
 slug: le-rag-est-il-vraiment-fini
-description: "Le RAG est-il remplacé par le long context LLM ? Analyse des coûts, de la pertinence et des cas d'usage qui montrent que le RAG reste incontournable en entreprise."
+description: "RAG ou long context LLM ? Comparatif des coûts (1M tokens = 2 à 10€/question), du lost in the middle et des cas où le RAG reste incontournable en entreprise."
 categories:
   - "Blog"
   - "IA"

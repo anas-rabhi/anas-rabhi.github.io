@@ -1,7 +1,7 @@
 ---
-title: "Hybrid RAG: BM25 + Vector Search — How to Implement It"
+title: "Hybrid RAG : BM25 + Vector Search With +10% Recall"
 slug: rag-hybride-bm25-vectoriel
-description: "Vocabulary mismatch: why vector search misses domain jargon. BM25 + vector + RRF = +10% recall. Implementation across 3 stacks with real benchmarks."
+description: "Why vector search misses domain jargon, codes and acronyms. BM25 + vector + RRF = +10% recall. Implementation across 3 stacks with real benchmarks."
 categories:
   - "Blog"
   - "AI"

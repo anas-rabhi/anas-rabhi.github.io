@@ -1,6 +1,6 @@
 ---
-title: "Les 5 erreurs que tout le monde fait avec le RAG"
-description: "Retour d'expérience après 10+ projets RAG : les 5 erreurs les plus fréquentes en entreprise et comment les éviter. Frameworks, données, mesure et attentes."
+title: "Les 5 erreurs les plus fréquentes avec le RAG"
+description: "Retour d'expérience après 20+ projets RAG : les 5 erreurs récurrentes en entreprise et comment les éviter. Attentes, données, frameworks et mesure."
 categories:
   - "Blog"
   - "IA"

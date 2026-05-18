@@ -1,7 +1,7 @@
 ---
-title: "Agentic RAG vs RAG classique : quelle différence ?"
+title: "Agentic RAG vs RAG classique : quand basculer ?"
 slug: agentic-rag-vs-rag-classique
-description: "Agentic RAG vs RAG classique : 5 patterns agentiques expliqués, coût réel en latence, et grille de décision pour savoir quand basculer."
+description: "Agentic RAG vs RAG classique : 5 patterns agentiques décortiqués, coût réel en latence et grille de décision pour savoir quand basculer (ou pas)."
 categories:
   - "Blog"
   - "IA"

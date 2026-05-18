@@ -1,7 +1,7 @@
 ---
-title: "Les embeddings : c'est quoi, et pourquoi c'est la brique de base de toute l'IA moderne"
+title: "Embeddings : la brique de base de toute l'IA moderne"
 slug: embeddings-rag-comprendre-importance
-description: "Sans embeddings, pas de RAG, pas de recherche sémantique, pas d'agent IA pertinent. Comprendre les embeddings, leur fonctionnement, et pourquoi c'est si crucial."
+description: "Sans embeddings, pas de RAG ni d'agent IA pertinent. Fonctionnement, choix du bon modèle en 2026 et pièges concrets à éviter, expliqués simplement."
 categories:
   - "Blog"
   - "IA"

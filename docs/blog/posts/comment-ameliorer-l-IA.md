@@ -1,7 +1,7 @@
 ---
-title: "Comment améliorer le RAG"
+title: "Comment améliorer un RAG par l'analyse d'erreur"
 slug: comment-ameliorer-le-rag
-description: "Améliorer un RAG : méthode par l'analyse des erreurs, métriques clés (Faithfulness, RAGAS) et outils de monitoring. Approche pragmatique après 10+ projets terrain."
+description: "Améliorer un RAG par l'analyse d'erreur : métriques clés (Faithfulness, RAGAS), outils de monitoring et méthode pragmatique éprouvée sur 20+ projets terrain."
 categories:
   - "Blog"
   - "LLM"

@@ -1,7 +1,7 @@
 ---
-title: "Comment réussir à rester à jour en IA générative ?"
+title: "Rester à jour en IA générative : mes sources de veille"
 slug: rester-a-jour-ia-generative
-description: "Mes sources personnelles pour suivre l'IA générative : Twitter, YouTube, newsletters et blogs recommandés par un consultant IA. Rester à jour sans se noyer."
+description: "Mes sources de veille IA générative : Twitter, YouTube, newsletters et blogs suivis au quotidien par un consultant IA pour rester à jour sans se noyer."
 categories:
   - "Blog"
   - "IA"

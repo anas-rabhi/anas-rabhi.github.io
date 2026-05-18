@@ -1,7 +1,7 @@
 ---
-title: "RAG une porte d'entrée par sa simplicité d'implementation"
+title: "RAG en production : analyser et corriger les erreurs"
 slug: rag-une-porte-dentree-par-sa-simplicite-dimplementation
-description: "Analyser et corriger les erreurs d'un RAG en production : méthode en 4 étapes, cas concrets (+35% de pertinence) et outils de monitoring recommandés."
+description: "Corriger un RAG en production : méthode d'analyse d'erreur en 4 étapes, cas concrets (+35% de pertinence) et outils de monitoring recommandés."
 categories:
   - "Blog"
   - "IA"

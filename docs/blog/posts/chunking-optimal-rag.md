@@ -1,7 +1,7 @@
 ---
-title: "Chunking optimal pour votre RAG : quelle stratégie choisir ?"
+title: "Chunking RAG : quelle stratégie choisir en 2026 ?"
 slug: chunking-optimal-rag
-description: "OpenAI par défaut : les pires résultats selon Chroma Research. 8 stratégies de chunking, benchmarks réels et arbre de décision pour votre RAG."
+description: "Les défauts OpenAI donnent 1.4% de précision (Chroma). 8 stratégies de chunking benchmarkées et un arbre de décision pour choisir la bonne pour votre RAG."
 categories:
   - "Blog"
   - "IA"

@@ -1,7 +1,7 @@
 ---
-title: "Agentic RAG vs Classic RAG: What's the Real Difference?"
+title: "Agentic RAG vs Classic RAG : Do You Really Need It?"
 slug: agentic-rag-vs-rag-classique
-description: "Agentic RAG vs classic RAG: 5 agentic patterns explained, the real latency and cost trade-offs, and a decision framework for knowing when to make the switch."
+description: "5 agentic patterns explained, real latency and cost trade-offs, and a field-tested decision framework — most projects don't actually need Agentic RAG."
 categories:
   - "Blog"
   - "AI"

@@ -1,7 +1,7 @@
 ---
-title: "Mais c'est quoi un agent IA ?"
+title: "Agent IA : définition, fonctionnement et exemples concrets"
 slug: mais-cest-quoi-un-agent-ia
-description: "Agent IA : définition, fonctionnement et différence avec un RAG ou chatbot. Comprendre les systèmes IA autonomes en entreprise avec exemples concrets."
+description: "Agent IA : définition claire, fonctionnement réel et différence avec un chatbot ou un RAG. Exemples concrets en entreprise et retour terrain d'un consultant IA."
 categories:
   - "Blog"
   - "IA"

@@ -1,7 +1,7 @@
 ---
-title: "La mémoire d'un agent IA : comment ça marche vraiment (et comment l'implémenter)"
+title: "Mémoire d'un agent IA : comment ça marche, comment l'implémenter"
 slug: memoire-agents-ia-long-terme
-description: "Court terme, long terme, sémantique, épisodique. Comment un agent IA décide quoi mémoriser, avec un petit LLM qui filtre. Comparatif Mem0, Letta, LlamaIndex et pattern custom."
+description: "Mémoire court terme, long terme, sémantique, épisodique : pattern du memory writer, benchmarks Mem0, Letta, LlamaIndex et choix selon votre cas."
 categories:
   - "Blog"
   - "IA"

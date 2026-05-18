@@ -1,7 +1,7 @@
 ---
-title: "CrewAI, LangGraph, AutoGen, Pydantic AI : le comparatif pragmatique des frameworks d'agents IA en 2026"
+title: "CrewAI, LangGraph, AutoGen, Pydantic AI : comparatif 2026"
 slug: crewai-langchain-langgraph-comparatif-pragmatique
-description: "Comparatif honnête de CrewAI, LangGraph, AutoGen, Pydantic AI et Smolagents. Forces, faiblesses, et pourquoi tous ne sont pas faits pour les data scientists."
+description: "Comparatif pragmatique de CrewAI, LangGraph, AutoGen, Pydantic AI et Smolagents : forces, faiblesses concrètes, public visé et choix retenu en mission."
 categories:
   - "Blog"
   - "IA"

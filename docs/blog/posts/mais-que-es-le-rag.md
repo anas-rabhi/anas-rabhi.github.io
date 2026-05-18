@@ -1,7 +1,7 @@
 ---
-title: "C'est quoi le RAG ? Définition, fonctionnement et limites"
+title: "C'est quoi le RAG ? Définition, fonctionnement, limites"
 slug: cest-quoi-le-rag-definition-fonctionnement
-description: "C'est quoi le RAG ? Définition, fonctionnement concret, avantages, limites et conseils pour l'optimiser en entreprise. Guide complet par un expert IA."
+description: "Le RAG expliqué simplement : fonctionnement étape par étape, vrais avantages, limites concrètes et conseils terrain pour l'optimiser en entreprise."
 categories:
   - "Blog"
   - "IA"

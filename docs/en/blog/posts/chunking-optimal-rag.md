@@ -1,7 +1,7 @@
 ---
-title: "RAG Chunking Strategies: The Definitive Guide to Optimal Chunking"
+title: "Optimal RAG Chunking : 8 Strategies & Real Benchmarks"
 slug: chunking-optimal-rag
-description: "OpenAI defaults yield the worst results per Chroma Research. 8 RAG chunking strategies, real benchmarks, contextual retrieval, late chunking, and a decision tree."
+description: "OpenAI defaults score 1.4% precision per Chroma Research. 8 RAG chunking strategies, benchmarks, contextual retrieval, late chunking and a decision tree."
 categories:
   - "Blog"
   - "AI"

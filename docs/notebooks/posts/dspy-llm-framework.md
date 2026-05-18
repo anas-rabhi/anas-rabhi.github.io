@@ -1,6 +1,6 @@
 ---
-title: "DSPy, a machine learning framework for Language Models"
-description: "Explore the features and capabilities of DSPy, a comprehensive machine learning framework designed specifically for Language Models."
+title: "DSPy : a machine learning framework for Language Models"
+description: "DSPy explained : signatures, modules, metrics and optimizers of the Stanford ML framework for LLMs. Build LM apps without manual prompt engineering."
 categories:
   - "Blog"
   - "LLM"

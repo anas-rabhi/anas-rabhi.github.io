@@ -1,7 +1,7 @@
 ---
-title: "What is RAG? Definition, How It Works, and Its Limits"
+title: "What Is RAG? Definition, How It Works & Real Limits"
 slug: cest-quoi-le-rag-definition-fonctionnement
-description: "What is RAG (Retrieval-Augmented Generation)? How it works, its real advantages, limits, and how to optimize it for enterprise use. A complete guide by an AI expert."
+description: "What is RAG (Retrieval-Augmented Generation)? How it actually works, its real benefits, the hidden limits, and how to make it work in enterprise contexts."
 categories:
   - "Blog"
   - "AI"

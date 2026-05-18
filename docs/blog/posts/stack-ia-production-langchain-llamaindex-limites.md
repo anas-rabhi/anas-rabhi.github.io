@@ -1,7 +1,7 @@
 ---
-title: "Stack IA en production : pourquoi LangChain et LlamaIndex ne sont pas la solution ultime"
+title: "Stack IA production : LangChain et LlamaIndex, vraies limites"
 slug: stack-ia-production-langchain-llamaindex-limites
-description: "20+ projets RAG et agents IA plus tard, voici pourquoi les équipes sérieuses finissent par faire leur propre stack IA. LangChain, LlamaIndex et leurs vraies limites."
+description: "20+ projets RAG et agents IA : pourquoi les équipes sérieuses construisent leur propre stack IA. Limites concrètes de LangChain, LlamaIndex et alternatives."
 categories:
   - "Blog"
   - "IA"

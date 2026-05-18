@@ -1,7 +1,7 @@
 ---
-title: "Optimize Your RAG: The 8 Techniques That Make a Real Difference"
+title: "Optimize Your RAG : 8 Techniques With Measured Gains"
 slug: optimiser-rag-techniques
-description: "97% recall as a baseline before optimizing. HyDE, reranking, contextual retrieval, semantic cache: 8 RAG optimization techniques with a measured gain for each."
+description: "Hit 97% recall before touching the prompt. HyDE, reranking, contextual retrieval, semantic cache — 8 RAG optimizations with a measured gain for each."
 categories:
   - "Blog"
   - "AI"

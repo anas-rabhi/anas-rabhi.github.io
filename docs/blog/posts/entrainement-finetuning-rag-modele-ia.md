@@ -1,7 +1,7 @@
 ---
-title: "Entraînement, finetuning ou RAG : que choisir pour son IA ?"
+title: "Entraînement, finetuning ou RAG : que choisir ?"
 slug: entrainement-finetuning-rag-modele-ia
-description: "Entraîner un modèle d'IA, le finetuner ou utiliser le RAG : comprendre les différences, les coûts (de quelques centaines à plusieurs millions de dollars) et savoir quoi choisir selon son besoin."
+description: "Entraîner, finetuner ou utiliser un RAG : différences claires, coûts réels (de quelques centaines à plusieurs millions de dollars) et critères de décision."
 categories:
   - "Blog"
   - "IA"

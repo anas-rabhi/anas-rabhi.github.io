@@ -1,7 +1,7 @@
 ---
-title: "Comprendre l'intelligence artificielle : L'IA générative (Partie 2)"
+title: "Comprendre l'IA générative : LLM, exemples, limites (partie 2)"
 slug: comprendre-ia-generative
-description: "IA générative : fonctionnement des LLM, exemples (texte, image, code) et limites expliqués simplement. Guide pour comprendre ChatGPT et les modèles génératifs."
+description: "IA générative : fonctionnement des LLM, exemples concrets (texte, image, code) et limites réelles. Guide simple pour comprendre ChatGPT et les modèles génératifs."
 categories:
   - "Blog"
   - "IA"

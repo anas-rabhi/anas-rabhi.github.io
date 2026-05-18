@@ -1,7 +1,7 @@
 ---
-title: "GEO : Comment fonctionnent les moteurs de recherche IA (Partie 1)"
+title: "GEO : comment fonctionnent les moteurs de recherche IA (partie 1)"
 slug: geo-comment-fonctionnent-les-moteurs-de-recherche-ia
-description: "Comment les moteurs de recherche IA comme ChatGPT, Perplexity, Gemini et Claude trouvent et citent vos contenus. Comprendre le GEO pour mieux se positionner."
+description: "Comment ChatGPT, Perplexity, Gemini et Claude trouvent et citent vos contenus : bases du GEO et fonctionnement réel des moteurs de recherche IA en 2026."
 categories:
   - "Blog"
   - "IA"

@@ -1,7 +1,7 @@
 ---
-title: "Agent IA vs automatisation no-code (n8n, Make, Zapier) : que choisir vraiment en 2026 ?"
+title: "Agent IA vs n8n, Make, Zapier : que choisir en 2026 ?"
 slug: agent-ia-vs-n8n-make-zapier
-description: "n8n avec un nœud OpenAI ou agent IA custom ? Grille de décision honnête, critères concrets et exemples chiffrés pour choisir entre workflow no-code et agent IA."
+description: "Agent IA custom ou n8n avec un nœud OpenAI ? Grille de décision concrète, critères et exemples chiffrés pour trancher entre workflow no-code et agent IA."
 categories:
   - "Blog"
   - "IA"

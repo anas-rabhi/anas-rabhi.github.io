@@ -1,7 +1,7 @@
 ---
-title: "IA et rapports de sinistre : 80% de gain de temps en assurance"
+title: "IA et rapports de sinistre : 80% de temps gagné"
 slug: ia-rapports-sinistre-assurance
-description: "Cas client : 80% de gain de temps sur les rapports de sinistre en assurance grâce à l'IA. Architecture, interface métier et humain dans la boucle."
+description: "Cas client assurance : 80% de gain de temps sur les rapports de sinistre grâce à l'IA. Architecture, interface métier et humain dans la boucle expliqués."
 categories:
   - "Blog"
   - "IA"

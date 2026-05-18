@@ -1,7 +1,7 @@
 ---
-title: "What Is an AI Agent? A Clear, Practical Explanation"
+title: "What Is an AI Agent? Clear Definition With Real Examples"
 slug: mais-cest-quoi-un-agent-ia
-description: "AI agent definition, how they work, and how they differ from a RAG or chatbot. Understand autonomous AI systems in practice with concrete examples."
+description: "AI agent definition, how they work, and how they differ from a RAG or chatbot. Concrete examples from real projects — no buzzwords, just what works."
 categories:
   - "Blog"
   - "AI"

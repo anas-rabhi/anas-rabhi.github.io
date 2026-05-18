@@ -1,7 +1,7 @@
 ---
-title: "RAG multi-sources dans le BTP : automatiser les appels d'offres"
+title: "RAG BTP : automatiser les réponses aux appels d'offres"
 slug: rag-appels-doffres-btp
-description: "83% de gain de temps : comment un RAG multi-sources automatise la rédaction d'appels d'offres dans le BTP. Architecture, résultats et retour d'expérience."
+description: "Cas client : 83% de gain de temps grâce à un RAG multi-sources pour la rédaction d'appels d'offres BTP. Architecture, résultats et retour terrain détaillé."
 categories:
   - "Blog"
   - "IA"

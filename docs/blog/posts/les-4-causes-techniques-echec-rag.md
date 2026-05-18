@@ -1,7 +1,7 @@
 ---
-title: "Les 4 causes techniques d'échec d'un RAG (et comment les corriger)"
+title: "4 causes techniques d'échec d'un RAG (et correctifs)"
 slug: les-4-causes-techniques-dechec-dun-rag-et-comment-les-corriger
-description: "Diagnostic rapide des causes techniques d'échec d'un RAG : parsing, chunking, retrieval, modèle, avec des correctifs concrets."
+description: "Pourquoi votre RAG plafonne à 50-70% : parsing, chunking, retrieval, LLM. Diagnostic rapide cause par cause avec les correctifs concrets issus du terrain."
 categories:
   - "Blog"
   - "IA"

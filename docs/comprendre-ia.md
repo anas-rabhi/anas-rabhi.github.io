@@ -1,6 +1,6 @@
 ---
-title: Comprendre l'intelligence artificielle — Guide pour les décideurs et les équipes tech
-description: Guide pour comprendre l'IA générative, les LLMs, les domaines de l'IA et les choix techniques (RAG, finetuning, prompt). Par Anas Rabhi, consultant IA freelance à Toulouse.
+title: Comprendre l'IA générative : guide pour décideurs et tech
+description: Comprendre l'IA générative, les LLMs et les choix techniques (RAG, finetuning, prompt). Bases concrètes pour cadrer un projet IA en entreprise sans se tromper.
 hide:
   - navigation
   - toc
