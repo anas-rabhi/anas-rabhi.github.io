@@ -40,7 +40,7 @@ Chunking is the decision most teams spend the least time on. And yet it's probab
 
 Bad retrieval can be fixed. A broken prompt can be rewritten. A suboptimal embedding model can be swapped out.
 
-Bad chunking cannot be corrected downstream. If you've split your documents the wrong way, the embeddings are already computed on the wrong units. The best reranker in the world cannot reconstruct the information you lost by cutting at the wrong place.
+Bad chunking cannot be corrected downstream. If you've split your documents the wrong way, the embeddings are already computed on the wrong units. The best reranker in the world cannot reconstruct the information you lost by cutting at the wrong place. Understanding why matters: in a [retrieval-augmented generation](mais-que-es-le-rag.md) system, the retrieved chunk is the only context the LLM has — so the quality of every answer traces directly back to how you split your documents.
 
 **Three fundamental reasons that explain everything:**
 
@@ -432,11 +432,11 @@ Chunking is an ingestion operation, not a query operation. For frequent updates,
 
 ## Further reading
 
-- **[What is RAG, really?](/blog/2025/06/21/cest-quoi-le-rag-definition-fonctionnement/)** — If you don't yet have the RAG pipeline fundamentals
-- **[The 4 technical root causes of RAG failure](/blog/2026/02/05/les-4-causes-techniques-dechec-dun-rag-et-comment-les-corriger/)** — Chunking is often the root cause; here's how to diagnose it
-- **[RAG: deceptively simple to implement](/blog/2025/12/02/rag-une-porte-dentree-par-sa-simplicite-dimplementation/)** — Analyze and fix an underperforming RAG
-- **[Hybrid RAG: BM25 + vector search](/blog/2026/04/01/rag-hybride-bm25-vectoriel/)** — The next step after chunking: improve retrieval with hybrid search
-- **[The 5 mistakes everyone makes with RAG](/blog/2026/02/21/les-5-erreurs-rag/)** — Especially mistake #3: diving into code without looking at the data (which applies directly to chunking)
+- **[What is RAG, really?](mais-que-es-le-rag.md)** — If you don't yet have the RAG pipeline fundamentals
+- **[PDF parsing for RAG](parsing-pdf-rag-extraction-documents.md)** — the step before chunking: extracting clean, structured text from your source documents, with real comparisons of Docling, LlamaParse, and Marker
+- **[Embeddings in RAG](embeddings-rag-comprendre-importance.md)** — what gets indexed after chunking and why the embedding model choice interacts with chunk size
+- **[Hybrid RAG: BM25 + vector search](rag-hybride-bm25-vectoriel.md)** — the next step after chunking: improve retrieval with hybrid search and +10% recall
+- **[How to evaluate a RAG in production](evaluer-rag-production-metriques-ragas.md)** — the Hit Rate, MRR, and RAGAS metrics to validate that your chunking strategy actually improves results
 
 ***
 

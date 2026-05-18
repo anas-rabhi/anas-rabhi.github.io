@@ -38,7 +38,7 @@ faqs:
 
 A question comes up frequently when I work with companies on their AI projects: *"Should we train our own model?"*. Or the slightly more advanced variant: *"We want to fine-tune a model on our data"*.
 
-Every time, I need to take a moment to explain what that actually means in practice. Because between training a model from scratch, fine-tuning it on your own data, or simply giving it context with a [RAG](/blog/2025/06/21/cest-quoi-le-rag-definition-fonctionnement/), there is a world of difference. In cost, time, complexity, and above all in outcome.
+Every time, I need to take a moment to explain what that actually means in practice. Because between training a model from scratch, fine-tuning it on your own data, or simply giving it context with a [RAG](mais-que-es-le-rag.md), there is a world of difference. In cost, time, complexity, and above all in outcome.
 
 In this article, I will try to lay things out simply. What is an AI model, how do you train it, what does it cost, when is it worth it, and most importantly why in 95% of cases you probably do not need to do either.
 
@@ -286,7 +286,7 @@ If you do not fit any of these cases, you do not need to train a model. And even
 
 ## The alternative that works in 90% of cases: RAG
 
-Before fine-tuning, there is almost always a much simpler, much less risky, and much cheaper approach: **giving your documents directly to the model at the moment it responds**. This is what we call [RAG](/blog/2025/06/21/cest-quoi-le-rag-definition-fonctionnement/).
+Before fine-tuning, there is almost always a much simpler, much less risky, and much cheaper approach: **giving your documents directly to the model at the moment it responds**. This is what we call [retrieval-augmented generation](mais-que-es-le-rag.md).
 
 The idea is very simple. Rather than trying to modify the model (its parameters) so it "learns" your data (which is what fine-tuning does), you **keep the model as is**, and you slip the right documents into the conversation when it needs them. Concretely, you put all your documents (procedures, contracts, product sheets, manuals) in a database. When a user asks a question, your system automatically searches for the most relevant chunks in this database and passes them to the model, which uses them to write its response.
 
@@ -376,7 +376,7 @@ When you train or fine-tune a model, you are making a bet. You invest money and 
 
 At your scale, it is exactly the same. You can invest $10,000 in a fine-tuning and end up with a model worse than the base model used with a good prompt. This is not a theoretical case — I have seen it several times in the field.
 
-That is why before you start, you must **measure**. Build a small test set, measure the performance of the simplest solution (a good prompt alone), then test the next layer (RAG), and see whether there is truly a gap that justifies going further. I cover this in my article on [how to improve a RAG](/blog/2025/03/26/comment-ameliorer-le-rag/).
+That is why before you start, you must **measure**. Build a small test set, measure the performance of the simplest solution (a good prompt alone), then test the next layer (RAG), and see whether there is truly a gap that justifies going further. I cover the evaluation methodology in detail in [how to evaluate a RAG in production](evaluer-rag-production-metriques-ragas.md).
 
 ---
 
@@ -416,12 +416,12 @@ In the worst case, if you end up fine-tuning anyway, you will have done it with 
 
 ## Further reading
 
-* **[The different domains of AI](/blog/2026/05/02/les-differents-domaines-de-l-intelligence-artificielle/)**: to place fine-tuning and LLMs in the broader AI landscape
-* **[What is RAG?](/blog/2025/06/21/cest-quoi-le-rag-definition-fonctionnement/)**: understand the most effective alternative to fine-tuning
-* **[Understanding generative AI](/blog/2025/05/15/comprendre-ia-generative/)**: how LLMs really work
-* **[How to improve a RAG](/blog/2025/03/26/comment-ameliorer-le-rag/)**: the method to measure and progress
-* **[Is RAG dead?](/blog/2026/02/05/le-rag-est-il-vraiment-fini/)**: the long context vs RAG debate
-* **[What is an AI agent?](/blog/2025/12/16/mais-cest-quoi-un-agent-ia/)**: the step that often comes after RAG
+* **[What is RAG?](mais-que-es-le-rag.md)** — understand the most effective alternative to fine-tuning, including how the pipeline works end-to-end
+* **[Optimizing your RAG](optimiser-rag-techniques.md)** — before fine-tuning, try these 8 levers: the gains are often larger and cheaper to obtain
+* **[How to evaluate a RAG in production](evaluer-rag-production-metriques-ragas.md)** — how to measure performance rigorously before deciding whether fine-tuning is justified
+* **[Optimal RAG chunking](chunking-optimal-rag.md)** — a poorly chunked RAG often mimics the symptoms that teams wrongly attribute to model quality
+* **[Agentic RAG vs classic RAG](agentic-rag-vs-rag-classique.md)** — the architecture step that often comes after RAG when classic retrieval hits its limits
+* **[What is an AI agent?](c-est-quoi-un-agent-ia.md)** — the step that often follows once your RAG is solid
 
 ---
 

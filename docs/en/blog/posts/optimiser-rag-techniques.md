@@ -30,7 +30,7 @@ Jason Liu, one of the most followed RAG experts, has a framing I find spot-on: *
 
 97% recall means that in 97 out of 100 cases, the chunk containing the right answer is among the results you pass to the LLM. If you're not there, the best prompt in the world won't change a thing. The LLM cannot invent information that isn't in its context.
 
-The real RAG optimization order is: **measure first, then retrieval, then generation**. Not the other way around.
+The real RAG optimization order is: **measure first, then retrieval, then generation**. Not the other way around. If you're not yet familiar with the basics of [how RAG works](mais-que-es-le-rag.md), start there before optimizing any component.
 
 <!-- more -->
 
@@ -163,7 +163,7 @@ This is probably the optimization with the best gain-to-effort ratio. Vector alo
 
 The benchmarks: +10% NDCG vs. vector alone (Microsoft Azure, BEIR), up to +48% when combined with reranking.
 
-I dedicated an entire article to this technique (implementation with LangChain, LlamaIndex and Weaviate, detailed benchmarks, and when to choose SPLADE or BGE-M3 over classic BM25): **[Hybrid RAG BM25 + vector: how to implement it](/blog/2026/04/01/rag-hybride-bm25-vectoriel/)**.
+I dedicated an entire article to this technique (implementation with LangChain, LlamaIndex and Weaviate, detailed benchmarks, and when to choose SPLADE or BGE-M3 over classic BM25): **[Hybrid RAG BM25 + vector: how to implement it](rag-hybride-bm25-vectoriel.md)**.
 
 ---
 
@@ -366,7 +366,7 @@ Yes, RAGAS is open-source (MIT). The library runs locally. However, metrics like
 
 **What's the difference between reranking and re-retrieval?**
 
-Reranking takes the already-retrieved chunks and reorders them by actual relevance. Re-retrieval (present in some agentic patterns like CRAG) relaunches a new search if the initial results are judged poor. These are two different mechanisms: reranking improves ranking, re-retrieval changes the results. You can combine both: that's exactly what [Corrective RAG](/blog/2026/03/20/agentic-rag-vs-rag-classique/) does with a web fallback.
+Reranking takes the already-retrieved chunks and reorders them by actual relevance. Re-retrieval (present in some agentic patterns like CRAG) relaunches a new search if the initial results are judged poor. These are two different mechanisms: reranking improves ranking, re-retrieval changes the results. You can combine both: that's exactly what [Corrective RAG](agentic-rag-vs-rag-classique.md) does with a web fallback.
 
 **Does optimization help if my data is poor quality?**
 
@@ -376,11 +376,12 @@ No. The techniques described here improve a RAG that already works correctly on 
 
 ## Further reading
 
-- **[Hybrid RAG BM25 + vector: how to implement it](/blog/2026/04/01/rag-hybride-bm25-vectoriel/)** — Technique 4, with full implementation across 3 stacks
+- **[What is RAG, really?](mais-que-es-le-rag.md)** — The fundamentals before optimizing, including the core pipeline these techniques improve
+- **[How to evaluate a RAG in production](evaluer-rag-production-metriques-ragas.md)** — Set the baseline first: RAGAS, Hit Rate, and MRR metrics to measure whether each optimization actually helps
+- **[Hybrid RAG BM25 + vector: how to implement it](rag-hybride-bm25-vectoriel.md)** — Technique 4, with full implementation across 3 stacks and the benchmarks behind the +10% claim
 - **[Optimal chunking for your RAG](chunking-optimal-rag.md)** — The foundation before any optimization, with Chroma and Anthropic benchmarks
-- **[RAG: a gateway through simplicity of implementation](/blog/2025/12/02/rag-une-porte-dentree-par-sa-simplicite-dimplementation/)** — The error analysis method for identifying what to optimize first
-- **[The 4 technical causes of RAG failure](/blog/2026/02/05/les-4-causes-techniques-dechec-dun-rag-et-comment-les-corriger/)** — Diagnose before optimizing
-- **[Agentic RAG vs classic RAG](/blog/2026/03/20/agentic-rag-vs-rag-classique/)** — When optimization is no longer enough and you need to rethink the architecture
+- **[PDF parsing for RAG](parsing-pdf-rag-extraction-documents.md)** — When optimization doesn't help, parsing is often the root cause: a real-world comparison of Docling, LlamaParse, and Unstructured
+- **[Agentic RAG vs classic RAG](agentic-rag-vs-rag-classique.md)** — When optimization is no longer enough and you need to rethink the architecture entirely
 
 ***
 
