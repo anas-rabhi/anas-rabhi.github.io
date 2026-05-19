@@ -1,7 +1,7 @@
 ---
-title: "MCP (Model Context Protocol) : The New AI Agent Standard"
+title: "MCP (Model Context Protocol): Connect AI Agents to Any Tool"
 slug: mcp-model-context-protocol-agents-ia
-description: "MCP went from 2M to 97M monthly SDK downloads. Architecture, real use cases, MCP vs function calling, and when to actually use it on production agents."
+description: "Stop rewriting custom integrations for every LLM. Discover Model Context Protocol (MCP): architecture, real use cases, and when to use it in production."
 categories:
   - "Blog"
   - "AI"

@@ -1,7 +1,7 @@
 ---
-title: "Optimiser un RAG : 8 techniques qui marchent vraiment"
+title: "Optimiser un RAG : 8 Techniques de Production & Gains Mesurés"
 slug: optimiser-rag-techniques
-description: "Visez 97% de recall avant d'optimiser. HyDE, reranking, contextual retrieval, semantic cache : 8 techniques RAG avec le gain mesuré pour chacune."
+description: "Comment passer à 97% de recall sur votre RAG ? Reranking, Hybrid Search, Contextual Retrieval, Semantic Cache : 8 techniques et leurs gains mesurés."
 categories:
   - "Blog"
   - "IA"

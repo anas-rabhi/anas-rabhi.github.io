@@ -1,9 +1,9 @@
 ---
-title: "AI Blog : RAG, Agents & LLM Field Notes | Anas Rabhi"
+title: "AI Blog: RAG, Agents, and LLMs in Production"
 categories:
 - Artificial Intelligence
 comments: true
-description: Field notes from real client projects on RAG, AI agents and production LLMs. Concrete lessons from a freelance AI Engineer based in Toulouse.
+description: "Field notes, benchmarks, and practical guides on deploying RAG, autonomous AI agents, and LLMOps in production. By Anas Rabhi, Freelance AI Engineer."
 tags:
 - Agents
 - RAG

@@ -1,7 +1,7 @@
 ---
-title: "Training vs Fine-Tuning vs RAG : Which One to Pick?"
+title: "RAG vs Fine-Tuning vs Training from Scratch: The Real Costs"
 slug: entrainement-finetuning-rag-modele-ia
-description: "Training vs fine-tuning vs RAG: real costs from $50 to $200M, a decision tree, and why RAG wins in 90% of enterprise cases — with concrete examples."
+description: "Don't waste your AI budget. Compare RAG, Fine-Tuning, and Training from scratch: real costs ($50 to $10M+), technical limits, and a concrete decision tree."
 categories:
   - "Blog"
   - "AI"

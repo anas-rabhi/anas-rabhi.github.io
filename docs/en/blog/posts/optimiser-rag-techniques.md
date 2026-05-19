@@ -1,7 +1,7 @@
 ---
-title: "Optimize Your RAG : 8 Techniques With Measured Gains"
+title: "How to Optimize RAG: 8 Techniques with Measured Gains"
 slug: optimiser-rag-techniques
-description: "Hit 97% recall before touching the prompt. HyDE, reranking, contextual retrieval, semantic cache — 8 RAG optimizations with a measured gain for each."
+description: "Boost your RAG to 97% recall. Reranking, Hybrid Search, Contextual Retrieval, Semantic Cache: 8 optimization techniques with clear measured gains."
 categories:
   - "Blog"
   - "AI"

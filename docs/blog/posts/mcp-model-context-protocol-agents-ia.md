@@ -1,7 +1,7 @@
 ---
-title: "MCP : le standard qui connecte les agents IA en 2026"
+title: "MCP (Model Context Protocol) : Le Standard des Agents IA"
 slug: mcp-model-context-protocol-agents-ia
-description: "MCP (Model Context Protocol) : architecture, cas d'usage et comparaison avec le function calling. Quand l'utiliser pour connecter vos agents IA en production."
+description: "Comment connecter vos agents IA à vos bases de données et APIs sans réécrire le code ? Tout sur le Model Context Protocol (MCP), cas d'usage et architecture."
 categories:
   - "Blog"
   - "IA"

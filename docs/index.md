@@ -1,6 +1,6 @@
 ---
-title: "Consultant IA & Data Scientist Toulouse | Anas Rabhi"
-description: "Consultant IA freelance à Toulouse. Cadrage, POC, mise en production RAG et agents IA. ROI prouvé : 75 % de temps gagné. Premier échange gratuit."
+title: "Consultant IA Freelance & Data Scientist | Anas Rabhi"
+description: "Consultant IA freelance à Toulouse & Paris. Intégration de RAG, agents IA et LLMs en production. ROI prouvé, 75% de temps gagné. Premier échange gratuit."
 hide:
   - navigation
   - toc

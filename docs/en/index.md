@@ -1,6 +1,6 @@
 ---
-title: "Freelance AI Engineer in Toulouse : RAG & LLM | Anas Rabhi"
-description: Freelance AI Engineer & Data Scientist in Toulouse. I ship RAG systems, AI agents and LLMOps to production — scoping to deployment. First call free.
+title: "Freelance AI Engineer & Consultant | Anas Rabhi"
+description: "Freelance AI Engineer & Data Scientist. I deploy custom RAG systems, autonomous AI agents, and LLMOps to production. Boost your operations. Contact me today!"
 hide:
   - navigation
   - toc

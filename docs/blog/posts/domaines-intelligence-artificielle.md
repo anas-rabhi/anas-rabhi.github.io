@@ -1,7 +1,7 @@
 ---
-title: "Les domaines de l'IA : pourquoi ChatGPT n'est qu'une partie"
+title: "Les 5 Domaines de l'IA (Et Pourquoi ChatGPT n'est qu'une Brique)"
 slug: les-differents-domaines-de-l-intelligence-artificielle
-description: "L'IA ne se résume pas à ChatGPT : tour d'horizon des grands domaines (vision, NLP, séries temporelles, tabulaire, génératif) avec exemples concrets en entreprise."
+description: "L'IA ne se résume pas aux LLMs. Découvrez les 5 grands domaines de l'intelligence artificielle (vision, séries temporelles, tabulaire...) et leurs applications."
 categories:
   - "Blog"
   - "IA"
