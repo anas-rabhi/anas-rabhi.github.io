@@ -1,6 +1,6 @@
 ---
-title: RAG : guide complet 2026 (architecture, prod, audit)
-description: Tout sur le RAG en entreprise : architecture, chunking, embeddings, retrieval hybride, évaluation. Retours de mission concrets et 8 techniques à fort impact.
+title: "RAG : guide complet 2026 (architecture, prod, audit)"
+description: "Tout sur le RAG en entreprise : architecture, chunking, embeddings, retrieval hybride, évaluation. Retours de mission concrets et 8 techniques à fort impact."
 hide:
   - navigation
   - toc

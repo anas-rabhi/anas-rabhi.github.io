@@ -1,6 +1,6 @@
 ---
-title: Consultant IA Freelance Toulouse : RAG, Agents IA
-description: Consultant IA freelance à Toulouse et Occitanie. RAG, agents IA, audit et mise en production. Cas client à 83 % de temps gagné. Cadrage gratuit en 30 min.
+title: "Consultant IA Freelance Toulouse : RAG, Agents IA"
+description: "Consultant IA freelance à Toulouse et Occitanie. RAG, agents IA, audit et mise en production. Cas client à 83 % de temps gagné. Cadrage gratuit en 30 min."
 hide:
   - navigation
   - toc

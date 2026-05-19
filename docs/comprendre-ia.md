@@ -1,6 +1,6 @@
 ---
-title: Comprendre l'IA générative : guide pour décideurs et tech
-description: Comprendre l'IA générative, les LLMs et les choix techniques (RAG, finetuning, prompt). Bases concrètes pour cadrer un projet IA en entreprise sans se tromper.
+title: "Comprendre l'IA générative : guide pour décideurs et tech"
+description: "Comprendre l'IA générative, les LLMs et les choix techniques (RAG, finetuning, prompt). Bases concrètes pour cadrer un projet IA en entreprise sans se tromper."
 hide:
   - navigation
   - toc

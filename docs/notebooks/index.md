@@ -2,8 +2,8 @@
 categories:
 - Intelligence artificielle
 comments: true
-title: Notebooks IA : code, RAG et agents en pratique | Anas Rabhi
-description: Notebooks Python autour de l'IA : RAG, agents, embeddings, évaluation. Du code qui tourne, testé en mission, par Anas Rabhi, consultant IA freelance.
+title: "Notebooks IA : code, RAG et agents en pratique | Anas Rabhi"
+description: "Notebooks Python autour de l'IA : RAG, agents, embeddings, évaluation. Du code qui tourne, testé en mission, par Anas Rabhi, consultant IA freelance."
 tags:
 - Agents
 - RAG

@@ -2,8 +2,8 @@
 categories:
 - Intelligence artificielle
 comments: true
-title: Blog IA : RAG, agents, LLM en production | Anas Rabhi
-description: Articles techniques sur le RAG, les agents IA, les LLMs et le LLMOps. Retours de mission concrets, benchmarks et guides pratiques par Anas Rabhi, freelance IA.
+title: "Blog IA : RAG, agents, LLM en production | Anas Rabhi"
+description: "Articles techniques sur le RAG, les agents IA, les LLMs et le LLMOps. Retours de mission concrets, benchmarks et guides pratiques par Anas Rabhi, freelance IA."
 tags:
 - Agents
 - RAG
