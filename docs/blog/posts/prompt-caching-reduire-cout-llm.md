@@ -456,6 +456,7 @@ Anthropic : 1 024 tokens pour Claude Sonnet 4.x, 4 096 tokens pour Claude Opus e
 - **[Evaluer un RAG en production](evaluer-rag-production-metriques-ragas.md)** : une fois vos coûts optimisés, mesurez la qualité avec les bonnes métriques
 - **[Agentic RAG vs RAG classique](agentic-rag-vs-rag-classique.md)** : comprendre quand la complexité des agents justifie leur coût, et comment le caching change l'équation
 - **[MCP : le standard pour les agents IA](mcp-model-context-protocol-agents-ia.md)** : les agents avec beaucoup d'outils sont de bons candidats au caching des définitions d'outils
+- **[Long context vs RAG : quand utiliser quoi ?](long-context-vs-rag-quand-utiliser.md)** : le caching ne suffit pas toujours à rendre le long context viable. Les 4 limites concrètes et la grille de décision
 
 ***
 

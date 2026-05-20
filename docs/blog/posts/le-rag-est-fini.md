@@ -72,7 +72,7 @@ La question est légitime. Voilà ce que ça donne en pratique :
 | **Mise à jour des données** | Ré-indexation partielle | Rechargement complet |
 | **Adapté pour** | Corpus de 50+ documents | 5-20 documents courts |
 
-Un effet souvent sous-estimé : le **"lost in the middle problem"**. Plus on injecte de contexte, plus le LLM a tendance à négliger ce qui est au milieu. Il retient mieux le début et la fin. Sur un corpus de 400 pages, cette dégradation est réelle et mesurable.
+Un effet souvent sous-estimé : le **"lost in the middle problem"**. Plus on injecte de contexte, plus le LLM a tendance à négliger ce qui est au milieu. Il retient mieux le début et la fin. Sur un corpus de 400 pages, cette dégradation est réelle et mesurable. J'ai détaillé les benchmarks 2026 (Chroma, NIAH multi-needle), la grille de décision et les coûts précis dans un article dédié : [long context vs RAG en 2026 : quand utiliser quoi ?](long-context-vs-rag-quand-utiliser.md).
 
 ## Quand le Long Context est vraiment préférable
 

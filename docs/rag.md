@@ -92,6 +92,7 @@ Un RAG mal pensé donne des résultats décevants : c'est la principale raison p
 - **Les 4 causes techniques d'échec** : [Les 4 causes techniques d'échec d'un RAG](/blog/2026/03/15/les-4-causes-techniques-echec-rag/) : analyse fine, à lire si ton RAG tourne mais répond mal.
 - **Quand le RAG est structurellement inadapté** : [Pourquoi le RAG ne fonctionne pas (parfois)](/blog/2026/03/29/pourquoi-le-rag-ne-fonctionne-pas/).
 - **Quand le RAG simple ne suffit plus** : [Le RAG est trop simple](/blog/2026/04/01/rag-trop-simple/) et [Le RAG est-il fini ?](/blog/2026/04/26/le-rag-est-fini/).
+- **Long context vs RAG, la décision technique en 2026** : [Long context vs RAG : quand utiliser quoi ?](/blog/2026/05/20/long-context-vs-rag-quand-utiliser/) (context rot, benchmarks NIAH 2026, coûts ×100 et grille de décision en 5 questions).
 
 Le constat : un RAG "vanille" couvre 70 % des cas d'usage. Pour les 30 % restants (questions multi-saut, raisonnement, agrégation sur plusieurs documents), il faut passer aux architectures plus avancées.
 
