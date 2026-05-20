@@ -68,7 +68,7 @@ The context window is not a solution to this problem, despite what you often rea
 
 In 2026, AI agent memory has its own benchmarks (LongMemEval, LoCoMo), its own research literature, and a rapidly growing tooling ecosystem. This is no longer an academic topic — it's an engineering question that comes up on every serious agent project.
 
-If you're not yet comfortable with what an AI agent actually is, start with [my article on the fundamentals of AI agents](/en/blog/posts/c-est-quoi-un-agent-ia/) before continuing.
+If you're not yet comfortable with what an AI agent actually is, start with [my article on the fundamentals of AI agents](/en/blog/2025/12/16/mais-cest-quoi-un-agent-ia/) before continuing.
 
 ***
 
@@ -305,7 +305,7 @@ Now answer his question taking this context into account."
 
 In practice, the right tradeoff in 2026 is 5 to 10 memories, with a cosine similarity threshold around 0.75, and type-based filtering based on question context. Mem0's multi-signal algorithm (vector similarity + BM25 + entity matching) delivers good results at roughly 6,900 tokens per request, compared to 26,000 for a full-context approach.
 
-For a deeper dive into vector retrieval in AI systems, read [my article on Agentic RAG](/en/blog/posts/agentic-rag-vs-rag-classique/) which covers agentic retrieval patterns in detail.
+For a deeper dive into vector retrieval in AI systems, read [my article on Agentic RAG](/en/blog/2026/03/20/agentic-rag-vs-rag-classique/) which covers agentic retrieval patterns in detail.
 
 ***
 
@@ -344,7 +344,7 @@ It's the most flexible option and the most interesting from an academic standpoi
 
 ### LlamaIndex Memory
 
-Honestly, LlamaIndex Memory is only really useful if you're already heavily invested in the LlamaIndex ecosystem. Standalone, its abstractions are less ergonomic than Mem0 or Zep. If you're already using LlamaIndex for document RAG, it's a natural option. Otherwise, go with Mem0 or a custom pattern. To understand how document RAG and agent memory relate to each other, [my article on Agentic RAG vs classic RAG](/en/blog/posts/agentic-rag-vs-rag-classique/) draws that boundary clearly.
+Honestly, LlamaIndex Memory is only really useful if you're already heavily invested in the LlamaIndex ecosystem. Standalone, its abstractions are less ergonomic than Mem0 or Zep. If you're already using LlamaIndex for document RAG, it's a natural option. Otherwise, go with Mem0 or a custom pattern. To understand how document RAG and agent memory relate to each other, [my article on Agentic RAG vs classic RAG](/en/blog/2026/03/20/agentic-rag-vs-rag-classique/) draws that boundary clearly.
 
 ***
 

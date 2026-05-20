@@ -37,7 +37,7 @@ This is what's called **vocabulary mismatch**. And it's the problem hybrid searc
 
 ## 3 types of queries where vector search alone fails
 
-An embedding model encodes meaning, semantic associations, conceptual proximity. That's powerful. If you want to understand concretely how text becomes a vector and why that representation is so powerful, I have an article that covers the fundamentals: [embeddings in RAG](/en/blog/posts/embeddings-rag-comprendre-importance/).
+An embedding model encodes meaning, semantic associations, conceptual proximity. That's powerful. If you want to understand concretely how text becomes a vector and why that representation is so powerful, I have an article that covers the fundamentals: [embeddings in RAG](/en/blog/2026/05/29/embeddings-rag-comprendre-importance/).
 
 But it fails systematically on 3 categories of queries.
 

@@ -21,7 +21,7 @@ Je m'appelle **Anas Rabhi**, je suis consultant IA freelance à Toulouse. Cette 
 
 Un agent IA est un système où **un LLM prend des décisions sur les actions à effectuer**, à partir d'un objectif et d'un ensemble d'outils à sa disposition. À chaque étape, l'agent observe le contexte, raisonne, choisit un outil, l'exécute, observe le résultat, et recommence, jusqu'à atteindre l'objectif.
 
-C'est cette **boucle décision-action-observation** qui distingue un agent d'un simple workflow scripté. Pour la définition complète avec les briques techniques (planning, tool use, mémoire), voir [C'est quoi un agent IA ?](/blog/2026/01/15/c-est-quoi-un-agent-ia/).
+C'est cette **boucle décision-action-observation** qui distingue un agent d'un simple workflow scripté. Pour la définition complète avec les briques techniques (planning, tool use, mémoire), voir [C'est quoi un agent IA ?](/blog/2025/12/16/mais-cest-quoi-un-agent-ia/).
 
 ---
 
@@ -62,9 +62,9 @@ Approche "équipe d'agents spécialisés" qui collaborent. Plus simple à prendr
 
 Sur des cas simples ou très contraints (production critique), je préfère parfois écrire l'agent à la main : 200 lignes de Python, un dict pour l'état, des appels LLM bruts. Moins de magie, plus de prévisibilité.
 
-Comparatif détaillé avec exemples : [CrewAI, LangChain, LangGraph : comparatif pragmatique](/blog/2026/01/22/crewai-langchain-langgraph-comparatif-pragmatique/).
+Comparatif détaillé avec exemples : [CrewAI, LangChain, LangGraph : comparatif pragmatique](/blog/2026/06/02/crewai-langchain-langgraph-comparatif-pragmatique/).
 
-Sur les limites des stacks lourdes en production : [Stack IA production : LangChain / LlamaIndex et leurs limites](/blog/2026/05/10/stack-ia-production-langchain-llamaindex-limites/).
+Sur les limites des stacks lourdes en production : [Stack IA production : LangChain / LlamaIndex et leurs limites](/blog/2026/05/26/stack-ia-production-langchain-llamaindex-limites/).
 
 ---
 
@@ -91,7 +91,7 @@ Trois types de mémoire à orchestrer :
 - **Mémoire sémantique** (faits) : ce que l'agent sait sur l'utilisateur, le projet, le contexte.
 - **Mémoire épisodique** (événements) : ce que l'agent a fait, quand, avec quel résultat.
 
-Les architectures techniques (vector store dédié, base relationnelle, mémoires hiérarchiques) sont détaillées dans [La mémoire long terme des agents IA](/blog/2026/02/15/memoire-agents-ia-long-terme/).
+Les architectures techniques (vector store dédié, base relationnelle, mémoires hiérarchiques) sont détaillées dans [La mémoire long terme des agents IA](/blog/2026/05/19/memoire-agents-ia-long-terme/).
 
 ---
 
@@ -99,7 +99,7 @@ Les architectures techniques (vector store dédié, base relationnelle, mémoire
 
 L'**Agentic RAG** est l'évolution naturelle du RAG classique quand on veut gérer des questions complexes nécessitant plusieurs recherches, du raisonnement, de l'agrégation entre sources. L'agent décide quoi chercher, vérifie ses résultats, reformule au besoin.
 
-C'est plus puissant que le RAG classique mais plus lent et plus cher. Quand préférer l'un ou l'autre : [Agentic RAG vs RAG classique](/blog/2026/03/22/agentic-rag-vs-rag-classique/).
+C'est plus puissant que le RAG classique mais plus lent et plus cher. Quand préférer l'un ou l'autre : [Agentic RAG vs RAG classique](/blog/2026/03/20/agentic-rag-vs-rag-classique/).
 
 Pour le RAG classique en lui-même, voir la page dédiée : [RAG, le guide complet](/rag/).
 
@@ -119,7 +119,7 @@ Sans observabilité, un agent qui dérape est invisible. Outils que j'utilise : 
 
 ### 3. Maîtrise des coûts
 
-Un agent qui boucle peut générer plusieurs euros en quelques minutes. Mettre en place : timeout strict, budget par session, alerting sur dépassement, prompt caching ([voir l'article](/blog/2025/12/15/prompt-caching-reduire-cout-llm/)).
+Un agent qui boucle peut générer plusieurs euros en quelques minutes. Mettre en place : timeout strict, budget par session, alerting sur dépassement, prompt caching ([voir l'article](/blog/2026/05/22/prompt-caching-reduire-cout-llm/)).
 
 ### 4. Gestion des erreurs
 
@@ -129,7 +129,7 @@ Le LLM peut générer un mauvais JSON, appeler un outil qui n'existe pas, partir
 
 On évalue un agent par scénarios end-to-end, pas par appel LLM unitaire. Datasets de scénarios représentatifs, LLM-as-a-judge sur le résultat final, métriques métier (taux de succès, coût moyen, temps moyen).
 
-Plus de détails sur ces enjeux et les limites des frameworks : [Stack IA production : LangChain / LlamaIndex et leurs limites](/blog/2026/05/10/stack-ia-production-langchain-llamaindex-limites/).
+Plus de détails sur ces enjeux et les limites des frameworks : [Stack IA production : LangChain / LlamaIndex et leurs limites](/blog/2026/05/26/stack-ia-production-langchain-llamaindex-limites/).
 
 ---
 

@@ -327,7 +327,7 @@ Here's my real decision grid, not the marketing version.
 
 **If it's a product we'll be working on for two years and want maximum control**: custom code directly on the Anthropic or OpenAI SDK. No framework. Just the primitives. This avoids being held hostage by a third-party framework's API changes and gives you complete ownership of what's happening. It's also what I recommend when the team is small and you want to minimize technical debt.
 
-For agents that need standardized tooling, I also look at what [MCP (Model Context Protocol)](/en/blog/posts/mcp-model-context-protocol-agents-ia/) can offer: it's an emerging standard for connecting tools to agents in an interoperable way, independent of the chosen framework.
+For agents that need standardized tooling, I also look at what [MCP (Model Context Protocol)](/en/blog/2026/05/15/mcp-model-context-protocol-agents-ia/) can offer: it's an emerging standard for connecting tools to agents in an interoperable way, independent of the chosen framework.
 
 ```mermaid
 graph TD
@@ -524,10 +524,10 @@ Pydantic AI or LangGraph. Both respect your expertise: the code is explicit, abs
 
 ## Further reading
 
-- **[What is an AI agent, really?](/en/blog/posts/c-est-quoi-un-agent-ia/)** — the foundation for understanding what all these frameworks are trying to orchestrate
-- **[Agentic RAG vs classic RAG](/en/blog/posts/agentic-rag-vs-rag-classique/)** — how agent frameworks connect with your RAG pipelines
-- **[Long-term memory for AI agents](/en/blog/posts/memoire-agents-ia-long-terme/)** — the component most frameworks still handle poorly
-- **[MCP: Model Context Protocol for agents](/en/blog/posts/mcp-model-context-protocol-agents-ia/)** — the emerging standard for connecting tools to your agents, independent of framework
+- **[What is an AI agent, really?](/en/blog/2025/12/16/mais-cest-quoi-un-agent-ia/)** — the foundation for understanding what all these frameworks are trying to orchestrate
+- **[Agentic RAG vs classic RAG](/en/blog/2026/03/20/agentic-rag-vs-rag-classique/)** — how agent frameworks connect with your RAG pipelines
+- **[Long-term memory for AI agents](/en/blog/2026/05/19/memoire-agents-ia-long-terme/)** — the component most frameworks still handle poorly
+- **[MCP: Model Context Protocol for agents](/en/blog/2026/05/15/mcp-model-context-protocol-agents-ia/)** — the emerging standard for connecting tools to your agents, independent of framework
 
 ***
 

@@ -48,7 +48,7 @@ Un RAG production se compose de **5 briques** qu'il faut chacune optimiser. Chaq
 
 Avant d'indexer, il faut **lire correctement les documents source**. Sur des PDFs scannés, des tableaux complexes, des schémas, des contrats avec mise en page riche, c'est souvent là que tout se joue : un parsing médiocre = un RAG médiocre, peu importe la suite.
 
-Approfondissement : [Parsing PDF et extraction de documents pour RAG](/blog/2026/04/05/parsing-pdf-rag-extraction-documents/).
+Approfondissement : [Parsing PDF et extraction de documents pour RAG](/blog/2026/05/16/parsing-pdf-rag-extraction-documents/).
 
 ### 2. Le chunking
 
@@ -60,13 +60,13 @@ Approfondissement : [Le chunking optimal pour le RAG](/blog/2026/04/15/chunking-
 
 Les embeddings sont les vecteurs qui capturent la **sémantique** d'un texte. C'est ce qui permet de retrouver les passages pertinents par similarité. Le choix du modèle d'embeddings (OpenAI, Mistral, BGE-M3, Cohere) a un impact direct sur la qualité du retrieval.
 
-Approfondissement : [Comprendre les embeddings et leur importance dans le RAG](/blog/2026/04/12/embeddings-rag-comprendre-importance/).
+Approfondissement : [Comprendre les embeddings et leur importance dans le RAG](/blog/2026/05/29/embeddings-rag-comprendre-importance/).
 
 ### 4. Le retrieval
 
 Une fois la base indexée, il faut **retrouver les bons passages** au moment de la requête. La recherche vectorielle pure ne suffit presque jamais en production : on combine généralement **BM25 (recherche lexicale) et recherche vectorielle** dans une approche hybride, suivie d'un **reranker**.
 
-Approfondissement : [RAG hybride : combiner BM25 et recherche vectorielle](/blog/2026/04/18/rag-hybride-bm25-vectoriel/).
+Approfondissement : [RAG hybride : combiner BM25 et recherche vectorielle](/blog/2026/04/01/rag-hybride-bm25-vectoriel/).
 
 ### 5. La génération
 
@@ -88,10 +88,10 @@ Pour comprendre comment **mesurer** ces gains, voir [Comment évaluer un RAG en 
 
 Un RAG mal pensé donne des résultats décevants : c'est la principale raison pour laquelle les projets RAG s'enlisent. J'ai vu les mêmes erreurs revenir mission après mission, et j'ai écrit plusieurs articles pour les identifier et les corriger.
 
-- **Les 5 erreurs classiques** : [Les 5 erreurs RAG les plus fréquentes](/blog/2026/03/01/les-5-erreurs-rag/) (méthodologie, données, évaluation, prompt, production).
-- **Les 4 causes techniques d'échec** : [Les 4 causes techniques d'échec d'un RAG](/blog/2026/03/15/les-4-causes-techniques-echec-rag/) : analyse fine, à lire si ton RAG tourne mais répond mal.
-- **Quand le RAG est structurellement inadapté** : [Pourquoi le RAG ne fonctionne pas (parfois)](/blog/2026/03/29/pourquoi-le-rag-ne-fonctionne-pas/).
-- **Quand le RAG simple ne suffit plus** : [Le RAG est trop simple](/blog/2026/04/01/rag-trop-simple/) et [Le RAG est-il fini ?](/blog/2026/04/26/le-rag-est-fini/).
+- **Les 5 erreurs classiques** : [Les 5 erreurs RAG les plus fréquentes](/blog/2026/02/21/les-5-erreurs-les-plus-fr%C3%A9quentes-avec-le-rag/) (méthodologie, données, évaluation, prompt, production).
+- **Les 4 causes techniques d'échec** : [Les 4 causes techniques d'échec d'un RAG](/blog/2026/02/05/les-4-causes-techniques-dechec-dun-rag-et-comment-les-corriger/) : analyse fine, à lire si ton RAG tourne mais répond mal.
+- **Quand le RAG est structurellement inadapté** : [Pourquoi le RAG ne fonctionne pas (parfois)](/blog/2025/06/04/mon-rag-ne-marche-pas-analyse-erreur/).
+- **Quand le RAG simple ne suffit plus** : [Le RAG est trop simple](/blog/2025/12/02/rag-une-porte-dentree-par-sa-simplicite-dimplementation/) et [Le RAG est-il fini ?](/blog/2026/02/05/le-rag-est-il-vraiment-fini/).
 - **Long context vs RAG, la décision technique en 2026** : [Long context vs RAG : quand utiliser quoi ?](/blog/2026/05/20/long-context-vs-rag-quand-utiliser/) (context rot, benchmarks NIAH 2026, coûts ×100 et grille de décision en 5 questions).
 
 Le constat : un RAG "vanille" couvre 70 % des cas d'usage. Pour les 30 % restants (questions multi-saut, raisonnement, agrégation sur plusieurs documents), il faut passer aux architectures plus avancées.
@@ -102,7 +102,7 @@ Le constat : un RAG "vanille" couvre 70 % des cas d'usage. Pour les 30 % restant
 
 Quand le RAG classique atteint ses limites, on passe à l'**Agentic RAG** : l'agent peut décomposer une question complexe, lancer plusieurs recherches itératives, raisonner sur les résultats et combiner les sources. C'est plus puissant, plus lent et plus cher. À réserver aux cas où le RAG simple échoue.
 
-Le détail de la comparaison et des cas d'usage : [Agentic RAG vs RAG classique](/blog/2026/03/22/agentic-rag-vs-rag-classique/). Et pour le contexte large sur les agents : voir la page [Agents IA](/agents-ia/).
+Le détail de la comparaison et des cas d'usage : [Agentic RAG vs RAG classique](/blog/2026/03/20/agentic-rag-vs-rag-classique/). Et pour le contexte large sur les agents : voir la page [Agents IA](/agents-ia/).
 
 ---
 
@@ -160,7 +160,7 @@ La stack RAG en 2026 se compose typiquement de :
 | Évaluation | RAGAS, datasets internes, LLM-as-a-judge |
 | Observabilité | Langfuse, OpenTelemetry, Prometheus |
 
-Sur le choix de framework, je suis assez critique des stacks trop lourdes : voir [Stack IA production : LangChain / LlamaIndex et leurs limites](/blog/2026/05/10/stack-ia-production-langchain-llamaindex-limites/).
+Sur le choix de framework, je suis assez critique des stacks trop lourdes : voir [Stack IA production : LangChain / LlamaIndex et leurs limites](/blog/2026/05/26/stack-ia-production-langchain-llamaindex-limites/).
 
 ---
 

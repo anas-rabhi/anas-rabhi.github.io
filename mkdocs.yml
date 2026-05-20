@@ -77,6 +77,49 @@ theme:
 plugins:
   - search:
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  - redirects:
+      redirect_maps:
+        # ---------------------------------------------------------------
+        # FR \u2014 anciennes URLs (mauvais slug ou mauvaise date) \u2192 URL r\u00e9elle
+        # ---------------------------------------------------------------
+        'blog/2025/03/26/comment-ameliorer-l-IA.md': 'blog/posts/comment-ameliorer-l-IA.md'
+        'blog/2025/03/26/comment-am\u00e9liorer-le-rag.md': 'blog/posts/comment-ameliorer-l-IA.md'
+        'blog/2025/04/01/reussir-a-suivre-les-sorties-en-IA.md': 'blog/posts/reussir-a-suivre-les-sorties-en-IA.md'
+        'blog/2025/05/01/comprendre-l-IA-guide.md': 'blog/posts/comprendre-l-IA-guide.md'
+        'blog/2025/06/01/comprendre-l-IA-generative.md': 'blog/posts/comprendre-l-IA-generative.md'
+        'blog/2025/06/04/mon-rag-ne-marche-pas--pourquoi-lanalyse-derreur-change-tout.md': 'blog/posts/pourquoi-le-rag-ne-fonctionne-pas.md'
+        'blog/2025/06/04/mon-rag-ne-marche-pas-pourquoi-l-analyse-derreur-change-tout.md': 'blog/posts/pourquoi-le-rag-ne-fonctionne-pas.md'
+        'blog/2025/11/15/utiliser-chatgpt-efficacement.md': 'blog/posts/utiliser-chatgpt-efficacement.md'
+        'blog/2025/12/15/prompt-caching-reduire-cout-llm.md': 'blog/posts/prompt-caching-reduire-cout-llm.md'
+        'blog/2026/01/15/c-est-quoi-un-agent-ia.md': 'blog/posts/c-est-quoi-un-agent-ia.md'
+        'blog/2026/01/22/crewai-langchain-langgraph-comparatif-pragmatique.md': 'blog/posts/crewai-langchain-langgraph-comparatif-pragmatique.md'
+        'blog/2026/02/01/mais-que-es-le-rag.md': 'blog/posts/mais-que-es-le-rag.md'
+        'blog/2026/02/15/memoire-agents-ia-long-terme.md': 'blog/posts/memoire-agents-ia-long-terme.md'
+        'blog/2026/02/21/les-5-erreurs-rag.md': 'blog/posts/les-5-erreurs-rag.md'
+        'blog/2026/03/01/les-5-erreurs-rag.md': 'blog/posts/les-5-erreurs-rag.md'
+        'blog/2026/03/15/les-4-causes-techniques-echec-rag.md': 'blog/posts/les-4-causes-techniques-echec-rag.md'
+        'blog/2026/03/22/agentic-rag-vs-rag-classique.md': 'blog/posts/agentic-rag-vs-rag-classique.md'
+        'blog/2026/03/29/pourquoi-le-rag-ne-fonctionne-pas.md': 'blog/posts/pourquoi-le-rag-ne-fonctionne-pas.md'
+        'blog/2026/04/01/rag-trop-simple.md': 'blog/posts/rag-trop-simple.md'
+        'blog/2026/04/05/parsing-pdf-rag-extraction-documents.md': 'blog/posts/parsing-pdf-rag-extraction-documents.md'
+        'blog/2026/04/12/embeddings-rag-comprendre-importance.md': 'blog/posts/embeddings-rag-comprendre-importance.md'
+        'blog/2026/04/18/rag-hybride-bm25-vectoriel.md': 'blog/posts/rag-hybride-bm25-vectoriel.md'
+        'blog/2026/04/26/le-rag-est-fini.md': 'blog/posts/le-rag-est-fini.md'
+        'blog/2026/04/30/geo-comment-fonctionnent-les-moteurs-ia.md': 'blog/posts/geo-comment-fonctionnent-les-moteurs-ia.md'
+        'blog/2026/05/10/stack-ia-production-langchain-llamaindex-limites.md': 'blog/posts/stack-ia-production-langchain-llamaindex-limites.md'
+        # ---------------------------------------------------------------
+        # EN \u2014 /en/blog/posts/<slug>/ n'existe pas (URLs dat\u00e9es) \u2192 URL r\u00e9elle
+        # ---------------------------------------------------------------
+        'en/blog/posts/c-est-quoi-un-agent-ia/index.md': 'en/blog/posts/c-est-quoi-un-agent-ia.md'
+        'en/blog/posts/agentic-rag-vs-rag-classique/index.md': 'en/blog/posts/agentic-rag-vs-rag-classique.md'
+        'en/blog/posts/chunking-optimal-rag/index.md': 'en/blog/posts/chunking-optimal-rag.md'
+        'en/blog/posts/embeddings-rag-comprendre-importance/index.md': 'en/blog/posts/embeddings-rag-comprendre-importance.md'
+        'en/blog/posts/evaluer-rag-production-metriques-ragas/index.md': 'en/blog/posts/evaluer-rag-production-metriques-ragas.md'
+        'en/blog/posts/mais-que-es-le-rag/index.md': 'en/blog/posts/mais-que-es-le-rag.md'
+        'en/blog/posts/mcp-model-context-protocol-agents-ia/index.md': 'en/blog/posts/mcp-model-context-protocol-agents-ia.md'
+        'en/blog/posts/memoire-agents-ia-long-terme/index.md': 'en/blog/posts/memoire-agents-ia-long-terme.md'
+        'en/blog/posts/optimiser-rag-techniques/index.md': 'en/blog/posts/optimiser-rag-techniques.md'
+        'en/blog/posts/rag-hybride-bm25-vectoriel/index.md': 'en/blog/posts/rag-hybride-bm25-vectoriel.md'
   - blog:
       post_date_format: dd/MM/yyyy
       post_url_format: "{date}/{slug}"

@@ -23,7 +23,7 @@ L'IA générative désigne les modèles capables de **produire du contenu** (tex
 
 La rupture par rapport à l'IA "classique" (machine learning, deep learning supervisé) : on n'a plus besoin de réentraîner un modèle sur ses propres données pour résoudre un problème. On utilise un modèle pré-entraîné, et on l'adapte par **prompting**, **RAG**, ou **finetuning** léger.
 
-Pour la définition complète et les notions de base : [Comprendre l'IA générative](/blog/2025/06/01/comprendre-l-IA-generative/) et le [guide simple pour comprendre l'intelligence artificielle](/blog/2025/05/01/comprendre-l-IA-guide/).
+Pour la définition complète et les notions de base : [Comprendre l'IA générative](/blog/2025/05/15/comprendre-ia-generative/) et le [guide simple pour comprendre l'intelligence artificielle](/blog/2025/04/05/comprendre-intelligence-artificielle-guide/).
 
 ---
 
@@ -66,7 +66,7 @@ L'arbre de décision complet avec exemples chiffrés : [Entraînement, finetunin
 
 Avec ChatGPT, Perplexity, Gemini et Google AI Overviews, **20 à 30 % des clics organiques** ne vont plus aux résultats classiques de Google. Pour les entreprises qui veulent rester visibles, il faut désormais optimiser pour les **moteurs IA**, pas seulement pour Google. C'est le **GEO (Generative Engine Optimization)**.
 
-Comment ces moteurs choisissent les sources qu'ils citent, et comment se positionner : [Comment fonctionnent les moteurs de recherche IA](/blog/2026/04/30/geo-comment-fonctionnent-les-moteurs-ia/).
+Comment ces moteurs choisissent les sources qu'ils citent, et comment se positionner : [Comment fonctionnent les moteurs de recherche IA](/blog/2026/04/09/geo-comment-fonctionnent-les-moteurs-de-recherche-ia/).
 
 ---
 
@@ -74,7 +74,7 @@ Comment ces moteurs choisissent les sources qu'ils citent, et comment se positio
 
 Avant de parler d'IA en production, beaucoup d'entreprises sous-utilisent **ChatGPT lui-même**. Les bonnes pratiques de prompting, les modes (Projects, GPTs, Canvas), les limites à connaître : ça vaut déjà des heures de productivité par semaine sans aucun développement.
 
-Le guide pratique : [Utiliser ChatGPT efficacement](/blog/2025/11/15/utiliser-chatgpt-efficacement/).
+Le guide pratique : [Utiliser ChatGPT efficacement](/blog/2024/12/11/utiliser-chatgpt-efficacement--limites-prompts-et-cas-dusage/).
 
 ---
 
@@ -86,7 +86,7 @@ Les API LLM peuvent rapidement coûter plusieurs milliers d'euros par mois sans 
 2. **Prompt caching** : ré-utiliser les portions stables du prompt entre appels. Gain de 50 à 90 % sur les coûts d'input.
 3. **RAG bien dimensionné** : moins de chunks injectés = moins de tokens = moins cher.
 
-Détails sur le prompt caching : [Prompt caching : réduire le coût des LLMs en production](/blog/2025/12/15/prompt-caching-reduire-cout-llm/).
+Détails sur le prompt caching : [Prompt caching : réduire le coût des LLMs en production](/blog/2026/05/22/prompt-caching-reduire-cout-llm/).
 
 ---
 
@@ -94,13 +94,13 @@ Détails sur le prompt caching : [Prompt caching : réduire le coût des LLMs en
 
 Un projet IA ne s'arrête pas au déploiement. Comme tout système qui dépend de données et de comportement utilisateur, il **dérive dans le temps**. Mettre en place un cycle d'amélioration continue est ce qui sépare les projets qui durent de ceux qui finissent en demo abandonnée.
 
-Méthodologie : [Comment améliorer son IA](/blog/2025/03/26/comment-ameliorer-l-IA/).
+Méthodologie : [Comment améliorer son IA](/blog/2025/03/26/comment-ameliorer-le-rag/).
 
 ---
 
 ## Suivre l'évolution de l'IA sans se noyer
 
-L'IA bouge vite. Trop vite pour suivre tous les papiers, tous les modèles, tous les frameworks. Ma méthode pour rester à jour sans y passer 20h/semaine : [Réussir à suivre les sorties en IA](/blog/2025/04/01/reussir-a-suivre-les-sorties-en-IA/).
+L'IA bouge vite. Trop vite pour suivre tous les papiers, tous les modèles, tous les frameworks. Ma méthode pour rester à jour sans y passer 20h/semaine : [Réussir à suivre les sorties en IA](/blog/2025/06/10/rester-a-jour-ia-generative/).
 
 ---
 

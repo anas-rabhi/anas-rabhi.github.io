@@ -72,7 +72,7 @@ result = evaluate(eval_data, metrics=[
 print(result)
 ```
 
-**The minimum viable set**: 30 to 50 questions representative of your users' real queries. You don't need a 10,000-example dataset to get a clear picture of where you stand. I cover this in more detail in [the 5 mistakes everyone makes with RAG](/blog/2026/02/21/les-5-erreurs-rag/) (it's mistake #5, the most silent one).
+**The minimum viable set**: 30 to 50 questions representative of your users' real queries. You don't need a 10,000-example dataset to get a clear picture of where you stand. I cover this in more detail in [the 5 mistakes everyone makes with RAG](/blog/2026/02/21/les-5-erreurs-les-plus-fr%C3%A9quentes-avec-le-rag/) (it's mistake #5, the most silent one).
 
 Once the baseline is established, here's the order in which to apply optimizations.
 
@@ -370,7 +370,7 @@ Reranking takes the already-retrieved chunks and reorders them by actual relevan
 
 **Does optimization help if my data is poor quality?**
 
-No. The techniques described here improve a RAG that already works correctly on good data. If your PDFs are poorly OCR'd scans, if your documents are badly structured, if your chunking cuts information at the wrong place: no optimization will compensate for that. The absolute priority remains data quality and chunking. I cover this in [the 5 RAG mistakes](/blog/2026/02/21/les-5-erreurs-rag/) (mistake #3) and in [the analysis of technical failure causes](/blog/2026/02/05/les-4-causes-techniques-dechec-dun-rag-et-comment-les-corriger/).
+No. The techniques described here improve a RAG that already works correctly on good data. If your PDFs are poorly OCR'd scans, if your documents are badly structured, if your chunking cuts information at the wrong place: no optimization will compensate for that. The absolute priority remains data quality and chunking. I cover this in [the 5 RAG mistakes](/blog/2026/02/21/les-5-erreurs-les-plus-fr%C3%A9quentes-avec-le-rag/) (mistake #3) and in [the analysis of technical failure causes](/blog/2026/02/05/les-4-causes-techniques-dechec-dun-rag-et-comment-les-corriger/).
 
 ***
 

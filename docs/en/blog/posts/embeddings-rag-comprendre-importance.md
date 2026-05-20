@@ -106,7 +106,7 @@ Embedding-based search, on the other hand, compares **vectors**: "refund" and "r
 | Semantic (embedding) | Vector comparison in meaning space | Yes |
 | Hybrid | Both combined | Yes, and it's the best of both worlds |
 
-Hybrid search combines BM25 and vector search to get the best of both approaches. I cover this in detail in my article on [hybrid RAG: BM25 + vector search](/en/blog/posts/rag-hybride-bm25-vectoriel/).
+Hybrid search combines BM25 and vector search to get the best of both approaches. I cover this in detail in my article on [hybrid RAG: BM25 + vector search](/en/blog/2026/04/01/rag-hybride-bm25-vectoriel/).
 
 ***
 
@@ -193,7 +193,7 @@ Embeddings aren't just for RAG. In reality, they sit at the root of a surprising
 
 **1. RAG (Retrieval-Augmented Generation)**
 
-This is the most well-known use. You embed the documents, store the vectors in a database, and when a user asks a question, you embed the question and retrieve the semantically closest chunks. Those chunks are then sent to the LLM to generate the answer. Without embeddings, there's no RAG. I explain the full RAG pipeline in detail in [my article on what RAG is](/en/blog/posts/mais-que-es-le-rag/).
+This is the most well-known use. You embed the documents, store the vectors in a database, and when a user asks a question, you embed the question and retrieve the semantically closest chunks. Those chunks are then sent to the LLM to generate the answer. Without embeddings, there's no RAG. I explain the full RAG pipeline in detail in [my article on what RAG is](/en/blog/2025/06/21/cest-quoi-le-rag-definition-fonctionnement/).
 
 **2. Semantic search**
 
@@ -201,7 +201,7 @@ Internal search engines, assisted FAQs, knowledge base search. The user searches
 
 **3. Long-term memory for AI agents**
 
-An AI agent that needs to remember past conversations can't keep the entire history in its context. The solution: embed each interaction and store it. When a new conversation arrives, retrieve the relevant memories by similarity. This is the principle behind [long-term memory for AI agents](/en/blog/posts/memoire-agents-ia-long-terme/).
+An AI agent that needs to remember past conversations can't keep the entire history in its context. The solution: embed each interaction and store it. When a new conversation arrives, retrieve the relevant memories by similarity. This is the principle behind [long-term memory for AI agents](/en/blog/2026/05/19/memoire-agents-ia-long-terme/).
 
 **4. Classification**
 
@@ -264,7 +264,7 @@ A few important nuances:
 
 **Qwen3-Embedding-8B** is the open source surprise of 2025–2026. It surpasses text-embedding-3-large on MTEB while being free to self-host. The constraint: you need GPU infrastructure to serve it. With an A100 or H100, latencies remain perfectly acceptable in production.
 
-**BGE-M3** remains my top choice for open source multilingual projects. A single model produces dense vectors, sparse vectors, and ColBERT scores, making it an ideal building block for [hybrid RAG](/en/blog/posts/rag-hybride-bm25-vectoriel/).
+**BGE-M3** remains my top choice for open source multilingual projects. A single model produces dense vectors, sparse vectors, and ColBERT scores, making it an ideal building block for [hybrid RAG](/en/blog/2026/04/01/rag-hybride-bm25-vectoriel/).
 
 **My practical recommendations by context:**
 
@@ -309,7 +309,7 @@ Fine-tuning becomes interesting in one specific scenario: **when your domain has
 
 The fine-tuning principle for embeddings is straightforward: you provide (question, good chunk) pairs and adjust the model so that the question and the right chunk end up close together in vector space. With `sentence-transformers` in Python, a few hundred well-chosen pairs and a few hours of GPU training, you can gain +15 to 30% Hit Rate on a specific domain.
 
-The ROI depends on your situation: if your domain is specific enough and current performance is insufficient despite good chunking and architecture, fine-tuning is worth evaluating. Otherwise, focus first on [optimal chunking](/en/blog/posts/chunking-optimal-rag/) and [RAG optimization](/en/blog/posts/optimiser-rag-techniques/) — these are less costly levers to pull.
+The ROI depends on your situation: if your domain is specific enough and current performance is insufficient despite good chunking and architecture, fine-tuning is worth evaluating. Otherwise, focus first on [optimal chunking](/en/blog/2026/04/15/chunking-optimal-rag/) and [RAG optimization](/en/blog/2026/04/22/optimiser-rag-techniques/) — these are less costly levers to pull.
 
 ***
 
@@ -359,11 +359,11 @@ Yes. Multimodal models like CLIP or Gemini Embedding 2 produce embeddings for im
 
 ## Further reading
 
-- **[What is RAG, really?](/en/blog/posts/mais-que-es-le-rag/)** — the layer above embeddings: how they're used to build a Q&A system over your documents
-- **[Hybrid RAG: BM25 + vector search](/en/blog/posts/rag-hybride-bm25-vectoriel/)** — combining embeddings and keywords for more robust retrieval on domain-specific jargon
-- **[Optimal chunking for your RAG](/en/blog/posts/chunking-optimal-rag/)** — what exactly gets embedded, and why how you split documents changes everything
-- **[Optimizing your RAG](/en/blog/posts/optimiser-rag-techniques/)** — post-embedding levers to improve end-to-end performance
-- **[AI agent memory](/en/blog/posts/memoire-agents-ia-long-terme/)** — how embeddings let an agent remember over the long term
+- **[What is RAG, really?](/en/blog/2025/06/21/cest-quoi-le-rag-definition-fonctionnement/)** — the layer above embeddings: how they're used to build a Q&A system over your documents
+- **[Hybrid RAG: BM25 + vector search](/en/blog/2026/04/01/rag-hybride-bm25-vectoriel/)** — combining embeddings and keywords for more robust retrieval on domain-specific jargon
+- **[Optimal chunking for your RAG](/en/blog/2026/04/15/chunking-optimal-rag/)** — what exactly gets embedded, and why how you split documents changes everything
+- **[Optimizing your RAG](/en/blog/2026/04/22/optimiser-rag-techniques/)** — post-embedding levers to improve end-to-end performance
+- **[AI agent memory](/en/blog/2026/05/19/memoire-agents-ia-long-terme/)** — how embeddings let an agent remember over the long term
 
 ***
 

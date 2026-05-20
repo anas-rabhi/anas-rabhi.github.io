@@ -52,7 +52,7 @@ Mettre en place un RAG, c'est facile. C'est même trop facile : on suit un tuto,
 
 Justement, cette simplicité cache un piège. Pour une question très basique, le RAG peut donner l'impression que tout fonctionne parfaitement. Mais dès qu'on sort un peu du cadre, on se rend vite compte que les réponses ne suivent plus.
 
-C'est là qu'on peut passer beaucoup de temps à bricoler, à optimiser les mauvaises briques, sans forcément comprendre où est le vrai problème. Et c'est normal : comme tout projet d'IA, le RAG est plus complexe qu'il n'y paraît. Il faut vraiment comprendre comment chaque brique fonctionne pour éviter de tourner en rond. J'ai déjà écrit des articles sur comment améliorer le RAG [ici](https://ianas.fr/blog/2025/03/26/comment-am%C3%A9liorer-le-rag/) ou sur l'analyse d'erreur pour comprendre ce qui coince [ici](https://ianas.fr/blog/2025/06/04/mon-rag-ne-marche-pas-pourquoi-l-analyse-derreur-change-tout/).
+C'est là qu'on peut passer beaucoup de temps à bricoler, à optimiser les mauvaises briques, sans forcément comprendre où est le vrai problème. Et c'est normal : comme tout projet d'IA, le RAG est plus complexe qu'il n'y paraît. Il faut vraiment comprendre comment chaque brique fonctionne pour éviter de tourner en rond. J'ai déjà écrit des articles sur comment améliorer le RAG [ici](https://ianas.fr/blog/2025/03/26/comment-ameliorer-le-rag/) ou sur l'analyse d'erreur pour comprendre ce qui coince [ici](https://ianas.fr/blog/2025/06/04/mon-rag-ne-marche-pas-analyse-erreur/).
 
 Mais revenons aux bases du RAG dans cet article.
 
@@ -97,7 +97,7 @@ Dans cette deuxième phase, plusieurs paramètres peuvent être optimisés pour 
 - Le nombre de chunks récupérés peut être trop faible ou trop grand.
 - La qualité du modèle LLM qui génère la réponse peut être améliorée.
 
-À partir de cette base, on peut commencer à expérimenter et évaluer le RAG. Pour ensuite l'améliorer en analysant les erreurs et en changeant les paramètres. Si vous êtes à l'étape de l'évaluation, je vous invite à lire mon article sur l'analyse d'erreur pour comprendre ce qui coince [ici](https://ianas.fr/blog/2025/06/04/mon-rag-ne-marche-pas--pourquoi-lanalyse-derreur-change-tout/).
+À partir de cette base, on peut commencer à expérimenter et évaluer le RAG. Pour ensuite l'améliorer en analysant les erreurs et en changeant les paramètres. Si vous êtes à l'étape de l'évaluation, je vous invite à lire mon article sur l'analyse d'erreur pour comprendre ce qui coince [ici](https://ianas.fr/blog/2025/06/04/mon-rag-ne-marche-pas-analyse-erreur/).
 
 ### À quoi ça sert vraiment le RAG ? Quelles sont ses limites ?
 

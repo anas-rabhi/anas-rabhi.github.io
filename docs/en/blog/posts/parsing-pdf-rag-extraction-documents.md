@@ -216,7 +216,7 @@ Extracting information from this HTML corpus required a very different pipeline 
 
 **Step 5: structured storage with rich metadata.** Each product page is stored as structured Markdown with explicit metadata: category, price, size availability, delivery time by region, customer review rating. This metadata enables precise filtering at retrieval time.
 
-For more on how to structure your chunks after extraction, the article on [optimal RAG chunking](/en/blog/posts/chunking-optimal-rag/) details strategies adapted to each content type.
+For more on how to structure your chunks after extraction, the article on [optimal RAG chunking](/en/blog/2026/04/15/chunking-optimal-rag/) details strategies adapted to each content type.
 
 ### The result
 
@@ -248,7 +248,7 @@ Extracting data from your documents is only the first step. Once your PDFs are c
 
 Chunking is the step that follows directly from parsing. And it's a project in its own right: chunk size, splitting method, overlap handling, context preservation between paragraphs. Good parsing with bad chunking still produces a disappointing RAG.
 
-I've detailed chunking strategies in the article on [optimal RAG chunking](/en/blog/posts/chunking-optimal-rag/). This parsing step sits at the very beginning of a [retrieval-augmented generation](mais-que-es-le-rag.md) pipeline — if the raw text is wrong from the start, the rest of the system cannot compensate.
+I've detailed chunking strategies in the article on [optimal RAG chunking](/en/blog/2026/04/15/chunking-optimal-rag/). This parsing step sits at the very beginning of a [retrieval-augmented generation](mais-que-es-le-rag.md) pipeline — if the raw text is wrong from the start, the rest of the system cannot compensate.
 
 ***
 
@@ -278,7 +278,7 @@ The question managers always ask last, when it should be asked first. Here's a r
 
 **The most important hidden cost: maintenance.** When your client switches ERP and all PDF exports change format, your pipeline needs to adapt. When a supplier changes their documentation template, same story. Always budget for this upkeep in the project TCO. A document structuring pipeline isn't a one-shot — it's a living system.
 
-For a comprehensive look at the metrics to measure the impact of your parsing improvements, the article on [how to evaluate a RAG in production](/en/blog/posts/evaluer-rag-production-metriques-ragas/) gives you the concrete tools.
+For a comprehensive look at the metrics to measure the impact of your parsing improvements, the article on [how to evaluate a RAG in production](/en/blog/2026/05/15/evaluer-rag-production-metriques-ragas/) gives you the concrete tools.
 
 ***
 

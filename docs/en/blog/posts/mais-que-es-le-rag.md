@@ -50,7 +50,7 @@ Setting up a RAG is easy. Actually, it's almost too easy — you follow a tutori
 
 That simplicity is a trap. On a very basic question, RAG can look like it's working perfectly. But as soon as you push it slightly outside the obvious cases, the responses start falling apart.
 
-That's where teams often spend a lot of time tinkering, optimizing the wrong components, without really understanding where the actual problem is. And that's normal — like any AI project, RAG is more complex than it appears. You really need to understand how each component works to avoid going in circles. I've written about how to improve a RAG [here](https://ianas.fr/blog/2025/03/26/comment-am%C3%A9liorer-le-rag/) and about error analysis to understand what's breaking [here](https://ianas.fr/blog/2025/06/04/mon-rag-ne-marche-pas-pourquoi-l-analyse-derreur-change-tout/).
+That's where teams often spend a lot of time tinkering, optimizing the wrong components, without really understanding where the actual problem is. And that's normal — like any AI project, RAG is more complex than it appears. You really need to understand how each component works to avoid going in circles. I've written about how to improve a RAG [here](https://ianas.fr/blog/2025/03/26/comment-ameliorer-le-rag/) and about error analysis to understand what's breaking [here](https://ianas.fr/blog/2025/06/04/mon-rag-ne-marche-pas-analyse-erreur/).
 
 But let's get back to the RAG fundamentals in this article.
 
@@ -96,7 +96,7 @@ At this second stage, several parameters can be tuned to improve the RAG:
 - The number of retrieved chunks may be too low or too high.
 - The quality of the LLM generating the response can be improved.
 
-Starting from this baseline, you can begin experimenting and evaluating the RAG — then improve it by analyzing errors and adjusting parameters. If you're at the evaluation stage, I'd recommend reading my article on error analysis to understand what's breaking [here](https://ianas.fr/blog/2025/06/04/mon-rag-ne-marche-pas--pourquoi-lanalyse-derreur-change-tout/).
+Starting from this baseline, you can begin experimenting and evaluating the RAG — then improve it by analyzing errors and adjusting parameters. If you're at the evaluation stage, I'd recommend reading my article on error analysis to understand what's breaking [here](https://ianas.fr/blog/2025/06/04/mon-rag-ne-marche-pas-analyse-erreur/).
 
 ### What is RAG actually useful for? What are its limits?
 

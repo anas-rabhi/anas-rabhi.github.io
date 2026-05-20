@@ -304,7 +304,7 @@ Two types of PDFs behave very differently:
 - Text-based PDF (extractable text) → `PyMuPDF` or `pdfplumber`, very fast
 - Scanned PDF or complex layout (columns, repeated headers, page numbers) → `LlamaParse` or `Unstructured.io hi_res` with OCR
 
-The classic trap: extracting a scanned PDF with PyMuPDF and getting garbled text (poorly recognized OCR characters, mixed columns). Inspect your PDFs before choosing your extractor (I cover this in [the 5 mistakes everyone makes with RAG](/blog/2026/02/21/les-5-erreurs-rag/)).
+The classic trap: extracting a scanned PDF with PyMuPDF and getting garbled text (poorly recognized OCR characters, mixed columns). Inspect your PDFs before choosing your extractor (I cover this in [the 5 mistakes everyone makes with RAG](/blog/2026/02/21/les-5-erreurs-les-plus-fr%C3%A9quentes-avec-le-rag/)).
 
 **Code**
 

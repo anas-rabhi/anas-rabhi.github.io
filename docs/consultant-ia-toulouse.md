@@ -43,7 +43,7 @@ L'intégration aux systèmes existants (API, CRM, ERP, outils internes), la séc
 
 ### Audit RAG
 
-Vous avez déjà un RAG en place qui ne donne pas les résultats attendus ? Je diagnostique les problèmes (qualité du chunking, stratégie de retrieval, prompt engineering, évaluation) et je propose un plan d'amélioration concret. Voir aussi : [les 5 erreurs classiques du RAG](/blog/2026/03/01/les-5-erreurs-rag/) et [les 4 causes techniques d'échec](/blog/2026/03/15/les-4-causes-techniques-echec-rag/).
+Vous avez déjà un RAG en place qui ne donne pas les résultats attendus ? Je diagnostique les problèmes (qualité du chunking, stratégie de retrieval, prompt engineering, évaluation) et je propose un plan d'amélioration concret. Voir aussi : [les 5 erreurs classiques du RAG](/blog/2026/02/21/les-5-erreurs-les-plus-fr%C3%A9quentes-avec-le-rag/) et [les 4 causes techniques d'échec](/blog/2026/02/05/les-4-causes-techniques-dechec-dun-rag-et-comment-les-corriger/).
 
 ### Accompagnement et formation d'équipes data
 
@@ -59,7 +59,7 @@ Retrieval hybride (BM25 + vectoriel), reranking, chunking sémantique, évaluati
 
 ### Agents IA
 
-Orchestration d'outils, workflows multi-étapes, robustesse en production, garde-fous et validation humaine dans la boucle. La différence entre un [agent IA](/blog/2026/01/15/c-est-quoi-un-agent-ia/) utile et un agent qui part dans tous les sens tient souvent à des choix d'architecture précis. Je les ai appris sur des projets réels, en me trompant pas mal au début.
+Orchestration d'outils, workflows multi-étapes, robustesse en production, garde-fous et validation humaine dans la boucle. La différence entre un [agent IA](/blog/2025/12/16/mais-cest-quoi-un-agent-ia/) utile et un agent qui part dans tous les sens tient souvent à des choix d'architecture précis. Je les ai appris sur des projets réels, en me trompant pas mal au début.
 
 ### NLP
 
@@ -109,10 +109,10 @@ Sur des chaînes de production, un assistant IA aide les opérateurs à diagnost
 
 Si vous voulez comprendre l'approche technique avant de nous parler, voici les articles les plus utiles :
 
-- [Qu'est-ce que le RAG ?](/blog/2026/02/01/mais-que-es-le-rag/) : comprendre le principe fondamental
+- [Qu'est-ce que le RAG ?](/blog/2025/06/21/cest-quoi-le-rag-definition-fonctionnement/) : comprendre le principe fondamental
 - [Entraînement, finetuning ou RAG : que choisir ?](/blog/2026/05/02/entrainement-finetuning-rag-modele-ia/) : l'arbre de décision
 - [Les différents domaines de l'IA](/blog/2026/05/02/les-differents-domaines-de-l-intelligence-artificielle/) : au-delà de ChatGPT
-- [Agentic RAG vs RAG classique](/blog/2026/03/22/agentic-rag-vs-rag-classique/) : quand passer aux agents
+- [Agentic RAG vs RAG classique](/blog/2026/03/20/agentic-rag-vs-rag-classique/) : quand passer aux agents
 - [Tous les articles du blog](/blog/) : retours d'expérience et guides techniques
 
 ---

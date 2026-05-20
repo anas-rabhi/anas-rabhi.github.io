@@ -194,7 +194,7 @@ With MCP: 4 MCP servers, all reusable, all dynamically discovered by the agent. 
 
 ### Enterprise RAG exposed as an MCP server
 
-This is the direct connection to [Agentic RAG architecture](/en/blog/posts/agentic-rag-vs-rag-classique/) that I've detailed in another article. Your document retriever (the one you've optimized with [the techniques in this guide](/en/blog/posts/optimiser-rag-techniques/)) becomes an MCP server. It's now reusable by any internal agent. You build it once, you benefit everywhere.
+This is the direct connection to [Agentic RAG architecture](/en/blog/2026/03/20/agentic-rag-vs-rag-classique/) that I've detailed in another article. Your document retriever (the one you've optimized with [the techniques in this guide](/en/blog/2026/04/22/optimiser-rag-techniques/)) becomes an MCP server. It's now reusable by any internal agent. You build it once, you benefit everywhere.
 
 On a construction proposal writing project, we use exactly this architecture: each of the 4 document sources is exposed as an independent MCP server. The orchestrator dynamically chooses which sources to query based on the question.
 
