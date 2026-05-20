@@ -34,37 +34,37 @@ Structure de conseil : https://tensoria.fr/
 ### Fondamentaux RAG
 
 - [C'est quoi le RAG ?](https://ianas.fr/blog/2025/06/21/cest-quoi-le-rag-definition-fonctionnement/) : définition, fonctionnement, limites
-- [Comprendre les embeddings](https://ianas.fr/blog/2026/04/12/embeddings-rag-comprendre-importance/) : brique de base du RAG
+- [Comprendre les embeddings](https://ianas.fr/blog/2026/05/29/embeddings-rag-comprendre-importance/) : brique de base du RAG
 - [Le chunking optimal](https://ianas.fr/blog/2026/04/15/chunking-optimal-rag/) : découpage des documents pour le RAG
-- [RAG hybride BM25 + vectoriel](https://ianas.fr/blog/2026/04/18/rag-hybride-bm25-vectoriel/) : combiner lexical et sémantique
-- [Parsing PDF pour RAG](https://ianas.fr/blog/2026/04/05/parsing-pdf-rag-extraction-documents/) : extraction de documents complexes
+- [RAG hybride BM25 + vectoriel](https://ianas.fr/blog/2026/04/01/rag-hybride-bm25-vectoriel/) : combiner lexical et sémantique
+- [Parsing PDF pour RAG](https://ianas.fr/blog/2026/05/16/parsing-pdf-rag-extraction-documents/) : extraction de documents complexes
 
 ### Optimisation et évaluation RAG
 
 - [Optimiser son RAG : les 8 techniques](https://ianas.fr/blog/2026/04/22/optimiser-rag-techniques/) : HyDE, reranking, contextual retrieval, semantic cache
 - [Évaluer un RAG en production](https://ianas.fr/blog/2026/05/15/evaluer-rag-production-metriques-ragas/) : métriques, RAGAS, méthodologie d'audit
-- [Les 5 erreurs RAG fréquentes](https://ianas.fr/blog/2026/03/01/les-5-erreurs-rag/)
-- [Les 4 causes techniques d'échec d'un RAG](https://ianas.fr/blog/2026/03/15/les-4-causes-techniques-echec-rag/)
-- [Pourquoi le RAG ne fonctionne pas](https://ianas.fr/blog/2026/03/29/pourquoi-le-rag-ne-fonctionne-pas/)
+- [Les 5 erreurs RAG fréquentes](https://ianas.fr/blog/2026/02/21/les-5-erreurs-les-plus-fr%C3%A9quentes-avec-le-rag/)
+- [Les 4 causes techniques d'échec d'un RAG](https://ianas.fr/blog/2026/02/05/les-4-causes-techniques-dechec-dun-rag-et-comment-les-corriger/)
+- [Pourquoi le RAG ne fonctionne pas](https://ianas.fr/blog/2025/06/04/mon-rag-ne-marche-pas-analyse-erreur/)
 
 ### Agents IA
 
-- [C'est quoi un agent IA ?](https://ianas.fr/blog/2026/01/15/c-est-quoi-un-agent-ia/)
+- [C'est quoi un agent IA ?](https://ianas.fr/blog/2025/12/16/mais-cest-quoi-un-agent-ia/)
 - [Agent IA vs n8n, Make, Zapier](https://ianas.fr/blog/2026/05/15/agent-ia-vs-n8n-make-zapier/) : grille de décision
-- [CrewAI vs LangChain vs LangGraph](https://ianas.fr/blog/2026/01/22/crewai-langchain-langgraph-comparatif-pragmatique/) : comparatif pragmatique des frameworks
+- [CrewAI vs LangChain vs LangGraph](https://ianas.fr/blog/2026/06/02/crewai-langchain-langgraph-comparatif-pragmatique/) : comparatif pragmatique des frameworks
 - [MCP (Model Context Protocol)](https://ianas.fr/blog/2026/05/15/mcp-model-context-protocol-agents-ia/) : le standard 2026 pour les agents
-- [Mémoire long terme des agents IA](https://ianas.fr/blog/2026/02/15/memoire-agents-ia-long-terme/)
-- [Stack IA production : limites de LangChain et LlamaIndex](https://ianas.fr/blog/2026/05/10/stack-ia-production-langchain-llamaindex-limites/)
-- [Agentic RAG vs RAG classique](https://ianas.fr/blog/2026/03/22/agentic-rag-vs-rag-classique/)
+- [Mémoire long terme des agents IA](https://ianas.fr/blog/2026/05/19/memoire-agents-ia-long-terme/)
+- [Stack IA production : limites de LangChain et LlamaIndex](https://ianas.fr/blog/2026/05/26/stack-ia-production-langchain-llamaindex-limites/)
+- [Agentic RAG vs RAG classique](https://ianas.fr/blog/2026/03/20/agentic-rag-vs-rag-classique/)
 
 ### Comprendre l'IA générative
 
-- [Comprendre l'IA générative](https://ianas.fr/blog/2025/06/01/comprendre-l-IA-generative/)
-- [Guide simple pour comprendre l'IA](https://ianas.fr/blog/2025/05/01/comprendre-l-IA-guide/)
+- [Comprendre l'IA générative](https://ianas.fr/blog/2025/05/15/comprendre-ia-generative/)
+- [Guide simple pour comprendre l'IA](https://ianas.fr/blog/2025/04/05/comprendre-intelligence-artificielle-guide/)
 - [Les différents domaines de l'IA](https://ianas.fr/blog/2026/05/02/les-differents-domaines-de-l-intelligence-artificielle/)
 - [Entraînement, finetuning ou RAG : que choisir](https://ianas.fr/blog/2026/05/02/entrainement-finetuning-rag-modele-ia/)
-- [Prompt caching : réduire le coût des LLMs](https://ianas.fr/blog/2025/12/15/prompt-caching-reduire-cout-llm/)
-- [Comment fonctionnent les moteurs de recherche IA](https://ianas.fr/blog/2026/04/30/geo-comment-fonctionnent-les-moteurs-ia/)
+- [Prompt caching : réduire le coût des LLMs](https://ianas.fr/blog/2026/05/22/prompt-caching-reduire-cout-llm/)
+- [Comment fonctionnent les moteurs de recherche IA](https://ianas.fr/blog/2026/04/09/geo-comment-fonctionnent-les-moteurs-de-recherche-ia/)
 
 ### Cas d'usage métier
 
