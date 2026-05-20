@@ -391,6 +391,8 @@ Sur un RAG avec 1000 requêtes par jour, ça représente 50 à 100 évaluations 
 
 Pouce haut/bas, taux de reformulation de la question (signe que la première réponse n'était pas satisfaisante), taux d'escalade vers un humain, durée des sessions. Ces signaux sont bruités mais gratuits, et ils capturent ce que les métriques techniques ratent parfois.
 
+La quantité et la qualité de ces signaux dépendent directement de l'UX du produit. Les bons patterns d'interface multiplient le taux de feedback par 5 et génèrent des hard negatives exploitables pour le reranker, comme je le détaille dans [UX d'un produit IA : 5 patterns qui multiplient le feedback par 5](ux-produit-ia-5-patterns-feedback-utilisateur.md).
+
 Le flux complet en production ressemble à ceci :
 
 ```mermaid
