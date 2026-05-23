@@ -1,5 +1,15 @@
 {% extends "base.html" %}
 
+{% block htmltitle %}
+  {% if page and page.meta and page.meta.title %}
+    <title>{{ page.meta.title }}</title>
+  {% elif page and page.title and not page.is_homepage %}
+    <title>{{ page.title | striptags }} | {{ config.site_name }}</title>
+  {% else %}
+    <title>{{ config.site_name }}</title>
+  {% endif %}
+{% endblock %}
+
 {% block extrahead %}
   {% set page_title = page.meta.title | default(page.title) | default(config.site_name) if page else config.site_name %}
   {% set page_description = page.meta.description | default(config.site_description) if page else config.site_description %}
