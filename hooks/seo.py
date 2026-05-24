@@ -8,9 +8,20 @@ FR_EN_PAIRS = {
     "": "en/",
     "a-propos/": "en/a-propos/",
     "blog/": "en/blog/",
+    "blog/2025/06/21/mais-que-es-le-rag/": "en/blog/2025/06/21/mais-que-es-le-rag/",
+    "blog/2025/12/16/c-est-quoi-un-agent-ia/": "en/blog/2025/12/16/c-est-quoi-un-agent-ia/",
+    "blog/2026/03/20/agentic-rag-vs-rag-classique/": "en/blog/2026/03/20/agentic-rag-vs-rag-classique/",
+    "blog/2026/04/01/rag-hybride-bm25-vectoriel/": "en/blog/2026/04/01/rag-hybride-bm25-vectoriel/",
     "blog/2026/04/15/chunking-optimal-rag/": "en/blog/2026/04/15/chunking-optimal-rag/",
     "blog/2026/04/22/optimiser-rag-techniques/": "en/blog/2026/04/22/optimiser-rag-techniques/",
     "blog/2026/05/02/entrainement-finetuning-rag-modele-ia/": "en/blog/2026/05/02/entrainement-finetuning-rag-modele-ia/",
+    "blog/2026/05/15/evaluer-rag-production-metriques-ragas/": "en/blog/2026/05/15/evaluer-rag-production-metriques-ragas/",
+    "blog/2026/05/15/mcp-model-context-protocol-agents-ia/": "en/blog/2026/05/15/mcp-model-context-protocol-agents-ia/",
+    "blog/2026/05/16/parsing-pdf-rag-extraction-documents/": "en/blog/2026/05/16/parsing-pdf-rag-extraction-documents/",
+    "blog/2026/05/19/memoire-agents-ia-long-terme/": "en/blog/2026/05/19/memoire-agents-ia-long-terme/",
+    "blog/2026/05/23/mauvais-reflexes-equipes-rag/": "en/blog/2026/05/23/mauvais-reflexes-equipes-rag/",
+    "blog/2026/05/29/embeddings-rag-comprendre-importance/": "en/blog/2026/05/29/embeddings-rag-comprendre-importance/",
+    "blog/2026/06/02/crewai-langchain-langgraph-comparatif-pragmatique/": "en/blog/2026/06/02/crewai-langchain-langgraph-comparatif-pragmatique/",
 }
 EN_FR_PAIRS = {v: k for k, v in FR_EN_PAIRS.items()}
 

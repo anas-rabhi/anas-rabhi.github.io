@@ -124,6 +124,8 @@ La méthode en résumé :
 
 Pour voir cette approche appliquée sur un vrai projet, lisez [le cas client assurance](integration-ia-rapports-sinistre-assurance.md) ou [le cas client BTP](cas-usage-rag-redaction-appels-offres-btp.md). Et si votre RAG a des [causes techniques spécifiques](les-4-causes-techniques-echec-rag.md), j'en parle aussi en détail.
 
+Une dernière chose : avant même d'engager l'analyse d'erreur formelle, il y a des réflexes quotidiens qui suffisent à expliquer pourquoi un RAG plafonne. Modifier le prompt en premier, juger sur trois exemples, blâmer le LLM par défaut. J'en ai listé sept, observés sur la majorité des projets que j'audite, avec la correction concrète à chaque fois : [les 7 mauvais réflexes des équipes RAG](mauvais-reflexes-equipes-rag.md).
+
 ---------
 
 Si mes articles vous intéressent et que vous avez des questions ou simplement envie de discuter de vos propres défis, n'hésitez pas à m'écrire à [anas@tensoria.fr](mailto:anas@tensoria.fr), j'aime échanger sur ces sujets !

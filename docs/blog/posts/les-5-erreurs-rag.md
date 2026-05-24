@@ -127,7 +127,7 @@ Et je continue à voir des équipes les refaire, souvent dans le même ordre : o
 
 Le RAG n'est pas un produit qu'on installe et qu'on oublie. C'est un **système vivant** qui demande de la rigueur, de la patience, et surtout une bonne compréhension des données et du besoin métier. La technique vient après.
 
-Si vous voulez aller plus loin sur les aspects techniques, j'ai écrit sur [les 4 causes techniques d'échec d'un RAG](les-4-causes-techniques-echec-rag.md) et sur [l'analyse d'erreur comme méthode d'amélioration](pourquoi-le-rag-ne-fonctionne-pas.md).
+Si vous voulez aller plus loin sur les aspects techniques, j'ai écrit sur [les 4 causes techniques d'échec d'un RAG](les-4-causes-techniques-echec-rag.md) et sur [l'analyse d'erreur comme méthode d'amélioration](pourquoi-le-rag-ne-fonctionne-pas.md). Et au niveau des comportements quotidiens, ces 5 erreurs de méthode se déclinent en réflexes plus précis qui sabotent les projets au jour le jour : j'en ai listé sept dans [les 7 mauvais réflexes des équipes RAG](mauvais-reflexes-equipes-rag.md), avec la correction à appliquer pour chacun.
 
 ***
 
