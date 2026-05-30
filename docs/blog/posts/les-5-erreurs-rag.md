@@ -106,7 +106,7 @@ Celle-là, c'est l'erreur silencieuse. Le RAG est en place, il tourne, les utili
 
 J'ai vu trop de projets où on ne commence à mesurer que quand les retours négatifs arrivent. À ce moment-là, on n'a aucune baseline, aucun historique, aucun moyen de savoir si les choses se sont dégradées ou si elles n'ont jamais été bonnes.
 
-La mesure, ça doit commencer **dès le premier jour**. Pas besoin d'un outil sophistiqué au départ : un simple jeu de 30 à 50 questions-réponses de référence, qu'on passe régulièrement sur le système, suffit à avoir une idée claire de la performance. C'est ce qu'on appelle un **dataset d'évaluation**, et c'est la chose la plus importante que personne ne fait.
+La mesure, ça doit commencer **dès le premier jour**. Pas besoin d'un outil sophistiqué au départ : un simple jeu de 30 à 50 questions-réponses de référence, qu'on passe régulièrement sur le système, suffit à avoir une idée claire de la performance. C'est ce qu'on appelle un **dataset d'évaluation**, et c'est la chose la plus importante que personne ne fait. J'ai écrit un guide pour [le construire en 30 minutes](dataset-evaluation-rag-questions-synthetiques.md), génération de questions synthétiques comprise.
 
 Sans ça, chaque modification devient un pari. On change le chunking, on ajuste le prompt, on change de modèle d'embeddings, et on n'a **aucun moyen objectif de savoir si c'est mieux ou pire**. On se fie au ressenti, aux retours informels, aux deux ou trois questions qu'on teste à la main. Ce n'est pas suffisant.
 

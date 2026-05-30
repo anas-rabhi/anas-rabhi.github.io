@@ -7,7 +7,7 @@ __pycache__/
 *.so
 mkdocs-material/
 .history/
-
+SEO_GUIDE.md
 # Distribution / packaging
 .Python
 build/

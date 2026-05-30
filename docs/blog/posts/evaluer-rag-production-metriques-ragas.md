@@ -192,9 +192,9 @@ Une fois qu'on sait que les bons chunks sont récupérés, il faut évaluer ce q
 
 ### Le concept central : LLM-as-judge
 
-RAGAS n'utilise pas de règles déterministes pour scorer ces métriques. Il utilise un LLM juge (GPT-4, Claude, Mistral, ou autre modèle de votre choix) pour évaluer chaque dimension.
+RAGAS n'utilise pas de règles déterministes pour scorer ces métriques. Il utilise un LLM juge (GPT-4, Claude, Mistral, ou autre modèle de votre choix) pour évaluer chaque dimension. Tout ce qui se vérifie de façon déterministe (format, longueur, présence ou absence d'une entité) reste plus rapide et gratuit avec des [tests unitaires sur le LLM](tester-llm-tests-unitaires.md). Gardez le juge LLM pour ce qui demande vraiment du jugement.
 
-Le principe : le LLM juge reçoit la question, le contexte récupéré, la réponse générée, et éventuellement la réponse attendue (ground truth). Il produit un score entre 0 et 1 avec une justification. C'est plus flexible et plus proche du jugement humain que des métriques basées sur la similarité lexicale comme BLEU ou ROUGE, qui ne capturent pas la sémantique.
+Le principe : le LLM juge reçoit la question, le contexte récupéré, la réponse générée, et éventuellement la réponse attendue (ground truth). Il produit un score entre 0 et 1 avec une justification. C'est plus flexible et plus proche du jugement humain que des métriques basées sur la similarité lexicale comme BLEU ou ROUGE, qui ne capturent pas la sémantique. Ce juge a aussi ses propres pièges (coût qui grimpe vite, biais de position et de verbosité) : j'ai détaillé quand il vaut son prix et comment le chiffrer dans [LLM-as-a-judge : quand l'utiliser, avec le coût réel en €](llm-as-a-judge-cout-evaluation.md).
 
 ### Code RAGAS complet
 
@@ -286,7 +286,7 @@ Si votre RAG a du trafic, vos logs sont une mine d'or. Ce sont les vraies questi
 
 **2. Génération synthétique par LLM**
 
-Si vous n'avez pas encore de trafic (phase pré-lancement ou corpus récent), RAGAS propose un `TestsetGenerator` qui génère automatiquement des questions à partir de vos chunks.
+Si vous n'avez pas encore de trafic (phase pré-lancement ou corpus récent), RAGAS propose un `TestsetGenerator` qui génère automatiquement des questions à partir de vos chunks. J'ai décrit cette approche pas à pas, avec la récupération des hard negatives, dans [construire un dataset d'évaluation RAG en 30 minutes](dataset-evaluation-rag-questions-synthetiques.md).
 
 ```python
 from ragas.testset import TestsetGenerator
@@ -548,6 +548,9 @@ Pour un dataset de 100 questions avec les 4 métriques principales (faithfulness
 - **[Les 5 erreurs que tout le monde fait avec le RAG](les-5-erreurs-rag.md)** : l'évaluation est l'erreur n°5, la plus silencieuse et la plus coûteuse
 - **[Pourquoi le RAG ne fonctionne pas](pourquoi-le-rag-ne-fonctionne-pas.md)** : méthode d'analyse d'erreur question par question
 - **[RAG hybride BM25 + vectoriel](rag-hybride-bm25-vectoriel.md)** : le premier levier à activer une fois le diagnostic posé
+- **[Construire un dataset d'évaluation RAG en 30 minutes](dataset-evaluation-rag-questions-synthetiques.md)** : la recette rapide pour générer vos questions de test et vos hard negatives
+- **[LLM-as-a-judge : quand l'utiliser, avec le coût réel en €](llm-as-a-judge-cout-evaluation.md)** : le mécanisme du juge LLM, ses biais et son coût réel
+- **[Tester un LLM avec des tests unitaires](tester-llm-tests-unitaires.md)** : l'étage déterministe et gratuit de la pyramide d'évaluation
 
 ***
 

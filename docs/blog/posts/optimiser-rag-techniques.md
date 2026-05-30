@@ -74,7 +74,7 @@ result = evaluate(eval_data, metrics=[
 print(result)
 ```
 
-**Le minimum viable** : 30 à 50 questions représentatives des vraies requêtes de vos utilisateurs. Pas besoin d'un dataset de 10 000 exemples pour avoir une idée claire de où vous en êtes. J'en parle plus en détail dans [les 5 erreurs que tout le monde fait avec le RAG](les-5-erreurs-rag.md) (c'est l'erreur n°5, la plus silencieuse). Et pour la méthode complète (construction du dataset, choix entre RAGAS, DeepEval et TruLens, process d'audit RAG en mission), j'ai écrit un article entier sur [comment évaluer un RAG en production](evaluer-rag-production-metriques-ragas.md).
+**Le minimum viable** : 30 à 50 questions représentatives des vraies requêtes de vos utilisateurs. Pas besoin d'un dataset de 10 000 exemples pour avoir une idée claire de où vous en êtes. La recette pour [générer ce dataset en 30 minutes](dataset-evaluation-rag-questions-synthetiques.md) tient en quelques lignes de code. J'en parle aussi dans [les 5 erreurs que tout le monde fait avec le RAG](les-5-erreurs-rag.md) (c'est l'erreur n°5, la plus silencieuse). Et pour la méthode complète (construction du dataset, choix entre RAGAS, DeepEval et TruLens, process d'audit RAG en mission), j'ai écrit un article entier sur [comment évaluer un RAG en production](evaluer-rag-production-metriques-ragas.md).
 
 Une fois la baseline établie, voici dans quel ordre appliquer les optimisations.
 
@@ -366,7 +366,7 @@ Commencez par mesurer. Générez 30 à 50 questions représentatives de vos vrai
 
 **RAGAS est-il gratuit ?**
 
-Oui, RAGAS est open-source (MIT). La librairie tourne en local. En revanche, les métriques comme Fidélité et Pertinence font des appels à un LLM juge (par défaut GPT-4.1 ou autre modèle choisi en amont) pour évaluer la qualité, ce qui a un coût à l'usage. Pour une évaluation de 50 questions, comptez quelques centimes à quelques euros selon le LLM juge utilisé. Vous pouvez aussi utiliser un modèle open-source comme juge pour réduire ce coût.
+Oui, RAGAS est open-source (MIT). La librairie tourne en local. En revanche, les métriques comme Fidélité et Pertinence font des appels à un LLM juge (par défaut GPT-4.1 ou autre modèle choisi en amont) pour évaluer la qualité, ce qui a un coût à l'usage. Pour une évaluation de 50 questions, comptez quelques centimes à quelques euros selon le LLM juge utilisé. Vous pouvez aussi utiliser un modèle open-source comme juge pour réduire ce coût. Pour savoir quand le juge LLM vaut son coût et comment le chiffrer précisément, voir [LLM-as-a-judge : le coût réel en €](llm-as-a-judge-cout-evaluation.md).
 
 **Quelle différence entre reranking et re-retrieval ?**
 

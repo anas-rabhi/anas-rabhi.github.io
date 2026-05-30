@@ -158,7 +158,7 @@ Plusieurs signaux disponibles côté pipeline :
 - **Score moyen des chunks récupérés** (similarité, rerank score). Si les meilleurs chunks sont à 0.42 alors que votre baseline est à 0.75, alerte.
 - **Nombre de chunks au-dessus du seuil de pertinence**. Zéro chunk pertinent = pas de réponse fiable.
 - **Cohérence entre chunks** : si les chunks récupérés se contredisent, la réponse va probablement halluciner pour réconcilier.
-- **Auto-évaluation LLM** : demander au modèle d'évaluer sa propre confiance après réponse (à utiliser avec parcimonie, cf. [évaluer un RAG en production](evaluer-rag-production-metriques-ragas.md) pour les limites du LLM-as-a-judge).
+- **Auto-évaluation LLM** : demander au modèle d'évaluer sa propre confiance après réponse (à utiliser avec parcimonie, cf. [les limites du LLM-as-a-judge](llm-as-a-judge-cout-evaluation.md) : biais et coût réel).
 
 ### Comment l'afficher
 

@@ -45,7 +45,7 @@ On modifie le chunking, on relance 4 questions, ça semble mieux, on valide. C'e
 
 J'ai vu un cas concret où passer la taille de chunk de 1024 à 512 améliorait visiblement les questions courtes (les seules testées par l'équipe). Sur le dataset complet, c'était une dégradation de 12 points : les questions longues, sous-représentées dans les tests à la main, perdaient leur contexte.
 
-**Le bon réflexe** : un **dataset d'évaluation fixe** de 30 à 50 paires question-réponse représentatives, à passer avant et après chaque modification. C'est non négociable. Sans ça, vous n'améliorez pas un système, vous tâtonnez. La méthode complète de construction du dataset et de mesure est ici : [évaluer un RAG en production](evaluer-rag-production-metriques-ragas.md).
+**Le bon réflexe** : un **dataset d'évaluation fixe** de 30 à 50 paires question-réponse représentatives, à passer avant et après chaque modification. C'est non négociable. Sans ça, vous n'améliorez pas un système, vous tâtonnez. La méthode complète de construction du dataset et de mesure est ici : [évaluer un RAG en production](evaluer-rag-production-metriques-ragas.md). Une partie de ce contrôle s'automatise avec des [tests unitaires sur le LLM](tester-llm-tests-unitaires.md) (format, longueur, entités), qui remplacent les vérifications à la main.
 
 ## Réflexe 3 : Empiler les techniques avancées avant le diagnostic
 
