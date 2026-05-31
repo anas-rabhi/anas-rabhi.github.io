@@ -70,7 +70,7 @@ La fenêtre de contexte n'est pas une solution à ce problème, contrairement à
 
 En 2026, la mémoire des agents IA a ses propres benchmarks (LongMemEval, LoCoMo), sa propre littérature de recherche, et un écosystème d'outils en croissance rapide. Ce n'est plus un sujet académique, c'est une question d'ingénierie qui se pose sur chaque projet d'agent sérieux.
 
-Si vous n'êtes pas encore à l'aise avec ce qu'est un agent IA, commencez par [mon article sur les fondements des agents IA](c-est-quoi-un-agent-ia.md) avant de continuer.
+Si vous n'êtes pas encore à l'aise avec ce qu'est un agent IA, commencez par [mon article sur les fondements des agents IA](c-est-quoi-un-agent-ia.md) avant de continuer. Et si vous voulez d'abord voir le principe côté grand public, j'explique [comment ChatGPT et Claude se souviennent de vous d'une conversation à l'autre](comment-chatgpt-se-souvient-de-vous.md) : c'est exactement la version concrète de ce que cet article détaille en profondeur.
 
 ***
 

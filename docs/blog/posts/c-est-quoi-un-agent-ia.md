@@ -290,7 +290,7 @@ C'est pour ça qu'en pratique, on met toujours des garde-fous :
 Les agents IA sont puissants, mais ils ne remplacent pas le jugement humain.
 Pas encore, en tout cas.
 
-Et au-delà des garde-fous, deux briques font vraiment la différence entre un agent qui fonctionne en démo et un agent qui fonctionne en production : la [mémoire long terme](memoire-agents-ia-long-terme.md) (pour qu'il se souvienne des préférences et faits sur ses utilisateurs) et le [choix du bon framework](crewai-langchain-langgraph-comparatif-pragmatique.md) (CrewAI, LangGraph, Pydantic AI, Smolagents... ils n'ont pas du tout le même public ni les mêmes forces).
+Et au-delà des garde-fous, deux briques font vraiment la différence entre un agent qui fonctionne en démo et un agent qui fonctionne en production : la [mémoire long terme](memoire-agents-ia-long-terme.md) (pour qu'il se souvienne des préférences et faits sur ses utilisateurs ; pour voir le principe sur des outils que vous connaissez, lisez [comment ChatGPT et Claude se souviennent de vous](comment-chatgpt-se-souvient-de-vous.md)) et le [choix du bon framework](crewai-langchain-langgraph-comparatif-pragmatique.md) (CrewAI, LangGraph, Pydantic AI, Smolagents... ils n'ont pas du tout le même public ni les mêmes forces).
 
 ***
 

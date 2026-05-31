@@ -109,6 +109,8 @@ Ainsi, en associant intelligemment les capacités de ChatGPT à différents outi
 
 Enfin, gardons à l'esprit que l'IA repose sur des méthodes statistiques : elle comportera donc toujours une part d'erreurs et certaines limites difficiles à surmonter complètement. La meilleure manière de l'utiliser reste donc celle où l'on peut facilement vérifier les réponses fournies par ChatGPT avant de les valider, tout en gagnant un temps précieux au quotidien.
 
+Et puisqu'on parle de ce que ChatGPT comprend ou pas : beaucoup pensent qu'il « apprend » d'eux au fil des conversations. Ce n'est pas tout à fait ça. J'explique [comment ChatGPT (et Claude) se souviennent de vous d'une conversation à l'autre](comment-chatgpt-se-souvient-de-vous.md) : ce n'est pas le modèle qui retient, c'est une couche posée par-dessus, et savoir comment elle marche vous aide à mieux la piloter.
+
 Le domaine évolue aussi à un rythme effréné : si vous voulez ne pas vous laisser distancer, j'ai listé [mes sources pour suivre les sorties en IA générative](reussir-a-suivre-les-sorties-en-IA.md) au quotidien (Twitter/X, Reddit, YouTube, newsletters).
 
 ---------
