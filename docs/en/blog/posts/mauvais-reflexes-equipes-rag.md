@@ -45,7 +45,7 @@ You change the chunking, rerun 4 questions, it seems better, you validate. This 
 
 I saw a concrete case where going from chunk size 1024 to 512 visibly improved short questions (the only ones the team was testing). On the full dataset, it was a 12-point degradation: long questions, underrepresented in manual tests, were losing their context.
 
-**The right reflex**: a **fixed evaluation dataset** of 30 to 50 representative question-answer pairs, run before and after every change. This is non-negotiable. Without it, you're not improving a system, you're groping in the dark. The full method for building the dataset and measuring results is here: [evaluating a RAG in production](evaluer-rag-production-metriques-ragas.md).
+**The right reflex**: a **fixed evaluation dataset** of 30 to 50 representative question-answer pairs, run before and after every change. This is non-negotiable. Without it, you're not improving a system, you're groping in the dark. The full method for building the dataset and measuring results is here: [evaluating a RAG in production](evaluer-rag-production-metriques-ragas.md). Part of that check can be automated with [unit tests on the LLM](tester-llm-tests-unitaires.md) (format, length, entities), which replace by-hand verification.
 
 ## Reflex 3: Stacking advanced techniques before diagnosing
 

@@ -72,7 +72,7 @@ result = evaluate(eval_data, metrics=[
 print(result)
 ```
 
-**The minimum viable set**: 30 to 50 questions representative of your users' real queries. You don't need a 10,000-example dataset to get a clear picture of where you stand. I cover this in more detail in [the 5 mistakes everyone makes with RAG](/blog/2026/02/21/les-5-erreurs-les-plus-fr%C3%A9quentes-avec-le-rag/) (it's mistake #5, the most silent one).
+**The minimum viable set**: 30 to 50 questions representative of your users' real queries. You don't need a 10,000-example dataset to get a clear picture of where you stand. The recipe to [generate this dataset in 30 minutes](dataset-evaluation-rag-questions-synthetiques.md) fits in a few lines of code. I also cover this in [the 5 mistakes everyone makes with RAG](/blog/2026/02/21/les-5-erreurs-les-plus-fr%C3%A9quentes-avec-le-rag/) (it's mistake #5, the most silent one).
 
 Once the baseline is established, here's the order in which to apply optimizations.
 
@@ -362,7 +362,7 @@ Start by measuring. Generate 30 to 50 questions representative of your real user
 
 **Is RAGAS free?**
 
-Yes, RAGAS is open-source (MIT). The library runs locally. However, metrics like Faithfulness and Relevance make calls to a judge LLM (by default GPT-4.1 or another model chosen upfront) to evaluate quality, which has a usage cost. For an evaluation of 50 questions, expect a few cents to a few euros depending on the judge LLM used. You can also use an open-source model as judge to reduce this cost.
+Yes, RAGAS is open-source (MIT). The library runs locally. However, metrics like Faithfulness and Relevance make calls to a judge LLM (by default GPT-4.1 or another model chosen upfront) to evaluate quality, which has a usage cost. For an evaluation of 50 questions, expect a few cents to a few euros depending on the judge LLM used. You can also use an open-source model as judge to reduce this cost. To know when the judge LLM is worth its cost and how to estimate it precisely, see [LLM-as-a-judge: the real cost in €](llm-as-a-judge-cout-evaluation.md).
 
 **What's the difference between reranking and re-retrieval?**
 

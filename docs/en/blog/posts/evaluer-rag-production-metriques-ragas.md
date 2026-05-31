@@ -190,9 +190,9 @@ Once you know the right chunks are being retrieved, you need to evaluate what th
 
 ### The central concept: LLM-as-judge
 
-RAGAS does not use deterministic rules to score these metrics. It uses a judge LLM (GPT-4, Claude, Mistral, or whichever model you choose) to evaluate each dimension.
+RAGAS does not use deterministic rules to score these metrics. It uses a judge LLM (GPT-4, Claude, Mistral, or whichever model you choose) to evaluate each dimension. Anything that can be checked deterministically (format, length, presence or absence of an entity) stays faster and free with [unit tests on the LLM](tester-llm-tests-unitaires.md). Keep the judge LLM for what genuinely requires judgment.
 
-The principle: the judge LLM receives the question, the retrieved context, the generated answer, and optionally the expected answer (ground truth). It produces a score between 0 and 1 with a justification. This is more flexible and closer to human judgment than lexical similarity metrics like BLEU or ROUGE, which fail to capture semantics.
+The principle: the judge LLM receives the question, the retrieved context, the generated answer, and optionally the expected answer (ground truth). It produces a score between 0 and 1 with a justification. This is more flexible and closer to human judgment than lexical similarity metrics like BLEU or ROUGE, which fail to capture semantics. This judge also has its own pitfalls (cost that climbs fast, position and verbosity bias): I covered when it is worth its price and how to estimate it in [LLM-as-a-judge: when to use it, with the real cost in €](llm-as-a-judge-cout-evaluation.md).
 
 ### Full RAGAS code example
 
@@ -284,7 +284,7 @@ If your RAG has traffic, your logs are a goldmine. These are real questions, wit
 
 **2. Synthetic generation via LLM**
 
-If you don't have traffic yet (pre-launch phase or recent corpus), RAGAS offers a `TestsetGenerator` that automatically generates questions from your chunks.
+If you don't have traffic yet (pre-launch phase or recent corpus), RAGAS offers a `TestsetGenerator` that automatically generates questions from your chunks. I described this approach step by step, hard negatives included, in [build a RAG evaluation dataset in 30 minutes](dataset-evaluation-rag-questions-synthetiques.md).
 
 ```python
 from ragas.testset import TestsetGenerator
@@ -539,11 +539,14 @@ For a dataset of 100 questions with the 4 main metrics (faithfulness, answer rel
 
 ## Further reading
 
-- **[What is RAG, really?](mais-que-es-le-rag.md)** — the full pipeline overview: what evaluation sits on top of
-- **[Optimizing your RAG: the 8 techniques that actually make a difference](optimiser-rag-techniques.md)** — what to do once you know what to improve, in the right order
-- **[Hybrid RAG: BM25 + vector search](rag-hybride-bm25-vectoriel.md)** — the first retrieval lever to activate once the diagnosis is done
-- **[Optimal RAG chunking](chunking-optimal-rag.md)** — when Hit Rate is low, chunking is often the culprit; this guide shows how to validate and fix it
-- **[PDF parsing for RAG](parsing-pdf-rag-extraction-documents.md)** — when evaluation reveals unexplained errors, poorly extracted documents are often the root cause upstream
+- **[What is RAG, really?](mais-que-es-le-rag.md)** : the full pipeline overview, what evaluation sits on top of
+- **[Optimizing your RAG: the 8 techniques that actually make a difference](optimiser-rag-techniques.md)** : what to do once you know what to improve, in the right order
+- **[Hybrid RAG: BM25 + vector search](rag-hybride-bm25-vectoriel.md)** : the first retrieval lever to activate once the diagnosis is done
+- **[Optimal RAG chunking](chunking-optimal-rag.md)** : when Hit Rate is low, chunking is often the culprit, this guide shows how to validate and fix it
+- **[PDF parsing for RAG](parsing-pdf-rag-extraction-documents.md)** : when evaluation reveals unexplained errors, poorly extracted documents are often the root cause upstream
+- **[Build a RAG evaluation dataset in 30 minutes](dataset-evaluation-rag-questions-synthetiques.md)** : the fast recipe to generate your test questions and hard negatives
+- **[LLM-as-a-judge: when to use it, with the real cost in €](llm-as-a-judge-cout-evaluation.md)** : how the judge LLM works, its biases and its real cost
+- **[Testing an LLM with unit tests](tester-llm-tests-unitaires.md)** : the deterministic, free tier of the evaluation pyramid
 
 ***
 
