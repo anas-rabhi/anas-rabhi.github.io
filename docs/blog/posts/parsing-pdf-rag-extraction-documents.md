@@ -21,7 +21,7 @@ math: false
 mermaid: true
 ---
 
-## Le problème que personne ne veut regarder en face
+## Le parsing, première cause d'échec des RAG en entreprise
 
 Sur 10 RAG qui ne fonctionnent pas en entreprise, 8 ont un problème de parsing en amont. Pas de modèle, pas de prompt, pas de retriever. Juste un PDF mal lu au départ.
 
@@ -93,17 +93,17 @@ Voici le tableau comparatif que j'aurais aimé trouver quand j'ai commencé à t
 
 ***
 
-### Docling : l'outsider IBM qui monte vite
+### Docling : l'open source d'IBM Research
 
 Docling est né dans les labos IBM Research Zurich et a dépassé 37 000 étoiles GitHub depuis sa première version publique. En janvier 2026, IBM a sorti Granite-Docling, une évolution majeure qui fusionne un backbone de langage Granite 3 avec un encodeur visuel SigLIP2.
 
-Ce qui change tout : au lieu de chaîner OCR, analyse de layout et post-traitement en cascade, Docling intègre vision et langage dans un seul modèle compact. Le format de sortie propriétaire DocTags préserve fidèlement la structure : tableaux, blocs de code, formules mathématiques, hiérarchie de titres.
+La différence avec les autres outils : au lieu de chaîner OCR, analyse de layout et post-traitement en cascade, Docling intègre vision et langage dans un seul modèle compact. Le format de sortie propriétaire DocTags préserve fidèlement la structure : tableaux, blocs de code, formules mathématiques, hiérarchie de titres.
 
 **Quand je l'utilise :** sur des documents techniques structurés (rapports, manuels, normes), des corpus avec beaucoup de tableaux numériques, et quand je veux un pipeline 100% local sans dépendance cloud. C'est mon choix par défaut depuis début 2026.
 
 ***
 
-### Unstructured : le caméléon des formats
+### Unstructured : 30+ formats supportés
 
 Unstructured est l'outil que je recommande quand la diversité de formats est le vrai problème. 30+ formats supportés nativement, une API cloud bien documentée, et une architecture pipeline qui permet d'insérer des étapes de traitement custom.
 
@@ -113,7 +113,7 @@ Unstructured est l'outil que je recommande quand la diversité de formats est le
 
 ***
 
-### LlamaParse : la puissance des instructions custom
+### LlamaParse : des instructions de parsing en langage naturel
 
 LlamaParse a sorti sa v2 fin 2025 avec une refonte significative. La grande force : vous pouvez lui donner des instructions en langage naturel pour lui expliquer comment traiter vos documents spécifiques. "Dans ce document, la première colonne est toujours un identifiant produit, la deuxième une description, ignore les lignes en gras qui sont des en-têtes de section." Il comprend et adapte son extraction.
 
@@ -125,7 +125,7 @@ Les benchmarks sont bons sur les tableaux complexes. Dans un A/B test sur 10 000
 
 ***
 
-### Marker : la machine à Markdown
+### Marker : la conversion PDF vers Markdown
 
 Marker est l'outil le plus simple à comprendre : il convertit vos PDFs en Markdown propre, rapidement. Très bon sur les documents avec du texte dense, des formules LaTeX, et du code. La mise en forme est préservée de façon remarquable.
 
@@ -335,6 +335,7 @@ Entre 0 et 500 euros de coût direct selon l'approche, plus 1 à 2 semaines de d
 - **[Comment évaluer un RAG en production](evaluer-rag-production-metriques-ragas.md)** : pour mesurer concrètement l'impact d'un meilleur parsing sur vos métriques
 - **[Optimiser son RAG : les 8 techniques](optimiser-rag-techniques.md)** : la suite logique une fois le parsing et le chunking en ordre
 - **[Cas client BTP : RAG multi-sources pour les appels d'offres](cas-usage-rag-redaction-appels-offres-btp.md)** : un autre exemple de pipeline multi-sources avec des formats hétérogènes
+- **[Sécuriser un RAG : prompt injection, fuites et RBAC](securiser-rag-prompt-injection-rbac.md)** : les documents que vous parsez sont aussi une surface d'attaque, texte caché et instructions empoisonnées comprises
 
 ***
 

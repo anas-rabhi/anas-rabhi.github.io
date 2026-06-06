@@ -61,11 +61,11 @@ Avant de plonger dans les comparatifs, il faut cadrer un point important : **auc
 
 La bonne question n'est pas "quel est le meilleur framework d'agents IA ?". La bonne question, c'est : **le meilleur pour qui, pour faire quoi, avec quel niveau d'expertise, sur quel horizon de temps ?**
 
-Un product manager qui veut prototyper un agent commercial en deux jours n'a pas les mêmes besoins qu'une équipe R&D qui implémente un système multi-agents custom en production. Ces deux personnes n'ont pas besoin du même outil. Et leur forcer le même choix est une erreur.
+Un product manager qui veut prototyper un agent commercial en deux jours n'a pas les mêmes besoins qu'une équipe R&D qui implémente un système multi-agents custom en production. Ces deux personnes n'ont pas besoin du même outil. Et leur forcer le même choix est une erreur. D'ailleurs, avant de choisir le framework, posez-vous la question de l'architecture elle-même : [un seul agent ou plusieurs ?](systemes-multi-agents-hype-vs-realite.md)
 
 Ce qui relie tous ces frameworks, c'est une même logique fondamentale : ils cherchent tous à orchestrer la boucle "raisonnement + action" d'un [agent IA](c-est-quoi-un-agent-ia.md). Ce que chacun fait différemment, c'est **le niveau d'abstraction** qu'il choisit d'imposer à l'utilisateur.
 
-Et c'est exactement ce critère qui change tout. **Plus un framework cache de complexité, plus il vous limite dans ce que vous pouvez customiser.** Pour prototyper vite, c'est un avantage. Pour construire un système de production fiable et optimisé, c'est un problème.
+Et c'est exactement ce critère qui compte. **Plus un framework cache de complexité, plus il vous limite dans ce que vous pouvez customiser.** Pour prototyper vite, c'est un avantage. Pour construire un système de production fiable et optimisé, c'est un problème.
 
 ***
 

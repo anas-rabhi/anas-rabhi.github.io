@@ -34,7 +34,7 @@ La méthode que je décris ici se déroule en quatre étapes : générer les que
 
 > Le dataset d'évaluation est le socle de tout RAG mesurable. Pour l'ensemble du pipeline, voir le [guide RAG complet](/rag/).
 
-## Pourquoi un golden dataset, même synthétique, change tout
+## Un golden dataset, même synthétique, rend l'optimisation mesurable
 
 Sans dataset de référence, vous optimisez à l'aveugle. Vous changez le modèle d'embeddings, vous retouchez la taille des chunks, vous ajoutez un reranker. Mais vous ne savez pas si c'est mieux. Vous retestez à la main sur 5 questions. Ce n'est pas de l'optimisation, c'est du tâtonnement.
 

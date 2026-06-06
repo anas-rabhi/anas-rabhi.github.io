@@ -19,7 +19,7 @@ mermaid: true
 
 ## Introduction
 
-L'intelligence artificielle séduit de plus en plus de curieux et de professionnels, grâce à des outils révolutionnaires comme ChatGPT. Ces avancées ont non seulement transformé notre manière d'interagir avec la technologie, mais ont aussi rendu l'IA incontournable dans les discussions contemporaines. Avec l'IA générative, nous pouvons désormais produire du texte, des images et bien d'autres contenus grâce à de puissants modèles d'apprentissage.
+L'intelligence artificielle séduit de plus en plus de curieux et de professionnels, grâce à des outils comme ChatGPT. Ces avancées ont transformé notre manière d'interagir avec la technologie et placé l'IA au centre des discussions. Avec l'IA générative, nous pouvons désormais produire du texte, des images et bien d'autres contenus grâce à des modèles d'apprentissage.
 
 <!-- more -->
 

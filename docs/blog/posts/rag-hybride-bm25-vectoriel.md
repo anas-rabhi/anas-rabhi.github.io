@@ -173,7 +173,7 @@ Hybrid : +1.4% vs vectoriel seul, +18% vs BM25 seul.
 
 La combinaison hybrid + reranker atteint un Hit Rate de 0.938. C'est le meilleur score de leur benchmark, devant le vectoriel seul (0.891) et BM25 seul (0.869).
 
-La leçon à retenir : le hybrid améliore systématiquement le vectoriel pur, surtout sur les données avec du jargon. Et si vous ajoutez un reranker derrière, vous multipliez encore l'effet.
+La leçon à retenir : le hybrid améliore systématiquement le vectoriel pur, surtout sur les données avec du jargon. Et si vous ajoutez un reranker derrière, vous multipliez encore l'effet. Pour choisir lequel (Cohere, BGE, Jina ou Voyage, avec les prix et benchmarks), voir le [comparatif des rerankers pour RAG](reranker-comparatif-cohere-bge-jina-voyage.md).
 
 ***
 

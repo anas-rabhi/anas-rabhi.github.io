@@ -36,7 +36,7 @@ Dans cet article, je vous explique ce que c'est vraiment, comment ça fonctionne
 
 1. [C'est quoi un embedding, vraiment ?](#cest-quoi-un-embedding-vraiment)
 2. [Pourquoi on transforme du texte en nombres ?](#pourquoi-on-transforme-du-texte-en-nombres)
-3. [Comment fonctionne la magie, vu de loin](#comment-fonctionne-la-magie-vu-de-loin)
+3. [Comment ça fonctionne, vu de loin](#comment-ca-fonctionne-vu-de-loin)
 4. [Comment on compare deux embeddings](#comment-on-compare-deux-embeddings)
 5. [Pourquoi les embeddings sont la brique de base de toute l'IA moderne](#pourquoi-les-embeddings-sont-la-brique-de-base-de-toute-lia-moderne)
 6. [Les grands modèles d'embedding en 2026](#les-grands-modeles-dembedding-en-2026)
@@ -112,7 +112,7 @@ La recherche hybride combine justement BM25 et la recherche vectorielle pour tir
 
 ***
 
-## Comment fonctionne la magie, vu de loin
+## Comment ça fonctionne, vu de loin
 
 Je ne vais pas vous expliquer en détail comment un réseau de neurones fonctionne en interne. Ce n'est pas l'objectif. Mais voici ce qu'il faut retenir.
 

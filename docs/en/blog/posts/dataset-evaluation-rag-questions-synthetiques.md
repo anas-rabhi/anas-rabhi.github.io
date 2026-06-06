@@ -32,7 +32,7 @@ The method described here runs in four steps: generate questions from your chunk
 
 <!-- more -->
 
-## Why a golden dataset, even a synthetic one, changes everything
+## A golden dataset, even a synthetic one, makes optimization measurable
 
 Without a reference dataset, you are optimizing blind. You swap the embedding model, you tweak chunk sizes, you add a reranker. But you have no idea whether things got better. You retest by hand on 5 questions. That is not optimization. That is guesswork.
 

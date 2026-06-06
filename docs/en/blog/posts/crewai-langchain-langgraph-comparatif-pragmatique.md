@@ -59,7 +59,7 @@ Before diving into comparisons, one important point needs framing: **no framewor
 
 The right question isn't "what's the best AI agent framework?" The right question is: **best for whom, to build what, with what level of expertise, over what time horizon?**
 
-A product manager who wants to prototype a sales agent in two days has entirely different needs from an R&D team implementing a custom multi-agent system in production. These two people don't need the same tool. Forcing them toward the same choice is a mistake.
+A product manager who wants to prototype a sales agent in two days has entirely different needs from an R&D team implementing a custom multi-agent system in production. These two people don't need the same tool. Forcing them toward the same choice is a mistake. And before picking a framework at all, ask the architecture question itself: [one agent or several?](systemes-multi-agents-hype-vs-realite.md)
 
 What connects all these frameworks is a single underlying logic: they're all trying to orchestrate the "reasoning + action" loop of an AI agent. What each one does differently is **the level of abstraction** it chooses to impose on the user.
 

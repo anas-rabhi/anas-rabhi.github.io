@@ -180,7 +180,7 @@ C'est exactement ce principe qu'on a appliqué sur plusieurs projets chez [Tenso
 
 ***
 
-## Les cas d'usage qui changent vraiment la donne
+## Les cas d'usage où MCP apporte le plus
 
 ### Agent IDE : Cursor, Claude Code, VS Code
 
@@ -206,7 +206,7 @@ C'est peut-être le cas d'usage le plus sous-estimé. Vous avez un système mét
 
 ***
 
-## Les limites et les pièges (ce que personne ne dit)
+## Les limites et les pièges de MCP
 
 Je vais vous dire ce que j'en pense vraiment : MCP est excellent, mais il a des angles morts réels que vous devez connaître avant de l'adopter.
 
@@ -238,7 +238,7 @@ Ce n'est pas rédhibitoire (l'écosystème est mature), mais c'est une donnée �
 
 ### Pour 1 ou 2 outils simples : le function calling reste plus simple
 
-C'est la vérité que personne n'a envie de dire : si vous avez un seul agent avec un seul outil (une recherche web, un appel à une API externe), configurer un serveur MCP est une sur-ingénierie. Le function calling classique est plus direct, plus facile à déboguer, et largement suffisant.
+Il faut le dire clairement : si vous avez un seul agent avec un seul outil (une recherche web, un appel à une API externe), configurer un serveur MCP est une sur-ingénierie. Le function calling classique est plus direct, plus facile à déboguer, et largement suffisant.
 
 ***
 

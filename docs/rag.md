@@ -66,7 +66,7 @@ Approfondissement : [Comprendre les embeddings et leur importance dans le RAG](/
 
 Une fois la base indexée, il faut **retrouver les bons passages** au moment de la requête. La recherche vectorielle pure ne suffit presque jamais en production : on combine généralement **BM25 (recherche lexicale) et recherche vectorielle** dans une approche hybride, suivie d'un **reranker**.
 
-Approfondissement : [RAG hybride : combiner BM25 et recherche vectorielle](/blog/2026/04/01/rag-hybride-bm25-vectoriel/).
+Approfondissement : [RAG hybride : combiner BM25 et recherche vectorielle](/blog/2026/04/01/rag-hybride-bm25-vectoriel/). Et pour l'étape de tri final des résultats : [Reranker : Cohere vs BGE vs Jina vs Voyage, le comparatif](/blog/2026/06/07/reranker-comparatif-cohere-bge-jina-voyage/).
 
 ### 5. La génération
 
@@ -142,6 +142,8 @@ Pour les données confidentielles (données spatiales, données de santé, contr
 - **Zéro sortie de données** : tout reste dans le périmètre client, y compris pour l'évaluation.
 
 C'est l'approche que j'ai déployée sur un RAG en production sur données spatiales confidentielles, mentionnée en [page d'accueil](/).
+
+Le volet sécurité (prompt injection via les documents indexés, sur-permission du retrieval, RBAC documentaire) est détaillé dans [Sécuriser un RAG : prompt injection, fuites de données et RBAC](/blog/2026/06/07/securiser-rag-prompt-injection-rbac/).
 
 ---
 

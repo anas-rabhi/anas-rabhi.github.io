@@ -210,7 +210,7 @@ I cover the full implementation in [the dedicated chunking article](chunking-opt
 
 ### Technique 6 — Reranking (cross-encoder)
 
-This is the most effective post-retrieval optimization. And it comes down to an important architectural distinction.
+This is the most effective post-retrieval optimization. And it comes down to an important architectural distinction. To choose a specific model (Cohere, BGE, Jina, Voyage), see the [reranker comparison with pricing and benchmarks](reranker-comparatif-cohere-bge-jina-voyage.md).
 
 **Bi-encoder vs. cross-encoder:**
 

@@ -312,7 +312,7 @@ In practice, here are two concrete examples where this combination has made a re
 
 AI agents are neither magical nor indispensable for everyone.
 
-They are, above all, **well-orchestrated language models**, capable of reasoning, acting, and retrying until an objective is reached.
+They are, above all, **well-orchestrated language models**, capable of reasoning, acting, and retrying until an objective is reached. And if you are wondering whether you need one agent or several, the production data is clear: see [multi-agent systems, what actually works](systemes-multi-agents-hype-vs-realite.md).
 
 For the user, it's simple.
 For the developer, it's far more complex.

@@ -171,7 +171,7 @@ Hybrid: +1.4% vs vector only, +18% vs BM25 only.
 
 The hybrid + reranker combination achieves a Hit Rate of 0.938. That's the top score in their benchmark, ahead of vector only (0.891) and BM25 only (0.869).
 
-The takeaway: hybrid consistently improves on pure vector search, especially on data with domain jargon. Add a reranker on top and you multiply the effect further.
+The takeaway: hybrid consistently improves on pure vector search, especially on data with domain jargon. Add a reranker on top and you multiply the effect further. To pick one (Cohere, BGE, Jina or Voyage, with pricing and benchmarks), see the [reranker comparison for RAG](reranker-comparatif-cohere-bge-jina-voyage.md).
 
 ***
 

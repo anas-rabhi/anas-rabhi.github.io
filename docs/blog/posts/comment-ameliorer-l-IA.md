@@ -111,7 +111,7 @@ L'évaluation ne s'arrête pas une fois l'application déployée. En production,
 
 Idéalement, mettez en place des mécanismes pour **intégrer les retours utilisateurs** (pouce levé/baissé sur les réponses) dans le cycle d'amélioration. C'est un cycle continu : observer, analyser, améliorer.
 
-Sur ce sujet précis, l'UX du produit est un levier sous-estimé. Une simple reformulation de la question de feedback peut multiplier le volume de retours par 5, et les clics "pas pertinent" sur les sources affichées fournissent des hard negatives directement réutilisables pour fine-tuner un reranker. Je détaille les 5 patterns qui transforment l'UX en machine à apprendre dans [UX d'un produit IA : 5 patterns qui multiplient le feedback par 5](ux-produit-ia-5-patterns-feedback-utilisateur.md).
+Sur ce sujet précis, l'UX du produit est un levier sous-estimé. Une simple reformulation de la question de feedback peut multiplier le volume de retours par 5, et les clics "pas pertinent" sur les sources affichées fournissent des hard negatives directement réutilisables pour fine-tuner un reranker. Je détaille les 5 patterns qui font de l'UX une vraie source de données d'amélioration dans [UX d'un produit IA : 5 patterns qui multiplient le feedback par 5](ux-produit-ia-5-patterns-feedback-utilisateur.md).
 
 Si vous cherchez à voir cette méthode appliquée sur un cas réel, lisez [comment un RAG multi-sources a été optimisé pour la rédaction d'appels d'offres BTP](cas-usage-rag-redaction-appels-offres-btp.md) : le retour d'expérience illustre exactement cette approche itérative.
 

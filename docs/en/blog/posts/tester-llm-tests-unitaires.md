@@ -328,7 +328,7 @@ Between 30 and 80 cases cover the majority of production situations. Organize th
 
 **Can these assertions be used on a chatbot in production, not just in testing?**
 
-Yes, and it is actually recommended. This is called online guardrails: assertions run on every response before it is sent to the user. If an assertion fails, the response is blocked or sent back for regeneration. Libraries like Guardrails AI and LLM Guard implement this pattern with predefined scanners.
+Yes, and it is actually recommended. This is called online guardrails: assertions run on every response before it is sent to the user. If an assertion fails, the response is blocked or sent back for regeneration. Libraries like Guardrails AI and LLM Guard implement this pattern with predefined scanners. The security side of these guardrails (prompt injection, data leakage, document-level RBAC) is covered in [securing a RAG](securiser-rag-prompt-injection-rbac.md).
 
 **How do you handle false positives in assertions?**
 

@@ -21,7 +21,7 @@ math: false
 mermaid: true
 ---
 
-## La vérité que les agences IA ne vous disent pas
+## 6 PME sur 10 qui demandent un agent IA n'en ont pas besoin
 
 Sur 10 PME qui me contactent en disant "on veut un agent IA", 6 n'ont en réalité pas besoin d'un agent IA.
 
@@ -247,7 +247,7 @@ En pratique, sur un projet récent, ce design nous a permis de passer de 3 semai
 
 ***
 
-## Coûts comparés : ce que personne ne dit honnêtement
+## Coûts comparés sur 12 mois
 
 Voici une estimation sur 12 mois pour un cas type : 1 000 exécutions par jour, chaque exécution impliquant une analyse LLM.
 

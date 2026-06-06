@@ -97,7 +97,7 @@ Soit **un rapport ×100**, sans compter qu'on peut descendre encore plus avec un
 
 « Oui mais le prompt caching ? » Justement, c'est important d'en parler.
 
-## Le prompt caching change la donne, mais partiellement
+## Le prompt caching réduit la facture, mais partiellement
 
 Anthropic et Google proposent du **prompt caching** : envoyer plusieurs fois la même longue préface (par exemple un corpus de 400K tokens), et payer **jusqu'à 90 % moins cher** sur les lectures suivantes.
 

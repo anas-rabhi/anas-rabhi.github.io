@@ -27,7 +27,7 @@ J'ai utilisé LangChain et LlamaIndex sur plus d'une vingtaine de projets, d'abo
 
 Voilà ce que j'en pense vraiment : **il n'y a pas de librairie IA parfaite**. Ni LangChain, ni LlamaIndex. Et toutes les équipes qui construisent des produits IA sérieux sur le long terme finissent par développer leur propre stack.
 
-Ce n'est pas un bashing. C'est un constat pragmatique, fondé sur ce que j'ai vécu sur le terrain. Ces librairies ont de vraies qualités, elles rendent de vrais services, et il y a des situations où les utiliser est clairement le bon choix. Mais il y a aussi un moment ou une réalité que personne ne dit franchement : **au fond, LangChain et LlamaIndex ne font qu'appeler des APIs**. Les APIs d'OpenAI, d'Anthropic, de Google, de Mistral. Et ces APIs, on peut les appeler directement, avec un code qui reste sous notre contrôle.
+Ce n'est pas un bashing. C'est un constat pragmatique, fondé sur ce que j'ai vécu sur le terrain. Ces librairies ont de vraies qualités, elles rendent de vrais services, et il y a des situations où les utiliser est clairement le bon choix. Mais il y a aussi une réalité qu'on entend rarement : **au fond, LangChain et LlamaIndex ne font qu'appeler des APIs**. Les APIs d'OpenAI, d'Anthropic, de Google, de Mistral. Et ces APIs, on peut les appeler directement, avec un code qui reste sous notre contrôle.
 
 Dans cet article, je couvre les vraies limites des deux librairies, quand elles conviennent, pourquoi on bascule vers du custom, et comment le SDK OpenAI seul couvre aujourd'hui une fraction énorme des besoins en production.
 
@@ -124,9 +124,9 @@ L'API de LlamaIndex a elle aussi beaucoup changé : les Index, les Engines, les 
 
 ***
 
-## Le vrai secret que personne ne dit : ces libs ne font qu'appeler des APIs
+## Ce que ces libs font réellement : appeler des APIs
 
-C'est la révélation qui change la perspective sur tout le reste.
+C'est le constat qui change la perspective sur tout le reste.
 
 Prenez n'importe quelle fonctionnalité de LangChain ou LlamaIndex. Derrière, que se passe-t-il réellement ?
 
@@ -358,7 +358,7 @@ Trois signaux clairs : (1) vous passez plus de temps a comprendre les abstractio
 
 ## Pour aller plus loin
 
-- **[MCP : le standard qui change la donne pour les agents IA](mcp-model-context-protocol-agents-ia.md)** : comment le Model Context Protocol transforme l'intégration des outils dans les agents, et pourquoi c'est une brique de plus qui plaide pour une stack ouverte et modulaire
+- **[MCP : le standard de connexion des agents IA](mcp-model-context-protocol-agents-ia.md)** : comment le Model Context Protocol simplifie l'intégration des outils dans les agents, et pourquoi c'est une brique de plus qui plaide pour une stack ouverte et modulaire
 - **[Evaluer un RAG en production : métriques et RAGAS](evaluer-rag-production-metriques-ragas.md)** : l'évaluation est l'un des domaines ou les libs comme RAGAS apportent vraiment de la valeur. Comment l'intégrer dans votre stack, quelle qu'elle soit.
 - **[Optimiser son RAG : les 8 techniques qui font la différence](optimiser-rag-techniques.md)** : les techniques d'optimisation RAG, et comment les implémenter avec ou sans librairie
 - **[Agent IA vs n8n, Make et Zapier : quand choisir quoi](agent-ia-vs-n8n-make-zapier.md)** : le choix de la stack IA s'inscrit dans un écosystème plus large. Quand les outils no-code suffisent, et quand il faut du code.

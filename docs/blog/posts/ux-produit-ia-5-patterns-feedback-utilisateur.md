@@ -40,7 +40,7 @@ Un produit IA, contrairement à un produit logiciel classique, **apprend de son 
 Trois raisons à ça :
 
 1. **La vérité terrain est rare et chère.** Construire un dataset d'évaluation propre prend des jours, parfois des semaines. Les utilisateurs vous donnent gratuitement des milliers de signaux par mois, *s'ils sont sollicités intelligemment*.
-2. **Les hard negatives sont impossibles à inventer.** Les exemples "presque pertinents mais pas tout à fait" sont indispensables pour entraîner un reranker. Les générer synthétiquement donne des résultats moyens. Les récolter via l'UX, c'est de l'or.
+2. **Les hard negatives sont impossibles à inventer.** Les exemples "presque pertinents mais pas tout à fait" sont indispensables pour entraîner un reranker. Les générer synthétiquement donne des résultats moyens. Les récolter via l'UX est le seul moyen fiable d'en obtenir.
 3. **Le feedback explicite est massivement sous-collecté.** Un bouton "👍 / 👎" récolte typiquement 1 à 3 % de réponses. C'est 30 fois moins que ce qu'on peut obtenir avec les bons patterns.
 
 Les 5 patterns qui suivent visent à transformer cette UX-capteur en réalité.
@@ -73,7 +73,7 @@ Le mécanisme est cognitif. Une question vague demande à l'utilisateur de **syn
 
 Concrètement : sous chaque réponse, vous affichez les 3-5 chunks utilisés pour générer la réponse, avec un bouton "Pas pertinent" ou un picto "×" pour chacun. L'utilisateur qui repère un document non pertinent dans la liste va instinctivement cliquer.
 
-### Pourquoi c'est de l'or pour le pipeline
+### Ce que ces clics apportent au pipeline
 
 Chaque clic "pas pertinent" sur une source vous donne un **hard negative gratuit** : un document qui ressemblait suffisamment pour être récupéré, mais que l'utilisateur a explicitement rejeté. C'est exactement ce dont vous avez besoin pour :
 
@@ -119,7 +119,7 @@ Sur un projet support B2B, l'analyse de la matrice a fait apparaître :
 - **Quadrant haut-gauche (volume élevé, succès faible)** : les questions sur les conditions générales (3 % de réussite, 22 % du volume). On a immédiatement ajouté un parser dédié aux CGV. Gain mesuré : +28 points sur ces requêtes en 2 semaines.
 - **Quadrant bas-droite (volume faible, succès élevé)** : les questions sur l'API (94 % de réussite, 1,8 % du volume). On les a poussées en suggestions d'accueil (cf. pattern 4). Volume sur cette catégorie ×3 en un mois.
 
-C'est ce type d'arbitrage qu'on ne peut pas faire sans les patterns 1 et 2 derrière. Et c'est ce qui transforme un produit IA en machine à amélioration continue, exactement comme [l'analyse d'erreur transforme un RAG fragile en RAG fiable](pourquoi-le-rag-ne-fonctionne-pas.md).
+C'est ce type d'arbitrage qu'on ne peut pas faire sans les patterns 1 et 2 derrière. Et c'est ce qui permet à un produit IA de s'améliorer en continu, exactement comme [l'analyse d'erreur transforme un RAG fragile en RAG fiable](pourquoi-le-rag-ne-fonctionne-pas.md).
 
 ## Pattern 4 : Les suggestions de requêtes intelligentes
 

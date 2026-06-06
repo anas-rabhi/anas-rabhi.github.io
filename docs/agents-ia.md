@@ -66,6 +66,8 @@ Comparatif détaillé avec exemples : [CrewAI, LangChain, LangGraph : comparatif
 
 Sur les limites des stacks lourdes en production : [Stack IA production : LangChain / LlamaIndex et leurs limites](/blog/2026/05/26/stack-ia-production-langchain-llamaindex-limites/).
 
+Avant même de choisir un framework, il y a une question d'architecture : un seul agent ou plusieurs ? Les retours de production sont tranchés, voir [Systèmes multi-agents : ce qui marche vraiment vs la hype](/blog/2026/06/07/systemes-multi-agents-hype-vs-realite/).
+
 ---
 
 ## Le Model Context Protocol (MCP) : le standard 2026

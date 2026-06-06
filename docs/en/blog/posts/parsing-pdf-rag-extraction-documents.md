@@ -333,6 +333,7 @@ Between €0 and €500 in direct costs depending on the approach, plus 1 to 2 w
 - **[How to Evaluate a RAG in Production](evaluer-rag-production-metriques-ragas.md)** — for concretely measuring the impact of better parsing on your Hit Rate and faithfulness metrics
 - **[Optimizing Your RAG: 8 Techniques](optimiser-rag-techniques.md)** — the logical next step once parsing and chunking are in order
 - **[Embeddings in RAG](embeddings-rag-comprendre-importance.md)** — how the text extracted by parsing gets turned into vectors for semantic retrieval
+- **[Securing a RAG: prompt injection, data leakage and RBAC](securiser-rag-prompt-injection-rbac.md)** — the documents you parse are also an attack surface, hidden text and poisoned instructions included
 
 ***
 
