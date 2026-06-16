@@ -1,0 +1,32 @@
+{# Language selector with per-page URLs.
+
+   MkDocs Material's default selector adds hreflang attributes to static
+   / and /en/ menu links. Some SEO crawlers treat those navigation links as
+   hreflang annotations, which creates site-wide invalid hreflang groups.
+   Real hreflang annotations are emitted in docs/overrides/main.html.
+#}
+{% set fr_link = page.meta.alternate_url_fr if page and page.meta and page.meta.alternate_url_fr else "/" %}
+{% set en_link = page.meta.alternate_url_en if page and page.meta and page.meta.alternate_url_en else "/en/" %}
+
+<div class="md-header__option">
+  <div class="md-select">
+    {% set icon = config.theme.icon.alternate or "material/translate" %}
+    <button class="md-header__button md-icon" aria-label="{{ lang.t('select.language') }}">
+      {% include ".icons/" ~ icon ~ ".svg" %}
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        <li class="md-select__item">
+          <a href="{{ fr_link }}" class="md-select__link">
+            Français
+          </a>
+        </li>
+        <li class="md-select__item">
+          <a href="{{ en_link }}" class="md-select__link">
+            English
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

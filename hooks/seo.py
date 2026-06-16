@@ -8,22 +8,113 @@ FR_EN_PAIRS = {
     "": "en/",
     "a-propos/": "en/a-propos/",
     "blog/": "en/blog/",
-    "blog/2025/06/21/mais-que-es-le-rag/": "en/blog/2025/06/21/mais-que-es-le-rag/",
-    "blog/2025/12/16/c-est-quoi-un-agent-ia/": "en/blog/2025/12/16/c-est-quoi-un-agent-ia/",
-    "blog/2026/03/20/agentic-rag-vs-rag-classique/": "en/blog/2026/03/20/agentic-rag-vs-rag-classique/",
-    "blog/2026/04/01/rag-hybride-bm25-vectoriel/": "en/blog/2026/04/01/rag-hybride-bm25-vectoriel/",
-    "blog/2026/04/15/chunking-optimal-rag/": "en/blog/2026/04/15/chunking-optimal-rag/",
-    "blog/2026/04/22/optimiser-rag-techniques/": "en/blog/2026/04/22/optimiser-rag-techniques/",
-    "blog/2026/05/02/entrainement-finetuning-rag-modele-ia/": "en/blog/2026/05/02/entrainement-finetuning-rag-modele-ia/",
-    "blog/2026/05/15/evaluer-rag-production-metriques-ragas/": "en/blog/2026/05/15/evaluer-rag-production-metriques-ragas/",
-    "blog/2026/05/15/mcp-model-context-protocol-agents-ia/": "en/blog/2026/05/15/mcp-model-context-protocol-agents-ia/",
-    "blog/2026/05/16/parsing-pdf-rag-extraction-documents/": "en/blog/2026/05/16/parsing-pdf-rag-extraction-documents/",
-    "blog/2026/05/19/memoire-agents-ia-long-terme/": "en/blog/2026/05/19/memoire-agents-ia-long-terme/",
-    "blog/2026/05/23/mauvais-reflexes-equipes-rag/": "en/blog/2026/05/23/mauvais-reflexes-equipes-rag/",
-    "blog/2026/05/29/embeddings-rag-comprendre-importance/": "en/blog/2026/05/29/embeddings-rag-comprendre-importance/",
-    "blog/2026/06/02/crewai-langchain-langgraph-comparatif-pragmatique/": "en/blog/2026/06/02/crewai-langchain-langgraph-comparatif-pragmatique/",
+    "blog/archive/2025/": "en/blog/archive/2025/",
+    "blog/archive/2026/": "en/blog/archive/2026/",
+    "blog/category/agent-ia/": "en/blog/category/ai-agent/",
+    "blog/category/blog/": "en/blog/category/blog/",
+    "blog/category/ia/": "en/blog/category/ai/",
+    "blog/category/llm/": "en/blog/category/llm/",
+    "blog/category/rag/": "en/blog/category/rag/",
 }
 EN_FR_PAIRS = {v: k for k, v in FR_EN_PAIRS.items()}
+_DISCOVERED_BLOG_PAIRS = False
+
+
+def _absolute_url(site_url, url):
+    """Build a normalized absolute URL from a MkDocs page URL."""
+    return site_url + (url or "")
+
+
+def _read_front_matter_value(path, key):
+    pattern = re.compile(rf"^{re.escape(key)}:\s*[\"']?([^\"'\n]+)[\"']?\s*$")
+    in_front_matter = False
+    with open(path, "r", encoding="utf-8") as f:
+        for line in f:
+            if line.strip() == "---":
+                if in_front_matter:
+                    return None
+                in_front_matter = True
+                continue
+            if not in_front_matter:
+                continue
+            if line.strip() == "...":
+                return None
+            match = pattern.match(line)
+            if match:
+                return match.group(1).strip()
+    return None
+
+
+def _discover_blog_pairs(config):
+    """Pair FR blog plugin URLs with their EN blog plugin translation URLs."""
+    global _DISCOVERED_BLOG_PAIRS
+    if _DISCOVERED_BLOG_PAIRS:
+        return
+
+    docs_dir = config.get("docs_dir", "docs")
+    fr_posts_dir = os.path.join(docs_dir, "blog", "posts")
+    en_posts_dir = os.path.join(docs_dir, "en", "blog", "posts")
+    if not os.path.isdir(fr_posts_dir) or not os.path.isdir(en_posts_dir):
+        _DISCOVERED_BLOG_PAIRS = True
+        return
+
+    for filename in os.listdir(fr_posts_dir):
+        if not filename.endswith(".md"):
+            continue
+        fr_path = os.path.join(fr_posts_dir, filename)
+        en_path = os.path.join(en_posts_dir, filename)
+        if not os.path.exists(en_path):
+            continue
+
+        fr_date = _read_front_matter_value(fr_path, "date")
+        fr_slug = _read_front_matter_value(fr_path, "slug")
+        en_date = _read_front_matter_value(en_path, "date")
+        en_slug = _read_front_matter_value(en_path, "slug")
+        if not fr_date or not fr_slug or not en_date or not en_slug:
+            continue
+
+        fr_year, fr_month, fr_day = fr_date.split("-")
+        en_year, en_month, en_day = en_date.split("-")
+        fr_url = f"blog/{fr_year}/{fr_month}/{fr_day}/{fr_slug}/"
+        en_url = f"en/blog/{en_year}/{en_month}/{en_day}/{en_slug}/"
+        FR_EN_PAIRS[fr_url] = en_url
+        EN_FR_PAIRS[en_url] = fr_url
+
+    _DISCOVERED_BLOG_PAIRS = True
+
+
+def _set_hreflang_meta(page, config, url, is_en):
+    """Populate per-page hreflang data for templates and the language menu."""
+    if "/page/" in url:
+        return
+
+    _discover_blog_pairs(config)
+
+    site_url = config.get("site_url", "").rstrip("/") + "/"
+    if is_en and url in EN_FR_PAIRS:
+        fr_url = _absolute_url(site_url, EN_FR_PAIRS[url])
+        en_url = _absolute_url(site_url, url)
+        x_default_url = fr_url
+    elif not is_en and url in FR_EN_PAIRS:
+        fr_url = _absolute_url(site_url, url)
+        en_url = _absolute_url(site_url, FR_EN_PAIRS[url])
+        x_default_url = fr_url
+    else:
+        self_url = _absolute_url(site_url, url)
+        fr_url = None if is_en else self_url
+        en_url = self_url if is_en else None
+        x_default_url = self_url
+
+    hreflang_urls = []
+    if fr_url:
+        hreflang_urls.append({"lang": "fr", "url": fr_url})
+        page.meta["alternate_url_fr"] = fr_url
+    if en_url:
+        hreflang_urls.append({"lang": "en", "url": en_url})
+        page.meta["alternate_url_en"] = en_url
+
+    page.meta["hreflang_urls"] = hreflang_urls
+    page.meta["alternate_url_x_default"] = x_default_url
 
 
 def on_post_build(config):
@@ -50,14 +141,7 @@ def on_page_context(context, page, config, nav):
 
     is_en = url.startswith("en/")
     page.meta["lang"] = "en" if is_en else "fr"
-
-    site_url = config.get("site_url", "").rstrip("/") + "/"
-    if is_en and url in EN_FR_PAIRS:
-        page.meta["alternate_url_fr"] = site_url + EN_FR_PAIRS[url]
-        page.meta["alternate_url_en"] = site_url + url
-    elif not is_en and url in FR_EN_PAIRS:
-        page.meta["alternate_url_fr"] = site_url + url
-        page.meta["alternate_url_en"] = site_url + FR_EN_PAIRS[url]
+    _set_hreflang_meta(page, config, url, is_en)
 
     is_notebook = url.startswith("notebooks/") or url.startswith("en/notebooks/")
     is_en_blog = url.startswith("en/blog/")

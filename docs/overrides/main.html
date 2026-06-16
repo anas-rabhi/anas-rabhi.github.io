@@ -33,16 +33,14 @@
   {% set og_locale = 'en_US' if page_lang == 'en' else 'fr_FR' %}
   {% set schema_lang = 'en-US' if page_lang == 'en' else 'fr-FR' %}
 
-  {% if page and page.canonical_url %}
-  <!-- Force canonical URL without query parameters -->
-  <link rel="canonical" href="{{ page_url }}" />
+  {% if page and page.meta and page.meta.hreflang_urls %}
+  <!-- hreflang alternates -->
+  {% for alternate in page.meta.hreflang_urls %}
+  <link rel="alternate" hreflang="{{ alternate.lang }}" href="{{ alternate.url }}" />
+  {% endfor %}
+  {% if page.meta.alternate_url_x_default %}
+  <link rel="alternate" hreflang="x-default" href="{{ page.meta.alternate_url_x_default }}" />
   {% endif %}
-
-  {% if page and page.meta and page.meta.alternate_url_fr and page.meta.alternate_url_en %}
-  <!-- hreflang alternates for FR↔EN pairs -->
-  <link rel="alternate" hreflang="fr" href="{{ page.meta.alternate_url_fr }}" />
-  <link rel="alternate" hreflang="en" href="{{ page.meta.alternate_url_en }}" />
-  <link rel="alternate" hreflang="x-default" href="{{ page.meta.alternate_url_fr }}" />
   {% endif %}
 
   <!-- noindex only for pagination pages (thin/duplicate content) -->
