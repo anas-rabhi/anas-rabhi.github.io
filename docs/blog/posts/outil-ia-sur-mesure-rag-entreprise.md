@@ -120,6 +120,7 @@ Ma conviction après ces projets, c'est que la réussite tient moins à la techn
 - **[Cas client assurance : automatiser les rapports de sinistre](integration-ia-rapports-sinistre-assurance.md)** : un autre exemple de projet IA sur mesure de bout en bout
 - **[Agent IA vs n8n, Make, Zapier : quel choix pour votre PME ?](agent-ia-vs-n8n-make-zapier.md)** : les critères pour choisir entre no-code et développement custom
 - **[UX d'un produit IA : 5 patterns qui multiplient le feedback](ux-produit-ia-5-patterns-feedback-utilisateur.md)** : comment concevoir l'interface pour récolter des retours utiles
+- **[Réussir un projet IA : ce qui se joue avant le code](reussir-projet-ia-avant-le-code.md)** : le cadrage métier, la mesure et l'adoption qui décident du sort d'un projet
 
 ***
 

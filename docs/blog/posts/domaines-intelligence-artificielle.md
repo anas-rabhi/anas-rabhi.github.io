@@ -211,6 +211,8 @@ Pourquoi ce tournant maintenant ? Trois raisons principales :
 
 **Ce que ça change concrètement pour les entreprises** : la rédaction de contenu, la synthèse de documents, l'aide à la programmation, le support client automatisé, l'extraction d'informations dans des documents, les agents IA qui exécutent des tâches. Autant de cas qui n'étaient quasiment pas accessibles avant 2022.
 
+Ce tournant a aussi fait émerger un nouveau rôle, celui d'[AI engineer, le profil qui intègre l'IA générative en production](ai-engineer-nouveau-role-data-scientist-ia-generative.md) sans entraîner de modèle, là où le data scientist partait historiquement de la donnée et de l'entraînement.
+
 Mais attention, encore une fois : **l'IA générative ne remplace pas les autres domaines**. Elle s'ajoute. Pour prédire un churn, vous utilisez toujours XGBoost. Pour détecter un défaut sur une pièce, toujours un CNN. L'IA générative est un nouvel outil, pas un outil universel.
 
 ---

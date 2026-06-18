@@ -103,7 +103,7 @@ C'est confortable, et c'est précisément pour ça que c'est piégeux. Un RAG fi
 6. **Logger les requêtes prod** et prioriser par volume × succès, pas par intuition.
 7. **Questions de feedback fermées et précises**, sources cliquables comme capteurs.
 
-Si vous reconnaissez 2 ou 3 de ces réflexes dans votre équipe, vous avez identifié votre plus gros levier d'amélioration. Ce n'est pas une nouvelle techno qu'il vous faut, c'est un changement de réflexe.
+Si vous reconnaissez 2 ou 3 de ces réflexes dans votre équipe, vous avez identifié votre plus gros levier d'amélioration. Ce n'est pas une nouvelle techno qu'il vous faut, c'est un changement de réflexe. Et la plupart de ces réflexes remontent à un cadrage bâclé en amont : [ce qui fait réussir un projet IA se décide avant le code](reussir-projet-ia-avant-le-code.md), bien avant qu'on touche au pipeline.
 
 ---------
 

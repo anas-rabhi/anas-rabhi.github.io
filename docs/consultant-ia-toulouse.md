@@ -112,6 +112,7 @@ Si vous voulez comprendre l'approche technique avant de nous parler, voici les a
 - [Qu'est-ce que le RAG ?](/blog/2025/06/21/cest-quoi-le-rag-definition-fonctionnement/) : comprendre le principe fondamental
 - [Entraînement, finetuning ou RAG : que choisir ?](/blog/2026/05/02/entrainement-finetuning-rag-modele-ia/) : l'arbre de décision
 - [Les différents domaines de l'IA](/blog/2026/05/02/les-differents-domaines-de-l-intelligence-artificielle/) : au-delà de ChatGPT
+- [AI engineer : le nouveau rôle du data scientist en IA générative](/blog/2026/06/18/ai-engineer-nouveau-role-data-scientist-ia-generative/) : le profil qui intègre l'IA en production
 - [Agentic RAG vs RAG classique](/blog/2026/03/20/agentic-rag-vs-rag-classique/) : quand passer aux agents
 - [Tous les articles du blog](/blog/) : retours d'expérience et guides techniques
 

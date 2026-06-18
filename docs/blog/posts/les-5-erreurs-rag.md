@@ -125,7 +125,7 @@ Ces 5 erreurs, je les ai toutes faites. L'IA générative donne une impression d
 
 Et je continue à voir des équipes les refaire, souvent dans le même ordre : on se lance trop vite, on ne communique pas assez sur les limites, on sous-estime la complexité, on s'enferme dans un framework, et on oublie de mesurer.
 
-Le RAG n'est pas un produit qu'on installe et qu'on oublie. C'est un **système vivant** qui demande de la rigueur, de la patience, et surtout une bonne compréhension des données et du besoin métier. La technique vient après.
+Le RAG n'est pas un produit qu'on installe et qu'on oublie. C'est un **système vivant** qui demande de la rigueur, de la patience, et surtout une bonne compréhension des données et du besoin métier. La technique vient après. C'est même le fil rouge de tout ce que j'ai appris sur le terrain : [réussir un projet IA se décide avant la première ligne de code](reussir-projet-ia-avant-le-code.md), dans le cadrage, la mesure et l'attention portée à l'utilisateur final.
 
 Si vous voulez aller plus loin sur les aspects techniques, j'ai écrit sur [les 4 causes techniques d'échec d'un RAG](les-4-causes-techniques-echec-rag.md) et sur [l'analyse d'erreur comme méthode d'amélioration](pourquoi-le-rag-ne-fonctionne-pas.md). Et au niveau des comportements quotidiens, ces 5 erreurs de méthode se déclinent en réflexes plus précis qui sabotent les projets au jour le jour : j'en ai listé sept dans [les 7 mauvais réflexes des équipes RAG](mauvais-reflexes-equipes-rag.md), avec la correction à appliquer pour chacun.
 

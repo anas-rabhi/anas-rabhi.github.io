@@ -425,6 +425,7 @@ Dans le pire des cas, si vous finissez quand même par finetuner, vous l'aurez f
 * **[Comment améliorer un RAG](comment-ameliorer-l-IA.md)** : la méthode pour mesurer et progresser
 * **[Le RAG est-il fini ?](le-rag-est-fini.md)** : le débat long context vs RAG
 * **[Mais c'est quoi un agent IA ?](c-est-quoi-un-agent-ia.md)** : l'étape qui vient souvent après le RAG
+* **[AI engineer : le nouveau rôle du data scientist](ai-engineer-nouveau-role-data-scientist-ia-generative.md)** : pourquoi on intègre des modèles existants plutôt que de les entraîner
 
 ---
 
