@@ -254,6 +254,7 @@ You can also [book a call](https://cal.eu/anas-rabhi/rendez-vous-ianas) or subsc
 ## Further reading
 
 - **[What is an AI agent?](c-est-quoi-un-agent-ia.md)**: the definition and mechanics of an agent before tackling multi-agent architectures
+- **[Custom AI agent vs n8n, Make, Zapier](agent-ia-vs-n8n-make-zapier.md)**: before deciding how many agents to build, the prior question is whether you need a custom agent at all
 - **[CrewAI, LangGraph, AutoGen, Pydantic AI: 2026 comparison](crewai-langchain-langgraph-comparatif-pragmatique.md)**: once the architecture is decided, which framework to use for implementation
 - **[Long-term memory for AI agents](memoire-agents-ia-long-terme.md)**: how to handle context persistence in a multi-agent system
 - **[MCP: Model Context Protocol for agents](mcp-model-context-protocol-agents-ia.md)**: the tool-connection standard, independent of the number of agents

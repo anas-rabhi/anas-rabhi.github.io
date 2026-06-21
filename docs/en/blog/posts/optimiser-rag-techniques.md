@@ -264,7 +264,7 @@ graph LR
 
 **The problem**: you pass 10 chunks to the LLM. But the useful information is buried in noise. And LLMs read long contexts poorly. Stanford showed in 2023 that models recall well what's at the beginning and end of context, but often miss what's in the middle.
 
-This is known as "Lost in the Middle".
+This is known as "Lost in the Middle". (If you're wondering whether chunking into a RAG is still the right architecture at all versus simply using a large context window, the [long context vs RAG](long-context-vs-rag-quand-utiliser.md) comparison covers exactly when each approach wins.)
 
 **Two complementary solutions:**
 
@@ -326,6 +326,8 @@ cache.init(
 **The key parameter**: the similarity threshold. Too low (0.85) → false positives, you return an answer to a different question. Too high (0.98) → few cache hits. 0.90–0.95 is generally the right trade-off.
 
 **When to use it**: as soon as your log analysis shows that >20% of queries are variations of the same question. Typical on support chatbots, assisted FAQs, or internal dashboards.
+
+Semantic caching operates at the RAG pipeline level. For cost reduction at the LLM level itself, the equivalent mechanism is [prompt caching](prompt-caching-reduire-cout-llm.md): Anthropic, OpenAI, and Gemini all support it natively, with discounts up to 90% on cached tokens.
 
 ***
 

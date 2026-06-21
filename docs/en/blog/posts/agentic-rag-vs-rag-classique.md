@@ -270,7 +270,7 @@ And the complexity cost was worth it: **83% time savings** on bid writing, with 
 
 But if the same client had asked for a simple chatbot to answer questions about their internal documents, a well-configured classic RAG would have done the job perfectly — in less time, for less money, and with more reliability.
 
-Agentic RAG isn't better than classic RAG. It's **appropriate for different problems**.
+Agentic RAG isn't better than classic RAG. It's **appropriate for different problems**. And before asking whether to go agentic, there's a prior question worth settling: is RAG the right architecture at all, given that long-context LLMs can now ingest millions of tokens in a single call? I covered this in [RAG vs long context LLM: is RAG really dead?](le-rag-est-fini.md).
 
 ***
 

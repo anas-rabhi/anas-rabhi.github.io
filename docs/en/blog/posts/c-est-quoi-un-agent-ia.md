@@ -282,7 +282,7 @@ That's why in practice, guardrails are always put in place:
 AI agents are powerful, but they don't replace human judgment.
 Not yet, anyway.
 
-And beyond guardrails, two components make the real difference between an agent that works in a demo and one that works in production: [long-term memory](memoire-agents-ia-long-terme.md) (so it remembers user preferences and facts) and [choosing the right framework](crewai-langchain-langgraph-comparatif-pragmatique.md) (CrewAI, LangGraph, Pydantic AI, Smolagents — they don't serve the same audiences or have the same strengths at all).
+And beyond guardrails, two components make the real difference between an agent that works in a demo and one that works in production: [long-term memory](memoire-agents-ia-long-terme.md) (so it remembers user preferences and facts) and [choosing the right framework](crewai-langchain-langgraph-comparatif-pragmatique.md) (CrewAI, LangGraph, Pydantic AI, Smolagents, which don't all serve the same audiences or share the same strengths). Before any of that, it is worth asking a more fundamental question: [custom AI agent or no-code tool like n8n, Make, or Zapier](agent-ia-vs-n8n-make-zapier.md), and the answer changes the entire build decision.
 
 ***
 

@@ -124,6 +124,8 @@ RAG is genuinely useful — provided you take the time to set it up properly and
 
 The limitations I've outlined aren't easy to eliminate, but there are ways to mitigate them. Agentic RAG is often discussed as a way to address some of these shortcomings. If you're looking for a system that delivers 100% correct answers, RAG (and AI in general) isn't for you. But if you're willing to aim for 90–95% correct responses and invest some time in proper implementation, then RAG can genuinely become your best ally.
 
+There's also a broader question that keeps coming up in 2026: with LLMs now offering context windows in the millions of tokens, do you even need RAG? I address this debate directly in [RAG vs long context LLM: is RAG really dead?](le-rag-est-fini.md). And if you've decided RAG is the right direction but aren't sure whether to go with a classic pipeline or a full long-context approach for your specific use case, the [long context vs RAG decision framework](long-context-vs-rag-quand-utiliser.md) lays out the real cost and performance trade-offs.
+
 If you want to go deeper on RAG, even the French government has published a guide on implementing RAG: [Guide to Retrieval-Augmented Generation (RAG)](https://www.entreprises.gouv.fr/la-dge/publications/guide-de-la-generation-augmentee-par-recuperation-rag).
 
 ## FAQ: Frequently Asked Questions About RAG

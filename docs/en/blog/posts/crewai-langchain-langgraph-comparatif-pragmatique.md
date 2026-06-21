@@ -524,10 +524,11 @@ Pydantic AI or LangGraph. Both respect your expertise: the code is explicit, abs
 
 ## Further reading
 
-- **[What is an AI agent, really?](/en/blog/2025/12/16/mais-cest-quoi-un-agent-ia/)** — the foundation for understanding what all these frameworks are trying to orchestrate
-- **[Agentic RAG vs classic RAG](/en/blog/2026/03/20/agentic-rag-vs-rag-classique/)** — how agent frameworks connect with your RAG pipelines
-- **[Long-term memory for AI agents](/en/blog/2026/05/19/memoire-agents-ia-long-terme/)** — the component most frameworks still handle poorly
-- **[MCP: Model Context Protocol for agents](/en/blog/2026/05/15/mcp-model-context-protocol-agents-ia/)** — the emerging standard for connecting tools to your agents, independent of framework
+- **[What is an AI agent, really?](/en/blog/2025/12/16/mais-cest-quoi-un-agent-ia/)**: the foundation for understanding what all these frameworks are trying to orchestrate
+- **[Custom AI agent vs n8n, Make, Zapier](agent-ia-vs-n8n-make-zapier.md)**: if you are not sure you even need to build, this is the decision grid to run first
+- **[Agentic RAG vs classic RAG](/en/blog/2026/03/20/agentic-rag-vs-rag-classique/)**: how agent frameworks connect with your RAG pipelines
+- **[Long-term memory for AI agents](/en/blog/2026/05/19/memoire-agents-ia-long-terme/)**: the component most frameworks still handle poorly
+- **[MCP: Model Context Protocol for agents](/en/blog/2026/05/15/mcp-model-context-protocol-agents-ia/)**: the emerging standard for connecting tools to your agents, independent of framework
 
 ***
 

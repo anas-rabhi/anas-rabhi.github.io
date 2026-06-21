@@ -226,7 +226,7 @@ In practice, on the architectures I work with, a local MCP call via stdio adds 5
 
 **Dynamic discovery is a feature, not an invitation to expose everything.** I've seen configurations with 30 or 40 MCP tools available to a single agent. The result: the LLM gets confused, picks the wrong tool, or hesitates between tools that seem similar. The relevance of an MCP tool matters as much as its existence.
 
-The rule I apply: each agent should only see the tools it genuinely needs for its specific use case. If you have a customer support agent, don't expose infrastructure deployment tools to it.
+The rule I apply: each agent should only see the tools it genuinely needs for its specific use case. If you have a customer support agent, don't expose infrastructure deployment tools to it. And when you do have a large, stable set of tool definitions, [prompt caching](prompt-caching-reduire-cout-llm.md) is the right lever: caching those definitions across calls cuts costs by up to 90% on the repeated prefix, which adds up fast in production agents.
 
 ### The standard is still young
 

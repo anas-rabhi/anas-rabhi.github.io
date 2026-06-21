@@ -102,7 +102,7 @@ With GPT-4o: 1,000 x 2 = 2,000 calls/day x $0.00400 = **$8.00/day, roughly €22
 Assume 200 test requests per developer per day, 3 developers, GPT-4o:
 200 x 3 x 4 criteria = 2,400 calls x $0.00400 = **$9.60/day**. Multiply by 20 working days: **$192/month, roughly €175 just for evaluation**. Switch to GPT-4o-mini and it drops to €12/month. The difference justifies always asking which model to use as judge.
 
-The takeaway: GPT-4o-mini covers 80% of evaluation needs at negligible cost. Reserve GPT-4o or Claude Sonnet for cases where you need judgment precision on complex criteria (multi-step reasoning, legal consistency, delicate tone).
+The takeaway: GPT-4o-mini covers 80% of evaluation needs at negligible cost. Reserve GPT-4o or Claude Sonnet for cases where you need judgment precision on complex criteria (multi-step reasoning, legal consistency, delicate tone). For a broader view of cutting LLM costs across your entire pipeline, not just the judge, see [prompt caching](prompt-caching-reduire-cout-llm.md): Anthropic, OpenAI, and Gemini all offer up to 90% discounts on cached tokens, which matters when your judge system prompt is large and repeated across thousands of calls.
 
 ### An operational judge prompt with a rubric
 

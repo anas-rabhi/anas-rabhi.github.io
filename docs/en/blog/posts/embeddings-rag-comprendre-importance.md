@@ -193,7 +193,7 @@ Embeddings aren't just for RAG. In reality, they sit at the root of a surprising
 
 **1. RAG (Retrieval-Augmented Generation)**
 
-This is the most well-known use. You embed the documents, store the vectors in a database, and when a user asks a question, you embed the question and retrieve the semantically closest chunks. Those chunks are then sent to the LLM to generate the answer. Without embeddings, there's no RAG. I explain the full RAG pipeline in detail in [my article on what RAG is](/en/blog/2025/06/21/cest-quoi-le-rag-definition-fonctionnement/).
+This is the most well-known use. You embed the documents, store the vectors in a database, and when a user asks a question, you embed the question and retrieve the semantically closest chunks. Those chunks are then sent to the LLM to generate the answer. Without embeddings, there's no RAG. I explain the full RAG pipeline in detail in [my article on what RAG is](/en/blog/2025/06/21/cest-quoi-le-rag-definition-fonctionnement/). One important nuance: cosine similarity ranks chunks by vector proximity, but that ranking isn't always the best signal for the final LLM context. A reranker re-scores the top-K candidates with a more expensive cross-encoder model, typically adding +10 to 20% faithfulness. I compared the main options (Cohere Rerank, BGE, Jina, Voyage) in [this reranker comparison](reranker-comparatif-cohere-bge-jina-voyage.md).
 
 **2. Semantic search**
 
@@ -359,11 +359,12 @@ Yes. Multimodal models like CLIP or Gemini Embedding 2 produce embeddings for im
 
 ## Further reading
 
-- **[What is RAG, really?](/en/blog/2025/06/21/cest-quoi-le-rag-definition-fonctionnement/)** — the layer above embeddings: how they're used to build a Q&A system over your documents
-- **[Hybrid RAG: BM25 + vector search](/en/blog/2026/04/01/rag-hybride-bm25-vectoriel/)** — combining embeddings and keywords for more robust retrieval on domain-specific jargon
-- **[Optimal chunking for your RAG](/en/blog/2026/04/15/chunking-optimal-rag/)** — what exactly gets embedded, and why how you split documents changes everything
-- **[Optimizing your RAG](/en/blog/2026/04/22/optimiser-rag-techniques/)** — post-embedding levers to improve end-to-end performance
-- **[AI agent memory](/en/blog/2026/05/19/memoire-agents-ia-long-terme/)** — how embeddings let an agent remember over the long term
+- **[What is RAG, really?](/en/blog/2025/06/21/cest-quoi-le-rag-definition-fonctionnement/)**: the layer above embeddings: how they're used to build a Q&A system over your documents
+- **[Hybrid RAG: BM25 + vector search](/en/blog/2026/04/01/rag-hybride-bm25-vectoriel/)**: combining embeddings and keywords for more robust retrieval on domain-specific jargon
+- **[Optimal chunking for your RAG](/en/blog/2026/04/15/chunking-optimal-rag/)**: what exactly gets embedded, and why how you split documents changes everything
+- **[Optimizing your RAG](/en/blog/2026/04/22/optimiser-rag-techniques/)**: post-embedding levers to improve end-to-end performance
+- **[Reranker comparison: Cohere, BGE, Jina, Voyage](reranker-comparatif-cohere-bge-jina-voyage.md)**: how reranking re-scores the chunks your embedding model retrieved, and which model wins in practice
+- **[AI agent memory](/en/blog/2026/05/19/memoire-agents-ia-long-terme/)**: how embeddings let an agent remember over the long term
 
 ***
 
