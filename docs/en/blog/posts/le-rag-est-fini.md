@@ -50,7 +50,7 @@ At each query, relevant chunks are retrieved from the vector database and inject
 
 Setting up a "basic" RAG is fairly quick. And because humans generalize fast, the thought is: *it works, ship it, done*. Except it never plays out that way.
 
-A fast RAG typically returns 50 to 70% correct answers. In enterprise, that may not be enough to expose to end users.
+A fast RAG typically returns 50 to 70% correct answers. In enterprise, that may not be enough to expose to end users. When a RAG underperforms, it usually traces back to one of the [4 technical causes of RAG failure](les-4-causes-techniques-echec-rag.md): poor chunking, weak embeddings, retrieval misconfiguration, or a broken generation step.
 
 ## RAG vs Long Context LLM: the real debate
 

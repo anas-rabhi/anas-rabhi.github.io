@@ -340,6 +340,7 @@ Yes, completely. The code in this article has no dependency on RAGAS. The `Tests
 - [LLM-as-a-judge: when to use it, with the real cost in euros](llm-as-a-judge-cout-evaluation.md): validate the quality of LLM-generated ground truths
 - [Testing an LLM with unit tests](tester-llm-tests-unitaires.md): integrate evaluation into a CI/CD pipeline
 - [Hybrid RAG: BM25 + vector search](rag-hybride-bm25-vectoriel.md): the first optimization to activate when recall@k is below 0.85
+- [Common RAG mistakes](les-5-erreurs-rag.md): not measuring from the start is one of the most frequent, and this article covers the full list
 
 ---------
 

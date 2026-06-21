@@ -158,6 +158,8 @@ There's no theoretical limit. Industrial RAG systems handle millions of document
 - **[How to evaluate a RAG in production](evaluer-rag-production-metriques-ragas.md)** — metrics, RAGAS, and the audit methodology to know where your system actually stands
 - **[Training, fine-tuning, or RAG?](entrainement-finetuning-rag-modele-ia.md)** — when RAG is the right answer and when fine-tuning makes sense, with real cost breakdowns
 - **[Agentic RAG vs classic RAG](agentic-rag-vs-rag-classique.md)** — the 5 agentic patterns that extend what a classic linear pipeline can do, and a decision framework for knowing when to switch
+- **[The most common RAG mistakes](les-5-erreurs-rag.md)**: the 5 errors that appear most often in production pipelines, and how to avoid them
+- **[What to do when your RAG doesn't work](pourquoi-le-rag-ne-fonctionne-pas.md)**: a structured error analysis method to locate the root cause before touching any parameter
 
 ---------
 

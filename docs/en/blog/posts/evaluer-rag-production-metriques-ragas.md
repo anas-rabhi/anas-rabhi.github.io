@@ -439,7 +439,7 @@ For each question where scores are poor, I identify the root cause. The 4 catego
 - **Generation failure**: the chunks are correct but the LLM hallucinates or answers off-topic. Usually a prompt issue or temperature set too high.
 - **Source data**: the information simply isn't in the knowledge base. Common on RAGs that cover a broader scope than the ingested documents.
 
-I go deeper on this in the analysis of the main technical root causes of RAG failure. A frequent finding: when the source documents were extracted poorly from PDFs, no retrieval optimization will compensate — see [my comparison of parsing tools](parsing-pdf-rag-extraction-documents.md) if parsing errors are your root cause.
+I go deeper on this in the analysis of the [4 technical causes of RAG failure](les-4-causes-techniques-echec-rag.md), which maps these categories to the metrics that isolate each one. A frequent finding: when the source documents were extracted poorly from PDFs, no retrieval optimization will compensate, see [my comparison of parsing tools](parsing-pdf-rag-extraction-documents.md) if parsing errors are your root cause.
 
 ### Step 4: hypotheses and tests
 
@@ -539,14 +539,15 @@ For a dataset of 100 questions with the 4 main metrics (faithfulness, answer rel
 
 ## Further reading
 
-- **[What is RAG, really?](mais-que-es-le-rag.md)** : the full pipeline overview, what evaluation sits on top of
-- **[Optimizing your RAG: the 8 techniques that actually make a difference](optimiser-rag-techniques.md)** : what to do once you know what to improve, in the right order
-- **[Hybrid RAG: BM25 + vector search](rag-hybride-bm25-vectoriel.md)** : the first retrieval lever to activate once the diagnosis is done
-- **[Optimal RAG chunking](chunking-optimal-rag.md)** : when Hit Rate is low, chunking is often the culprit, this guide shows how to validate and fix it
-- **[PDF parsing for RAG](parsing-pdf-rag-extraction-documents.md)** : when evaluation reveals unexplained errors, poorly extracted documents are often the root cause upstream
-- **[Build a RAG evaluation dataset in 30 minutes](dataset-evaluation-rag-questions-synthetiques.md)** : the fast recipe to generate your test questions and hard negatives
-- **[LLM-as-a-judge: when to use it, with the real cost in €](llm-as-a-judge-cout-evaluation.md)** : how the judge LLM works, its biases and its real cost
-- **[Testing an LLM with unit tests](tester-llm-tests-unitaires.md)** : the deterministic, free tier of the evaluation pyramid
+- **[What is RAG, really?](mais-que-es-le-rag.md)**: the full pipeline overview, what evaluation sits on top of
+- **[Optimizing your RAG: the 8 techniques that actually make a difference](optimiser-rag-techniques.md)**: what to do once you know what to improve, in the right order
+- **[Hybrid RAG: BM25 + vector search](rag-hybride-bm25-vectoriel.md)**: the first retrieval lever to activate once the diagnosis is done
+- **[Optimal RAG chunking](chunking-optimal-rag.md)**: when Hit Rate is low, chunking is often the culprit, this guide shows how to validate and fix it
+- **[PDF parsing for RAG](parsing-pdf-rag-extraction-documents.md)**: when evaluation reveals unexplained errors, poorly extracted documents are often the root cause upstream
+- **[Build a RAG evaluation dataset in 30 minutes](dataset-evaluation-rag-questions-synthetiques.md)**: the fast recipe to generate your test questions and hard negatives
+- **[LLM-as-a-judge: when to use it, with the real cost in €](llm-as-a-judge-cout-evaluation.md)**: how the judge LLM works, its biases and its real cost
+- **[Testing an LLM with unit tests](tester-llm-tests-unitaires.md)**: the deterministic, free tier of the evaluation pyramid
+- **[Error analysis method: what to do when your RAG doesn't work](pourquoi-le-rag-ne-fonctionne-pas.md)**: the qualitative complement to RAGAS, for understanding failure modes that metrics surface but don't explain
 
 ***
 

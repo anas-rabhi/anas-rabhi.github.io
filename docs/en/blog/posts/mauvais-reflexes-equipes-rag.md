@@ -69,7 +69,7 @@ To debug a failure, you look at the question and the answer, you wonder "what th
 
 Yet that's where 90% of the diagnostic information lives. In most audits I run, the right document exists in the knowledge base, it simply wasn't retrieved, and nobody had noticed because nobody had opened the chunks that were used.
 
-**The right reflex**: trace the full pipeline systematically (Langfuse, LangSmith, or equivalent). For every problematic answer, you need to be able to list: query, retrieved chunks with their scores, final prompt, response. Without this visibility, diagnosis is guesswork.
+**The right reflex**: trace the full pipeline systematically (Langfuse, LangSmith, or equivalent). For every problematic answer, you need to be able to list: query, retrieved chunks with their scores, final prompt, response. Without this visibility, diagnosis is guesswork. The structured approach to that diagnosis is exactly what [error analysis when your RAG doesn't work](pourquoi-le-rag-ne-fonctionne-pas.md) covers, step by step.
 
 ## Reflex 6: Optimizing for the queries you imagine, not the ones asked in production
 
@@ -91,7 +91,7 @@ The "we'll add a thumbs up / thumbs down" reflex is a cosmetic fix. Teams deploy
 
 All 7 reflexes share the same root. Each time, you're treating what is **visible and easy to manipulate** (the prompt, the 4 questions tested by hand, the LLM, the generic feedback) rather than what is **invisible but determinant** (the retrieved chunks, the full dataset, the upstream pipeline, the real user queries).
 
-It's comfortable, and that's precisely why it's a trap. A reliable RAG isn't one where you've reworked everything. It's one where you've **identified the right causes**, and fixed those specifically.
+It's comfortable, and that's precisely why it's a trap. A reliable RAG isn't one where you've reworked everything. It's one where you've **identified the right causes**, and fixed those specifically. If the reflexes above feel familiar, [the 5 most common RAG mistakes](les-5-erreurs-rag.md) covers the project-level and strategic patterns that compound them.
 
 ### Actionable recap
 

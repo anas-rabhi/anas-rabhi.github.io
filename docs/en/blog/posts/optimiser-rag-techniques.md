@@ -38,7 +38,7 @@ The real RAG optimization order is: **measure first, then retrieval, then genera
 
 ## Before optimizing: establish a baseline
 
-This is the step everyone skips. And that's why RAG projects stagnate without anyone understanding why.
+This is the step everyone skips. And that's why RAG projects stagnate without anyone understanding why. Before even choosing which technique to apply, you need to know which layer is broken: before reaching for any of the 8 techniques below, identify which of the [4 technical causes of RAG failure](les-4-causes-techniques-echec-rag.md) is actually responsible, otherwise you risk optimizing the wrong component.
 
 **The 3 essential metrics:**
 
