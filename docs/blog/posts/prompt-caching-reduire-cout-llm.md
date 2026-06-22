@@ -365,6 +365,8 @@ Le prompt caching est le levier numéro 1, mais il s'inscrit dans une hiérarchi
 
 **Le model routing** mérite une mention particulière. Sur un système qui traite des requêtes très variées, envoyer systématiquement tout sur Claude Opus ou GPT-4o est un gaspillage. Un classifieur léger (ou le LLM lui-même) peut router les questions simples vers Haiku, Flash, ou GPT-4o-mini. Combiné au caching, les économies s'accumulent vite.
 
+Et quand une tâche est à la fois simple et répétitive (classer, extraire, router), la basculer carrément sur un [small language model (SLM)](c-est-quoi-un-slm.md) auto-hébergé fait souvent chuter le coût bien plus que n'importe quelle optimisation d'API.
+
 Je détaille cette logique de décision dans [l'article sur Agentic RAG vs RAG classique](agentic-rag-vs-rag-classique.md) : le principe est le même, adapter la puissance du modèle à la complexité réelle de la tâche.
 
 ***
@@ -457,6 +459,7 @@ Anthropic : 1 024 tokens pour Claude Sonnet 4.x, 4 096 tokens pour Claude Opus e
 - **[Agentic RAG vs RAG classique](agentic-rag-vs-rag-classique.md)** : comprendre quand la complexité des agents justifie leur coût, et comment le caching change l'équation
 - **[MCP : le standard pour les agents IA](mcp-model-context-protocol-agents-ia.md)** : les agents avec beaucoup d'outils sont de bons candidats au caching des définitions d'outils
 - **[Long context vs RAG : quand utiliser quoi ?](long-context-vs-rag-quand-utiliser.md)** : le caching ne suffit pas toujours à rendre le long context viable. Les 4 limites concrètes et la grille de décision
+- **[C'est quoi un SLM (Small Language Model) ?](c-est-quoi-un-slm.md)** : remplacer un gros modèle par un petit modèle spécialisé, l'optimisation de coût la plus radicale
 
 ***
 

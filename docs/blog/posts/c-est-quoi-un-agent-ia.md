@@ -268,6 +268,8 @@ Et surtout, des **besoins très concrets côté entreprises**.
 
 C'est pour ça qu'on en parle autant aujourd'hui.
 
+D'ailleurs, une partie de ces coûts maîtrisés vient des [petits modèles de langage (SLM)](c-est-quoi-un-slm.md) : pour beaucoup d'étapes simples d'un agent (classer, extraire, router), un petit modèle spécialisé suffit et revient bien moins cher qu'un gros modèle appelé à chaque tour.
+
 ***
 
 ## Les limites (parce que oui, il y en a)
@@ -351,6 +353,7 @@ Un POC sur un cas d'usage ciblé peut se faire en 2 à 4 semaines. La mise en pr
 - **[Cas client BTP : comment un agent IA transforme la rédaction d'appels d'offres](cas-usage-rag-redaction-appels-offres-btp.md)** : un exemple concret d'agent IA en production
 - **[Cas client assurance : 80% de gain de temps sur les rapports de sinistre](integration-ia-rapports-sinistre-assurance.md)** : l'IA agentique appliquée à un autre secteur
 - **[Comprendre l'IA générative](comprendre-l-IA-generative.md)** : les fondements des modèles de langage qui font tourner les agents
+- **[C'est quoi un SLM (Small Language Model) ?](c-est-quoi-un-slm.md)** : les petits modèles sont au cœur de la prochaine génération d'agents IA
 - **[Les différents domaines de l'IA](domaines-intelligence-artificielle.md)** : pour comprendre où se situent les agents IA dans le paysage global de l'IA
 - **[Entraînement, finetuning ou RAG : que choisir ?](entrainement-finetuning-rag-modele-ia.md)** : le guide pour ne pas se tromper d'approche entre les trois grandes options
 - **[GEO : comment fonctionnent les moteurs de recherche IA](geo-comment-fonctionnent-les-moteurs-ia.md)** : comment ChatGPT, Perplexity et Gemini utilisent la recherche web pour citer vos contenus

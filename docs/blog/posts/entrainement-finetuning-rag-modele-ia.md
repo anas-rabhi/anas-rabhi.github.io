@@ -334,7 +334,7 @@ Le finetuning ne devient une bonne idée que dans des cas bien précis :
 
 * Vous avez besoin d'un **format de réponse très strict** que le modèle de base n'arrive pas à respecter, même avec un prompt très bien écrit et un RAG en place. Par exemple un format de sortie ultra rigide pour un système qui se branche derrière, sans aucune liberté possible.
 * Vous travaillez avec un **vocabulaire métier ultra spécifique** que les modèles publics ne maîtrisent pas du tout (jurisprudence très pointue, terminologie médicale spécialisée, jargon technique d'un secteur de niche).
-* Vous voulez **faire baisser le coût d'utilisation** en remplaçant un gros modèle généraliste par un petit modèle finetuné, qui coûte beaucoup moins cher à faire tourner mais qui reste aussi bon sur votre cas précis.
+* Vous voulez **faire baisser le coût d'utilisation** en remplaçant un gros modèle généraliste par un [petit modèle de langage (SLM)](c-est-quoi-un-slm.md) finetuné, qui coûte beaucoup moins cher à faire tourner mais qui reste aussi bon sur votre cas précis.
 * Vous voulez apprendre un **comportement très particulier** au modèle (un style d'écriture précis, une façon spécifique de classer des documents, un ton de marque très marqué).
 
 Hors de ces cas, le finetuning est presque toujours un mauvais investissement. Pourquoi tant de gens en parlent quand même ? Parce que ça fait sérieux, parce que ça donne l'impression de « vraiment faire de l'IA », et parce que beaucoup de prestataires le vendent comme une solution magique. La réalité, c'est que **donner les bons documents au modèle au bon moment** (le RAG) résout la grande majorité des besoins, sans tous les inconvénients du finetuning (coût, temps, risque, maintenance, obsolescence à la prochaine sortie).
@@ -425,6 +425,7 @@ Dans le pire des cas, si vous finissez quand même par finetuner, vous l'aurez f
 * **[Comment améliorer un RAG](comment-ameliorer-l-IA.md)** : la méthode pour mesurer et progresser
 * **[Le RAG est-il fini ?](le-rag-est-fini.md)** : le débat long context vs RAG
 * **[Mais c'est quoi un agent IA ?](c-est-quoi-un-agent-ia.md)** : l'étape qui vient souvent après le RAG
+* **[C'est quoi un SLM (Small Language Model) ?](c-est-quoi-un-slm.md)** : quand un petit modèle spécialisé suffit et coûte bien moins cher qu'un finetuning lourd
 * **[AI engineer : le nouveau rôle du data scientist](ai-engineer-nouveau-role-data-scientist-ia-generative.md)** : pourquoi on intègre des modèles existants plutôt que de les entraîner
 
 ---
