@@ -361,7 +361,11 @@
          <lastmod>2026-06-22</lastmod>
     </url>
     <url>
-         <loc>https://ianas.fr/blog/category/agent-ia/</loc>
+         <loc>https://ianas.fr/blog/category/m%C3%A9tier/</loc>
+         <lastmod>2026-06-22</lastmod>
+    </url>
+    <url>
+         <loc>https://ianas.fr/blog/category/produit/</loc>
          <lastmod>2026-06-22</lastmod>
     </url>
     <url>
@@ -369,7 +373,7 @@
          <lastmod>2026-06-22</lastmod>
     </url>
     <url>
-         <loc>https://ianas.fr/blog/category/produit/</loc>
+         <loc>https://ianas.fr/blog/category/agent-ia/</loc>
          <lastmod>2026-06-22</lastmod>
     </url>
     <url>
@@ -378,10 +382,6 @@
     </url>
     <url>
          <loc>https://ianas.fr/blog/category/cas-dusage/</loc>
-         <lastmod>2026-06-22</lastmod>
-    </url>
-    <url>
-         <loc>https://ianas.fr/blog/category/m%C3%A9tier/</loc>
          <lastmod>2026-06-22</lastmod>
     </url>
     <url>
@@ -417,11 +417,11 @@
          <lastmod>2026-06-22</lastmod>
     </url>
     <url>
-         <loc>https://ianas.fr/en/blog/category/ai-agent/</loc>
+         <loc>https://ianas.fr/en/blog/category/rag/</loc>
          <lastmod>2026-06-22</lastmod>
     </url>
     <url>
-         <loc>https://ianas.fr/en/blog/category/rag/</loc>
+         <loc>https://ianas.fr/en/blog/category/ai-agent/</loc>
          <lastmod>2026-06-22</lastmod>
     </url>
     <url>
