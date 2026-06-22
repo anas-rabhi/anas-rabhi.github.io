@@ -12,7 +12,7 @@ date: 2025-04-05
 comments: true
 authors:
   - Anas
-pin: true
+pin: false
 math: true
 mermaid: true
 ---

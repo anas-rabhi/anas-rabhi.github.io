@@ -15,7 +15,7 @@ date: 2026-04-09
 comments: true
 authors:
   - Anas
-pin: true
+pin: false
 ---
 
 ## Introduction

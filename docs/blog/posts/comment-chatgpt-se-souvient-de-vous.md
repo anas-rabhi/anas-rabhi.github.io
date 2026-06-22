@@ -15,7 +15,7 @@ date: 2026-05-31
 comments: true
 authors:
   - Anas
-pin: true
+pin: false
 math: false
 mermaid: true
 faqs:

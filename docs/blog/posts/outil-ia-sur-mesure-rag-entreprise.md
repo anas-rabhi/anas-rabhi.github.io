@@ -16,7 +16,7 @@ date: 2026-06-06
 comments: true
 authors:
   - Anas
-pin: true
+pin: false
 math: false
 mermaid: false
 ---
