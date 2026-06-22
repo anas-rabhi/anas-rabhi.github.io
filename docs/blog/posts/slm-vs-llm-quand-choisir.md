@@ -113,6 +113,18 @@ Le [RAG](mais-que-es-le-rag.md) mérite qu'on s'y arrête, parce que c'est là q
 
 Ça ne veut pas dire qu'un SLM n'a aucune place dans un RAG. Il peut router la question, la reformuler, classer son intention ou filtrer les résultats, autant d'étapes où il est rapide et bon marché. Mais la génération finale sur vos données, je la confie à un bon LLM. C'est encore un système hybride : petits modèles pour la mécanique, gros modèle pour la réponse.
 
+### La modération, un cas d'école
+
+À l'inverse du RAG, la modération de contenu est le cas type où un petit modèle suffit, et plusieurs grandes plateformes le prouvent en production :
+
+- **Roblox** fait tourner un classifieur de sécurité vocale d'environ 100 millions de paramètres (basé sur WavLM, distillé d'un modèle plus gros) pour repérer les propos toxiques dans le chat audio, en 8 langues, entraîné sur plus de 100 000 heures d'audio. Le modèle est même publié en open source ([model card Roblox](https://huggingface.co/Roblox/voice-safety-classifier-v2)).
+- **Meta** publie Llama Guard 3 en version 1 milliard de paramètres, distillée et élaguée à partir du modèle 8B, pour filtrer les entrées et sorties d'un LLM, pensée pour tenir sur mobile ([model card Meta](https://huggingface.co/meta-llama/Llama-Guard-3-1B)).
+- **Google** propose ShieldGemma en version 2 milliards de paramètres, bâtie sur Gemma, pour classer un texte selon des catégories à risque ([model card Google](https://huggingface.co/google/shieldgemma-2b)).
+- **Bumble** a ouvert le code de Private Detector, un petit classifieur d'images (basé sur EfficientNet) qui détecte l'envoi de photos intimes non sollicitées ([GitHub Bumble](https://github.com/bumble-tech/private-detector)).
+- **Unitary** maintient Detoxify (toxic-bert), un classifieur de toxicité d'environ 110 millions de paramètres, auto-hébergeable, devenu un standard ([GitHub Unitary](https://github.com/unitaryai/detoxify)).
+
+Soyons honnête sur la nuance : certaines API de modération reposent encore sur de gros modèles (celle d'OpenAI tourne sur GPT-4o, celle de Mistral sur un modèle de 8 milliards de paramètres). Mais les systèmes qui encaissent les plus gros volumes misent sur des modèles spécialisés et petits, parce que la modération est une tâche fermée, massive et sensible à la latence. Autrement dit, le terrain de jeu du SLM.
+
 ### Par secteur
 
 La même logique se décline secteur par secteur :
