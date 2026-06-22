@@ -78,7 +78,7 @@ Concrètement, voici ce qui change :
 - **Coût et vitesse** : c'est là que le SLM gagne. Selon le papier de NVIDIA, servir un modèle de 7 milliards de paramètres revient entre 10 et 30 fois moins cher (en latence, énergie et calcul) que servir un modèle de 70 à 175 milliards. À garder en tête : c'est un papier de position, donc une estimation argumentée, pas une mesure de production. L'ordre de grandeur, lui, est crédible.
 - **Déploiement** : un SLM peut tourner sur votre propre serveur, voire sur un téléphone. Un gros LLM passe presque toujours par une API externe.
 
-La bonne façon de voir les choses : ce ne sont pas deux camps qui s'affrontent. Dans un système réel, on fait souvent travailler les deux ensemble. Le SLM absorbe le volume de tâches simples et répétitives, le LLM est appelé seulement sur les cas difficiles. NVIDIA estime d'ailleurs, sur plusieurs systèmes d'agents analysés, qu'entre 40 et 70 % des appels au gros modèle pourraient être confiés à des SLM spécialisés. C'est leur estimation, sur leurs cas, mais l'idée est juste : on sur-utilise les gros modèles par défaut.
+La bonne façon de voir les choses : ce ne sont pas deux camps qui s'affrontent. Dans un système réel, on fait souvent travailler les deux ensemble. Le SLM absorbe le volume de tâches simples et répétitives, le LLM est appelé seulement sur les cas difficiles. NVIDIA estime d'ailleurs, sur plusieurs systèmes d'agents analysés, qu'entre 40 et 70 % des appels au gros modèle pourraient être confiés à des SLM spécialisés. C'est leur estimation, sur leurs cas, mais l'idée est juste : on sur-utilise les gros modèles par défaut. J'ai consacré un article entier à cet arbitrage, avec les coûts comparés et une grille de décision : [SLM vs LLM, quand choisir un petit modèle](slm-vs-llm-quand-choisir.md).
 
 ## Pourquoi les SLM en 2026 ?
 
@@ -157,6 +157,7 @@ Non, ils ne jouent pas le même rôle. Un gros modèle reste meilleur sur la con
 
 ## Pour aller plus loin
 
+- **[SLM vs LLM : quand choisir un petit modèle ?](slm-vs-llm-quand-choisir.md)** : la grille de décision chiffrée pour trancher entre petit et gros modèle
 - **[Comprendre l'IA générative](comprendre-l-IA-generative.md)** : les fondements des modèles de langage, qu'ils soient petits ou gros
 - **[Entraînement, finetuning ou RAG : que choisir ?](entrainement-finetuning-rag-modele-ia.md)** : le guide pour ne pas se tromper d'approche avant d'entraîner quoi que ce soit
 - **[Prompt caching : réduire le coût d'un LLM](prompt-caching-reduire-cout-llm.md)** : une autre façon de maîtriser la facture d'inférence
