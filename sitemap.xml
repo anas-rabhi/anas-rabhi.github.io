@@ -241,6 +241,10 @@
          <lastmod>2026-06-29</lastmod>
     </url>
     <url>
+         <loc>https://ianas.fr/en/blog/2026/06/22/c-est-quoi-un-slm-small-language-model/</loc>
+         <lastmod>2026-06-29</lastmod>
+    </url>
+    <url>
          <loc>https://ianas.fr/en/blog/2026/04/15/chunking-optimal-rag/</loc>
          <lastmod>2026-06-29</lastmod>
     </url>
@@ -261,7 +265,15 @@
          <lastmod>2026-06-29</lastmod>
     </url>
     <url>
+         <loc>https://ianas.fr/en/blog/2026/06/29/entrainer-un-slm-fine-tuning-distillation/</loc>
+         <lastmod>2026-06-29</lastmod>
+    </url>
+    <url>
          <loc>https://ianas.fr/en/blog/2026/05/15/evaluer-rag-production-metriques-ragas/</loc>
+         <lastmod>2026-06-29</lastmod>
+    </url>
+    <url>
+         <loc>https://ianas.fr/en/blog/2026/06/29/ia-locale-on-premise-slm/</loc>
          <lastmod>2026-06-29</lastmod>
     </url>
     <url>
@@ -326,6 +338,10 @@
     </url>
     <url>
          <loc>https://ianas.fr/en/blog/2026/06/07/securiser-rag-prompt-injection-rbac/</loc>
+         <lastmod>2026-06-29</lastmod>
+    </url>
+    <url>
+         <loc>https://ianas.fr/en/blog/2026/06/23/slm-vs-llm-quand-choisir/</loc>
          <lastmod>2026-06-29</lastmod>
     </url>
     <url>
