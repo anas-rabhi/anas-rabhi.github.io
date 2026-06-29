@@ -61,7 +61,7 @@ Et si on auto-héberge, l'écart bascule encore plus vite dès qu'il y a du volu
 Les deux autres arguments du petit modèle suivent la même logique :
 
 - **La latence.** Un petit modèle répond plus vite. Un Llama 8B servi sur du matériel spécialisé atteint près de 877 tokens par seconde (mesure Artificial Analysis), et un Phi-3 mini tourne sur un iPhone à plus de 12 tokens par seconde, hors ligne. Pour une fonction appelée des milliers de fois par jour, l'écart est décisif.
-- **La confidentialité.** Un SLM tient sur votre infrastructure. Les données ne partent pas vers une API externe, ce qui lève d'un coup une bonne partie des questions de RGPD et de souveraineté sur les documents sensibles.
+- **La confidentialité.** Un SLM tient sur votre infrastructure. Les données ne partent pas vers une API externe, ce qui lève d'un coup une bonne partie des questions de RGPD et de souveraineté sur les documents sensibles. Quand ces données sont critiques, on déploie le modèle en [local, sur sa propre infrastructure](ia-locale-slm-on-premise.md).
 
 ## Sur une tâche précise, le petit modèle peut gagner
 
@@ -179,6 +179,8 @@ Souvent 200 à 500 exemples annotés suffisent : c'est là que les performances 
 ## Pour aller plus loin
 
 - **[C'est quoi un SLM (Small Language Model) ?](c-est-quoi-un-slm.md)** : la définition, les exemples de modèles récents et pourquoi le sujet compte en 2026
+- **[Comment entraîner un SLM ?](entrainer-un-slm.md)** : fine-tuning, LoRA/QLoRA et distillation une fois la décision prise
+- **[IA locale : faire tourner un SLM en local](ia-locale-slm-on-premise.md)** : déployer un petit modèle on-premise pour la confidentialité et le coût
 - **[RAG, finetuning ou entraînement : que choisir ?](entrainement-finetuning-rag-modele-ia.md)** : l'arbre de décision pour spécialiser un modèle sans gaspiller son budget
 - **[Prompt caching : réduire le coût d'un LLM](prompt-caching-reduire-cout-llm.md)** : l'autre grand levier de coût, complémentaire du choix de la taille du modèle
 - **[C'est quoi un agent IA ?](c-est-quoi-un-agent-ia.md)** : les systèmes où le routage entre petit et gros modèle prend tout son sens

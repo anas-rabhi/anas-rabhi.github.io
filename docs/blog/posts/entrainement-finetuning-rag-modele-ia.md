@@ -427,6 +427,7 @@ Dans le pire des cas, si vous finissez quand même par finetuner, vous l'aurez f
 * **[Mais c'est quoi un agent IA ?](c-est-quoi-un-agent-ia.md)** : l'étape qui vient souvent après le RAG
 * **[C'est quoi un SLM (Small Language Model) ?](c-est-quoi-un-slm.md)** : quand un petit modèle spécialisé suffit et coûte bien moins cher qu'un finetuning lourd
 * **[SLM vs LLM : quand choisir un petit modèle ?](slm-vs-llm-quand-choisir.md)** : la grille de décision chiffrée entre petit modèle finetuné et gros modèle généraliste
+* **[Comment entraîner un SLM ?](entrainer-un-slm.md)** : le how-to concret du fine-tuning LoRA/QLoRA et de la distillation d'un petit modèle
 * **[AI engineer : le nouveau rôle du data scientist](ai-engineer-nouveau-role-data-scientist-ia-generative.md)** : pourquoi on intègre des modèles existants plutôt que de les entraîner
 
 ---

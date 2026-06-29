@@ -88,7 +88,7 @@ Si les SLM reviennent sur le devant de la scène, ce n'est pas une mode. C'est q
 
 **La latence.** Un petit modèle répond plus vite. Pour un assistant en temps réel, une étape dans un agent ou une fonction appelée des milliers de fois par jour, chaque centaine de millisecondes compte. Un SLM permet de tenir des temps de réponse qu'un gros modèle distant ne tiendra pas.
 
-**La confidentialité et la souveraineté.** Envoyer des documents sensibles à une API externe pose des questions de conformité, de RGPD et parfois de barrière légale. Un SLM tient sur votre infrastructure, voire sur l'appareil de l'utilisateur. Les données ne sortent pas. Pour beaucoup de secteurs régulés, ce seul point fait pencher la balance.
+**La confidentialité et la souveraineté.** Envoyer des documents sensibles à une API externe pose des questions de conformité, de RGPD et parfois de barrière légale. Un SLM tient sur votre infrastructure, voire sur l'appareil de l'utilisateur. Les données ne sortent pas. Pour beaucoup de secteurs régulés, ce seul point fait pencher la balance. C'est tout l'intérêt de [faire tourner un SLM en local](ia-locale-slm-on-premise.md).
 
 **L'embarqué.** Le rapport technique de Microsoft sur [Phi-3](https://arxiv.org/abs/2404.14219) montre un modèle de 3,8 milliards de paramètres tournant sur un iPhone 14, à plus de 12 tokens par seconde, pour environ 1,8 Go en mémoire une fois quantifié en 4 bits. Meta a poussé la même logique avec [Llama 3.2 1B et 3B](https://ai.meta.com/blog/llama-3-2-connect-2024-vision-edge-mobile-devices/), pensés dès le départ pour le mobile. L'IA qui tourne sur l'appareil, sans connexion ni cloud, devient réaliste.
 
@@ -133,7 +133,7 @@ La démarche tient en quelques étapes :
 
 Dans bien des cas, on découvre qu'un petit modèle bien cadré suffit. On a alors un système plus rapide, moins cher, qui tourne sur sa propre infrastructure, et qu'on n'a même pas eu besoin d'entraîner.
 
-Le vrai sujet, au fond, n'est jamais "quel est le meilleur modèle". C'est "quel est le problème métier, et quel est le plus petit modèle qui le résout de façon fiable". Le SLM, c'est exactement cet état d'esprit transformé en outil. Pour le pas d'après, à savoir quand et comment entraîner réellement un de ces modèles, je consacrerai des articles dédiés à l'entraînement d'un SLM et à la génération de données synthétiques.
+Le vrai sujet, au fond, n'est jamais "quel est le meilleur modèle". C'est "quel est le problème métier, et quel est le plus petit modèle qui le résout de façon fiable". Le SLM, c'est exactement cet état d'esprit transformé en outil. Pour le pas d'après, à savoir quand et comment entraîner réellement un de ces modèles, j'ai un article dédié à [l'entraînement d'un SLM](entrainer-un-slm.md), et un autre suivra sur la génération de données synthétiques.
 
 ## FAQ : questions fréquentes sur les SLM
 
@@ -158,6 +158,8 @@ Non, ils ne jouent pas le même rôle. Un gros modèle reste meilleur sur la con
 ## Pour aller plus loin
 
 - **[SLM vs LLM : quand choisir un petit modèle ?](slm-vs-llm-quand-choisir.md)** : la grille de décision chiffrée pour trancher entre petit et gros modèle
+- **[Comment entraîner un SLM ?](entrainer-un-slm.md)** : fine-tuning, LoRA/QLoRA, distillation et le coût réel de l'entraînement
+- **[IA locale : faire tourner un SLM en local](ia-locale-slm-on-premise.md)** : déployer un petit modèle sur votre propre infrastructure, sans cloud
 - **[Comprendre l'IA générative](comprendre-l-IA-generative.md)** : les fondements des modèles de langage, qu'ils soient petits ou gros
 - **[Entraînement, finetuning ou RAG : que choisir ?](entrainement-finetuning-rag-modele-ia.md)** : le guide pour ne pas se tromper d'approche avant d'entraîner quoi que ce soit
 - **[Prompt caching : réduire le coût d'un LLM](prompt-caching-reduire-cout-llm.md)** : une autre façon de maîtriser la facture d'inférence
