@@ -65,7 +65,7 @@ Les deux autres arguments du petit modèle suivent la même logique :
 
 ## Sur une tâche précise, le petit modèle peut gagner
 
-C'est le point contre-intuitif, et le plus important : sur une tâche étroite et bien définie, un petit modèle spécialisé n'égale pas seulement un gros modèle, il le dépasse souvent.
+Sur une tâche étroite et bien définie, un petit modèle spécialisé n'égale pas seulement un gros modèle, il le dépasse souvent. C'est contre-intuitif, et pourtant les mesures le confirment.
 
 Le projet LoRA Land de Predibase a finetuné 310 petits modèles (base Mistral 7B pour la plupart) sur des tâches précises. Résultat : en moyenne, ces modèles [dépassent leur modèle de base de 34 points et GPT-4 de 10 points](https://arxiv.org/abs/2405.00732) sur leurs tâches respectives. À condition de bien lire ce chiffre : c'est vrai sur des tâches étroites et finetunées, pas en généraliste.
 

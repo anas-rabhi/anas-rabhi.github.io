@@ -84,7 +84,7 @@ La bonne façon de voir les choses : ce ne sont pas deux camps qui s'affrontent.
 
 Si les SLM reviennent sur le devant de la scène, ce n'est pas une mode. C'est que plusieurs contraintes très concrètes des entreprises trouvent enfin une réponse propre.
 
-**Le coût.** Faire tourner un gros modèle à grande échelle coûte cher, et la facture API grimpe vite dès qu'on traite du volume. Un SLM auto-hébergé change l'équation. C'est le prolongement direct de tout ce qui touche à l'optimisation des coûts d'inférence, un sujet que j'aborde aussi sous l'angle du [prompt caching pour réduire le coût d'un LLM](prompt-caching-reduire-cout-llm.md).
+**Le coût.** Faire tourner un gros modèle à grande échelle coûte cher, et la facture API grimpe vite dès qu'on traite du volume. Un SLM auto-hébergé fait tomber cette facture dès que le volume est là, puisqu'on paie le matériel une fois au lieu de payer chaque token. C'est le prolongement direct de tout ce qui touche à l'optimisation des coûts d'inférence, un sujet que j'aborde aussi sous l'angle du [prompt caching pour réduire le coût d'un LLM](prompt-caching-reduire-cout-llm.md).
 
 **La latence.** Un petit modèle répond plus vite. Pour un assistant en temps réel, une étape dans un agent ou une fonction appelée des milliers de fois par jour, chaque centaine de millisecondes compte. Un SLM permet de tenir des temps de réponse qu'un gros modèle distant ne tiendra pas.
 
@@ -100,7 +100,7 @@ Andrej Karpathy, ancien de Tesla et d'OpenAI, résume bien cette direction quand
 
 Un petit modèle performant, ce n'est pas juste un gros modèle qu'on a coupé en morceaux. Plusieurs techniques, arrivées à maturité ces dernières années, expliquent pourquoi les SLM tiennent enfin la route.
 
-**La qualité des données d'entraînement.** C'est le changement le plus profond. L'idée, défendue par Microsoft dès son papier *Textbooks Are All You Need*, est qu'un modèle entraîné sur des données soigneusement choisies et de "qualité manuel scolaire" apprend bien mieux qu'un modèle gavé de web brut. C'est ce qui a permis à [Phi-2](https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-small-language-models/) (2,7 milliards de paramètres) d'égaler, sur certains benchmarks de code et de raisonnement, des modèles bien plus gros. À nuancer tout de suite : "égaler un modèle 25 fois plus gros" est toujours vrai sur un benchmark précis, jamais sur la culture générale ou le raisonnement ouvert. C'est une comparaison ciblée, pas une supériorité globale.
+**La qualité des données d'entraînement.** C'est sans doute ce qui a le plus fait progresser les petits modèles, et ça se vérifie sur les résultats. L'idée, défendue par Microsoft dès son papier *Textbooks Are All You Need*, est qu'un modèle entraîné sur des données soigneusement choisies et de "qualité manuel scolaire" apprend bien mieux qu'un modèle gavé de web brut. C'est ce qui a permis à [Phi-2](https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-small-language-models/) (2,7 milliards de paramètres) d'égaler, sur certains benchmarks de code et de raisonnement, des modèles bien plus gros. À nuancer tout de suite : "égaler un modèle 25 fois plus gros" est toujours vrai sur un benchmark précis, jamais sur la culture générale ou le raisonnement ouvert. C'est une comparaison ciblée, pas une supériorité globale.
 
 **Les données synthétiques.** Faute de toujours disposer de données de qualité en quantité, on en génère. Hugging Face a entraîné SmolLM en partie sur des données synthétiques, et le laboratoire français Pleias a poussé l'idée jusqu'au bout avec [SYNTH](https://huggingface.co/blog/Pclanglais/synth-data-frontier) : deux petits modèles de raisonnement, Baguettotron (321 millions de paramètres) et Monad (56 millions), entraînés uniquement sur des données synthétiques, avec selon eux 10 à 50 fois moins de données que des modèles comparables. C'est un sujet à part entière, sur lequel je reviendrai dans un prochain article dédié.
 
@@ -133,7 +133,7 @@ La démarche tient en quelques étapes :
 
 Dans bien des cas, on découvre qu'un petit modèle bien cadré suffit. On a alors un système plus rapide, moins cher, qui tourne sur sa propre infrastructure, et qu'on n'a même pas eu besoin d'entraîner.
 
-Le vrai sujet, au fond, n'est jamais "quel est le meilleur modèle". C'est "quel est le problème métier, et quel est le plus petit modèle qui le résout de façon fiable". Le SLM, c'est exactement cet état d'esprit transformé en outil. Pour le pas d'après, à savoir quand et comment entraîner réellement un de ces modèles, j'ai un article dédié à [l'entraînement d'un SLM](entrainer-un-slm.md), et un autre suivra sur la génération de données synthétiques.
+Au fond, la question n'est jamais "quel est le meilleur modèle". C'est "quel est le problème métier, et quel est le plus petit modèle qui le résout de façon fiable". Le SLM, c'est exactement cet état d'esprit transformé en outil. Pour le pas d'après, à savoir quand et comment entraîner réellement un de ces modèles, j'ai un article dédié à [l'entraînement d'un SLM](entrainer-un-slm.md), et un autre suivra sur la génération de données synthétiques.
 
 ## FAQ : questions fréquentes sur les SLM
 
