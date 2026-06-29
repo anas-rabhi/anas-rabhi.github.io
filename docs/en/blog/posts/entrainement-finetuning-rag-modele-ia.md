@@ -422,6 +422,9 @@ In the worst case, if you end up fine-tuning anyway, you will have done it with 
 * **[Optimal RAG chunking](chunking-optimal-rag.md)** — a poorly chunked RAG often mimics the symptoms that teams wrongly attribute to model quality
 * **[Agentic RAG vs classic RAG](agentic-rag-vs-rag-classique.md)** — the architecture step that often comes after RAG when classic retrieval hits its limits
 * **[What is an AI agent?](c-est-quoi-un-agent-ia.md)** — the step that often follows once your RAG is solid
+* **[What is an SLM (Small Language Model)?](c-est-quoi-un-slm.md)**: when a small specialized model is enough and far cheaper than a heavy fine-tune
+* **[How to train an SLM?](entrainer-un-slm.md)**: the concrete how-to of LoRA/QLoRA fine-tuning and distillation for a small model
+* **[SLM vs LLM: when to choose a small model?](slm-vs-llm-quand-choisir.md)**: the decision grid between a small fine-tuned model and a large general one
 
 ---
 
@@ -455,7 +458,7 @@ Training a model "from scratch" means starting from an empty model and teaching 
 To give orders of magnitude: GPT-3 cost approximately $4 million to train, GPT-4 over $100 million, Llama 3 70B approximately $15 million. And these figures only count compute power, not researcher salaries or failed experiments.
 
 **3. When should you fine-tune instead of using RAG?**
-Fine-tuning is only relevant when you need a very precise output format, ultra-specific domain vocabulary not covered by public models, or when you want to use a small fine-tuned model to reduce inference costs. In 90% of professional cases, a well-built RAG delivers better results at a much lower cost.
+Fine-tuning is only relevant when you need a very precise output format, ultra-specific domain vocabulary not covered by public models, or when you want to use a [small fine-tuned model](c-est-quoi-un-slm.md) to reduce inference costs. In 90% of professional cases, a well-built RAG delivers better results at a much lower cost.
 
 **4. Why don't all LLMs perform the same if they use the same techniques?**
 Because AI is R&D. At every stage (architecture, data, post-training), there are hundreds of technical choices that can swing performance. That is why Claude, GPT, and Gemini, which have comparable resources, do not achieve the same results. Nobody has the magic recipe.

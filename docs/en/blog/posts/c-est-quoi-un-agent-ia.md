@@ -260,6 +260,8 @@ And above all, **very concrete needs on the business side**.
 
 That's why everyone is talking about them now.
 
+Incidentally, part of those contained costs comes from [small language models (SLMs)](c-est-quoi-un-slm.md): for many simple steps in an agent (classify, extract, route), a small specialized model is enough and far cheaper than calling a large model on every turn.
+
 ***
 
 ## The limitations (because yes, there are some)
@@ -343,6 +345,7 @@ A POC on a targeted use case can be done in 2 to 4 weeks. Production deployment 
 - **[AI agent frameworks: CrewAI vs LangGraph vs Pydantic AI](crewai-langchain-langgraph-comparatif-pragmatique.md)** — once you understand agents, choosing the right framework to build them
 - **[AI agent memory](memoire-agents-ia-long-terme.md)** — the component that separates a demo from a production-ready agent
 - **[Training, fine-tuning, or RAG: which should you choose?](entrainement-finetuning-rag-modele-ia.md)** — the guide to choosing the right approach among the three main options
+- **[What is an SLM (Small Language Model)?](c-est-quoi-un-slm.md)**: small models are at the heart of the next generation of AI agents
 
 ***
 

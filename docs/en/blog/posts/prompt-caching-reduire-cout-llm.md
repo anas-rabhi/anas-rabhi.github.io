@@ -365,6 +365,8 @@ Prompt caching is the number one lever, but it sits within a hierarchy of optimi
 
 **Model routing** deserves a special mention. On a system that handles very varied requests, systematically routing everything to Claude Opus or GPT-4o is wasteful. A lightweight classifier (or the LLM itself) can route simple questions to Haiku, Flash, or GPT-4o-mini. Combined with caching, the savings accumulate fast.
 
+And when a task is both simple and repetitive (classify, extract, route), moving it onto a self-hosted [small language model (SLM)](c-est-quoi-un-slm.md) often cuts the cost far more than any API-side optimization.
+
 I detail this decision logic in [the article on Agentic RAG vs classic RAG](agentic-rag-vs-rag-classique.md): the principle is the same, matching model capability to the actual complexity of the task.
 
 ***
@@ -457,6 +459,8 @@ Anthropic: 1,024 tokens for Claude Sonnet 4.x, 4,096 tokens for Claude Opus and 
 - **[Agentic RAG vs classic RAG](agentic-rag-vs-rag-classique.md)**: understanding when agent complexity justifies its cost, and how caching changes the equation
 - **[MCP: the standard for AI agents](mcp-model-context-protocol-agents-ia.md)**: agents with many tools are strong candidates for caching their tool definitions
 - **[Long context vs RAG: when to use which](long-context-vs-rag-quand-utiliser.md)**: caching softens the cost of long context, but it does not remove the architecture decision
+- **[What is an SLM (Small Language Model)?](c-est-quoi-un-slm.md)**: replacing a large model with a small specialized one, the most radical cost lever
+- **[SLM vs LLM: when to choose a small model?](slm-vs-llm-quand-choisir.md)**: the decision grid between a small and a large model
 
 ***
 

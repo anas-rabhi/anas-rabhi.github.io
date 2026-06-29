@@ -139,7 +139,7 @@ Symmetrically, here are the cases where long context doesn't hold up, even in 20
 As in the worked example above, once you exceed a few hundred requests per day on a large corpus, RAG becomes ×10 to ×100 cheaper.
 
 **3. Sensitive or on-premise data.**
-Long context locks you into SOTA cloud models (Gemini, Claude, GPT). Open-source on-premise models (Mistral, Qwen, Llama) have smaller windows and even more pronounced context rot. For HR, legal, medical, or defense use cases, a RAG with a local LLM is the only viable option.
+Long context locks you into SOTA cloud models (Gemini, Claude, GPT). Open-source on-premise models (Mistral, Qwen, Llama) have smaller windows and even more pronounced context rot. For HR, legal, medical, or defense use cases, a RAG with a local LLM is the only viable option. Choosing that local model is a topic in itself: I cover it in [SLM vs LLM, when to choose a small model](slm-vs-llm-quand-choisir.md), and how to deploy it in [Local AI: running an SLM on-premise](ia-locale-slm-on-premise.md).
 
 **4. Mandatory business filtering.**
 *"Which amendments did Acme sign in 2024?"* A RAG with metadata filters (client, date, document type) finds the answer in O(log n). Long context reads everything and can get lost. This is also why upstream [PDF parsing quality is critical](parsing-pdf-rag-extraction-documents.md): without proper extracted metadata, clean filtering isn't possible.
